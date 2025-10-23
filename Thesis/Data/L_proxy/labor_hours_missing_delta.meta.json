@@ -1,0 +1,20 @@
+{
+  "run_timestamp": "2025-10-12T22:25:15.096941Z",
+  "inputs": {
+    "master_lterm": "Data/L_proxy/labor_hours_monthly_terminal.tsv",
+    "kpi_wide": "Data/L_proxy/containers_kpis_annual_wide_filled.tsv",
+    "teu_panel": "Data/Output/teu_monthly_plus_quarterly_by_port.tsv",
+    "port_month_file": "Data/L_proxy/labor_hours_monthly_port.tsv"
+  },
+  "hashes": {
+    "master_lterm_sha256": "7a262554acd52da4f69240018206627e4c85c66a6fe8d7710b0d82b93bee6253",
+    "kpi_wide_sha256": "6817188640595f62037915ba6007c998d69b21d6ee802a9d3e5e83a6da7526a5",
+    "teu_panel_sha256": "db61df01edf177d3d5404fd733c9e1b68b1ecec609b7a322005e4d3381b1b414",
+    "port_month_sha256": "2a7440699f07e0b08a24ecfdeb11e9295269631e0c7d6ac4cda0ad35a1521cab"
+  },
+  "years": [
+    2021,
+    2022
+  ],
+  "rows_emitted": 48
+}

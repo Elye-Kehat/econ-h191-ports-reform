@@ -1,0 +1,25 @@
+{
+  "timestamp_utc": "2025-10-20T01:44:16.551918+00:00",
+  "inputs": {
+    "l_proxy": "./Data/L_proxy/L_Proxy.tsv",
+    "tons": "./Data/Output/monthly_output_by_1000_tons_ports_and_terminals.tsv",
+    "teu_mq": "./Data/Output/teu_monthly_plus_quarterly_by_port.tsv"
+  },
+  "cutover": {
+    "Haifa": "2021-09",
+    "Ashdod": "2022-07"
+  },
+  "winsor": {
+    "lower": 0.01,
+    "upper": 0.99
+  },
+  "rows": {
+    "LP_port_month_mixadjusted": 3,
+    "LP_port_month_identity": 168,
+    "LP_terminal_month_mixadjusted": 264,
+    "LP_terminal_quarter_mixadjusted": 172,
+    "LP_panel_mixedfreq": 175,
+    "qa_lp_report": 9
+  },
+  "out_dir": "./Data/LP"
+}

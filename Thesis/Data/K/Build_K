@@ -1,0 +1,368 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Build_K (Track B, Haifa-Legacy / HPC) — PPE, PIM, ln(K/L)
+Reads raw tables from the SAME DIRECTORY as this script (Data/K) and writes outputs there.
+
+Inputs (in Data/K):
+  - TrackB_Haifa_HPC_exc.2022.tsv      # preferred raw
+  - haifa_financials_raw.tsv           # fallback raw
+  - deflators/cbs_ppe_deflator_monthly.tsv (optional; columns: month, index; month as YYYY-MM-01)
+
+Also reads L if present (in sibling folder):
+  - ../L_proxy/L_Proxy.tsv
+
+Outputs (in Data/K):
+  - K_B_monthly_Haifa_Legacy.tsv
+  - Mediator_K_over_L.tsv              (if L_Proxy is available)
+  - qa_K_B_Haifa_Legacy.tsv
+  - _meta_K_B_Haifa_Legacy.json
+"""
+
+from __future__ import annotations
+from pathlib import Path
+import json
+import warnings
+from typing import Dict, List, Optional
+
+import numpy as np
+import pandas as pd
+
+
+# ----------------------------- Config (paths relative to this file) -----------------------------
+
+class Config:
+    SCRIPT_PATH = Path(__file__).resolve()
+    K_DIR = SCRIPT_PATH.parent                  # .../Data/K
+    DATA_DIR = K_DIR.parent                     # .../Data
+
+    RAW_TSV = K_DIR / "TrackB_Haifa_HPC_exc.2022.tsv"
+    ALT_RAWS = [K_DIR / "haifa_financials_raw.tsv"]  # simple fallback, same folder
+    DEF_FL = K_DIR / "deflators" / "cbs_ppe_deflator_monthly.tsv"
+    L_PROXY = DATA_DIR / "L_proxy" / "L_Proxy.tsv"
+
+    SPLICE_PERIOD = pd.Period("2023-01", freq="M")  # privatization break
+
+    # PIM parameters (bands) — central values are conservative for mixed port assets
+    DELTA_LOW = 0.05
+    DELTA_CTR = 0.08
+    DELTA_HIGH = 0.11
+    R_REAL = 0.03  # capital services (optional)
+
+    OUT_MONTHLY = K_DIR / "K_B_monthly_Haifa_Legacy.tsv"
+    OUT_QA = K_DIR / "qa_K_B_Haifa_Legacy.tsv"
+    OUT_META = K_DIR / "_meta_K_B_Haifa_Legacy.json"
+    OUT_MEDIATOR = K_DIR / "Mediator_K_over_L.tsv"
+
+
+REQ_COLS = [
+    "port","company","operator_or_owner","period_type","financial_year","period_end_date",
+    "ppe_gross_nominal","accumulated_depreciation_nominal","ppe_net_nominal",
+    "additions_purchases_note_nominal","disposals_note_nominal","depreciation_expense_note_nominal",
+    "acq_fixed_assets_net_cf_nominal","purchase_intangibles_cf_nominal",
+    "proceeds_disposal_fixed_assets_cf","investing_grants_or_receipts_cf"
+]
+
+NUM_COLS = [
+    "ppe_gross_nominal","accumulated_depreciation_nominal","ppe_net_nominal",
+    "additions_purchases_note_nominal","disposals_note_nominal","depreciation_expense_note_nominal",
+    "acq_fixed_assets_net_cf_nominal","purchase_intangibles_cf_nominal",
+    "proceeds_disposal_fixed_assets_cf","investing_grants_or_receipts_cf"
+]
+
+
+# ----------------------------- Helpers -----------------------------
+
+def _read_raw(cfg: Config) -> pd.DataFrame:
+    """Read raw TSV from Data/K; fall back to haifa_financials_raw.tsv if needed."""
+    path = cfg.RAW_TSV if cfg.RAW_TSV.exists() else None
+    if path is None:
+        for p in cfg.ALT_RAWS:
+            if p.exists():
+                path = p
+                break
+    if path is None:
+        raise FileNotFoundError(
+            "Raw table not found. Expected at:\n"
+            f" - {cfg.RAW_TSV}\n"
+            + "\n".join([f" - {p}" for p in cfg.ALT_RAWS])
+        )
+    # FutureWarning-safe: explicit infer_objects after replace
+    df = pd.read_csv(path, sep="\t", dtype=str).replace({"": np.nan})
+    df = df.infer_objects(copy=False)
+
+    # ensure columns exist
+    for c in REQ_COLS:
+        if c not in df.columns:
+            df[c] = np.nan
+    # numerics
+    for c in NUM_COLS:
+        df[c] = pd.to_numeric(df[c], errors="coerce")
+    # dates/years
+    df["period_end_date"] = pd.to_datetime(df["period_end_date"], errors="coerce")
+    df["financial_year"] = pd.to_numeric(df["financial_year"], errors="coerce").astype("Int64")
+    return df
+
+
+def _filter_hpc_annual(df: pd.DataFrame) -> pd.DataFrame:
+    """Filter Haifa-Legacy annual rows; fix net PPE via identity when possible."""
+    m = (
+        (df["port"] == "Haifa") &
+        (df["period_type"].str.lower() == "annual") &
+        (df["operator_or_owner"].fillna("").str.contains("legacy", case=False, na=False))
+    )
+    ann = df.loc[m, ["financial_year","period_end_date","ppe_gross_nominal",
+                     "accumulated_depreciation_nominal","ppe_net_nominal"]].dropna(subset=["financial_year"])
+    fix = ann["ppe_net_nominal"].isna() & ann["ppe_gross_nominal"].notna() & ann["accumulated_depreciation_nominal"].notna()
+    ann.loc[fix, "ppe_net_nominal"] = ann.loc[fix, "ppe_gross_nominal"] - ann.loc[fix, "accumulated_depreciation_nominal"]
+    ann = ann.sort_values(["financial_year","period_end_date"], na_position="last").groupby("financial_year", as_index=False).last()
+    return ann.sort_values("financial_year")
+
+
+def _filter_movements(df: pd.DataFrame) -> pd.DataFrame:
+    """Annual Note-8 movement lines (additions & disposals) for PIM."""
+    m = (
+        (df["port"] == "Haifa") &
+        (df["period_type"].str.lower() == "annual") &
+        (df["operator_or_owner"].fillna("").str.contains("legacy", case=False, na=False))
+    )
+    cols = ["financial_year","additions_purchases_note_nominal","disposals_note_nominal",
+            "ppe_gross_nominal","accumulated_depreciation_nominal"]
+    return df.loc[m, cols].sort_values("financial_year").set_index("financial_year")
+
+
+def _build_monthly_index(ann_years: List[int]) -> pd.PeriodIndex:
+    return pd.period_range(f"{min(ann_years)-1}-12", f"{max(ann_years)}-12", freq="M")
+
+
+def _interp_nominal_ppe(ann: pd.DataFrame, mi: pd.PeriodIndex) -> pd.Series:
+    s = pd.Series(index=mi, dtype=float)
+    for y, v in ann[["financial_year","ppe_net_nominal"]].dropna().values:
+        s[pd.Period(f"{int(y)}-12", freq="M")] = float(v)
+    return s.interpolate(method="time")
+
+
+def _load_deflator(cfg: Config, mi: pd.PeriodIndex) -> pd.Series:
+    if cfg.DEF_FL.exists():
+        D = pd.read_csv(cfg.DEF_FL, sep="\t")
+        assert {"month","index"}.issubset(D.columns), "Deflator must have columns: month, index"
+        D["month"] = pd.to_datetime(D["month"], errors="coerce")
+        Dt = D.set_index(pd.PeriodIndex(D["month"], freq="M"))["index"].astype(float)
+        return Dt.reindex(mi).interpolate().bfill().ffill()
+    warnings.warn(f"No deflator found at {cfg.DEF_FL}. Using 1.0 for all months.")
+    return pd.Series(1.0, index=mi)
+
+
+def _splice_at_break(K_real: pd.Series, b: pd.Period) -> pd.Series:
+    pre = K_real.loc[:b-1]
+    post = K_real.loc[b:]
+    if pre.empty or post.empty or pd.isna(post.iloc[0]) or post.iloc[0] == 0:
+        return K_real
+    scale = pre.iloc[-1] / post.iloc[0]
+    return pd.concat([pre, post * scale])
+
+
+def _delta_m(delta_annual: float) -> float:
+    return 1.0 - (1.0 - float(delta_annual))**(1.0/12.0)
+
+
+def _weights_uniform() -> np.ndarray:
+    return np.repeat(1.0/12.0, 12)
+
+
+def _pim_from_movements(mi: pd.PeriodIndex,
+                        anchors_nominal_net: pd.Series,
+                        movements: pd.DataFrame,
+                        delta_annual: float,
+                        impute_2022_from_anchors: bool = True):
+    """Construct monthly PIM K with optional 2022 imputation from Δ(cost)."""
+    w = _weights_uniform()
+    K = pd.Series(index=mi, dtype=float)
+    K.iloc[0] = float(anchors_nominal_net.iloc[0])
+    dm = _delta_m(delta_annual)
+    flags = {"imputed_2022": False}
+
+    # Impute 2022 if both additions/disposals missing but we have cost anchors
+    if impute_2022_from_anchors and (2021 in movements.index) and (2022 in movements.index):
+        row22 = movements.loc[2022, ["additions_purchases_note_nominal","disposals_note_nominal"]]
+        if row22.isna().all():
+            try:
+                cost_2021 = float(movements.loc[2021, "ppe_gross_nominal"])
+                cost_2022 = float(movements.loc[2022, "ppe_gross_nominal"])
+                delta_cost = cost_2022 - cost_2021
+                movements.loc[2022, "additions_purchases_note_nominal"] = max(delta_cost, 0.0)
+                movements.loc[2022, "disposals_note_nominal"] = max(-delta_cost, 0.0)
+                flags["imputed_2022"] = True
+            except Exception:
+                pass
+
+    for i in range(1, len(mi)):
+        t = mi[i]
+        y = t.year
+        I_t = D_t = 0.0
+        if y in movements.index:
+            m_idx = t.month - 1
+            I_y = movements.loc[y, "additions_purchases_note_nominal"]
+            D_y = movements.loc[y, "disposals_note_nominal"]
+            I_t = float(I_y) * w[m_idx] if pd.notna(I_y) else 0.0
+            D_t = float(D_y) * w[m_idx] if pd.notna(D_y) else 0.0
+        K.iloc[i] = (1.0 - dm) * K.iloc[i-1] + I_t - D_t
+
+    return K.rename("K_PIM"), flags
+
+
+def _read_L(cfg: Config) -> Optional[pd.DataFrame]:
+    """
+    Read Haifa-Legacy hours from L_Proxy if present.
+    Ensures one row per month by SUMMING duplicate rows (which fixes the 'not a one-to-one merge' error).
+    """
+    if not cfg.L_PROXY.exists():
+        warnings.warn(f"L proxy not found at {cfg.L_PROXY}. Skipping ln(K/L).")
+        return None
+    L = pd.read_csv(cfg.L_PROXY, sep="\t")
+
+    # month
+    if "month" in L.columns:
+        L["month"] = pd.to_datetime(L["month"], errors="coerce")
+    elif {"year","month"}.issubset(L.columns):
+        L["month"] = pd.to_datetime(L["year"].astype(str) + "-" + L["month"].astype(str) + "-01", errors="coerce")
+    else:
+        for c in L.columns:
+            if "date" in c.lower():
+                L["month"] = pd.to_datetime(L[c], errors="coerce")
+                break
+
+    # filter: Haifa-Legacy
+    term_col = next((c for c in ["terminal","Terminal","TERMINAL"] if c in L.columns), None)
+    m = (L.get("port","") == "Haifa")
+    if term_col:
+        m &= L[term_col].fillna("").str.contains("Haifa", case=False)
+        m &= L[term_col].fillna("").str.contains("Legacy", case=False)
+    Lh = L.loc[m, ["month"] + [c for c in L.columns if "hour" in c.lower()]].copy()
+    if Lh.empty:
+        warnings.warn("No Haifa-Legacy rows found in L_Proxy; skipping ln(K/L).")
+        return None
+
+    # choose & coerce the hours column
+    hour_col = next((c for c in Lh.columns if "hour" in c.lower()), None)
+    Lh = Lh.rename(columns={hour_col: "hours"})
+    Lh["hours"] = pd.to_numeric(Lh["hours"], errors="coerce")
+
+    # **NEW:** aggregate to unique month rows to avoid duplicate-merge errors
+    Lh = (
+        Lh.dropna(subset=["month"])
+           .groupby("month", as_index=False, sort=True)["hours"].sum()
+           .sort_values("month")
+    )
+    return Lh[["month","hours"]]
+
+
+# ----------------------------- Build pipeline -----------------------------
+
+def build_all(cfg: Config) -> Dict[str, str]:
+    # PPE-based K
+    raw = _read_raw(cfg)
+    ann = _filter_hpc_annual(raw)
+    if ann.empty:
+        raise RuntimeError("No annual rows for Haifa-Legacy found in raw table.")
+    mi = _build_monthly_index(ann["financial_year"].dropna().astype(int).tolist())
+    ser_nom = _interp_nominal_ppe(ann, mi)
+    Dt = _load_deflator(cfg, mi)
+    K_real_raw = (ser_nom / Dt).rename("K_PPE_real_raw")
+    K_real_spliced = _splice_at_break(K_real_raw, cfg.SPLICE_PERIOD).rename("K_PPE_real_spliced")
+
+    # PIM (bands)
+    mov = _filter_movements(raw)
+    pim_c, flags = _pim_from_movements(mi, ser_nom, mov.copy(), cfg.DELTA_CTR, impute_2022_from_anchors=True)
+    pim_l, _     = _pim_from_movements(mi, ser_nom, mov.copy(), cfg.DELTA_LOW, impute_2022_from_anchors=True)
+    pim_h, _     = _pim_from_movements(mi, ser_nom, mov.copy(), cfg.DELTA_HIGH, impute_2022_from_anchors=True)
+    services_c = (cfg.R_REAL + cfg.DELTA_CTR) * pim_c
+    services_c.name = "K_services_central"
+
+    # Compose monthly table
+    out = pd.DataFrame({
+        "month": K_real_spliced.index.to_timestamp(),
+        "K_PPE_real_spliced": K_real_spliced.values,
+        "K_PPE_real_raw": K_real_raw.reindex(K_real_spliced.index).values,
+        "K_PIM_central": pim_c.reindex(K_real_spliced.index).values,
+        "K_PIM_low": pim_l.reindex(K_real_spliced.index).values,
+        "K_PIM_high": pim_h.reindex(K_real_spliced.index).values,
+        "K_services_central": services_c.reindex(K_real_spliced.index).values,
+        "splice_flag": (K_real_spliced.index >= cfg.SPLICE_PERIOD).astype(int),
+        "imputed_2022": int(flags.get("imputed_2022", False)),
+    })
+    # identifiers
+    company_guess = raw.loc[raw["port"]=="Haifa","company"].dropna().unique()
+    company = company_guess[0] if len(company_guess) else "Haifa Port Company Ltd."
+    out.insert(0, "port", "Haifa")
+    out.insert(1, "company", company)
+    out.insert(2, "operator_or_owner", "Haifa-Legacy (HPC)")
+
+    # QA
+    b = cfg.SPLICE_PERIOD
+    qa_rows = []
+    if b in K_real_spliced.index:
+        pre = K_real_spliced.loc[b-1] if (b-1) in K_real_spliced.index else np.nan
+        atb = K_real_spliced.loc[b]
+        post_raw0 = K_real_raw.loc[b] if b in K_real_raw.index else np.nan
+        log_jump_spliced = float(np.log(atb) - np.log(pre)) if (pre>0 and atb>0) else np.nan
+        qa_rows.append({"check": "splice_log_jump", "period": str(b), "value": log_jump_spliced})
+        qa_rows.append({"check": "splice_scale_factor", "period": str(b), "value": float(atb / post_raw0) if (post_raw0>0) else np.nan})
+    qa = pd.DataFrame(qa_rows)
+
+    # Write K + QA
+    out.to_csv(cfg.OUT_MONTHLY, sep="\t", index=False)
+    qa.to_csv(cfg.OUT_QA, sep="\t", index=False)
+
+    # Mediator ln(K/L) (optional)
+    Lh = _read_L(cfg)
+    if Lh is not None and not Lh.empty:
+        # Now safe to require 1:1 (Lh month is unique after aggregation)
+        med = out.merge(Lh, on="month", how="left", validate="1:1")
+        for col in ["K_PPE_real_spliced","K_PIM_central","K_PPE_real_raw"]:
+            med[f"lnK_over_L__{col}"] = np.log(med[col] / med["hours"])
+        med.to_csv(cfg.OUT_MEDIATOR, sep="\t", index=False)
+
+    # META
+    meta = {
+        "source_raw": str(cfg.RAW_TSV if cfg.RAW_TSV.exists() else cfg.ALT_RAWS[0]),
+        "deflator": str(cfg.DEF_FL) if cfg.DEF_FL.exists() else "unit (1.0)",
+        "splice_period": str(cfg.SPLICE_PERIOD),
+        "parameters": {
+            "delta_low": cfg.DELTA_LOW,
+            "delta_central": cfg.DELTA_CTR,
+            "delta_high": cfg.DELTA_HIGH,
+            "r_real_for_services": cfg.R_REAL
+        },
+        "generated_files": {
+            "monthly": str(cfg.OUT_MONTHLY),
+            "qa": str(cfg.OUT_QA),
+            "meta": str(cfg.OUT_META),
+            "mediator": str(cfg.OUT_MEDIATOR)
+        },
+        "notes": [
+            "PPE-based K: annual net PPE -> monthly interpolation -> deflation -> level splice at 2023-01.",
+            "PIM K: annual Note-8 movements; if 2022 missing, imputed from Δ(cost) (2021→2022).",
+            "ln(K/L): joins Haifa-Legacy monthly hours (duplicates summed to unique month)."
+        ]
+    }
+    cfg.OUT_META.write_text(json.dumps(meta, indent=2, ensure_ascii=False))
+
+    return {
+        "monthly": str(cfg.OUT_MONTHLY),
+        "qa": str(cfg.OUT_QA),
+        "meta": str(cfg.OUT_META),
+        "mediator": str(cfg.OUT_MEDIATOR)
+    }
+
+
+def main():
+    outputs = build_all(Config)
+    print("Wrote:")
+    for k, p in outputs.items():
+        print(f" - {k}: {p}")
+
+
+if __name__ == "__main__":
+    pd.set_option("display.width", 160)
+    main()

@@ -1,0 +1,16 @@
+{
+  "name": "H191 (Python)",
+  "image": "mcr.microsoft.com/devcontainers/anaconda:0-3",
+  "features": {},
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-python.vscode-pylance",
+        "quarto.quarto"
+      ]
+    }
+  },
+  "postCreateCommand": "conda env update -n base -f /workspaces/$(basename $PWD)/env.yml && python -m ipykernel install --user --name h191 --display-name 'H191 (py311)' && pre-commit install"
+}

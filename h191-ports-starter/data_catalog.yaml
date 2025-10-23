@@ -1,0 +1,7 @@
+# Optional catalog (fill in as we discover sources)
+# Example:
+# cbs_industry_va:
+#   url: https://example.cbs.gov.il/va.csv
+#   dest_subdir: raw
+#   filename: cbs_va.csv
+#   notes: "Industry VA table (annual)"

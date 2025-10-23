@@ -1,0 +1,1102 @@
+level	port	terminal	year	month	month_index	quarter	freq	TEU	tons	w	w_source	Pi	L_hours	LP_mix	LP_id	tons_source
+port	Ashdod		2008	1	24097	Q1	M		789324.0							port_total
+port	Ashdod		2008	2	24098	Q1	M		967407.0							port_total
+port	Ashdod		2008	3	24099	Q1	M		1331155.0							port_total
+port	Ashdod		2008	4	24100	Q2	M		1169886.0							port_total
+port	Ashdod		2008	5	24101	Q2	M		1214213.0							port_total
+port	Ashdod		2008	6	24102	Q2	M		1225146.0							port_total
+port	Ashdod		2008	7	24103	Q3	M		1488748.0							port_total
+port	Ashdod		2008	8	24104	Q3	M		1447610.0							port_total
+port	Ashdod		2008	9	24105	Q3	M		1232531.0							port_total
+port	Ashdod		2008	10	24106	Q4	M		1254503.0							port_total
+port	Ashdod		2008	11	24107	Q4	M		1408462.0							port_total
+port	Ashdod		2008	12	24108	Q4	M		1386282.0							port_total
+port	Ashdod		2010	1	24121	Q1	M		1487386.0							port_total
+port	Ashdod		2010	2	24122	Q1	M		1507974.0							port_total
+port	Ashdod		2010	3	24123	Q1	M		1677514.0							port_total
+port	Ashdod		2010	4	24124	Q2	M		1634874.0							port_total
+port	Ashdod		2010	5	24125	Q2	M		1653914.0							port_total
+port	Ashdod		2010	6	24126	Q2	M		1640101.0							port_total
+port	Ashdod		2010	7	24127	Q3	M		1443589.0							port_total
+port	Ashdod		2010	8	24128	Q3	M		1589659.0							port_total
+port	Ashdod		2010	9	24129	Q3	M		1201755.0							port_total
+port	Ashdod		2010	10	24130	Q4	M		1581262.0							port_total
+port	Ashdod		2010	11	24131	Q4	M		1548865.0							port_total
+port	Ashdod		2010	12	24132	Q4	M		1568111.0							port_total
+port	Ashdod		2011	1	24133	Q1	M		1448705.2000000002							port_total
+port	Ashdod		2011	2	24134	Q1	M		1526429.2							port_total
+port	Ashdod		2011	3	24135	Q1	M		1992598.4000000001							port_total
+port	Ashdod		2011	4	24136	Q2	M		1612125.0999999999							port_total
+port	Ashdod		2011	5	24137	Q2	M		1639217.7999999998							port_total
+port	Ashdod		2011	6	24138	Q2	M		1607785.5999999999							port_total
+port	Ashdod		2011	7	24139	Q3	M		1577841.4							port_total
+port	Ashdod		2011	8	24140	Q3	M		1750676.8							port_total
+port	Ashdod		2011	9	24141	Q3	M		1464863.9000000001							port_total
+port	Ashdod		2011	10	24142	Q4	M		1552159.1							port_total
+port	Ashdod		2011	11	24143	Q4	M		1478645.5							port_total
+port	Ashdod		2011	12	24144	Q4	M		1564385.8							port_total
+port	Ashdod		2012	1	24145	Q1	M		1654667.0							port_total
+port	Ashdod		2012	2	24146	Q1	M		1303313.7							port_total
+port	Ashdod		2012	3	24147	Q1	M		1624453.2							port_total
+port	Ashdod		2012	4	24148	Q2	M		1735597.7							port_total
+port	Ashdod		2012	5	24149	Q2	M		1934621.9000000001							port_total
+port	Ashdod		2012	6	24150	Q2	M		1653757.5999999999							port_total
+port	Ashdod		2012	7	24151	Q3	M		1885340.9							port_total
+port	Ashdod		2012	8	24152	Q3	M		1937916.4000000001							port_total
+port	Ashdod		2012	9	24153	Q3	M		1377041.3							port_total
+port	Ashdod		2012	10	24154	Q4	M		1616420.7							port_total
+port	Ashdod		2012	11	24155	Q4	M		1380159.2							port_total
+port	Ashdod		2012	12	24156	Q4	M		1511124.8							port_total
+port	Ashdod		2013	1	24157	Q1	M		1484351.7999999998							port_total
+port	Ashdod		2013	2	24158	Q1	M		1608608.4000000001							port_total
+port	Ashdod		2013	3	24159	Q1	M		1513049.9							port_total
+port	Ashdod		2013	4	24160	Q2	M		1760986.7							port_total
+port	Ashdod		2013	5	24161	Q2	M		1807982.0999999999							port_total
+port	Ashdod		2013	6	24162	Q2	M		1711845.8							port_total
+port	Ashdod		2013	7	24163	Q3	M		1821023.7							port_total
+port	Ashdod		2013	8	24164	Q3	M		1579696.3							port_total
+port	Ashdod		2013	9	24165	Q3	M		1322822.7							port_total
+port	Ashdod		2013	10	24166	Q4	M		1568714.3							port_total
+port	Ashdod		2013	11	24167	Q4	M		1530275.5							port_total
+port	Ashdod		2013	12	24168	Q4	M		1504203.0999999999							port_total
+port	Ashdod		2014	1	24169	Q1	M		1920064.883							port_total
+port	Ashdod		2014	2	24170	Q1	M		1837724.096							port_total
+port	Ashdod		2014	3	24171	Q1	M		1921768.1609999998							port_total
+port	Ashdod		2014	4	24172	Q2	M		1454077.0480000002							port_total
+port	Ashdod		2014	5	24173	Q2	M		1832208.2210000001							port_total
+port	Ashdod		2014	6	24174	Q2	M		1814163.9009999998							port_total
+port	Ashdod		2014	7	24175	Q3	M		1669554.369							port_total
+port	Ashdod		2014	8	24176	Q3	M		1855631.2049999998							port_total
+port	Ashdod		2014	9	24177	Q3	M		1830413.568							port_total
+port	Ashdod		2014	10	24178	Q4	M		1705707.7010000001							port_total
+port	Ashdod		2014	11	24179	Q4	M		1659022.872							port_total
+port	Ashdod		2014	12	24180	Q4	M		2054402.6770000001							port_total
+port	Ashdod		2015	1	24181	Q1	M		1752376.553							port_total
+port	Ashdod		2015	2	24182	Q1	M		1546442.546							port_total
+port	Ashdod		2015	3	24183	Q1	M		2052655.4500000002							port_total
+port	Ashdod		2015	4	24184	Q2	M		1594157.53							port_total
+port	Ashdod		2015	5	24185	Q2	M		1938223.863							port_total
+port	Ashdod		2015	6	24186	Q2	M		2029901.66							port_total
+port	Ashdod		2015	7	24187	Q3	M		1931978.1330000001							port_total
+port	Ashdod		2015	8	24188	Q3	M		1944713.4430000002							port_total
+port	Ashdod		2015	9	24189	Q3	M		1667770.489							port_total
+port	Ashdod		2015	10	24190	Q4	M		1884551.243							port_total
+port	Ashdod		2015	11	24191	Q4	M		1913449.846							port_total
+port	Ashdod		2015	12	24192	Q4	M		2017264.0960000001							port_total
+port	Ashdod		2016	1	24193	Q1	M		1850074.737							port_total
+port	Ashdod		2016	2	24194	Q1	M		1876305.2929999998							port_total
+port	Ashdod		2016	3	24195	Q1	M		2190340.875							port_total
+port	Ashdod		2016	4	24196	Q2	M		1900095.204							port_total
+port	Ashdod		2016	5	24197	Q2	M		2343729.806							port_total
+port	Ashdod		2016	6	24198	Q2	M		2160076.032							port_total
+port	Ashdod		2016	7	24199	Q3	M		1969651.699							port_total
+port	Ashdod		2016	8	24200	Q3	M		2200069.23							port_total
+port	Ashdod		2016	9	24201	Q3	M		2060654.845							port_total
+port	Ashdod		2016	10	24202	Q4	M		1535362.4							port_total
+port	Ashdod		2016	11	24203	Q4	M		2083301.0							port_total
+port	Ashdod		2016	12	24204	Q4	M		1916756.8							port_total
+port	Ashdod		2017	1	24205	Q1	M		2046010.2999999998							port_total
+port	Ashdod		2017	2	24206	Q1	M		1859265.7999999998							port_total
+port	Ashdod		2017	3	24207	Q1	M		2044830.4000000001							port_total
+port	Ashdod		2017	4	24208	Q2	M		1860419.625							port_total
+port	Ashdod		2017	5	24209	Q2	M		2052046.3							port_total
+port	Ashdod		2017	6	24210	Q2	M		1974351.0							port_total
+port	Ashdod		2017	7	24211	Q3	M		2107158.249							port_total
+port	Ashdod		2017	8	24212	Q3	M		2045322.7110000001							port_total
+port	Ashdod		2017	9	24213	Q3	M		1813764.76							port_total
+port	Ashdod		2017	10	24214	Q4	M		1845309.195							port_total
+port	Ashdod		2017	11	24215	Q4	M		2051298.1469999999							port_total
+port	Ashdod		2017	12	24216	Q4	M		1884772.599							port_total
+port	Ashdod		2018	1	24217	Q1	M		2003195.046			41.0	2970.341463414634			port_total
+port	Ashdod		2018	2	24218	Q1	M		1853087.047			41.0	2655.731707317073			port_total
+port	Ashdod		2018	3	24219	Q1	M		1899461.314			41.0	2991.853658536585			port_total
+port	Ashdod		2018	4	24220	Q2	M		1925889.287			41.0	2857.1951219512193			port_total
+port	Ashdod		2018	5	24221	Q2	M		1982586.069			41.0	2669.2195121951218			port_total
+port	Ashdod		2018	6	24222	Q2	M		1971086.063			41.0	3224.80487804878			port_total
+port	Ashdod		2018	7	24223	Q3	M		2204184.377			41.0	3471.170731707317			port_total
+port	Ashdod		2018	8	24224	Q3	M		2189938.196			41.0	3332.7073170731705			port_total
+port	Ashdod		2018	9	24225	Q3	M		1524789.63			41.0	2340.3902439024387			port_total
+port	Ashdod		2018	10	24226	Q4	M		2025302.49			41.0	3344.097560975609			port_total
+port	Ashdod		2018	11	24227	Q4	M		2055397.323			41.0	3184.682926829268			port_total
+port	Ashdod		2018	12	24228	Q4	M		1840130.271			41.0	2987.3414634146343			port_total
+port	Ashdod		2019	1	24229	Q1	M		1957516.591			42.0	2928.1666666666665			port_total
+port	Ashdod		2019	2	24230	Q1	M		1858875.069			42.0	3209.523809523809			port_total
+port	Ashdod		2019	3	24231	Q1	M		1896987.78			42.0	2808.642857142857			port_total
+port	Ashdod		2019	4	24232	Q2	M		2000467.108			42.0	3202.9285714285716			port_total
+port	Ashdod		2019	5	24233	Q2	M		2054487.8950000003			42.0	3084.690476190476			port_total
+port	Ashdod		2019	6	24234	Q2	M		1958733.9710000001			42.0	3306.9761904761904			port_total
+port	Ashdod		2019	7	24235	Q3	M		2197893.836			42.0	3561.142857142857			port_total
+port	Ashdod		2019	8	24236	Q3	M		2181836.7509999997			42.0	3148.571428571429			port_total
+port	Ashdod		2019	9	24237	Q3	M		1892738.77			42.0	3041.3809523809523			port_total
+port	Ashdod		2019	10	24238	Q4	M		1792693.28			42.0	2693.8809523809527			port_total
+port	Ashdod		2019	11	24239	Q4	M		1982382.752			42.0	2835.904761904762			port_total
+port	Ashdod		2019	12	24240	Q4	M		1815306.523			42.0	2787.6190476190477			port_total
+port	Ashdod		2020	1	24241	Q1	M		1835242.0999999999			39.0	3037.358974358974			port_total
+port	Ashdod		2020	2	24242	Q1	M		1933438.078			39.0	3225.487179487179			port_total
+port	Ashdod		2020	3	24243	Q1	M		1856792.1169999999			39.0	3055.7692307692305			port_total
+port	Ashdod		2020	4	24244	Q2	M		1850266.5050000001			39.0	2925.6153846153843			port_total
+port	Ashdod		2020	5	24245	Q2	M		1997070.614			39.0	3113.4871794871797			port_total
+port	Ashdod		2020	6	24246	Q2	M		2044783.716			39.0	3499.5641025641025			port_total
+port	Ashdod		2020	7	24247	Q3	M		2081313.4279999998			39.0	3674.897435897436			port_total
+port	Ashdod		2020	8	24248	Q3	M		2099862.499			39.0	3726.999999999999			port_total
+port	Ashdod		2020	9	24249	Q3	M		1946341.7999999998			39.0	3489.358974358974			port_total
+port	Ashdod		2020	10	24250	Q4	M		2106747.689			39.0	3707.897435897435			port_total
+port	Ashdod		2020	11	24251	Q4	M		2089987.7999999998			39.0	3540.333333333333			port_total
+port	Ashdod		2020	12	24252	Q4	M		2131800.0379999997			39.0	3631.410256410256			port_total
+port	Ashdod		2021	1	24253	Q1	M		1978636.9			39.0	3420.435897435897			port_total
+port	Ashdod		2021	2	24254	Q1	M		1874818.0			39.0	3059.564102564102			port_total
+port	Ashdod		2021	3	24255	Q1	M		2055116.9			39.0	3508.487179487179			port_total
+port	Ashdod		2021	4	24256	Q2	M		1879225.8			39.0	3357.564102564102			port_total
+port	Ashdod		2021	5	24257	Q2	M		1939299.0			39.0	3588.358974358974			port_total
+port	Ashdod		2021	6	24258	Q2	M		2051865.6			39.0	3741.358974358974			port_total
+port	Ashdod		2021	7	24259	Q3	M		1922524.0			38.83407227118023	3964.2251509187904			port_total
+port	Ashdod		2021	8	24260	Q3	M		2207186.2			38.83407227118023	4021.484542051042			port_total
+port	Ashdod		2021	8	24260	Q3	M		9638.199999999999			38.83407227118023	4021.484542051042			port_total
+port	Ashdod		2021	8	24260	Q3	M		2207186.2			38.83407227118023	4021.484542051042			port_total
+port	Ashdod		2021	8	24260	Q3	M		9638.199999999999			38.83407227118023	4021.484542051042			port_total
+port	Ashdod		2021	9	24261	Q3	M		1624674.2			38.83407227118023	2774.9734086029875			port_total
+port	Ashdod		2021	9	24261	Q3	M		8030.799999999999			38.83407227118023	2774.9734086029875			port_total
+port	Ashdod		2021	9	24261	Q3	M		1624674.2			38.83407227118023	2774.9734086029875			port_total
+port	Ashdod		2021	9	24261	Q3	M		8030.799999999999			38.83407227118023	2774.9734086029875			port_total
+port	Ashdod		2021	10	24262	Q4	M		1923009.5			38.69373679251062	3542.8302994061446			port_total
+port	Ashdod		2021	10	24262	Q4	M		9805.0			38.69373679251062	3542.8302994061446			port_total
+port	Ashdod		2021	10	24262	Q4	M		1923009.5			38.69373679251062	3542.8302994061446			port_total
+port	Ashdod		2021	10	24262	Q4	M		9805.0			38.69373679251062	3542.8302994061446			port_total
+port	Ashdod		2021	11	24263	Q4	M		2204187.1999999997			38.69373679251062	3584.1758071999693			port_total
+port	Ashdod		2021	11	24263	Q4	M		8845.2			38.69373679251062	3584.1758071999693			port_total
+port	Ashdod		2021	11	24263	Q4	M		2204187.1999999997			38.69373679251062	3584.1758071999693			port_total
+port	Ashdod		2021	11	24263	Q4	M		8845.2			38.69373679251062	3584.1758071999693			port_total
+port	Ashdod		2021	12	24264	Q4	M		1927213.6			38.69373679251062	3584.1758071999693			port_total
+port	Ashdod		2021	12	24264	Q4	M		12496.4			38.69373679251062	3584.1758071999693			port_total
+port	Ashdod		2021	12	24264	Q4	M		1927213.6			38.69373679251062	3584.1758071999693			port_total
+port	Ashdod		2021	12	24264	Q4	M		12496.4			38.69373679251062	3584.1758071999693			port_total
+port	Ashdod		2022	1	24265	Q1	M		1721866.8			36.58416037289236	3489.4532745514475			port_total
+port	Ashdod		2022	1	24265	Q1	M		12510.18			36.58416037289236	3489.4532745514475			port_total
+port	Ashdod		2022	1	24265	Q1	M		1721866.8			36.58416037289236	3489.4532745514475			port_total
+port	Ashdod		2022	1	24265	Q1	M		12510.18			36.58416037289236	3489.4532745514475			port_total
+port	Ashdod		2022	2	24266	Q1	M		1906141.4			36.58416037289236	3489.4532745514475			port_total
+port	Ashdod		2022	2	24266	Q1	M		16968.18			36.58416037289236	3489.4532745514475			port_total
+port	Ashdod		2022	2	24266	Q1	M		1906141.4			36.58416037289236	3489.4532745514475			port_total
+port	Ashdod		2022	2	24266	Q1	M		16968.18			36.58416037289236	3489.4532745514475			port_total
+port	Ashdod		2022	3	24267	Q1	M		2069856.9000000001			36.58416037289236	3489.4532745514475			port_total
+port	Ashdod		2022	3	24267	Q1	M		14723.4			36.58416037289236	3489.4532745514475			port_total
+port	Ashdod		2022	3	24267	Q1	M		2069856.9000000001			36.58416037289236	3489.4532745514475			port_total
+port	Ashdod		2022	3	24267	Q1	M		14723.4			36.58416037289236	3489.4532745514475			port_total
+port	Ashdod		2022	4	24268	Q2	M		1853583.5999999999			36.47668509572083	3691.6461335085346			port_total
+port	Ashdod		2022	4	24268	Q2	M		23690.2			36.47668509572083	3691.6461335085346			port_total
+port	Ashdod		2022	4	24268	Q2	M		1853583.5999999999			36.47668509572083	3691.6461335085346			port_total
+port	Ashdod		2022	4	24268	Q2	M		23690.2			36.47668509572083	3691.6461335085346			port_total
+port	Ashdod		2022	5	24269	Q2	M		2106472.8			36.47668509572083	3691.6461335085346			port_total
+port	Ashdod		2022	5	24269	Q2	M		56551.6			36.47668509572083	3691.6461335085346			port_total
+port	Ashdod		2022	5	24269	Q2	M		2106472.8			36.47668509572083	3691.6461335085346			port_total
+port	Ashdod		2022	5	24269	Q2	M		56551.6			36.47668509572083	3691.6461335085346			port_total
+port	Ashdod		2022	6	24270	Q2	M		1862577.5			36.47668509572083	3691.6461335085346			port_total
+port	Ashdod		2022	6	24270	Q2	M		65319.074			36.47668509572083	3691.6461335085346			port_total
+port	Ashdod		2022	6	24270	Q2	M		1862577.5			36.47668509572083	3691.6461335085346			port_total
+port	Ashdod		2022	6	24270	Q2	M		65319.074			36.47668509572083	3691.6461335085346			port_total
+port	Ashdod		2022	7	24271	Q3	M		1773857.0999999999			35.8334417875724	4161.405855982202			port_total
+port	Ashdod		2022	7	24271	Q3	M		114924.8			35.8334417875724	4161.405855982202			port_total
+port	Ashdod		2022	7	24271	Q3	M		1773857.0999999999			35.8334417875724	4161.405855982202			port_total
+port	Ashdod		2022	7	24271	Q3	M		114924.8			35.8334417875724	4161.405855982202			port_total
+port	Ashdod		2022	8	24272	Q3	M		1982143.7000000002			35.8334417875724	4161.405855982202			port_total
+port	Ashdod		2022	8	24272	Q3	M		140682.368			35.8334417875724	4161.405855982202			port_total
+port	Ashdod		2022	8	24272	Q3	M		1982143.7000000002			35.8334417875724	4161.405855982202			port_total
+port	Ashdod		2022	8	24272	Q3	M		140682.368			35.8334417875724	4161.405855982202			port_total
+port	Ashdod		2022	9	24273	Q3	M		1612166.0			35.8334417875724	4161.405855982202			port_total
+port	Ashdod		2022	9	24273	Q3	M		200778.11			35.8334417875724	4161.405855982202			port_total
+port	Ashdod		2022	9	24273	Q3	M		1612166.0			35.8334417875724	4161.405855982202			port_total
+port	Ashdod		2022	9	24273	Q3	M		200778.11			35.8334417875724	4161.405855982202			port_total
+port	Ashdod		2022	10	24274	Q4	M		1478682.1			35.681630927830255	3687.151623556871			port_total
+port	Ashdod		2022	10	24274	Q4	M		130114.56559999999			35.681630927830255	3687.151623556871			port_total
+port	Ashdod		2022	10	24274	Q4	M		1478682.1			35.681630927830255	3687.151623556871			port_total
+port	Ashdod		2022	10	24274	Q4	M		130114.56559999999			35.681630927830255	3687.151623556871			port_total
+port	Ashdod		2022	11	24275	Q4	M		1613172.0			35.681630927830255	3687.151623556871			port_total
+port	Ashdod		2022	11	24275	Q4	M		241208.515			35.681630927830255	3687.151623556871			port_total
+port	Ashdod		2022	11	24275	Q4	M		1613172.0			35.681630927830255	3687.151623556871			port_total
+port	Ashdod		2022	11	24275	Q4	M		241208.515			35.681630927830255	3687.151623556871			port_total
+port	Ashdod		2022	12	24276	Q4	M		1754065.1			35.681630927830255	3687.151623556871			port_total
+port	Ashdod		2022	12	24276	Q4	M		187668.07			35.681630927830255	3687.151623556871			port_total
+port	Ashdod		2022	12	24276	Q4	M		1754065.1			35.681630927830255	3687.151623556871			port_total
+port	Ashdod		2022	12	24276	Q4	M		187668.07			35.681630927830255	3687.151623556871			port_total
+port	Ashdod		2023	1	24277	Q1	M		1812451.1			33.419202998598884	3935.211904761905			port_total
+port	Ashdod		2023	1	24277	Q1	M		258278.23665			33.419202998598884	3935.211904761905			port_total
+port	Ashdod		2023	1	24277	Q1	M		1812451.1			33.419202998598884	3935.211904761905			port_total
+port	Ashdod		2023	1	24277	Q1	M		258278.23665			33.419202998598884	3935.211904761905			port_total
+port	Ashdod		2023	2	24278	Q1	M		1508859.5			33.419202998598884	3935.211904761905			port_total
+port	Ashdod		2023	2	24278	Q1	M		283199.840693			33.419202998598884	3935.211904761905			port_total
+port	Ashdod		2023	2	24278	Q1	M		1508859.5			33.419202998598884	3935.211904761905			port_total
+port	Ashdod		2023	2	24278	Q1	M		283199.840693			33.419202998598884	3935.211904761905			port_total
+port	Ashdod		2023	3	24279	Q1	M		1710729.4			33.419202998598884	3935.211904761905			port_total
+port	Ashdod		2023	3	24279	Q1	M		278018.026541			33.419202998598884	3935.211904761905			port_total
+port	Ashdod		2023	3	24279	Q1	M		1710729.4			33.419202998598884	3935.211904761905			port_total
+port	Ashdod		2023	3	24279	Q1	M		278018.026541			33.419202998598884	3935.211904761905			port_total
+port	Ashdod		2023	4	24280	Q2	M		1328739.8			32.61122782003163	4559.86369047619			port_total
+port	Ashdod		2023	4	24280	Q2	M		391020.456997			32.61122782003163	4559.86369047619			port_total
+port	Ashdod		2023	4	24280	Q2	M		1328739.8			32.61122782003163	4559.86369047619			port_total
+port	Ashdod		2023	4	24280	Q2	M		391020.456997			32.61122782003163	4559.86369047619			port_total
+port	Ashdod		2023	5	24281	Q2	M		1703804.9000000001			32.61122782003163	4559.86369047619			port_total
+port	Ashdod		2023	5	24281	Q2	M		534109.988779999			32.61122782003163	4559.86369047619			port_total
+port	Ashdod		2023	5	24281	Q2	M		1703804.9000000001			32.61122782003163	4559.86369047619			port_total
+port	Ashdod		2023	5	24281	Q2	M		534109.988779999			32.61122782003163	4559.86369047619			port_total
+port	Ashdod		2023	6	24282	Q2	M		1825308.2			32.61122782003163	4559.86369047619			port_total
+port	Ashdod		2023	6	24282	Q2	M		515324.783153			32.61122782003163	4559.86369047619			port_total
+port	Ashdod		2023	6	24282	Q2	M		1825308.2			32.61122782003163	4559.86369047619			port_total
+port	Ashdod		2023	6	24282	Q2	M		515324.783153			32.61122782003163	4559.86369047619			port_total
+port	Ashdod		2023	7	24283	Q3	M		1688590.8			32.61980334212056	4518.6125			port_total
+port	Ashdod		2023	7	24283	Q3	M		354185.78699562			32.61980334212056	4518.6125			port_total
+port	Ashdod		2023	7	24283	Q3	M		1688590.8			32.61980334212056	4518.6125			port_total
+port	Ashdod		2023	7	24283	Q3	M		354185.78699562			32.61980334212056	4518.6125			port_total
+port	Ashdod		2023	8	24284	Q3	M		1693768.3			32.61980334212056	4518.6125			port_total
+port	Ashdod		2023	8	24284	Q3	M		448523.403704			32.61980334212056	4518.6125			port_total
+port	Ashdod		2023	8	24284	Q3	M		1693768.3			32.61980334212056	4518.6125			port_total
+port	Ashdod		2023	8	24284	Q3	M		448523.403704			32.61980334212056	4518.6125			port_total
+port	Ashdod		2023	9	24285	Q3	M		1601157.0			32.61980334212056	4518.6125			port_total
+port	Ashdod		2023	9	24285	Q3	M		484714.013363			32.61980334212056	4518.6125			port_total
+port	Ashdod		2023	9	24285	Q3	M		1601157.0			32.61980334212056	4518.6125			port_total
+port	Ashdod		2023	9	24285	Q3	M		484714.013363			32.61980334212056	4518.6125			port_total
+port	Ashdod		2023	10	24286	Q4	M		1353355.6			33.13146967502659	3326.8386904761905			port_total
+port	Ashdod		2023	10	24286	Q4	M		339460.035671			33.13146967502659	3326.8386904761905			port_total
+port	Ashdod		2023	10	24286	Q4	M		1353355.6			33.13146967502659	3326.8386904761905			port_total
+port	Ashdod		2023	10	24286	Q4	M		339460.035671			33.13146967502659	3326.8386904761905			port_total
+port	Ashdod		2023	11	24287	Q4	M		1405591.0			33.13146967502659	3326.8386904761905			port_total
+port	Ashdod		2023	11	24287	Q4	M		250565.69282			33.13146967502659	3326.8386904761905			port_total
+port	Ashdod		2023	11	24287	Q4	M		1405591.0			33.13146967502659	3326.8386904761905			port_total
+port	Ashdod		2023	11	24287	Q4	M		250565.69282			33.13146967502659	3326.8386904761905			port_total
+port	Ashdod		2023	12	24288	Q4	M		1368176.6			33.13146967502659	3326.8386904761905			port_total
+port	Ashdod		2023	12	24288	Q4	M		145001.31436999998			33.13146967502659	3326.8386904761905			port_total
+port	Ashdod		2023	12	24288	Q4	M		1368176.6			33.13146967502659	3326.8386904761905			port_total
+port	Ashdod		2023	12	24288	Q4	M		145001.31436999998			33.13146967502659	3326.8386904761905			port_total
+port	Ashdod		2024	1	24289	Q1	M		1322543.7999999998			44.12973117988291	3022.028976128847			port_total
+port	Ashdod		2024	1	24289	Q1	M		172316.843482			44.12973117988291	3022.028976128847			port_total
+port	Ashdod		2024	1	24289	Q1	M		1322543.7999999998			44.12973117988291	3022.028976128847			port_total
+port	Ashdod		2024	1	24289	Q1	M		172316.843482			44.12973117988291	3022.028976128847			port_total
+port	Ashdod		2024	2	24290	Q1	M		1688545.2			44.12973117988291	3022.028976128847			port_total
+port	Ashdod		2024	2	24290	Q1	M		301566.288237			44.12973117988291	3022.028976128847			port_total
+port	Ashdod		2024	2	24290	Q1	M		1688545.2			44.12973117988291	3022.028976128847			port_total
+port	Ashdod		2024	2	24290	Q1	M		301566.288237			44.12973117988291	3022.028976128847			port_total
+port	Ashdod		2024	3	24291	Q1	M		1676087.4			44.12973117988291	3022.028976128847			port_total
+port	Ashdod		2024	3	24291	Q1	M		404137.175067999			44.12973117988291	3022.028976128847			port_total
+port	Ashdod		2024	3	24291	Q1	M		1676087.4			44.12973117988291	3022.028976128847			port_total
+port	Ashdod		2024	3	24291	Q1	M		404137.175067999			44.12973117988291	3022.028976128847			port_total
+port	Ashdod		2024	4	24292	Q2	M		1550867.2999999998			47.51043720905274	3311.5474547023296			port_total
+port	Ashdod		2024	4	24292	Q2	M		447052.43409			47.51043720905274	3311.5474547023296			port_total
+port	Ashdod		2024	4	24292	Q2	M		1550867.2999999998			47.51043720905274	3311.5474547023296			port_total
+port	Ashdod		2024	4	24292	Q2	M		447052.43409			47.51043720905274	3311.5474547023296			port_total
+port	Ashdod		2024	5	24293	Q2	M		1674636.9			47.51043720905274	3311.5474547023296			port_total
+port	Ashdod		2024	5	24293	Q2	M		612965.040907001			47.51043720905274	3311.5474547023296			port_total
+port	Ashdod		2024	5	24293	Q2	M		1674636.9			47.51043720905274	3311.5474547023296			port_total
+port	Ashdod		2024	5	24293	Q2	M		612965.040907001			47.51043720905274	3311.5474547023296			port_total
+port	Ashdod		2024	6	24294	Q2	M		1530292.5			47.51043720905274	3311.5474547023296			port_total
+port	Ashdod		2024	6	24294	Q2	M		557492.796			47.51043720905274	3311.5474547023296			port_total
+port	Ashdod		2024	6	24294	Q2	M		1530292.5			47.51043720905274	3311.5474547023296			port_total
+port	Ashdod		2024	6	24294	Q2	M		557492.796			47.51043720905274	3311.5474547023296			port_total
+port	Ashdod		2024	7	24295	Q3	M		1701165.7			47.5060325377371	3910.50920333621			port_total
+port	Ashdod		2024	7	24295	Q3	M		618378.3988699999			47.5060325377371	3910.50920333621			port_total
+port	Ashdod		2024	7	24295	Q3	M		1701165.7			47.5060325377371	3910.50920333621			port_total
+port	Ashdod		2024	7	24295	Q3	M		618378.3988699999			47.5060325377371	3910.50920333621			port_total
+port	Ashdod		2024	8	24296	Q3	M		1743592.9000000001			47.5060325377371	3910.50920333621			port_total
+port	Ashdod		2024	8	24296	Q3	M		604186.649428001			47.5060325377371	3910.50920333621			port_total
+port	Ashdod		2024	8	24296	Q3	M		1743592.9000000001			47.5060325377371	3910.50920333621			port_total
+port	Ashdod		2024	8	24296	Q3	M		604186.649428001			47.5060325377371	3910.50920333621			port_total
+port	Ashdod		2024	9	24297	Q3	M		1776113.7000000002			47.5060325377371	3910.50920333621			port_total
+port	Ashdod		2024	9	24297	Q3	M		561265.311859			47.5060325377371	3910.50920333621			port_total
+port	Ashdod		2024	9	24297	Q3	M		1776113.7000000002			47.5060325377371	3910.50920333621			port_total
+port	Ashdod		2024	9	24297	Q3	M		561265.311859			47.5060325377371	3910.50920333621			port_total
+port	Ashdod		2024	10	24298	Q4	M		1431902.7000000002			46.80032311497125	3676.3746764452117			port_total
+port	Ashdod		2024	10	24298	Q4	M		486900.45149899996			46.80032311497125	3676.3746764452117			port_total
+port	Ashdod		2024	10	24298	Q4	M		1431902.7000000002			46.80032311497125	3676.3746764452117			port_total
+port	Ashdod		2024	10	24298	Q4	M		486900.45149899996			46.80032311497125	3676.3746764452117			port_total
+port	Ashdod		2024	11	24299	Q4	M		1590222.6			46.80032311497125	3676.3746764452117			port_total
+port	Ashdod		2024	11	24299	Q4	M		560874.9182579999			46.80032311497125	3676.3746764452117			port_total
+port	Ashdod		2024	11	24299	Q4	M		1590222.6			46.80032311497125	3676.3746764452117			port_total
+port	Ashdod		2024	11	24299	Q4	M		560874.9182579999			46.80032311497125	3676.3746764452117			port_total
+port	Ashdod		2024	12	24300	Q4	M		2013631.5999999999			46.80032311497125	3676.3746764452117			port_total
+port	Ashdod		2024	12	24300	Q4	M		524650.456194001			46.80032311497125	3676.3746764452117			port_total
+port	Ashdod		2024	12	24300	Q4	M		2013631.5999999999			46.80032311497125	3676.3746764452117			port_total
+port	Ashdod		2024	12	24300	Q4	M		524650.456194001			46.80032311497125	3676.3746764452117			port_total
+port	Ashdod		2025	1	24301	Q1	M		1870507.5							port_total
+port	Ashdod		2025	1	24301	Q1	M		445801.58999999997							port_total
+port	Ashdod		2025	1	24301	Q1	M		1870507.5							port_total
+port	Ashdod		2025	1	24301	Q1	M		445801.58999999997							port_total
+port	Ashdod		2025	2	24302	Q1	M		1485993.5							port_total
+port	Ashdod		2025	2	24302	Q1	M		500210.11199999996							port_total
+port	Ashdod		2025	2	24302	Q1	M		1485993.5							port_total
+port	Ashdod		2025	2	24302	Q1	M		500210.11199999996							port_total
+port	Ashdod		2025	3	24303	Q1	M		1896035.5							port_total
+port	Ashdod		2025	3	24303	Q1	M		525431.921							port_total
+port	Ashdod		2025	3	24303	Q1	M		1896035.5							port_total
+port	Ashdod		2025	3	24303	Q1	M		525431.921							port_total
+port	Ashdod		2025	4	24304	Q2	M		1655904.2							port_total
+port	Ashdod		2025	4	24304	Q2	M		598791.196							port_total
+port	Ashdod		2025	4	24304	Q2	M		1655904.2							port_total
+port	Ashdod		2025	4	24304	Q2	M		598791.196							port_total
+port	Ashdod		2025	5	24305	Q2	M		1806261.0							port_total
+port	Ashdod		2025	5	24305	Q2	M		542021.422							port_total
+port	Ashdod		2025	5	24305	Q2	M		1806261.0							port_total
+port	Ashdod		2025	5	24305	Q2	M		542021.422							port_total
+port	Ashdod		2025	6	24306	Q2	M		1755260.6							port_total
+port	Ashdod		2025	6	24306	Q2	M		501414.744							port_total
+port	Ashdod		2025	6	24306	Q2	M		1755260.6							port_total
+port	Ashdod		2025	6	24306	Q2	M		501414.744							port_total
+port	Ashdod		2025	7	24307	Q3	M		1764887.7							port_total
+port	Ashdod		2025	7	24307	Q3	M		914638.2710000001							port_total
+port	Ashdod		2025	7	24307	Q3	M		1764887.7							port_total
+port	Ashdod		2025	7	24307	Q3	M		914638.2710000001							port_total
+port	Ashdod		2025	8	24308	Q3	M		1714340.0							port_total
+port	Ashdod		2025	8	24308	Q3	M		604286.0090000001							port_total
+port	Ashdod		2025	8	24308	Q3	M		1714340.0							port_total
+port	Ashdod		2025	8	24308	Q3	M		604286.0090000001							port_total
+port	Eilat		2008	1	24097	Q1	M		85045.0							port_total
+port	Eilat		2008	2	24098	Q1	M		50495.0							port_total
+port	Eilat		2008	3	24099	Q1	M		163359.0							port_total
+port	Eilat		2008	4	24100	Q2	M		125269.0							port_total
+port	Eilat		2008	5	24101	Q2	M		117119.0							port_total
+port	Eilat		2008	6	24102	Q2	M		106398.0							port_total
+port	Eilat		2008	7	24103	Q3	M		31594.0							port_total
+port	Eilat		2008	8	24104	Q3	M		242151.0							port_total
+port	Eilat		2008	9	24105	Q3	M		199810.0							port_total
+port	Eilat		2008	10	24106	Q4	M		215732.0							port_total
+port	Eilat		2008	11	24107	Q4	M		238120.0							port_total
+port	Eilat		2008	12	24108	Q4	M		184141.0							port_total
+port	Eilat		2010	1	24121	Q1	M		194636.0							port_total
+port	Eilat		2010	2	24122	Q1	M		159852.0							port_total
+port	Eilat		2010	3	24123	Q1	M		237368.0							port_total
+port	Eilat		2010	4	24124	Q2	M		152889.0							port_total
+port	Eilat		2010	5	24125	Q2	M		256973.0							port_total
+port	Eilat		2010	6	24126	Q2	M		217668.0							port_total
+port	Eilat		2010	7	24127	Q3	M		114290.0							port_total
+port	Eilat		2010	8	24128	Q3	M		234050.0							port_total
+port	Eilat		2010	9	24129	Q3	M		196002.0							port_total
+port	Eilat		2010	10	24130	Q4	M		226903.0							port_total
+port	Eilat		2010	11	24131	Q4	M		227317.0							port_total
+port	Eilat		2010	12	24132	Q4	M		103060.0							port_total
+port	Eilat		2011	1	24133	Q1	M		119071.20000000001							port_total
+port	Eilat		2011	2	24134	Q1	M		105308.0							port_total
+port	Eilat		2011	3	24135	Q1	M		228592.0							port_total
+port	Eilat		2011	4	24136	Q2	M		141897.0							port_total
+port	Eilat		2011	5	24137	Q2	M		195915.0							port_total
+port	Eilat		2011	6	24138	Q2	M		194646.7							port_total
+port	Eilat		2011	7	24139	Q3	M		167986.0							port_total
+port	Eilat		2011	8	24140	Q3	M		282561.0							port_total
+port	Eilat		2011	9	24141	Q3	M		202390.0							port_total
+port	Eilat		2011	10	24142	Q4	M		172461.0							port_total
+port	Eilat		2011	11	24143	Q4	M		246870.0							port_total
+port	Eilat		2011	12	24144	Q4	M		222747.0							port_total
+port	Eilat		2012	1	24145	Q1	M		48303.0							port_total
+port	Eilat		2012	2	24146	Q1	M		130151.00000000001							port_total
+port	Eilat		2012	3	24147	Q1	M		178871.0							port_total
+port	Eilat		2012	4	24148	Q2	M		166563.0							port_total
+port	Eilat		2012	5	24149	Q2	M		155191.0							port_total
+port	Eilat		2012	6	24150	Q2	M		178825.0							port_total
+port	Eilat		2012	7	24151	Q3	M		156371.0							port_total
+port	Eilat		2012	8	24152	Q3	M		131236.0							port_total
+port	Eilat		2012	9	24153	Q3	M		132765.0							port_total
+port	Eilat		2012	10	24154	Q4	M		95003.0							port_total
+port	Eilat		2012	11	24155	Q4	M		64619.0							port_total
+port	Eilat		2012	12	24156	Q4	M		123881.0							port_total
+port	Eilat		2013	1	24157	Q1	M		106901.0							port_total
+port	Eilat		2013	2	24158	Q1	M		163977.6							port_total
+port	Eilat		2013	3	24159	Q1	M		193796.8							port_total
+port	Eilat		2013	4	24160	Q2	M		174816.092							port_total
+port	Eilat		2013	5	24161	Q2	M		245630.566							port_total
+port	Eilat		2013	6	24162	Q2	M		250755.78							port_total
+port	Eilat		2013	7	24163	Q3	M		142539.0							port_total
+port	Eilat		2013	8	24164	Q3	M		124268.08099999999							port_total
+port	Eilat		2013	9	24165	Q3	M		118396.766							port_total
+port	Eilat		2013	10	24166	Q4	M		181012.36000000002							port_total
+port	Eilat		2013	11	24167	Q4	M		153791.166							port_total
+port	Eilat		2013	12	24168	Q4	M		226042.491							port_total
+port	Eilat		2014	1	24169	Q1	M		190069.302							port_total
+port	Eilat		2014	2	24170	Q1	M		228899.29							port_total
+port	Eilat		2014	3	24171	Q1	M		231590.419							port_total
+port	Eilat		2014	4	24172	Q2	M		235295.668							port_total
+port	Eilat		2014	5	24173	Q2	M		227444.230769231							port_total
+port	Eilat		2014	6	24174	Q2	M		169967.75							port_total
+port	Eilat		2014	7	24175	Q3	M		101149.0							port_total
+port	Eilat		2014	8	24176	Q3	M		168511.608							port_total
+port	Eilat		2014	9	24177	Q3	M		243890.0							port_total
+port	Eilat		2014	10	24178	Q4	M		188406.0							port_total
+port	Eilat		2014	11	24179	Q4	M		133663.0							port_total
+port	Eilat		2014	12	24180	Q4	M		191332.69999999998							port_total
+port	Eilat		2015	1	24181	Q1	M		195553.0							port_total
+port	Eilat		2015	2	24182	Q1	M		181521.0							port_total
+port	Eilat		2015	3	24183	Q1	M		75133.26000000001							port_total
+port	Eilat		2015	4	24184	Q2	M		18689.55							port_total
+port	Eilat		2015	5	24185	Q2	M		20215.0							port_total
+port	Eilat		2015	6	24186	Q2	M		224006.0							port_total
+port	Eilat		2015	7	24187	Q3	M		314457.51999999996							port_total
+port	Eilat		2015	8	24188	Q3	M		246216.0							port_total
+port	Eilat		2015	9	24189	Q3	M		86743.42452369319							port_total
+port	Eilat		2015	10	24190	Q4	M		262663.0							port_total
+port	Eilat		2015	11	24191	Q4	M		225685.16631259499							port_total
+port	Eilat		2015	12	24192	Q4	M		252301.801							port_total
+port	Eilat		2016	1	24193	Q1	M		66575.0							port_total
+port	Eilat		2016	2	24194	Q1	M		31603.0							port_total
+port	Eilat		2016	3	24195	Q1	M		82012.0							port_total
+port	Eilat		2016	4	24196	Q2	M		134913.0							port_total
+port	Eilat		2016	5	24197	Q2	M		81146.261							port_total
+port	Eilat		2016	6	24198	Q2	M		109438.0							port_total
+port	Eilat		2016	7	24199	Q3	M		230526.0							port_total
+port	Eilat		2016	8	24200	Q3	M		300294.0							port_total
+port	Eilat		2016	9	24201	Q3	M		273664.0							port_total
+port	Eilat		2016	10	24202	Q4	M		153287.0							port_total
+port	Eilat		2016	11	24203	Q4	M		321732.0							port_total
+port	Eilat		2016	12	24204	Q4	M		324226.0							port_total
+port	Eilat		2017	1	24205	Q1	M		104170.075							port_total
+port	Eilat		2017	2	24206	Q1	M		82012.5							port_total
+port	Eilat		2017	3	24207	Q1	M		99278.0							port_total
+port	Eilat		2017	4	24208	Q2	M		124359.0							port_total
+port	Eilat		2017	5	24209	Q2	M		190489.0							port_total
+port	Eilat		2017	6	24210	Q2	M		220037.0							port_total
+port	Eilat		2017	7	24211	Q3	M		252576.0							port_total
+port	Eilat		2017	8	24212	Q3	M		243677.0							port_total
+port	Eilat		2017	9	24213	Q3	M		131835.5							port_total
+port	Eilat		2017	10	24214	Q4	M		227020.0							port_total
+port	Eilat		2017	11	24215	Q4	M		236296.0							port_total
+port	Eilat		2017	12	24216	Q4	M		259704.99999999997							port_total
+port	Eilat		2018	1	24217	Q1	M		235342.0							port_total
+port	Eilat		2018	2	24218	Q1	M		143998.0							port_total
+port	Eilat		2018	3	24219	Q1	M		92165.0							port_total
+port	Eilat		2018	4	24220	Q2	M		163796.0							port_total
+port	Eilat		2018	5	24221	Q2	M		130582.0							port_total
+port	Eilat		2018	6	24222	Q2	M		208187.0							port_total
+port	Eilat		2018	7	24223	Q3	M		98125.0							port_total
+port	Eilat		2018	8	24224	Q3	M		214126.0							port_total
+port	Eilat		2018	9	24225	Q3	M		181031.0							port_total
+port	Eilat		2018	10	24226	Q4	M		216039.0							port_total
+port	Eilat		2018	11	24227	Q4	M		277215.0							port_total
+port	Eilat		2018	12	24228	Q4	M		329459.0							port_total
+port	Eilat		2019	1	24229	Q1	M		153945.0							port_total
+port	Eilat		2019	2	24230	Q1	M		174590.0							port_total
+port	Eilat		2019	3	24231	Q1	M		195815.0							port_total
+port	Eilat		2019	4	24232	Q2	M		234732.0							port_total
+port	Eilat		2019	5	24233	Q2	M		131689.0							port_total
+port	Eilat		2019	6	24234	Q2	M		230609.0							port_total
+port	Eilat		2019	7	24235	Q3	M		142114.0							port_total
+port	Eilat		2019	8	24236	Q3	M		240841.0							port_total
+port	Eilat		2019	9	24237	Q3	M		78728.09999999999							port_total
+port	Eilat		2019	10	24238	Q4	M		79243.0							port_total
+port	Eilat		2019	11	24239	Q4	M		118829.0							port_total
+port	Eilat		2019	12	24240	Q4	M		163582.0							port_total
+port	Eilat		2020	1	24241	Q1	M		83739.0							port_total
+port	Eilat		2020	2	24242	Q1	M		97705.0							port_total
+port	Eilat		2020	3	24243	Q1	M		188808.0							port_total
+port	Eilat		2020	4	24244	Q2	M		198485.0							port_total
+port	Eilat		2020	5	24245	Q2	M		173082.0							port_total
+port	Eilat		2020	6	24246	Q2	M		254197.0							port_total
+port	Eilat		2020	7	24247	Q3	M		162743.0							port_total
+port	Eilat		2020	8	24248	Q3	M		226083.0							port_total
+port	Eilat		2020	9	24249	Q3	M		168687.0							port_total
+port	Eilat		2020	10	24250	Q4	M		218152.0							port_total
+port	Eilat		2020	11	24251	Q4	M		201229.0							port_total
+port	Eilat		2020	12	24252	Q4	M		251661.0							port_total
+port	Eilat		2021	1	24253	Q1	M		65233.99999999999							port_total
+port	Eilat		2021	2	24254	Q1	M		144990.0							port_total
+port	Eilat		2021	3	24255	Q1	M		193833.0							port_total
+port	Eilat		2021	4	24256	Q2	M		82998.0							port_total
+port	Eilat		2021	5	24257	Q2	M		213627.0							port_total
+port	Eilat		2021	6	24258	Q2	M		211342.0							port_total
+port	Eilat		2021	7	24259	Q3	M		97941.0							port_total
+port	Eilat		2021	8	24260	Q3	M		167596.0							port_total
+port	Eilat		2021	9	24261	Q3	M		146613.0							port_total
+port	Eilat		2021	10	24262	Q4	M		92530.0							port_total
+port	Eilat		2021	11	24263	Q4	M		134754.9							port_total
+port	Eilat		2021	12	24264	Q4	M		291595.0							port_total
+port	Eilat		2022	1	24265	Q1	M		102228.0							port_total
+port	Eilat		2022	2	24266	Q1	M		116677.0							port_total
+port	Eilat		2022	3	24267	Q1	M		234597.0							port_total
+port	Eilat		2022	4	24268	Q2	M		90607.0							port_total
+port	Eilat		2022	5	24269	Q2	M		185141.0							port_total
+port	Eilat		2022	6	24270	Q2	M		126343.40000000001							port_total
+port	Eilat		2022	7	24271	Q3	M		137996.0							port_total
+port	Eilat		2022	8	24272	Q3	M		164769.0							port_total
+port	Eilat		2022	9	24273	Q3	M		179088.0							port_total
+port	Eilat		2022	10	24274	Q4	M		75800.0							port_total
+port	Eilat		2022	11	24275	Q4	M		245167.0							port_total
+port	Eilat		2022	12	24276	Q4	M		196666.0							port_total
+port	Eilat		2023	1	24277	Q1	M		47403.0							port_total
+port	Eilat		2023	2	24278	Q1	M		134080.0							port_total
+port	Eilat		2023	3	24279	Q1	M		125788.0							port_total
+port	Eilat		2023	4	24280	Q2	M		153532.0							port_total
+port	Eilat		2023	5	24281	Q2	M		261819.00000000003							port_total
+port	Eilat		2023	6	24282	Q2	M		163351.0							port_total
+port	Eilat		2023	7	24283	Q3	M		197467.0							port_total
+port	Eilat		2023	8	24284	Q3	M		169099.0							port_total
+port	Eilat		2023	9	24285	Q3	M		172079.0							port_total
+port	Eilat		2023	10	24286	Q4	M		147994.0							port_total
+port	Eilat		2023	11	24287	Q4	M		128864.0							port_total
+port	Eilat		2023	12	24288	Q4	M		160862.0							port_total
+port	Eilat		2024	1	24289	Q1	M		102461.0							port_total
+port	Eilat		2024	2	24290	Q1	M		76167.0							port_total
+port	Eilat		2024	3	24291	Q1	M		47832.0							port_total
+port	Eilat		2024	4	24292	Q2	M		51300.0							port_total
+port	Eilat		2024	5	24293	Q2	M		27940.0							port_total
+port	Eilat		2024	6	24294	Q2	M		47905.0							port_total
+port	Eilat		2024	7	24295	Q3	M		0.0							port_total
+port	Eilat		2024	8	24296	Q3	M		47970.0							port_total
+port	Eilat		2024	9	24297	Q3	M		46728.0							port_total
+port	Eilat		2024	10	24298	Q4	M		64625.0							port_total
+port	Eilat		2024	11	24299	Q4	M		72050.0							port_total
+port	Eilat		2024	12	24300	Q4	M		83863.0							port_total
+port	Eilat		2025	1	24301	Q1	M		54373.0							port_total
+port	Eilat		2025	2	24302	Q1	M		22741.0							port_total
+port	Eilat		2025	3	24303	Q1	M		74360.0							port_total
+port	Eilat		2025	4	24304	Q2	M		7608.0							port_total
+port	Eilat		2025	5	24305	Q2	M		27428.0							port_total
+port	Eilat		2025	6	24306	Q2	M		53941.0							port_total
+port	Eilat		2025	7	24307	Q3	M		51555.0							port_total
+port	Eilat		2025	8	24308	Q3	M		28213.0							port_total
+port	Haifa		2008	1	24097	Q1	M		1575343.0							port_total
+port	Haifa		2008	2	24098	Q1	M		1212838.0							port_total
+port	Haifa		2008	3	24099	Q1	M		1785073.0							port_total
+port	Haifa		2008	4	24100	Q2	M		1769230.0							port_total
+port	Haifa		2008	5	24101	Q2	M		1813838.0							port_total
+port	Haifa		2008	6	24102	Q2	M		1688466.0							port_total
+port	Haifa		2008	7	24103	Q3	M		1763813.0							port_total
+port	Haifa		2008	8	24104	Q3	M		1733596.0							port_total
+port	Haifa		2008	9	24105	Q3	M		1469086.0							port_total
+port	Haifa		2008	10	24106	Q4	M		1692932.0							port_total
+port	Haifa		2008	11	24107	Q4	M		1596689.0							port_total
+port	Haifa		2008	12	24108	Q4	M		1711888.0							port_total
+port	Haifa		2010	1	24121	Q1	M		1674912.0							port_total
+port	Haifa		2010	2	24122	Q1	M		1615840.0							port_total
+port	Haifa		2010	3	24123	Q1	M		1954480.0							port_total
+port	Haifa		2010	4	24124	Q2	M		1877809.0							port_total
+port	Haifa		2010	5	24125	Q2	M		1899701.0							port_total
+port	Haifa		2010	6	24126	Q2	M		1939198.0							port_total
+port	Haifa		2010	7	24127	Q3	M		1990747.0							port_total
+port	Haifa		2010	8	24128	Q3	M		1936847.0							port_total
+port	Haifa		2010	9	24129	Q3	M		1774372.0							port_total
+port	Haifa		2010	10	24130	Q4	M		1767699.3							port_total
+port	Haifa		2010	11	24131	Q4	M		1721241.2							port_total
+port	Haifa		2010	12	24132	Q4	M		1684631.9000000001							port_total
+port	Haifa		2011	1	24133	Q1	M		1525170.5							port_total
+port	Haifa		2011	2	24134	Q1	M		1737424.8							port_total
+port	Haifa		2011	3	24135	Q1	M		2080636.8000000003							port_total
+port	Haifa		2011	4	24136	Q2	M		1911060.5							port_total
+port	Haifa		2011	5	24137	Q2	M		2014700.1							port_total
+port	Haifa		2011	6	24138	Q2	M		2141537.9							port_total
+port	Haifa		2011	7	24139	Q3	M		1949421.1							port_total
+port	Haifa		2011	8	24140	Q3	M		2038212.0							port_total
+port	Haifa		2011	9	24141	Q3	M		1656888.0999999999							port_total
+port	Haifa		2011	10	24142	Q4	M		2000285.3							port_total
+port	Haifa		2011	11	24143	Q4	M		1854520.2							port_total
+port	Haifa		2011	12	24144	Q4	M		1642383.5999999999							port_total
+port	Haifa		2012	1	24145	Q1	M		2052133.5							port_total
+port	Haifa		2012	2	24146	Q1	M		1620415.9							port_total
+port	Haifa		2012	3	24147	Q1	M		2278564.5							port_total
+port	Haifa		2012	4	24148	Q2	M		2064399.1999999997							port_total
+port	Haifa		2012	5	24149	Q2	M		2277282.7							port_total
+port	Haifa		2012	6	24150	Q2	M		1909408.7999999998							port_total
+port	Haifa		2012	7	24151	Q3	M		2015107.2999999998							port_total
+port	Haifa		2012	8	24152	Q3	M		2057228.5999999999							port_total
+port	Haifa		2012	9	24153	Q3	M		1826906.8							port_total
+port	Haifa		2012	10	24154	Q4	M		1994132.0							port_total
+port	Haifa		2012	11	24155	Q4	M		1874525.5							port_total
+port	Haifa		2012	12	24156	Q4	M		2018011.4000000001							port_total
+port	Haifa		2013	1	24157	Q1	M		2187571.4							port_total
+port	Haifa		2013	2	24158	Q1	M		2106727.9							port_total
+port	Haifa		2013	3	24159	Q1	M		2219355.0							port_total
+port	Haifa		2013	4	24160	Q2	M		2419272.5999999996							port_total
+port	Haifa		2013	5	24161	Q2	M		2464014.4							port_total
+port	Haifa		2013	6	24162	Q2	M		2137980.9							port_total
+port	Haifa		2013	7	24163	Q3	M		2271838.4							port_total
+port	Haifa		2013	8	24164	Q3	M		2358908.1999999997							port_total
+port	Haifa		2013	9	24165	Q3	M		1915923.0							port_total
+port	Haifa		2013	10	24166	Q4	M		1745361.9000000001							port_total
+port	Haifa		2013	11	24167	Q4	M		1842282.4000000001							port_total
+port	Haifa		2013	12	24168	Q4	M		2118601.6							port_total
+port	Haifa		2014	1	24169	Q1	M		2205212.9359999998							port_total
+port	Haifa		2014	2	24170	Q1	M		1830651.171							port_total
+port	Haifa		2014	3	24171	Q1	M		2272564.187							port_total
+port	Haifa		2014	4	24172	Q2	M		2433022.507							port_total
+port	Haifa		2014	5	24173	Q2	M		2412002.048							port_total
+port	Haifa		2014	6	24174	Q2	M		2387710.084							port_total
+port	Haifa		2014	7	24175	Q3	M		2627396.197							port_total
+port	Haifa		2014	8	24176	Q3	M		2257762.444							port_total
+port	Haifa		2014	9	24177	Q3	M		2234985.833							port_total
+port	Haifa		2014	10	24178	Q4	M		2264157.298							port_total
+port	Haifa		2014	11	24179	Q4	M		2147511.7169999997							port_total
+port	Haifa		2014	12	24180	Q4	M		2427180.4790000003							port_total
+port	Haifa		2015	1	24181	Q1	M		2221024.496							port_total
+port	Haifa		2015	2	24182	Q1	M		2162030.125							port_total
+port	Haifa		2015	3	24183	Q1	M		2712242.33							port_total
+port	Haifa		2015	4	24184	Q2	M		2200941.6							port_total
+port	Haifa		2015	5	24185	Q2	M		2276690.3000000003							port_total
+port	Haifa		2015	6	24186	Q2	M		2253838.4							port_total
+port	Haifa		2015	7	24187	Q3	M		2174053.5							port_total
+port	Haifa		2015	8	24188	Q3	M		2025907.0999999999							port_total
+port	Haifa		2015	9	24189	Q3	M		2190489.9							port_total
+port	Haifa		2015	10	24190	Q4	M		2365033.3000000003							port_total
+port	Haifa		2015	11	24191	Q4	M		2279477.5							port_total
+port	Haifa		2015	12	24192	Q4	M		2397698.6999999997							port_total
+port	Haifa		2016	1	24193	Q1	M		2313453.611							port_total
+port	Haifa		2016	2	24194	Q1	M		2313537.246							port_total
+port	Haifa		2016	3	24195	Q1	M		2523987.039							port_total
+port	Haifa		2016	4	24196	Q2	M		2223569.113							port_total
+port	Haifa		2016	5	24197	Q2	M		2663624.3800000004							port_total
+port	Haifa		2016	6	24198	Q2	M		2309499.557							port_total
+port	Haifa		2016	7	24199	Q3	M		2242265.803							port_total
+port	Haifa		2016	8	24200	Q3	M		2184177.0							port_total
+port	Haifa		2016	9	24201	Q3	M		2149087.2970000003							port_total
+port	Haifa		2016	10	24202	Q4	M		2329787.3							port_total
+port	Haifa		2016	11	24203	Q4	M		2305655.3359999997							port_total
+port	Haifa		2016	12	24204	Q4	M		2467926.2229999998							port_total
+port	Haifa		2017	1	24205	Q1	M		2463603.01							port_total
+port	Haifa		2017	2	24206	Q1	M		2122782.523							port_total
+port	Haifa		2017	3	24207	Q1	M		2557766.9099999997							port_total
+port	Haifa		2017	4	24208	Q2	M		2611991.3000000003							port_total
+port	Haifa		2017	5	24209	Q2	M		2493674.14							port_total
+port	Haifa		2017	6	24210	Q2	M		2588712.2720000003							port_total
+port	Haifa		2017	7	24211	Q3	M		2401290.3230000003							port_total
+port	Haifa		2017	8	24212	Q3	M		2515560.25							port_total
+port	Haifa		2017	9	24213	Q3	M		2263360.16							port_total
+port	Haifa		2017	10	24214	Q4	M		2445451.0500000003							port_total
+port	Haifa		2017	11	24215	Q4	M		2329070.546							port_total
+port	Haifa		2017	12	24216	Q4	M		2458541.686							port_total
+port	Haifa		2018	1	24217	Q1	M		2432458.313			54.0	2081.537037037037			port_total
+port	Haifa		2018	2	24218	Q1	M		2617941.7199999997			54.0	2085.8888888888887			port_total
+port	Haifa		2018	3	24219	Q1	M		2530486.29			54.0	2348.12962962963			port_total
+port	Haifa		2018	4	24220	Q2	M		2830216.76			54.0	2420.0555555555557			port_total
+port	Haifa		2018	5	24221	Q2	M		2650406.0009999997			54.0	2368.1296296296296			port_total
+port	Haifa		2018	6	24222	Q2	M		2475433.3310000002			54.0	2436.259259259259			port_total
+port	Haifa		2018	7	24223	Q3	M		2246470.07			54.0	2516.9259259259256			port_total
+port	Haifa		2018	8	24224	Q3	M		2254746.21			54.0	2364.8333333333335			port_total
+port	Haifa		2018	9	24225	Q3	M		2282924.06			54.0	2056.5185185185187			port_total
+port	Haifa		2018	10	24226	Q4	M		2442325.644			54.0	2250.962962962963			port_total
+port	Haifa		2018	11	24227	Q4	M		2369774.08			54.0	2204.1481481481483			port_total
+port	Haifa		2018	12	24228	Q4	M		2397849.86			54.0	2073.0925925925926			port_total
+port	Haifa		2019	1	24229	Q1	M		2470007.68			56.0	2196.6607142857147			port_total
+port	Haifa		2019	2	24230	Q1	M		2325576.96			56.0	1900.767857142857			port_total
+port	Haifa		2019	3	24231	Q1	M		2816989.27			56.0	2245.464285714286			port_total
+port	Haifa		2019	4	24232	Q2	M		2526060.42			56.0	2273.5			port_total
+port	Haifa		2019	5	24233	Q2	M		2426771.23			56.0	2109.482142857143			port_total
+port	Haifa		2019	6	24234	Q2	M		2482651.89			56.0	2000.4821428571431			port_total
+port	Haifa		2019	7	24235	Q3	M		2459658.8200000003			56.0	2076.1607142857147			port_total
+port	Haifa		2019	8	24236	Q3	M		2214668.53			56.0	1857.25			port_total
+port	Haifa		2019	9	24237	Q3	M		2192670.23			56.0	1829.4285714285716			port_total
+port	Haifa		2019	10	24238	Q4	M		2862368.2199999997			56.0	2064.714285714286			port_total
+port	Haifa		2019	11	24239	Q4	M		2138066.59			56.0	2012.732142857143			port_total
+port	Haifa		2019	12	24240	Q4	M		2168776.42			56.0	2061.125			port_total
+port	Haifa		2020	1	24241	Q1	M		2540187.838			52.0	2384.75			port_total
+port	Haifa		2020	2	24242	Q1	M		2352277.288			52.0	2318.2115384615386			port_total
+port	Haifa		2020	3	24243	Q1	M		2597155.57			52.0	2484.5			port_total
+port	Haifa		2020	4	24244	Q2	M		2293926.19			52.0	2550.7115384615386			port_total
+port	Haifa		2020	5	24245	Q2	M		2317983.4639999997			52.0	2326.7884615384614			port_total
+port	Haifa		2020	6	24246	Q2	M		1967243.95			52.0	2154.3846153846152			port_total
+port	Haifa		2020	7	24247	Q3	M		1982088.98			52.0	2395.326923076923			port_total
+port	Haifa		2020	8	24248	Q3	M		2307125.04			52.0	2188.019230769231			port_total
+port	Haifa		2020	9	24249	Q3	M		2066419.62			52.0	2179.653846153846			port_total
+port	Haifa		2020	10	24250	Q4	M		2266698.5			52.0	2557.1923076923076			port_total
+port	Haifa		2020	11	24251	Q4	M		2028255.7489999998			52.0	2411.673076923077			port_total
+port	Haifa		2020	12	24252	Q4	M		2078591.4899999998			52.0	2210.9807692307695			port_total
+port	Haifa		2021	1	24253	Q1	M		1498345.5			47.0	2704.936170212766			port_total
+port	Haifa		2021	2	24254	Q1	M		1407982.0999999999			47.0	2615.489361702128			port_total
+port	Haifa		2021	3	24255	Q1	M		1500388.3			47.0	2686.68085106383			port_total
+port	Haifa		2021	4	24256	Q2	M		1514385.0999999999			47.0	2593.2978723404253			port_total
+port	Haifa		2021	5	24257	Q2	M		1459727.5			47.0	2851.297872340426			port_total
+port	Haifa		2021	6	24258	Q2	M		1498401.0			47.0	2768.6595744680853			port_total
+port	Haifa		2021	7	24259	Q3	M		1380398.8			46.92175183270738	2580.950719154392			port_total
+port	Haifa		2021	7	24259	Q3	M		6369.799999999999			46.92175183270738	2580.950719154392			port_total
+port	Haifa		2021	7	24259	Q3	M		1380398.8			46.92175183270738	2580.950719154392			port_total
+port	Haifa		2021	7	24259	Q3	M		6369.799999999999			46.92175183270738	2580.950719154392			port_total
+port	Haifa		2021	8	24260	Q3	M		1403292.5			46.92175183270738	2730.8078815465105			port_total
+port	Haifa		2021	8	24260	Q3	M		7100.0			46.92175183270738	2730.8078815465105			port_total
+port	Haifa		2021	8	24260	Q3	M		1403292.5			46.92175183270738	2730.8078815465105			port_total
+port	Haifa		2021	8	24260	Q3	M		7100.0			46.92175183270738	2730.8078815465105			port_total
+port	Haifa		2021	9	24261	Q3	M		1291716.4			46.92175183270738	2290.201277614755			port_total
+port	Haifa		2021	9	24261	Q3	M		1730.3999999999999			46.92175183270738	2290.201277614755			port_total
+port	Haifa		2021	9	24261	Q3	M		1291716.4			46.92175183270738	2290.201277614755			port_total
+port	Haifa		2021	9	24261	Q3	M		1730.3999999999999			46.92175183270738	2290.201277614755			port_total
+port	Haifa		2021	10	24262	Q4	M		1492880.5			46.719154997434934	2606.1548363861057			port_total
+port	Haifa		2021	10	24262	Q4	M		18082.8			46.719154997434934	2606.1548363861057			port_total
+port	Haifa		2021	10	24262	Q4	M		1492880.5			46.719154997434934	2606.1548363861057			port_total
+port	Haifa		2021	10	24262	Q4	M		18082.8			46.719154997434934	2606.1548363861057			port_total
+port	Haifa		2021	11	24263	Q4	M		1367014.1			46.719154997434934	2757.3854722550113			port_total
+port	Haifa		2021	11	24263	Q4	M		19484.0			46.719154997434934	2757.3854722550113			port_total
+port	Haifa		2021	11	24263	Q4	M		1367014.1			46.719154997434934	2757.3854722550113			port_total
+port	Haifa		2021	11	24263	Q4	M		19484.0			46.719154997434934	2757.3854722550113			port_total
+port	Haifa		2021	12	24264	Q4	M		1424899.7			46.719154997434934	2757.3854722550113			port_total
+port	Haifa		2021	12	24264	Q4	M		22448.0			46.719154997434934	2757.3854722550113			port_total
+port	Haifa		2021	12	24264	Q4	M		1424899.7			46.719154997434934	2757.3854722550113			port_total
+port	Haifa		2021	12	24264	Q4	M		22448.0			46.719154997434934	2757.3854722550113			port_total
+port	Haifa		2022	1	24265	Q1	M		1461499.1			46.45301855693355	2969.3380083915863			port_total
+port	Haifa		2022	1	24265	Q1	M		70229.389			46.45301855693355	2969.3380083915863			port_total
+port	Haifa		2022	1	24265	Q1	M		1461499.1			46.45301855693355	2969.3380083915863			port_total
+port	Haifa		2022	1	24265	Q1	M		70229.389			46.45301855693355	2969.3380083915863			port_total
+port	Haifa		2022	2	24266	Q1	M		1459075.3			46.45301855693355	2969.3380083915863			port_total
+port	Haifa		2022	2	24266	Q1	M		80312.83			46.45301855693355	2969.3380083915863			port_total
+port	Haifa		2022	2	24266	Q1	M		1459075.3			46.45301855693355	2969.3380083915863			port_total
+port	Haifa		2022	2	24266	Q1	M		80312.83			46.45301855693355	2969.3380083915863			port_total
+port	Haifa		2022	3	24267	Q1	M		1592099.4000000001			46.45301855693355	2969.3380083915863			port_total
+port	Haifa		2022	3	24267	Q1	M		113695.78300000001			46.45301855693355	2969.3380083915863			port_total
+port	Haifa		2022	3	24267	Q1	M		1592099.4000000001			46.45301855693355	2969.3380083915863			port_total
+port	Haifa		2022	3	24267	Q1	M		113695.78300000001			46.45301855693355	2969.3380083915863			port_total
+port	Haifa		2022	4	24268	Q2	M		1425364.8			45.85310406002033	3304.4263011656717			port_total
+port	Haifa		2022	4	24268	Q2	M		183084.415			45.85310406002033	3304.4263011656717			port_total
+port	Haifa		2022	4	24268	Q2	M		1425364.8			45.85310406002033	3304.4263011656717			port_total
+port	Haifa		2022	4	24268	Q2	M		183084.415			45.85310406002033	3304.4263011656717			port_total
+port	Haifa		2022	5	24269	Q2	M		1323138.6			45.85310406002033	3304.4263011656717			port_total
+port	Haifa		2022	5	24269	Q2	M		294928.001			45.85310406002033	3304.4263011656717			port_total
+port	Haifa		2022	5	24269	Q2	M		1323138.6			45.85310406002033	3304.4263011656717			port_total
+port	Haifa		2022	5	24269	Q2	M		294928.001			45.85310406002033	3304.4263011656717			port_total
+port	Haifa		2022	6	24270	Q2	M		1286279.2			45.85310406002033	3304.4263011656717			port_total
+port	Haifa		2022	6	24270	Q2	M		259772.356			45.85310406002033	3304.4263011656717			port_total
+port	Haifa		2022	6	24270	Q2	M		1286279.2			45.85310406002033	3304.4263011656717			port_total
+port	Haifa		2022	6	24270	Q2	M		259772.356			45.85310406002033	3304.4263011656717			port_total
+port	Haifa		2022	7	24271	Q3	M		1109435.5			45.31447788157594	3154.5523981500437			port_total
+port	Haifa		2022	7	24271	Q3	M		356585.872			45.31447788157594	3154.5523981500437			port_total
+port	Haifa		2022	7	24271	Q3	M		1109435.5			45.31447788157594	3154.5523981500437			port_total
+port	Haifa		2022	7	24271	Q3	M		356585.872			45.31447788157594	3154.5523981500437			port_total
+port	Haifa		2022	8	24272	Q3	M		1157608.5			45.31447788157594	3154.5523981500437			port_total
+port	Haifa		2022	8	24272	Q3	M		389607.91000000003			45.31447788157594	3154.5523981500437			port_total
+port	Haifa		2022	8	24272	Q3	M		1157608.5			45.31447788157594	3154.5523981500437			port_total
+port	Haifa		2022	8	24272	Q3	M		389607.91000000003			45.31447788157594	3154.5523981500437			port_total
+port	Haifa		2022	9	24273	Q3	M		938265.2000000001			45.31447788157594	3154.5523981500437			port_total
+port	Haifa		2022	9	24273	Q3	M		441155.69399999996			45.31447788157594	3154.5523981500437			port_total
+port	Haifa		2022	9	24273	Q3	M		938265.2000000001			45.31447788157594	3154.5523981500437			port_total
+port	Haifa		2022	9	24273	Q3	M		441155.69399999996			45.31447788157594	3154.5523981500437			port_total
+port	Haifa		2022	10	24274	Q4	M		926270.6			44.33336464801177	3898.703183843473			port_total
+port	Haifa		2022	10	24274	Q4	M		465296.03500000003			44.33336464801177	3898.703183843473			port_total
+port	Haifa		2022	10	24274	Q4	M		926270.6			44.33336464801177	3898.703183843473			port_total
+port	Haifa		2022	10	24274	Q4	M		465296.03500000003			44.33336464801177	3898.703183843473			port_total
+port	Haifa		2022	11	24275	Q4	M		764510.0			44.33336464801177	3898.703183843473			port_total
+port	Haifa		2022	11	24275	Q4	M		604526.071			44.33336464801177	3898.703183843473			port_total
+port	Haifa		2022	11	24275	Q4	M		764510.0			44.33336464801177	3898.703183843473			port_total
+port	Haifa		2022	11	24275	Q4	M		604526.071			44.33336464801177	3898.703183843473			port_total
+port	Haifa		2022	12	24276	Q4	M		799310.5			44.33336464801177	3898.703183843473			port_total
+port	Haifa		2022	12	24276	Q4	M		645669.523			44.33336464801177	3898.703183843473			port_total
+port	Haifa		2022	12	24276	Q4	M		799310.5			44.33336464801177	3898.703183843473			port_total
+port	Haifa		2022	12	24276	Q4	M		645669.523			44.33336464801177	3898.703183843473			port_total
+port	Haifa		2023	1	24277	Q1	M		926311.6			46.73587252393234	2803.3808012093723			port_total
+port	Haifa		2023	1	24277	Q1	M		818797.296			46.73587252393234	2803.3808012093723			port_total
+port	Haifa		2023	1	24277	Q1	M		926311.6			46.73587252393234	2803.3808012093723			port_total
+port	Haifa		2023	1	24277	Q1	M		818797.296			46.73587252393234	2803.3808012093723			port_total
+port	Haifa		2023	2	24278	Q1	M		816343.7999999999			46.73587252393234	2803.3808012093723			port_total
+port	Haifa		2023	2	24278	Q1	M		699640.591			46.73587252393234	2803.3808012093723			port_total
+port	Haifa		2023	2	24278	Q1	M		816343.7999999999			46.73587252393234	2803.3808012093723			port_total
+port	Haifa		2023	2	24278	Q1	M		699640.591			46.73587252393234	2803.3808012093723			port_total
+port	Haifa		2023	3	24279	Q1	M		889686.5			46.73587252393234	2803.3808012093723			port_total
+port	Haifa		2023	3	24279	Q1	M		886173.937			46.73587252393234	2803.3808012093723			port_total
+port	Haifa		2023	3	24279	Q1	M		889686.5			46.73587252393234	2803.3808012093723			port_total
+port	Haifa		2023	3	24279	Q1	M		886173.937			46.73587252393234	2803.3808012093723			port_total
+port	Haifa		2023	4	24280	Q2	M		992506.2000000001			46.81084771519917	3018.370483749055			port_total
+port	Haifa		2023	4	24280	Q2	M		909574.218			46.81084771519917	3018.370483749055			port_total
+port	Haifa		2023	4	24280	Q2	M		992506.2000000001			46.81084771519917	3018.370483749055			port_total
+port	Haifa		2023	4	24280	Q2	M		909574.218			46.81084771519917	3018.370483749055			port_total
+port	Haifa		2023	5	24281	Q2	M		1172930.9000000001			46.81084771519917	3018.370483749055			port_total
+port	Haifa		2023	5	24281	Q2	M		827134.322			46.81084771519917	3018.370483749055			port_total
+port	Haifa		2023	5	24281	Q2	M		1172930.9000000001			46.81084771519917	3018.370483749055			port_total
+port	Haifa		2023	5	24281	Q2	M		827134.322			46.81084771519917	3018.370483749055			port_total
+port	Haifa		2023	6	24282	Q2	M		1065118.8			46.81084771519917	3018.370483749055			port_total
+port	Haifa		2023	6	24282	Q2	M		785214.804			46.81084771519917	3018.370483749055			port_total
+port	Haifa		2023	6	24282	Q2	M		1065118.8			46.81084771519917	3018.370483749055			port_total
+port	Haifa		2023	6	24282	Q2	M		785214.804			46.81084771519917	3018.370483749055			port_total
+port	Haifa		2023	7	24283	Q3	M		1067451.6			46.810472533668836	2789.650113378685			port_total
+port	Haifa		2023	7	24283	Q3	M		804568.525			46.810472533668836	2789.650113378685			port_total
+port	Haifa		2023	7	24283	Q3	M		1067451.6			46.810472533668836	2789.650113378685			port_total
+port	Haifa		2023	7	24283	Q3	M		804568.525			46.810472533668836	2789.650113378685			port_total
+port	Haifa		2023	8	24284	Q3	M		1090791.9			46.810472533668836	2789.650113378685			port_total
+port	Haifa		2023	8	24284	Q3	M		664269.049			46.810472533668836	2789.650113378685			port_total
+port	Haifa		2023	8	24284	Q3	M		1090791.9			46.810472533668836	2789.650113378685			port_total
+port	Haifa		2023	8	24284	Q3	M		664269.049			46.810472533668836	2789.650113378685			port_total
+port	Haifa		2023	9	24285	Q3	M		934315.9			46.810472533668836	2789.650113378685			port_total
+port	Haifa		2023	9	24285	Q3	M		770633.742			46.810472533668836	2789.650113378685			port_total
+port	Haifa		2023	9	24285	Q3	M		934315.9			46.810472533668836	2789.650113378685			port_total
+port	Haifa		2023	9	24285	Q3	M		770633.742			46.810472533668836	2789.650113378685			port_total
+port	Haifa		2023	10	24286	Q4	M		1164266.4			47.2848512969952	2389.492214663643			port_total
+port	Haifa		2023	10	24286	Q4	M		563273.7			47.2848512969952	2389.492214663643			port_total
+port	Haifa		2023	10	24286	Q4	M		1164266.4			47.2848512969952	2389.492214663643			port_total
+port	Haifa		2023	10	24286	Q4	M		563273.7			47.2848512969952	2389.492214663643			port_total
+port	Haifa		2023	11	24287	Q4	M		835100.9			47.2848512969952	2389.492214663643			port_total
+port	Haifa		2023	11	24287	Q4	M		466260.267			47.2848512969952	2389.492214663643			port_total
+port	Haifa		2023	11	24287	Q4	M		835100.9			47.2848512969952	2389.492214663643			port_total
+port	Haifa		2023	11	24287	Q4	M		466260.267			47.2848512969952	2389.492214663643			port_total
+port	Haifa		2023	12	24288	Q4	M		707471.4			47.2848512969952	2389.492214663643			port_total
+port	Haifa		2023	12	24288	Q4	M		393756.53599999996			47.2848512969952	2389.492214663643			port_total
+port	Haifa		2023	12	24288	Q4	M		707471.4			47.2848512969952	2389.492214663643			port_total
+port	Haifa		2023	12	24288	Q4	M		393756.53599999996			47.2848512969952	2389.492214663643			port_total
+port	Haifa		2024	1	24289	Q1	M		737276.8999999999			45.430852263585784	2406.315894308943			port_total
+port	Haifa		2024	1	24289	Q1	M		426689.837			45.430852263585784	2406.315894308943			port_total
+port	Haifa		2024	1	24289	Q1	M		737276.8999999999			45.430852263585784	2406.315894308943			port_total
+port	Haifa		2024	1	24289	Q1	M		426689.837			45.430852263585784	2406.315894308943			port_total
+port	Haifa		2024	2	24290	Q1	M		850760.9			45.430852263585784	2406.315894308943			port_total
+port	Haifa		2024	2	24290	Q1	M		497526.081			45.430852263585784	2406.315894308943			port_total
+port	Haifa		2024	2	24290	Q1	M		850760.9			45.430852263585784	2406.315894308943			port_total
+port	Haifa		2024	2	24290	Q1	M		497526.081			45.430852263585784	2406.315894308943			port_total
+port	Haifa		2024	3	24291	Q1	M		772148.2999999999			45.430852263585784	2406.315894308943			port_total
+port	Haifa		2024	3	24291	Q1	M		606017.034			45.430852263585784	2406.315894308943			port_total
+port	Haifa		2024	3	24291	Q1	M		772148.2999999999			45.430852263585784	2406.315894308943			port_total
+port	Haifa		2024	3	24291	Q1	M		606017.034			45.430852263585784	2406.315894308943			port_total
+port	Haifa		2024	4	24292	Q2	M		755350.9			45.25729074454385	2087.916666666667			port_total
+port	Haifa		2024	4	24292	Q2	M		361245.19			45.25729074454385	2087.916666666667			port_total
+port	Haifa		2024	4	24292	Q2	M		755350.9			45.25729074454385	2087.916666666667			port_total
+port	Haifa		2024	4	24292	Q2	M		361245.19			45.25729074454385	2087.916666666667			port_total
+port	Haifa		2024	5	24293	Q2	M		756037.2999999999			45.25729074454385	2087.916666666667			port_total
+port	Haifa		2024	5	24293	Q2	M		563072.027			45.25729074454385	2087.916666666667			port_total
+port	Haifa		2024	5	24293	Q2	M		756037.2999999999			45.25729074454385	2087.916666666667			port_total
+port	Haifa		2024	5	24293	Q2	M		563072.027			45.25729074454385	2087.916666666667			port_total
+port	Haifa		2024	6	24294	Q2	M		725921.5			45.25729074454385	2087.916666666667			port_total
+port	Haifa		2024	6	24294	Q2	M		347620.456			45.25729074454385	2087.916666666667			port_total
+port	Haifa		2024	6	24294	Q2	M		725921.5			45.25729074454385	2087.916666666667			port_total
+port	Haifa		2024	6	24294	Q2	M		347620.456			45.25729074454385	2087.916666666667			port_total
+port	Haifa		2024	7	24295	Q3	M		806388.5			44.8539802537106	2266.458008130081			port_total
+port	Haifa		2024	7	24295	Q3	M		352176.361			44.8539802537106	2266.458008130081			port_total
+port	Haifa		2024	7	24295	Q3	M		806388.5			44.8539802537106	2266.458008130081			port_total
+port	Haifa		2024	7	24295	Q3	M		352176.361			44.8539802537106	2266.458008130081			port_total
+port	Haifa		2024	8	24296	Q3	M		874817.0			44.8539802537106	2266.458008130081			port_total
+port	Haifa		2024	8	24296	Q3	M		408474.84500000003			44.8539802537106	2266.458008130081			port_total
+port	Haifa		2024	8	24296	Q3	M		874817.0			44.8539802537106	2266.458008130081			port_total
+port	Haifa		2024	8	24296	Q3	M		408474.84500000003			44.8539802537106	2266.458008130081			port_total
+port	Haifa		2024	9	24297	Q3	M		904670.1000000001			44.8539802537106	2266.458008130081			port_total
+port	Haifa		2024	9	24297	Q3	M		397717.295			44.8539802537106	2266.458008130081			port_total
+port	Haifa		2024	9	24297	Q3	M		904670.1000000001			44.8539802537106	2266.458008130081			port_total
+port	Haifa		2024	9	24297	Q3	M		397717.295			44.8539802537106	2266.458008130081			port_total
+port	Haifa		2024	10	24298	Q4	M		908064.5			45.18846085415116	2260.8255284552847			port_total
+port	Haifa		2024	10	24298	Q4	M		441459.022			45.18846085415116	2260.8255284552847			port_total
+port	Haifa		2024	10	24298	Q4	M		908064.5			45.18846085415116	2260.8255284552847			port_total
+port	Haifa		2024	10	24298	Q4	M		441459.022			45.18846085415116	2260.8255284552847			port_total
+port	Haifa		2024	11	24299	Q4	M		965822.5			45.18846085415116	2260.8255284552847			port_total
+port	Haifa		2024	11	24299	Q4	M		418159.261			45.18846085415116	2260.8255284552847			port_total
+port	Haifa		2024	11	24299	Q4	M		965822.5			45.18846085415116	2260.8255284552847			port_total
+port	Haifa		2024	11	24299	Q4	M		418159.261			45.18846085415116	2260.8255284552847			port_total
+port	Haifa		2024	12	24300	Q4	M		851457.7000000001			45.18846085415116	2260.8255284552847			port_total
+port	Haifa		2024	12	24300	Q4	M		429429.71499999997			45.18846085415116	2260.8255284552847			port_total
+port	Haifa		2024	12	24300	Q4	M		851457.7000000001			45.18846085415116	2260.8255284552847			port_total
+port	Haifa		2024	12	24300	Q4	M		429429.71499999997			45.18846085415116	2260.8255284552847			port_total
+port	Haifa		2025	1	24301	Q1	M		990758.5							port_total
+port	Haifa		2025	1	24301	Q1	M		491298.54699999996							port_total
+port	Haifa		2025	1	24301	Q1	M		990758.5							port_total
+port	Haifa		2025	1	24301	Q1	M		491298.54699999996							port_total
+port	Haifa		2025	2	24302	Q1	M		937137.5							port_total
+port	Haifa		2025	2	24302	Q1	M		537610.0719999999							port_total
+port	Haifa		2025	2	24302	Q1	M		937137.5							port_total
+port	Haifa		2025	2	24302	Q1	M		537610.0719999999							port_total
+port	Haifa		2025	3	24303	Q1	M		1068912.8							port_total
+port	Haifa		2025	3	24303	Q1	M		474635.74799999996							port_total
+port	Haifa		2025	3	24303	Q1	M		1068912.8							port_total
+port	Haifa		2025	3	24303	Q1	M		474635.74799999996							port_total
+port	Haifa		2025	4	24304	Q2	M		990340.1							port_total
+port	Haifa		2025	4	24304	Q2	M		463038.444							port_total
+port	Haifa		2025	4	24304	Q2	M		990340.1							port_total
+port	Haifa		2025	4	24304	Q2	M		463038.444							port_total
+port	Haifa		2025	5	24305	Q2	M		1057106.8							port_total
+port	Haifa		2025	5	24305	Q2	M		491606.543							port_total
+port	Haifa		2025	5	24305	Q2	M		1057106.8							port_total
+port	Haifa		2025	5	24305	Q2	M		491606.543							port_total
+port	Haifa		2025	6	24306	Q2	M		796281.3999999999							port_total
+port	Haifa		2025	6	24306	Q2	M		397801.964							port_total
+port	Haifa		2025	6	24306	Q2	M		796281.3999999999							port_total
+port	Haifa		2025	6	24306	Q2	M		397801.964							port_total
+port	Haifa		2025	7	24307	Q3	M		914763.2999999999							port_total
+port	Haifa		2025	7	24307	Q3	M		439677.45							port_total
+port	Haifa		2025	7	24307	Q3	M		914763.2999999999							port_total
+port	Haifa		2025	7	24307	Q3	M		439677.45							port_total
+port	Haifa		2025	8	24308	Q3	M		735513.5							port_total
+port	Haifa		2025	8	24308	Q3	M		518395.27599999995							port_total
+port	Haifa		2025	8	24308	Q3	M		735513.5							port_total
+port	Haifa		2025	8	24308	Q3	M		518395.27599999995							port_total
+terminal	Ashdod	Ashdod-HCT	2021	1	24253	Q1	M	0.0				31.200000000000003	0.0			
+terminal	Ashdod	Ashdod-HCT	2021	2	24254	Q1	M	0.0				31.200000000000003	0.0			
+terminal	Ashdod	Ashdod-HCT	2021	3	24255	Q1	M	0.0				31.200000000000003	0.0			
+terminal	Ashdod	Ashdod-HCT	2021	4	24256	Q2	M	0.0				31.200000000000003	0.0			
+terminal	Ashdod	Ashdod-HCT	2021	5	24257	Q2	M	0.0				31.200000000000003	0.0			
+terminal	Ashdod	Ashdod-HCT	2021	6	24258	Q2	M	0.0				31.200000000000003	0.0			
+terminal	Ashdod	Ashdod-HCT	2021	7	24259	Q3	M	3271.4760269618228				31.200000000000003	104.85500086416096			
+terminal	Ashdod	Ashdod-HCT	2021	8	24260	Q3	M	3318.7293282442124				31.200000000000003	106.36952975141706			
+terminal	Ashdod	Ashdod-HCT	2021	8	24260	Q3	M	3318.7293282442124				31.200000000000003	106.36952975141706			
+terminal	Ashdod	Ashdod-HCT	2021	9	24261	Q3	M	2290.046260262775				31.200000000000003	73.39891859816585			
+terminal	Ashdod	Ashdod-HCT	2021	9	24261	Q3	M	2290.046260262775				31.200000000000003	73.39891859816585			
+terminal	Ashdod	Ashdod-HCT	2021	10	24262	Q4	M	5372.456135937094				31.200000000000003	172.1941069210607			
+terminal	Ashdod	Ashdod-HCT	2021	10	24262	Q4	M	5372.456135937094				31.200000000000003	172.1941069210607			
+terminal	Ashdod	Ashdod-HCT	2021	11	24263	Q4	M	5435.153727486314				31.200000000000003	174.2036451117408			
+terminal	Ashdod	Ashdod-HCT	2021	11	24263	Q4	M	5435.153727486314				31.200000000000003	174.2036451117408			
+terminal	Ashdod	Ashdod-HCT	2021	12	24264	Q4	M	5435.153727486314				31.200000000000003	174.2036451117408			
+terminal	Ashdod	Ashdod-HCT	2021	12	24264	Q4	M	5435.153727486314				31.200000000000003	174.2036451117408			
+terminal	Ashdod	Ashdod-HCT	2022	1	24265	Q1	M	7154.750260056199				29.6	241.71453581270944			
+terminal	Ashdod	Ashdod-HCT	2022	1	24265	Q1	M	7154.750260056199				29.6	241.71453581270944			
+terminal	Ashdod	Ashdod-HCT	2022	2	24266	Q1	M	7154.750260056199				29.6	241.71453581270944			
+terminal	Ashdod	Ashdod-HCT	2022	2	24266	Q1	M	7154.750260056199				29.6	241.71453581270944			
+terminal	Ashdod	Ashdod-HCT	2022	3	24267	Q1	M	7154.750260056199				29.6	241.71453581270944			
+terminal	Ashdod	Ashdod-HCT	2022	3	24267	Q1	M	7154.750260056199				29.6	241.71453581270944			
+terminal	Ashdod	Ashdod-HCT	2022	4	24268	Q2	M	9491.658885185969				29.6	320.664151526553			
+terminal	Ashdod	Ashdod-HCT	2022	4	24268	Q2	M	9491.658885185969				29.6	320.664151526553			
+terminal	Ashdod	Ashdod-HCT	2022	5	24269	Q2	M	9491.658885185969				29.6	320.664151526553			
+terminal	Ashdod	Ashdod-HCT	2022	5	24269	Q2	M	9491.658885185969				29.6	320.664151526553			
+terminal	Ashdod	Ashdod-HCT	2022	6	24270	Q2	M	9491.658885185969				29.6	320.664151526553			
+terminal	Ashdod	Ashdod-HCT	2022	6	24270	Q2	M	9491.658885185969				29.6	320.664151526553			
+terminal	Ashdod	Ashdod-HCT	2022	7	24271	Q3	M	23352.280003739867				29.6	788.9283785047252			
+terminal	Ashdod	Ashdod-HCT	2022	7	24271	Q3	M	23352.280003739867				29.6	788.9283785047252			
+terminal	Ashdod	Ashdod-HCT	2022	9	24273	Q3	Q	93409.12001495947				29.6	3155.7135140189007			
+terminal	Ashdod	Ashdod-HCT	2022	12	24276	Q4	Q	139612.52834370034				29.6	4716.639471070957			
+terminal	Ashdod	Ashdod-HCT	2023	3	24279	Q1	Q	176650.0				28.0	6308.9285714285725			
+terminal	Ashdod	Ashdod-HCT	2023	6	24282	Q2	Q	301087.49999999994				28.0	10753.124999999998			
+terminal	Ashdod	Ashdod-HCT	2023	9	24285	Q3	Q	297376.5				28.0	10620.589285714286			
+terminal	Ashdod	Ashdod-HCT	2023	12	24288	Q4	Q	174822.49999999997				28.0	6243.660714285713			
+terminal	Ashdod	Ashdod-HCT	2024	3	24291	Q1	Q	204145.5				61.0	3346.647540983606			
+terminal	Ashdod	Ashdod-HCT	2024	6	24294	Q2	Q	369870.00000000006				61.0	6063.442622950819			
+terminal	Ashdod	Ashdod-HCT	2024	9	24297	Q3	Q	436529.0				61.0	7156.213114754098			
+terminal	Ashdod	Ashdod-HCT	2024	12	24300	Q4	Q	374789.5				61.0	6144.0901639344265			
+terminal	Ashdod	Ashdod-Legacy	2018	1	24217	Q1	M	121784.0				41.0	2970.341463414634			
+terminal	Ashdod	Ashdod-Legacy	2018	2	24218	Q1	M	108885.0				41.0	2655.731707317073			
+terminal	Ashdod	Ashdod-Legacy	2018	3	24219	Q1	M	122666.0				41.0	2991.853658536585			
+terminal	Ashdod	Ashdod-Legacy	2018	4	24220	Q2	M	117145.0				41.0	2857.1951219512193			
+terminal	Ashdod	Ashdod-Legacy	2018	5	24221	Q2	M	109438.0				41.0	2669.2195121951218			
+terminal	Ashdod	Ashdod-Legacy	2018	6	24222	Q2	M	132217.0				41.0	3224.80487804878			
+terminal	Ashdod	Ashdod-Legacy	2018	7	24223	Q3	M	142318.0				41.0	3471.170731707317			
+terminal	Ashdod	Ashdod-Legacy	2018	8	24224	Q3	M	136641.0				41.0	3332.7073170731705			
+terminal	Ashdod	Ashdod-Legacy	2018	9	24225	Q3	M	95956.0				41.0	2340.3902439024387			
+terminal	Ashdod	Ashdod-Legacy	2018	10	24226	Q4	M	137108.0				41.0	3344.097560975609			
+terminal	Ashdod	Ashdod-Legacy	2018	11	24227	Q4	M	130572.0				41.0	3184.682926829268			
+terminal	Ashdod	Ashdod-Legacy	2018	12	24228	Q4	M	122481.0				41.0	2987.3414634146343			
+terminal	Ashdod	Ashdod-Legacy	2019	1	24229	Q1	M	122983.0				42.0	2928.1666666666665			
+terminal	Ashdod	Ashdod-Legacy	2019	2	24230	Q1	M	134800.0				42.0	3209.523809523809			
+terminal	Ashdod	Ashdod-Legacy	2019	3	24231	Q1	M	117963.0				42.0	2808.642857142857			
+terminal	Ashdod	Ashdod-Legacy	2019	4	24232	Q2	M	134523.0				42.0	3202.9285714285716			
+terminal	Ashdod	Ashdod-Legacy	2019	5	24233	Q2	M	129557.0				42.0	3084.690476190476			
+terminal	Ashdod	Ashdod-Legacy	2019	6	24234	Q2	M	138893.0				42.0	3306.9761904761904			
+terminal	Ashdod	Ashdod-Legacy	2019	7	24235	Q3	M	149568.0				42.0	3561.142857142857			
+terminal	Ashdod	Ashdod-Legacy	2019	8	24236	Q3	M	132240.0				42.0	3148.571428571429			
+terminal	Ashdod	Ashdod-Legacy	2019	9	24237	Q3	M	127738.0				42.0	3041.3809523809523			
+terminal	Ashdod	Ashdod-Legacy	2019	10	24238	Q4	M	113143.0				42.0	2693.8809523809527			
+terminal	Ashdod	Ashdod-Legacy	2019	11	24239	Q4	M	119108.0				42.0	2835.904761904762			
+terminal	Ashdod	Ashdod-Legacy	2019	12	24240	Q4	M	117080.0				42.0	2787.6190476190477			
+terminal	Ashdod	Ashdod-Legacy	2020	1	24241	Q1	M	118457.0				39.0	3037.358974358974			
+terminal	Ashdod	Ashdod-Legacy	2020	2	24242	Q1	M	125794.0				39.0	3225.487179487179			
+terminal	Ashdod	Ashdod-Legacy	2020	3	24243	Q1	M	119175.0				39.0	3055.7692307692305			
+terminal	Ashdod	Ashdod-Legacy	2020	4	24244	Q2	M	114099.0				39.0	2925.6153846153843			
+terminal	Ashdod	Ashdod-Legacy	2020	5	24245	Q2	M	121426.0				39.0	3113.4871794871797			
+terminal	Ashdod	Ashdod-Legacy	2020	6	24246	Q2	M	136483.0				39.0	3499.5641025641025			
+terminal	Ashdod	Ashdod-Legacy	2020	7	24247	Q3	M	143321.0				39.0	3674.897435897436			
+terminal	Ashdod	Ashdod-Legacy	2020	8	24248	Q3	M	145353.0				39.0	3726.999999999999			
+terminal	Ashdod	Ashdod-Legacy	2020	9	24249	Q3	M	136085.0				39.0	3489.358974358974			
+terminal	Ashdod	Ashdod-Legacy	2020	10	24250	Q4	M	144608.0				39.0	3707.897435897435			
+terminal	Ashdod	Ashdod-Legacy	2020	11	24251	Q4	M	138073.0				39.0	3540.333333333333			
+terminal	Ashdod	Ashdod-Legacy	2020	12	24252	Q4	M	141625.0				39.0	3631.410256410256			
+terminal	Ashdod	Ashdod-Legacy	2021	1	24253	Q1	M	133397.0				39.0	3420.435897435897			
+terminal	Ashdod	Ashdod-Legacy	2021	2	24254	Q1	M	119323.0				39.0	3059.564102564102			
+terminal	Ashdod	Ashdod-Legacy	2021	3	24255	Q1	M	136831.0				39.0	3508.487179487179			
+terminal	Ashdod	Ashdod-Legacy	2021	4	24256	Q2	M	130945.0				39.0	3357.564102564102			
+terminal	Ashdod	Ashdod-Legacy	2021	5	24257	Q2	M	139946.0				39.0	3588.358974358974			
+terminal	Ashdod	Ashdod-Legacy	2021	6	24258	Q2	M	145913.0				39.0	3741.358974358974			
+terminal	Ashdod	Ashdod-Legacy	2021	7	24259	Q3	M	150515.43585213055				39.0	3859.3701500546294			
+terminal	Ashdod	Ashdod-Legacy	2021	8	24260	Q3	M	152689.4854796854				39.0	3915.115012299625			
+terminal	Ashdod	Ashdod-Legacy	2021	8	24260	Q3	M	152689.4854796854				39.0	3915.115012299625			
+terminal	Ashdod	Ashdod-Legacy	2021	9	24261	Q3	M	105361.40511018805				39.0	2701.5744900048217			
+terminal	Ashdod	Ashdod-Legacy	2021	9	24261	Q3	M	105361.40511018805				39.0	2701.5744900048217			
+terminal	Ashdod	Ashdod-Legacy	2021	10	24262	Q4	M	131454.81150691828				39.0	3370.636192485084			
+terminal	Ashdod	Ashdod-Legacy	2021	10	24262	Q4	M	131454.81150691828				39.0	3370.636192485084			
+terminal	Ashdod	Ashdod-Legacy	2021	11	24263	Q4	M	132988.9143214409				39.0	3409.9721620882287			
+terminal	Ashdod	Ashdod-Legacy	2021	11	24263	Q4	M	132988.9143214409				39.0	3409.9721620882287			
+terminal	Ashdod	Ashdod-Legacy	2021	12	24264	Q4	M	132988.9143214409				39.0	3409.9721620882287			
+terminal	Ashdod	Ashdod-Legacy	2021	12	24264	Q4	M	132988.9143214409				39.0	3409.9721620882287			
+terminal	Ashdod	Ashdod-Legacy	2022	1	24265	Q1	M	120166.33333333331				37.0	3247.738738738738			
+terminal	Ashdod	Ashdod-Legacy	2022	1	24265	Q1	M	120166.33333333331				37.0	3247.738738738738			
+terminal	Ashdod	Ashdod-Legacy	2022	2	24266	Q1	M	120166.33333333331				37.0	3247.738738738738			
+terminal	Ashdod	Ashdod-Legacy	2022	2	24266	Q1	M	120166.33333333331				37.0	3247.738738738738			
+terminal	Ashdod	Ashdod-Legacy	2022	3	24267	Q1	M	120166.33333333331				37.0	3247.738738738738			
+terminal	Ashdod	Ashdod-Legacy	2022	3	24267	Q1	M	120166.33333333331				37.0	3247.738738738738			
+terminal	Ashdod	Ashdod-Legacy	2022	4	24268	Q2	M	124726.33333333334				37.0	3370.981981981982			
+terminal	Ashdod	Ashdod-Legacy	2022	4	24268	Q2	M	124726.33333333334				37.0	3370.981981981982			
+terminal	Ashdod	Ashdod-Legacy	2022	5	24269	Q2	M	124726.33333333334				37.0	3370.981981981982			
+terminal	Ashdod	Ashdod-Legacy	2022	5	24269	Q2	M	124726.33333333334				37.0	3370.981981981982			
+terminal	Ashdod	Ashdod-Legacy	2022	6	24270	Q2	M	124726.33333333334				37.0	3370.981981981982			
+terminal	Ashdod	Ashdod-Legacy	2022	6	24270	Q2	M	124726.33333333334				37.0	3370.981981981982			
+terminal	Ashdod	Ashdod-Legacy	2022	7	24271	Q3	M	124781.66666666666				37.0	3372.477477477477			
+terminal	Ashdod	Ashdod-Legacy	2022	7	24271	Q3	M	124781.66666666666				37.0	3372.477477477477			
+terminal	Ashdod	Ashdod-Legacy	2022	9	24273	Q3	Q	499126.6666666666				37.0	13489.909909909908			
+terminal	Ashdod	Ashdod-Legacy	2022	12	24276	Q4	Q	644032.0000000001				37.0	17406.27027027027			
+terminal	Ashdod	Ashdod-Legacy	2023	3	24279	Q1	Q	605581.9999999999				35.0	17302.342857142856			
+terminal	Ashdod	Ashdod-Legacy	2023	6	24282	Q2	Q	581212.0				35.0	16606.057142857142			
+terminal	Ashdod	Ashdod-Legacy	2023	9	24285	Q3	Q	577188.0				35.0	16491.085714285713			
+terminal	Ashdod	Ashdod-Legacy	2023	12	24288	Q4	Q	480108.0				35.0	13717.37142857143			
+terminal	Ashdod	Ashdod-Legacy	2024	3	24291	Q1	Q	561850.0000000001				38.0	14785.526315789477			
+terminal	Ashdod	Ashdod-Legacy	2024	6	24294	Q2	Q	524622.0				38.0	13805.842105263157			
+terminal	Ashdod	Ashdod-Legacy	2024	9	24297	Q3	Q	619660.0000000001				38.0	16306.84210526316			
+terminal	Ashdod	Ashdod-Legacy	2024	12	24300	Q4	Q	604738.0000000001				38.0	15914.157894736843			
+terminal	Haifa	Haifa-Bayport	2021	1	24253	Q1	M	0.0				43.16326530612245	0.0			
+terminal	Haifa	Haifa-Bayport	2021	2	24254	Q1	M	0.0				43.16326530612245	0.0			
+terminal	Haifa	Haifa-Bayport	2021	3	24255	Q1	M	0.0				43.16326530612245	0.0			
+terminal	Haifa	Haifa-Bayport	2021	4	24256	Q2	M	0.0				43.16326530612245	0.0			
+terminal	Haifa	Haifa-Bayport	2021	5	24257	Q2	M	0.0				43.16326530612245	0.0			
+terminal	Haifa	Haifa-Bayport	2021	6	24258	Q2	M	0.0				43.16326530612245	0.0			
+terminal	Haifa	Haifa-Bayport	2021	7	24259	Q3	M	2469.4678753251096				43.16326530612245	57.212258104458805			
+terminal	Haifa	Haifa-Bayport	2021	7	24259	Q3	M	2469.4678753251096				43.16326530612245	57.212258104458805			
+terminal	Haifa	Haifa-Bayport	2021	8	24260	Q3	M	2612.8520343748264				43.16326530612245	60.53416060726548			
+terminal	Haifa	Haifa-Bayport	2021	8	24260	Q3	M	2612.8520343748264				43.16326530612245	60.53416060726548			
+terminal	Haifa	Haifa-Bayport	2021	9	24261	Q3	M	2191.27720693215				43.16326530612245	50.76717878944461			
+terminal	Haifa	Haifa-Bayport	2021	9	24261	Q3	M	2191.27720693215				43.16326530612245	50.76717878944461			
+terminal	Haifa	Haifa-Bayport	2021	12	24264	Q4	Q	55516.45289501391				43.16326530612245	1286.1967810192348			
+terminal	Haifa	Haifa-Bayport	2022	3	24267	Q1	Q	117882.84339773931				43.16326530612245	2731.0918801367507			
+terminal	Haifa	Haifa-Bayport	2022	6	24270	Q2	Q	271342.852281477				43.16326530612245	6286.430147419562			
+terminal	Haifa	Haifa-Bayport	2022	9	24273	Q3	Q	376117.14148008276				43.16326530612245	8713.825027198134			
+terminal	Haifa	Haifa-Bayport	2022	12	24276	Q4	Q	719675.1714892586				43.16326530612245	16673.32548603956			
+terminal	Haifa	Haifa-Bayport	2023	3	24279	Q1	Q	444171.99999999994				45.0	9870.488888888889			
+terminal	Haifa	Haifa-Bayport	2023	6	24282	Q2	Q	463133.5				45.0	10291.855555555556			
+terminal	Haifa	Haifa-Bayport	2023	9	24285	Q3	Q	428109.0				45.0	9513.533333333333			
+terminal	Haifa	Haifa-Bayport	2023	12	24288	Q4	Q	290168.0				45.0	6448.177777777779			
+terminal	Haifa	Haifa-Bayport	2024	3	24291	Q1	Q	319765.5				50.0	6395.3099999999995			
+terminal	Haifa	Haifa-Bayport	2024	6	24294	Q2	Q	265575.0				50.0	5311.5			
+terminal	Haifa	Haifa-Bayport	2024	9	24297	Q3	Q	258693.49999999997				50.0	5173.869999999999			
+terminal	Haifa	Haifa-Bayport	2024	12	24300	Q4	Q	282494.0				50.0	5649.880000000001			
+terminal	Haifa	Haifa-Legacy	2018	1	24217	Q1	M	112403.0				54.0	2081.537037037037			
+terminal	Haifa	Haifa-Legacy	2018	2	24218	Q1	M	112638.0				54.0	2085.8888888888887			
+terminal	Haifa	Haifa-Legacy	2018	3	24219	Q1	M	126799.0				54.0	2348.12962962963			
+terminal	Haifa	Haifa-Legacy	2018	4	24220	Q2	M	130683.0				54.0	2420.0555555555557			
+terminal	Haifa	Haifa-Legacy	2018	5	24221	Q2	M	127879.0				54.0	2368.1296296296296			
+terminal	Haifa	Haifa-Legacy	2018	6	24222	Q2	M	131558.0				54.0	2436.259259259259			
+terminal	Haifa	Haifa-Legacy	2018	7	24223	Q3	M	135914.0				54.0	2516.9259259259256			
+terminal	Haifa	Haifa-Legacy	2018	8	24224	Q3	M	127701.0				54.0	2364.8333333333335			
+terminal	Haifa	Haifa-Legacy	2018	9	24225	Q3	M	111052.0				54.0	2056.5185185185187			
+terminal	Haifa	Haifa-Legacy	2018	10	24226	Q4	M	121552.0				54.0	2250.962962962963			
+terminal	Haifa	Haifa-Legacy	2018	11	24227	Q4	M	119024.0				54.0	2204.1481481481483			
+terminal	Haifa	Haifa-Legacy	2018	12	24228	Q4	M	111947.0				54.0	2073.0925925925926			
+terminal	Haifa	Haifa-Legacy	2019	1	24229	Q1	M	123013.0				56.0	2196.6607142857147			
+terminal	Haifa	Haifa-Legacy	2019	2	24230	Q1	M	106443.0				56.0	1900.767857142857			
+terminal	Haifa	Haifa-Legacy	2019	3	24231	Q1	M	125746.0				56.0	2245.464285714286			
+terminal	Haifa	Haifa-Legacy	2019	4	24232	Q2	M	127316.0				56.0	2273.5			
+terminal	Haifa	Haifa-Legacy	2019	5	24233	Q2	M	118131.0				56.0	2109.482142857143			
+terminal	Haifa	Haifa-Legacy	2019	6	24234	Q2	M	112027.0				56.0	2000.4821428571431			
+terminal	Haifa	Haifa-Legacy	2019	7	24235	Q3	M	116265.0				56.0	2076.1607142857147			
+terminal	Haifa	Haifa-Legacy	2019	8	24236	Q3	M	104006.0				56.0	1857.25			
+terminal	Haifa	Haifa-Legacy	2019	9	24237	Q3	M	102448.0				56.0	1829.4285714285716			
+terminal	Haifa	Haifa-Legacy	2019	10	24238	Q4	M	115624.0				56.0	2064.714285714286			
+terminal	Haifa	Haifa-Legacy	2019	11	24239	Q4	M	112713.0				56.0	2012.732142857143			
+terminal	Haifa	Haifa-Legacy	2019	12	24240	Q4	M	115423.0				56.0	2061.125			
+terminal	Haifa	Haifa-Legacy	2020	1	24241	Q1	M	124007.0				52.0	2384.75			
+terminal	Haifa	Haifa-Legacy	2020	2	24242	Q1	M	120547.0				52.0	2318.2115384615386			
+terminal	Haifa	Haifa-Legacy	2020	3	24243	Q1	M	129194.0				52.0	2484.5			
+terminal	Haifa	Haifa-Legacy	2020	4	24244	Q2	M	132637.0				52.0	2550.7115384615386			
+terminal	Haifa	Haifa-Legacy	2020	5	24245	Q2	M	120993.0				52.0	2326.7884615384614			
+terminal	Haifa	Haifa-Legacy	2020	6	24246	Q2	M	112028.0				52.0	2154.3846153846152			
+terminal	Haifa	Haifa-Legacy	2020	7	24247	Q3	M	124557.0				52.0	2395.326923076923			
+terminal	Haifa	Haifa-Legacy	2020	8	24248	Q3	M	113777.0				52.0	2188.019230769231			
+terminal	Haifa	Haifa-Legacy	2020	9	24249	Q3	M	113342.0				52.0	2179.653846153846			
+terminal	Haifa	Haifa-Legacy	2020	10	24250	Q4	M	132974.0				52.0	2557.1923076923076			
+terminal	Haifa	Haifa-Legacy	2020	11	24251	Q4	M	125407.0				52.0	2411.673076923077			
+terminal	Haifa	Haifa-Legacy	2020	12	24252	Q4	M	114971.0				52.0	2210.9807692307695			
+terminal	Haifa	Haifa-Legacy	2021	1	24253	Q1	M	127132.0				47.0	2704.936170212766			
+terminal	Haifa	Haifa-Legacy	2021	2	24254	Q1	M	122928.0				47.0	2615.489361702128			
+terminal	Haifa	Haifa-Legacy	2021	3	24255	Q1	M	126274.0				47.0	2686.68085106383			
+terminal	Haifa	Haifa-Legacy	2021	4	24256	Q2	M	121885.0				47.0	2593.2978723404253			
+terminal	Haifa	Haifa-Legacy	2021	5	24257	Q2	M	134011.0				47.0	2851.297872340426			
+terminal	Haifa	Haifa-Legacy	2021	6	24258	Q2	M	130127.0				47.0	2768.6595744680853			
+terminal	Haifa	Haifa-Legacy	2021	7	24259	Q3	M	118615.70766934688				47.0	2523.7384610499334			
+terminal	Haifa	Haifa-Legacy	2021	7	24259	Q3	M	118615.70766934688				47.0	2523.7384610499334			
+terminal	Haifa	Haifa-Legacy	2021	8	24260	Q3	M	125502.86488414452				47.0	2670.273720939245			
+terminal	Haifa	Haifa-Legacy	2021	8	24260	Q3	M	125502.86488414452				47.0	2670.273720939245			
+terminal	Haifa	Haifa-Legacy	2021	9	24261	Q3	M	105253.4026447896				47.0	2239.4340988253102			
+terminal	Haifa	Haifa-Legacy	2021	9	24261	Q3	M	105253.4026447896				47.0	2239.4340988253102			
+terminal	Haifa	Haifa-Legacy	2021	12	24264	Q4	Q	702915.774696332				47.0	14955.654780773024			
+terminal	Haifa	Haifa-Legacy	2022	3	24267	Q1	Q	708992.0				47.0	15084.936170212768			
+terminal	Haifa	Haifa-Legacy	2022	6	24270	Q2	Q	636385.9999999999				47.0	13540.127659574468			
+terminal	Haifa	Haifa-Legacy	2022	9	24273	Q3	Q	480034.0				47.0	10213.48936170213			
+terminal	Haifa	Haifa-Legacy	2022	12	24276	Q4	Q	315788.0				47.0	6718.893617021278			
+terminal	Haifa	Haifa-Legacy	2023	3	24279	Q1	Q	340540.0				49.0	6949.7959183673465			
+terminal	Haifa	Haifa-Legacy	2023	6	24282	Q2	Q	383099.99999999994				49.0	7818.367346938776			
+terminal	Haifa	Haifa-Legacy	2023	9	24285	Q3	Q	353994.0				49.0	7224.367346938776			
+terminal	Haifa	Haifa-Legacy	2023	12	24288	Q4	Q	386549.99999999994				49.0	7888.775510204081			
+terminal	Haifa	Haifa-Legacy	2024	3	24291	Q1	Q	329746.0				41.0	8042.585365853658			
+terminal	Haifa	Haifa-Legacy	2024	6	24294	Q2	Q	295856.0				41.0	7216.0			
+terminal	Haifa	Haifa-Legacy	2024	9	24297	Q3	Q	345420.0				41.0	8424.878048780489			
+terminal	Haifa	Haifa-Legacy	2024	12	24300	Q4	Q	324518.0				41.0	7915.073170731708			

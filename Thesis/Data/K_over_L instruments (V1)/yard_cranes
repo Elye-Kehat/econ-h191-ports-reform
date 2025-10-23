@@ -1,0 +1,111 @@
+"""
+yard_cranes.py  — build a per-month yard-crane stock series from manually-entered commissioning dates.
+
+WHAT THIS FILE DOES
+- You enter per-unit yard crane commissioning months below (YYYY-MM), by port.
+- Script expands to a monthly panel (2018-01 .. 2024-12) with counts in service.
+- Outputs TSV: Data/K_over_L instruments/yard_cranes_monthly.tsv
+
+SCOPE: Yard cranes used for stacking/yard ops (ASC/ARMG/RMG/RTG). This file covers
+  • Haifa Bayport (SIPG): ARMG/RMG by ZPMC (automated yard)
+  • Ashdod Southport/Hadarom (TIL): ASC by Konecranes (semi-automated yard)
+
+SOURCES (for verification)
+- ZPMC first shipment to Haifa (4 STS + 2 RMG) & total yard count (22 RMG): 
+  Seatrade Maritime, 2020-05-08; “ZPMC ships first batch of cranes to Haifa port”.
+  https://www.seatrade-maritime.com/terminals/zpmc-ships-first-batch-of-cranes-to-haifa-port
+- SIPG Bayport facilities page listing “Automatic Rail Mounted Gantry – Total Quantity 22”:
+  https://www.sipgbayport.com/bayport-facilities
+- Haifa Bayport official operations start (go-live): 2021-09-01
+  INSS Insight (2021-09-12) and Jewish Policy Center (2022-01-04).
+  https://www.inss.org.il/publication/haifa-new-port/
+  https://www.jewishpolicycenter.org/2022/01/04/bayport-terminal-the-view-from-israel/
+- Ashdod Hadarom (HCT) automated yard with ASCs; delivery evidence:
+  BigLift/HeavyLiftNews: “last 6 ASCs delivered” 2021-11-09; total 30 ASCs, 5 shipments.
+  https://www.heavyliftnews.com/biglifts-happy-sky-bound-for-hadarom-container-terminal-ashdod-with-konecranes-automatic-stacking-cranes/
+  https://www.bigliftshipping.com/en/automatic-stacking-cranes-happy-sky-
+- ASC/RMGC rail works at HCT (yard infrastructure 2020–2021):
+  Steconfer project notes (2021-05-05).
+  https://www.steconfer.com/en/news/hadarom-container-terminal-port-of-ashdod
+
+ASSUMPTIONS (until we obtain per-batch acceptance certificates):
+- HAIFA: treat all 22 ARMG/RMG yard cranes as commissioned in 2021-09 (terminal go-live).
+- ASHDOD (HCT): treat all 30 ASCs as commissioned by 2021-11 (last shipment delivered).
+  Note: yard ramp-up continued into 2022; update if we find staged commissioning dates.
+
+You can refine these arrays later with per-unit dates as evidence improves.
+"""
+
+from dataclasses import dataclass
+from typing import List, Dict
+import pandas as pd
+from pathlib import Path
+
+# -----------------------------
+# MANUAL INPUTS (edit here)
+# -----------------------------
+
+START = "2018-01"
+END   = "2024-12"
+
+# Per-unit lists. If you later find batch dates, split units across months accordingly.
+
+# HAIFA — ZPMC ARMG/RMG (automated yard). Evidence: 22 units total (see sources above).
+# Commissioning proxy = 2021-09 (terminal go-live).
+HAIFA_UNITS: List[Dict] = [
+    {"unit_id": f"H-{i:02d}", "port": "Haifa", "type": "ARMG/RMG", "commission_yyyymm": "2021-09"}
+    for i in range(1, 22 + 1)
+]
+
+# ASHDOD (HCT) — Konecranes ASCs (semi-automated yard). Evidence: 30 units delivered (last 6 on 2021-11-09).
+# Commissioning proxy = 2021-11 (all hardware on site). Update if staged acceptance emerges.
+ASHDOD_UNITS: List[Dict] = [
+    {"unit_id": f"A-{i:02d}", "port": "Ashdod", "type": "ASC", "commission_yyyymm": "2021-11"}
+    for i in range(1, 30 + 1)
+]
+
+# -----------------------------
+# BUILD MONTHLY PANEL
+# -----------------------------
+
+def expand_to_monthly(units: List[Dict], start: str, end: str) -> pd.DataFrame:
+    idx = pd.period_range(start=start, end=end, freq="M")
+    rows = []
+    for rec in units:
+        go = pd.Period(rec["commission_yyyymm"], freq="M")
+        for t in idx:
+            in_service = 1 if t >= go else 0
+            rows.append({
+                "Month": t.strftime("%Y-%m"),
+                "Port": rec["port"],
+                "yard_crane_unit": rec["unit_id"],
+                "yard_crane_type": rec["type"],
+                "yard_crane_in_service": in_service
+            })
+    return pd.DataFrame(rows)
+
+def aggregate_monthly(df_units: pd.DataFrame) -> pd.DataFrame:
+    # Aggregate to stock in service per port-month
+    agg = (df_units
+           .groupby(["Month", "Port"], as_index=False)["yard_crane_in_service"]
+           .sum()
+           .rename(columns={"yard_crane_in_service": "yard_cranes_in_service"}))
+    return agg
+
+def main():
+    all_units = pd.DataFrame(HAIFA_UNITS + ASHDOD_UNITS)
+    monthly_units = expand_to_monthly(HAIFA_UNITS + ASHDOD_UNITS, START, END)
+    monthly_stock = aggregate_monthly(monthly_units)
+
+    outdir = Path("Data") / "K_over_L instruments"
+    outdir.mkdir(parents=True, exist_ok=True)
+
+    # Per-unit long form (optional keep for auditing)
+    monthly_units.to_csv(outdir / "yard_cranes_units_monthly.tsv", sep="\t", index=False)
+
+    # Aggregated stock per port-month (for join)
+    monthly_stock.to_csv(outdir / "yard_cranes_monthly.tsv", sep="\t", index=False)
+
+if __name__ == "__main__":
+    main()
+

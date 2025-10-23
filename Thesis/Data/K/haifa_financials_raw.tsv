@@ -1,0 +1,11 @@
+company	year	ppe_net_nominal_thousands_nis_eoy	depr_amort_total_thousands_nis_cf_adj	operating_depreciation_thousands_nis	admin_dep_amort_thousands_nis	purchase_of_fixed_assets_thousands_nis_cashflow	purchase_of_intangible_assets_thousands_nis_cashflow	proceeds_from_realization_fixed_assets_thousands_nis	source_pdf	revaluation_or_basis_flag	source_pages	units_note
+Haifa Port Company (legacy)	2017		67739.0	61517.0		25025.0	1763.0	1688.0	files_privatizations_hifa-port_eng_HaifaPort_FinancialStatment_HPC_2019-eng.pdf			
+Haifa Port Company (legacy)	2023	966652.0	68663.0	61693.0	6824.0	95529.0	1747.0		Haifa Port Company Ltd.pdf			
+Haifa Port Company (legacy)	2024	8.0	63266.0	55723.0	7402.0	61123.0	2337.0		Haifa Port Company Ltd.pdf			
+Haifa Port Company (legacy)	2019	1010641.0	67739.0	61517.0	6038.0	-25025.0	-1763.0	1688.0	files_privatizations_hifa-port_eng_HaifaPort_FinancialStatment_HPC_2019-eng.pdf		FS position pp. 8–9; CF pp. 12–13; Cost/OpDep p. 73; Admin D&A p. 74	Thousands of NIS, as reported
+Haifa Port Company (legacy)	2018	1163539.0	67012.0	63370.0	4013.0	-30896.0	-1113.0	1759.0	files_privatizations_hifa-port_eng_HaifaPort_FinancialStatment_HPC_2019-eng.pdf		FS position pp. 8–9; CF pp. 12–13; Cost/OpDep p. 73; Admin D&A p. 74	Thousands of NIS, as reported
+
+
+port	source_pdf	report_year	financial_year	ppe_net_kNIS	purchases_additions_kNIS	depreciation_expense_kNIS	acq_fixed_assets_net_cf_kNIS	revaluation_investment_real_estate_kNIS	page_hint	notes
+Haifa	Haifa Port Company Ltd.pdf	2024	2024	966652	57732	59949	-61123		Balance sheet; Note 8 Fixed assets; Statements of Cash Flows; Changes in Equity	PPE includes Right-of-Use assets; cash flow is net of disposals.
+Haifa	Haifa Port Company Ltd.pdf	2024	2023	1044165	95565	65927	-95529	289588.0	Balance sheet; Note 8 Fixed assets (2023 table); Cash Flows; Changes in Equity	Investment real estate revaluation reserve recognized in equity in 2023.

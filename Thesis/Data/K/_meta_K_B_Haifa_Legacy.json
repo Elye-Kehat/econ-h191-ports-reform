@@ -1,0 +1,22 @@
+{
+  "source_raw": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/K/TrackB_Haifa_HPC_exc.2022.tsv",
+  "deflator": "unit (1.0)",
+  "splice_period": "2023-01",
+  "parameters": {
+    "delta_low": 0.05,
+    "delta_central": 0.08,
+    "delta_high": 0.11,
+    "r_real_for_services": 0.03
+  },
+  "generated_files": {
+    "monthly": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/K/K_B_monthly_Haifa_Legacy.tsv",
+    "qa": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/K/qa_K_B_Haifa_Legacy.tsv",
+    "meta": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/K/_meta_K_B_Haifa_Legacy.json",
+    "mediator": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/K/Mediator_K_over_L.tsv"
+  },
+  "notes": [
+    "PPE-based K: annual net PPE -> monthly interpolation -> deflation -> level splice at 2023-01.",
+    "PIM K: annual Note-8 movements; if 2022 missing, imputed from Δ(cost) (2021→2022).",
+    "ln(K/L): joins Haifa-Legacy monthly hours (duplicates summed to unique month)."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "winsor_low": 0.01,
+  "winsor_high": 0.99,
+  "rows": {
+    "port_mix": 600,
+    "port_id": 600,
+    "terminal_month": 264,
+    "terminal_quarter": 88,
+    "lp_panel": 864
+  }
+}

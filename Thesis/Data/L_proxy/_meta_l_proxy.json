@@ -1,0 +1,27 @@
+{
+  "inputs": {
+    "teu_panel": {
+      "path": "Data/Output/teu_monthly_plus_quarterly_by_port.tsv",
+      "sha256": "db61df01edf177d3d5404fd733c9e1b68b1ecec609b7a322005e4d3381b1b414"
+    },
+    "kpi_table": {
+      "path": "Data/L_proxy/containers_kpis_annual_wide_filled.tsv",
+      "sha256": "6817188640595f62037915ba6007c998d69b21d6ee802a9d3e5e83a6da7526a5"
+    }
+  },
+  "options": {
+    "start_year": 2018,
+    "end_year": 2024,
+    "alloc": "equal",
+    "seasonal_ref": "2018-2021",
+    "abs_tol": 1000.0,
+    "rel_tol": 0.005,
+    "reconcile_strict": "yes"
+  },
+  "rows": {
+    "m_port_obs": 138,
+    "q_term": 124,
+    "m_port_full": 252,
+    "terminal_months": 216
+  }
+}

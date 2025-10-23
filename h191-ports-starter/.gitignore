@@ -1,0 +1,29 @@
+# Byte-compiled / cache
+__pycache__/
+*.pyc
+
+# Environments
+.env
+.venv/
+.envrc
+*.swp
+
+# VS Code
+.vscode/settings.json
+
+# Data & outputs (keep small files ok; large files via DVC/LFS)
+data/raw/**
+data/external/**
+data/interim/**
+data/processed/**
+
+# Allow registry to be tracked (uncomment next line to track it)
+!data/_registry.csv
+
+# DVC
+.dvc/
+.dvcignore
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,159 @@
+\documentclass[12pt]{article} 
+%\documentclass[AER]{AEA}
+\usepackage{geometry}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*}
+\geometry{letterpaper}
+\usepackage{float}
+\usepackage{fancyhdr}
+\restylefloat{table}
+%% Sets page size and margins
+\usepackage[margin=1in]{geometry}
+\usepackage{comment}
+\usepackage{caption}
+\usepackage{graphicx} \usepackage{amsmath,amssymb}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{natbib}
+\usepackage{setspace}
+\doublespacing
+\title{Your Paper title \thanks{Thanks to ... people who gave you advice, helped with data, etc.}}
+\author{Your Name \thanks{University of California, Berkeley, Email:  }}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent Write your abstract.
+\end{abstract}
+
+\pagenumbering{arabic}
+
+\newpage
+
+
+\section{Introduction}
+
+Your introduction goes here! Some examples of commonly used commands and features are listed below, to help you get started. If you have a question, please use the Overleaf menu in the top left of the editor to see various project settings, and to view our help documentation. 
+
+\subsection{How to add Comments}
+
+
+If you want to comment out a line of text, you can you the \% or the comment command for large chunks of text.
+
+%Test
+\begin{comment}
+Comment test
+\end{comment}
+
+
+\subsection{How to include Figures}
+
+First you have to upload the image file from your computer using the upload link in the project menu. Then use the includegraphics command to include it in your document. Use the figure environment and the caption command to add a number and a caption to your figure. See the code for Figure \ref{googletrendsfig} in this section for an example.
+
+\begin{figure}[H]
+\captionof{figure}{Trends in Google searches (normalized to 100) of “Netflix” and “Hulu” from July 2015 to December 2016}
+\label{googletrendsfig}
+{\centering \includegraphics[width=\linewidth]{Googletrendsfig.png} \par}
+\small{}\textit{Notes}: Numbers represent search interest relative to the highest point on the chart for the given region and time. (i.e. A value of 100 is the peak popularity for the term and a value of 50 means that the term is half as popular.) The spike at 1/1/2016 may be caused by the seasonal peaks in searches for Netflix in the winter months and/or "an improvement to [the] data collection system [which] was applied from 1/1/16".)
+\end{figure}
+
+\subsection{How to add Tables}
+
+Use the table and tabular commands for basic tables --- see Table~\ref{tab:widgets}, for example. 
+
+\begin{table}
+\centering
+\begin{tabular}{l|r}
+Item & Quantity \\\hline
+Widgets & 42 \\
+Gadgets & 13
+\end{tabular}
+\caption{\label{tab:widgets}An example table.}
+\end{table}
+
+\subsection{How to write Mathematics}
+
+\LaTeX{} is great at typesetting mathematics. Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
+\[S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
+      = \frac{1}{n}\sum_{i}^{n} X_i\]
+denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
+
+
+
+Another example:
+
+\begin{equation}
+\begin{aligned}
+ln (piracy search_{it}+1)=\beta_0+\beta_1 After_t+\beta_2 Treatment_i
+\\ +\beta_3 After_t *Treatment_i + \eta_i + \gamma_t + \epsilon_{it}\nonumber
+\end{aligned}
+\end{equation}
+
+
+
+\subsection{How to add Lists}
+
+You can make lists with automatic numbering \dots
+
+\begin{enumerate}
+\item Like this,
+\item and like this.
+\end{enumerate}
+
+\dots or bullet points \dots
+
+\begin{itemize}
+\item Like this,
+\item and like this.
+\end{itemize}
+
+\subsection{How to add Citations and a References List}
+
+You can copy bibtex citations from google, an then cite entries from it, like this: \cite{greenwade93}. Just remember to specify a bibliography style, as well as the filename of the \verb|.bib|.
+
+More examples:
+
+Recent work on directed innovation found that innovation has redirected since the mid-twentieth century toward crops with increasing exposure to extreme temperatures \citep{moscona2023does}.
+
+
+\citet{moscona2023does} find that innovation has redirected since the mid-twentieth century toward crops with increasing exposure to extreme temperatures.
+
+You can find a \href{https://www.overleaf.com/help/97-how-to-include-a-bibliography-using-bibtex}{video tutorial here} to learn more about BibTeX.
+
+
+
+\subsection{Miscellaneous}
+
+To add a footnote\footnote{Use the footnote command}
+
+\section{Prior Related Work}
+
+When ``quoting'' something use this for the forward quote: ``
+
+\section{Data}
+
+\subsection{Data Source 1}
+
+\subsection{Data Source 2}
+
+\section{Empirical Strategy}
+
+\section{Results}
+
+\section{Discussion}
+
+\bibliographystyle{chicago}
+\bibliography{sample}
+
+\medskip
+
+
+
+\appendix
+\counterwithin{figure}{section}
+\counterwithin{table}{section}
+\section{Appendix}
+
+Put all secondary regression tables, robustness checks here
+
+\end{document}

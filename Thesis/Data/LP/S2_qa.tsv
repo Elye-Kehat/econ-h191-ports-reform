@@ -1,0 +1,13 @@
+check	ok	note
+unique_port_month	True	port-month TEU unique
+unique_term_quarter	True	terminal-quarter TEU unique
+unique_port_quarter	True	port-quarter TEU unique
+additivity_port_q=sum(term_q)	True	max abs diff = 0.000
+monthly_zero_or_neg_teu	True	0 rows
+quarter_zero_or_neg_teu	True	0 term-quarters; 0 port-quarters
+port_month_years	True	Ashdod: [2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021]
+port_month_years	True	Haifa: [2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021]
+term_quarter_years	True	Ashdod-HCT: [2020, 2021, 2022, 2023, 2024]
+term_quarter_years	True	Ashdod-Legacy: [2020, 2021, 2022, 2023, 2024]
+term_quarter_years	True	Haifa-Bayport: [2020, 2021, 2022, 2023, 2024]
+term_quarter_years	True	Haifa-Legacy: [2020, 2021, 2022, 2023, 2024]

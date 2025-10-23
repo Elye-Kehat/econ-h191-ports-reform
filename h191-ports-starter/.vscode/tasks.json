@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Env: create (conda)",
+      "type": "shell",
+      "command": "conda env create -f env.yml",
+      "problemMatcher": []
+    },
+    {
+      "label": "Env: activate hint",
+      "type": "shell",
+      "command": "echo 'Run: conda activate h191 && pre-commit install && python -m ipykernel install --user --name h191 --display-name \"H191 (py311)\"'",
+      "problemMatcher": []
+    },
+    {
+      "label": "Data: smoke test download",
+      "type": "shell",
+      "command": "python scripts/download.py --name demo_dataset --url https://people.sc.fsu.edu/~jburkardt/data/csv/airtravel.csv --dest-subdir raw --filename airtravel.csv --dataset-id DEMO_001 --notes 'smoke test'",
+      "problemMatcher": []
+    },
+    {
+      "label": "ETL: build panel (stub)",
+      "type": "shell",
+      "command": "python scripts/build_panel.py",
+      "problemMatcher": []
+    }
+  ]
+}

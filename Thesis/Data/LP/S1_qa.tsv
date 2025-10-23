@@ -1,0 +1,8 @@
+check	ok	note
+unique_terminal_month	True	terminal-month tons unique
+unique_port_month	True	port-month tons unique
+unique_port_quarter	True	port-quarter tons unique
+tons_source_dist	True	{'port_row': 301, 'sum_terminals': 99}
+port_month_missing_tons	True	0 NA months
+port_years	True	Ashdod: [2008, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+port_years	True	Haifa: [2008, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]

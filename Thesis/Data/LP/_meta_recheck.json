@@ -1,0 +1,17 @@
+{
+  "inputs": {
+    "haifa": "Data/LP/LP_Haifa_port_month.tsv",
+    "ashdod": "Data/LP/LP_Ashdod_port_month.tsv"
+  },
+  "tolerances": {
+    "rel_tol": 0.02,
+    "abs_tol": 0.05
+  },
+  "summary": {
+    "max_abs_diff": 0.019438593270677984,
+    "max_rel_diff": 0.0004888788824890401,
+    "all_pass": true,
+    "rel_tol": 0.02,
+    "abs_tol": 0.05
+  }
+}

@@ -1,0 +1,36 @@
+# === Minimal LP plotter (port pre-reform, terminals post-reform) ===
+import os, pandas as pd, matplotlib.pyplot as plt
+
+P_PORT = "Data/LP/LP_port_month_mixadjusted.tsv"      # change if your file lives elsewhere
+P_TERM = "Data/LP/LP_terminal_month_mixadjusted.tsv"  # change if your file lives elsewhere
+CUTOVER = {"Haifa":"2021-09","Ashdod":"2022-07"}       # YYYY-MM
+
+def _read(p): 
+    if not os.path.exists(p): raise FileNotFoundError(p); 
+    return pd.read_csv(p, sep="\t")
+def _date(df): 
+    return pd.to_datetime(dict(year=df["year"], month=df["month"], day=1), errors="coerce")
+def _idx(s):
+    s = pd.to_numeric(s, errors="coerce"); a = s.dropna()
+    return s/a.iloc[0]*100 if not a.empty else s
+
+port = _read(P_PORT).rename(columns={"lp_port_month_mix":"LP_port"})
+term = _read(P_TERM).rename(columns={"lp_term_month_mixadjusted":"LP_term"})
+for df in (port, term):
+    df["date"] = _date(df)
+
+for p in ["Haifa","Ashdod"]:
+    cut = pd.to_datetime(CUTOVER[p]+"-01")
+    fig, ax = plt.subplots(figsize=(11,4))
+    # 1) pre-reform: port LP
+    g = port[(port["port"]==p) & (port["date"]<cut)][["date","LP_port"]].dropna()
+    if not g.empty: ax.plot(g["date"], _idx(g["LP_port"]), label="LP_port (pre-reform)")
+    # 2) post-reform: per-terminal LP
+    gg = term[(term["port"]==p) & (term["date"]>=cut)][["date","terminal","LP_term"]].dropna()
+    for t, sub in gg.groupby("terminal"):
+        ax.plot(sub["date"], _idx(sub["LP_term"]), label=f"{t} (post-reform)")
+    ax.set_ylim(0,300); ax.set_title(f"{p} — LP (index=100 at first obs)"); ax.set_xlabel("Date"); ax.set_ylabel("Index")
+    ax.legend(loc="upper left", ncol=2, fontsize=9); ax.grid(True, alpha=.2)
+    out = f"Output Data/visuals_simple/LP_split_{p}.png"; os.makedirs(os.path.dirname(out), exist_ok=True); plt.savefig(out, dpi=160, bbox_inches="tight")
+    print("[wrote]", out)
+plt.show()

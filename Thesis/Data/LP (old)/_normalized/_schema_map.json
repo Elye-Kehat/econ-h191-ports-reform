@@ -1,0 +1,25 @@
+{
+  "tons": {
+    "port_or_terminal": "PortOrTerminal",
+    "period": "Month-Year",
+    "tons_raw": "tons_k"
+  },
+  "teu": {
+    "port": "Port",
+    "period": "Period",
+    "freq": "Freq",
+    "year": "Year",
+    "monthindex": "MonthIndex",
+    "teu_value": "TEU"
+  },
+  "l_proxy": {
+    "port": "port",
+    "terminal": "terminal",
+    "year": "year",
+    "month": "month",
+    "l_hours_i_m": "L_hours_i_m",
+    "teu_i_m": "TEU_i_m",
+    "pi_teu_per_hour_i_y": "Pi_teu_per_hour_i_y",
+    "operating": ""
+  }
+}

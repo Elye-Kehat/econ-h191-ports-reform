@@ -1,0 +1,86 @@
+port	company	operator_or_owner	month	K_PPE_real_spliced	K_PPE_real_raw	K_PIM_central	K_PIM_low	K_PIM_high	K_services_central	splice_flag	imputed_2022
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2017-12-01							0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2018-01-01							0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2018-02-01							0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2018-03-01							0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2018-04-01							0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2018-05-01							0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2018-06-01							0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2018-07-01							0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2018-08-01							0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2018-09-01							0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2018-10-01							0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2018-11-01							0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2018-12-01	1163539.0	1163539.0					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2019-01-01	1150797.5	1150797.5					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2019-02-01	1138056.0	1138056.0					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2019-03-01	1125314.5	1125314.5					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2019-04-01	1112573.0	1112573.0					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2019-05-01	1099831.5	1099831.5					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2019-06-01	1087090.0	1087090.0					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2019-07-01	1074348.5	1074348.5					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2019-08-01	1061607.0	1061607.0					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2019-09-01	1048865.5	1048865.5					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2019-10-01	1036124.0	1036124.0					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2019-11-01	1023382.5	1023382.5					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2019-12-01	1010641.0	1010641.0					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2020-01-01	1008735.3333333334	1008735.3333333334					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2020-02-01	1006829.6666666666	1006829.6666666666					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2020-03-01	1004924.0	1004924.0					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2020-04-01	1003018.3333333334	1003018.3333333334					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2020-05-01	1001112.6666666666	1001112.6666666666					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2020-06-01	999207.0	999207.0					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2020-07-01	997301.3333333334	997301.3333333334					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2020-08-01	995395.6666666666	995395.6666666666					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2020-09-01	993490.0	993490.0					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2020-10-01	991584.3333333334	991584.3333333334					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2020-11-01	989678.6666666666	989678.6666666666					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2020-12-01	987773.0	987773.0					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2021-01-01	988654.0833333334	988654.0833333334					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2021-02-01	989535.1666666666	989535.1666666666					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2021-03-01	990416.25	990416.25					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2021-04-01	991297.3333333334	991297.3333333334					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2021-05-01	992178.4166666666	992178.4166666666					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2021-06-01	993059.5	993059.5					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2021-07-01	993940.5833333334	993940.5833333334					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2021-08-01	994821.6666666666	994821.6666666666					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2021-09-01	995702.75	995702.75					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2021-10-01	996583.8333333334	996583.8333333334					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2021-11-01	997464.9166666666	997464.9166666666					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2021-12-01	998346.0	998346.0					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2022-01-01	998989.1666666666	998989.1666666666					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2022-02-01	999632.3333333334	999632.3333333334					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2022-03-01	1000275.5	1000275.5					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2022-04-01	1000918.6666666666	1000918.6666666666					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2022-05-01	1001561.8333333334	1001561.8333333334					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2022-06-01	1002205.0	1002205.0					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2022-07-01	1002848.1666666666	1002848.1666666666					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2022-08-01	1003491.3333333334	1003491.3333333334					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2022-09-01	1004134.5	1004134.5					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2022-10-01	1004777.6666666666	1004777.6666666666					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2022-11-01	1005420.8333333334	1005420.8333333334					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2022-12-01	1006064.0	1006064.0					0	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2023-01-01	1006064.0	1009239.0833333334					1	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2023-02-01	1009229.094467127	1012414.1666666666					1	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2023-03-01	1012394.188934254	1015589.25					1	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2023-04-01	1015559.2834013811	1018764.3333333334					1	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2023-05-01	1018724.377868508	1021939.4166666666					1	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2023-06-01	1021889.472335635	1025114.5					1	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2023-07-01	1025054.5668027621	1028289.5833333334					1	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2023-08-01	1028219.661269889	1031464.6666666666					1	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2023-09-01	1031384.7557370161	1034639.75					1	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2023-10-01	1034549.8502041431	1037814.8333333334					1	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2023-11-01	1037714.94467127	1040989.9166666666					1	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2023-12-01	1040880.0391383971	1044165.0					1	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2024-01-01	1034440.9439065026	1037705.5833333334					1	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2024-02-01	1028001.8486746078	1031246.1666666666					1	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2024-03-01	1021562.7534427133	1024786.75					1	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2024-04-01	1015123.6582108188	1018327.3333333334					1	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2024-05-01	1008684.5629789241	1011867.9166666666					1	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2024-06-01	1002245.4677470295	1005408.5					1	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2024-07-01	995806.372515135	998949.0833333334					1	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2024-08-01	989367.2772832403	992489.6666666666					1	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2024-09-01	982928.1820513458	986030.25					1	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2024-10-01	976489.0868194512	979570.8333333334					1	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2024-11-01	970049.9915875565	973111.4166666666					1	1
+Haifa	Haifa Port Company Ltd.	Haifa-Legacy (HPC)	2024-12-01	963610.896355662	966652.0					1	1

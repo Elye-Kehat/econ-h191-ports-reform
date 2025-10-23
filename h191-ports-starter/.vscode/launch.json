@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run download.py (args)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/download.py",
+      "console": "integratedTerminal",
+      "args": [
+        "--name",
+        "demo_dataset",
+        "--url",
+        "https://people.sc.fsu.edu/~jburkardt/data/csv/airtravel.csv",
+        "--dest-subdir",
+        "raw",
+        "--filename",
+        "airtravel.csv",
+        "--dataset-id",
+        "DEMO_001"
+      ]
+    }
+  ]
+}

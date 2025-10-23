@@ -1,0 +1,7 @@
+check	ok	note
+unique_terminal_quarter	True	n=56
+mean_w_port_year≈1	True	max |mean(w)-1|=0
+NA_LP_quarters_Haifa-Legacy	True	0 NA of 14
+NA_LP_quarters_Haifa-Bayport	True	0 NA of 14
+NA_LP_quarters_Ashdod-Legacy	True	0 NA of 14
+NA_LP_quarters_Ashdod-HCT	True	0 NA of 14

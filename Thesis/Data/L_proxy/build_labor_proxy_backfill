@@ -1,0 +1,373 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Missing-only delta writer (inherits TEU_port_m from the existing port-month table)
+
+Outputs ONE TSV with only the rows missing from the master terminal table, focused on
+2021–2022 for Ashdod-HCT and Haifa-Bayport. Never overwrites unless --force yes.
+
+Usage (from repo root):
+  python Data/L_proxy/build_labor_proxy_backfill \
+    --master-lterm Data/L_proxy/labor_hours_monthly_terminal.tsv \
+    --kpi-wide    Data/L_proxy/containers_kpis_annual_wide_filled.tsv \
+    --teu-panel   Data/Output/teu_monthly_plus_quarterly_by_port.tsv \
+    --port-month  Data/L_proxy/labor_hours_monthly_port.tsv \
+    --out-file    Data/L_proxy/labor_hours_missing_delta.tsv
+"""
+from __future__ import annotations
+
+import argparse, json, hashlib
+from dataclasses import dataclass
+from datetime import datetime
+from pathlib import Path
+from typing import Dict, Optional, Tuple
+
+import numpy as np
+import pandas as pd
+
+# ---------------- Canonicalization ----------------
+DASHES = "\u2010\u2011\u2012\u2013\u2014\u2212"
+CANON = {
+    "Ashdod HCT": "Ashdod-HCT", "Ashdod–HCT": "Ashdod-HCT", "Ashdod-HCT": "Ashdod-HCT",
+    "Hadarom Container Terminal": "Ashdod-HCT", "Southport": "Ashdod-HCT",
+    "Haifa SIPG": "Haifa-Bayport", "Haifa-SIPG": "Haifa-Bayport",
+    "Haifa-Bayport": "Haifa-Bayport", "Bayport": "Haifa-Bayport",
+    "Ashdod": "Ashdod", "Haifa": "Haifa", "Eilat": "Eilat",
+}
+LEGACY_BY_PORT = {"Ashdod": "Ashdod-Legacy", "Haifa": "Haifa-Legacy", "Eilat": "Eilat"}
+PORT_OF_TERMINAL = {"Ashdod-HCT": "Ashdod", "Haifa-Bayport": "Haifa",
+                    "Ashdod-Legacy": "Ashdod", "Haifa-Legacy": "Haifa", "Eilat": "Eilat"}
+NEW_TERMINALS = {"Ashdod-HCT", "Haifa-Bayport"}
+Q_FROM_MONTH = {1:"Q1",2:"Q1",3:"Q1",4:"Q2",5:"Q2",6:"Q2",7:"Q3",8:"Q3",9:"Q3",10:"Q4",11:"Q4",12:"Q4"}
+
+def norm_dashes(x: str) -> str:
+    if x is None or (isinstance(x, float) and np.isnan(x)): return x
+    s = str(x)
+    for d in DASHES: s = s.replace(d, "-")
+    return s
+
+def canon(x: str) -> str:
+    return CANON.get(norm_dashes(x), norm_dashes(x))
+
+def normalize_quarter(q):
+    """Return quarter as 'Q1'..'Q4'. Accepts ints, floats, '1'..'4', 'Q1'.., etc."""
+    if pd.isna(q): return np.nan
+    s = str(q).strip().upper()
+    if s.startswith("Q"):
+        for ch in s:
+            if ch.isdigit() and int(ch) in (1,2,3,4):
+                return f"Q{int(ch)}"
+        return s
+    try:
+        d = int(float(s))
+        if d in (1,2,3,4): return f"Q{d}"
+    except Exception:
+        pass
+    return s
+
+# ---------------- IO helpers ----------------
+def read_table(path: Path) -> pd.DataFrame:
+    return pd.read_csv(path, sep=r"\t|,", engine="python")
+
+def write_tsv(df: pd.DataFrame, path: Path, force: bool) -> None:
+    if path.exists() and not force:
+        raise FileExistsError(f"{path} exists. Use --force yes or choose a new --out-file.")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    df.to_csv(path, sep="\t", index=False)
+
+def file_hash(path: Path) -> Optional[str]:
+    if not path.exists(): return None
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for chunk in iter(lambda: f.read(65536), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+# ---------------- CLI ----------------
+@dataclass
+class Opts:
+    master_lterm: Path
+    kpi_wide: Path
+    teu_panel: Path
+    port_month_file: Path
+    out_file: Path
+    years: Tuple[int,int]
+    force: bool
+
+# ---------------- Loaders ----------------
+def load_master(p: Path) -> pd.DataFrame:
+    df = read_table(p)
+    df.columns = [c.strip() for c in df.columns]
+    if "terminal" in df.columns: df["terminal"] = df["terminal"].map(canon)
+    if "port"     in df.columns: df["port"]     = df["port"].map(canon)
+    for c in ["year","month","TEU_port_m","share_i_p_q","TEU_i_m",
+              "Pi_teu_per_hour_i_y","H_annual_i_y","w_i_m_in_year","L_hours_i_m"]:
+        if c in df.columns: df[c] = pd.to_numeric(df[c], errors="coerce")
+    df["_key"] = list(zip(df.get("port"), df.get("terminal"), df.get("year"), df.get("month")))
+    return df
+
+def load_kpi(p: Path) -> pd.DataFrame:
+    kpi = read_table(p)
+    kpi.columns = [c.strip().lower() for c in kpi.columns]
+    if "teu_per_work_hour" not in kpi.columns:
+        for alt in ["teu_per_hour","teu_per_workhour","pi_teu_per_hour","teu_per_work_hr","teu_per_work-hr"]:
+            if alt in kpi.columns: kpi = kpi.rename(columns={alt:"teu_per_work_hour"}); break
+    for col in ["port","terminal"]:
+        if col in kpi.columns: kpi[col] = kpi[col].map(canon)
+    kpi["year"] = pd.to_numeric(kpi["year"], errors="coerce")
+    kpi["teu_per_work_hour"] = pd.to_numeric(kpi["teu_per_work_hour"], errors="coerce")
+    # Ensure legacy terminals are labeled as legacy terminals
+    mask_leg = kpi["port"].isin(["Ashdod","Haifa"]) & (~kpi["terminal"].isin(list(NEW_TERMINALS)))
+    kpi.loc[mask_leg, "terminal"] = kpi.loc[mask_leg, "port"].map(LEGACY_BY_PORT)
+    return kpi[["port","terminal","year","teu_per_work_hour"]].drop_duplicates()
+
+def load_teu(p: Path) -> pd.DataFrame:
+    df = read_table(p)
+    df.columns = [c.strip() for c in df.columns]
+    if "TEU" in df.columns:
+        df["TEU_val"] = pd.to_numeric(df["TEU"], errors="coerce")
+    elif "TEU_thousands" in df.columns:
+        df["TEU_val"] = pd.to_numeric(df["TEU_thousands"], errors="coerce") * 1000.0
+    else:
+        raise ValueError("TEU panel missing TEU/TEU_thousands")
+    df["Port"] = df["Port"].map(canon)
+    if "Year" not in df.columns and "Period" in df.columns:
+        df["Year"] = df["Period"].map(lambda s: int(str(s).split("-")[-1]) if isinstance(s,str) and "-" in s else np.nan)
+    if (df["Freq"]=="Monthly").any() and "Month" not in df.columns:
+        def _m(s):
+            if isinstance(s,str) and s.startswith("Q"): return np.nan
+            if isinstance(s,str) and "-" in s:
+                try: return int(s.split("-")[0])
+                except: return np.nan
+            return np.nan
+        df["Month"] = df.apply(lambda r: _m(r.get("Period")) if r.get("Freq")=="Monthly" else np.nan, axis=1)
+    def _q(r):
+        if r.get("Freq")=="Monthly" and pd.notnull(r.get("Month")): return Q_FROM_MONTH[int(r["Month"])]
+        per = r.get("Period")
+        if isinstance(per,str) and per.startswith("Q"): return per.split("-")[0]
+        return np.nan
+    df["Quarter"] = df.apply(_q, axis=1)
+    return df[["Port","Freq","Year","Quarter","Month","TEU_val"]]
+
+def load_port_month(path: Path) -> pd.DataFrame:
+    """Existing port-month table you already built; authoritative TEU_port_m."""
+    pm = read_table(path)
+    pm.columns = [c.strip() for c in pm.columns]
+    pm["port"] = pm["port"].map(canon)
+    pm["year"] = pd.to_numeric(pm["year"], errors="coerce").astype("Int64")
+    pm["month"] = pd.to_numeric(pm["month"], errors="coerce").astype("Int64")
+    pm["TEU_port_m"] = pd.to_numeric(pm["TEU_port_m"], errors="coerce")
+    # ensure quarter exists and is in 'Q1'..'Q4' format
+    if "quarter" not in pm.columns:
+        pm["quarter"] = pm["month"].map(lambda m: Q_FROM_MONTH[int(m)] if pd.notnull(m) else np.nan)
+    else:
+        pm["quarter"] = pm["quarter"].apply(normalize_quarter)
+    # final tidy & align dtypes
+    pm = pm[["port", "year", "month", "quarter", "TEU_port_m"]].drop_duplicates()
+    pm["year"] = pm["year"].astype(int, errors="ignore")
+    pm["quarter"] = pm["quarter"].apply(normalize_quarter)
+    return pm
+
+# ---------------- Shares with structural zeros ----------------
+def build_shares_with_structural_zeros(teu: pd.DataFrame, years: Tuple[int,int]) -> pd.DataFrame:
+    """Return terminal-quarter rows for legacy and new terminals.
+       For every (port,year,quarter) in the base, include a row for the new terminal
+       with TEU_terminal_q=0 if it didn't operate yet (structural zeros)."""
+    y0,y1 = years
+    # Base port-quarter totals
+    base = (teu[(teu["Freq"]=="Quarterly") & (teu["Port"].isin(["Ashdod","Haifa","Eilat"]))]
+            .groupby(["Port","Year","Quarter"], as_index=False)["TEU_val"].sum()
+            .rename(columns={"TEU_val":"TEU_port_q"}))
+    base = base[(base["Year"]>=y0) & (base["Year"]<=y1)].copy()
+
+    # New-terminal quarters actually reported
+    newq = teu[(teu["Freq"]=="Quarterly") & (teu["Port"].isin(["Ashdod-HCT","Haifa-Bayport","Ashdod HCT","Haifa SIPG","Haifa-SIPG"]))].copy()
+    newq["Terminal"] = newq["Port"].map(canon)
+    newq["Port"] = newq["Terminal"].map(PORT_OF_TERMINAL)
+    newq = (newq.groupby(["Port","Terminal","Year","Quarter"], as_index=False)["TEU_val"].sum()
+                 .rename(columns={"TEU_val":"TEU_terminal_q"}))
+
+    # Construct a full grid for each port's new terminal across all base quarters
+    rows = []
+    for port in ["Ashdod","Haifa"]:
+        newterm = "Ashdod-HCT" if port=="Ashdod" else "Haifa-Bayport"
+        sub_base = base[base["Port"]==port][["Port","Year","Quarter","TEU_port_q"]]
+        sub_new = newq[(newq["Port"]==port) & (newq["Terminal"]==newterm)][["Year","Quarter","TEU_terminal_q"]]
+        grid = sub_base.merge(sub_new, on=["Year","Quarter"], how="left")
+        grid["Terminal"] = newterm
+        grid["TEU_terminal_q"] = grid["TEU_terminal_q"].fillna(0.0)  # structural zero if missing
+        rows.append(grid[["Port","Terminal","Year","Quarter","TEU_terminal_q","TEU_port_q"]])
+
+    new_full = pd.concat(rows, ignore_index=True)
+
+    # Legacy terminal as residual
+    base_with_newsum = base.merge(
+        new_full.groupby(["Port","Year","Quarter"], as_index=False)["TEU_terminal_q"].sum()
+               .rename(columns={"TEU_terminal_q":"TEU_new_sum_q"}),
+        on=["Port","Year","Quarter"], how="left"
+    )
+    base_with_newsum["TEU_new_sum_q"] = base_with_newsum["TEU_new_sum_q"].fillna(0.0)
+    base_with_newsum["TEU_legacy_q"] = (base_with_newsum["TEU_port_q"] - base_with_newsum["TEU_new_sum_q"]).clip(lower=0.0)
+    base_with_newsum["Terminal"] = base_with_newsum["Port"].map(LEGACY_BY_PORT)
+    legacy_rows = base_with_newsum[["Port","Terminal","Year","Quarter","TEU_legacy_q","TEU_port_q"]] \
+                    .rename(columns={"TEU_legacy_q":"TEU_terminal_q"})
+
+    comb = pd.concat([legacy_rows, new_full], ignore_index=True)
+    comb["share_i_p_q"] = comb.apply(
+        lambda r: (r["TEU_terminal_q"]/r["TEU_port_q"]) if (pd.notnull(r["TEU_port_q"]) and r["TEU_port_q"]>0) else 0.0,
+        axis=1
+    )
+    # Canonical output columns
+    comb = comb.rename(columns={"Port":"port","Terminal":"terminal","Year":"year","Quarter":"quarter"})
+    return comb[["port","terminal","year","quarter","TEU_terminal_q","TEU_port_q","share_i_p_q"]]
+
+# ---------------- 2023 alpha ----------------
+def alpha_2023(kpi: pd.DataFrame) -> Dict[str,float]:
+    out: Dict[str,float] = {}
+    for port,newt in [("Ashdod","Ashdod-HCT"),("Haifa","Haifa-Bayport")]:
+        leg = LEGACY_BY_PORT[port]
+        pn = kpi.loc[(kpi["terminal"]==newt)&(kpi["year"]==2023),"teu_per_work_hour"].dropna()
+        pl = kpi.loc[(kpi["terminal"]==leg) & (kpi["year"]==2023),"teu_per_work_hour"].dropna()
+        out[port] = float(pn.iloc[0]/pl.iloc[0]) if (not pn.empty and not pl.empty and float(pl.iloc[0])>0) else np.nan
+    return out
+
+# ---------------- Delta builder ----------------
+def build_missing_delta(master: pd.DataFrame, kpi: pd.DataFrame, teu: pd.DataFrame,
+                        port_month: pd.DataFrame, years: Tuple[int,int]) -> pd.DataFrame:
+    y0,y1 = years
+
+    # Shares (with structural zeros) from TEU panel
+    shares = build_shares_with_structural_zeros(teu, years)
+    shares["year"] = shares["year"].astype(int, errors="ignore")
+    shares["quarter"] = shares["quarter"].apply(normalize_quarter)
+
+    # Universe of port×month keys from EXISTING port-month file (authoritative TEU_port_m)
+    pm_keys = port_month[(port_month["year"].between(y0,y1)) & (port_month["port"].isin(["Ashdod","Haifa"]))] \
+              [["port","year","month","quarter","TEU_port_m"]].copy()
+    pm_keys["year"] = pm_keys["year"].astype(int, errors="ignore")
+    pm_keys["quarter"] = pm_keys["quarter"].apply(normalize_quarter)
+
+    # Join on (port,year,quarter) to get terminal share → terminal×month keys
+    sh2 = shares[shares["terminal"].isin(NEW_TERMINALS)][["port","year","quarter","terminal","share_i_p_q"]].copy()
+    cand = pm_keys.merge(sh2, on=["port","year","quarter"], how="left")
+    cand = cand[~cand["terminal"].isna()].copy()
+    cand["TEU_i_m"] = cand["share_i_p_q"] * cand["TEU_port_m"]
+    cand = cand[["port","terminal","year","month","quarter","TEU_port_m","share_i_p_q","TEU_i_m"]]
+    cand["_key"] = list(zip(cand["port"], cand["terminal"], cand["year"], cand["month"]))
+
+    # Determine which rows are missing or need completion in master
+    master_keys = set(master["_key"]) if "_key" in master.columns else set()
+    def _bad(x): return (pd.isna(x)) | (pd.to_numeric(x, errors="coerce").fillna(0) <= 0)
+    present_missing = master[(master["terminal"].isin(NEW_TERMINALS)) &
+                             (master["year"].between(y0,y1)) &
+                             (_bad(master["Pi_teu_per_hour_i_y"]) | _bad(master["H_annual_i_y"]) | _bad(master["L_hours_i_m"]))]
+    present_missing_keys = set(present_missing["_key"])
+    cand = cand[(~cand["_key"].isin(master_keys)) | (cand["_key"].isin(present_missing_keys))].copy()
+
+    if cand.empty:
+        return pd.DataFrame(columns=[
+            "port","terminal","year","month","quarter","TEU_port_m","share_i_p_q","TEU_i_m",
+            "Pi_teu_per_hour_i_y_new","H_annual_i_y_new","w_i_m_in_year","L_hours_i_m_new",
+            "Pi_prev","H_prev","L_prev","delta_L","fill_reason","source","safety_flag","ready_for_merge"
+        ])
+
+    # Π̂ = alpha_2023 × Π_legacy,y
+    a = alpha_2023(kpi)
+    legacy = {(r.port, int(r.year)): float(r.teu_per_work_hour)
+              for r in kpi[kpi["terminal"].isin([LEGACY_BY_PORT["Ashdod"], LEGACY_BY_PORT["Haifa"]])].itertuples(index=False)}
+
+    # Annual totals for terminal-year (use inherited port-month totals across full year)
+    alloc_year = cand.groupby(["port","terminal","year"], as_index=False)["TEU_i_m"].sum().rename(columns={"TEU_i_m":"TEU_i_y"})
+    cand = cand.merge(alloc_year, on=["port","terminal","year"], how="left")
+
+    # Prepare a lookup for previous values (if any)
+    master_prev = master.set_index(["port","terminal","year","month"]) if not master.empty else pd.DataFrame()
+
+    rows = []
+    for r in cand.itertuples(index=False):
+        alpha = a.get(r.port, np.nan)
+        leg_pi = legacy.get((r.port, int(r.year)), np.nan)
+        pi_est = float(alpha * leg_pi) if (isinstance(alpha,float) and alpha>0 and isinstance(leg_pi,float) and leg_pi>0) else np.nan
+
+        teu_y = float(getattr(r, "TEU_i_y") or 0.0)
+        H_new = float(teu_y / pi_est) if (pi_est and pi_est>0 and teu_y>0) else 0.0
+        teu_m = float(getattr(r, "TEU_i_m") or 0.0)
+        w_m   = float(teu_m / teu_y) if teu_y>0 else 0.0
+        L_new = float(H_new * w_m)
+
+        Pi_prev = H_prev = L_prev = np.nan
+        if not master_prev.empty and (r.port, r.terminal, int(r.year), int(r.month)) in master_prev.index:
+            prev = master_prev.loc[(r.port, r.terminal, int(r.year), int(r.month))]
+            Pi_prev = float(prev.get("Pi_teu_per_hour_i_y", np.nan))
+            H_prev  = float(prev.get("H_annual_i_y", np.nan))
+            L_prev  = float(prev.get("L_hours_i_m", np.nan))
+
+        rows.append({
+            "port": r.port, "terminal": r.terminal, "year": int(r.year), "month": int(r.month), "quarter": r.quarter,
+            "TEU_port_m": float(r.TEU_port_m), "share_i_p_q": float(r.share_i_p_q), "TEU_i_m": teu_m,
+            "Pi_teu_per_hour_i_y_new": pi_est, "H_annual_i_y_new": H_new, "w_i_m_in_year": w_m, "L_hours_i_m_new": L_new,
+            "Pi_prev": Pi_prev, "H_prev": H_prev, "L_prev": L_prev,
+            "delta_L": L_new - (L_prev if pd.notnull(L_prev) else 0.0),
+            "fill_reason": "new-terminal Π missing 2021/2022",
+            "source": "alpha_from_2023_ratio",
+            "safety_flag": "ok_to_merge" if (pi_est and pi_est>0 and teu_y>0) else "alpha_or_legacy_missing",
+            "ready_for_merge": bool(pi_est and pi_est>0 and teu_y>0),
+        })
+
+    delta = pd.DataFrame(rows).sort_values(["port","terminal","year","month"]).reset_index(drop=True)
+    return delta
+
+# ---------------- Main ----------------
+def main(opts: Opts) -> None:
+    master = load_master(opts.master_lterm)
+    kpi    = load_kpi(opts.kpi_wide)
+    teu    = load_teu(opts.teu_panel)
+    pm     = load_port_month(opts.port_month_file)
+
+    delta  = build_missing_delta(master, kpi, teu, pm, opts.years)
+    write_tsv(delta, opts.out_file, force=opts.force)
+
+    meta = {
+        "run_timestamp": datetime.utcnow().isoformat() + "Z",
+        "inputs": {
+            "master_lterm": str(opts.master_lterm),
+            "kpi_wide": str(opts.kpi_wide),
+            "teu_panel": str(opts.teu_panel),
+            "port_month_file": str(opts.port_month_file),
+        },
+        "hashes": {
+            "master_lterm_sha256": file_hash(opts.master_lterm),
+            "kpi_wide_sha256": file_hash(opts.kpi_wide),
+            "teu_panel_sha256": file_hash(opts.teu_panel),
+            "port_month_sha256": file_hash(opts.port_month_file),
+        },
+        "years": list(opts.years),
+        "rows_emitted": int(len(delta)),
+    }
+    meta_path = opts.out_file.with_suffix(".meta.json")
+    meta_path.write_text(json.dumps(meta, indent=2))
+    print(f"✔ Wrote missing-only delta: {opts.out_file}")
+    print(f"✔ Meta: {meta_path}")
+
+if __name__ == "__main__":
+    ap = argparse.ArgumentParser(description="Write missing-only labor proxy deltas (inherit TEU_port_m).")
+    ap.add_argument("--master-lterm", type=Path, default=Path("Data/L_proxy/labor_hours_monthly_terminal.tsv"))
+    ap.add_argument("--kpi-wide",     type=Path, default=Path("Data/L_proxy/containers_kpis_annual_wide_filled.tsv"))
+    ap.add_argument("--teu-panel",    type=Path, default=Path("Data/Output/teu_monthly_plus_quarterly_by_port.tsv"))
+    ap.add_argument("--port-month",   type=Path, default=Path("Data/L_proxy/labor_hours_monthly_port.tsv"))
+    ap.add_argument("--out-file",     type=Path, default=Path("Data/L_proxy/labor_hours_missing_delta.tsv"))
+    ap.add_argument("--start-year",   type=int, default=2021)
+    ap.add_argument("--end-year",     type=int, default=2022)
+    ap.add_argument("--force",        choices=["yes","no"], default="no")
+    args = ap.parse_args()
+
+    opts = Opts(
+        master_lterm=args.master_lterm,
+        kpi_wide=args.kpi_wide,
+        teu_panel=args.teu_panel,
+        port_month_file=args.port_month,
+        out_file=args.out_file,
+        years=(args.start_year, args.end_year),
+        force=(args.force == "yes"),
+    )
+    main(opts)

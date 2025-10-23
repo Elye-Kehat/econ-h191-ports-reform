@@ -1,0 +1,141 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Build monthly automation flags (OCR gate live, TOS live) for Haifa and Ashdod.
+
+EVENT SOURCES (verifiable):
+- Haifa Bayport (SIPG) operations start = 2021-09-01  → proxy for OCR gate & TOS go-live
+  INSS & Jewish Policy Center confirm the 2021-09-01 start of operations:
+    https://www.inss.org.il/publication/port-haifa-3-years/        # INSS 2024 review of 3 years
+    https://www.jewishpolicycenter.org/2022/01/04/bayport-terminal-the-view-from-israel/
+  Gate OCR vendor (Camco) project award for Bayport (confirms gate automation scope):
+    https://www.camco.be/zh/new-project-bayport-terminal-haifa-israel/index.html
+
+- Ashdod Hadarom / Southport (HCT, TIL) Phase-A start = 2022-01-17  → proxy for OCR gate & TOS
+  Israel Ports Company (IPC) annual report (Hebrew), explicitly states Phase-A start on 17 Jan 2022:
+    https://www.gov.il/BlobFolder/dynamiccollectorresultitem/israport_financial_report_2024_year/he/companies_data_and_reports_israport_financial_report_2024_year.pdf
+  Gate OCR vendor (Camco) project page (confirms gate automation scope):
+    https://www.camco.be/zh/new-project-hadarom-container-terminal-israel/index.html
+
+- Haifa Port Company (legacy) TOS:
+  Navis N4 migration completed 2020-06-18/19 (production go-live):
+    https://www.businesswire.com/news/home/20200617005065/en/Haifa-Port-Company-Successfully-Migrates-Navis-N4-TOS-with-Remote-Assistance
+    https://www.hellenicshippingnews.com/haifa-port-company-successfully-migrates-navis-n4-tos-with-remote-assistance/
+  N4 3.7 upgrade on 2021-05-11 (keep as secondary milestone if needed):
+    https://www.ship-technology.com/news/haifa-port-upgrades-tos-ahead-of-automation-projects/
+
+- Bayport TOS identity: SIPG uses its own TOS at Haifa Bayport (EU Parliament study):
+    https://www.europarl.europa.eu/RegData/etudes/STUD/2023/747278/IPOL_STU%282023%29747278_EN.pdf
+
+ASSUMPTIONS / PROXIES:
+- For Bayport/HCT **OCR gate go-live**, precise commissioning dates aren’t public; we use the
+  **first operational month** of each terminal as a proxy, since gates/TOS must be live to process trucks.
+  Update these if we later find vendor commissioning notices with exact dates.
+
+OUTPUTS:
+- automation_milestones.tsv : long table of dated events
+- automation_monthly.tsv    : wide monthly panel with binary flags by port
+
+"""
+
+from datetime import datetime
+import pandas as pd
+
+# -----------------------------
+# Manual inputs (edit here)
+# -----------------------------
+
+# Study panel
+PANEL_START = "2018-01"
+PANEL_END   = "2024-12"
+
+# Ports tracked at the port-level
+PORTS = ["Haifa", "Ashdod"]
+
+# Dated events we’ll encode (YYYY-MM precise to month)
+# event_type ∈ {"ocr_gate_go_live", "tos_go_live", "tos_upgrade"}; source fields help auditing.
+EVENTS = [
+    # --- Haifa (legacy HPC) TOS events ---
+    dict(port="Haifa", event_type="tos_go_live",  date="2020-06", note="HPC N4 migration go-live",
+         source="BusinessWire/Navis + Hellenic Shipping News (2020-06-17/19)"),
+    dict(port="Haifa", event_type="tos_upgrade",  date="2021-05", note="HPC N4 3.7 upgrade",
+         source="Ship-Technology (2021-05-11)"),
+
+    # --- Haifa Bayport (SIPG) proxies: operations start used for OCR/TOS go-live ---
+    dict(port="Haifa", event_type="ocr_gate_go_live", date="2021-09",
+         note="Bayport operations start; proxy for OCR gate activation (Camco project award 2020)",
+         source="INSS & JewishPolicyCenter; Camco Bayport project"),
+    dict(port="Haifa", event_type="tos_go_live",       date="2021-09",
+         note="Bayport TOS go-live (SIPG TOS) aligned to operations start",
+         source="INSS; EU Parliament study on SIPG TOS"),
+
+    # --- Ashdod HCT (TIL) proxies: Phase-A start used for OCR/TOS go-live ---
+    dict(port="Ashdod", event_type="ocr_gate_go_live", date="2022-01",
+         note="HCT Phase-A start; proxy for OCR gate activation (Camco project)",
+         source="IPC 2024 financial report (Phase-A start 2022-01-17); Camco HCT project"),
+    dict(port="Ashdod", event_type="tos_go_live",      date="2022-01",
+         note="HCT TOS go-live aligned to Phase-A operational start",
+         source="IPC 2024 financial report (Phase-A start 2022-01-17)"),
+
+    # If we later identify Ashdod legacy TOS/OCR milestones, add them here.
+]
+
+# -----------------------------
+# Build the milestones table
+# -----------------------------
+milestones = (
+    pd.DataFrame(EVENTS)
+      .assign(date=lambda d: pd.to_datetime(d["date"], format="%Y-%m"))
+      .sort_values(["port", "date", "event_type"])
+)
+milestones_out = milestones.assign(
+    Month=milestones["date"].dt.to_period("M").astype(str)
+)[["Month", "port", "event_type", "note", "source"]].rename(columns={"port":"Port"})
+milestones_out.to_csv("Data/K_over_L instruments/automation_milestones.tsv",
+                      sep="\t", index=False)
+print(f"Wrote automation_milestones.tsv with {len(milestones_out)} rows.")
+
+# -----------------------------
+# Expand to monthly panel with flags
+# -----------------------------
+month_index = pd.period_range(PANEL_START, PANEL_END, freq="M").astype(str)
+panel = pd.MultiIndex.from_product([month_index, PORTS], names=["Month", "Port"]).to_frame(index=False)
+
+# Helper: first month at/after which each flag is 1 by port
+def first_month(d, port, etype):
+    try:
+        return (d.query("port == @port and event_type == @etype")["date"].min())
+    except KeyError:
+        return pd.NaT
+
+# Compute start months
+start = {}
+for p in PORTS:
+    start[(p, "ocr_gate_go_live")] = first_month(milestones, p, "ocr_gate_go_live")
+    start[(p, "tos_go_live")]      = first_month(milestones, p, "tos_go_live")
+
+# Add binary flags
+def flag_from_start(row, p, etype):
+    s = start.get((p, etype))
+    if pd.isna(s):
+        return 0
+    return 1 if pd.Period(row["Month"]) >= pd.Period(s.strftime("%Y-%m")) else 0
+
+panel["ocr_gate_live"] = panel.apply(lambda r: flag_from_start(r, r["Port"], "ocr_gate_go_live"), axis=1)
+panel["tos_live"]      = panel.apply(lambda r: flag_from_start(r, r["Port"], "tos_go_live"), axis=1)
+
+# Optional: keep a convenience column with the first live month (string) for audit
+def first_live_str(p, etype):
+    s = start.get((p, etype))
+    return None if pd.isna(s) else s.strftime("%Y-%m")
+
+audit = pd.DataFrame({
+    "Port": PORTS,
+    "ocr_gate_first_live": [first_live_str(p, "ocr_gate_go_live") for p in PORTS],
+    "tos_first_live":      [first_live_str(p, "tos_go_live")      for p in PORTS],
+})
+
+# Save monthly wide table
+out = panel.merge(audit, on="Port", how="left")
+out.to_csv("Data/K_over_L instruments/automation_monthly.tsv", sep="\t", index=False)
+print(f"Wrote automation_monthly.tsv with {len(out)} rows.")

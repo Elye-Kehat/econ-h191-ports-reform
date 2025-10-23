@@ -1,0 +1,90 @@
+# manual_berth_meters.py
+# Tiny, hand-entered table of MONTH x PORT with "flow" (meters added this month for container ops)
+# and "stock" (cumulative meters added since start of sample).
+#
+# ==================== SOURCES (operational evidence) ====================
+# HAIFA (Bayport / Gulf Port):
+# • Official start of operations: 2021-09-01 (operational go-live)
+#   INSS (English): https://www.inss.org.il/publication/haifa-new-port/
+# • First-phase quay spec: main quay 800 m @ 17.3 m depth (IPC / Israel Ports Company)
+#   IPC: https://www.israports.co.il/en/PortDevelopment/Pages/NewContainerTerminals.aspx
+# • (Also corroborated by contemporaneous press/photos of the inauguration)
+#   Times of Israel (2021-09-02): https://www.timesofisrael.com/israel-inaugurates-new-haifa-port-terminal-in-expected-boost-for-economy/
+#   Maritime Executive (2021-08-31): https://maritime-executive.com/article/large-containership-arrives-in-israel-for-opening-of-haifa-terminal
+#
+# Encoding choice for Haifa: +800 m in 2021-09 (first month of container operations at Bayport).
+#
+# ASHDOD (Platform 21, East):
+# • Port news (2022-04-05): “the eastern side (~320 m) has been completed and is now operative”
+#   Ashdod Port news page (English): https://www.ashdodport.co.il/english/AboutAshdodPort/ashdod-port-news/Pages/news964.aspx
+#   (PortTechnology write-up the same day: https://www.porttechnology.org/news/ashdod-port-to-complete-works-of-over-one-billion-shekel-platform-21/)
+#   -> That first operative call was Ro-Ro; container capability required STS go-live.
+# • Official CSR 2022: “Completing the conversion of Platform 21 East to an advanced container platform
+#   while completing the commissioning of five bridge cranes.” (commissioning completed during 2022)
+#   CSR 2022 (PDF): https://www.ashdodport.co.il/about/csr/Documents/apc-csr-report-2022-eng.pdf
+# • Trade press expectation: “expected to be fully operational by September” (re: new STS at Pier 21)
+#   Container-News (2022-05/06): https://container-news.com/ashdod-port-purchases-five-semi-automatic-sts-cranes/
+#
+# Encoding choice for Ashdod: until we find a dated “first container ship handled at Platform 21 East,”
+# we use a conservative container-ops month of 2022-09 for +320 m (aligned with STS full operational window).
+# TODO: If we locate an earlier explicit first-container-call month, update the month below and re-run.
+# =======================================================================
+
+import os
+import pandas as pd
+
+START_YM = "2018-01"
+END_YM   = "2024-12"
+
+OUT_DIR = os.path.join("Data", "K_over_L instruments")
+OUT_TSV = os.path.join(OUT_DIR, "berth_meters_monthly.tsv")
+os.makedirs(OUT_DIR, exist_ok=True)
+
+def ym_add(ym: str) -> str:
+    y, m = map(int, ym.split("-"))
+    m += 1
+    if m == 13:
+        y += 1; m = 1
+    return f"{y:04d}-{m:02d}"
+
+def months_between(a: str, b: str):
+    cur, out = a, []
+    while True:
+        out.append(cur)
+        if cur == b: break
+        cur = ym_add(cur)
+    return out
+
+months = months_between(START_YM, END_YM)
+grid = pd.MultiIndex.from_product([months, ["Haifa","Ashdod"]], names=["Month","Port"]).to_frame(index=False)
+
+# -----------------------------
+# MANUAL FLOW EVENTS (container-usable meters added)
+# -----------------------------
+FLOW_EVENTS = [
+    # Haifa — Bayport main quay becomes operational for containers in Sep 2021 (+800 m)
+    dict(port="Haifa",  ym="2021-09", meters_added=800,
+         note="Bayport operational go-live month; first-phase main quay 800m @17.3m"),
+    # Ashdod — Platform 21 East container-ops go-live (conservative) in Sep 2022 (+320 m)
+    dict(port="Ashdod", ym="2022-09", meters_added=320,
+         note="P21 East operative Apr-2022 (Ro-Ro); container conversion & STS commissioning completed in 2022; expected fully operational by Sep -> encode +320m in 2022-09"),
+]
+
+flows = pd.DataFrame(FLOW_EVENTS)
+if flows.empty:
+    out = grid.copy()
+    out["berth_meters_added_container"] = 0
+    out["berth_meters_total_added_container"] = 0
+else:
+    pulses = (flows.groupby(["ym","port"])["meters_added"].sum()
+                    .rename("berth_meters_added_container").reset_index()
+                    .rename(columns={"ym":"Month","port":"Port"}))
+    out = grid.merge(pulses, on=["Month","Port"], how="left").fillna({"berth_meters_added_container":0}).copy()
+    # stock = cumulative sum of NEW container-usable meters we have documented (not the whole historical total)
+    out["berth_meters_total_added_container"] = (
+        out.sort_values(["Port","Month"])
+           .groupby("Port")["berth_meters_added_container"].cumsum()
+    )
+
+out.to_csv(OUT_TSV, sep="\t", index=False)
+print(f"Wrote {OUT_TSV}  rows={len(out)}  cols={out.shape[1]}")

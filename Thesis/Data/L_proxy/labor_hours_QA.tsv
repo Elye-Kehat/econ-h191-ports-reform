@@ -1,0 +1,125 @@
+port	terminal	year	quarter	month_coverage_in_q	is_partial_quarter	quarter_abs_gap_TEU	quarter_rel_gap_TEU	quarter_sum_ok	preopen_zero_ok	annual_sum_ok_TEU
+Ashdod	Ashdod-Legacy	2020	1	3	False	14.231285615009256	3.915715539985276e-05	1.0		True
+Ashdod	Ashdod-Legacy	2020	2	3	False	1.5188654179801233	4.082867079886749e-06	1.0		True
+Ashdod	Ashdod-Legacy	2020	3	3	False	9.259074735047761	2.179889436748804e-05	1.0		True
+Ashdod	Ashdod-Legacy	2020	4	3	False	25.80613171198638	6.08159259783986e-05	1.0		True
+Ashdod	Ashdod-Legacy	2021	1	3	False	25.08094594400609	6.438838782516424e-05	1.0		True
+Ashdod	Ashdod-Legacy	2021	2	3	False	61.35329959401861	0.00014722107295662775	1.0		True
+Ashdod	Ashdod-Legacy	2021	3	3	False	0.0	0.0	1.0		True
+Ashdod	Ashdod-Legacy	2021	4	1	True	0.0	0.0			True
+Ashdod	Ashdod-Legacy	2022	1	0	True	0.0	0.0			True
+Ashdod	Ashdod-Legacy	2022	2	0	True	0.0	0.0			True
+Ashdod	Ashdod-Legacy	2022	3	0	True	0.0	0.0			True
+Ashdod	Ashdod-Legacy	2022	4	0	True	0.0	0.0			True
+Ashdod	Ashdod-Legacy	2023	1	0	True	0.0	0.0			True
+Ashdod	Ashdod-Legacy	2023	2	0	True	0.0	0.0			True
+Ashdod	Ashdod-Legacy	2023	3	0	True	0.0	0.0			True
+Ashdod	Ashdod-Legacy	2023	4	0	True	0.0	0.0			True
+Ashdod	Ashdod-Legacy	2024	1	0	True	0.0	0.0			True
+Ashdod	Ashdod-Legacy	2024	2	0	True	0.0	0.0			True
+Ashdod	Ashdod-Legacy	2024	3	0	True	0.0	0.0			True
+Ashdod	Ashdod-Legacy	2024	4	0	True	0.0	0.0			True
+Ashdod	Ashdod-HCT	2020	1	3	False			0.0		True
+Ashdod	Ashdod-HCT	2020	2	3	False			0.0		True
+Ashdod	Ashdod-HCT	2020	3	3	False			0.0		True
+Ashdod	Ashdod-HCT	2020	4	3	False			0.0		True
+Ashdod	Ashdod-HCT	2021	1	3	False			0.0		True
+Ashdod	Ashdod-HCT	2021	2	3	False			0.0		True
+Ashdod	Ashdod-HCT	2021	3	3	False	0.0	0.0	1.0		True
+Ashdod	Ashdod-HCT	2021	4	1	True	1.8189894035458565e-12	1.1639136332413354e-16			True
+Ashdod	Ashdod-HCT	2022	1	0	True	0.0	0.0			True
+Ashdod	Ashdod-HCT	2022	2	0	True	7.275957614183426e-12	2.736762812827588e-16			True
+Ashdod	Ashdod-HCT	2022	3	0	True	0.0	0.0			True
+Ashdod	Ashdod-HCT	2022	4	0	True	0.0	0.0			True
+Ashdod	Ashdod-HCT	2023	1	0	True	0.0	0.0			True
+Ashdod	Ashdod-HCT	2023	2	0	True	2.9103830456733704e-11	1.933247342166892e-16			True
+Ashdod	Ashdod-HCT	2023	3	0	True	0.0	0.0			True
+Ashdod	Ashdod-HCT	2023	4	0	True	1.4551915228366852e-11	1.6647645730231352e-16			True
+Ashdod	Ashdod-HCT	2024	1	0	True	0.0	0.0			True
+Ashdod	Ashdod-HCT	2024	2	0	True	2.9103830456733704e-11	1.573732957889729e-16			True
+Ashdod	Ashdod-HCT	2024	3	0	True	0.0	0.0			True
+Ashdod	Ashdod-HCT	2024	4	0	True	0.0	0.0			True
+Eilat	Eilat	2020	1	3	False	0.00442493182799808	3.915715540048544e-05	1.0		True
+Eilat	Eilat	2020	2	3	False	0.000453200096004025	4.0828670779123724e-06	1.0		True
+Eilat	Eilat	2020	3	3	False	0.0017656719540042332	2.1798894366674626e-05	1.0		True
+Eilat	Eilat	2020	4	3	False	0.004379012984088604	6.0815925977209866e-05	1.0		True
+Eilat	Eilat	2021	1	3	False	0.0038630545336033606	6.438838782428094e-05	1.0		True
+Eilat	Eilat	2021	2	3	False	0.0030911874441024167	0.00014722107295403046	1.0		True
+Eilat	Eilat	2021	3	3	False	0.0009815937706108002	2.2827241012400518e-05	1.0		True
+Eilat	Eilat	2021	4	1	True	0.0	0.0			True
+Eilat	Eilat	2022	1	0	True	0.0	0.0			True
+Eilat	Eilat	2022	2	0	True	0.0	0.0			True
+Eilat	Eilat	2022	3	0	True	0.0	0.0			True
+Eilat	Eilat	2022	4	0	True	0.0	0.0			True
+Eilat	Eilat	2023	1	0	True	0.0	0.0			True
+Eilat	Eilat	2023	2	0	True	0.0	0.0			True
+Eilat	Eilat	2023	3	0	True	0.0	0.0			True
+Eilat	Eilat	2023	4	0	True	0.0	0.0			True
+Eilat	Eilat	2024	1	0	True	0.0			True	True
+Eilat	Eilat	2024	2	0	True	0.0			True	True
+Eilat	Eilat	2024	3	0	True	0.0			True	True
+Eilat	Eilat	2024	4	0	True	0.0			True	True
+Haifa	Haifa-Legacy	2020	1	3	False	14.63548160000937	3.915715539931188e-05	1.0		True
+Haifa	Haifa-Legacy	2020	2	3	False	1.4929391060140915	4.082867079462678e-06	1.0		True
+Haifa	Haifa-Legacy	2020	3	3	False	7.665980866004247	2.1798894368428255e-05	1.0		True
+Haifa	Haifa-Legacy	2020	4	3	False	22.70712855097372	6.081592597849906e-05	1.0		True
+Haifa	Haifa-Legacy	2021	1	3	False	24.229979414027184	6.43883878239507e-05	1.0		True
+Haifa	Haifa-Legacy	2021	2	3	False	56.822354796982836	0.00014722107295426395	1.0		True
+Haifa	Haifa-Legacy	2021	3	3	False	0.0	0.0	1.0		True
+Haifa	Haifa-Legacy	2021	4	1	True	0.0	0.0			True
+Haifa	Haifa-Legacy	2022	1	0	True	0.0	0.0			True
+Haifa	Haifa-Legacy	2022	2	0	True	0.0	0.0			True
+Haifa	Haifa-Legacy	2022	3	0	True	0.0	0.0			True
+Haifa	Haifa-Legacy	2022	4	0	True	0.0	0.0			True
+Haifa	Haifa-Legacy	2023	1	0	True	0.0	0.0			True
+Haifa	Haifa-Legacy	2023	2	0	True	2.9103830456733704e-11	1.519385562867852e-16			True
+Haifa	Haifa-Legacy	2023	3	0	True	0.0	0.0			True
+Haifa	Haifa-Legacy	2023	4	0	True	2.9103830456733704e-11	1.5058248845807117e-16			True
+Haifa	Haifa-Legacy	2024	1	0	True	0.0	0.0			True
+Haifa	Haifa-Legacy	2024	2	0	True	0.0	0.0			True
+Haifa	Haifa-Legacy	2024	3	0	True	0.0	0.0			True
+Haifa	Haifa-Legacy	2024	4	0	True	0.0	0.0			True
+Haifa	Haifa-Bayport	2020	1	3	False			0.0		True
+Haifa	Haifa-Bayport	2020	2	3	False			0.0		True
+Haifa	Haifa-Bayport	2020	3	3	False			0.0		True
+Haifa	Haifa-Bayport	2020	4	3	False			0.0		True
+Haifa	Haifa-Bayport	2021	1	3	False			0.0		True
+Haifa	Haifa-Bayport	2021	2	3	False			0.0		True
+Haifa	Haifa-Bayport	2021	3	3	False	9.094947017729282e-13	1.2759174249693745e-16	1.0		True
+Haifa	Haifa-Bayport	2021	4	1	True	0.0	0.0			True
+Haifa	Haifa-Bayport	2022	1	0	True	1.4551915228366852e-11	2.8273302204477185e-16			True
+Haifa	Haifa-Bayport	2022	2	0	True	0.0	0.0			True
+Haifa	Haifa-Bayport	2022	3	0	True	0.0	0.0			True
+Haifa	Haifa-Bayport	2022	4	0	True	0.0	0.0			True
+Haifa	Haifa-Bayport	2023	1	0	True	2.9103830456733704e-11	1.310475692152306e-16			True
+Haifa	Haifa-Bayport	2023	2	0	True	0.0	0.0			True
+Haifa	Haifa-Bayport	2023	3	0	True	0.0	0.0			True
+Haifa	Haifa-Bayport	2023	4	0	True	0.0	0.0			True
+Haifa	Haifa-Bayport	2024	1	0	True	0.0	0.0			True
+Haifa	Haifa-Bayport	2024	2	0	True	0.0	0.0			True
+Haifa	Haifa-Bayport	2024	3	0	True	1.4551915228366852e-11	1.1250313771599868e-16			True
+Haifa	Haifa-Bayport	2024	4	0	True	0.0	0.0			True
+Ashdod	Ashdod-Legacy	2018	1	3	False	0.0	0.0	1.0		True
+Ashdod	Ashdod-Legacy	2018	2	3	False	0.0	0.0	1.0		True
+Ashdod	Ashdod-Legacy	2018	3	3	False	0.0	0.0	1.0		True
+Ashdod	Ashdod-Legacy	2018	4	3	False	0.0	0.0	1.0		True
+Ashdod	Ashdod-Legacy	2019	1	3	False	0.0	0.0	1.0		True
+Ashdod	Ashdod-Legacy	2019	2	3	False	0.0	0.0	1.0		True
+Ashdod	Ashdod-Legacy	2019	3	3	False	0.0	0.0	1.0		True
+Ashdod	Ashdod-Legacy	2019	4	3	False	0.0	0.0	1.0		True
+Eilat	Eilat	2018	1	3	False	0.0	0.0	1.0		True
+Eilat	Eilat	2018	2	3	False	0.0	0.0	1.0		True
+Eilat	Eilat	2018	3	3	False	0.0	0.0	1.0		True
+Eilat	Eilat	2018	4	3	False	0.0	0.0	1.0		True
+Eilat	Eilat	2019	1	3	False	0.0	0.0	1.0		True
+Eilat	Eilat	2019	2	3	False	0.0	0.0	1.0		True
+Eilat	Eilat	2019	3	3	False	0.0	0.0	1.0		True
+Eilat	Eilat	2019	4	3	False	0.0	0.0	1.0		True
+Haifa	Haifa-Legacy	2018	1	3	False	0.0	0.0	1.0		True
+Haifa	Haifa-Legacy	2018	2	3	False	0.0	0.0	1.0		True
+Haifa	Haifa-Legacy	2018	3	3	False	0.0	0.0	1.0		True
+Haifa	Haifa-Legacy	2018	4	3	False	0.0	0.0	1.0		True
+Haifa	Haifa-Legacy	2019	1	3	False	0.0	0.0	1.0		True
+Haifa	Haifa-Legacy	2019	2	3	False	0.0	0.0	1.0		True
+Haifa	Haifa-Legacy	2019	3	3	False	0.0	0.0	1.0		True
+Haifa	Haifa-Legacy	2019	4	3	False	0.0	0.0	1.0		True

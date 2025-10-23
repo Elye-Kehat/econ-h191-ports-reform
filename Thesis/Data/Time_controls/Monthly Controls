@@ -1,0 +1,132 @@
+# build_clocks_controls.py
+# Generates Data/clocks_controls.tsv for Haifa & Ashdod, 2018-01 ... 2024-12.
+# Requires: pandas. Optional: Data/holidays.csv (date, holiday_name, is_port_holiday_0_1)
+
+import os
+from datetime import date
+import pandas as pd
+
+# ----------- EDITABLE PARAMETERS (canonical; change if you adopt alternates) -----------
+START_MONTH = "2018-01"
+END_MONTH   = "2024-12"
+
+# Treatment k0 months
+HAIFA_COMP_K0   = "2021-09"  # Bayport competition go-live
+ASHDOD_COMP_K0  = "2022-02"  # Southport competition go-live (alt: 2022-01 or 2022-04 for robustness)
+HAIFA_PRIV_K0   = "2023-01"  # Haifa privatization completion
+
+# COVID shock coding
+COVID_PULSE_MONTHS = {
+    "2020-03","2020-04","2020-09","2020-10","2020-12","2021-01","2021-02"
+}
+COVID_WIDE_START = "2020-03"
+COVID_WIDE_END   = "2021-06"
+
+# War flag
+WAR_START_MONTH  = "2023-10"
+
+# Optional holiday list
+HOLIDAYS_PATH = os.path.join("Data", "holidays.csv")  # columns: date,holiday_name,is_port_holiday_0_1
+
+# --------------------------------------------------------------------------------------
+
+PORTS = ["Haifa", "Ashdod"]
+
+def ym_add(ym: str) -> str:
+    y, m = map(int, ym.split("-"))
+    m += 1
+    if m == 13:
+        y += 1
+        m = 1
+    return f"{y:04d}-{m:02d}"
+
+def months_between(start_ym: str, end_ym: str):
+    out = []
+    cur = start_ym
+    while True:
+        out.append(cur)
+        if cur == end_ym:
+            break
+        cur = ym_add(cur)
+    return out
+
+def geq_ym(a: str, b: str) -> bool:
+    ay, am = map(int, a.split("-"))
+    by, bm = map(int, b.split("-"))
+    return (ay, am) >= (by, bm)
+
+def days_in_month(ym: str) -> int:
+    y, m = map(int, ym.split("-"))
+    d0 = date(y, m, 1)
+    ny, nm = (y+1, 1) if m == 12 else (y, m+1)
+    d1 = date(ny, nm, 1)
+    return (d1 - d0).days
+
+# Load holidays (optional)
+if os.path.exists(HOLIDAYS_PATH):
+    hol = pd.read_csv(HOLIDAYS_PATH, parse_dates=["date"])
+    hol = hol[hol.get("is_port_holiday_0_1", 1) == 1].copy()
+    hol["yyyy_mm"] = hol["date"].dt.strftime("%Y-%m")
+    HOLIDAY_COUNTS = hol.groupby("yyyy_mm").size().to_dict()
+else:
+    HOLIDAY_COUNTS = {}
+
+# Build rows
+months = months_between(START_MONTH, END_MONTH)
+rows = []
+for ym in months:
+    for port in PORTS:
+        # treatment flags
+        post_comp = int(
+            (port == "Haifa"  and geq_ym(ym, HAIFA_COMP_K0)) or
+            (port == "Ashdod" and geq_ym(ym, ASHDOD_COMP_K0))
+        )
+        post_priv = int(port == "Haifa" and geq_ym(ym, HAIFA_PRIV_K0))
+        spillover = int(
+            (port == "Haifa"  and geq_ym(ym, ASHDOD_COMP_K0)) or
+            (port == "Ashdod" and geq_ym(ym, HAIFA_COMP_K0))
+        )
+
+        # shocks & holidays
+        holiday_days = int(HOLIDAY_COUNTS.get(ym, 0))
+        dim = days_in_month(ym)
+        holiday_share = holiday_days / dim
+        holiday_flag = int(holiday_days > 0)
+
+        covid_flag = int(ym in COVID_PULSE_MONTHS)
+        covid_wide_flag = int(geq_ym(ym, COVID_WIDE_START) and geq_ym(COVID_WIDE_END, ym))
+        war_flag = int(geq_ym(ym, WAR_START_MONTH))
+
+        # month dummies
+        mnum = int(ym.split("-")[1])
+        month_dummies = {f"m{mm:02d}": int(mm == mnum) for mm in range(1, 13)}
+
+        row = {
+            "Month": ym,
+            "Port": port,
+            "post_competition": post_comp,
+            "post_privatization": post_priv,
+            "spillover_other_post": spillover,
+            "holiday_flag": holiday_flag,
+            "holiday_days_cal": holiday_days,
+            "holiday_share_cal": round(holiday_share, 4),
+            "covid_flag": covid_flag,
+            "covid_wide_flag": covid_wide_flag,
+            "war_2023_flag": war_flag,
+            **month_dummies,
+        }
+        rows.append(row)
+
+df = pd.DataFrame(rows)
+
+# Ensure output dir & write TSV
+os.makedirs("Data", exist_ok=True)
+out_path = os.path.join("Data", "clocks_controls.tsv")
+df.to_csv(out_path, sep="\t", index=False)
+
+print(f"Wrote {out_path} with {len(df)} rows.")
+if not os.path.exists(HOLIDAYS_PATH):
+    print(f"Note: {HOLIDAYS_PATH} not found; holiday columns set to 0. "
+          f"Add a file with columns: date,holiday_name,is_port_holiday_0_1.")
+
+

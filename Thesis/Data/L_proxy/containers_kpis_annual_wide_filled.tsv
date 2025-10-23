@@ -1,0 +1,56 @@
+port	terminal	year	teu_per_work_hour	moves_per_crew_hour	avg_teams_per_ship	visits_total	avg_wait_hours	avg_berth_hours	avg_stay_hours	crew_responsiveness_pct	teu_per_ship_hour_berth
+Ashdod	Ashdod-HCT	2014									
+Ashdod	Ashdod-HCT	2015									
+Ashdod	Ashdod-HCT	2016									
+Ashdod	Ashdod-HCT	2017									
+Ashdod	Ashdod-HCT	2018									
+Ashdod	Ashdod-HCT	2019									
+Ashdod	Ashdod-HCT	2020									
+Ashdod	Ashdod-HCT	2021									
+Ashdod	Ashdod-HCT	2022									
+Ashdod	Ashdod-HCT	2023	28.0				14.0	24.0	53.0		27.0
+Ashdod	Ashdod-HCT	2024	61.0				17.0	23.0	46.0		47.0
+Ashdod	Ashdod-Legacy	2014	42.0	24.0	6.0		7.0	27.0	31.0	56.0	
+Ashdod	Ashdod-Legacy	2015	43.0	24.0	6.4		7.0	28.0	33.0	56.0	
+Ashdod	Ashdod-Legacy	2016	43.0	23.0	6.2		9.0	26.0	32.0	54.0	
+Ashdod	Ashdod-Legacy	2017	43.0	24.0	6.6		9.0	28.0	34.0	53.0	
+Ashdod	Ashdod-Legacy	2018	41.0	24.0	7.1		15.0	23.0	45.0	47.0	28.0
+Ashdod	Ashdod-Legacy	2019	42.0	25.0	7.0		11.0	25.0	40.0	49.0	29.0
+Ashdod	Ashdod-Legacy	2020	39.0	24.0	6.4		17.0	28.0	48.0	43.0	26.0
+Ashdod	Ashdod-Legacy	2021	39.0	25.0	6.4		22.0	29.0	44.0	39.0	25.0
+Ashdod	Ashdod-Legacy	2022	37.0	24.0	5.7		17.0	27.0	47.0	40.0	23.0
+Ashdod	Ashdod-Legacy	2023	35.0	24.0	5.1		10.0	31.0	35.0	59.0	20.0
+Ashdod	Ashdod-Legacy	2024	38.0	24.0	5.3		9.0	31.0	32.0	52.0	23.0
+Eilat	Eilat	2014									
+Eilat	Eilat	2015									
+Eilat	Eilat	2016									
+Eilat	Eilat	2017									
+Eilat	Eilat	2018									
+Eilat	Eilat	2019									
+Eilat	Eilat	2020									
+Eilat	Eilat	2021									
+Eilat	Eilat	2022									
+Eilat	Eilat	2023									
+Eilat	Eilat	2024									
+Haifa	Haifa-Bayport	2014									
+Haifa	Haifa-Bayport	2015									
+Haifa	Haifa-Bayport	2016									
+Haifa	Haifa-Bayport	2017									
+Haifa	Haifa-Bayport	2018									
+Haifa	Haifa-Bayport	2019									
+Haifa	Haifa-Bayport	2020									
+Haifa	Haifa-Bayport	2021									
+Haifa	Haifa-Bayport	2022									
+Haifa	Haifa-Bayport	2023	45.0				12.0	32.0	35.0		41.0
+Haifa	Haifa-Bayport	2024	50.0				10.0	31.0	27.0		43.0
+Haifa	Haifa-Legacy	2014	53.0	26.0	5.3		4.0	20.0	23.0	88.0	
+Haifa	Haifa-Legacy	2015	54.0	26.0	5.4		4.0	19.0	21.0	87.0	
+Haifa	Haifa-Legacy	2016	54.0	25.0	5.5		4.0	19.0	20.0	93.0	
+Haifa	Haifa-Legacy	2017	59.0	26.0	5.7		4.0	19.0	20.0	89.0	
+Haifa	Haifa-Legacy	2018	54.0	26.0	5.7		9.0	23.0	29.0	82.0	35.0
+Haifa	Haifa-Legacy	2019	56.0	27.0	6.1		5.0	21.0	25.0	78.0	40.0
+Haifa	Haifa-Legacy	2020	52.0	25.0	6.6		8.0	25.0	30.0	74.0	37.0
+Haifa	Haifa-Legacy	2021	47.0	24.0	5.6		17.0	16.0	41.0	61.0	32.0
+Haifa	Haifa-Legacy	2022	47.0	25.0	4.0		7.0	16.0	29.0	57.0	33.0
+Haifa	Haifa-Legacy	2023	49.0	27.0	3.5		4.0	17.0	22.0	86.0	31.0
+Haifa	Haifa-Legacy	2024	41.0	25.0	3.5		4.0	20.0	17.0	89.0	26.0

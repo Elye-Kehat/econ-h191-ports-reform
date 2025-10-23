@@ -1,0 +1,81 @@
+port	terminal	year	quarter	TEU_i_q
+Ashdod	Ashdod-HCT	2020	Q1	
+Ashdod	Ashdod-HCT	2020	Q2	
+Ashdod	Ashdod-HCT	2020	Q3	
+Ashdod	Ashdod-HCT	2020	Q4	
+Ashdod	Ashdod-HCT	2021	Q1	
+Ashdod	Ashdod-HCT	2021	Q2	
+Ashdod	Ashdod-HCT	2021	Q3	8695.19848739153
+Ashdod	Ashdod-HCT	2021	Q4	15628.2163177368
+Ashdod	Ashdod-HCT	2022	Q1	20319.0
+Ashdod	Ashdod-HCT	2022	Q2	26586.0
+Ashdod	Ashdod-HCT	2022	Q3	60333.0
+Ashdod	Ashdod-HCT	2022	Q4	58997.25
+Ashdod	Ashdod-HCT	2023	Q1	88325.0
+Ashdod	Ashdod-HCT	2023	Q2	150543.75
+Ashdod	Ashdod-HCT	2023	Q3	148688.25
+Ashdod	Ashdod-HCT	2023	Q4	87411.25
+Ashdod	Ashdod-HCT	2024	Q1	102072.75
+Ashdod	Ashdod-HCT	2024	Q2	184935.0
+Ashdod	Ashdod-HCT	2024	Q3	218264.5
+Ashdod	Ashdod-HCT	2024	Q4	187394.75
+Ashdod	Ashdod-Legacy	2020	Q1	363440.231285615
+Ashdod	Ashdod-Legacy	2020	Q2	372009.518865418
+Ashdod	Ashdod-Legacy	2020	Q3	424749.74092526495
+Ashdod	Ashdod-Legacy	2020	Q4	424331.806131712
+Ashdod	Ashdod-Legacy	2021	Q1	389525.919054056
+Ashdod	Ashdod-Legacy	2021	Q2	416742.646700406
+Ashdod	Ashdod-Legacy	2021	Q3	408566.326442004
+Ashdod	Ashdod-Legacy	2021	Q4	397432.6401498001
+Ashdod	Ashdod-Legacy	2022	Q1	360499.0
+Ashdod	Ashdod-Legacy	2022	Q2	374179.0
+Ashdod	Ashdod-Legacy	2022	Q3	374345.0
+Ashdod	Ashdod-Legacy	2022	Q4	322016.0
+Ashdod	Ashdod-Legacy	2023	Q1	302791.0
+Ashdod	Ashdod-Legacy	2023	Q2	290606.0
+Ashdod	Ashdod-Legacy	2023	Q3	288594.0
+Ashdod	Ashdod-Legacy	2023	Q4	240054.0
+Ashdod	Ashdod-Legacy	2024	Q1	280925.0
+Ashdod	Ashdod-Legacy	2024	Q2	262311.0
+Ashdod	Ashdod-Legacy	2024	Q3	309830.0
+Ashdod	Ashdod-Legacy	2024	Q4	302369.0
+Haifa	Haifa-Bayport	2020	Q1	
+Haifa	Haifa-Bayport	2020	Q2	
+Haifa	Haifa-Bayport	2020	Q3	
+Haifa	Haifa-Bayport	2020	Q4	
+Haifa	Haifa-Bayport	2021	Q1	
+Haifa	Haifa-Bayport	2021	Q2	
+Haifa	Haifa-Bayport	2021	Q3	7128.162716288311
+Haifa	Haifa-Bayport	2021	Q4	25856.0489929849
+Haifa	Haifa-Bayport	2022	Q1	51468.75
+Haifa	Haifa-Bayport	2022	Q2	102593.0
+Haifa	Haifa-Bayport	2022	Q3	123998.25
+Haifa	Haifa-Bayport	2022	Q4	172148.25
+Haifa	Haifa-Bayport	2023	Q1	222086.0
+Haifa	Haifa-Bayport	2023	Q2	231566.75
+Haifa	Haifa-Bayport	2023	Q3	214054.5
+Haifa	Haifa-Bayport	2023	Q4	145084.0
+Haifa	Haifa-Bayport	2024	Q1	159882.75
+Haifa	Haifa-Bayport	2024	Q2	132787.5
+Haifa	Haifa-Bayport	2024	Q3	129346.75
+Haifa	Haifa-Bayport	2024	Q4	141247.0
+Haifa	Haifa-Legacy	2020	Q1	373762.6354816
+Haifa	Haifa-Legacy	2020	Q2	365659.492939106
+Haifa	Haifa-Legacy	2020	Q3	351668.334019134
+Haifa	Haifa-Legacy	2020	Q4	373374.707128551
+Haifa	Haifa-Legacy	2021	Q1	376309.770020586
+Haifa	Haifa-Legacy	2021	Q2	385966.177645203
+Haifa	Haifa-Legacy	2021	Q3	349371.975198281
+Haifa	Haifa-Legacy	2021	Q4	351457.887348166
+Haifa	Haifa-Legacy	2022	Q1	354496.0
+Haifa	Haifa-Legacy	2022	Q2	318193.0
+Haifa	Haifa-Legacy	2022	Q3	240017.0
+Haifa	Haifa-Legacy	2022	Q4	157894.0
+Haifa	Haifa-Legacy	2023	Q1	170270.0
+Haifa	Haifa-Legacy	2023	Q2	191550.0
+Haifa	Haifa-Legacy	2023	Q3	176997.0
+Haifa	Haifa-Legacy	2023	Q4	193275.0
+Haifa	Haifa-Legacy	2024	Q1	164873.0
+Haifa	Haifa-Legacy	2024	Q2	147928.0
+Haifa	Haifa-Legacy	2024	Q3	172710.0
+Haifa	Haifa-Legacy	2024	Q4	162259.0

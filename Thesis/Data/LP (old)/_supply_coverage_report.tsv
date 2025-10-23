@@ -1,0 +1,66 @@
+port	year	months_with_tons	months_with_teu	quarters_with_teu	has_monthly_teu	has_quarterly_teu	note
+All Ports	2008	0	12	0	True	False	monthly TEU available
+All Ports	2009	0	12	0	True	False	monthly TEU available
+All Ports	2010	0	12	0	True	False	monthly TEU available
+All Ports	2011	0	12	0	True	False	monthly TEU available
+All Ports	2012	0	12	0	True	False	monthly TEU available
+All Ports	2013	0	12	0	True	False	monthly TEU available
+All Ports	2014	0	12	0	True	False	monthly TEU available
+All Ports	2015	0	12	0	True	False	monthly TEU available
+All Ports	2016	0	12	0	True	False	monthly TEU available
+All Ports	2017	0	12	0	True	False	monthly TEU available
+All Ports	2018	0	12	0	True	False	monthly TEU available
+All Ports	2019	0	12	0	True	False	monthly TEU available
+All Ports	2020	0	12	0	True	False	monthly TEU available
+All Ports	2021	0	10	0	True	False	monthly TEU available
+Ashdod	2008	0	12	0	True	False	monthly TEU available
+Ashdod	2009	0	12	0	True	False	monthly TEU available
+Ashdod	2010	0	12	0	True	False	monthly TEU available
+Ashdod	2011	0	12	0	True	False	monthly TEU available
+Ashdod	2012	0	12	0	True	False	monthly TEU available
+Ashdod	2013	0	12	0	True	False	monthly TEU available
+Ashdod	2014	0	12	0	True	False	monthly TEU available
+Ashdod	2015	0	12	0	True	False	monthly TEU available
+Ashdod	2016	0	12	0	True	False	monthly TEU available
+Ashdod	2017	0	12	0	True	False	monthly TEU available
+Ashdod	2018	0	12	0	True	False	monthly TEU available
+Ashdod	2019	0	12	0	True	False	monthly TEU available
+Ashdod	2020	0	12	0	True	False	monthly TEU available
+Ashdod	2021	0	11	0	True	False	monthly TEU available
+Ashdod	2022	0	4	0	True	False	monthly TEU available
+Ashdod	2023	0	4	0	True	False	monthly TEU available
+Ashdod	2024	0	4	0	True	False	monthly TEU available
+Eilat	2008	0	12	0	True	False	monthly TEU available
+Eilat	2009	0	12	0	True	False	monthly TEU available
+Eilat	2010	0	12	0	True	False	monthly TEU available
+Eilat	2011	0	12	0	True	False	monthly TEU available
+Eilat	2012	0	12	0	True	False	monthly TEU available
+Eilat	2013	0	12	0	True	False	monthly TEU available
+Eilat	2014	0	12	0	True	False	monthly TEU available
+Eilat	2015	0	12	0	True	False	monthly TEU available
+Eilat	2016	0	12	0	True	False	monthly TEU available
+Eilat	2017	0	12	0	True	False	monthly TEU available
+Eilat	2018	0	12	0	True	False	monthly TEU available
+Eilat	2019	0	12	0	True	False	monthly TEU available
+Eilat	2020	0	12	0	True	False	monthly TEU available
+Eilat	2021	0	11	0	True	False	monthly TEU available
+Eilat	2022	0	4	0	True	False	monthly TEU available
+Eilat	2023	0	4	0	True	False	monthly TEU available
+Eilat	2024	0	4	0	True	False	monthly TEU available
+Haifa	2008	0	12	0	True	False	monthly TEU available
+Haifa	2009	0	12	0	True	False	monthly TEU available
+Haifa	2010	0	12	0	True	False	monthly TEU available
+Haifa	2011	0	12	0	True	False	monthly TEU available
+Haifa	2012	0	12	0	True	False	monthly TEU available
+Haifa	2013	0	12	0	True	False	monthly TEU available
+Haifa	2014	0	12	0	True	False	monthly TEU available
+Haifa	2015	0	12	0	True	False	monthly TEU available
+Haifa	2016	0	12	0	True	False	monthly TEU available
+Haifa	2017	0	12	0	True	False	monthly TEU available
+Haifa	2018	0	12	0	True	False	monthly TEU available
+Haifa	2019	0	12	0	True	False	monthly TEU available
+Haifa	2020	0	12	0	True	False	monthly TEU available
+Haifa	2021	0	11	0	True	False	monthly TEU available
+Haifa	2022	0	4	0	True	False	monthly TEU available
+Haifa	2023	0	4	0	True	False	monthly TEU available
+Haifa	2024	0	4	0	True	False	monthly TEU available

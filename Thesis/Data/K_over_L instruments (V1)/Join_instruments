@@ -1,0 +1,127 @@
+# Join_instruments.py
+# Robust join of all K/L instrument monthly files (and optional controls) on Month+Port.
+
+from __future__ import annotations
+import sys
+from pathlib import Path
+import pandas as pd
+
+ROOT   = Path(".")
+DATA   = ROOT / "Data"
+KINST  = DATA / "K_over_L instruments"
+
+# Candidate inputs (monthly, wide). It's OK if some are missing.
+INPUTS = {
+    "sts":        KINST / "STS_cranes_monthly.tsv",
+    "yard":       KINST / "yard_cranes_monthly.tsv",
+    "automation": KINST / "automation_monthly.tsv",
+    "dredging":   KINST / "Dredging" / "Dredging_monthly.tsv",
+    "berth":      KINST / "berth_meters_monthly.tsv",
+    # controls (optional, becomes full panel when present)
+    "controls":   DATA / "Monthly Controls.tsv",  # note the space
+}
+
+OUT_INSTR = KINST / "joined_instruments.tsv"
+OUT_PANEL = DATA  / "panel_monthly.tsv"
+
+def _read_tsv(path: Path, name: str) -> pd.DataFrame | None:
+    if not path.exists():
+        print(f"NOTE: {name:<10} missing -> {path}")
+        return None
+    try:
+        df = pd.read_csv(path, sep="\t")
+    except UnicodeDecodeError:
+        df = pd.read_csv(path, sep="\t", encoding="utf-8-sig")
+
+    # --- normalize headers ---
+    df.columns = [c.strip().lstrip("\ufeff") for c in df.columns]
+
+    # ---- standardize keys ----
+    # Allow variations like 'month', 'MONTH', 'Port ', 'port'
+    colmap = {c.lower().strip(): c for c in df.columns}
+    if "month" not in colmap or "port" not in colmap:
+        raise ValueError(f"{name} must have Month & Port columns: {path}")
+    month_col = colmap["month"]
+    port_col  = colmap["port"]
+
+    # Coerce Month to YYYY-MM (accept datetime or string)
+    m = df[month_col]
+    if pd.api.types.is_datetime64_any_dtype(m):
+        df["Month"] = pd.to_datetime(m).dt.to_period("M").astype(str)
+    else:
+        # handle 'YYYY-MM' or 'YYYY-MM-DD'
+        try:
+            df["Month"] = pd.to_datetime(m.astype(str), errors="coerce").dt.to_period("M").astype(str)
+        except Exception:
+            # last resort: keep as string
+            df["Month"] = m.astype(str).str[:7]
+    # Normalize Port to title-case without surrounding spaces
+    df["Port"] = df[port_col].astype(str).str.strip().str.title()
+
+    # Drop old key columns if they had different names
+    keep = ["Month", "Port"] + [c for c in df.columns if c not in ("Month", "Port", month_col, port_col)]
+    df = df[keep]
+
+    # De-duplicate within file if any accidental duplicates exist
+    if df.duplicated(["Month","Port"]).any():
+        print(f"WARNING: duplicates in {name}; collapsing by first occurrence.")
+        df = (df.sort_values(["Month","Port"])
+                .groupby(["Month","Port"], as_index=False)
+                .first())
+
+    print(f"Loaded {name:<10} rows={len(df):>4} cols={df.shape[1]:>2} -> {path}")
+    return df
+
+def _outer_merge_on_month_port(dfs: list[pd.DataFrame]) -> pd.DataFrame:
+    base = dfs[0].copy()
+    for nxt in dfs[1:]:
+        base = base.merge(nxt, on=["Month","Port"], how="outer")
+    # Sort for readability
+    base = base.sort_values(["Month","Port"]).reset_index(drop=True)
+    # Put keys first
+    front = ["Month","Port"]
+    rest  = [c for c in base.columns if c not in front]
+    return base[front + rest]
+
+def main():
+    # Read instrument tables
+    pieces = []
+    for key in ["sts", "yard", "automation", "dredging", "berth"]:
+        df = _read_tsv(INPUTS[key], key)
+        if df is not None:
+            pieces.append(df)
+
+    if not pieces:
+        print("ERROR: no instrument monthly tables found. Build at least one and rerun.")
+        sys.exit(1)
+
+    joined = _outer_merge_on_month_port(pieces)
+    OUT_INSTR.parent.mkdir(parents=True, exist_ok=True)
+    joined.to_csv(OUT_INSTR, sep="\t", index=False)
+    print(f"\nWrote instruments -> {OUT_INSTR} (rows={len(joined)}, cols={joined.shape[1]})")
+
+    # If controls exist, join to build the complete panel
+    controls = _read_tsv(INPUTS["controls"], "controls")
+    if controls is not None:
+        panel = controls.merge(joined, on=["Month","Port"], how="left")
+        # Fill numeric instrument NaNs with 0 (keep string/audit columns as-is)
+        num_cols = panel.select_dtypes(include="number").columns.tolist()
+        panel[num_cols] = panel[num_cols].fillna(0)
+        panel = panel.sort_values(["Month","Port"]).reset_index(drop=True)
+        panel.to_csv(OUT_PANEL, sep="\t", index=False)
+        print(f"Wrote full panel -> {OUT_PANEL} (rows={len(panel)}, cols={panel.shape[1]})")
+    else:
+        print("Controls not found — skipped writing Data/panel_monthly.tsv")
+
+    # Quick schema summaries
+    def _cols(df, label):
+        cols = [c for c in df.columns if c not in ("Month","Port")]
+        print(f"[{label}] {len(cols)} data columns")
+        for c in cols:
+            print("  -", c)
+    _cols(joined, "joined_instruments")
+    if controls is not None:
+        _cols(panel, "panel_monthly")
+
+if __name__ == "__main__":
+    main()

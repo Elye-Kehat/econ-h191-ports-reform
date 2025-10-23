@@ -1,0 +1,35 @@
+{
+  "inputs": {
+    "haifa_m": "Data/LP/LP_Haifa_port_month.tsv",
+    "ashdod_m": "Data/LP/LP_Ashdod_port_month.tsv",
+    "haifa_legacy_q": "Data/LP/LP_Haifa_Legacy_quarter.tsv",
+    "haifa_sipg_q": "Data/LP/LP_Haifa_SIPG_quarter.tsv",
+    "ashdod_legacy_q": "Data/LP/LP_Ashdod_Legacy_quarter.tsv",
+    "ashdod_hct_q": "Data/LP/LP_Ashdod_HCT_quarter.tsv"
+  },
+  "outputs": {
+    "LP_Panel": "Data/LP/LP_Panel.tsv",
+    "S5_qa": "Data/LP/S5_qa.tsv",
+    "S5_spans": "Data/LP/S5_spans.tsv"
+  },
+  "schema": [
+    "series_id",
+    "level",
+    "freq",
+    "port",
+    "terminal",
+    "year",
+    "month",
+    "quarter",
+    "month_index",
+    "quarter_index",
+    "TEU",
+    "tons",
+    "L_hours",
+    "w",
+    "Pi",
+    "LP",
+    "LP_id",
+    "tons_source"
+  ]
+}
