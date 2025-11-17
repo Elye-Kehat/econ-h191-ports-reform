@@ -154,7 +154,7 @@ def build_monthly_port_lp(args):
 
     # Restrict to pre-reform monthly window
     teu_m['ym'] = teu_m['year']*100 + teu_m['month']
-    teu_m = teu_m[(teu_m['ym'] >= args.monthly_start) & (teu_m['ym'] <= args.monthly_end) & (teu_m['is_pre_reform'])]
+    teu_m = teu_m[(teu_m['ym'] >= args.monthly_start) & (teu_m['ym'] <= args.monthly_end)]
 
     pm = (tons_m.merge(teu_m[['port','year','month','month_index','TEU_port_m']],
                        on=['port','year','month','month_index'], how='inner'))
@@ -291,7 +291,7 @@ def main():
     ap.add_argument('--winsor_low',  type=float, default=0.01)
     ap.add_argument('--winsor_high', type=float, default=0.99)
     ap.add_argument('--monthly_start', type=int, default=201801)  # YYYYMM
-    ap.add_argument('--monthly_end',   type=int, default=202108)  # YYYYMM inclusive
+    ap.add_argument('--monthly_end',   type=int, default=202110)  # YYYYMM inclusive
     ap.add_argument('--quarterly_start', type=str, default='2021Q3')
     ap.add_argument('--quarterly_end',   type=str, default='2024Q4')
 

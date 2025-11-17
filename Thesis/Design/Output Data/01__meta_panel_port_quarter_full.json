@@ -1,0 +1,25 @@
+{
+  "inputs": {
+    "LP_Panel": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/LP_Panel.tsv",
+    "pre_panel": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output Data/panel_port_quarter.csv"
+  },
+  "outputs": {
+    "csv": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output Data/01_panel_port_quarter_full.csv"
+  },
+  "counts": {
+    "LP_panel_rows": 148,
+    "A_portQ_rows": 32,
+    "B_termQ_to_portQ_rows": 0,
+    "C_pre_rows": 0,
+    "final_rows": 32
+  },
+  "sources_used": [
+    "LP_panel_port_quarter"
+  ],
+  "ports": [
+    "Ashdod",
+    "Haifa"
+  ],
+  "qtr_min": "2018Q1",
+  "qtr_max": "2021Q4"
+}

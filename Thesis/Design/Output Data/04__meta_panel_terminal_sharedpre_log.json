@@ -1,0 +1,12 @@
+{
+  "n_rows": 112,
+  "n_ports": 2,
+  "n_terminals": 3,
+  "n_pre_synth": 56,
+  "year_min": 2018,
+  "year_max": 2024,
+  "n_year_missing": 0,
+  "has_tau_comp": false,
+  "has_tau_priv": false,
+  "has_nyt_ok_comp": false
+}

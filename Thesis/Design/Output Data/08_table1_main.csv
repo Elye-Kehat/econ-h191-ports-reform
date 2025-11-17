@@ -1,0 +1,10 @@
+row,entrant,legacy
+Average post,0.208,0.321
+,\scriptsize (0.505),\scriptsize (0.467)
+Pre-trends p-value (leads joint F),1.000,0.283
+Terminal FE,Yes,Yes
+Quarter FE,Yes,Yes
+Omitted bin,k = -1,k = -1
+Post window,"[1,4]","[1,4]"
+Observations,72,72
+Clusters,,

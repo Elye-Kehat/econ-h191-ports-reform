@@ -1,0 +1,57 @@
+{
+  "backend": "python",
+  "input": "Design/Output Data/05_panel_terminal_sharedpre_model1.csv",
+  "outdir": "Design/Output Data",
+  "bins_all": [
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "pre_bins": [
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2
+  ],
+  "cluster": "port",
+  "fes": [
+    "tid (terminal FE)",
+    "qtr (calendar FE)"
+  ],
+  "note": "Per-terminal ES run with interactions is_g * 1{tau_bin=k}; baseline k=-1 omitted upstream.",
+  "results": {
+    "Legacy": {
+      "n_obs_used": 72,
+      "n_regressors": 33,
+      "pretrend_p": 0.28311626990841166,
+      "coef_csv": "Design/Output Data/06_es_coeffs_Legacy.csv",
+      "plot_png": "Design/Output Data/06_es_plot_Legacy.png"
+    },
+    "SIPG": {
+      "n_obs_used": 72,
+      "n_regressors": 33,
+      "pretrend_p": 0.4192434070872557,
+      "coef_csv": "Design/Output Data/06_es_coeffs_SIPG.csv",
+      "plot_png": "Design/Output Data/06_es_plot_SIPG.png"
+    },
+    "HCT": {
+      "n_obs_used": 72,
+      "n_regressors": 28,
+      "pretrend_p": 0.27422531798415845,
+      "coef_csv": "Design/Output Data/06_es_coeffs_HCT.csv",
+      "plot_png": "Design/Output Data/06_es_plot_HCT.png"
+    }
+  }
+}

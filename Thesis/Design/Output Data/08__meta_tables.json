@@ -1,0 +1,17 @@
+{
+  "inputs": {
+    "07_table_main.csv": true,
+    "07_es_coeffs_entrant.csv": true,
+    "07_es_coeffs_legacy.csv": true,
+    "07__meta.json": true
+  },
+  "outputs": [
+    "08_table1_main.csv",
+    "08_table1_main.tex",
+    "08_table2_dynamic_pooled_panelA_entrant.csv",
+    "08_table2_dynamic_pooled_panelB_legacy.csv",
+    "08_table2_dynamic_pooled.tex"
+  ],
+  "p_for_stars": "p_wild",
+  "decimals": 3
+}

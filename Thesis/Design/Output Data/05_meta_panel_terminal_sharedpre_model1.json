@@ -1,0 +1,12 @@
+{
+  "n_rows": 0,
+  "n_ports": 0,
+  "n_terminals": 0,
+  "terminals": {},
+  "years": {
+    "min": null,
+    "max": null
+  },
+  "has_tau_comp": false,
+  "has_nyt_ok_comp": false
+}

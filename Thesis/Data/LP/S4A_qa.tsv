@@ -1,9 +1,9 @@
 check	ok	note
-unique_Haifa_port_month	True	n=44
-mean_w_Haifa_per_year≈1	True	max |mean(w)-1|=0
-annual_preservation_Haifa	False	max |E[LP]-E[Pi]|=0.0194
-NA_LP_months_Haifa	True	0 NA of 44
-unique_Ashdod_port_month	True	n=44
-mean_w_Ashdod_per_year≈1	True	max |mean(w)-1|=0
-annual_preservation_Ashdod	False	max |E[LP]-E[Pi]|=0.019
-NA_LP_months_Ashdod	True	0 NA of 44
+unique_Haifa_port_month	True	n=46
+mean_w_Haifa_per_year≈1	True	max |mean(w)-1|=1.11e-16
+annual_preservation_Haifa	False	max |E[LP]-E[Pi]|=0.0508
+NA_LP_months_Haifa	True	0 NA of 46
+unique_Ashdod_port_month	True	n=46
+mean_w_Ashdod_per_year≈1	True	max |mean(w)-1|=1.11e-16
+annual_preservation_Ashdod	False	max |E[LP]-E[Pi]|=0.0589
+NA_LP_months_Ashdod	True	0 NA of 46

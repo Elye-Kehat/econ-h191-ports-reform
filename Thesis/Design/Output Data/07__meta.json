@@ -1,0 +1,24 @@
+{
+  "input": "Design/Output Data/05_panel_terminal_sharedpre_model1.csv",
+  "outdir": "Design/Output Data",
+  "post_window": [
+    1,
+    4
+  ],
+  "exclude_qtrs": [],
+  "pretrend_p": {
+    "entrant": 1.0,
+    "legacy": 0.28311626990841166
+  },
+  "n_obs": {
+    "entrant": 72,
+    "legacy": 72
+  },
+  "artifacts": {
+    "coeffs_entrant_csv": "Design/Output Data/07_es_coeffs_entrant.csv",
+    "coeffs_legacy_csv": "Design/Output Data/07_es_coeffs_legacy.csv",
+    "fig_es_entrant_png": "Design/Output Data/07_fig_es_entrant.png",
+    "fig_es_legacy_png": "Design/Output Data/07_fig_es_legacy.png",
+    "table_main_csv": "Design/Output Data/07_table_main.csv"
+  }
+}

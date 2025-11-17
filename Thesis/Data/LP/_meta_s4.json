@@ -1,9 +1,9 @@
 {
   "params": {
-    "winsor_low": 0.01,
-    "winsor_high": 0.99,
+    "winsor_low": 0.0,
+    "winsor_high": 1.0,
     "monthly_start": 201801,
-    "monthly_end": 202108,
+    "monthly_end": 202110,
     "quarterly_start": "2021Q3",
     "quarterly_end": "2024Q4"
   }

@@ -1,0 +1,87 @@
+events:
+  competition:
+    Haifa:  "2021Q3"
+    Ashdod: "2022Q4"
+  privatization:
+    Haifa:  "2023Q1"
+    Ashdod: null        # fill later if/when applicable
+
+bins:
+  leads_ref: -1         # we’ll normalize to event-time = -1 (or -2; your choice)
+  post_1: [0, 4]        # 0–4 quarters
+  post_2: [5, 12]       # 5–12 quarters
+
+robustness:
+  drop_2020: false
+  truncate_at_2023Q3: false
+  include_spillover_flag: true
+
+paths:
+  paths:
+  lp_panel: "Data/LP/LP_Panel.tsv"
+  teu:      "Thesis/Data/LP/Output/teu_monthly_plus_quarterly_by_port.tsv"
+  tons:     "Thesis/Data/LP/Output/monthly_output_by_1000_tons_ports_and_terminals.tsv"
+
+output:
+  panel_q:   "Thesis/Design/Code/Econometrics/output/meta/panel_port_quarter.csv"
+  es_tables: "Thesis/Design/Code/Econometrics/output/tables/table_es_lp.csv"
+  figs:      "Thesis/Design/Code/Econometrics/output/figures"
+
+# model1_params.yaml — full schema
+
+data:
+  panel_path: "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Output Data/LP_Panel_quarterized.tsv"
+  id_fields: ["port", "terminal"]
+  time_fields: ["year", "quarter"]
+  outcome_col: "lp"
+  log_outcome: true
+  columns:
+    port: "port"
+    terminal: "terminal"
+    year: "year"
+    quarter: "quarter"
+    lp: "lp"
+
+event_time:
+  k_min: -8
+  k_max: 4
+  omit_k: -1
+  lead_bins_for_F: [-4, -3, -2]
+
+groups:
+  - { name: "Haifa_SIPG",    port: "Haifa",  terminal: "SIPG",   clock: "2021Q4" }
+  - { name: "Haifa_Legacy",  port: "Haifa",  terminal: "Legacy", clock: "2021Q4" }
+  - { name: "Ashdod_HCT",    port: "Ashdod", terminal: "HCT",    clock: "2022Q2" }
+  - { name: "Ashdod_Legacy", port: "Ashdod", terminal: "Legacy", clock: "2022Q2" }
+
+specs:
+  baseline:   { add_port_trends: false, include_shocks: false }
+  port_tr:    { add_port_trends: true,  include_shocks: false }
+  tr_shocks:  { add_port_trends: true,  include_shocks: true  }
+
+shocks:
+  shock_windows:
+    - { name: "covid",         start: "2020Q1", end: "2021Q4" }
+    - { name: "security_2324", start: "2023Q4", end: "2024Q2" }
+
+robustness:
+  balanced_panel: true
+  drop_covid:   ["2020Q1","2021Q4"]
+  drop_2324:    ["2023Q4","2024Q2"]
+  windows:
+    - { name: "[1,2]", a: 1, b: 2 }
+    - { name: "[1,4]", a: 1, b: 4 }
+    - { name: "[1,8]", a: 1, b: 8 }
+
+placebos:
+  leads_F_test: true
+  clock_shift_quarters: -4
+
+estimation:
+  cluster: "port"
+  vcv: "CR2"
+  wild_cluster: true
+
+output:
+  es_dir: "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Output Data/ES"
+  tables_dir: "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Output Data/Tables"
