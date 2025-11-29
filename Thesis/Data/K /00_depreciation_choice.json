@@ -1,0 +1,9 @@
+{
+  "depreciation_scenario": "central",
+  "delta": 0.06,
+  "scenarios_available": {
+    "low": 0.04,
+    "central": 0.06,
+    "high": 0.08
+  }
+}
