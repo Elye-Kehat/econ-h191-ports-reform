@@ -1,0 +1,21 @@
+reform	target	spec_name	window	a	b	beta	se	n_obs	r2
+haifa_comp	Haifa-Bayport terminal	porttr	avg_pre	-24	-2	2.351345142039113	2.023643039635561e-11	91	1.0
+haifa_comp	Haifa-Bayport terminal	porttr	post_1yr	1	12	0.5842281359416817	6.625260994151518e-12	91	1.0
+haifa_comp	Haifa-Bayport terminal	porttr	post_2yrs	1	24	0.5511532644270283	9.78898941445686e-12	91	1.0
+haifa_comp	Haifa-Bayport terminal	porttr	full_post	1	13	0.5511532644270283	9.78898941445686e-12	91	1.0
+haifa_comp	Haifa-Legacy terminal	porttr	avg_pre	-24	-2	2.351800275245006	2.0240648000994832e-11	91	1.0
+haifa_comp	Haifa-Legacy terminal	porttr	post_1yr	1	12	0.5874706724626271	6.6259718096559056e-12	91	1.0
+haifa_comp	Haifa-Legacy terminal	porttr	post_2yrs	1	24	0.5543950485062199	9.789508814254432e-12	91	1.0
+haifa_comp	Haifa-Legacy terminal	porttr	full_post	1	13	0.5543950485062199	9.789508814254432e-12	91	1.0
+ashdod_comp	Ashdod-HCT terminal	porttr	avg_pre	-24	-2	0.22163263688300405	2.1380601167165204e-12	95	1.0
+ashdod_comp	Ashdod-HCT terminal	porttr	post_1yr	1	12	-0.14802316023167972	1.5756385674237283e-12	95	1.0
+ashdod_comp	Ashdod-HCT terminal	porttr	post_2yrs	1	24	-0.14802316023167972	1.5756385674237283e-12	95	1.0
+ashdod_comp	Ashdod-HCT terminal	porttr	full_post	1	10	-0.14802316023167972	1.5756385674237283e-12	95	1.0
+ashdod_comp	Ashdod-Legacy terminal	porttr	avg_pre	-24	-2	0.21378291047007647	2.2734915235573416e-12	95	1.0
+ashdod_comp	Ashdod-Legacy terminal	porttr	post_1yr	1	12	-0.14808626816646336	1.6841758496324192e-12	95	1.0
+ashdod_comp	Ashdod-Legacy terminal	porttr	post_2yrs	1	24	-0.14808626816646336	1.6841758496324192e-12	95	1.0
+ashdod_comp	Ashdod-Legacy terminal	porttr	full_post	1	10	-0.14808626816646336	1.6841758496324192e-12	95	1.0
+haifa_priv	Haifa-Legacy terminal	porttr	avg_pre	-24	-2	-10.247113684955906	0.06716526083186936	117	0.9477066101302017
+haifa_priv	Haifa-Legacy terminal	porttr	post_1yr	1	12	0.04329121560481222	0.0458309230062405	117	0.9477066101302017
+haifa_priv	Haifa-Legacy terminal	porttr	post_2yrs	1	24	0.04329121560481222	0.0458309230062405	117	0.9477066101302017
+haifa_priv	Haifa-Legacy terminal	porttr	full_post	1	8	0.04329121560481222	0.0458309230062405	117	0.9477066101302017

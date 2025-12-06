@@ -1,0 +1,6 @@
+reform	target	spec_name	n_leads	f_stat	pvalue	df_num	df_denom	n_obs	r2
+haifa_comp	Haifa-Bayport terminal	porttr	23.0	2.5750711655267115e+32	4.918428193301038e-17	23.0	14.0	91	1.0
+haifa_comp	Haifa-Legacy terminal	porttr	23.0	-3.531315007048207e+32	1.0	23.0	14.0	91	1.0
+ashdod_comp	Ashdod-HCT terminal	porttr	23.0	-2.7409733149833385e+35	1.0	23.0	24.0	95	1.0
+ashdod_comp	Ashdod-Legacy terminal	porttr	23.0	-1.3016395641225954e+35	1.0	23.0	24.0	95	1.0
+haifa_priv	Haifa-Legacy terminal	porttr	23.0	-20663275606.369904	1.0	23.0	48.0	117	0.9477066101302017

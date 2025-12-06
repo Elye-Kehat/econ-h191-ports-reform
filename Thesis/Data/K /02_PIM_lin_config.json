@@ -1,0 +1,14 @@
+{
+  "description": "Monthly K series for Haifa Port Company (legacy) based on annual PIM with linear interpolation between December year-end stocks (Path A).",
+  "input_annual_pim_file": "01_K_B_annual_Haifa_PIM.tsv",
+  "output_monthly_file": "02_K_B_monthly_Haifa_PIM_lin.tsv",
+  "output_monthly_sample_file": "02_K_B_monthly_Haifa_PIM_lin_sample.csv",
+  "port": "Haifa",
+  "company": "Haifa Port Company (legacy)",
+  "interpolation_method": "linear in levels between December annual PIM stocks using pandas.interpolate(method='time')",
+  "flags": {
+    "imputed_2022_rule": "imputed_2022 = 1 for all months with calendar year 2022; 0 otherwise.",
+    "flows_imputed_annual": "annual flows_imputed_flag from PIM, mapped to months by year.",
+    "gap_years_from_prev_annual": "annual gap_years_from_prev from PIM, mapped to months by year."
+  }
+}

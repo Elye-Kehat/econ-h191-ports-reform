@@ -1,0 +1,74 @@
+port	company	operator_or_owner	month	year	imputed_2022	flows_imputed_annual	gap_years_from_prev_annual	K_PIM_lin_low	K_PIM_lin_central	K_PIM_lin_high	K_PIM_real_low	K_PIM_real_central	K_PIM_real_high	flows_imputed_flag	gap_years_from_prev
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2018-12-01	2018	0	False	0	1171216.3579983236	1171216.3579983236	1171216.3579983236	1171216.3579983236	1171216.3579983236	1171216.3579983236	False	0.0
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2019-01-01	2019	0	False	1	1169219.4777684116	1167230.0143657841	1165240.5509631569					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2019-02-01	2019	0	False	1	1167222.5975384994	1163243.6707332449	1159264.7439279903					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2019-03-01	2019	0	False	1	1165418.9637824497	1159643.1022909512	1153867.2407994526					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2019-04-01	2019	0	False	1	1163422.0835525377	1155656.7586584117	1147891.4337642859					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2019-05-01	2019	0	False	1	1161489.618813913	1151799.0067559541	1142108.3946979956					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2019-06-01	2019	0	False	1	1159492.7385840009	1147812.6631234146	1136132.5876628289					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2019-07-01	2019	0	False	1	1157560.2738453762	1143954.9112209573	1130349.5485965386					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2019-08-01	2019	0	False	1	1155563.3936154642	1139968.5675884178	1124373.7415613718					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2019-09-01	2019	0	False	1	1153566.513385552	1135982.2239558783	1118397.934526205					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2019-10-01	2019	0	False	1	1151634.0486469273	1132124.4720534207	1112614.8954599148					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2019-11-01	2019	0	False	1	1149637.1684170153	1128138.1284208815	1106639.088424748					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2019-12-01	2019	0	False	1	1147704.7036783907	1124280.376518424	1100856.0493584578	1147704.7036783907	1124280.376518424	1100856.0493584578	False	1.0
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2020-01-01	2020	0	False	1	1147896.4235005567	1122646.9387783958	1097476.8151646464					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2020-02-01	2020	0	False	1	1148088.1433227228	1121013.5010383676	1094097.5809708347					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2020-03-01	2020	0	False	1	1148267.4941241038	1119485.4463783414	1090936.3618863015					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2020-04-01	2020	0	False	1	1148459.2139462698	1117852.0086383133	1087557.12769249					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2020-05-01	2020	0	False	1	1148644.7492580435	1116271.262438286	1084286.9010533176					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2020-06-01	2020	0	False	1	1148836.4690802095	1114637.824698258	1080907.666859506					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2020-07-01	2020	0	False	1	1149022.0043919832	1113057.0784982308	1077637.4402203336					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2020-08-01	2020	0	False	1	1149213.7242141492	1111423.6407582026	1074258.2060265222					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2020-09-01	2020	0	False	1	1149405.4440363152	1109790.2030181745	1070878.9718327106					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2020-10-01	2020	0	False	1	1149590.9793480886	1108209.4568181473	1067608.7451935383					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2020-11-01	2020	0	False	1	1149782.6991702546	1106576.0190781192	1064229.5109997268					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2020-12-01	2020	0	False	1	1149968.2344820283	1104995.272878092	1060959.2843605543	1149968.2344820283	1104995.272878092	1060959.2843605543	False	1.0
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2021-01-01	2021	0	False	1	1152158.93797262	1105461.7829528055	1059848.019592361					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2021-02-01	2021	0	False	1	1154349.6414632115	1105928.2930275188	1058736.7548241678					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2021-03-01	2021	0	False	1	1156328.3413901974	1106349.6569659696	1057733.0318077353					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2021-04-01	2021	0	False	1	1158519.044880789	1106816.167040683	1056621.767039542					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2021-05-01	2021	0	False	1	1160639.0805168455	1107267.6284033088	1055546.3495219357					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2021-06-01	2021	0	False	1	1162829.784007437	1107734.1384780223	1054435.0847537427					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2021-07-01	2021	0	False	1	1164949.8196434935	1108185.5998406482	1053359.6672361363					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2021-08-01	2021	0	False	1	1167140.5231340851	1108652.1099153615	1052248.402467943					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2021-09-01	2021	0	False	1	1169331.2266246767	1109118.619990075	1051137.1376997498					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2021-10-01	2021	0	False	1	1171451.262260733	1109570.081352701	1050061.7201821436					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2021-11-01	2021	0	False	1	1173641.9657513245	1110036.5914274142	1048950.4554139504					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2021-12-01	2021	0	False	1	1175762.001387381	1110488.0527900402	1047875.037896344	1175762.001387381	1110488.0527900402	1047875.037896344	False	1.0
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2022-01-01	2022	1	False	0	1175310.3537395783	1108461.729633312	1044502.8562591231					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2022-02-01	2022	1	False	0	1174858.7060917756	1106435.4064765836	1041130.674621902					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2022-03-01	2022	1	False	0	1174450.7662808571	1104605.1791092162	1038084.8331431219					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2022-04-01	2022	1	False	0	1173999.1186330544	1102578.8559524878	1034712.651505901					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2022-05-01	2022	1	False	0	1173562.0402642132	1100617.89805888	1031449.2499214936					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2022-06-01	2022	1	False	0	1173110.3926164105	1098591.5749021515	1028077.0682842727					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2022-07-01	2022	1	False	0	1172673.3142475693	1096630.6170085436	1024813.6666998654					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2022-08-01	2022	1	False	0	1172221.6665997666	1094604.2938518152	1021441.4850626444					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2022-09-01	2022	1	False	0	1171770.0189519639	1092577.970695087	1018069.3034254235					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2022-10-01	2022	1	False	0	1171332.9405831227	1090617.0128014788	1014805.9018410161					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2022-11-01	2022	1	False	0	1170881.29293532	1088590.6896447507	1011433.7202037951					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2022-12-01	2022	1	False	0	1170444.2145664787	1086629.7317511425	1008170.3186193878					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2023-01-01	2023	0	True	2	1169992.566918676	1084603.4085944144	1004798.1369821669					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2023-02-01	2023	0	True	2	1169540.9192708733	1082577.0854376862	1001425.9553449459					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2023-03-01	2023	0	True	2	1169132.9794599547	1080746.8580703186	998380.1138661657					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2023-04-01	2023	0	True	2	1168681.3318121522	1078720.5349135904	995007.9322289448					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2023-05-01	2023	0	True	2	1168244.2534433107	1076759.5770199823	991744.5306445374					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2023-06-01	2023	0	True	2	1167792.605795508	1074733.253863254	988372.3490073165					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2023-07-01	2023	0	True	2	1167355.5274266668	1072772.295969646	985108.9474229092					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2023-08-01	2023	0	True	2	1166903.879778864	1070745.9728129178	981736.7657856882					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2023-09-01	2023	0	True	2	1166452.2321310616	1068719.6496561894	978364.5841484673					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2023-10-01	2023	0	True	2	1166015.1537622202	1066758.6917625815	975101.18256406					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2023-11-01	2023	0	True	2	1165563.5061144175	1064732.368605853	971729.000926839					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2023-12-01	2023	0	True	2	1165126.4277455762	1062771.4107122452	968465.5993424316	1165126.4277455762	1062771.4107122452	968465.5993424316	True	2.0
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2024-01-01	2024	0	True	1	1165368.369481011	1061559.8058533622	966092.6833839738					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2024-02-01	2024	0	True	1	1165610.3112164459	1060348.2009944795	963719.7674255158					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2024-03-01	2024	0	True	1	1165836.643807659	1059214.7641910084	961499.9428192165					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2024-04-01	2024	0	True	1	1166078.5855430937	1058003.1593321254	959127.0268607587					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2024-05-01	2024	0	True	1	1166312.7227064178	1056830.6385009484	956830.65657838					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2024-06-01	2024	0	True	1	1166554.6644418524	1055619.0336420657	954457.740619922					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2024-07-01	2024	0	True	1	1166788.8016051764	1054446.5128108887	952161.3703375435					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2024-08-01	2024	0	True	1	1167030.7433406112	1053234.9079520057	949788.4543790856					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2024-09-01	2024	0	True	1	1167272.685076046	1052023.3030931228	947415.5384206277					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2024-10-01	2024	0	True	1	1167506.8222393699	1050850.782261946	945119.1681382491					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2024-11-01	2024	0	True	1	1167748.7639748047	1049639.177403063	942746.2521797912					
+Haifa	Haifa Port Company (legacy)	Haifa Port Company (legacy)	2024-12-01	2024	0	True	1	1167982.9011381287	1048466.656571886	940449.8818974126	1167982.9011381287	1048466.656571886	940449.8818974126	True	1.0

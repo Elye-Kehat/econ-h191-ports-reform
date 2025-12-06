@@ -1,0 +1,15 @@
+{
+  "description": "Annual PIM capital stock for Haifa Port Company (legacy), Track B.",
+  "input_financials_file": "00_haifa_financials_step1_real.tsv",
+  "input_depreciation_meta": "00_depreciation_choice.json",
+  "depreciation_scenario_step1": "central",
+  "delta_step1": 0.06,
+  "depreciation_scenarios_used": {
+    "low": 0.04,
+    "central": 0.06,
+    "high": 0.08
+  },
+  "include_intangibles_in_pim": false,
+  "output_pim_file": "01_K_B_annual_Haifa_PIM.tsv",
+  "output_pim_sample_file": "01_K_B_annual_Haifa_PIM_sample.csv"
+}

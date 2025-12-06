@@ -30,8 +30,8 @@ DEFLATOR_PATH = DATA_DIR / (
 # If you ever go back to a simple [year, deflator] file, you can
 # instead point DEFLATOR_PATH to "capital_deflator.csv".
 
-OUT_FIN_REAL_PATH = DATA_DIR / "haifa_financials_step1_real.tsv"
-OUT_DEBUG_SAMPLE_PATH = DATA_DIR / "haifa_financials_step1_sample.csv"
+OUT_FIN_REAL_PATH = DATA_DIR / "00_haifa_financials_step1_real.tsv"
+OUT_DEBUG_SAMPLE_PATH = DATA_DIR / "00_haifa_financials_step1_sample.csv"
 OUT_META_PATH = DATA_DIR / "00_depreciation_choice.json"
 
 
