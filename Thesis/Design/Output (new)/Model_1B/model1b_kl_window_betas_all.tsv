@@ -1,0 +1,25 @@
+model	reform	target	spec_name	window_name	m_start	m_end	beta_hat	se	tvalue	pvalue	n_obs	treated_n	control_n	fe_type	cov_type	cluster_by	r2
+1B	haifa_comp	Haifa-Legacy terminal	baseline	post_all	1	24	0.5201165365985345				76	38	38	baseline	HC1	cluster_id	1.0
+1B	haifa_comp	Haifa-Legacy terminal	baseline	post_y1	1	12	0.21374457384076753				76	38	38	baseline	HC1	cluster_id	1.0
+1B	haifa_comp	Haifa-Legacy terminal	baseline	post_y2	13	24	0.8264884993563015				76	38	38	baseline	HC1	cluster_id	1.0
+1B	haifa_comp	Haifa-Legacy terminal	baseline	pre_all	-12	-2	-0.05555423460371395				76	38	38	baseline	HC1	cluster_id	1.0
+1B	haifa_comp	Haifa-Legacy terminal	porttr	post_all	1	24	0.5201165365985387				76	38	38	porttr	HC1	cluster_id	1.0
+1B	haifa_comp	Haifa-Legacy terminal	porttr	post_y1	1	12	0.21374457384077103				76	38	38	porttr	HC1	cluster_id	1.0
+1B	haifa_comp	Haifa-Legacy terminal	porttr	post_y2	13	24	0.8264884993563065				76	38	38	porttr	HC1	cluster_id	1.0
+1B	haifa_comp	Haifa-Legacy terminal	porttr	pre_all	-12	-2	-0.05555423460370897				76	38	38	porttr	HC1	cluster_id	1.0
+1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	post_all	1	24	0.5201165365985387				76	38	38	tr_shocks	HC1	cluster_id	1.0
+1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	post_y1	1	12	0.21374457384077103				76	38	38	tr_shocks	HC1	cluster_id	1.0
+1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	post_y2	13	24	0.8264884993563065				76	38	38	tr_shocks	HC1	cluster_id	1.0
+1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	pre_all	-12	-2	-0.05555423460370897				76	38	38	tr_shocks	HC1	cluster_id	1.0
+1B	haifa_priv	Haifa-Legacy terminal	baseline	post_all	1	24	-0.5744509110138522				74	37	37	baseline	HC1	cluster_id	1.0
+1B	haifa_priv	Haifa-Legacy terminal	baseline	post_y1	1	12	-0.4710132395207979				74	37	37	baseline	HC1	cluster_id	1.0
+1B	haifa_priv	Haifa-Legacy terminal	baseline	post_y2	13	24	-0.687292007188093				74	37	37	baseline	HC1	cluster_id	1.0
+1B	haifa_priv	Haifa-Legacy terminal	baseline	pre_all	-12	-2	-0.6961037373436998				74	37	37	baseline	HC1	cluster_id	1.0
+1B	haifa_priv	Haifa-Legacy terminal	porttr	post_all	1	24	-0.5744509110138543				74	37	37	porttr	HC1	cluster_id	1.0
+1B	haifa_priv	Haifa-Legacy terminal	porttr	post_y1	1	12	-0.47101323952079766				74	37	37	porttr	HC1	cluster_id	1.0
+1B	haifa_priv	Haifa-Legacy terminal	porttr	post_y2	13	24	-0.6872920071880977				74	37	37	porttr	HC1	cluster_id	1.0
+1B	haifa_priv	Haifa-Legacy terminal	porttr	pre_all	-12	-2	-0.6961037373436971				74	37	37	porttr	HC1	cluster_id	1.0
+1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	post_all	1	24	-0.5744509110138543				74	37	37	tr_shocks	HC1	cluster_id	1.0
+1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	post_y1	1	12	-0.47101323952079766				74	37	37	tr_shocks	HC1	cluster_id	1.0
+1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	post_y2	13	24	-0.6872920071880977				74	37	37	tr_shocks	HC1	cluster_id	1.0
+1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	pre_all	-12	-2	-0.6961037373436971				74	37	37	tr_shocks	HC1	cluster_id	1.0

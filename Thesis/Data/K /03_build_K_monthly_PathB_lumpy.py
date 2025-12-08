@@ -1,20 +1,23 @@
 """
 03_build_K_monthly_PathB_lumpy.py
 
-Construct Path B monthly K series for Haifa Port Company (legacy):
+Construct Path B monthly K series for Haifa Port Company (legacy) for
+ALL depreciation scenarios available in the annual PIM backbone
+(e.g. low / central / high):
 
   - Uses annual PIM backbone from 01_K_B_annual_Haifa_PIM.tsv
   - Uses monthly skeleton (dates + flags) from 02_K_B_monthly_Haifa_PIM_lin.tsv
   - Uses Haifa_big_projects.csv to overlay lumpy “big project” capital
-  - Decomposes annual PIM K into:
-        K_PIM_y = K_big_y + K_bg_y
-    then builds a smooth monthly background K_bg,t via interpolation
-  - Sums K_big,t + K_bg,t to get monthly K_PathB,t
+  - For each scenario s, decomposes annual PIM K into:
+        K_PIM_y^s = K_big_y + K_bg_y^s
+    then builds a smooth monthly background K_bg,t^s via interpolation
+  - Sums K_big,t + K_bg,t^s to get monthly K_PathB,t^s
 
 Output:
   - 03_K_B_monthly_Haifa_PathB.tsv
   - 03_K_B_monthly_Haifa_PathB_sample.csv
   - 03_PathB_config.json
+  - 03_K_B_PathB_QA.tsv
 """
 
 from pathlib import Path
@@ -51,7 +54,7 @@ DEFAULT_ASSET_LIFE_YEARS = 28.0
 
 
 # ======================================================================
-# Helper: load annual PIM backbone (Step 1 output)
+# Helper: load annual PIM backbone (Step 2 output)
 # ======================================================================
 
 def load_annual_pim(pim_path: Path) -> pd.DataFrame:
@@ -61,9 +64,11 @@ def load_annual_pim(pim_path: Path) -> pd.DataFrame:
     We expect at least:
       - company
       - year
-      - K_PIM_real_central        (the central depreciation scenario)
-      - flows_imputed_flag
-      - gap_years_from_prev
+      - K_PIM_real_central
+
+    but we ALSO allow additional scenario columns such as:
+      - K_PIM_real_low
+      - K_PIM_real_high
 
     The function:
       - filters to Haifa Port Company (legacy)
@@ -141,7 +146,7 @@ def load_monthly_skeleton(monthly_path: Path) -> pd.DataFrame:
             f"in {monthly_path.name}"
         )
 
-    # Ensure 'month' is datetime
+    # Ensure 'month' is datetime and 'year' is coherent
     df["month"] = pd.to_datetime(df["month"])
     df["year"] = df["month"].dt.year
 
@@ -194,7 +199,6 @@ def load_deflator_by_year(step1_real_path: Path) -> dict:
     df["year"] = pd.to_numeric(df["year"], errors="coerce").astype("Int64")
     df = df.dropna(subset=["year", "deflator"])
 
-    # For each year, take the first deflator (all should match anyway)
     year_def = (
         df.sort_values("year")
           .drop_duplicates(subset=["year"])
@@ -222,21 +226,20 @@ def load_big_projects(
       - port
       - operator_owner (or operator_or_owner / company / owner)
       - commissioning_year
-      - commissioning_month       (numeric month 1–12; may be blank for some rows)
-      - expected_end_year         (optional; used as fallback for commissioning date)
-      - expected_end_month        (optional; used as fallback for commissioning date)
-      - start_year                (optional; used as second-level fallback)
-      - start_month               (optional; used as second-level fallback)
-      - investment_year_fs        (string; may contain ranges like '2021–2025' or 'multi-year')
-      - amount_nominal_th_nis     (nominal project cost, HPC share)
-      - asset_life_years          (optional; if missing, defaults used)
-      - relevant_for_K_B          (Path B relevance flag: TRUE/FALSE)
+      - commissioning_month
+      - expected_end_year
+      - expected_end_month
+      - start_year
+      - start_month
+      - investment_year_fs / investment_year
+      - amount_nominal_th_nis (nominal project cost, HPC share)
+      - asset_life_years (optional)
+      - relevant_for_K_B or similar Path B flag (optional)
 
     This function:
       - filters to Haifa + HPC-related projects
       - keeps only Path B relevant rows (if such a column exists)
-      - infers a Timestamp 'commissioning_month' with fallbacks:
-          commissioning_year/month -> expected_end_year/month -> start_year/month
+      - infers a Timestamp 'commissioning_month' with fallbacks
       - parses investment_year from investment_year_fs (first 4-digit year),
         with fallback to start_year if needed
       - computes cost_real_thousands_nis using deflator_by_year
@@ -251,9 +254,7 @@ def load_big_projects(
 
     df = pd.read_csv(projects_path)
 
-    # ---------------------------
     # 1. Filter to Haifa
-    # ---------------------------
     if "port" not in df.columns:
         raise ValueError("Haifa_big_projects.csv must contain a 'port' column.")
     df = df[df["port"] == PORT_NAME].copy()
@@ -262,12 +263,9 @@ def load_big_projects(
             f"No rows found for port '{PORT_NAME}' in Haifa_big_projects.csv."
         )
 
-    # Save a copy after port-filter only, for potential fallback
     df_port_only = df.copy()
 
-    # ---------------------------
     # 2. Filter to HPC-related projects (fuzzy match)
-    # ---------------------------
     operator_col = None
     for cand in ["operator_or_owner", "operator_owner", "company", "owner"]:
         if cand in df.columns:
@@ -276,8 +274,6 @@ def load_big_projects(
 
     if operator_col is not None:
         op_str = df[operator_col].astype(str).str.upper()
-
-        # fuzzy: HAIFA PORT COMPANY or token HPC
         mask_hpc = op_str.str.contains("HAIFA PORT COMPANY") | op_str.str.contains(r"\bHPC\b")
         df_hpc = df[mask_hpc].copy()
 
@@ -300,9 +296,7 @@ def load_big_projects(
             "using all rows for port=Haifa."
         )
 
-    # ---------------------------
     # 3. Path B relevance flag
-    # ---------------------------
     include_col = None
     for cand in ["include_in_pathB", "include_pathB", "pathB_flag", "include_in_path_b", "relevant_for_K_B"]:
         if cand in df.columns:
@@ -322,16 +316,12 @@ def load_big_projects(
     else:
         print("[load_big_projects] No Path B flag column found; assuming all rows are Path B projects.")
 
-    # ---------------------------
     # 4. project_id
-    # ---------------------------
     if "project_id" not in df.columns:
         df["project_id"] = df.index.astype(str)
         print("[load_big_projects] 'project_id' missing; using row index as project_id.")
 
-    # ---------------------------
     # 5. Investment year (parse early so commissioning can fall back to it)
-    # ---------------------------
     invest_col = None
     for cand in ["investment_year", "investment_year_fs", "capex_year_fs"]:
         if cand in df.columns:
@@ -344,11 +334,9 @@ def load_big_projects(
         )
 
     raw_year = df[invest_col].astype(str)
-    # pick first 4-digit sequence from the string (e.g. '2021–2025' -> 2021)
     year_str = raw_year.str.extract(r"(\d{4})")[0]
     df["investment_year"] = pd.to_numeric(year_str, errors="coerce").astype("Int64")
 
-    # Fallbacks if investment_year is missing (e.g. 'multi-year')
     for fallback_col in ["start_year", "expected_end_year", "commissioning_year"]:
         if fallback_col in df.columns:
             mask_missing = df["investment_year"].isna()
@@ -364,9 +352,7 @@ def load_big_projects(
             f"Offending projects: {bad.to_dict(orient='records')}"
         )
 
-    # ---------------------------
     # 6. Commissioning month (with fallbacks)
-    # ---------------------------
     def _to_int_or_none(x):
         try:
             if pd.isna(x):
@@ -386,27 +372,23 @@ def load_big_projects(
           3) start_year + start_month (default month=6)
           4) investment_year (default month=12)
         """
-        # 1) Direct commissioning fields
         y = _to_int_or_none(row.get("commissioning_year"))
         m = _to_int_or_none(row.get("commissioning_month"))
 
-        # 2) Fallback: expected end
         if y is None or m is None:
             y_e = _to_int_or_none(row.get("expected_end_year"))
             m_e = _to_int_or_none(row.get("expected_end_month"))
             if y_e is not None:
                 y = y_e
-                m = m_e if m_e is not None else 12  # default to Dec if month missing
+                m = m_e if m_e is not None else 12
 
-        # 3) Fallback: start year
         if y is None or m is None:
             y_s = _to_int_or_none(row.get("start_year"))
             m_s = _to_int_or_none(row.get("start_month"))
             if y_s is not None:
                 y = y_s
-                m = m_s if m_s is not None else 6   # default to mid-year if month missing
+                m = m_s if m_s is not None else 6
 
-        # 4) Fallback: investment year (assume year-end if nothing else provided)
         if y is None or m is None:
             y_i = _to_int_or_none(row.get("investment_year"))
             if y_i is not None:
@@ -416,7 +398,6 @@ def load_big_projects(
         if y is None or m is None:
             return pd.NaT
 
-        # Clamp month into [1,12] just in case
         m = max(1, min(12, m))
         try:
             return pd.Timestamp(year=int(y), month=int(m), day=1)
@@ -426,16 +407,23 @@ def load_big_projects(
     df["commissioning_month"] = df.apply(_infer_commissioning_ts, axis=1)
 
     if df["commissioning_month"].isna().any():
-        bad = df[df["commissioning_month"].isna()][["project_id", "commissioning_year", "commissioning_month", "expected_end_year", "expected_end_month", "start_year", "start_month", "investment_year"]]
+        bad = df[df["commissioning_month"].isna()][[
+            "project_id",
+            "commissioning_year",
+            "commissioning_month",
+            "expected_end_year",
+            "expected_end_month",
+            "start_year",
+            "start_month",
+            "investment_year",
+        ]]
         raise ValueError(
             "Some projects have invalid commissioning_month dates even after applying "
             "fallbacks (commissioning → expected_end → start → investment). Offending projects: "
             f"{bad.to_dict(orient='records')}"
         )
 
-        # ---------------------------
     # 7. Real cost (deflating nominal)
-    # ---------------------------
     col_cost_real = None
     for cand in ["cost_real_thousands_nis", "amount_real_thousands_nis", "real_cost_th_nis"]:
         if cand in df.columns:
@@ -443,10 +431,8 @@ def load_big_projects(
             break
 
     if col_cost_real is not None:
-        # If a real-cost column already exists, just use it
         df["cost_real_thousands_nis"] = pd.to_numeric(df[col_cost_real], errors="coerce")
     else:
-        # Otherwise, deflate nominal costs using deflator_by_year
         col_cost_nom = None
         for cand in ["cost_nominal_thousands_nis", "amount_nominal_th_nis", "project_cost_thousands_nis"]:
             if cand in df.columns:
@@ -460,8 +446,6 @@ def load_big_projects(
             )
 
         df[col_cost_nom] = pd.to_numeric(df[col_cost_nom], errors="coerce")
-
-        # Drop projects that still have missing nominal costs
         mask_bad = df[col_cost_nom].isna()
         if mask_bad.any():
             bad = df.loc[mask_bad, ["project_id", col_cost_nom]]
@@ -497,9 +481,7 @@ def load_big_projects(
         df["cost_real_thousands_nis"] = real_costs
         print("[load_big_projects] Computed 'cost_real_thousands_nis' from nominal costs and deflator.")
 
-    # ---------------------------
     # 8. Asset life handling
-    # ---------------------------
     if "asset_life_years" in df.columns:
         df["asset_life_years"] = pd.to_numeric(df["asset_life_years"], errors="coerce")
     else:
@@ -507,9 +489,7 @@ def load_big_projects(
 
     df["asset_life_years"] = df["asset_life_years"].fillna(DEFAULT_ASSET_LIFE_YEARS)
 
-    # ---------------------------
     # 9. Final columns
-    # ---------------------------
     keep_cols = [
         "project_id",
         "commissioning_month",
@@ -554,18 +534,12 @@ def build_project_K_ts(project_row: pd.Series, monthly_index: pd.DatetimeIndex) 
             f"Project '{proj_id}' has non-positive asset_life_years={life_years}."
         )
 
-    # Annual depreciation rate for the project: simple 1 / life approximation
     delta_annual = 1.0 / life_years
-    # Convert to equivalent monthly geometric rate
     delta_month = 1.0 - (1.0 - delta_annual) ** (1.0 / 12.0)
 
-    # Initialize K_p_t as zeros for all months
     K_values = np.zeros(len(monthly_index), dtype=float)
 
-    # Find index of commissioning month in the monthly_index
     if t0 not in monthly_index:
-        # If commissioning date is not exactly in the index, snap to nearest month
-        # (this should be rare; we print a warning).
         nearest_pos = np.argmin(np.abs(monthly_index - t0))
         t0_effective = monthly_index[nearest_pos]
         print(
@@ -576,10 +550,8 @@ def build_project_K_ts(project_row: pd.Series, monthly_index: pd.DatetimeIndex) 
 
     start_idx = int(np.where(monthly_index == t0)[0][0])
 
-    # At commissioning month, capital jumps to full cost
     K_values[start_idx] = cost_real
 
-    # For months after commissioning, apply geometric depreciation
     for i in range(start_idx + 1, len(monthly_index)):
         K_values[i] = (1.0 - delta_month) * K_values[i - 1]
 
@@ -599,13 +571,12 @@ def build_all_projects_big_K(
 
     Returns a DataFrame with:
       - month
-      - K_big_central
+      - K_big_central   (scenario-invariant big-project capital)
       - lumpy_event_month
       - num_projects_commissioned
     """
     print("[build_all_projects_big_K] Building per-project and aggregate K_big,t...")
 
-    # Initialize arrays for the sum of project capital and event counts
     K_big = np.zeros(len(monthly_index), dtype=float)
     event_counts = np.zeros(len(monthly_index), dtype=int)
 
@@ -614,15 +585,10 @@ def build_all_projects_big_K(
         K_p_series = build_project_K_ts(row, monthly_index)
         K_big += K_p_series.to_numpy()
 
-        # Count commissioning month as a lumpy event
         t0 = pd.to_datetime(row["commissioning_month"])
         if t0 in monthly_index:
             pos = int(np.where(monthly_index == t0)[0][0])
             event_counts[pos] += 1
-        else:
-            # If snapped in build_project_K_ts, event month already logged there.
-            # We don't try to rediscover it here.
-            pass
 
     df_big = pd.DataFrame(
         {
@@ -638,71 +604,65 @@ def build_all_projects_big_K(
 
 
 # ======================================================================
-# Helper: compute annual K_big_y and K_bg_y from annual PIM
+# Helper: compute annual K_big_y and K_bg_y^s from annual PIM
 # ======================================================================
 
 def compute_annual_big_and_bg_K(
     df_big_monthly: pd.DataFrame,
     df_pim_annual: pd.DataFrame,
-) -> pd.DataFrame:
+) -> tuple[pd.DataFrame, list]:
     """
     For each year y in df_pim_annual, compute:
 
-      - K_big_y = K_big_central at December of year y
-      - K_bg_y  = K_PIM_real_central_y - K_big_y
+      - K_big_y  = K_big_central at December of year y (scenario-invariant)
+      - For each PIM scenario s (e.g. low, central, high):
+            K_bg_y^s = K_PIM_real_y^s - K_big_y
 
-    Returns a DataFrame (annual_bg_df) with:
-      - year
-      - K_PIM_real_central
-      - K_big_y
-      - K_bg_y
-      - flows_imputed_flag
-      - gap_years_from_prev
+    Returns:
+      - annual_bg_df : DataFrame with columns
+            year
+            K_big_y
+            flows_imputed_flag
+            gap_years_from_prev
+            K_PIM_real_<s> (copied from df_pim_annual)
+            K_bg_y_<s>
+      - scenarios : list of scenario names, e.g. ["low", "central", "high"]
 
-    If K_bg_y < 0 for any year, we warn and clamp to a small positive epsilon.
+    If any K_bg_y^s < 0, we warn and clamp to a small positive epsilon.
     """
-    print("[compute_annual_big_and_bg_K] Computing annual K_big_y and K_bg_y...")
+    print("[compute_annual_big_and_bg_K] Computing annual K_big_y and K_bg_y for all scenarios...")
 
-    # Ensure month is datetime
     df_big_monthly = df_big_monthly.copy()
     df_big_monthly["month"] = pd.to_datetime(df_big_monthly["month"])
     df_big_monthly["year"] = df_big_monthly["month"].dt.year
 
-    # Prepare output rows
+    scenario_cols = [c for c in df_pim_annual.columns if c.startswith("K_PIM_real_")]
+    if not scenario_cols:
+        raise ValueError(
+            "Annual PIM file does not contain any 'K_PIM_real_*' columns; "
+            "expected at least 'K_PIM_real_central'."
+        )
+    scenarios = [c.replace("K_PIM_real_", "") for c in scenario_cols]
+
     rows = []
-    eps = 1e-6  # minimum background capital to avoid log(0) later
+    eps = 1e-6
 
     for _, row in df_pim_annual.iterrows():
         year = int(row["year"])
-        K_pim = float(row["K_PIM_real_central"])
 
-        # December of that year in our monthly index
         month_dec = pd.Timestamp(f"{year}-12-01")
         df_dec = df_big_monthly[df_big_monthly["month"] == month_dec]
-
         if df_dec.empty:
             raise ValueError(
                 f"No monthly big-K row found for December {year}-12-01 when computing annual K_big_y."
             )
-
         K_big_y = float(df_dec["K_big_central"].iloc[0])
-        K_bg_y = K_pim - K_big_y
-
-        if K_bg_y < 0:
-            print(
-                f"[compute_annual_big_and_bg_K] WARNING: Background K is negative for year {year} "
-                f"(K_bg_y = {K_bg_y:.2f}). Clamping to epsilon = {eps}."
-            )
-            K_bg_y = eps
 
         out_row = {
             "year": year,
-            "K_PIM_real_central": K_pim,
             "K_big_y": K_big_y,
-            "K_bg_y": K_bg_y,
         }
 
-        # Copy annual flags if present
         if "flows_imputed_flag" in df_pim_annual.columns:
             out_row["flows_imputed_flag"] = bool(row["flows_imputed_flag"])
         else:
@@ -713,59 +673,77 @@ def compute_annual_big_and_bg_K(
         else:
             out_row["gap_years_from_prev"] = 0
 
+        for scen in scenarios:
+            col_pim = f"K_PIM_real_{scen}"
+            if col_pim not in df_pim_annual.columns:
+                raise ValueError(
+                    f"Expected column '{col_pim}' in annual PIM data but it is missing."
+                )
+            K_pim_s = float(row[col_pim])
+            K_bg_y_s = K_pim_s - K_big_y
+            if K_bg_y_s < 0:
+                print(
+                    f"[compute_annual_big_and_bg_K] WARNING: Background K is negative for "
+                    f"year {year}, scenario '{scen}' (K_bg_y = {K_bg_y_s:.2f}). "
+                    f"Clamping to epsilon = {eps}."
+                )
+                K_bg_y_s = eps
+
+            out_row[col_pim] = K_pim_s
+            out_row[f"K_bg_y_{scen}"] = K_bg_y_s
+
         rows.append(out_row)
 
     annual_bg_df = pd.DataFrame(rows).sort_values("year").reset_index(drop=True)
-    print("[compute_annual_big_and_bg_K] Done computing annual background K.")
-    return annual_bg_df
+    print("[compute_annual_big_and_bg_K] Done computing annual background K for all scenarios.")
+    return annual_bg_df, scenarios
 
 
 # ======================================================================
-# Helper: build monthly background K_bg,t by log-linear interpolation
+# Helper: build monthly background K_bg,t^s by log-linear interpolation
 # ======================================================================
 
 def build_monthly_background_K_bg(
     annual_bg_df: pd.DataFrame,
     monthly_index: pd.DatetimeIndex,
+    scenarios: list,
 ) -> pd.DataFrame:
     """
-    Build a smooth monthly background capital series K_bg,t using log-linear
-    interpolation between annual background K_bg_y at December year-ends.
-
-    Steps:
-      1. For each year y, define an anchor at month = YYYY-12-01 with K_bg_y.
-      2. Create a monthly DataFrame on monthly_index.
-      3. Merge anchors into it, leaving NaN in between.
-      4. Interpolate log(K_bg) over time, then exponentiate.
+    Build smooth monthly background capital series K_bg,t^s for each scenario s
+    using log-linear interpolation between annual background K_bg_y^s at
+    December year-ends.
 
     Returns a DataFrame with:
       - month
-      - K_bg_central
+      - K_bg_<s>  for each scenario s (e.g. K_bg_low, K_bg_central, K_bg_high)
     """
-    print("[build_monthly_background_K_bg] Building monthly K_bg,t via log-linear interpolation...")
+    print("[build_monthly_background_K_bg] Building monthly K_bg,t for all scenarios via log-linear interpolation...")
 
-    # Build anchor DataFrame: December of each year
-    anchors = annual_bg_df[["year", "K_bg_y"]].copy()
-    anchors["month"] = pd.to_datetime(anchors["year"].astype(int).astype(str) + "-12-01")
-    anchors = anchors.set_index("month")
-
-    # Build monthly skeleton
     df_monthly = pd.DataFrame({"month": monthly_index}).set_index("month")
 
-    # Merge anchors into monthly skeleton
-    df_monthly["K_bg_anchor"] = anchors["K_bg_y"]
+    for scen in scenarios:
+        col_bg_y = f"K_bg_y_{scen}"
+        if col_bg_y not in annual_bg_df.columns:
+            raise ValueError(
+                f"Annual background DataFrame missing column '{col_bg_y}' "
+                f"for scenario '{scen}'."
+            )
 
-    # Interpolate log(K_bg) across time
-    # We must avoid log(0) or log(negative); annual_bg_df ensures positivity.
-    log_K = np.log(df_monthly["K_bg_anchor"])
-    log_K_interpolated = log_K.interpolate(method="time")
+        anchors = annual_bg_df[["year", col_bg_y]].copy()
+        anchors["month"] = pd.to_datetime(anchors["year"].astype(int).astype(str) + "-12-01")
+        anchors = anchors.set_index("month")
 
-    # Exponentiate back to levels
-    df_monthly["K_bg_central"] = np.exp(log_K_interpolated)
+        tmp = df_monthly.copy()
+        tmp["K_bg_anchor"] = anchors[col_bg_y]
+
+        log_K = np.log(tmp["K_bg_anchor"])
+        log_K_interpolated = log_K.interpolate(method="time")
+
+        df_monthly[f"K_bg_{scen}"] = np.exp(log_K_interpolated)
 
     df_monthly = df_monthly.reset_index()
-    print("[build_monthly_background_K_bg] Done building K_bg,t.")
-    return df_monthly[["month", "K_bg_central"]]
+    print("[build_monthly_background_K_bg] Done building K_bg,t for all scenarios.")
+    return df_monthly
 
 
 # ======================================================================
@@ -777,82 +755,77 @@ def combine_big_and_bg(
     df_big_monthly: pd.DataFrame,
     df_bg_monthly: pd.DataFrame,
     df_pim_annual: pd.DataFrame,
+    scenarios: list,
 ) -> pd.DataFrame:
     """
     Combine:
       - monthly skeleton (dates, flags, labels, PIM anchors from 02)
       - monthly big-K (K_big_central, lumpy_event_month, num_projects_commissioned)
-      - monthly background K_bg_central
+      - monthly background K_bg_<s> for each scenario s
 
-    to produce the Path B monthly K series:
+    to produce the Path B monthly K series for each scenario:
 
-      K_PathB_central_t = K_big_central_t + K_bg_central_t
+      K_PathB_<s>_t = K_big_central_t + K_bg_<s>_t
 
-    Also compute at anchor Decembers:
-      gap_PathB_minus_PIM_central = K_PathB_central_t - K_PIM_real_central_y
-
-    Returns the full monthly DataFrame.
+    For backward compatibility we also keep:
+      - K_PathB_central
+      - K_bg_central
+      - K_PIM_real_central
+      - gap_PathB_minus_PIM_central (central scenario only)
     """
-    print("[combine_big_and_bg] Combining big and background K to form Path B...")
+    print("[combine_big_and_bg] Combining big and background K to form Path B for all scenarios...")
 
-    # Start from the monthly skeleton from 02_K_B_monthly_Haifa_PIM_lin.tsv
     df = df_monthly_skel.copy()
     df["month"] = pd.to_datetime(df["month"])
 
-    # ------------------------------------------------------------------
-    # 1. Merge big-K monthly (K_big_central, lumpy_event_month, num_projects)
-    # ------------------------------------------------------------------
+    # 1. Merge big-K monthly
     df_big = df_big_monthly.copy()
     df_big["month"] = pd.to_datetime(df_big["month"])
     df = df.merge(df_big, on="month", how="left")
 
-    # ------------------------------------------------------------------
-    # 2. Merge background K_bg,t
-    # ------------------------------------------------------------------
+    # 2. Merge background K_bg,t for all scenarios
     df_bg = df_bg_monthly.copy()
     df_bg["month"] = pd.to_datetime(df_bg["month"])
     df = df.merge(df_bg, on="month", how="left")
 
-    # Any missing K_big or K_bg ⇒ no big project / no background K this month
+    # Fill missing big project capital with 0
     df["K_big_central"] = df["K_big_central"].fillna(0.0)
-    df["K_bg_central"] = df["K_bg_central"].fillna(0.0)
 
-    # ------------------------------------------------------------------
-    # 3. Total Path B K = big + background
-    # ------------------------------------------------------------------
-    df["K_PathB_central"] = df["K_big_central"] + df["K_bg_central"]
+    # 3. Total Path B K for each scenario
+    for scen in scenarios:
+        col_bg = f"K_bg_{scen}"
+        if col_bg not in df.columns:
+            raise ValueError(
+                f"Background monthly DataFrame missing column '{col_bg}' "
+                f"for scenario '{scen}'."
+            )
+        df[col_bg] = df[col_bg].fillna(0.0)
+        col_pathB = f"K_PathB_{scen}"
+        df[col_pathB] = df["K_big_central"] + df[col_bg]
 
-    # ------------------------------------------------------------------
-    # 4. QA anchors: use K_PIM_real_central already present in the skeleton
-    #    (02_K_B_monthly_Haifa_PIM_lin.tsv already carried those from 01).
-    #    If for some reason it's missing, fall back to merging from annual.
-    # ------------------------------------------------------------------
+    # 4. QA anchors: ensure we have K_PIM_real_central in df
     if "K_PIM_real_central" not in df.columns:
-        # Fallback: attach from annual PIM at December anchors
         anchor = df_pim_annual[["year", "K_PIM_real_central"]].copy()
         anchor["month"] = pd.to_datetime(anchor["year"].astype(int).astype(str) + "-12-01")
         df = df.merge(anchor[["month", "K_PIM_real_central"]], on="month", how="left")
 
-    # QA gap: only non-NaN at December anchors, NaN elsewhere
-    df["gap_PathB_minus_PIM_central"] = df["K_PathB_central"] - df["K_PIM_real_central"]
+    # gap for central scenario only
+    df["gap_PathB_minus_PIM_central"] = df[f"K_PathB_central"] - df["K_PIM_real_central"]
 
-    # ------------------------------------------------------------------
     # 5. Set identifiers and order columns
-    # ------------------------------------------------------------------
     df["port"] = PORT_NAME
     df["company"] = COMPANY_NAME
     df["operator_or_owner"] = OPERATOR_NAME
 
     cols_front = ["port", "company", "operator_or_owner", "month", "year"]
     cols_flags = ["imputed_2022", "flows_imputed_annual", "gap_years_from_prev_annual"]
-    cols_K = [
-        "K_PathB_central",
-        "K_big_central",
-        "K_bg_central",
-        "K_PIM_real_central",
-        "gap_PathB_minus_PIM_central",
-    ]
     cols_events = ["lumpy_event_month", "num_projects_commissioned"]
+
+    cols_K = ["K_big_central", "K_PIM_real_central", "gap_PathB_minus_PIM_central"]
+    for scen in scenarios:
+        cols_K.append(f"K_bg_{scen}")
+    for scen in scenarios:
+        cols_K.append(f"K_PathB_{scen}")
 
     other_cols = [
         c
@@ -863,7 +836,7 @@ def combine_big_and_bg(
     ordered = cols_front + cols_flags + cols_K + cols_events + other_cols
     df = df[ordered].sort_values(["company", "month"]).reset_index(drop=True)
 
-    print("[combine_big_and_bg] Done combining; Path B monthly K is ready.")
+    print("[combine_big_and_bg] Done combining; Path B monthly K (all scenarios) is ready.")
     return df
 
 
@@ -873,23 +846,23 @@ def combine_big_and_bg(
 
 def run_pathB():
     """
-    Orchestrate Path B construction:
+    Orchestrate Path B construction for ALL depreciation scenarios:
 
       1. Load annual PIM backbone.
       2. Load monthly skeleton from Path A.
       3. Build deflator-by-year from Step1 real financials.
       4. Load big project table and compute real costs + asset lives.
       5. Build monthly big-K (K_big,t) and lumpy event flags.
-      6. Compute annual K_big_y and K_bg_y from PIM.
-      7. Build monthly background K_bg,t by log-linear interpolation.
-      8. Combine big and background into Path B monthly K.
-      9. Save outputs and basic QA.
+      6. Compute annual K_big_y and K_bg_y^s from PIM for each scenario s.
+      7. Build monthly background K_bg,t^s by log-linear interpolation.
+      8. Combine big and background into Path B monthly K for each scenario.
+      9. Save outputs and basic QA (central scenario).
 
     Output:
       - 03_K_B_monthly_Haifa_PathB.tsv
       - 03_K_B_monthly_Haifa_PathB_sample.csv
       - 03_PathB_config.json
-      - 03_K_B_PathB_QA.tsv (year-end QA)
+      - 03_K_B_PathB_QA.tsv (year-end QA, central scenario)
     """
     # 1. Annual PIM backbone
     df_pim = load_annual_pim(ANNUAL_PIM_PATH)
@@ -907,18 +880,19 @@ def run_pathB():
     # 5. Monthly big-K
     df_big_monthly = build_all_projects_big_K(projects_df, monthly_index)
 
-    # 6. Annual K_big_y and K_bg_y
-    annual_bg_df = compute_annual_big_and_bg_K(df_big_monthly, df_pim)
+    # 6. Annual K_big_y and K_bg_y^s
+    annual_bg_df, scenarios = compute_annual_big_and_bg_K(df_big_monthly, df_pim)
 
-    # 7. Monthly background K_bg,t
-    df_bg_monthly = build_monthly_background_K_bg(annual_bg_df, monthly_index)
+    # 7. Monthly background K_bg,t^s
+    df_bg_monthly = build_monthly_background_K_bg(annual_bg_df, monthly_index, scenarios)
 
-    # 8. Combine into Path B monthly K
+    # 8. Combine into Path B monthly K (all scenarios)
     df_pathB = combine_big_and_bg(
         df_monthly_skel,
         df_big_monthly,
         df_bg_monthly,
         df_pim,
+        scenarios,
     )
 
     # 9a. Save full monthly Path B series
@@ -929,7 +903,7 @@ def run_pathB():
     df_pathB.head(24).to_csv(OUT_PATHB_SAMPLE, index=False)
     print(f"[run_pathB] Saved Path B sample (first 24 rows) to: {OUT_PATHB_SAMPLE}")
 
-    # 9c. Save simple QA at annual anchors (Decembers)
+    # 9c. Save simple QA at annual anchors (Decembers, central scenario)
     qa_rows = []
     for _, row in df_pim.iterrows():
         year = int(row["year"])
@@ -937,14 +911,14 @@ def run_pathB():
         row_dec = df_pathB[df_pathB["month"] == dec_month]
         if row_dec.empty:
             continue
-        K_pim = float(row["K_PIM_real_central"])
-        K_pathB = float(row_dec["K_PathB_central"].iloc[0])
-        gap = K_pathB - K_pim
+        K_pim_central = float(row["K_PIM_real_central"])
+        K_pathB_central = float(row_dec["K_PathB_central"].iloc[0])
+        gap = K_pathB_central - K_pim_central
         qa_rows.append(
             {
                 "year": year,
-                "K_PIM_real_central": K_pim,
-                "K_PathB_central_dec": K_pathB,
+                "K_PIM_real_central": K_pim_central,
+                "K_PathB_central_dec": K_pathB_central,
                 "gap_PathB_minus_PIM_central_dec": gap,
             }
         )
@@ -960,7 +934,7 @@ def run_pathB():
         "description": (
             "Path B monthly capital stock for Haifa Port Company (legacy), "
             "built from annual PIM (Track B) plus lumpy big projects and "
-            "smooth background K."
+            "smooth background K, for all depreciation scenarios."
         ),
         "inputs": {
             "annual_pim_file": ANNUAL_PIM_PATH.name,
@@ -979,14 +953,13 @@ def run_pathB():
         "defaults": {
             "default_asset_life_years": DEFAULT_ASSET_LIFE_YEARS,
             "per_project_depreciation_rule": "delta_annual = 1 / asset_life_years; monthly delta from geometric equivalence",
-            "background_interpolation": "log-linear between annual K_bg_y at December year-ends",
+            "background_interpolation": "log-linear between annual K_bg_y^s at December year-ends for each scenario s",
         },
     }
     with open(OUT_PATHB_CONFIG, "w", encoding="utf-8") as f:
         json.dump(config, f, indent=2, ensure_ascii=False)
     print(f"[run_pathB] Saved Path B config metadata to: {OUT_PATHB_CONFIG}")
 
-    # Console preview
     print("\n[run_pathB] Preview of Path B monthly K (first 24 rows):")
     print(df_pathB.head(24))
 

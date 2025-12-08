@@ -1,0 +1,85 @@
+port	company	operator_or_owner	month	year	K_PIM_lin_low	K_PIM_lin_central	K_PIM_lin_high	flows_imputed_annual	gap_years_from_prev_annual	K_PIM_real_low	K_PIM_real_central	K_PIM_real_high
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2018-01-01	2018	11592601.849288933	11592601.849288933	11592601.849288933	False	0			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2018-02-01	2018	11592601.849288933	11592601.849288933	11592601.849288933	False	0			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2018-03-01	2018	11592601.849288933	11592601.849288933	11592601.849288933	False	0			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2018-04-01	2018	11592601.849288933	11592601.849288933	11592601.849288933	False	0			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2018-05-01	2018	11592601.849288933	11592601.849288933	11592601.849288933	False	0			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2018-06-01	2018	11592601.849288933	11592601.849288933	11592601.849288933	False	0			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2018-07-01	2018	11592601.849288933	11592601.849288933	11592601.849288933	False	0			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2018-08-01	2018	11592601.849288933	11592601.849288933	11592601.849288933	False	0			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2018-09-01	2018	11592601.849288933	11592601.849288933	11592601.849288933	False	0			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2018-10-01	2018	11592601.849288933	11592601.849288933	11592601.849288933	False	0			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2018-11-01	2018	11592601.849288933	11592601.849288933	11592601.849288933	False	0			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2018-12-01	2018	11592601.849288933	11592601.849288933	11592601.849288933	False	0	11592601.849288927	11592601.849288927	11592601.849288927
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2019-01-01	2019	11645207.675871821	11626288.960748713	11607032.62923482	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2019-02-01	2019	11698052.221339947	11660073.964078953	11621481.373000441	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2019-03-01	2019	11745988.86347694	11690673.827709042	11634547.310126519	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2019-04-01	2019	11799290.741798155	11724645.927966943	11649030.304900745	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2019-05-01	2019	11851103.49304688	11757616.145699603	11663063.27190162	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2019-06-01	2019	11904882.368857171	11791782.774619607	11677581.764105517	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2019-07-01	2019	11957158.791425383	11824941.784104753	11691649.125530206	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2019-08-01	2019	12011418.933366198	11859304.055583179	11706203.202167058	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2019-09-01	2019	12065925.301275473	11893766.180889446	11720775.396106651	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2019-10-01	2019	12118908.891552307	11927211.97217858	11734894.790601576	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2019-11-01	2019	12173903.03590502	11961871.432094032	11749502.700595673	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2019-12-01	2019	12227360.775317356	11995508.738331612	11763656.70134583	False	1	12227360.775317367	11995508.738331592	11763656.701345814
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2020-01-01	2020	12232454.824541518	11980984.877683142	11729961.604806285	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2020-02-01	2020	12237550.99600109	11966478.602160258	11696363.022434074	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2020-03-01	2020	12242320.304262847	11952924.116456369	11665019.220585428	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2020-04-01	2020	12247420.585786747	11938451.81619828	11631606.655194238	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2020-05-01	2020	12252358.365213994	11924463.048494965	11599363.041116187	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2020-06-01	2020	12257462.828701403	11910025.208183054	11566138.537257416	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2020-07-01	2020	12262404.65684896	11896069.74908811	11534076.405307481	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2020-08-01	2020	12267513.305728829	11881666.286669869	11501038.904482858	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2020-09-01	2020	12272624.082926482	11867280.263602063	11468096.034248704	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2020-10-01	2020	12277572.02362065	11853374.890490582	11436305.682863953	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2020-11-01	2020	12282686.991387717	11839023.121934619	11403548.230498334	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2020-12-01	2020	12287638.989133902	11825150.858860925	11371936.810067398	False	1	12287638.98913392	11825150.858860942	11371936.810067397
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2021-01-01	2021	12279847.952056095	11798551.03074707	11327735.886446549	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2021-02-01	2021	12272061.854923123	11772011.03703737	11283706.764839824	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2021-03-01	2021	12265033.494443683	11748090.746802447	11244085.637967616	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2021-04-01	2021	12257256.790489389	11721664.259879725	11200381.651674787	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2021-05-01	2021	12249735.64281749	11696146.840714807	11158249.217497088	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2021-06-01	2021	12241968.638540192	11669837.197880587	11114878.863823615	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2021-07-01	2021	12234456.871796703	11644432.603382565	11073068.06516627	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2021-08-01	2021	12226699.555098249	11618239.288013466	11030028.797188314	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2021-09-01	2021	12218947.156964058	11592104.892627276	10987156.816052373	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2021-10-01	2021	12211449.516379915	11566869.517087532	10945826.468949143	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2021-11-01	2021	12203706.787606714	11540850.674314009	10903281.768973917	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2021-12-01	2021	12196218.498631211	11515726.876391927	10862266.934324643	False	1	12196218.498631198	11515726.87639192	10862266.93432464
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2022-01-01	2022	12170044.883159224	11471709.399864364	10802270.164606728	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2022-02-01	2022	12143927.437404674	11427860.174829796	10742604.781734517	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2022-03-01	2022	12120385.665198911	11388398.50393877	10688996.779526256	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2022-04-01	2022	12094374.790286437	11344867.724751802	10629957.052167848	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2022-05-01	2022	12069256.125603689	11302899.597304452	10573132.34191836	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2022-06-01	2022	12043354.976907482	11259695.627372019	10514732.58152295	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2022-07-01	2022	12018342.274674816	11218042.577501994	10458523.82833951	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2022-08-01	2022	11992550.389317615	11175162.963289132	10400757.097921994	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2022-09-01	2022	11966813.854468375	11132447.251227856	10343309.436925547	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2022-10-01	2022	11941960.119592212	11091264.931929354	10288017.062846329	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2022-11-01	2022	11916332.153662683	11048869.909970034	10231192.111452151	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2022-12-01	2022	11891583.263636844	11007996.768759305	10176499.08452957	False	1	11891583.263636854	11007996.768759308	10176499.084529571
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2023-01-01	2023	11882059.70523339	10982501.742157474	10137474.69248648	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2023-02-01	2023	11872543.773918997	10957065.763209408	10098599.949469253	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2023-03-01	2023	11863955.289748203	10934141.969568925	10063615.42750255	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2023-04-01	2023	11854453.857635004	10908817.994077444	10025023.916752968	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2023-05-01	2023	11845266.168527031	10884366.766444726	9987818.204532249	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2023-06-01	2023	11835779.703885617	10859158.072612064	9949517.357646575	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2023-07-01	2023	11826606.488014543	10834818.153651344	9912591.871720798	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2023-08-01	2023	11817134.967266949	10809724.216683874	9874579.499474507	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2023-09-01	2023	11807671.031933215	10784688.3984281	9836712.895404946	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2023-10-01	2023	11798519.601438526	10760515.397180755	9800206.058890304	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2023-11-01	2023	11789070.574508512	10735593.54881329	9762624.658826446	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2023-12-01	2023	11779933.560133	10711530.589675384	9726392.78480885	False	1	11779933.560133006	10711530.589675376	9726392.784808837
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2024-01-01	2024	11756363.059251605	10672945.541665083	9675675.118132947	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2024-02-01	2024	11732839.72064909	10634499.484615698	9625221.915556937	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2024-03-01	2024	11710876.629538303	10598659.204288859	9578261.957800504	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2024-04-01	2024	11687444.304855874	10560480.741293432	9528316.710054707	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2024-05-01	2024	11664812.504103994	10523664.79011087	9480230.583367871	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2024-06-01	2024	11641472.34925458	10485756.4718018	9430796.51409107	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2024-07-01	2024	11618929.569516338	10449201.024390375	9383202.538183887	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2024-08-01	2024	11595681.221954683	10411560.939267116	9334274.415578417	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2024-09-01	2024	11572479.392074464	10374056.44116196	9285601.425607242	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2024-10-01	2024	11550070.211677527	10337890.402431436	9238740.199212058	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2024-11-01	2024	11526959.64499094	10300651.280145034	9190565.366435332	False	1			
+Haifa	Israel Ports Company (Haifa cluster)	Israel Ports Company (landlord / infrastructure owner)	2024-12-01	2024	11504638.60994207	10264741.146509245	9144183.754238533	False	1	11504638.609942077	10264741.146509243	9144183.754238518

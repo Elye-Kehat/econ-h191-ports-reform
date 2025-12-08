@@ -1,0 +1,216 @@
+year	note	item_class_cn	item_class_en	currency_cn	currency_en	foreign_amount_fx_units	closing_fx_rate_rmb_per_fx	rmb_equivalent_amount	source_page_note
+2018	Note (七十一) 外币货币性项目	货币资金	Cash and cash equivalents	以色列新谢克尔	Israeli new shekel (NIS)	24753644.31	1.8204	45061039.03	2018 AR p.182, foreign-currency monetary items – cash
+2018	Note (七十一) 外币货币性项目	其他应付款	Other payables	以色列新谢克尔	Israeli new shekel (NIS)	35228.32	1.8204	64128.93	2018 AR p.183, foreign-currency monetary items – other payables
+
+
+
+
+
+year	note	company_name_en	company_name_cn	principal_place_of_business	functional_currency_cn	functional_currency_en	functional_currency_basis_cn	functional_currency_basis_en	is_major_subsidiary_2018	source_page_note
+2018	Note (七十二)(2) 境外经营实体说明	SIPG BAYPORT TERMINAL CO., LTD.		以色列 (Israel)	新谢克尔	New shekel (NIS)	当地货币	Local currency	TRUE	2018 AR p.184 overseas-entities table; listed as major subsidiary on p.86
+
+
+
+year	note	project_name_cn	project_name_en	budget_rmb	opening_balance_rmb	additions_rmb	transfers_to_ppe_rmb	other_decreases_rmb	closing_balance_rmb	progress_pct	funding_source_cn	funding_source_en	source_page_note
+2018	Note 在建工程 (Construction in progress)	以色列海法Bayport港口工程项目	Haifa Bayport port engineering project	4980000000.00	634432.83	24884690.11	0.00	0.00	25519122.94	0.50	自筹	Self-financed	2018 AR pp.140–141, CIP tables
+
+
+
+year	note	contract_sign_date	contractor_cn	contractor_en	project_name_cn	project_name_en	contract_currency	contract_total_amount_fx	amount_paid_to_date_fx	reporting_date	notes	source_page_note
+2018	Note 十 (关联交易/承诺事项 section)	2018-04	马萨达基础设施有限公司	Masada Infrastructure Co., Ltd.	以色列海法bayport港口工程项目总承包合同	Haifa Bayport port project general EPC contract	USD	293477232.00	41418157.65	2018-12-31	Contract price excludes tax; contract signed by SIPG BAYPORT TERMINAL CO., LTD.; contract still in progress as of 2018-12-31.	2018 AR p.231
+
+
+
+
+reporting_year	source_doc	pages	tier	entity_name_en	entity_name_zh	main_operating_location	registered_location	business_nature_en	business_nature_zh	shareholding_direct_pct	shareholding_indirect_pct	acquisition_method	functional_currency	functional_currency_basis	notes
+2019	SIPG 2019 annual report	"204, 216"	1	SIPG BAYPORT TERMINAL CO., LTD.	上港贝港码头有限公司（implied, name not printed in this note set）	Israel	Israel	Port / terminal operations; transportation industry	交通运输业	100	0	设立 (establishment of wholly-owned sub)	New Israeli Shekel (NIS, 新谢克尔)	当地货币 (local currency in country of operation)	Wholly-owned overseas subsidiary operating Haifa Bayport; functional currency is NIS.
+
+
+reporting_year	source_doc	page	tier	related_entity	contract_or_item_type	contract_sign_date	decision_date	contract_counterparty_en	contract_counterparty_zh	description_en	currency	contract_amount_nominal	contract_amount_units	contract_amount_excl_tax	flag_contract_amount_excl_tax	cumulative_paid_nominal	cumulative_paid_units	cumulative_paid_asof_date	contract_status_asof	guarantee_max_amount_nominal	guarantee_max_amount_units	guarantee_period_en	notes
+2019	SIPG 2019 annual report	253	2	SIPG BAYPORT TERMINAL CO., LTD.	EPC main works contract	2018-04-12		"Masada Infrastructure Co., Ltd." (马萨达基础设施有限公司)	马萨达基础设施有限公司	General EPC contract for construction of Haifa BAYPORT terminal (civil & related works).	USD	293477232.00	absolute	Yes	80710995.65	absolute	2019-12-31	Contract in progress; underground works completed, above-ground facilities still at design/review stage as of 2019-12-31.			"From contract effectiveness until completion of works; part of total project CAPEX."	Key piece of Bayport civil-works CAPEX; payments to date give timing of K formation.
+2019	SIPG 2019 annual report	253	2	SIPG BAYPORT TERMINAL CO., LTD.	Engineering consulting contract	2018-11-01 (month/year; exact day not specified)		Shanghai Jianke Engineering Consulting Co., Ltd.	上海建科工程咨询有限公司	Full-process engineering consulting services for the Haifa Bayport project.	USD	7750000.00	absolute	Yes	2169970.00	absolute	2019-12-31	Contract in progress as of 2019-12-31.			"From contract effectiveness until completion of consulting engagement."	Smaller but still material project-related service CAPEX for Bayport.
+2019	SIPG 2019 annual report	256	2	SIPG BAYPORT TERMINAL CO., LTD.	Financing guarantee for Bayport		2020-01-21	-- (guarantee in favor of lenders to Bayport entity; specific lender(s) not named)	--	Board resolution to provide a joint-and-several guarantee for financing obtained by SIPG Bayport Terminal Co., Ltd.	USD			No			--	--	350000000.00	absolute	"From guarantee document effectiveness until two years after the debt maturity date."	Post–balance-sheet event: parent company guarantees up to USD 350m of financing for SIPG Bayport (debt principal, accrued interest, enforcement costs, penalties etc.).
+
+
+year	note	item_class_cn	item_class_en	currency_cn	currency_en	foreign_amount_fx_units	closing_fx_rate_rmb_per_fx	rmb_equivalent_amount	source_page_note
+2020	Note 82 (一) 外币货币性项目	货币资金	Cash and cash equivalents	新谢克尔	New shekel (NIS)	38453681.55	2.0282	77991756.93	2020 AR p.191, foreign-currency monetary items – cash (NIS row)
+2020	Note 82 (一) 外币货币性项目	其他应收款	Other receivables	新谢克尔	New shekel (NIS)	129101.49	2.0282	261843.64	2020 AR p.191, foreign-currency monetary items – other receivables (NIS row)
+2020	Note 82 (一) 外币货币性项目	其他应付款	Other payables	新谢克尔	New shekel (NIS)	394364.03	2.0282	799849.13	2020 AR p.192, foreign-currency monetary items – other payables (NIS row)
+
+
+year	note	project_name_cn	project_name_en	budget_rmb	opening_balance_rmb	additions_rmb	transfers_to_ppe_rmb	other_decreases_rmb	closing_balance_rmb	progress_pct	funding_source_cn	funding_source_en	source_page_note
+2020	Note 21 在建工程 – (2) 重要在建工程项目本期变动情况	以色列海法Bayport港口工程项目	Haifa Bayport port engineering project	4977300000.00	1069545860.80	1073965300.79	8997549.05		2143511161.59	43.07	借款/自筹	Borrowings/self-financed	2020 AR pp.150–152, CIP table for major projects; cumulative investment share and project progress both reported as 43.07%; interest capitalized to date 7,366,471.58 RMB (all in 2020), with a 2.79% capitalization rate.
+
+
+year	note	item_name_cn	item_name_en	amount_rmb_current_year	amount_rmb_prior_year	source_page_note
+2020	Note 9 其他流动资产	以色列海法Bayport港口工程项目待返还增值税	VAT to be refunded for the Haifa Bayport port engineering project	99604610.65	18674036.95	2020 AR p.171, other current assets – line “以色列海法Bayport港口工程项目待返还增值税” with 2020 and 2019 comparatives.
+
+
+year	note	counterparty_cn	counterparty_en	item_class_cn	item_class_en	closing_balance_rmb	opening_balance_rmb	source_page_note
+2020	Note 52 关联方关系及其交易 – 其他应付款	马萨达基础设施有限公司	Masada Infrastructure Co., Ltd.	其他应付款 (应付工程款)	Other payables (project payables to EPC contractor)	142284234.21	128241171.62	2020 AR p.220, related-party note – table of “其他应付款” to related parties, Masada row.
+
+
+year	note	investee_company_cn	investee_company_en	registered_capital_fx_units	registered_capital_currency	paid_in_capital_fx_units	unpaid_commitment_fx_units	source_page_note
+2020	Note 45 对外投资承诺	以色列海法新港码头有限公司	SIPG Bayport Terminal Co., Ltd.	720000000.00	New shekel (NIS)	713080010.00	6919990.00	2020 AR p.207, foreign investment commitments – row for “以色列海法新港码头有限公司” showing registered capital 720,000,000 NIS and paid-in 713,080,010 NIS as of 2020-12-31, with the remaining commitment equal to the difference.
+
+
+year	note	related_entity_en	related_entity_cn	instrument_type	currency	principal_amount_nominal	principal_amount_units	guarantee_period_en	source_page_note
+2020	Note 47 或有事项	SIPG BAYPORT TERMINAL CO., LTD.	以色列海法新港码头有限公司	Guarantee for project financing	USD	350000000.00	absolute	From guarantee effectiveness until two years after the maturity of the underlying debt.	2020 AR p.227, contingent matters – description of joint-and-several guarantee for Bayport financing (up to USD 350m).
+
+
+reporting_year	source_doc	pages	tier	entity_name_en	entity_name_zh	main_operating_location	registered_location	business_nature_en	business_nature_zh	shareholding_direct_pct	shareholding_indirect_pct	acquisition_method	functional_currency	functional_currency_basis	notes
+2020	SIPG 2020 annual report	"191–192"	1	SIPG Bayport Terminal Co., Ltd.	以色列海法新港码头有限公司	Israel	Israel	Port / terminal operations; transportation industry	交通运输业	100	0	设立 (wholly-owned subsidiary established by the group)	New shekel (NIS, 新谢克尔)	Local currency in country of operation	From Note “(2) 境外经营实体说明”: principal place of business Israel; functional currency NIS; functional currency choice = “当地货币”. Structure (100% ownership, nature of business) consistent with 2019 note.
+
+
+year	note	project_name_cn	project_name_en	budget_rmb	opening_balance_rmb	additions_rmb	transfers_to_ppe_rmb	other_decreases_rmb	closing_balance_rmb	progress_pct	funding_source_cn	funding_source_en	source_page_note
+2020	Note 21 在建工程 (2) 重要在建工程项目本期变动情况	以色列海法Bayport港口工程项目	Haifa Bayport port engineering project	4977300000.00	1069545860.80	1073965300.79	8997549.05	 	2143511161.59	43.07	借款/自筹	Borrowings / self-financed	2020 AR p.151, CIP “重大在建工程项目本期变动情况” table – Haifa Bayport row; cumulative investment ratio and project progress both 43.07%; cumulative interest capitalized 7,366,471.58 RMB, all in 2020, with a 2.79% capitalization rate (利息资本化率).
+
+
+year	note	project_name_cn	project_name_en	period_type	book_balance_rmb	impairment_rmb	net_book_value_rmb	source_page_note
+2020	Note 21 在建工程 (1) 在建工程情况	以色列海法Bayport港口工程项目	Haifa Bayport port engineering project	期末余额 (closing)	2143511161.59	 	2143511161.59	2020 AR p.150, CIP “在建工程情况” – Haifa Bayport row, closing balance & net book value (no impairment).
+2020	Note 21 在建工程 (1) 在建工程情况	以色列海法Bayport港口工程项目	Haifa Bayport port engineering project	期初余额 (opening)	1069545860.80	 	1069545860.80	2020 AR p.150, CIP “在建工程情况” – Haifa Bayport row, opening balance & net book value (no impairment), implying 2019 closing CIP for this project.
+
+
+
+year	note	item_name_cn	item_name_en	amount_rmb_current_year	amount_rmb_prior_year	source_page_note
+2020	Note 12 一年内到期的非流动资产 – 其他流动资产	以色列海法 Bayport 港口工程项目待返还增值税	VAT to be refunded for the Haifa Bayport port engineering project	99604610.65	18674036.95	2020 AR p.137, table “其他流动资产” – Haifa Bayport VAT to be refunded (current year vs prior-year comparative).
+
+
+
+reporting_year	source_doc	page	related_party_en	related_party_zh	relationship_type_en	relationship_type_zh	notes
+2020	SIPG 2020 annual report	216	Masada Infrastructure Ltd	马萨达基础设施有限公司	Associate that is the holding subsidiary established specifically for the Bayport port engineering project	联营企业，在以色列为 Bayport 港口工程项目专门设立的控股子公司	From Note 52 “其他关联方情况”: Masada Infrastructure Ltd is an associate in which China Harbour Engineering Bureau holds equity and which serves as the holding subsidiary for the Israel Bayport port engineering project. This clarifies that Masada is the EPC entity for Haifa Bayport, consistent with the EPC contract rows in 2018–2019.
+
+
+
+year	note	item_class_cn	item_class_en	currency_cn	currency_en	foreign_amount_fx_units	closing_fx_rate_rmb_per_fx	rmb_equivalent_amount	source_page_note
+2021	Note 84 外币货币性项目	货币资金	Cash and cash equivalents	以色列新谢克尔	Israeli new shekel (NIS)	49254461.63	2.0529	101114484.29	2021 AR p.224, foreign-currency monetary items – cash (NIS row in 货币资金 table)
+2021	Note 84 外币货币性项目	应收账款	Accounts receivable	以色列新谢克尔	Israeli new shekel (NIS)	1778367.72	2.0529	3650811.09	2021 AR p.224, foreign-currency monetary items – 应收账款 table (NIS row)
+2021	Note 84 外币货币性项目	其他应收款	Other receivables	以色列新谢克尔	Israeli new shekel (NIS)	4118406.28	2.0529	8454676.26	2021 AR p.224, foreign-currency monetary items – 其他应收款 table (NIS row)
+2021	Note 84 外币货币性项目	应付账款	Accounts payable	以色列新谢克尔	Israeli new shekel (NIS)	1062664.71	2.0529	2181544.39	2021 AR p.225, foreign-currency monetary items – 应付账款 table (NIS row)
+2021	Note 84 外币货币性项目	其他应付款	Other payables	以色列新谢克尔	Israeli new shekel (NIS)	8841234.27	2.0529	18150169.83	2021 AR p.225, foreign-currency monetary items – 其他应付款 table (NIS row)
+
+
+
+source_id	reporting_year	page_reference	entity_name_en	entity_name_zh	principal_place_of_business	registered_place	business_nature_en	business_nature_zh	shareholding_direct_pct	shareholding_indirect_pct	acquisition_method	functional_currency	functional_currency_zh	functional_currency_basis_zh	notes
+SIPG2021_AR	2021	191–192	SIPG Bayport Terminal Co.,Ltd.		Israel	Israel	Port / terminal operations; transportation industry	交通运输业				"New Israeli Shekel (NIS)"	新谢克尔	当地货币	Appears in Note “境外经营实体说明” (overseas operating entities) with functional currency NIS and basis “local currency”; Chinese legal name not printed in this note but is same Bayport entity as in 2018–2019.
+
+
+
+year	note	project_name_cn	project_name_en	budget_rmb	opening_balance_rmb	additions_rmb	transfers_to_ppe_rmb	transfers_to_intangibles_and_ltdeferred_rmb	other_decreases_rmb	closing_balance_rmb	progress_pct	cumulative_capitalized_interest_rmb	current_period_capitalized_interest_rmb	interest_capitalization_rate_pct	funding_source_cn	funding_source_en	source_page_note
+2021	Note 21 在建工程 (2) 重要在建工程项目本期变动情况	以色列海法 Bayport 港口工程项目	Haifa Bayport port engineering project	4977300000.00	2143511161.59	1291560440.67	2677229547.18		11984163.14	745857891.94	69.01	41132928.50	33766456.92	2.79	借款/自筹	Loans/self-financed	2021 AR p.175, “重要在建工程项目本期变动情况” row for 以色列海法 Bayport 港口工程项目
+
+
+
+year	note	project_name_cn	project_name_en	cip_opening_balance_rmb	cip_closing_balance_rmb	source_page_note
+2021	Note 21 在建工程 (1) 在建工程情况	以色列海法 Bayport 港口工程项目	Haifa Bayport port engineering project	2143511161.59	745857891.94	2021 AR p.150–151, “在建工程情况” table, Bayport row
+
+
+
+year	note	item_name_cn	item_name_en	closing_balance_rmb	opening_balance_rmb	source_page_note
+2021	Note 12 其他流动资产	以色列海法 Bayport 港口工程项目待返还增值税	VAT to be refunded for Israel Haifa Bayport port project	12637920.58	99604610.65	2021 AR p.137, “其他流动资产” table (row with 以色列海法 Bayport 港口工程项目待返还增值税)
+
+
+
+year	note	project_name_cn	project_name_en	cip_opening_balance_rmb	cip_closing_balance_rmb	source_page_note
+2021	Note 21 在建工程 (1) 在建工程情况	以色列海法 Bayport 港口工程项目	Haifa Bayport port engineering project	2143511161.59	745857891.94	2021 AR p.174, 在建工程情况 – Bayport row (opening and closing balances; no impairment)
+
+
+reporting_year	source_doc	page	related_party_en	related_party_zh	relationship_type_en	relationship_type_zh	notes
+2021	SIPG 2021 annual report	254	Masada Infrastructure Ltd	--	Associate; holding subsidiary established specifically for the Bayport port engineering project	联营企业中建港航局集团有限公司在以色列为 Bayport 港口工程项目专门设立的控股子公司	From Note 8 “其他关联方情况”: Masada Infrastructure Ltd is an associate set up by China Harbour Engineering Bureau Group in Israel specifically as the holding subsidiary for the Bayport port engineering project.
+
+
+year	note	investee_company_cn	investee_company_en	registered_capital_fx_units	registered_capital_currency	paid_in_capital_fx_units	unpaid_commitment_fx_units	source_page_note
+2021	Note 3 对外投资承诺事项	SIPG Bayport Terminal Co.,Ltd. (以色列海法新港码头有限公司)	SIPG Bayport Terminal Co., Ltd.	720000000.00	New shekel (NIS)	713080010.00	6919990.00	2021 AR p.271, 对外投资承诺事项 – first paragraph (same registered capital as 2020; confirms paid-in capital still 713,080,010 NIS and remaining commitment 6,919,990 NIS)
+
+
+reporting_year	note	related_entity_en	related_entity_cn	instrument_type	currency	principal_amount_nominal	principal_amount_units	guarantee_period_en	source_page_note
+2021	Note 4 或有事项 (1) 资产负债表日存在的重要或有事项	SIPG Bayport Terminal Co., Ltd.	以色列海法新港码头有限公司	Parent guarantee for construction-period financing	USD	350000000.00	absolute	From guarantee effectiveness date until two years after the debt’s contractual maturity date.	2021 AR p.274, paragraph (6) – board resolution of 2020-01-22 restated, confirming guarantee up to USD 350m for Bayport construction financing.
+2021	Note 4 或有事项 (1) 资产负债表日存在的重要或有事项	SIPG Bayport Terminal Co., Ltd.	以色列海法新港码头有限公司	Parent guarantee backing operating-period performance bank guarantee	New shekel (NIS)	56000000.00	absolute	From the date the first operating-period bank guarantee is issued until the end of the operating agreement with Israel Ports Development & Assets Company.	2021 AR p.274, paragraph (7) – board resolution of 2021-07-16 approving an operating-period bank guarantee up to 56m NIS (~USD 19m, ~RMB 1.3bn) for Bayport.
+
+
+
+
+fiscal_year	cur_period_end	prior_period_end	line_item_zh	line_item_en	amount_cur_CNY	amount_prior_CNY
+2022	2022-12-31	2021-12-31	其他非流动金融资产	Other non-current financial assets	5437580845.76	3807182251.23
+2022	2022-12-31	2021-12-31	投资性房地产	Investment properties	371171823.92	398070075.18
+2022	2022-12-31	2021-12-31	固定资产	Fixed assets	10014899191.96	9698305214.76
+2022	2022-12-31	2021-12-31	在建工程	Construction in progress	624684717.15	337697641.10
+2022	2022-12-31	2021-12-31	使用权资产	Right-of-use assets	591792415.98	712160332.33
+2022	2022-12-31	2021-12-31	无形资产	Intangible assets	3320365243.28	3417516798.64
+2022	2022-12-31	2021-12-31	长期待摊费用	Long-term prepaid expenses	233384629.43	243661659.11
+2022	2022-12-31	2021-12-31	其他非流动资产	Other non-current assets	1249190200.10	2232630838.85
+2022	2022-12-31	2021-12-31	非流动资产合计	Total non-current assets	99583455625.68	92522540102.16
+
+
+
+fiscal_year	project_name_zh	project_name_en	opening_balance_CNY	opening_impairment_CNY	opening_carrying_CNY	closing_balance_CNY	closing_impairment_CNY	closing_carrying_CNY
+2022	以色列海法 Bayport 港口工程项目	Israel Haifa Bayport port construction project	745857891.94	0.00	745857891.94	0.00	0.00	0.00
+
+
+
+fiscal_year	project_name_zh	project_name_en	budget_CNY	opening_balance_CNY	additions_CNY	rd_transfer_CNY	transfer_to_ppe_CNY	transfer_to_intang_ltdefer_CNY	other_decrease_CNY	closing_balance_CNY	cumulative_investment_pct_of_budget	construction_progress_pct	capitalised_interest_cum_CNY	capitalised_interest_current_CNY	capitalisation_rate_pct	funding_source_zh	funding_source_en
+2022	以色列海法 Bayport港口工程项目	Israel Haifa Bayport port construction project	4977300000.00	745857891.94	267700816.73	0.00	942154587.82	53710219.46	17693901.39	0.00	74.39	100.00	41132928.50			自筹/借款	Self-financing / borrowings
+
+
+fiscal_year	note	section_zh	section_en	line_item_zh	line_item_en	amount_ending_CNY	amount_beginning_CNY	currency	comment
+2022	13	其他流动资产	Other current assets	以色列海法 Bayport港口工程项目待返还增值税	VAT recoverable for Israel Haifa Bayport port construction project	12637920.58		CNY	
+
+
+fiscal_year	note	category_zh	category_en	currency_code	currency_zh	foreign_balance	fx_rate_CNY_per_unit	rmb_balance	classification	comment
+2022		货币资金	Cash and cash equivalents	ILS	新谢克尔	69631975.50	1.9796	137844851.34	asset	
+2022		应收账款	Trade receivables	ILS	新谢克尔	31091188.00	1.9796	61548737.59	asset	
+2022		其他应收款	Other receivables	ILS	新谢克尔	3327265.99	1.9796	6586722.30	asset	
+2022		其他非流动资产	Other non-current assets	ILS	新谢克尔	8000000.00	1.9796	15836960.00	asset	
+2022		其他应付款	Other payables	ILS	新谢克尔	2469388.42	1.9796	4888450.70	liability	
+2022		应付账款	Trade payables	ILS	新谢克尔	21534937.94	1.9796	42630993.84	liability	
+
+
+fiscal_year	note	entity_name	country	region	functional_currency_code	functional_currency_zh	functional_currency_basis_zh	functional_currency_basis_en	comment
+2022		SIPG Bayport Terminal Co.,Ltd.	Israel	Haifa	ILS	新谢克尔	当地货币	Local currency	Overseas operating entity for Haifa Bayport terminal concession
+
+
+fiscal_year	note	related_party_name	related_party_name_zh	relationship	transaction_type_zh	transaction_type_en	amount_current_year_CNY	transaction_limit_CNY	exceeded_limit	amount_prior_year_CNY	currency	comment
+2022		Masada Infrastructure Ltd		Associate of CCCC Third Harbor Engineering via Bayport project SPV	工程施工	Construction works	180560670.97			799821016.07	CNY	Construction services related mainly to Israel Haifa Bayport port project
+
+
+fiscal_year	note	guarantee_provider_zh	guarantee_provider_en	guarantee_beneficiary_zh	guarantee_beneficiary_en	guarantee_type_zh	guarantee_type_en	guarantee_amount_foreign	guarantee_currency	guarantee_amount_USD_millions	guarantee_amount_CNY_millions	board_resolution_date	max_guarantee_term_years	other_terms_zh	other_terms_en	comment
+2022		以上海国际港务(集团)股份有限公司控股子公司为以色列海法 Bayport港口工程项目	SIPG via its subsidiary for the Israel Haifa Bayport port construction project	以色列海法新港码头有限公司	Israel Haifa New Port Terminal Co., Ltd.	银行保函担保未来港口设施维护和修复费用	Bank guarantee for future maintenance and repair costs of port facilities	56000000	ILS	19	130	2021-07-16	26	担保期限自保函开立之日起至资产维护期届满后一年以内，但不超过26年，保证方式为连带责任保证	Guarantee term from issuance of the bank guarantee until one year after the end of the maintenance period, capped at 26 years; joint and several liability guarantee	Guarantee remains disclosed as outstanding in 2022 report
+
+
+
+
+year	company_name_en	jurisdiction	registered_capital_original	registered_capital_currency	registered_capital_nis_numeric_guess	main_place_of_business	main_business	ownership_pct	acquisition_method	source_doc	source_page_note
+2023	SIPG Bayport Terminal Co., Ltd.	Israel	72,000万新谢克尔	NIS	7200000000	Israel	Port transportation services	100	Establishment	SIPG 2023 annual report	"Major subsidiaries table (注册资本 72,000万新谢克尔, 持股比例100%)"
+
+
+year	project_name_en	project_name_cn	category	budget_rmb	opening_balance_rmb	additions_rmb	transfers_to_PPE_rmb	transfers_to_intangibles_rmb	other_decreases_rmb	closing_balance_rmb	cumulative_investment_pct_of_budget	project_completion_pct	funding_source	source_doc	source_page_note
+2024	Bayport rail area fire-cannon system project	Bayport铁路区加装消防炮系统项目	CIP	28000000	0	20475543.11	0	0	0	20475543.11	73.13	73.13	self-financed	SIPG 2024 annual report	"Note 在建工程, subtable (2) 重要在建工程项目本期变动情况; unit: RMB"
+
+
+year	country	tax_type	tax_rate_pct	applicable_to	source_doc	source_page_note
+2024	Israel	Corporate income tax	23	SIPG overseas subsidiaries (incl. SIPG Bayport Terminal Co., Ltd.)	SIPG 2024 annual report	"所得税 note: table of applicable tax rates by jurisdiction; row '以色列：23%'"
+
+
+
+port_name	terminal_name	operator	is_new_port	operational_2019	lease_expiration_year	max_depth_m	quay_length_m	quay_length_m_phase1	quay_length_m_phase2	design_capacity_teu_2019	design_capacity_teu_phase1	design_capacity_teu_phase2	max_vessel_size_teu	source_file	source_page_note
+Haifa	Haifa container terminal (HPC)	Haifa Port Company (HPC)	0	1	2054	16.2	1660				2000000			files_privatizations_hifa-port_eng_HaifaPort_Roadshow.pdf	Slide "Israeli Port Landscape" (page index 22)
+Haifa	Israel Shipyards terminal	Israel Shipyards Ltd.	0	1	2058	11	800				NA			files_privatizations_hifa-port_eng_HaifaPort_Roadshow.pdf	Slide "Israeli Port Landscape" (page index 22)
+Ashdod	Ashdod container terminal	Ashdod Port Company	0	1	2054	15.5	1823				1800000			files_privatizations_hifa-port_eng_HaifaPort_Roadshow.pdf	Slide "Israeli Port Landscape" (page index 22)
+Eilat	Eilat (general/breakbulk)	Papo Maritime	0	1	2028	10	530				NA			files_privatizations_hifa-port_eng_HaifaPort_Roadshow.pdf	Slide "Israeli Port Landscape" (page index 22)
+Haifa	Haifa Bayport (SIPG)	Shanghai International Port Group (SIPG, China)	1	0	2046	17.3	1535	800	1535	2000000	1100000	1900000	24000	files_privatizations_hifa-port_eng_HaifaPort_Roadshow.pdf	Slide "Israeli Port Landscape" (page index 22)
+Ashdod	Ashdod HaDarom (TIL)	TIL Group	1	0	2046	17.3	1300	800	1300	2160000	1100000	2160000	24000	files_privatizations_hifa-port_eng_HaifaPort_Roadshow.pdf	Slide "Israeli Port Landscape" (page index 22)
+
+
+
+
+key	value	unit	comment	source_file	source_page_note
+bayport_concession_lease_end_year	2046	year	Lease expiration of Haifa Bayport concession	files_privatizations_hifa-port_eng_HaifaPort_Roadshow.pdf	Slide "Israeli Port Landscape" (page index 22)
+bayport_concession_lease_start_year_approx	2021	year	Phase 1 expected operational ~2021; used as approximate lease start for modelling	files_privatizations_hifa-port_eng_HaifaPort_Roadshow.pdf	Slide "Israeli Port Landscape" (page index 22)
+bayport_max_depth	17.3	m	Max depth at Haifa Bayport	files_privatizations_hifa-port_eng_HaifaPort_Roadshow.pdf	Slide "Israeli Port Landscape" (page index 22)
+bayport_quay_length_full	1535	m	Planned total quay after completion of both phases	files_privatizations_hifa-port_eng_HaifaPort_Roadshow.pdf	Slide "Israeli Port Landscape" (page index 22)
+bayport_quay_length_phase1	800	m	Quay length in Phase 1	files_privatizations_hifa-port_eng_HaifaPort_Roadshow.pdf	Slide "Israeli Port Landscape" (page index 22)
+bayport_design_capacity_full	1900000	TEU	Full-build design container capacity	files_privatizations_hifa-port_eng_HaifaPort_Roadshow.pdf	Slide "Israeli Port Landscape" (page index 22)
+bayport_design_capacity_phase1	1100000	TEU	Phase-1 design container capacity	files_privatizations_hifa-port_eng_HaifaPort_Roadshow.pdf	Slide "Israeli Port Landscape" (page index 22)
+bayport_max_container_vessel_size	24000	TEU	Max container vessel size that Bayport is designed to handle	files_privatizations_hifa-port_eng_HaifaPort_Roadshow.pdf	Slide "Israeli Port Landscape" (page index 22)
+bayport_is_greenfield	1	flag	1 = new greenfield terminal; no inherited legacy PPE	files_privatizations_hifa-port_eng_HaifaPort_Roadshow.pdf	Text: “Greenfield” in the port landscape slide
+bayport_operator_name	Shanghai International Port Group (SIPG)	string	Operator / concessionaire for Haifa Bayport	files_privatizations_hifa-port_eng_HaifaPort_Roadshow.pdf	Slide "Israeli Port Landscape" (page index 22)

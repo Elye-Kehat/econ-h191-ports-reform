@@ -1,0 +1,7 @@
+model	reform	target	spec_name	test_name	stat	df_num	df_denom	pvalue	fe_type	cov_type	cluster_by	r2
+1B	haifa_comp	Haifa-Legacy terminal	baseline	pretrend_all_m_le_-2		11.0	0.0		baseline	HC1	cluster_id	1.0
+1B	haifa_comp	Haifa-Legacy terminal	porttr	pretrend_all_m_le_-2		11.0	0.0		porttr	HC1	cluster_id	1.0
+1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	pretrend_all_m_le_-2		11.0	0.0		tr_shocks	HC1	cluster_id	1.0
+1B	haifa_priv	Haifa-Legacy terminal	baseline	pretrend_all_m_le_-2		11.0	0.0		baseline	HC1	cluster_id	1.0
+1B	haifa_priv	Haifa-Legacy terminal	porttr	pretrend_all_m_le_-2		11.0	0.0		porttr	HC1	cluster_id	1.0
+1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	pretrend_all_m_le_-2		11.0	0.0		tr_shocks	HC1	cluster_id	1.0

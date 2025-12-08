@@ -1,0 +1,11 @@
+{
+  "description": "Monthly PIM-linear K for SIPG Haifa Bayport (real 2019 NIS, thousands). K_PIM_real_* treated as December anchors; zero K before first positive annual anchor; log-linear interpolation thereafter.",
+  "annual_pim_source": "31_K_B_annual_Haifa_SIPG_PIM.tsv",
+  "columns_K": [
+    "K_PIM_lin_central",
+    "K_PIM_lin_high",
+    "K_PIM_lin_low"
+  ],
+  "port": "Haifa",
+  "company": "SIPG Haifa Bayport"
+}

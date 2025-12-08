@@ -17,12 +17,21 @@ Design:
         * "porttr": add port-specific linear time trends.
         * "tr_shocks": add port-specific linear trends + exogenous shock controls.
     - Export, for each specification separately (and also pooled across specs):
-        * A tidy table of dynamic betas beta_m for each event_time m.
+        * A tidy table of dynamic betas beta_m for each event_time m,
+          including N(m) (number of unit×month observations at that m).
         * A tidy table of window-average betas beta_[a,b].
-        * A tidy table of pre-trend F-tests for leads m <= -2.
+        * A tidy table of pre-trend F-tests based on coarse pre bins
+          over m ∈ [-12, -2], using HC1-style (unclustered OLS) covariance
+          for the Wald test.
 
-The goal is that the resulting TSVs can be read almost directly into the
-LaTeX tables for the main text and appendix.
+The idea is that:
+    - Main coefficient SEs are cluster-robust at the series (terminal) level.
+    - Pre-trend F-tests are descriptive diagnostics using simple OLS
+      covariance to avoid small-cluster pathologies.
+    - Wild-cluster bootstrap for inference (if desired) will be applied
+      later in a separate script that consumes these TSVs.
+
+Outputs are written to: Thesis/Design/Output (new)/Model_1A.
 """
 
 from pathlib import Path
@@ -37,13 +46,13 @@ import statsmodels.formula.api as smf
 # ----------------------------------------------------------------------
 # 0. Paths
 # ----------------------------------------------------------------------
-
 THIS_FILE = Path(__file__).resolve()
-# .../Thesis/Design/Code (new)/Model_1A.py  --> parents[2] = .../Thesis
-THESIS_ROOT = THIS_FILE.parents[2]
-
+THESIS_ROOT = THIS_FILE.parents[2]  # .../Thesis
 LP_PANEL_PATH = THESIS_ROOT / "Data" / "LP" / "LP_Panel_monthly.tsv"
-OUTPUT_DIR = THESIS_ROOT / "Design" / "Output (new)"  # will be created if needed
+
+# Output directory: put Model 1A files in a dedicated subfolder
+OUTPUT_DIR = THESIS_ROOT / "Design" / "Output (new)" / "Model_1A"
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
 # ----------------------------------------------------------------------
@@ -87,10 +96,6 @@ class SpecWithFE:
 # ----------------------------------------------------------------------
 # 2. Mapping from Table-1 labels to LP_Panel filters
 # ----------------------------------------------------------------------
-# We use simple conditions on (level, port, terminal) to find the right
-# series_id for each label. This is evaluated once at the beginning,
-# and we assert that each label maps to exactly one series_id.
-# ----------------------------------------------------------------------
 
 LABEL_FILTERS: Dict[str, Dict[str, str]] = {
     # Port-level monthly series
@@ -107,9 +112,6 @@ LABEL_FILTERS: Dict[str, Dict[str, str]] = {
 
 # ----------------------------------------------------------------------
 # 3. Table-1 specs (NYT windows)
-# ----------------------------------------------------------------------
-# These are copied directly from your LaTeX table.
-# Dates are written as (year, month); months are integers 1-12.
 # ----------------------------------------------------------------------
 
 NYT_SPECS: List[Spec] = [
@@ -197,28 +199,41 @@ NYT_SPECS: List[Spec] = [
             Window("Ashdod-HCT",      (2021, 8), (2023, 9)),
         ],
     ),
+        # --- Haifa privatization (placebo: Haifa-Bayport treated at 01-2023) ---
+    Spec(
+        reform="haifa_priv",
+        target="Haifa-Bayport terminal",
+        event_year=2023,
+        event_month=1,  # use the same privatization clock
+        treat_windows=[
+            # Same Haifa port pre-window as in the Legacy spec:
+            Window("Haifa port",      (2021, 1), (2021, 8)),
+            # Now treat Bayport as if it were "privatized" at the same date:
+            Window("Haifa-Bayport",   (2021, 9), (2023, 9)),
+        ],
+        control_windows=[
+            # Swap Legacy into the control group:
+            Window("Haifa-Legacy",    (2021, 9), (2023, 9)),
+            # Keep the Ashdod windows as in the Legacy spec:
+            Window("Ashdod port",     (2021, 1), (2021, 7)),
+            Window("Ashdod-Legacy",   (2021, 8), (2023, 9)),
+            Window("Ashdod-HCT",      (2021, 8), (2023, 9)),
+        ],
+    ),
+
 ]
 
 
 # ----------------------------------------------------------------------
 # 4. Optional shock controls
 # ----------------------------------------------------------------------
-# You can either:
-#   (i) Fill EXPLICIT_SHOCK_COLS with the exact column names of your
-#       shock controls in LP_Panel_monthly.tsv (e.g. "covid_Haifa",
-#       "stevedore_strike_Ashdod"), or
-#  (ii) Leave EXPLICIT_SHOCK_COLS empty and let the script auto-detect
-#       any columns whose names contain the substring "shock".
-# If no shock controls are found, the "tr_shocks" specification is
-# skipped with a warning so that the script still runs on the current
-# data.
-# ----------------------------------------------------------------------
 
 EXPLICIT_SHOCK_COLS: List[str] = [
-    # Example:
-    # "covid_Haifa",
-    # "covid_Ashdod",
+    # Explicitly known shock controls constructed in load_lp_panel().
+    "covid_shock",
+    "war_shock",
 ]
+
 
 def get_shock_control_cols(df: pd.DataFrame) -> List[str]:
     """Return the list of shock-control columns present in df."""
@@ -261,10 +276,23 @@ def load_lp_panel(path: Path) -> pd.DataFrame:
 
     df["log_LP"] = np.log(df["LP"])
 
+    # ------------------------------------------------------------------
+    # Shock controls: COVID (2020–21) and late-2023 war shock
+    # ------------------------------------------------------------------
+    covid_mask = df["year"].between(2020, 2021, inclusive="both")
+    covid_mask = covid_mask.fillna(False)
+    df["covid_shock"] = covid_mask.astype(int)
+
+    war_mask = (df["year"] > 2023) | ((df["year"] == 2023) & (df["month"] >= 10))
+    war_mask = war_mask.fillna(False)
+    df["war_shock"] = war_mask.astype(int)
+
     # IDs for FE
     df["unit_id"] = df["series_id"]         # terminal or port series
     df["time_id"] = df["month_index"]
-    df["cluster_id"] = df["port"]          # cluster at port level
+    # Cluster at the series_id level (more than two clusters); WCB for
+    # inference will be handled downstream.
+    df["cluster_id"] = df["series_id"]
 
     return df
 
@@ -451,8 +479,11 @@ def _parse_event_time_from_param_name(name: str) -> Optional[int]:
     return m_val
 
 
-def run_event_study(df_es: pd.DataFrame, spec_with_fe: SpecWithFE,
-                    shock_cols: Optional[List[str]] = None):
+def run_event_study(
+    df_es: pd.DataFrame,
+    spec_with_fe: SpecWithFE,
+    shock_cols: Optional[List[str]] = None,
+):
     """
     Run the Model 1A regression on df_es under a given specification:
 
@@ -461,6 +492,17 @@ def run_event_study(df_es: pd.DataFrame, spec_with_fe: SpecWithFE,
                     [+ port-specific linear trends]
                     [+ shock controls]
                     + epsilon_it
+
+    Standard errors for beta_m and window-averages use series-clustered
+    covariance. Pre-trend F-tests, however, will use an HC1-style
+    unclustered covariance (constructed from OLS) purely as a diagnostic.
+
+    Returns
+    -------
+    result : statsmodels RegressionResults
+    n_by_event_time : dict[int, int]
+        Mapping from event_time m -> number of unit×month observations
+        at that event month in the estimation sample.
     """
     spec = spec_with_fe.spec
     spec_name = spec_with_fe.spec_name
@@ -484,7 +526,6 @@ def run_event_study(df_es: pd.DataFrame, spec_with_fe: SpecWithFE,
 
     used_shock_cols: List[str] = []
     if include_shocks and shock_cols:
-        # Only include columns that actually exist in df_es
         for col in shock_cols:
             if col in df_es.columns:
                 used_shock_cols.append(col)
@@ -499,19 +540,30 @@ def run_event_study(df_es: pd.DataFrame, spec_with_fe: SpecWithFE,
     print(f"  Running spec='{spec_name}' "
           f"(+PortTr={include_port_trends}, +Shocks={include_shocks})")
 
+    # Count observations per event_time for Appendix N(m)
+    n_by_event_time = (
+        df_es.groupby("event_time")["unit_id"]
+        .size()
+        .to_dict()
+    )
+
     model = smf.ols(formula=formula, data=df_es)
     result = model.fit(
         cov_type="cluster",
         cov_kwds={"groups": df_es["cluster_id"]},
     )
 
-    return result
+    return result, n_by_event_time
 
 
-def extract_dynamic_betas(result, spec_with_fe: SpecWithFE) -> pd.DataFrame:
+def extract_dynamic_betas(
+    result,
+    spec_with_fe: SpecWithFE,
+    n_by_event_time: Optional[Dict[int, int]] = None,
+) -> pd.DataFrame:
     """
     Extract beta_m for each event_time m (excluding reference m=-1)
-    into a tidy DataFrame.
+    into a tidy DataFrame, including N(m) if provided.
     """
     spec = spec_with_fe.spec
     rows = []
@@ -519,14 +571,17 @@ def extract_dynamic_betas(result, spec_with_fe: SpecWithFE) -> pd.DataFrame:
     bse = result.bse
     pvals = result.pvalues
 
+    n_map = n_by_event_time or {}
+
     for name, beta in params.items():
         m_val = _parse_event_time_from_param_name(name)
         if m_val is None:
             continue
 
         se = float(bse.get(name, np.nan))
-        t_stat = beta / se if se not in (0, np.nan) else np.nan
+        t_stat = beta / se if (not np.isnan(se) and se != 0) else np.nan
         pval = float(pvals.get(name, np.nan))
+        n_event = float(n_map.get(m_val, np.nan))
 
         row = {
             "reform": spec.reform,
@@ -537,6 +592,7 @@ def extract_dynamic_betas(result, spec_with_fe: SpecWithFE) -> pd.DataFrame:
             "se": se,
             "t": t_stat,
             "pvalue": pval,
+            "n_event_obs": n_event,   # N(m) for Appendix tables
             "n_obs": int(result.nobs),
             "r2": float(result.rsquared),
         }
@@ -549,13 +605,23 @@ def extract_dynamic_betas(result, spec_with_fe: SpecWithFE) -> pd.DataFrame:
 # 8. Compute window averages beta_[a,b]
 # ----------------------------------------------------------------------
 
+# Coarse windows for the tables; note that avg_pre matches the pre-trend window
+PRETREND_MIN = -12
+PRETREND_MAX = -2
+
 WINDOWS: Dict[str, Tuple[int, int]] = {
     # window_name: (a, b) in event_time units (months)
-    "avg_pre":    (-24, -2),
+    "avg_pre":    (PRETREND_MIN, PRETREND_MAX),
     "post_1yr":   (1, 12),
     "post_2yrs":  (1, 24),
     "full_post":  (1, 999),  # interpreted as [1, max observed post m]
 }
+
+# For pre-trend F-test: coarse pre bins inside [PRETREND_MIN, PRETREND_MAX]
+PRETREND_BINS: List[Tuple[int, int]] = [
+    (PRETREND_MIN, -7),  # e.g. [-12, -7]
+    (-6, PRETREND_MAX),  # e.g. [-6, -2]
+]
 
 
 def compute_window_averages(result, spec_with_fe: SpecWithFE) -> pd.DataFrame:
@@ -619,62 +685,118 @@ def compute_window_averages(result, spec_with_fe: SpecWithFE) -> pd.DataFrame:
 
 
 # ----------------------------------------------------------------------
-# 9. Pre-trend F-test for leads m <= -2
+# 9. Pre-trend F-test for aggregated leads in coarse pre bins
 # ----------------------------------------------------------------------
 
-def compute_pretrend_f_test(result, spec_with_fe: SpecWithFE) -> pd.DataFrame:
+def compute_pretrend_f_test(
+    result,
+    spec_with_fe: SpecWithFE,
+    pre_min: int = PRETREND_MIN,
+    pre_max: int = PRETREND_MAX,
+    bin_edges: Optional[List[Tuple[int, int]]] = None,
+) -> pd.DataFrame:
     """
-    Compute an F-test (Wald test) for the null that all lead coefficients
-    (event_time m <= -2) are jointly zero.
+    Compute a pre-trend test for coarse lead bins within [pre_min, pre_max].
 
-    Returns a one-row DataFrame with columns:
-        reform, target, spec_name, n_leads, f_stat, pvalue,
-        df_num, df_denom, n_obs, r2
+    Steps:
+      * identify event-time coefficients with m in [pre_min, pre_max] (leads),
+      * define one or more coarse pre bins (e.g. [-12,-7] and [-6,-2]),
+      * for each bin k, form the equal-weight average of the betas in that bin,
+      * test joint H0: all bin averages = 0 via a Wald F-test,
+      * construct the Wald test using an unclustered OLS covariance matrix:
+          cov_unclustered = (X'X)^{-1} * mse_resid
+        derived from the same regression.
+
+    This keeps the main reported SEs cluster-robust, while using a
+    simpler, better-behaved covariance for the pre-trend diagnostic
+    (especially given the small number of clusters).
     """
-    spec = spec_with_fe.spec
     params = result.params
-    param_names = params.index.to_list()
+    param_names = list(params.index)
+    k_params = len(param_names)
 
-    lead_param_indices: List[int] = []
+    # 1. Identify all event-time coefficients and select leads in [pre_min, pre_max]
+    event_param_info: List[Tuple[int, int, str]] = []  # (m_val, idx, name)
     for j, name in enumerate(param_names):
         m_val = _parse_event_time_from_param_name(name)
-        if m_val is not None and m_val <= -2:
-            lead_param_indices.append(j)
+        if m_val is None:
+            continue
+        if pre_min <= m_val <= pre_max:
+            event_param_info.append((m_val, j, name))
 
-    if not lead_param_indices:
-        row = {
-            "reform": spec.reform,
-            "target": spec.target,
-            "spec_name": spec_with_fe.spec_name,
-            "n_leads": 0,
-            "f_stat": np.nan,
-            "pvalue": np.nan,
-            "df_num": 0.0,
-            "df_denom": float(result.df_resid),
-            "n_obs": int(result.nobs),
-            "r2": float(result.rsquared),
-        }
-        return pd.DataFrame([row])
+    if not event_param_info:
+        return pd.DataFrame([])
 
-    # Build restriction matrix R for H0: beta_leads = 0
-    R = np.zeros((len(lead_param_indices), len(param_names)))
-    for i, idx in enumerate(lead_param_indices):
-        R[i, idx] = 1.0
+    n_leads_total = len(event_param_info)
 
-    ftest = result.f_test(R)
-    # fvalue and pvalue may be arrays; squash them
-    f_val = float(np.squeeze(np.asarray(ftest.fvalue)))
-    p_val = float(np.squeeze(np.asarray(ftest.pvalue)))
+    # 2. Define coarse bins
+    bins = bin_edges if bin_edges is not None else PRETREND_BINS
+
+    # Build R with one row per bin that has at least one coefficient
+    R_rows: List[np.ndarray] = []
+    bins_used: List[Tuple[int, int]] = []
+
+    for (a, b) in bins:
+        idxs_in_bin = [idx for (m_val, idx, _) in event_param_info if (m_val >= a and m_val <= b)]
+        if not idxs_in_bin:
+            continue
+        r = np.zeros(k_params)
+        w = 1.0 / len(idxs_in_bin)
+        for j in idxs_in_bin:
+            r[j] = w
+        R_rows.append(r)
+        bins_used.append((a, b))
+
+    if not R_rows:
+        # No bins actually contain any leads (shouldn't happen if event_param_info non-empty,
+        # but guard anyway).
+        return pd.DataFrame([])
+
+    R = np.vstack(R_rows)
+    n_restr = R.shape[0]
+
+    # 3. Construct an unclustered (OLS-style) covariance matrix.
+    try:
+        cov_unclustered = np.asarray(result.normalized_cov_params) * float(result.mse_resid)
+    except Exception:
+        return pd.DataFrame([])
+
+    # 4. Wald test with F-statistic using the unclustered covariance.
+    try:
+        # scalar=False to avoid the future-behavior warning; we then
+        # safely coerce the outputs to scalars.
+        wtest = result.wald_test(R, cov_p=cov_unclustered, use_f=True, scalar=False)
+
+        f_raw = getattr(wtest, "fvalue", getattr(wtest, "statistic", np.nan))
+        f_val = float(np.asarray(f_raw).ravel()[0])
+
+        p_raw = getattr(wtest, "pvalue", np.nan)
+        p_val = float(np.asarray(p_raw).ravel()[0])
+
+        df_num_attr = getattr(wtest, "df_num", None)
+        df_denom_attr = getattr(wtest, "df_denom", None)
+
+        df_num = float(df_num_attr) if df_num_attr is not None else float(n_restr)
+        df_denom = float(df_denom_attr) if df_denom_attr is not None else float(result.df_resid)
+    except Exception:
+        f_val = np.nan
+        p_val = np.nan
+        df_num = float(n_restr)
+        df_denom = float(result.df_resid)
 
     row = {
-        "reform": spec.reform,
-        "target": spec.target,
-        "spec_name": spec_with_fe.spec_name,
-        "n_leads": float(len(lead_param_indices)),
+        "reform": spec_with_fe.spec.reform,
+        "target": spec_with_fe.spec.target,
+        "spec": spec_with_fe.spec_name,
+        "pre_min": float(pre_min),
+        "pre_max": float(pre_max),
+        "n_leads_total": float(n_leads_total),
+        "n_bins_defined": float(len(bins)),
+        "n_bins_used": float(len(bins_used)),
         "f_stat": f_val,
         "pvalue": p_val,
-        "df_num": float(len(lead_param_indices)),
-        "df_denom": float(result.df_resid),
+        "df_num": df_num,
+        "df_denom": df_denom,
         "n_obs": int(result.nobs),
         "r2": float(result.rsquared),
     }
@@ -702,9 +824,6 @@ def main():
         print("No shock-control columns detected; '+Tr&Shocks' specs will be skipped.")
 
     # Build the list of (specification x Table-1 row) combinations.
-    # We always run "baseline" and "+PortTr" for all NYT_SPECS.
-    # For "+Tr&Shocks", we only attempt it if at least one shock control
-    # column exists in the data.
     SPECS_WITH_FE: List[SpecWithFE] = []
     for base_spec in NYT_SPECS:
         # Baseline
@@ -746,10 +865,14 @@ def main():
               f"{len(df_es) - df_es['treated'].sum()} controls).")
 
         # Run the ES regression
-        result = run_event_study(df_es, spec_with_fe, shock_cols=shock_cols_all)
+        result, n_by_event_time = run_event_study(
+            df_es,
+            spec_with_fe,
+            shock_cols=shock_cols_all,
+        )
 
         # Collect outputs
-        dyn = extract_dynamic_betas(result, spec_with_fe)
+        dyn = extract_dynamic_betas(result, spec_with_fe, n_by_event_time)
         win = compute_window_averages(result, spec_with_fe)
         pre = compute_pretrend_f_test(result, spec_with_fe)
 

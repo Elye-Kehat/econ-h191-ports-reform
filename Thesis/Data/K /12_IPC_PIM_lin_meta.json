@@ -1,0 +1,7 @@
+{
+  "input_annual_pim_path": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/K /11_K_B_annual_Haifa_IPC_PIM.tsv",
+  "port": "Haifa",
+  "company": "Israel Ports Company (Haifa cluster)",
+  "operator_or_owner": "Israel Ports Company (landlord / infrastructure owner)",
+  "notes": "IPC monthly K series for Haifa, built via log-linear interpolation of annual PIM K values. K_PIM_lin_* are the main monthly K series."
+}

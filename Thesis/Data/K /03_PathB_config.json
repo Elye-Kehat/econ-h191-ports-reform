@@ -1,5 +1,5 @@
 {
-  "description": "Path B monthly capital stock for Haifa Port Company (legacy), built from annual PIM (Track B) plus lumpy big projects and smooth background K.",
+  "description": "Path B monthly capital stock for Haifa Port Company (legacy), built from annual PIM (Track B) plus lumpy big projects and smooth background K, for all depreciation scenarios.",
   "inputs": {
     "annual_pim_file": "01_K_B_annual_Haifa_PIM.tsv",
     "monthly_pim_lin_file": "02_K_B_monthly_Haifa_PIM_lin.tsv",
@@ -17,6 +17,6 @@
   "defaults": {
     "default_asset_life_years": 28.0,
     "per_project_depreciation_rule": "delta_annual = 1 / asset_life_years; monthly delta from geometric equivalence",
-    "background_interpolation": "log-linear between annual K_bg_y at December year-ends"
+    "background_interpolation": "log-linear between annual K_bg_y^s at December year-ends for each scenario s"
   }
 }

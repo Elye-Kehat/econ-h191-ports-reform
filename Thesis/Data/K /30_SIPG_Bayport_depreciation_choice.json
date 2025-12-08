@@ -1,0 +1,9 @@
+{
+  "description": "Depreciation scenarios and I-product definition for SIPG Haifa Bayport.",
+  "scenarios_available": {
+    "low": 0.04,
+    "central": 0.06,
+    "high": 0.08
+  },
+  "I_productive_definition": "transfers_only"
+}

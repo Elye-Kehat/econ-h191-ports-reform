@@ -1,0 +1,11 @@
+{
+  "input_step1_real_path": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/K /10_haifa_IPC_financials_step1_real.tsv",
+  "input_depr_meta_path": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/K /10_IPC_depreciation_choice.json",
+  "delta_scenarios": {
+    "low": 0.04,
+    "central": 0.06,
+    "high": 0.08
+  },
+  "default_scenario": "central",
+  "notes": "Annual IPC PIM K series for Haifa cluster infrastructure. K_PIM_real_* are net real capital under the given \u03b4 assumptions. gap_book_minus_PIM_central = K_book_real - K_PIM_real_central."
+}

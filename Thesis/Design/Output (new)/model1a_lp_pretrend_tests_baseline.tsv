@@ -1,6 +1,0 @@
-reform	target	spec_name	n_leads	f_stat	pvalue	df_num	df_denom	n_obs	r2
-haifa_comp	Haifa-Bayport terminal	baseline	23.0	2.9562090504078287e+40	4.4156666702849485e-21	23.0	14.0	91	1.0
-haifa_comp	Haifa-Legacy terminal	baseline	23.0	1.7295843765601203e+40	5.772885932297507e-21	23.0	14.0	91	1.0
-ashdod_comp	Ashdod-HCT terminal	baseline	23.0	5.542781140340913e+40	3.2705230627335836e-21	23.0	24.0	95	1.0
-ashdod_comp	Ashdod-Legacy terminal	baseline	23.0	-1.5859160334780468e+41	1.0	23.0	24.0	95	1.0
-haifa_priv	Haifa-Legacy terminal	baseline	23.0	0.9116379310345062	0.5147185537025912	23.0	49.0	117	0.9473313190845971

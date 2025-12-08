@@ -1,0 +1,7 @@
+reform	target	spec	pre_min	pre_max	n_leads_total	n_bins_defined	n_bins_used	f_stat	pvalue	df_num	df_denom	n_obs	r2
+haifa_comp	Haifa-Bayport terminal	baseline	-12.0	-2.0	11.0	2.0	2.0	2.743360079427952e+28	5.314890997897681e-57	2.0	4.0	91	1.0
+haifa_comp	Haifa-Legacy terminal	baseline	-12.0	-2.0	11.0	2.0	2.0	2.7781471377932693e+28	5.182621646054242e-57	2.0	4.0	91	1.0
+ashdod_comp	Ashdod-HCT terminal	baseline	-12.0	-2.0	11.0	2.0	2.0	2.885714428738191e+27	4.803450165949603e-55	2.0	4.0	95	1.0
+ashdod_comp	Ashdod-Legacy terminal	baseline	-12.0	-2.0	11.0	2.0	2.0	2.9850490611721396e+27	4.489076893134664e-55	2.0	4.0	95	1.0
+haifa_priv	Haifa-Legacy terminal	baseline	-12.0	-2.0	11.0	2.0	2.0	0.31429400677682245	0.7437489354497087	2.0	5.0	117	0.9473313190845971
+haifa_priv	Haifa-Bayport terminal	baseline	-12.0	-2.0	11.0	2.0	2.0	0.3142940067768256	0.7437489354497065	2.0	5.0	117	0.9473313190845971

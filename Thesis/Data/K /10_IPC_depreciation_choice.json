@@ -1,0 +1,10 @@
+{
+  "note": "IPC depreciation scenarios for Haifa infrastructure. Rates are annual geometric depreciation used in the PIM.",
+  "delta_scenarios": {
+    "low": 0.04,
+    "central": 0.06,
+    "high": 0.08
+  },
+  "default_scenario": "central",
+  "company": "Israel Ports Company (Haifa cluster)"
+}
