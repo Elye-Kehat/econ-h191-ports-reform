@@ -11,7 +11,7 @@
 #
 # Assumptions:
 #   - This script lives in Thesis/Data/K/.
-#   - The CIP file is sipg_haifa_bayport_CIP_RMB.tsv (tab-separated, RMB).
+#   - The CIP file is sipg_haifa_bayport_CIP_RMB.csv (comma-separated, RMB).
 #   - If fx_rmb_nis.tsv does NOT exist, but "CNY_ILS Historical Data.csv"
 #     DOES exist in the same folder, this script will:
 #         * build fx_rmb_nis.tsv from that daily file (annual averages),
@@ -31,7 +31,7 @@ import numpy as np
 
 DATA_DIR = Path(__file__).resolve().parent
 
-CIP_PATH = DATA_DIR / "sipg_haifa_bayport_CIP_RMB.tsv"
+CIP_PATH = DATA_DIR / "sipg_haifa_bayport_CIP_RMB.csv"
 FX_PATH = DATA_DIR / "fx_rmb_nis.tsv"
 
 # Optional daily FX file (Investing.com or similar)
@@ -53,14 +53,15 @@ OUT_META_PATH = DATA_DIR / "30_SIPG_Bayport_depreciation_choice.json"
 # --------------------------------------------------------------------
 
 def load_cip_data(cip_path: Path) -> pd.DataFrame:
-    """Load SIPG Haifa Bayport CIP data in RMB and standardize."""
+    """Load SIPG Haifa Bayport CIP data in RMB from CSV and standardize."""
     if not cip_path.exists():
         raise FileNotFoundError(
             f"CIP file not found at {cip_path}. "
-            "Expected a TSV file with Bayport CIP in RMB."
+            "Expected a CSV file with Bayport CIP in RMB."
         )
 
-    df = pd.read_csv(cip_path, sep="\t")
+    # CSV with commas as separators; text columns (e.g. 'comment') may include commas
+    df = pd.read_csv(cip_path)
 
     required = [
         "year",
@@ -101,9 +102,7 @@ def load_cip_data(cip_path: Path) -> pd.DataFrame:
         if col in df.columns:
             df[col] = pd.to_numeric(df[col], errors="coerce")
 
-    # Keep only Haifa Bayport-related rows (should be all, but be explicit).
-    # Currently project_group contains e.g. 'Bayport main terminal',
-    # 'Bayport ancillary systems'.
+    # Keep only Haifa Bayport-related rows (should be all, but be explicit later if needed)
     return df
 
 
@@ -190,11 +189,9 @@ def load_fx_table(fx_path: Path) -> pd.DataFrame:
                 daily_path=CNY_ILS_DAILY_PATH,
                 out_path=fx_path,
             )
-            # Ensure we only keep the columns we need
             fx_built = fx_built[["year", "fx_avg_nis_per_rmb"]]
             return fx_built
 
-        # If we get here, neither fx_rmb_nis.tsv nor the daily file exists
         raise FileNotFoundError(
             f"FX file not found at {fx_path} and daily CNY_ILS file "
             f"not found at {CNY_ILS_DAILY_PATH}.\n"
@@ -262,7 +259,6 @@ def load_deflator(defl_path: Path, base_year: int = 2019) -> pd.DataFrame:
         else:
             idx_col = num_cols[0]
 
-        # Parse year and rebase
         d["year"] = d["period"].str.slice(0, 4).astype(int)
         base_val = d.loc[d["year"] == base_year, idx_col].mean()
         if pd.isna(base_val) or base_val == 0:
@@ -291,7 +287,6 @@ def load_deflator(defl_path: Path, base_year: int = 2019) -> pd.DataFrame:
     d["year"] = d["year"].astype(int)
 
     num_cols = d.select_dtypes(include="number").columns.tolist()
-    # Remove 'year' from numeric candidates
     num_cols = [c for c in num_cols if c != "year"]
     if not num_cols:
         raise ValueError(
@@ -321,7 +316,6 @@ def build_annual_cip_real(
 
     df = cip.copy()
 
-    # Annual flows in RMB
     df["I_RMB"] = (
         df["cip_additions_rmb"].fillna(0.0)
         + df["cip_current_capitalized_interest_rmb"].fillna(0.0)
@@ -329,7 +323,6 @@ def build_annual_cip_real(
     df["T_RMB"] = df["cip_transfers_to_ppe_rmb"].fillna(0.0)
     df["E_RMB"] = df["cip_other_decreases_rmb"].fillna(0.0)
 
-    # Aggregate across project groups (main terminal + ancillary systems)
     annual = (
         df.groupby("year", as_index=False)
         .agg(
@@ -344,7 +337,6 @@ def build_annual_cip_real(
         .reset_index(drop=True)
     )
 
-    # CIP identity check (for debugging, not enforced)
     lhs = annual["cip_closing_rmb"]
     rhs = (
         annual["cip_opening_rmb"].fillna(0.0)
@@ -366,11 +358,9 @@ def build_annual_cip_real(
             )
         )
 
-    # Cumulative completed works and “gross” Bayport capital at cost
     annual["K_completed_RMB"] = annual["T_RMB"].cumsum()
     annual["K_gross_RMB"] = annual["K_completed_RMB"] + annual["cip_closing_rmb"]
 
-    # Merge FX
     annual = annual.merge(fx, on="year", how="left")
     if annual["fx_avg_nis_per_rmb"].isna().any():
         missing_years = annual.loc[
@@ -387,7 +377,6 @@ def build_annual_cip_real(
             annual[col] * annual["fx_avg_nis_per_rmb"]
         )
 
-    # Merge deflator
     annual = annual.merge(defl, on="year", how="left")
     if annual["deflator"].isna().any():
         missing_years = annual.loc[annual["deflator"].isna(), "year"].unique()
@@ -396,15 +385,12 @@ def build_annual_cip_real(
             "Check that the OECD deflator covers the Bayport years."
         )
 
-    # Real 2019 NIS
     for col in ["I_NIS", "T_NIS", "K_completed_NIS", "K_gross_NIS"]:
         annual[col.replace("_NIS", "_real")] = annual[col] / annual["deflator"]
 
-    # Convert to thousands
     for col in ["I_real", "T_real", "K_completed_real", "K_gross_real"]:
         annual[col + "_kNIS"] = annual[col] / 1_000.0
 
-    # Add company label
     annual["company"] = "SIPG Haifa Bayport"
 
     cols_out = [
@@ -461,14 +447,12 @@ def run_step1(
 
     annual = build_annual_cip_real(cip, fx, defl)
 
-    # Write outputs
     annual.to_csv(OUT_ANNUAL_PATH, sep="\t", index=False)
     annual.head(10).to_csv(OUT_SAMPLE_PATH, sep="\t", index=False)
 
     print(f"\n[30_step1] Annual SIPG Bayport CIP (real) saved to: {OUT_ANNUAL_PATH}")
     print(f"           Sample (first 10 rows): {OUT_SAMPLE_PATH}")
 
-    # Depreciation scenarios meta
     depr_scenarios = {
         "low": 0.04,
         "central": 0.06,
@@ -478,7 +462,6 @@ def run_step1(
         "description": "Depreciation scenarios and I-product definition for SIPG Haifa Bayport.",
         "scenarios_available": depr_scenarios,
         "I_productive_definition": I_productive_definition,
-        # year_dep_start can be added/overridden manually later if desired.
     }
     with open(OUT_META_PATH, "w", encoding="utf-8") as f:
         json.dump(meta, f, indent=2)
@@ -491,5 +474,4 @@ def run_step1(
 
 
 if __name__ == "__main__":
-    # Default: treat only transfers to PPE as "productive" investment in PIM.
     run_step1(I_productive_definition="transfers_only")

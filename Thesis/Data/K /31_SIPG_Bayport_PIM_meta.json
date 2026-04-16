@@ -6,6 +6,6 @@
     "high": 0.08
   },
   "I_productive_definition": "transfers_only",
-  "year_dep_start": 2021,
+  "year_dep_start": 2020,
   "source_step1": "30_SIPG_Bayport_annual_CIP_real.tsv"
 }

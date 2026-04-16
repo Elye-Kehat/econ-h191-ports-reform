@@ -1,3 +1,10 @@
-spec_name	coef_log_KL	se_log_KL	t_log_KL	p_log_KL	n_obs	r2	r2_adj
-baseline	3.54986242910881	2.700399273436208	1.3145694653486097	0.18865463784292547	35	0.06920396003053164	0.04099801942539627
-trend	-3.9723725322463728	3.8475644390057453	-1.0324382073956582	0.3018668810357966	35	0.294159695282603	0.2500446762377657
+model	spec_id	dep_scenario	delta	param	beta	se	tvalue	pvalue	n_obs	r2	dep_var	formula	description
+2B	2B_ts_trend	central	0.06	Intercept	47.946296425365155	29.108033070705396	1.6471843462902607	0.0995201603382344	35	0.3148072599276812	log_LP	log_LP ~ log_KL + t_index	Cluster ln(LP) on ln(K/L) with linear time trend (full sample).
+2B	2B_ts_trend	central	0.06	log_KL	-4.902929363691278	3.2969567500139725	-1.4871075769102824	0.13698640069114754	35	0.3148072599276812	log_LP	log_LP ~ log_KL + t_index	Cluster ln(LP) on ln(K/L) with linear time trend (full sample).
+2B	2B_ts_trend	central	0.06	t_index	-0.12640134847704818	0.05065884987393936	-2.495148405295189	0.012590446032358208	35	0.3148072599276812	log_LP	log_LP ~ log_KL + t_index	Cluster ln(LP) on ln(K/L) with linear time trend (full sample).
+2B	2B_ts_trend	high	0.08	Intercept	48.55008959237098	29.107136547022357	1.6679788997429783	0.09531991552073121	35	0.3165210942027318	log_LP	log_LP ~ log_KL + t_index	Cluster ln(LP) on ln(K/L) with linear time trend (full sample).
+2B	2B_ts_trend	high	0.08	log_KL	-4.97191696525169	3.296975121356789	-1.5080238043184324	0.13154843471628552	35	0.3165210942027318	log_LP	log_LP ~ log_KL + t_index	Cluster ln(LP) on ln(K/L) with linear time trend (full sample).
+2B	2B_ts_trend	high	0.08	t_index	-0.13497817603990822	0.05501197451630879	-2.4536144580648114	0.014142852284652715	35	0.3165210942027318	log_LP	log_LP ~ log_KL + t_index	Cluster ln(LP) on ln(K/L) with linear time trend (full sample).
+2B	2B_ts_trend	low	0.04	Intercept	47.39136569706329	29.10665395977517	1.628196967008205	0.10348312770733449	35	0.3132587394278916	log_LP	log_LP ~ log_KL + t_index	Cluster ln(LP) on ln(K/L) with linear time trend (full sample).
+2B	2B_ts_trend	low	0.04	log_KL	-4.839539016417621	3.2966992720693398	-1.4679952937836032	0.1421055012750047	35	0.3132587394278916	log_LP	log_LP ~ log_KL + t_index	Cluster ln(LP) on ln(K/L) with linear time trend (full sample).
+2B	2B_ts_trend	low	0.04	t_index	-0.11821544246725359	0.04657439335013315	-2.5382068120252956	0.011142211862581321	35	0.3132587394278916	log_LP	log_LP ~ log_KL + t_index	Cluster ln(LP) on ln(K/L) with linear time trend (full sample).

@@ -1,0 +1,16 @@
+design	table_group	reform	target	target_key	spec_name	window	a	b	beta	se	n_obs	r2
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	avg_pre	-12	-2	-0.6184610932031954	4.205352564343037e-15	128	1.0
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	post_y1	1	12	0.20564571462807274	2.939096893704205e-14	128	1.0
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	post_y1_2	1	24	0.05197688301477448	2.986226638510188e-14	128	1.0
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	full_post	1	39	-0.09319168543592525	2.967276887332339e-14	128	1.0
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	post_y1	1	12	-0.11674180334411088	2.9918757143534354e-15	88	1.0
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	post_y1_2	1	24	0.0019782328372513532	2.5857231971639626e-15	88	1.0
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	full_post	1	25	0.009725440586966567	2.6370312976848683e-15	88	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	avg_pre	-12	-2	0.11585385034317522	0.07805904141982724	144	0.9306793789575862
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	post_y1	1	12	0.04577298707380563	0.05192879270791623	144	0.9306793789575862
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	post_y1_2	1	23	-0.1844427355756661	0.14346643685516444	144	0.9306793789575862
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	full_post	1	23	-0.1844427355756661	0.14346643685516444	144	0.9306793789575862
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	avg_pre	-12	-2	0.1158538503431717	0.07805904141982516	144	0.9036062804718099
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	post_y1	1	12	0.07728507008093	0.04261920808935124	144	0.9036062804718099
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	post_y1_2	1	23	0.0128503058602573	0.16812774132036215	144	0.9036062804718099
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	full_post	1	23	0.0128503058602573	0.16812774132036215	144	0.9036062804718099

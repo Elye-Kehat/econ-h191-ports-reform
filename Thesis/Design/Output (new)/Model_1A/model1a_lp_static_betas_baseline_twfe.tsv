@@ -1,0 +1,13 @@
+design	table_group	reform	target	target_key	spec_name	horizon	a	b	beta	se	pvalue	n_obs	r2	n_treated	n_control	n_post_treated	se_type
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	full_post	1	39	0.43787321710922744	0.2675013595150089	0.10165117711270791	128	0.8854073323106693	64	64	39	cluster
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	post_y1	1	12	0.7367106171732327	0.2699276574548727	0.006347103059321912	74	0.8817914543267381	37	37	12	cluster
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	post_y1_2	1	24	0.5830417855599331	0.26850780604299773	0.029899841951440184	98	0.8882813060773762	49	49	24	cluster
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	full_post	1	25	-0.23134055090377226	0.1912728873166625	0.22647885326159778	88	0.9187429050066642	38	50	25	cluster
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	post_y1	1	12	-0.3578077948348515	0.20037615434038453	0.0741510017318388	62	0.9193952352285151	25	37	12	cluster
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	post_y1_2	1	24	-0.23908775865349213	0.19174342403584121	0.21242865255929566	86	0.9187201016048347	37	49	24	cluster
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	full_post	1	23	-0.30594208679291446	0.14516345018731502	0.03506822821561117	144	0.9017848001485271	36	108	23	cluster
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	post_y1	1	12	-0.07572636414344282	0.034477853311814716	0.02806497025628756	100	0.9710375863158578	25	75	12	cluster
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	post_y1_2	1	23	-0.30594208679291446	0.14516345018731502	0.03506822821561117	144	0.9017848001485271	36	108	23	cluster
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	full_post	1	23	-0.10864904535698698	0.18321853083654435	0.5531794845512576	144	0.8922435656304956	36	108	23	cluster
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	post_y1	1	12	-0.04421428113630918	0.04212233415615955	0.2938728023089141	100	0.9706640838458169	25	75	12	cluster
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	post_y1_2	1	23	-0.10864904535698698	0.18321853083654435	0.5531794845512576	144	0.8922435656304956	36	108	23	cluster

@@ -79,6 +79,13 @@ LABEL_FILTERS_KL: Dict[str, Dict[str, str]] = {
     "Haifa port":    {"level": "port",     "port": "Haifa"},
     "Haifa-Legacy":  {"level": "terminal", "port": "Haifa", "terminal": "Haifa-Legacy"},
     "Haifa-Bayport": {"level": "terminal", "port": "Haifa", "terminal": "Haifa-Bayport"},
+    "Haifa port cluster (central)": {
+        "series_id": "Haifa_port_KL_cluster_central",
+    },
+    "Haifa-Bayport K/L (SIPG central)": {
+        "series_id": "Haifa_port_KL_SIPG_central",
+    },
+
 
     # Ashdod – placeholders for future series
     "Ashdod port":    {"level": "port",     "port": "Ashdod"},
@@ -131,61 +138,67 @@ def safe_get_series_id_kl(df: pd.DataFrame, label: str) -> Optional[str]:
 
 def build_base_specs_kl() -> List[BaseSpecKL]:
     """
-    Build the list of base K/L specs that Model 1B will estimate.
+    Build base K/L event-study specs for Model 1B (Haifa).
 
-    For now, with only Haifa K/L data, we focus on Haifa-Legacy as the
-    treated terminal, with Haifa port-cluster as the never-treated control.
+    Specs:
+
+      - Haifa competition entry (Bayport opening):
+          * Haifa-Legacy K/L vs Haifa port cluster (central)
+          * Haifa-Bayport K/L (SIPG central) vs Haifa-Legacy K/L
+
+      - Haifa privatization (Haifa-Legacy sale):
+          * Haifa-Legacy K/L vs Haifa port cluster (central)
+          * Haifa-Bayport K/L (SIPG central) vs Haifa-Legacy K/L (placebo)
     """
     specs: List[BaseSpecKL] = []
 
-    # 1) Haifa competition entry – effect on Haifa-Legacy K/L
+    # Haifa-Legacy K/L around competition entry
     specs.append(
         BaseSpecKL(
             reform="haifa_comp",
-            target="Haifa-Legacy terminal",
+            target="Haifa-Legacy K/L",
             event_year=2021,
-            event_month=9,   # SIPG Bayport effective 09-2021
+            event_month=9,
             treated_labels=["Haifa-Legacy"],
-            control_labels=["Haifa port"],
+            control_labels=["Haifa port cluster (central)"],
         )
     )
 
-    # 2) Haifa privatization – effect on Haifa-Legacy K/L
+    # Haifa-Legacy K/L around privatization
     specs.append(
         BaseSpecKL(
             reform="haifa_priv",
-            target="Haifa-Legacy terminal",
+            target="Haifa-Legacy K/L",
             event_year=2023,
-            event_month=1,   # Haifa privatization effective 01-2023
+            event_month=1,
             treated_labels=["Haifa-Legacy"],
-            control_labels=["Haifa port"],
+            control_labels=["Haifa port cluster (central)"],
         )
     )
 
-    # Future Ashdod / SIPG specs (stay off until K/L exists)
-    if INCLUDE_ASHDOD_KL:
-        specs.append(
-            BaseSpecKL(
-                reform="ashdod_comp",
-                target="Ashdod-HCT terminal",
-                event_year=2022,
-                event_month=11,
-                treated_labels=["Ashdod-HCT"],
-                control_labels=["Haifa port", "Haifa-Legacy"],
-            )
+    # Haifa-Bayport (SIPG central) K/L around competition entry
+    specs.append(
+        BaseSpecKL(
+            reform="haifa_comp",
+            target="Haifa-Bayport K/L (SIPG central)",
+            event_year=2021,
+            event_month=9,
+            treated_labels=["Haifa-Bayport K/L (SIPG central)"],
+            control_labels=["Haifa-Legacy"],
         )
+    )
 
-    if INCLUDE_SIPG_KL:
-        specs.append(
-            BaseSpecKL(
-                reform="haifa_comp",
-                target="Haifa-Bayport terminal",
-                event_year=2021,
-                event_month=9,
-                treated_labels=["Haifa-Bayport"],
-                control_labels=["Ashdod-HCT", "Ashdod-Legacy", "Ashdod port"],
-            )
+    # Haifa-Bayport (SIPG central) K/L around privatization clock (placebo)
+    specs.append(
+        BaseSpecKL(
+            reform="haifa_priv",
+            target="Haifa-Bayport K/L (SIPG central)",
+            event_year=2023,
+            event_month=1,
+            treated_labels=["Haifa-Bayport K/L (SIPG central)"],
+            control_labels=["Haifa-Legacy"],
         )
+    )
 
     return specs
 
@@ -431,17 +444,34 @@ def run_es_regression_kl(
 
     dynamic_df = pd.DataFrame(dyn_rows)
 
-    # ------------------------------------------------------------------
-    # Window betas
+   # ------------------------------------------------------------------
+    # Window betas  (robust to reform-specific max post, e.g. priv max=23)
     # ------------------------------------------------------------------
     cov = result.cov_params()
 
+    import re
+    term_re = re.compile(r"C\(event_time_treat, Treatment\(reference=-1\)\)\[T\.(-?\d+)\]")
+
+    # Parse which event-time dummies actually exist in the regression
+    available_ms = []
+    for nm in params.index:
+        m = term_re.match(str(nm))
+        if m:
+            available_ms.append(int(m.group(1)))
+
+    post_ms = sorted([m for m in available_ms if m >= 1])
+    max_post_avail = max(post_ms) if post_ms else 0
+
     def window_stats(name: str, m_list: List[int]) -> Dict:
-        terms = [
-            f"C(event_time_treat, Treatment(reference=-1))[T.{m}]"
-            for m in m_list
-            if f"C(event_time_treat, Treatment(reference=-1))[T.{m}]" in params.index
-        ]
+        # Keep only m’s whose coefficients exist
+        terms = []
+        used_ms = []
+        for m in m_list:
+            term = f"C(event_time_treat, Treatment(reference=-1))[T.{m}]"
+            if term in params.index:
+                terms.append(term)
+                used_ms.append(m)
+
         if not terms:
             return dict(
                 model=MODEL_NAME,
@@ -466,16 +496,17 @@ def run_es_regression_kl(
 
         idx = [params.index.get_loc(t) for t in terms]
         b = params.iloc[idx].values
-        # Equal weights over the included m's
+
+        # Equal weights over the INCLUDED months only
         w = np.ones(len(terms)) / len(terms)
-        # Robust variance for w' * beta
+
         cov_sub = cov.to_numpy()[np.ix_(idx, idx)]
         var = float(w @ cov_sub @ w)
         se = np.sqrt(var) if var >= 0 else np.nan
+
         beta_hat = float(w @ b)
         tvalue = beta_hat / se if se > 0 else np.nan
 
-        # Approximate two-sided p-value using normal approximation
         if np.isnan(tvalue):
             pvalue = np.nan
         else:
@@ -487,8 +518,8 @@ def run_es_regression_kl(
             target=base.target,
             spec_name=spec_label,
             window_name=name,
-            m_start=min(m_list),
-            m_end=max(m_list),
+            m_start=min(used_ms),
+            m_end=max(used_ms),
             beta_hat=beta_hat,
             se=se,
             tvalue=tvalue,
@@ -503,18 +534,29 @@ def run_es_regression_kl(
         )
 
     win_rows: List[Dict] = []
-    # All post-reform months (1..MAX_EVENT_TIME)
-    win_rows.append(window_stats("post_all", list(range(1, MAX_EVENT_TIME + 1))))
-    # Year 1 post (1..12)
-    win_rows.append(window_stats("post_y1", list(range(1, min(12, MAX_EVENT_TIME) + 1))))
-    # Year 2 post (13..24) if available
-    if MAX_EVENT_TIME >= 13:
-        win_rows.append(window_stats("post_y2", list(range(13, min(24, MAX_EVENT_TIME) + 1))))
-    # Pre-trend window (MIN_EVENT_TIME..-2)
+
+    # post_all = all AVAILABLE post months (1..max_post_avail)
+    if max_post_avail >= 1:
+        win_rows.append(window_stats("post_all", list(range(1, max_post_avail + 1))))
+    else:
+        win_rows.append(window_stats("post_all", list(range(1, MAX_EVENT_TIME + 1))))
+
+    # post_y1 = 1..min(12, max_post_avail) (if any)
+    y1_end = min(12, max_post_avail) if max_post_avail >= 1 else 12
+    win_rows.append(window_stats("post_y1", list(range(1, y1_end + 1))))
+
+    # post_y2 = 13..max_post_avail when available; otherwise return NA row
+    if max_post_avail >= 13:
+        win_rows.append(window_stats("post_y2", list(range(13, max_post_avail + 1))))
+    else:
+        win_rows.append(window_stats("post_y2", list(range(13, 24 + 1))))
+
+    # pre_all = MIN_EVENT_TIME..-2 excluding -1
     pre_ms = [m for m in range(MIN_EVENT_TIME, 0) if m != -1]
     win_rows.append(window_stats("pre_all", pre_ms))
 
     window_df = pd.DataFrame(win_rows)
+
 
     # ------------------------------------------------------------------
     # Pre-trend F-test: H0: all β_m = 0 for m <= -2

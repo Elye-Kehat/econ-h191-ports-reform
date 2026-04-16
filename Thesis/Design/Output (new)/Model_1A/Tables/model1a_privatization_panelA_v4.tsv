@@ -1,0 +1,6 @@
+row_label	Haifa-Bayport — TWFE	Haifa-Bayport — TWFE+Tr	Haifa-Legacy — TWFE	Haifa-Legacy — TWFE+Tr
+Static DiD: full post	-0.109 (0.183)	0.226*** (0.065)	-0.306** (0.145)	-0.030 (0.144)
+Static DiD: post year 1	-0.044 (0.042)	0.090 (0.060)	-0.076** (0.034)	0.048 (0.075)
+Static DiD: post years 1-2	-0.109 (0.183)	0.226*** (0.065)	-0.306** (0.145)	-0.030 (0.144)
+Observations	144	144	144	144
+Within R^2	0.892	0.936	0.902	0.931

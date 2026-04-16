@@ -1,0 +1,9 @@
+model	reform	target	fe_type	spec_name	test_name	F_stat	p_value	df_num	df_denom	cov_type	cluster_by	r2
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	pretrend_all_m_le_-2					HC1		0.797636672896253
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	pretrend_all_m_le_-2					HC1		0.7976366728962531
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	pretrend_all_m_le_-2					HC1		0.9989983743491754
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	pretrend_all_m_le_-2					HC1		0.9989983743491754
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	pretrend_all_m_le_-2					HC1		0.8497883418321723
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	pretrend_all_m_le_-2					HC1		0.8497883418321723
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	pretrend_all_m_le_-2					HC1		0.9954529591437972
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	pretrend_all_m_le_-2					HC1		0.9954529591437972

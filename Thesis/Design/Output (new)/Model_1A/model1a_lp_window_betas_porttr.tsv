@@ -1,25 +1,13 @@
-reform	target	spec_name	window	a	b	beta	se	n_obs	r2
-haifa_comp	Haifa-Bayport terminal	porttr	avg_pre	-12	-2	2.11178298794524	9.626907652091408e-12	91	1.0
-haifa_comp	Haifa-Bayport terminal	porttr	post_1yr	1	12	0.5842281359416817	4.543654131926894e-12	91	1.0
-haifa_comp	Haifa-Bayport terminal	porttr	post_2yrs	1	24	0.5511532644270283	5.85925307106317e-12	91	1.0
-haifa_comp	Haifa-Bayport terminal	porttr	full_post	1	13	0.5511532644270283	5.85925307106317e-12	91	1.0
-haifa_comp	Haifa-Legacy terminal	porttr	avg_pre	-12	-2	2.1122290918500846	9.629161328162234e-12	91	1.0
-haifa_comp	Haifa-Legacy terminal	porttr	post_1yr	1	12	0.5874706724626271	4.542806504625836e-12	91	1.0
-haifa_comp	Haifa-Legacy terminal	porttr	post_2yrs	1	24	0.5543950485062199	5.858953607382025e-12	91	1.0
-haifa_comp	Haifa-Legacy terminal	porttr	full_post	1	13	0.5543950485062199	5.858953607382025e-12	91	1.0
-ashdod_comp	Ashdod-HCT terminal	porttr	avg_pre	-12	-2	-0.37119939080920344	2.9398201269000447e-12	95	1.0
-ashdod_comp	Ashdod-HCT terminal	porttr	post_1yr	1	12	-0.14802316023167972	1.2122844593175546e-12	95	1.0
-ashdod_comp	Ashdod-HCT terminal	porttr	post_2yrs	1	24	-0.14802316023167972	1.2122844593175546e-12	95	1.0
-ashdod_comp	Ashdod-HCT terminal	porttr	full_post	1	10	-0.14802316023167972	1.2122844593175546e-12	95	1.0
-ashdod_comp	Ashdod-Legacy terminal	porttr	avg_pre	-12	-2	-0.3711411373308419	3.124062883409878e-12	95	1.0
-ashdod_comp	Ashdod-Legacy terminal	porttr	post_1yr	1	12	-0.14808626816646336	1.2964235396267638e-12	95	1.0
-ashdod_comp	Ashdod-Legacy terminal	porttr	post_2yrs	1	24	-0.14808626816646336	1.2964235396267638e-12	95	1.0
-ashdod_comp	Ashdod-Legacy terminal	porttr	full_post	1	10	-0.14808626816646336	1.2964235396267638e-12	95	1.0
-haifa_priv	Haifa-Legacy terminal	porttr	avg_pre	-12	-2	0.16161479948261046	0.11477470971469543	117	0.9477066101302017
-haifa_priv	Haifa-Legacy terminal	porttr	post_1yr	1	12	0.04329121560481222	0.03074431787452129	117	0.9477066101302017
-haifa_priv	Haifa-Legacy terminal	porttr	post_2yrs	1	24	0.04329121560481222	0.03074431787452129	117	0.9477066101302017
-haifa_priv	Haifa-Legacy terminal	porttr	full_post	1	8	0.04329121560481222	0.03074431787452129	117	0.9477066101302017
-haifa_priv	Haifa-Bayport terminal	porttr	avg_pre	-12	-2	0.16161479952470265	0.114774709838947	117	0.947706610130202
-haifa_priv	Haifa-Bayport terminal	porttr	post_1yr	1	12	0.043291215511996564	0.030744317763058096	117	0.947706610130202
-haifa_priv	Haifa-Bayport terminal	porttr	post_2yrs	1	24	0.043291215511996564	0.030744317763058096	117	0.947706610130202
-haifa_priv	Haifa-Bayport terminal	porttr	full_post	1	8	0.043291215511996564	0.030744317763058096	117	0.947706610130202
+design	table_group	reform	target	target_key	spec_name	window	a	b	beta	se	n_obs	r2
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	avg_pre	-12	-2	-0.6187365258227809	7.227558643173037e-13	76	1.0
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	post_y1	1	12	0.20599000540271314	1.3575811452230758e-12	76	1.0
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	post_y1_2	1	13	0.17288112604078953	1.345610515145595e-12	76	1.0
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	full_post	1	13	0.17288112604078953	1.345610515145595e-12	76	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	avg_pre	-12	-2	0.055732690702413865	0.03832750036028196	84	0.987295352691826
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	post_y1	1	8	0.14034981534266366	0.0965188927988169	84	0.987295352691826
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	post_y1_2	1	8	0.14034981534266366	0.0965188927988169	84	0.987295352691826
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	full_post	1	8	0.14034981534266366	0.0965188927988169	84	0.987295352691826
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	avg_pre	-12	-2	0.05573269068386597	0.03832750036077182	84	0.9872953526918261
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	post_y1	1	8	0.14034981533161622	0.09651889279702852	84	0.9872953526918261
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	post_y1_2	1	8	0.14034981533161622	0.09651889279702852	84	0.9872953526918261
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	full_post	1	8	0.14034981533161622	0.09651889279702852	84	0.9872953526918261

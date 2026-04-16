@@ -123,8 +123,14 @@ def add_post_year2_windows(win: pd.DataFrame) -> pd.DataFrame:
             & (dyn["spec_name"] == spec)
         ]
 
-        # m in [13,24]
-        dyn_w = dyn_g[(dyn_g["event_time"] >= 13) & (dyn_g["event_time"] <= 24)]
+        max_m = dyn_g["event_time"].max()
+        upper = 24
+        if pd.notnull(max_m) and max_m >= 13:
+            upper = int(min(24, max_m))
+
+        dyn_w = dyn_g[(dyn_g["event_time"] >= 13) & (dyn_g["event_time"] <= upper)]
+
+
 
         # Take n_obs and r2 from any existing window row for this spec
         base_rows = win[

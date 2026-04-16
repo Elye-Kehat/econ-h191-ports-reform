@@ -110,6 +110,7 @@ LABEL_FILTERS: Dict[str, Dict[str, str]] = {
 }
 
 
+''''
 # ----------------------------------------------------------------------
 # 3. Table-1 specs (NYT windows)
 # ----------------------------------------------------------------------
@@ -117,6 +118,7 @@ LABEL_FILTERS: Dict[str, Dict[str, str]] = {
 NYT_SPECS: List[Spec] = [
 
     # --- Haifa competition entry (Bayport opens 09-2021) ---
+    # Extend to 09-2023 so max post = 24 (m=24 at 2023-09)
     Spec(
         reform="haifa_comp",
         target="Haifa-Bayport terminal",
@@ -124,12 +126,12 @@ NYT_SPECS: List[Spec] = [
         event_month=9,  # Bayport opens 09-2021
         treat_windows=[
             Window("Haifa port",      (2019, 9), (2021, 8)),
-            Window("Haifa-Bayport",   (2021, 9), (2022, 10)),
+            Window("Haifa-Bayport",   (2021, 9), (2023, 9)),
         ],
         control_windows=[
             Window("Ashdod port",     (2019, 9), (2021, 7)),
-            Window("Ashdod-Legacy",   (2021, 8), (2022, 10)),
-            Window("Ashdod-HCT",      (2021, 8), (2022, 10)),
+            Window("Ashdod-Legacy",   (2021, 8), (2023, 9)),
+            Window("Ashdod-HCT",      (2021, 8), (2023, 9)),
         ],
     ),
 
@@ -140,16 +142,17 @@ NYT_SPECS: List[Spec] = [
         event_month=9,
         treat_windows=[
             Window("Haifa port",      (2019, 9), (2021, 8)),
-            Window("Haifa-Legacy",    (2021, 9), (2022, 10)),
+            Window("Haifa-Legacy",    (2021, 9), (2023, 9)),
         ],
         control_windows=[
             Window("Ashdod port",     (2019, 9), (2021, 7)),
-            Window("Ashdod-Legacy",   (2021, 8), (2022, 10)),
-            Window("Ashdod-HCT",      (2021, 8), (2022, 10)),
+            Window("Ashdod-Legacy",   (2021, 8), (2023, 9)),
+            Window("Ashdod-HCT",      (2021, 8), (2023, 9)),
         ],
     ),
 
     # --- Ashdod competition entry (HCT effective 11-2022) ---
+    # (unchanged — not central to your Haifa mediation tables)
     Spec(
         reform="ashdod_comp",
         target="Ashdod-HCT terminal",
@@ -183,6 +186,7 @@ NYT_SPECS: List[Spec] = [
     ),
 
     # --- Haifa privatization (Haifa-Legacy sold 01-2023) ---
+    # EXTENDED: end at 2024-12 so max post = 23 (m=23 at 2024-12)
     Spec(
         reform="haifa_priv",
         target="Haifa-Legacy terminal",
@@ -190,39 +194,96 @@ NYT_SPECS: List[Spec] = [
         event_month=1,  # sale in 01-2023
         treat_windows=[
             Window("Haifa port",      (2021, 1), (2021, 8)),
-            Window("Haifa-Legacy",    (2021, 9), (2023, 9)),
+            Window("Haifa-Legacy",    (2021, 9), (2024, 12)),
         ],
         control_windows=[
-            Window("Haifa-Bayport",   (2021, 9), (2023, 9)),
+            Window("Haifa-Bayport",   (2021, 9), (2024, 12)),
             Window("Ashdod port",     (2021, 1), (2021, 7)),
-            Window("Ashdod-Legacy",   (2021, 8), (2023, 9)),
-            Window("Ashdod-HCT",      (2021, 8), (2023, 9)),
+            Window("Ashdod-Legacy",   (2021, 8), (2024, 12)),
+            Window("Ashdod-HCT",      (2021, 8), (2024, 12)),
         ],
     ),
-        # --- Haifa privatization (placebo: Haifa-Bayport treated at 01-2023) ---
+
+    # --- Haifa privatization placebo: Bayport treated at 01-2023 ---
     Spec(
         reform="haifa_priv",
         target="Haifa-Bayport terminal",
         event_year=2023,
-        event_month=1,  # use the same privatization clock
+        event_month=1,
         treat_windows=[
-            # Same Haifa port pre-window as in the Legacy spec:
             Window("Haifa port",      (2021, 1), (2021, 8)),
-            # Now treat Bayport as if it were "privatized" at the same date:
-            Window("Haifa-Bayport",   (2021, 9), (2023, 9)),
+            Window("Haifa-Bayport",   (2021, 9), (2024, 12)),
         ],
         control_windows=[
-            # Swap Legacy into the control group:
-            Window("Haifa-Legacy",    (2021, 9), (2023, 9)),
-            # Keep the Ashdod windows as in the Legacy spec:
+            Window("Haifa-Legacy",    (2021, 9), (2024, 12)),
             Window("Ashdod port",     (2021, 1), (2021, 7)),
-            Window("Ashdod-Legacy",   (2021, 8), (2023, 9)),
-            Window("Ashdod-HCT",      (2021, 8), (2023, 9)),
+            Window("Ashdod-Legacy",   (2021, 8), (2024, 12)),
+            Window("Ashdod-HCT",      (2021, 8), (2024, 12)),
         ],
     ),
 
 ]
+'''
 
+
+# ----------------------------------------------------------------------
+# 3. NYT specs (updated Table: Haifa reform clocks only)
+# ----------------------------------------------------------------------
+
+NYT_SPECS: List[Spec] = [
+
+    # --- Haifa competition entry (Bayport opens 09-2021) ---
+    # NEW: truncate at 10-2022 so Ashdod controls are excluded after Ashdod entry (11-2022).
+    Spec(
+        reform="haifa_comp",
+        target="Haifa-Bayport terminal",
+        event_year=2021,
+        event_month=9,  # Bayport opens 09-2021
+        treat_windows=[
+            Window("Haifa port",      (2019, 9), (2021, 8)),   # pre
+            Window("Haifa-Bayport",   (2021, 9), (2022, 10)),  # post (truncated)
+        ],
+        control_windows=[
+            Window("Ashdod port",     (2019, 9), (2021, 7)),   # pre (port-level)
+            Window("Ashdod-Legacy",   (2021, 8), (2022, 10)),  # terminals (truncated)
+            Window("Ashdod-HCT",      (2021, 8), (2022, 10)),
+        ],
+    ),
+
+    Spec(
+        reform="haifa_comp",
+        target="Haifa-Legacy terminal",
+        event_year=2021,
+        event_month=9,
+        treat_windows=[
+            Window("Haifa port",      (2019, 9), (2021, 8)),   # pre
+            Window("Haifa-Legacy",    (2021, 9), (2022, 10)),  # post (truncated)
+        ],
+        control_windows=[
+            Window("Ashdod port",     (2019, 9), (2021, 7)),   # pre (port-level)
+            Window("Ashdod-Legacy",   (2021, 8), (2022, 10)),  # terminals (truncated)
+            Window("Ashdod-HCT",      (2021, 8), (2022, 10)),
+        ],
+    ),
+
+    # --- Haifa privatization (Haifa-Legacy sold 01-2023) ---
+    # NEW: sample is exactly 01-2022 to 09-2023 (pre: 01-2022..12-2022; post: 01-2023..09-2023).
+    Spec(
+        reform="haifa_priv",
+        target="Haifa-Legacy terminal",
+        event_year=2023,
+        event_month=1,  # sale in 01-2023
+        treat_windows=[
+            Window("Haifa-Legacy",    (2022, 1), (2023, 9)),
+        ],
+        control_windows=[
+            Window("Haifa-Bayport",   (2022, 1), (2023, 9)),
+            Window("Ashdod-Legacy",   (2022, 1), (2023, 9)),
+            Window("Ashdod-HCT",      (2022, 1), (2023, 9)),
+        ],
+    ),
+
+]
 
 # ----------------------------------------------------------------------
 # 4. Optional shock controls
@@ -650,8 +711,12 @@ def compute_window_averages(result, spec_with_fe: SpecWithFE) -> pd.DataFrame:
     for wname, (a, b) in WINDOWS.items():
         # Resolve 'full_post'
         b_eff = b
-        if b == 999 and max_post_m is not None:
-            b_eff = max_post_m
+        if max_post_m is not None:
+            if b == 999:
+                b_eff = max_post_m
+            elif a >= 1:
+                b_eff = min(b, max_post_m)
+
 
         ms_in_window = [m for m in available_ms if (m >= a and m <= b_eff)]
         if not ms_in_window:
@@ -937,3 +1002,31 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+
+
+
+# ----------------------------------------------------------------------
+# DIAGNOSTIC NOTE (NYT windows update; keep for later when true hours arrive)
+#
+# After truncating the Haifa competition-entry samples to end 10-2022, the
+# NYT design is now correct (Ashdod controls are excluded after 11-2022).
+# However, the current LP proxy + tiny treated sample implies two known issues:
+#
+# (1) haifa_comp regressions often show R^2 ~ 1.000 and near-zero SEs.
+#     Mechanically, dynamic ES coefficients are identified off a single treated
+#     time series with N(m)=1 per event-time bin (plus many FE/dummies and
+#     monthly-expanded quarterly values), so the model can (near-)perfectly fit.
+#     Interpretation: treat p-values / pretrend F-tests as not informative here.
+#
+# (2) haifa_priv sometimes triggers statsmodels warnings:
+#       "invalid value encountered in sqrt"
+#     This arises from numerically unstable (non-PSD) cluster-robust covariance
+#     estimates with very few effective clusters / near-collinearity.
+#     Interpretation: clustered SEs can be unreliable in this small panel.
+#
+# We are deferring fixes (alternative inference + lower-dimensional ES / window
+# bins / small-cluster corrections) until true monthly labor-hours data is in.
+# ----------------------------------------------------------------------

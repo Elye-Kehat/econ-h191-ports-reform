@@ -1,0 +1,497 @@
+design	table_group	reform	target	target_key	spec_name	event_time	j	beta	se	tvalue	pvalue	n_event_obs	n_obs	r2	stars	N_event	spec_display
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-24	-24	-0.1018041670719832	1.0825670798241346e-14	-9403959252901.123	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-23	-23	-0.0232861502557731	3.3306690738754653e-15	-6991433174319.571	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-22	-22	-0.3387370184696093	4.4242074104631e-15	-76564452577089.36	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-21	-21	-0.2773626939296383	1.1236861156120822e-14	-24683289227842.45	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-20	-20	-0.0624511311898441	1.2531265855673042e-14	-4983625110911.825	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-19	-19	-0.1030347219950487	4.989831893063961e-15	-20648936517935.723	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-18	-18	-0.0868804093671939	8.045862168512399e-15	-10798147861294.686	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-17	-17	-0.2773391873988793	1.0235750533041784e-14	-27095149154290.863	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-16	-16	-0.1891362355868026	6.268583080834222e-15	-30172087240109.2	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-15	-15	-0.1829320077359302	8.08254562088051e-15	-22632969403023.51	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-14	-14	-0.2502491578482313	8.440616121040742e-15	-29648209829660.535	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-13	-13	-0.0026695775566635	1.1024240709028986e-14	-242155231106.04132	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-12	-12	-0.0989890232025058	2.7103998191910015e-15	-36521926581315.98	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-11	-11	-0.1846727622920965	2.482534153247266e-15	-74388810341455.42	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-10	-10	-0.2754887230433779	5.828406534472307e-15	-47266559292662.69	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-9	-9	-0.1584981822820099	6.0606382419141995e-15	-26152061211287.484	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-8	-8	-0.1229785189795148	1.401697789135044e-14	-8773540197662.871	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-7	-7	-0.20915433253738	8.045862168512375e-15	-25995266654692.305	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-6	-6	-0.1273519248544412	9.5891396519617e-15	-13280849948659.174	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-5	-5	-0.0371865638110376	6.590648950879667e-15	-5642322036599.192	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-4	-4	-0.1337776180817532	4.989831893063925e-15	-26810045097453.035	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-3	-3	-0.0928868042900316	4.446439748506815e-15	-20890152468888.06	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-2	-2	-5.362087571861001	1.1274094790879471e-14	-475611361383871.5	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	0	0	-4.57766807998817	1.0990647210786424e-14	-416505779158807.1	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	1	1	0.8605909888696043	8.547996335170912e-15	100677510275558.31	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	2	2	0.8605909888696123	1.00141870651701e-14	85937179250704.8	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	3	3	0.8605909888696105	6.683505723655756e-15	128763410170146.88	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	4	4	0.2341379323153847	8.545111909127907e-15	27400218371075.76	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	5	5	0.2341379323153876	9.721902962218496e-15	24083549612179.88	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	6	6	0.2341379323153868	6.683505723655751e-15	35032203456738.84	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	7	7	0.0843056801167301	7.984348558471928e-15	10558867702146.615	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	8	8	0.0843056801167378	9.3601743726337e-15	9006849312895.496	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	9	9	0.0843056801167271	6.968805455576161e-15	12097579801035.936	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	10	10	-0.3564517427894362	7.682229915320603e-15	-46399515078111.336	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	11	11	-0.356451742789433	8.91779344948026e-15	-39970845345179.805	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	12	12	-0.3564517427894265	8.405495513285117e-15	-42406987455533.664	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	13	13	-0.2250681024149242	6.679816236361878e-15	-33693756602128.656	0.0	1.0	76	1.0	***	1.0	NYT
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-24	-24	-0.1028599921138062	2.243227484473042e-12	-45853571617.57899	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-23	-23	-0.0242960698617057	2.647367477908083e-12	-9177445165.604378	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-22	-22	-0.3397010326374431	1.6091820658837998e-12	-211101676957.1512	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-21	-21	-0.2782808026617051	2.007640511097634e-12	-138610872376.52975	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-20	-20	-0.0633233344858306	2.376223101161106e-12	-26648732795.70787	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-19	-19	-0.1038610198543846	2.1321354873218477e-12	-48712204487.92554	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-18	-18	-0.0876608017887813	1.2218260864141504e-12	-71745727778.69785	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-17	-17	-0.2780736743852187	2.0737154562339477e-12	-134094421464.27615	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-16	-16	-0.1898248171367672	2.1631183001665666e-12	-87755171375.57854	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-15	-15	-0.1835746838483193	1.4719178008739014e-12	-124718026875.77255	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-14	-14	-0.2508459285243007	1.4551107402182557e-12	-172389579425.8764	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-13	-13	-0.0032204427957602	1.0845937951494116e-12	-2969261681.3437095	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-12	-12	-0.0994939830048847	9.821439428616465e-13	-101302852527.90115	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-11	-11	-0.1851318166576	6.193679140537856e-13	-298904435404.0001	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-10	-10	-0.2759018719726767	8.775374866161356e-13	-314404656417.10583	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-9	-9	-0.1588654257742039	4.483681764379576e-13	-354319137982.3245	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-8	-8	-0.1232998570362034	1.023488493124418e-12	-120470193719.32964	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-7	-7	-0.2094297651566036	3.576031023323135e-13	-585648624943.932	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-6	-6	-0.1275814520372064	3.6581982876170027e-13	-348754884252.9107	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-5	-5	-0.0373701855575774	7.525981585622039e-13	-49654899008.75005	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-4	-4	-0.1339153343916596	5.134473300336099e-13	-260816108212.8786	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-3	-3	-0.0929786151640776	3.010013530101175e-12	-30889766519.073532	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-2	-2	-5.362133477297897	1.238842449563674e-12	-4328341734807.736	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	0	0	-4.577622174538591	1.2131553752058327e-11	-377331895657.79395	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	1	1	0.8606827997427582	1.6957703943788333e-12	507546777910.36053	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	2	2	0.8607287051793613	1.6134066543471146e-12	533485282746.4419	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	3	3	0.8607746106161072	1.4965678172725796e-12	575165789803.516	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	4	4	0.2343674594981762	1.564401246393886e-12	149812882109.6369	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	5	5	0.2344133649346047	1.6375842424788072e-12	143145835709.6633	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	6	6	0.2344592703713808	1.573131234011667e-12	149039867305.5919	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	7	7	0.0846729236100848	1.639959225980496e-12	51631115133.03674	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	8	8	0.0847188290459977	1.3508075091101968e-12	62717173597.74202	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	9	9	0.0847647344834583	1.4262667335215297e-12	59431193682.9443	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	10	10	-0.3559467829857112	1.401503829116995e-12	-253974891534.88245	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	11	11	-0.3559008775504151	1.454317677151817e-12	-244720175751.02505	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	12	12	-0.3558549721132452	1.3035739359480045e-12	-272984111065.7487	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	13	13	-0.2244254263022939	1.3904258325375066e-12	-161407693276.75745	0.0	1.0	76	1.0	***	1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-12	-12	0.306137356486877	0.2078830697779159	1.4726420810214478	0.1408475716237652	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-11	-11	0.3061373564868712	0.2078830697779139	1.4726420810214345	0.1408475716237687	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-10	-10	0.3061373564868805	0.2078830697779153	1.472642081021469	0.1408475716237595	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-9	-9	0.2062491883544401	0.140053846764571	1.4726420810214715	0.1408475716237588	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-8	-8	0.2062491883544348	0.1400538467645707	1.472642081021437	0.1408475716237682	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-7	-7	0.2062491883544303	0.1400538467645707	1.4726420810214045	0.1408475716237769	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-6	-6	-0.0875890935830003	0.0594775164391956	-1.4726420810213794	0.1408475716237836	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-5	-5	-0.0875890935830045	0.0594775164391957	-1.4726420810214476	0.1408475716237652	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-4	-4	-0.0875890935829994	0.0594775164391955	-1.472642081021367	0.140847571623787	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-3	-3	6.104831997155179e-15	5.2539829284647375e-15	1.161943630246828	0.2452583629910395	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-2	-2	2.6645352591003757e-15				1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	0	0	0.3050992120492788	0.2071781161092821	1.4726420810214598	0.1408475716237619	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	1	1	0.3050992120492761	0.2071781161092819	1.4726420810214478	0.1408475716237652	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	2	2	0.305099212049277	0.2071781161092815	1.4726420810214556	0.1408475716237631	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	3	3	-0.0092273436239533	0.0062658426938027	-1.4726420810212275	0.1408475716238245	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	4	4	-0.0092273436239489	0.0062658426938026	-1.47264208102054	0.14084757162401	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	5	5	-0.0092273436239545	0.0062658426938031	-1.4726420810213237	0.1408475716237986	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	6	6	0.0331312084184141	0.0224978009561114	1.472642081021439	0.1408475716237676	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	7	7	0.0331312084184166	0.0224978009561107	1.4726420810216	0.1408475716237241	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	8	8	0.0331312084184158	0.022497800956111	1.472642081021546	0.1408475716237386	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-12	-12	0.1959152304114724	0.1347313573645746	1.4541175435599454	0.1459137204728171	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-11	-11	0.2059354237243493	0.1416222674691109	1.4541175438337457	0.14591372039692	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-10	-10	0.215955617008845	0.1485131775728592	1.4541175438987497	0.1459137203789009	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-9	-9	0.1260876421455276	0.0867107632933709	1.4541175438501417	0.1459137203923749	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-8	-8	0.1361078354215239	0.0936016733979745	1.4541175438479836	0.1459137203929731	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-7	-7	0.1461280286960642	0.100492583502545	1.454117543832112	0.1459137203973727	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-6	-6	-0.1376900599583743	0.0946897728774132	-1.4541175437882805	0.1459137204095228	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-5	-5	-0.1276698666911182	0.0877988627725604	-1.454117543889402	0.145913720381492	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-4	-4	-0.1176496734129006	0.080907952668063	-1.4541175438658804	0.1459137203880122	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-3	-3	-0.0200403865459784	0.0137818202093237	-1.4541175433721498	0.1459137205248737	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-2	-2	-0.010020193276885	0.0068909101045851	-1.4541175439536889	0.1459137203636718	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	0	0	0.3151194053319228	0.2167083442864381	1.454117543879197	0.145913720384321	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	1	1	0.3251395986170174	0.2235992543907688	1.4541175439198633	0.1459137203730482	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	2	2	0.3351597918822673	0.2304901644956795	1.4541175438683405	0.1459137203873303	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	3	3	0.0308534294797701	0.0212179748544072	1.454117543803262	0.14591372040537	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	4	4	0.0408736227555444	0.0281088849589677	1.4541175438018998	0.1459137204057475	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	5	5	0.0508938160421683	0.034999795063165	1.454117544126157	0.1459137203158639	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	6	6	0.1032725613364728	0.0710207794335671	1.4541175436278335	0.1459137204539984	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	7	7	0.1132927546129216	0.0779116895381393	1.454117543651298	0.1459137204474942	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	8	8	0.1233129479267676	0.0848025996415332	1.454117544132142	0.1459137203142047	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-12	-12	0.306137356486885	0.2078830697779152	1.4726420810214913	0.1408475716237534	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-11	-11	0.3061373564868794	0.2078830697779138	1.4726420810214746	0.1408475716237579	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-10	-10	0.3061373564868805	0.2078830697779137	1.4726420810214804	0.1408475716237564	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-9	-9	0.2062491883544386	0.1400538467645696	1.472642081021475	0.1408475716237578	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-8	-8	0.2062491883544357	0.14005384676457	1.47264208102145	0.1408475716237645	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-7	-7	0.2062491883544285	0.140053846764569	1.4726420810214094	0.1408475716237755	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-6	-6	-0.0875890935830039	0.0594775164391958	-1.472642081021434	0.1408475716237688	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-5	-5	-0.0875890935830067	0.0594775164391961	-1.4726420810214729	0.1408475716237584	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-4	-4	-0.0875890935829977	0.0594775164391957	-1.472642081021332	0.1408475716237964	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-3	-3	9.841163597131976e-17	8.943714382645657e-10	1.1003441272932113e-07	0.999999912205241	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-2	-2	8.881784197001252e-16	7.302512213827308e-10	1.216264202911375e-06	0.9999990295615706	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	0	0	0.3050992120492797	0.2071781161092811	1.4726420810214709	0.1408475716237589	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	1	1	0.3050992120492733	0.2071781161092806	1.472642081021444	0.1408475716237662	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	2	2	0.3050992120492752	0.2071781161092811	1.4726420810214498	0.1408475716237646	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	3	3	-0.0092273436239558	0.0062658426938046	-1.4726420810211849	0.1408475716238361	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	4	4	-0.0092273436239569	0.0062658426938039	-1.4726420810215142	0.1408475716237472	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	5	5	-0.0092273436239558	0.006265842693804	-1.472642081021326	0.1408475716237981	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	6	6	0.0331312084184132	0.0224978009561096	1.4726420810215204	0.1408475716237455	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	7	7	0.0331312084184147	0.0224978009561101	1.4726420810215572	0.1408475716237356	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	8	8	0.0331312084184132	0.0224978009561106	1.4726420810214498	0.1408475716237646	1.0	84	0.9848009388111956		1.0	NYT
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-12	-12	0.1959152304187661	0.1347313573631696	1.4541175436292442	0.1459137204536075	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-11	-11	0.2059354237480861	0.141622267467933	1.4541175440134462	0.1459137203471071	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-10	-10	0.2159556170288343	0.1485131775717509	1.454117544044198	0.1459137203385828	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-9	-9	0.1260876421465665	0.0867107632926248	1.4541175438746348	0.1459137203855855	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-8	-8	0.1361078354434797	0.0936016733973265	1.454117544092617	0.1459137203251611	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-7	-7	0.1461280287292766	0.1004925835016501	1.4541175441755576	0.1459137203021701	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-6	-6	-0.1376900599385822	0.0946897728777057	-1.454117543574768	0.1459137204687082	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-5	-5	-0.1276698666723131	0.0877988627726639	-1.454117543673504	0.1459137204413388	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-4	-4	-0.117649673391659	0.0809079526678642	-1.4541175436069114	0.1459137204597981	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-3	-3	-0.0200403865243156	0.0137818202089425	-1.4541175418405277	0.1459137209494376	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-2	-2	-0.010020193261587	0.0068909101041771	-1.4541175418197647	0.1459137209551931	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	0	0	0.3151194053492725	0.2167083442872591	1.454117543953748	0.1459137203636554	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	1	1	0.3251395986250193	0.2235992543923853	1.4541175439451373	0.1459137203660422	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	2	2	0.3351597919017122	0.2304901644969558	1.454117543944652	0.1459137203661769	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	3	3	0.0308534294932553	0.0212179748557187	1.4541175443489445	0.1459137202541075	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	4	4	0.0408736227713877	0.028108884960564	1.4541175442829632	0.1459137202723974	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	5	5	0.0508938160287685	0.0349997950655392	1.454117543644661	0.145913720449334	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	6	6	0.1032725613463778	0.0710207794352356	1.4541175437331382	0.1459137204248082	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	7	7	0.1132927546589124	0.0779116895396256	1.4541175442138512	0.1459137202915551	1.0	84	0.987295352691826		1.0	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	8	8	0.1233129479158758	0.0848025996445105	1.454117543952654	0.1459137203639586	1.0	84	0.987295352691826		1.0	NYT+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	-24	-24	0.059130639522021	4.587478826599585e-15	12889572193590.045	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	-23	-23	-0.0578599012393415	6.336806562730058e-15	-9130766525152.377	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	-22	-22	-0.0933795645418465	5.127463993457185e-15	-18211647056127.945	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	-21	-21	-0.0072037509839818	9.918319021828748e-15	-726307650331.4198	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	-20	-20	-0.0890061586669096	6.0208185434054535e-15	-14783066127179.217	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	-19	-19	-0.1791715197103199	7.12497695355442e-15	-25146961299423.867	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	-18	-18	-0.0825804654396052	7.512338806587299e-15	-10992643911000.576	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	-17	-17	-0.1234712792313305	5.002870131818951e-15	-24680088824620.098	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	-16	-16	5.145729488339632	9.537177764396151e-15	539544256745374.4	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	-15	-15	-0.2163580835213639	7.021465198472826e-15	-30813808429673.902	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	-14	-14	0.0748645793020603	5.228808830574428e-15	14317712069392.256	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	-13	-13	-1.305546113342969	5.709027238104689e-15	-228681009722488.3	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	0	0	0.0087100188935834	1.2795613038303382e-14	680703524521.269	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	1	1	0.008710018893543	3.1322020402838254e-14	278079727345.86975	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	2	2	-0.4489387991803414	5.78496529429673e-15	-77604406654425.45	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	3	3	-0.4489387991803428	8.312946531760308e-15	-54004774055160.18	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	4	4	-0.4489387991803446	2.410411946618048e-15	-186249823317641.84	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	5	5	0.0225510343295042	2.5269957843608608e-15	8924049050286.773	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	6	6	0.0225510343295012	7.876772330276724e-15	2862979071112.62	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	7	7	0.0225510343295021	2.0026224837356908e-15	11260751595795.271	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	8	8	-0.0409867937340489	3.7923017450739875e-15	-10807893593195.426	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	9	9	-0.0409867937340499	2.3810858665022556e-15	-17213488312480.844	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	10	10	-0.0409867937340554	4.1698743544238776e-15	-9829263486217.984	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	11	11	-0.0037439916340929	5.836933705874839e-15	-641431241599.4496	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	12	12	-0.0037439916341052	6.287009931566111e-15	-595512282445.6287	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	13	13	-0.0037439916340953	4.661443156440489e-15	-803182943231.316	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	14	14	-0.2449966905416623	2.9806338407178364e-15	-82196171564186.14	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	15	15	-0.2449966905416612	7.680360598985326e-15	-31899112988787.062	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	16	16	-0.244996690541664	4.690308160636307e-15	-52234668203213.92	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	17	17	0.2500441547291896	6.330676418685539e-15	39497225603122.4	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	18	18	0.2500441547291979	4.221432580817692e-15	59232061614676.87	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	19	19	0.25004415472919	2.6010280669026472e-15	96132816831518.2	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	20	20	0.3485546580448687	1.8725291426626353e-15	186141112628689.38	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	21	21	0.3485546580448684	3.3335731804899253e-15	104558873968875.16	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	22	22	0.3485546580448651	6.547276286758936e-15	53236589198133.305	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	23	23	0.1956584265801324	4.113178013901451e-15	47568674615798.01	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	24	24	0.1956584265801338	4.471966982201193e-15	43752207330436.68	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	25	25	0.1956584265801318	4.084157502755196e-15	47906680006375.734	0.0	1.0	88	1.0	***	1.0	TWFE
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	-24	-24	0.0108515345057439	4.227471846485687e-11	256690875.7716487	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	-23	-23	-0.1061936183058295	4.4749950886543666e-11	-2373044354.2846885	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	-22	-22	-0.1417678936516598	5.0985923735311144e-11	-2780530061.3486013	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	-21	-21	-0.0556466921583271	4.6602301353876496e-11	-1194076055.0808785	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	-20	-20	-0.1375037118907741	4.966513936162781e-11	-2768616249.9125504	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	-19	-19	-0.2277236849924926	4.7892211912107174e-11	-4754921017.438412	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	-18	-18	-0.1311872427717006	5.085116873380702e-11	-2579827485.5477285	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	-17	-17	-0.1721326686352476	4.266887659274189e-11	-4034150471.740518	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	-16	-16	5.097013486872919	3.982371856596204e-11	127989391006.52988	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	-15	-15	-0.2651286970303035	4.5878058673785194e-11	-5778986833.673469	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	-14	-14	0.0260393537270598	3.0808062183205107e-11	845212320.4702935	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	-13	-13	-1.354425950958964	3.6117202900157595e-11	-37500853947.719574	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	0	0	-0.0408797754267925	3.3837524509572876e-11	-1208119566.0523982	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	1	1	-0.0409343874994978	2.021108648017183e-11	-2025343246.1266613	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	2	2	-0.4986378176253593	2.2202191949429364e-11	-22458945439.311687	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	3	3	-0.4986924296748229	2.5693769329730056e-11	-19409080204.42878	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	4	4	-0.4987470417469931	1.7437537803963973e-11	-28601918880.635536	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	5	5	-0.0273118203068707	1.3810852334262e-11	-1977562256.53905	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	6	6	-0.0273664323490649	1.6385737420888804e-11	-1670137366.791791	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	7	7	-0.0274210443993268	1.8750930527793457e-11	-1462383125.9297843	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	8	8	-0.0910134845121488	2.2026541177897557e-11	-4131991663.015888	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	9	9	-0.0910680965802509	1.6068426087720948e-11	-5667518155.362005	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	10	10	-0.0911227086353501	1.6253401296751226e-11	-5606377826.50232	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	11	11	-0.0539345185822744	2.012024493309064e-11	-2680609443.952215	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	12	12	-0.0539891306264561	2.6477284365097035e-11	-2039073565.1736968	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	13	13	-0.0540437426934983	2.0172766366907303e-11	-2679044693.7488537	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	14	14	-0.2953510536462599	2.6048605530504352e-11	-11338459300.648071	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	15	15	-0.2954056657305046	1.3779546912815808e-11	-21437981059.867764	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	16	16	-0.2954602777793178	1.506655930733634e-11	-19610335163.612953	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	17	17	0.1995259554427092	1.7561787417009008e-11	11361369472.532372	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	18	18	0.1994713433737823	1.3661500941127393e-11	14600983027.66148	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	19	19	0.1994167313298072	1.6827372781969017e-11	11850734747.10726	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	20	20	0.2978726225913015	1.7249875721560813e-11	17268102530.094593	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	21	21	0.2978180105437112	2.1115507125281278e-11	14104231964.53275	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	22	22	0.2977633984964569	2.5824796539244118e-11	11530135311.77165	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	23	23	0.1448125549672595	2.100749813297711e-11	6893374644.167455	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	24	24	0.1447579429241927	2.8343533467629864e-11	5107265228.2227125	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	25	25	0.1447033308574249	2.1442790025261948e-11	6748344347.305021	0.0	1.0	88	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-24	-24	-0.1018041670719834	4.490574227098642e-15	-22670634516548.02	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-23	-23	-0.0232861502557734	3.559645809716246e-15	-6541704287604.303	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-22	-22	-0.3387370184696051	8.761622386263576e-15	-38661449162734.42	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-21	-21	-0.2773626939296307	7.011126525512634e-15	-39560360652505.95	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-20	-20	-0.0624511311898521	7.847321480237246e-15	-7958273577440.352	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-19	-19	-0.1030347219950522	7.381104678010396e-15	-13959254947570.48	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-18	-18	-0.0868804093671885	5.8284065343888066e-15	-14906374298802.951	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-17	-17	-0.2773391873988771	1.0970441734648996e-14	-25280585240513.168	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-16	-16	-0.1891362355867971	2.047150106430769e-15	-92390018197814.77	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-15	-15	-0.1829320077359282	8.498827956528373e-15	-21524380617142.508	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-14	-14	-0.2502491578482244	4.849527372496547e-15	-51602793143818.38	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-13	-13	-0.0026695775566704	4.577566798585097e-15	-583187023616.0414	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-12	-12	-0.0989890232025066	5.9123936660243895e-15	-16742630615303.54	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-11	-11	-0.1846727622920958	7.88492866760621e-15	-23420980718670.305	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-10	-10	-0.2754887230433733	2.3603665271908012e-15	-116714383071364.42	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-9	-9	-0.1584981822820126	9.42317120958929e-15	-16820046962610.664	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-8	-8	-0.1229785189795139	4.076197102142741e-15	-30169914726367.78	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-7	-7	-0.2091543325373778	7.771561172438428e-15	-26912782116305.844	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-6	-6	-0.1273519248544413	3.3306690737546433e-15	-38236138756012.234	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-5	-5	-0.0371865638110428	2.5989654676013372e-15	-14308217740716.438	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-4	-4	-0.1337776180817571	6.0606382418935306e-15	-22073189776785.105	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-3	-3	-0.0928868042900298	4.577566798597887e-15	-20291741961795.336	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-2	-2	-5.362087571860998	7.021666936870872e-16	-7636488059131090.0	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	0	0	-4.577668079988168	3.5367182144492277e-14	-129432649208131.7	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	1	1	0.8605909888696062	3.5655966630794066e-14	24135960126414.355	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	2	2	0.8605909888696117	3.1656739763759535e-14	27185079553100.777	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	3	3	0.860590988869612	3.172208524392369e-14	27129080016404.555	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	4	4	0.2341379323153931	3.2175787954445835e-14	7276836006219.44	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	5	5	0.2341379323153898	3.0388489550727834e-14	7704822970043.999	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	6	6	0.2341379323153843	2.7914989932634708e-14	8387534184336.553	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	7	7	0.084305680116711	2.652759377071112e-14	3178037210815.2593	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	8	8	0.0843056801167215	2.6646277760802767e-14	3163882057881.1553	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	9	9	0.0843056801167265	2.8777700378288884e-14	2929548887107.4062	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	10	10	-0.3564517427894296	3.1434019590184854e-14	-11339680621078.771	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	11	11	-0.3564517427894231	3.4465585905987353e-14	-10342251072177.492	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	12	12	-0.3564517427894305	3.058175774781748e-14	-11655698332607.1	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	13	13	-0.225068102414928	2.9142032672360604e-14	-7723143575650.133	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	14	14	-0.225068102414916	3.3440389306309565e-14	-6730427099796.054	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	15	15	-0.2250681024149213	3.108069307865677e-14	-7241411954531.879	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	16	16	0.2325807156589872	3.0035175193868716e-14	7743611087924.186	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	17	17	0.2325807156589894	3.0478402512344336e-14	7631000855927.071	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	18	18	0.2325807156589949	3.371350846476182e-14	6898739592828.018	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	19	19	-0.2389091178508602	2.883589252839899e-14	-8285129985679.164	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	20	20	-0.2389091178508542	3.255888734580877e-14	-7337754368366.291	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	21	21	-0.2389091178508648	2.6940700373411254e-14	-8867962396651.457	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	22	22	-0.1753712897872982	3.3375453584612666e-14	-5254499068984.969	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	23	23	-0.1753712897873121	2.6686953479084837e-14	-6571424120207.447	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	24	24	-0.1753712897873017	3.1993692008435267e-14	-5481433331953.822	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	25	25	-0.2126140918872651	2.701015412598983e-14	-7871635641008.158	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	26	26	-0.2126140918872549	3.2857350054439766e-14	-6470822861094.546	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	27	27	-0.2126140918872657	2.6889409131511483e-14	-7906982665457.865	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	28	28	0.0286386070202984	2.7086711606631878e-14	1057293607145.9712	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	29	29	0.0286386070202975	2.6374749420328932e-14	1085834278987.4496	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	30	30	0.0286386070203042	2.9731598478813186e-14	963238052629.839	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	31	31	-0.4664022382505546	2.6823319134068793e-14	-17387939051068.76	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	32	32	-0.4664022382505435	3.2728049099658604e-14	-14250841436662.62	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	33	33	-0.4664022382505435	3.2315691654260416e-14	-14432686239257.834	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	34	34	-0.5649127415662244	3.036170732281496e-14	-18606092719355.312	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	35	35	-0.5649127415662255	3.027389073850982e-14	-18660064094359.363	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	36	36	-0.5649127415662204	3.3569883927631186e-14	-16827962312411.924	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	37	37	-0.412016510101486	3.2643577799223824e-14	-12621671332585.443	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	38	38	-0.412016510101492	2.9401422426498566e-14	-14013489011679.742	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	39	39	-0.412016510101497	2.7224696954454708e-14	-15133924568224.8	0.0	1.0	128	1.0	***	1.0	TWFE
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-24	-24	-0.1028645109654994	2.0944226958921946e-12	-49113539099.460846	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-23	-23	-0.024300392231361	5.9239911787859895e-12	-4102030455.140035	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-22	-22	-0.3397051585443438	1.8540552356124655e-12	-183222782158.4432	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-21	-21	-0.2782847321073126	8.465761163609349e-12	-32871791056.84418	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-20	-20	-0.0633270674476465	1.1486424010212132e-12	-55132099765.20535	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-19	-19	-0.1038645563397001	4.6710073226657456e-12	-22236008031.009583	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-18	-18	-0.0876641418069335	3.6964016621496785e-12	-23716075745.93275	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-17	-17	-0.2780768179442169	9.087535890005392e-12	-30599804095.4149	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-16	-16	-0.1898277642116984	1.189764579872869e-12	-159550693828.84323	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-15	-15	-0.1835774344500092	2.423138820789417e-12	-75760180504.31087	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-14	-14	-0.2508484826613856	6.2576096469278046e-12	-40086949620.5377	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-13	-13	-0.0032228004532731	2.0598584559620032e-12	-1564573742.406993	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-12	-12	-0.0994961441948581	6.663292384362521e-12	-14931979336.27476	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-11	-11	-0.1851337813879365	1.1951773331997517e-11	-15490067979.476551	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-10	-10	-0.2759036402120085	4.693863676418592e-12	-58779644921.96809	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-9	-9	-0.1588669975482145	1.8577431709072383e-12	-85516125176.02797	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-8	-8	-0.1233012323456825	6.012632330279755e-12	-20507030128.00812	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-7	-7	-0.2094309439863209	3.006393616635556e-12	-69661850939.0977	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-6	-6	-0.1275824344036943	1.0599219881479914e-11	-12036964590.820496	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-5	-5	-0.0373709714497697	8.520928606711648e-12	-4385786241.693646	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-4	-4	-0.1339159237988587	6.05560262438379e-12	-22114384332.22586	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-3	-3	-0.0929790080922449	1.0541036232703395e-11	-8820670571.625496	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-2	-2	-5.362133673776887	5.596438121364176e-12	-958133290763.4872	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	0	0	-4.577621978066611	2.9389395167206206e-11	-155757610934.9298	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	1	1	0.8606831926847573	3.4712729947991014e-11	24794454195.169662	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	2	2	0.8607292946006104	3.0925479666017806e-11	27832366834.60128	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	3	3	0.8607753965124245	2.9389092160099277e-11	29288941346.78561	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	4	4	0.2343684418420275	4.259438066947551e-11	5502332424.097985	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	5	5	0.2344145437713945	3.0945686122246016e-11	7575031390.332632	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	6	6	0.2344606456685538	3.6639912771993646e-11	6399050323.279369	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	7	7	0.0846744953839453	3.340178570874071e-11	2535028998.8174925	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	8	8	0.084720597291413	3.411155281602272e-11	2483633558.0600867	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	9	9	0.0847666991829522	4.2960287345147066e-11	1973140880.132584	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	10	10	-0.3559446217969246	3.3279466464595086e-11	-10695622845.264128	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	11	11	-0.3558985198934245	3.5584829967274135e-11	-10001411281.738014	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	12	12	-0.3558524179761614	3.1273679330748106e-11	-11378655329.060987	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	13	13	-0.2244226757000547	3.454960416535692e-11	-6495665612.432243	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	14	14	-0.2243765737874541	3.237430560572894e-11	-6930699194.602912	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	15	15	-0.2243304718813823	3.3409316577423414e-11	-6714608224.969657	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	16	16	0.2333644481106361	2.900743455402895e-11	8044987490.223372	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	17	17	0.233410550009933	3.316567993253806e-11	7037713397.8471365	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	18	18	0.2334566519198032	3.2214517752999425e-11	7246939212.618404	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	19	19	-0.2379870796788127	3.0953984669909363e-11	-7688414988.140832	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	20	20	-0.2379409777733468	3.217028948436426e-11	-7396295824.101721	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	21	21	-0.2378948758655711	3.2468648996453516e-11	-7326910210.879299	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	22	22	-0.1743109458853685	2.8738151897141078e-11	-6065489058.212866	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	23	23	-0.1742648439836316	3.1703283154520026e-11	-5496744395.0292015	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	24	24	-0.1742187420758909	3.184647098264752e-11	-5470582350.264777	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	25	25	-0.2114154422683449	3.2263771998312946e-11	-6552719324.925792	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	26	26	-0.2113693403546485	2.974415989754342e-11	-7106246775.257067	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	27	27	-0.2113232384451931	2.957372880943403e-11	-7145640639.5997305	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	28	28	0.0299755623677545	3.048118728294106e-11	983411902.2171596	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	29	29	0.0300216642678314	3.4386516930132994e-11	873064996.0515004	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	30	30	0.0300677661826268	3.123819065992512e-11	962532257.7085176	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	31	31	-0.4649269771811622	3.184985441616355e-11	-14597460041.927711	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	32	32	-0.4648808752745283	3.280245704104099e-11	-14172135785.221512	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	33	33	-0.4648347733645277	3.1860996649048845e-11	-14589461167.355057	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	34	34	-0.5632991747784508	3.5093724715115226e-11	-16051279234.427689	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	35	35	-0.5632530728536975	2.864152840654597e-11	-19665608093.90909	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	36	36	-0.5632069709451452	2.7704297934864692e-11	-20329227337.552303	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	37	37	-0.410264637590976	3.6578175395036766e-11	-11216104498.384687	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	38	38	-0.4102185356726501	3.1246597256400336e-11	-13128422666.52327	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	39	39	-0.4101724337677065	3.296106861992376e-11	-12444148534.667725	0.0	1.0	128	1.0	***	1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-12	-12	0.3061373564868731	0.2062666758107689	1.4841823347544834	0.1377605549502552	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-11	-11	0.3061373564868691	0.2062666758107707	1.484182334754451	0.1377605549502638	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-10	-10	0.3061373564868773	0.206266675810771	1.4841823347544882	0.1377605549502539	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-9	-9	0.2062491883544309	0.1389648586462621	1.484182334754446	0.137760554950265	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-8	-8	0.2062491883544333	0.138964858646262	1.4841823347544645	0.1377605549502602	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-7	-7	0.2062491883544329	0.1389648586462627	1.484182334754454	0.1377605549502629	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-6	-6	-0.0875890935830103	0.0590150492510065	-1.4841823347544931	0.1377605549502525	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-5	-5	-0.0875890935830081	0.0590150492510063	-1.4841823347544618	0.1377605549502609	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-4	-4	-0.0875890935830055	0.0590150492510055	-1.4841823347544376	0.1377605549502673	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-3	-3	-3.555891057110968e-15	1.1922174929060671e-14	-0.2982585877383306	0.7655058088169697	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-2	-2	-5.551115123125784e-16				1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	0	0	0.3050992120492751	0.2055672035065328	1.4841823347544798	0.1377605549502562	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	1	1	0.3050992120492704	0.2055672035065329	1.484182334754456	0.1377605549502625	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	2	2	0.3050992120492752	0.2055672035065332	1.4841823347544771	0.1377605549502568	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	3	3	-0.0092273436239588	0.0062171226593168	-1.4841823347543135	0.1377605549503002	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	4	4	-0.0092273436239545	0.0062171226593154	-1.4841823347539689	0.1377605549503917	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	5	5	-0.0092273436239596	0.0062171226593163	-1.4841823347545675	0.1377605549502329	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	6	6	0.033131208418411	0.0223228693958898	1.4841823347544754	0.1377605549502573	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	7	7	0.0331312084184113	0.0223228693958889	1.4841823347545535	0.1377605549502365	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	8	8	0.0331312084184139	0.0223228693958901	1.4841823347545904	0.1377605549502268	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	9	9	0.0083026736851103	0.0055941062568171	1.4841823347549843	0.1377605549501223	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	10	10	0.0083026736851073	0.0055941062568166	1.4841823347545886	0.1377605549502272	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	11	11	0.0083026736851151	0.0055941062568178	1.4841823347556586	0.1377605549499435	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	12	12	0.2206028014339179	0.2742192013978022	0.8044761282558602	0.4211220505205666	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	13	13	0.2206028014339134	0.2742192013978023	0.8044761282558435	0.4211220505205761	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	14	14	0.2206028014339104	0.2742192013978026	0.8044761282558317	0.421122050520583	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	15	15	-0.1094244287466496	0.3788414066956769	-0.2888396748947514	0.7727040692887315	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	16	16	-0.1094244287466503	0.3788414066956773	-0.288839674894753	0.7727040692887303	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	17	17	-0.1094244287466471	0.3788414066956758	-0.2888396748947457	0.7727040692887359	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	18	18	-0.1750980976237609	0.4109919520564116	-0.4260377770115738	0.6700803191191742	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	19	19	-0.1750980976237674	0.4109919520564122	-0.4260377770115889	0.6700803191191633	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	20	20	-0.1750980976237622	0.4109919520564107	-0.4260377770115779	0.6700803191191713	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	21	21	-0.0731672766472707	0.3621867679825364	-0.2020153222461143	0.8399047457108688	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	22	22	-0.0731672766472799	0.3621867679825373	-0.2020153222461392	0.8399047457108494	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	23	23	-0.0731672766472773	0.3621867679825383	-0.2020153222461315	0.8399047457108554	1.0	144	0.90360628047181		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-12	-12	0.0949141565068114	0.1285557356291644	0.738311332763896	0.4603252814019735	1.0	144	0.9438430393727696		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-11	-11	0.1141162656128464	0.1273850385582777	0.8958372733909331	0.3703396794876807	1.0	144	0.9438430393727696		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-10	-10	0.1333183746954033	0.1283414787392351	1.038778546149373	0.2989077412536755	1.0	144	0.9438430393727696		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-9	-9	0.0526323156503529	0.088445710473686	0.5950804778261332	0.5517896774170312	1.0	144	0.9438430393727696		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-8	-8	0.0718344247350092	0.0859589701758187	0.8356827052264649	0.4033334273139002	1.0	144	0.9438430393727696		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-7	-7	0.0910365338177434	0.086599432058827	1.0512370768887065	0.2931497183624676	1.0	144	0.9438430393727696		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-6	-6	-0.1835996390079906	0.1344688843115457	-1.3653689472325488	0.1721371186976403	1.0	144	0.9438430393727696		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-5	-5	-0.1643975299341947	0.1186748601697702	-1.385276794925361	0.1659678464590412	1.0	144	0.9438430393727696		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-4	-4	-0.1451954208457888	0.1031008256545234	-1.4082857234559738	0.1590464813598339	1.0	144	0.9438430393727696		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-3	-3	-0.0384042181665722	0.0329913996849354	-1.1640675610410174	0.2443966334146703	1.0	144	0.9438430393727696		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-2	-2	-0.0192021090840491	0.0164956998420985	-1.1640675611133242	0.2443966333853698	1.0	144	0.9438430393727696		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	0	0	0.3243013211566399	0.2203149924229599	1.4719893439391878	0.1410237551663328	1.0	144	0.9438430393727696		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	1	1	0.3435034302265183	0.2339899567679577	1.4680263844279544	0.1420970561640833	1.0	144	0.9438430393727696		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	2	2	0.3627055393083121	0.2480083064661752	1.4624733521083897	0.1436115415094505	1.0	144	0.9438430393727696		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	3	3	0.0675810927430066	0.0611565836909575	1.105050162456981	0.269137853880015	1.0	144	0.9438430393727696		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	4	4	0.0867832018223558	0.0776266515299814	1.1179562703260215	0.2635856704631122	1.0	144	0.9438430393727696		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	5	5	0.1059853109158959	0.094105698840859	1.1262369040489926	0.2600652567523214	1.0	144	0.9438430393727696		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	6	6	0.167545972067381	0.1339431373193926	1.2508738814132834	0.2109804943833331	1.0	144	0.9438430393727696		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	7	7	0.1867480811045178	0.1503608204083591	1.2419996153076045	0.2142367039839057	1.0	144	0.9438430393727696		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	8	8	0.2059501902439583	0.1667938992614921	1.2347585322714871	0.2169203846460979	1.0	144	0.9438430393727696		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	9	9	0.2003237645700903	0.1694433534713303	1.1822462225051802	0.2371080169593831	1.0	144	0.9438430393727696		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	10	10	0.2195258736884682	0.1859359285720099	1.180653332437843	0.2377404676123635	1.0	144	0.9438430393727696		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	11	11	0.2387279827600884	0.2024290128736294	1.179317032529914	0.2382719584569366	1.0	144	0.9438430393727696		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	12	12	0.470230219576172	0.1898153380160212	2.4773035967013506	0.0132379244349128	1.0	144	0.9438430393727696	**	1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	13	13	0.4894323286607064	0.1916839912046123	2.5533291830211513	0.0106698600977658	1.0	144	0.9438430393727696	**	1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	14	14	0.5086344377543027	0.1949355243338211	2.6092444642531225	0.0090742390632025	1.0	144	0.9438430393727696	***	1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	15	15	0.1978093166729985	0.1253839841826458	1.5776282590035688	0.1146510363849068	1.0	144	0.9438430393727696		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	16	16	0.2170114257788064	0.1105870762457966	1.9623579277606145	0.0497208273667978	1.0	144	0.9438430393727696	**	1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	17	17	0.2362135348402833	0.0963435291477169	2.4517841201157693	0.014214991539527	1.0	144	0.9438430393727696	**	1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	18	18	0.1897419750689326	0.1028137635835249	1.8454919697087844	0.0649660055715931	1.0	144	0.9438430393727696	*	1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	19	19	0.2089440841597553	0.0868913609342665	2.4046588971925735	0.0161875672264466	1.0	144	0.9438430393727696	**	1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	20	20	0.2281461932270179	0.0712303548837983	3.20293495096584	0.0013603470430271	1.0	144	0.9438430393727696	***	1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	21	21	0.3492791232857235	0.0672477056988349	5.193918805943366	2.0591297289709845e-07	1.0	144	0.9438430393727696	***	1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	22	22	0.3684812324035121	0.0702651284200817	5.244155112056984	1.570000813836897e-07	1.0	144	0.9438430393727696	***	1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	23	23	0.3876833414768261	0.0767876217341124	5.048773913316814	4.446545834679649e-07	1.0	144	0.9438430393727696	***	1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-12	-12	0.3061373564868844	0.2062666758107708	1.4841823347545244	0.1377605549502443	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-11	-11	0.3061373564868666	0.2062666758107724	1.484182334754426	0.1377605549502704	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-10	-10	0.306137356486883	0.206266675810774	1.484182334754495	0.1377605549502521	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-9	-9	0.2062491883544332	0.138964858646264	1.4841823347544425	0.137760554950266	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-8	-8	0.2062491883544396	0.1389648586462633	1.4841823347544962	0.1377605549502518	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-7	-7	0.2062491883544325	0.1389648586462634	1.4841823347544438	0.1377605549502656	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-6	-6	-0.0875890935830077	0.0590150492510036	-1.484182334754521	0.1377605549502451	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-5	-5	-0.0875890935830026	0.0590150492510035	-1.4841823347544387	0.137760554950267	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-4	-4	-0.0875890935830032	0.0590150492510038	-1.4841823347544425	0.137760554950266	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-3	-3	-1.2416093812002726e-15				1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-2	-2	2.8033131371785207e-15	5.156084451865074e-15	0.5436903067335326	0.5866546038932491	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	0	0	0.3050992120492727	0.2055672035065338	1.4841823347544605	0.1377605549502613	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	1	1	0.3050992120492752	0.2055672035065342	1.4841823347544705	0.1377605549502586	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	2	2	0.3050992120492757	0.2055672035065358	1.484182334754461	0.1377605549502611	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	3	3	-0.0092273436239571	0.0062171226593146	-1.4841823347545673	0.1377605549502329	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	4	4	-0.0092273436239523	0.0062171226593138	-1.4841823347539933	0.1377605549503852	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	5	5	-0.0092273436239536	0.006217122659314	-1.4841823347541463	0.1377605549503445	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	6	6	0.0331312084184188	0.022322869395892	1.4841823347546763	0.137760554950204	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	7	7	0.0331312084184129	0.0223228693958908	1.4841823347544916	0.137760554950253	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	8	8	0.0331312084184189	0.0223228693958905	1.484182334754786	0.1377605549501749	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	9	9	0.0083026736851103	0.0055941062568189	1.4841823347545149	0.1377605549502469	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	10	10	0.0083026736851124	0.0055941062568188	1.4841823347549223	0.1377605549501388	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	11	11	0.0083026736851124	0.0055941062568188	1.4841823347549017	0.1377605549501442	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	12	12	-0.1575421946516062	0.2839169701089941	-0.5548882639566303	0.5789710897719843	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	13	13	-0.1575421946516011	0.2839169701089947	-0.5548882639566112	0.5789710897719973	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	14	14	-0.1575421946516035	0.2839169701089957	-0.5548882639566176	0.578971089771993	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	15	15	-0.4875694248321714	0.3037747366748604	-1.6050361204132395	0.1084858558371957	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	16	16	-0.4875694248321726	0.30377473667486	-1.6050361204132455	0.1084858558371944	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	17	17	-0.487569424832169	0.3037747366748591	-1.6050361204132382	0.108485855837196	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	18	18	-0.5532430937092845	0.3261881963099481	-1.6960855725864037	0.0898696754965721	1.0	144	0.9306793789575862	*	1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	19	19	-0.5532430937092889	0.326188196309948	-1.6960855725864172	0.0898696754965695	1.0	144	0.9306793789575862	*	1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	20	20	-0.5532430937092906	0.3261881963099484	-1.6960855725864203	0.0898696754965689	1.0	144	0.9306793789575862	*	1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	21	21	-0.4513122727327985	0.2935330441255361	-1.537517774454669	0.1241665657971504	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	22	22	-0.451312272732801	0.2935330441255356	-1.5375177744546806	0.1241665657971476	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	23	23	-0.451312272732807	0.2935330441255374	-1.5375177744546913	0.124166565797145	1.0	144	0.9306793789575862		1.0	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-12	-12	0.172003174983819	0.1612544094888206	1.0666571880364213	0.286126666153119	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-11	-11	0.1841971915193894	0.1607954990903526	1.1455369868026417	0.2519867830290512	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-10	-10	0.1963912080055064	0.1613968741378862	1.21682163334665	0.2236720872062164	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-9	-9	0.1086970563701439	0.1094908441240403	0.9927501905730388	0.3208317089482563	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-8	-8	0.1208910728656892	0.1083659342178849	1.1155818822418933	0.2646011509393055	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-7	-7	0.133085089359311	0.1088101877002233	1.223094015111582	0.2212941888577885	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-6	-6	-0.1485591760685807	0.1127899333643772	-1.317131517301708	0.1877945441313659	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-5	-5	-0.1363651595715509	0.1009990320338672	-1.3501630344915048	0.1769636926012636	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-4	-4	-0.1241711430822948	0.0895633316304771	-1.3864060304791197	0.165622956065262	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-3	-3	-0.02438803299943	0.0261362008237614	-0.9331131622335074	0.3507615439382567	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-2	-2	-0.0121940165052306	0.0130681004166804	-0.9331131623128556	0.3507615438972922	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	0	0	0.3172932285379984	0.2155641697259618	1.4719200734582225	0.1410424622483696	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	1	1	0.3294872450333097	0.2245151774478534	1.4675499838305472	0.1422265025352394	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	2	2	0.3416812615261197	0.233854161895633	1.4610869387845615	0.1439915841621331	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	3	3	0.0395487223611682	0.0485495241629867	0.814605766853621	0.4152980084054475	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	4	4	0.0517427388528203	0.0615661710064451	0.8404410735142772	0.4006611278769204	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	5	5	0.0639367553453802	0.074600811151876	0.8570517445877979	0.3914162881941403	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	6	6	0.1184893239044123	0.1071372595066437	1.105958136786807	0.2687446394644952	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	7	7	0.1306833403734217	0.1200505967582567	1.0885688526528192	0.2763440584193646	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	8	8	0.142877356897377	0.1329941716682468	1.0743129199209105	0.2826824563209953	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	9	9	0.1302428386622793	0.1343198275137333	0.9696471553982814	0.3322223994882096	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	10	10	0.1424368551573155	0.1473816496195771	0.9664490492878516	0.3338195304175644	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	11	11	0.1546308716618765	0.160444494220514	0.9637655216099388	0.335163496247011	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	12	12	0.0009800198101629	0.2393537246413806	0.0040944414449003	0.9967331175139202	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	13	13	0.0131740362900286	0.2404110073991367	0.0547979746541171	0.956299413971834	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	14	14	0.0253680528043341	0.24216987826936	0.1047531302638632	0.91657170197908	1.0	144	0.9469056483497		1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	15	15	-0.2924651608884306	0.1112066864622739	-2.6299242445969955	0.0085403896972406	1.0	144	0.9469056483497	***	1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	16	16	-0.2802711443827564	0.1009554851392659	-2.7761854048457932	0.0055000834126679	1.0	144	0.9469056483497	***	1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	17	17	-0.268077127899986	0.0914256164777835	-2.932188354071738	0.003365825440091	1.0	144	0.9469056483497	***	1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	18	18	-0.3215567802708865	0.0847113466530228	-3.7959115629218014	0.0001471019347471	1.0	144	0.9469056483497	***	1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	19	19	-0.3093627637723778	0.0727193919215294	-4.254198991463062	2.097986698915143e-05	1.0	144	0.9469056483497	***	1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	20	20	-0.297168747287576	0.0611699122961187	-4.85808686219796	1.1852541377987875e-06	1.0	144	0.9469056483497	***	1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	21	21	-0.1830439098166896	0.0848159559584083	-2.1581305987572663	0.0309176793443896	1.0	144	0.9469056483497	**	1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	22	22	-0.1708498933044817	0.0864602049661092	-1.9760523742853917	0.0481488456581702	1.0	144	0.9469056483497	**	1.0	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	23	23	-0.1586558768158647	0.0899918785221579	-1.763002166654408	0.0779001242390875	1.0	144	0.9469056483497	*	1.0	TWFE+Tr

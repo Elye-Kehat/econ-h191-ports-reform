@@ -1,0 +1,20 @@
+entity	year	component_type	value	source_rule	record_id	source_group	metric	asset_class_std	project_name	event_month
+HPC	2017	annual_observed_pool	25025.0	HPC observed annual pool = explicit annual gross investment summary	HPC_TBL2_2017_APPROX_GROSS_PPE_INVESTMENT	THESIS_2026_SUMMARY	approx_gross_ppe_investment	total		
+HPC	2018	annual_observed_pool	30896.0	HPC observed annual pool = explicit annual gross investment summary	HPC_TBL2_2018_APPROX_GROSS_PPE_INVESTMENT	THESIS_2026_SUMMARY	approx_gross_ppe_investment	total		
+HPC	2019	annual_observed_pool	25025.0	HPC observed annual pool = explicit annual gross investment summary	HPC_TBL2_2019_APPROX_GROSS_PPE_INVESTMENT	THESIS_2026_SUMMARY	approx_gross_ppe_investment	total		
+HPC	2020	annual_observed_pool	49285.0	HPC observed annual pool = explicit annual gross investment summary	HPC_TBL2_2020_APPROX_GROSS_PPE_INVESTMENT	THESIS_2026_SUMMARY	approx_gross_ppe_investment	total		
+HPC	2021	annual_observed_pool	75222.0	HPC observed annual pool = explicit annual gross investment summary	HPC_TBL2_2021_APPROX_GROSS_PPE_INVESTMENT	THESIS_2026_SUMMARY	approx_gross_ppe_investment	total		
+HPC	2023	annual_observed_pool	95529.0	HPC observed annual pool = explicit annual gross investment summary	HPC_TBL2_2023_APPROX_GROSS_PPE_INVESTMENT	THESIS_2026_SUMMARY	approx_gross_ppe_investment	total		
+HPC	2024	annual_observed_pool	61123.0	HPC observed annual pool = explicit annual gross investment summary	HPC_TBL2_2024_APPROX_GROSS_PPE_INVESTMENT	THESIS_2026_SUMMARY	approx_gross_ppe_investment	total		
+IPC	2018	annual_observed_pool	1501921.0	IPC observed annual pool = explicit annual gross investment summary	IPC_TBL2_2018_APPROX_GROSS_PPE_INVESTMENT	THESIS_2026_SUMMARY	approx_gross_ppe_investment	total		
+IPC	2019	annual_observed_pool	1100386.0	IPC observed annual pool = explicit annual gross investment summary	IPC_TBL2_2019_APPROX_GROSS_PPE_INVESTMENT	THESIS_2026_SUMMARY	approx_gross_ppe_investment	total		
+IPC	2020	annual_observed_pool	560898.0	IPC observed annual pool = explicit annual gross investment summary	IPC_TBL2_2020_APPROX_GROSS_PPE_INVESTMENT	THESIS_2026_SUMMARY	approx_gross_ppe_investment	total		
+IPC	2021	annual_observed_pool	419197.0	IPC observed annual pool = explicit annual gross investment summary	IPC_TBL2_2021_APPROX_GROSS_PPE_INVESTMENT	THESIS_2026_SUMMARY	approx_gross_ppe_investment	total		
+IPC	2022	annual_observed_pool	214152.0	IPC observed annual pool = explicit annual gross investment summary	IPC_TBL2_2022_APPROX_GROSS_PPE_INVESTMENT	THESIS_2026_SUMMARY	approx_gross_ppe_investment	total		
+IPC	2023	annual_observed_pool	449072.0	IPC observed annual pool = explicit annual gross investment summary	IPC_TBL2_2023_APPROX_GROSS_PPE_INVESTMENT	THESIS_2026_SUMMARY	approx_gross_ppe_investment	total		
+IPC	2024	annual_observed_pool	247552.0	IPC observed annual pool = explicit annual gross investment summary	IPC_TBL2_2024_APPROX_GROSS_PPE_INVESTMENT	THESIS_2026_SUMMARY	approx_gross_ppe_investment	total		
+SIPG	2018	annual_observed_pool	0.0	SIPG observed annual pool = explicit annual Bayport transfer_to_ppe summary	SIPG_TBL2_2018_TRANSFER_TO_PPE_KNIS	THESIS_2026_SUMMARY	transfer_to_ppe_knis	wip_bayport		
+SIPG	2020	annual_observed_pool	4482.0	SIPG observed annual pool = explicit annual Bayport transfer_to_ppe summary	SIPG_TBL2_2020_TRANSFER_TO_PPE_KNIS	THESIS_2026_SUMMARY	transfer_to_ppe_knis	wip_bayport		
+SIPG	2021	annual_observed_pool	1339629.0	SIPG observed annual pool = explicit annual Bayport transfer_to_ppe summary	SIPG_TBL2_2021_TRANSFER_TO_PPE_KNIS	THESIS_2026_SUMMARY	transfer_to_ppe_knis	wip_bayport		
+SIPG	2022	annual_observed_pool	469804.0	SIPG observed annual pool = explicit annual Bayport transfer_to_ppe summary	SIPG_TBL2_2022_TRANSFER_TO_PPE_KNIS	THESIS_2026_SUMMARY	transfer_to_ppe_knis	wip_bayport		
+SIPG	2024	annual_observed_pool	0.0	SIPG observed annual pool = explicit annual Bayport transfer_to_ppe summary	SIPG_TBL2_2024_TRANSFER_TO_PPE_KNIS	THESIS_2026_SUMMARY	transfer_to_ppe_knis	wip_bayport		

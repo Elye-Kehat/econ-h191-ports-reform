@@ -1,0 +1,33 @@
+\begin{table}[t]
+  \centering
+  \caption{Haifa terminals: elasticity of $\ln(\mathrm{LP})$ with respect to $\ln(K/L)$ under alternative depreciation rates}
+  \label{tab:haifa_terminal_elasticity}
+  \begin{threeparttable}
+    \small
+    \setlength{\tabcolsep}{4pt}
+    \renewcommand{\arraystretch}{1.1}
+    \begin{tabular}{l*{9}{c}}
+      \toprule
+      & \multicolumn{3}{c}{Haifa--Legacy}
+      & \multicolumn{3}{c}{Haifa--Bayport}
+      & \multicolumn{3}{c}{Pooled Haifa terminals} \\
+      \cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+      & (1) $\delta=4\%$ & (2) $\delta=6\%$ & (3) $\delta=8\%$
+      & (4) $\delta=4\%$ & (5) $\delta=6\%$ & (6) $\delta=8\%$
+      & (7) $\delta=4\%$ & (8) $\delta=6\%$ & (9) $\delta=8\%$ \\
+      \midrule
+      $\ln(K/L)$ coefficient & -7.25^{***} & -7.22^{***} & -7.18^{***} & 2.04^{***} & 2.04^{***} & 2.03^{***} & 0.81^{*} & 0.81^{*} & 0.81^{*} \\
+                             & (0.75) & (0.74) & (0.74) & (0.35) & (0.35) & (0.35) & (0.49) & (0.49) & (0.49) \\
+      Observations           & 42 & 42 & 42 & 42 & 42 & 42 & 84 & 84 & 84 \\
+      $R^2$                  & 0.848 & 0.848 & 0.849 & 0.728 & 0.729 & 0.731 & 0.464 & 0.464 & 0.464 \\
+      \bottomrule
+    \end{tabular}
+    \begin{tablenotes}[flushleft]
+      \footnotesize
+      \item Notes: Each column reports $\hat{\eta}$ from a regression of $\ln(\mathrm{LP})$ on $\ln(K/L)$ at monthly frequency.
+      Terminal-specific specifications are time-series regressions with a linear time trend ($t$).
+      The pooled specification stacks Haifa--Legacy and Haifa--Bayport and includes terminal fixed effects and a common linear time trend.
+      Heteroskedasticity-robust (HC1) standard errors are shown in parentheses.
+    \end{tablenotes}
+  \end{threeparttable}
+\end{table}

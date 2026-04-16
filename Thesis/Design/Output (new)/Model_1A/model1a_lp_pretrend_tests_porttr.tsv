@@ -1,7 +1,4 @@
-reform	target	spec	pre_min	pre_max	n_leads_total	n_bins_defined	n_bins_used	f_stat	pvalue	df_num	df_denom	n_obs	r2
-haifa_comp	Haifa-Bayport terminal	porttr	-12.0	-2.0	11.0	2.0	2.0	2.8266633339899314e+20	5.006241779921379e-41	2.0	4.0	91	1.0
-haifa_comp	Haifa-Legacy terminal	porttr	-12.0	-2.0	11.0	2.0	2.0	2.828739600399753e+20	4.998895414782026e-41	2.0	4.0	91	1.0
-ashdod_comp	Ashdod-HCT terminal	porttr	-12.0	-2.0	11.0	2.0	2.0	3.7100482651371654e+20	2.9060352120832077e-41	2.0	4.0	95	1.0
-ashdod_comp	Ashdod-Legacy terminal	porttr	-12.0	-2.0	11.0	2.0	2.0	3.661039289651701e+20	2.9843600106422843e-41	2.0	4.0	95	1.0
-haifa_priv	Haifa-Legacy terminal	porttr	-12.0	-2.0	11.0	2.0	2.0	0.39340359740308795	0.6939488796537729	2.0	5.0	117	0.9477066101302017
-haifa_priv	Haifa-Bayport terminal	porttr	-12.0	-2.0	11.0	2.0	2.0	0.393403597408142	0.6939488796507428	2.0	5.0	117	0.947706610130202
+design	table_group	reform	target	target_key	spec_name	pre_min	pre_max	n_leads_total	n_bins_defined	n_bins_used	f_stat	pvalue	df_num	df_denom	n_obs	r2
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-12.0	-2.0	11.0	2.0	2.0			2.0	0.0	76	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-12.0	-2.0	11.0	2.0	2.0	4.161989093763331	0.1363588550127065	2.0	3.0	84	0.987295352691826
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-12.0	-2.0	11.0	2.0	2.0	4.161989093765419	0.1363588550126311	2.0	3.0	84	0.9872953526918261

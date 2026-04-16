@@ -1,217 +1,289 @@
-model	reform	target	fe_type	event_time	beta_hat	se	tvalue	pvalue	N_m	n_obs	treated_n	control_n	cov_type	cluster_by	r2
-1B	haifa_comp	Haifa-Legacy terminal	baseline	-12	-0.1623237217542574					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	-11	-0.1755954498459252					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	-10	-0.0302377348522147					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	-9	-0.0414279900561196					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	-8	-0.0390040104833993					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	-7	-0.0365727829414354					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	-6	-0.0344823994770138					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	-5	-0.0320370051318178					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	-4	-0.0297006200641818					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	-3	-0.0272409224385039					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	-2	-0.0024739435959841					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	0	0.0024810917115378					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	1	0.0649379880439257					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	2	0.0674332371047552					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	3	-0.0266378214517964					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	4	0.0560870344284514					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	5	0.0549146851928371					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	6	0.053748388247937					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	7	0.2675438914323765					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	8	0.2663801690047132					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	9	0.2652183196905572					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	10	0.4995917992569556					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	11	0.4984353933863637					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	12	0.4972818017521341					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	13	1.1267141247453272					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	14	1.1255659951623287					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	15	1.124420246643696					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	16	0.7581222848098157					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	17	0.7554337423463091					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	18	0.7528948540651648					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	19	0.706338819364593					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	20	0.7037066365230376					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	21	0.7010284554984713					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	22	0.6986164603574434					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	23	0.6959436988744825					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	24	0.7690766738849502					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	-12	-0.1623237217542628					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	-11	-0.1755954498459225					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	-10	-0.0302377348522129					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	-9	-0.0414279900560927					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	-8	-0.0390040104834019					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	-7	-0.0365727829414346					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	-6	-0.0344823994770138					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	-5	-0.0320370051318075					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	-4	-0.0297006200641845					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	-3	-0.0272409224384938					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	-2	-0.0024739435959713					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	0	0.0024810917115507					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	1	0.0649379880439345					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	2	0.0674332371047627					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	3	-0.02663782145181					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	4	0.0560870344284532					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	5	0.0549146851928553					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	6	0.053748388247933					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	7	0.2675438914323852					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	8	0.2663801690047247					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	9	0.2652183196905576					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	10	0.4995917992569685					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	11	0.4984353933863536					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	12	0.4972818017521339					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	13	1.126714124745333					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	14	1.125565995162335					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	15	1.124420246643701					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	16	0.7581222848098241					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	17	0.7554337423463008					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	18	0.7528948540651599					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	19	0.7063388193646151					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	20	0.7037066365230586					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	21	0.7010284554984909					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	22	0.6986164603574312					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	23	0.6959436988744764					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	24	0.7690766738849533					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	-12	-0.1623237217542628					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	-11	-0.1755954498459225					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	-10	-0.0302377348522129					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	-9	-0.0414279900560927					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	-8	-0.0390040104834019					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	-7	-0.0365727829414346					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	-6	-0.0344823994770138					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	-5	-0.0320370051318075					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	-4	-0.0297006200641845					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	-3	-0.0272409224384938					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	-2	-0.0024739435959713					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	0	0.0024810917115507					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	1	0.0649379880439345					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	2	0.0674332371047627					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	3	-0.02663782145181					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	4	0.0560870344284532					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	5	0.0549146851928553					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	6	0.053748388247933					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	7	0.2675438914323852					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	8	0.2663801690047247					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	9	0.2652183196905576					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	10	0.4995917992569685					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	11	0.4984353933863536					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	12	0.4972818017521339					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	13	1.126714124745333					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	14	1.125565995162335					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	15	1.124420246643701					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	16	0.7581222848098241					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	17	0.7554337423463008					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	18	0.7528948540651599					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	19	0.7063388193646151					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	20	0.7037066365230586					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	21	0.7010284554984909					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	22	0.6986164603574312					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	23	0.6959436988744764					76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	24	0.7690766738849533					76	38	38	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	-12	-1.0683332122152596					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	-11	-1.0695055614508608					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	-10	-1.0706718583957748					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	-9	-0.8568763552113261					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	-8	-0.8580400776389734					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	-7	-0.8592019269531375					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	-6	-0.6248284473867294					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	-5	-0.6259848532573307					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	-4	-0.6271384448915676					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	-3	0.0022938781016365					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	-2	0.0011457485186259					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	0	-0.3662979618338777					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	1	-0.3689865042973918					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	2	-0.3715253925785244					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	3	-0.4180814272790954					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	4	-0.4207136101206465					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	5	-0.4233917911452165					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	6	-0.4258037862862487					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	7	-0.4284765477692036					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	8	-0.3553435727587413					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	9	-0.6005597971903681					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	10	-0.6029940381397676					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	11	-0.6053880645970775					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	12	-0.6308943420872932					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	13	-0.6439293956687867					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	14	-0.6560483618769108					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	15	-0.7022185840991577					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	16	-0.7143720863135865					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	17	-0.7267072020213496					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	18	-0.6998208563702306					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	19	-0.7102439545416516					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	20	-0.7204897166621969					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	21	-0.6703571268919297					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	22	-0.6802556644917033					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	23	-0.6357691301315196					74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	24						74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	-12	-1.068333212215267	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	-11	-1.06950556145085	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	-10	-1.0706718583957675	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	-9	-0.8568763552113139	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	-8	-0.8580400776389681	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	-7	-0.8592019269531378	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	-6	-0.6248284473867436	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	-5	-0.6259848532573322	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	-4	-0.6271384448915587	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	-3	0.0022938781016315	inf	0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	-2	0.0011457485186383	inf	0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	0	-0.3662979618338742	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	1	-0.3689865042973887	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	2	-0.3715253925785298	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	3	-0.4180814272790961	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	4	-0.4207136101206519	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	5	-0.4233917911452272	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	6	-0.425803786286254	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	7	-0.428476547769206	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	8	-0.3553435727587484	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	9	-0.6005597971903531	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	10	-0.6029940381397623	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	11	-0.6053880645970631	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	12	-0.6308943420872914	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	13	-0.6439293956687896	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	14	-0.6560483618769144	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	15	-0.7022185840991847	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	16	-0.7143720863135794	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	17	-0.7267072020213532	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	18	-0.6998208563702359	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	19	-0.7102439545416639	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	20	-0.7204897166622182	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	21	-0.6703571268919067	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	22	-0.6802556644917104	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	23	-0.6357691301315185	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	24						74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	-12	-1.068333212215267	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	-11	-1.06950556145085	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	-10	-1.0706718583957675	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	-9	-0.8568763552113139	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	-8	-0.8580400776389681	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	-7	-0.8592019269531378	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	-6	-0.6248284473867436	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	-5	-0.6259848532573322	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	-4	-0.6271384448915587	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	-3	0.0022938781016315	inf	0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	-2	0.0011457485186383	inf	0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	0	-0.3662979618338742	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	1	-0.3689865042973887	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	2	-0.3715253925785298	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	3	-0.4180814272790961	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	4	-0.4207136101206519	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	5	-0.4233917911452272	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	6	-0.425803786286254	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	7	-0.428476547769206	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	8	-0.3553435727587484	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	9	-0.6005597971903531	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	10	-0.6029940381397623	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	11	-0.6053880645970631	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	12	-0.6308943420872914	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	13	-0.6439293956687896	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	14	-0.6560483618769144	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	15	-0.7022185840991847	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	16	-0.7143720863135794	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	17	-0.7267072020213532	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	18	-0.6998208563702359	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	19	-0.7102439545416639	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	20	-0.7204897166622182	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	21	-0.6703571268919067	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	22	-0.6802556644917104	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	23	-0.6357691301315185	inf	-0.0	1.0		74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	24						74	37	37	HC1	cluster_id	1.0
+model	reform	target	fe_type	spec_name	event_time	j	beta_hat	se	tvalue	pvalue	N_m	n_obs	treated_n	control_n	cov_type	cluster_by	r2
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	-12	-12					0	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	-11	-11					0	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	-10	-10					0	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	-9	-9	-3.748864260957092				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	-8	-8	-3.2677508156149715				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	-7	-7	-2.786645901214172				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	-6	-6	-2.3519845448114545				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	-5	-5	-1.8708962658142712				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	-4	-4	-1.4052945747723968				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	-3	-3	-0.9242231663841578				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	-2	-2	-0.4810545720502919				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	0	0	0.4810461004300299				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	1	1	0.8865209618644321				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	2	2	1.367550279478727				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	3	3	1.8330939980434504				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	4	4	1.7750121222735094				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	5	5	1.8008268972715675				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	6	6	1.8242598881751195				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	7	7	1.6351057684130896				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	8	8	1.6601186367133642				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	9	9	1.6859207887227166				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	10	10	1.4753954172604204				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	11	11	1.501191049023268				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	12	12	1.5269833191415083				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	13	13	0.921397544796754				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	14	14	0.9471832819526216				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	15	15	0.9721745508483084				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	16	16	1.3360544836481325				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	17	17	1.3363233288464875				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	18	18	1.3366848255029482				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	19	19	1.380818000499362				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	20	20	1.3811070948682087				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	21	21	1.3813591677173025				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	22	22	1.381424938872147				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	23	23	1.3816683638011813				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	24	24	1.2995223372943798				1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	-12	-12					0	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	-11	-11					0	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	-10	-10					0	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	-9	-9	-3.748864260957076	inf	-0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	-8	-8	-3.2677508156149737	inf	-0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	-7	-7	-2.7866459012141824	inf	-0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	-6	-6	-2.3519845448114696	inf	-0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	-5	-5	-1.8708962658142627	inf	-0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	-4	-4	-1.4052945747724006	inf	-0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	-3	-3	-0.924223166384169	inf	-0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	-2	-2	-0.4810545720502857	inf	-0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	0	0	0.4810461004300197	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	1	1	0.8865209618644228	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	2	2	1.3675502794787222	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	3	3	1.8330939980434529	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	4	4	1.77501212227351	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	5	5	1.8008268972715749	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	6	6	1.824259888175127	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	7	7	1.6351057684130923	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	8	8	1.6601186367133622	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	9	9	1.6859207887227106	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	10	10	1.475395417260441	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	11	11	1.5011910490232752	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	12	12	1.5269833191415136	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	13	13	0.9213975447967646	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	14	14	0.9471832819526196	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	15	15	0.9721745508482978	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	16	16	1.3360544836481356	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	17	17	1.3363233288464795	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	18	18	1.336684825502937	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	19	19	1.38081800049937	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	20	20	1.3811070948682154	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	21	21	1.381359167717312	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	22	22	1.381424938872132	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	23	23	1.3816683638011904	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	24	24	1.2995223372943765	inf	0.0	1.0	1	72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	-12	-12	-0.1472866902971152				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	-11	-11	-0.1605584183887831				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	-10	-10	-0.0152007033950725				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	-9	-9	-0.0267331382152102				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	-8	-8	-0.0245218673391569				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	-7	-7	-0.0224355137143167				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	-6	-6	-0.0208375617659912				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	-5	-5	-0.0192568505364243				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	-4	-4	-0.0182647181552075				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	-3	-3	-0.0180376494706323				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	-2	-2	0.0032645009107006				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	0	0	-0.0067559651329656				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	1	1	0.0414926605605655				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	2	2	0.0207861330674075				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	3	3	-0.0118999000783901				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	4	4	0.0684184766351787				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	5	5	0.0647884281901831				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	6	6	0.0613573252738208				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	7	7	0.2725947730578449				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	8	8	0.2689038387686806				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	9	9	0.2650761723927615				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	10	10	0.4968161202580436				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	11	11	0.4928819371670819				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	12	12	0.4888920302092572				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	13	13	1.1155226514606569				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	14	14	1.1114197036489264				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	15	15	1.1073554025751782				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	16	16	0.741133741935968				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	17	17	0.7385213746493327				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	18	18	0.7360508810153412				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	19	19	0.6895707820604075				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	20	20	0.6870118655022763				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	21	21	0.6844093716656031				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	22	22	0.6820704025502906				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	23	23	0.6794730792341453				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	24	24	0.7528843898677562				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	-12	-12	-0.1472866902971206				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	-11	-11	-0.1605584183887803				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	-10	-10	-0.0152007033950707				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	-9	-9	-0.0267331382151835				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	-8	-8	-0.0245218673391596				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	-7	-7	-0.022435513714316				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	-6	-6	-0.0208375617659908				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	-5	-5	-0.0192568505364138				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	-4	-4	-0.0182647181552102				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	-3	-3	-0.0180376494706221				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	-2	-2	0.0032645009107135				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	0	0	-0.0067559651329522				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	1	1	0.0414926605605743				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	2	2	0.020786133067415				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	3	3	-0.0118999000784037				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	4	4	0.0684184766351809				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	5	5	0.0647884281902015				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	6	6	0.0613573252738173				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	7	7	0.2725947730578535				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	8	8	0.2689038387686921				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	9	9	0.2650761723927621				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	10	10	0.4968161202580565				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	11	11	0.4928819371670717				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	12	12	0.4888920302092578				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	13	13	1.1155226514606629				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	14	14	1.1114197036489328				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	15	15	1.1073554025751835				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	16	16	0.7411337419359756				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	17	17	0.7385213746493242				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	18	18	0.7360508810153368				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	19	19	0.6895707820604297				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	20	20	0.6870118655022965				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	21	21	0.6844093716656227				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	22	22	0.6820704025502784				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	23	23	0.6794730792341391				1	76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	24	24	0.7528843898677593				1	76	38	38	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	-12	-12	0.8028375714252114				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	-11	-11	0.8286523464232708				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	-10	-10	0.8520853373268213				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	-9	-9	0.6629312175647896				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	-8	-8	0.6879440858650714				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	-7	-7	0.7137462378744195				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	-6	-6	0.5032208664121391				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	-5	-5	0.5290164981749577				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	-4	-4	0.5548087682932028				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	-3	-3	-0.0507770060515372				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	-2	-2	-0.0249912688956648				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	0	0	0.3638799327998256				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	1	1	0.3641487779981867				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	2	2	0.3645102746546378				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	3	3	0.4086434496510673				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	4	4	0.408932544019926				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	5	5	0.409184616869005				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	6	6	0.4092503880238514				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	7	7	0.4094938129528792				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	8	8	0.3273477864460759				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	9	9	0.5702119768315317				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	10	10	0.5702103657565019				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	11	11	0.5702492908700126				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	12	12	0.5954564162739349				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	13	13	0.6081597893892035				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	14	14	0.619947207970414				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	15	15	0.6657251305793973				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	16	16	0.6774740003594584				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	17	17	0.6893582036928504				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	18	18	0.6523335208909149				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	19	19	0.6622335825406969				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	20	20	0.6719293050028483				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	21	21	0.6212440434471173				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	22	22	0.6305414260253315				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	23	23	0.5806040183673626				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	24	24					0	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	-12	-12	0.8028375714251865				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	-11	-11	0.8286523464232629				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	-10	-10	0.8520853373268231				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	-9	-9	0.6629312175647994				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	-8	-8	0.687944085865059				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	-7	-7	0.7137462378744198				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	-6	-6	0.503220866412148				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	-5	-5	0.5290164981749597				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	-4	-4	0.5548087682932152				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	-3	-3	-0.0507770060515451				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	-2	-2	-0.0249912688956843				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	0	0	0.3638799327998363				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	1	1	0.3641487779981843				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	2	2	0.3645102746546538				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	3	3	0.4086434496510647				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	4	4	0.4089325440199083				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	5	5	0.4091846168690052				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	6	6	0.4092503880238496				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	7	7	0.4094938129528845				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	8	8	0.3273477864460794				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	9	9	0.5702119768315342				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	10	10	0.5702103657564948				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	11	11	0.5702492908700149				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	12	12	0.5954564162739384				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	13	13	0.6081597893892025				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	14	14	0.6199472079704211				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	15	15	0.6657251305793767				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	16	16	0.6774740003594513				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	17	17	0.6893582036928392				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	18	18	0.6523335208909078				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	19	19	0.6622335825406918				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	20	20	0.671929305002859				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	21	21	0.6212440434471154				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	22	22	0.6305414260253244				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	23	23	0.5806040183673604				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	24	24					0	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	-12	-12	-1.038936925940014				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	-11	-11	-1.0425669743849972				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	-10	-10	-1.0459980773013733				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	-9	-9	-0.83476062951734				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	-8	-8	-0.8384515638064887				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	-7	-7	-0.8422792301824151				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	-6	-6	-0.6105392823171236				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	-5	-5	-0.6144734654080948				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	-4	-4	-0.618463372365925				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	-3	-3	0.008167248885484				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	-2	-2	0.0040643010737415				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	0	0	-0.3662216606392103				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	1	1	-0.3688340279258507				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	2	2	-0.3713045215598303				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	3	3	-0.4177846205147631				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	4	4	-0.42034353707289				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	5	5	-0.4229460309095669				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	6	6	-0.4252850000248838				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	7	7	-0.427882323341023				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	8	8	-0.3544710127074175				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	9	9	-0.5996150021842996				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	10	10	-0.6019746073793755				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	11	11	-0.6042966397020494				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	12	12	-0.6297937840398387				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	13	13	-0.6428187144692113				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	14	14	-0.6549275648322812				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	15	15	-0.7010858218055818				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	16	16	-0.7132269873832833				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	17	17	-0.7255483611486784				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	18	18	-0.6983546218696546				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	19	19	-0.7087619434423192				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	20	20	-0.7189911230867416				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	21	21	-0.6688418803948853				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	22	22	-0.678722314324828				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	23	23	-0.6340721088463503				1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	24	24					0	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	-12	-12	-1.038936925940023	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	-11	-11	-1.042566974384986	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	-10	-10	-1.0459980773013662	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	-9	-9	-0.8347606295173279	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	-8	-8	-0.8384515638064833	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	-7	-7	-0.8422792301824156	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	-6	-6	-0.6105392823171361	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	-5	-5	-0.6144734654080963	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	-4	-4	-0.6184633723659179	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	-3	-3	0.0081672488854789	inf	0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	-2	-2	0.0040643010737539	inf	0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	0	0	-0.366221660639205	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	1	1	-0.3688340279258475	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	2	2	-0.3713045215598356	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	3	3	-0.4177846205147637	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	4	4	-0.4203435370728954	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	5	5	-0.4229460309095776	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	6	6	-0.4252850000248873	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	7	7	-0.4278823233410256	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	8	8	-0.3544710127074246	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	9	9	-0.5996150021842845	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	10	10	-0.6019746073793701	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	11	11	-0.604296639702035	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	12	12	-0.6297937840398387	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	13	13	-0.642818714469214	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	14	14	-0.654927564832283	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	15	15	-0.7010858218056086	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	16	16	-0.7132269873832762	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	17	17	-0.7255483611486818	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	18	18	-0.6983546218696599	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	19	19	-0.7087619434423316	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	20	20	-0.7189911230867629	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	21	21	-0.6688418803948621	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	22	22	-0.6787223143248351	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	23	23	-0.6340721088463492	inf	-0.0	1.0	1	74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	24	24					0	74	37	37	HC1		1.0

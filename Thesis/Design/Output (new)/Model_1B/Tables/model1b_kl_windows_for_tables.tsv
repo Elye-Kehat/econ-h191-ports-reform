@@ -1,25 +1,41 @@
-model	reform	target	fe_type	window_name	m_start	m_end	beta_hat	se	tvalue	pvalue	n_obs	treated_n	control_n	cov_type	cluster_by	r2
-1B	haifa_comp	Haifa-Legacy terminal	baseline	post_all	1	24	0.5201165365985345				76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	post_y1	1	12	0.2137445738407675				76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	post_y2	13	24	0.8264884993563015				76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	baseline	pre_all	-12	-2	-0.0555542346037139				76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	post_all	1	24	0.5201165365985387				76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	post_y1	1	12	0.213744573840771				76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	post_y2	13	24	0.8264884993563065				76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	porttr	pre_all	-12	-2	-0.0555542346037089				76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	post_all	1	24	0.5201165365985387				76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	post_y1	1	12	0.213744573840771				76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	post_y2	13	24	0.8264884993563065				76	38	38	HC1	cluster_id	1.0
-1B	haifa_comp	Haifa-Legacy terminal	tr_shocks	pre_all	-12	-2	-0.0555542346037089				76	38	38	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	post_all	1	24	-0.5744509110138522				74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	post_y1	1	12	-0.4710132395207979				74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	post_y2	13	24	-0.687292007188093				74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	baseline	pre_all	-12	-2	-0.6961037373436998				74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	post_all	1	24	-0.5744509110138543				74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	post_y1	1	12	-0.4710132395207976				74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	post_y2	13	24	-0.6872920071880977				74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	porttr	pre_all	-12	-2	-0.6961037373436971				74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	post_all	1	24	-0.5744509110138543				74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	post_y1	1	12	-0.4710132395207976				74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	post_y2	13	24	-0.6872920071880977				74	37	37	HC1	cluster_id	1.0
-1B	haifa_priv	Haifa-Legacy terminal	tr_shocks	pre_all	-12	-2	-0.6961037373436971				74	37	37	HC1	cluster_id	1.0
+model	reform	target	fe_type	spec_name	window_name	m_start	m_end	beta_hat	se	tvalue	pvalue	n_obs	treated_n	control_n	cov_type	cluster_by	r2
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	post_all	1	24	0.5106471517361799				76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	post_y1	1	12	0.2108423329585363				76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	post_y2	13	24	0.8104519705138236				76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	pre_all	-12	-2	-0.0427153282152008				76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	baseline	baseline	did_post	1	24	0.5542310706490016	0.0751114326445986	7.378784442462067	1.597412118986566e-13	76	38	38	HC1		0.983412762545775
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	post_all	1	24	0.5106471517361841				76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	post_y1	1	12	0.2108423329585399				76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	post_y2	13	24	0.8104519705138284				76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	pre_all	-12	-2	-0.0427153282151958				76	38	38	HC1		1.0
+1B	haifa_comp	Haifa-Legacy K/L	porttr	porttr	did_post	1	24	0.5542310706490012	0.0751114326445985	7.378784442462067	1.597412118986566e-13	76	38	38	HC1		0.983412762545775
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	post_all	1	23	-0.5734731543028523				74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	post_y1	1	12	-0.4703775922801489				74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	post_y2	13	23	-0.6859410401458015				74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	pre_all	-12	-2	-0.6794761792058679				74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	baseline	baseline	did_post	1	23	0.0665064838798067	0.1114593131736685	0.5966884416036256	0.5507154109447774	74	37	37	HC1		0.9821415490639352
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	post_all	1	23	-0.5734731543028544				74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	post_y1	1	12	-0.4703775922801487				74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	post_y2	13	23	-0.6859410401458059				74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	pre_all	-12	-2	-0.6794761792058654				74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Legacy K/L	porttr	porttr	did_post	1	23	0.0665064838798017	0.1114593131736693	0.5966884416035767	0.55071541094481	74	37	37	HC1		0.9821415490639352
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	post_all	1	24	1.417820710209542				72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	post_y1	1	12	1.5809982605317645				72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	post_y2	13	24	1.2546431598873191				72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	pre_all	-9	-2	-2.1045892627023512				72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	baseline	baseline	did_post	1	24	3.0533875103284203	0.4547733803998539	6.7140858324727954	1.8924889223835215e-11	72	34	38	HC1		0.926470025901996
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	post_all	1	24	1.417820710209543				72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	post_y1	1	12	1.580998260531767				72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	post_y2	13	24	1.2546431598873191				72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	pre_all	-9	-2	-2.104589262702352				72	34	38	HC1		1.0
+1B	haifa_comp	Haifa-Bayport K/L (SIPG central)	porttr	porttr	did_post	1	24	3.0533875103284185	0.4547733803998539	6.714085832472792	1.89248892238357e-11	72	34	38	HC1		0.926470025901996
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	post_all	1	23	0.5429213012440524				74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	post_y1	1	12	0.4506366416956341				74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	post_y2	13	23	0.6435954752968722				74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	pre_all	-12	-2	0.5508613322193348				74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	baseline	baseline	did_post	1	23	0.0226160130720774	0.090797186040546	0.2490827530930101	0.803296770139245	74	37	37	HC1		0.8109477985464341
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	post_all	1	23	0.5429213012440505				74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	post_y1	1	12	0.4506366416956343				74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	post_y2	13	23	0.6435954752968681				74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	pre_all	-12	-2	0.5508613322193314				74	37	37	HC1		1.0
+1B	haifa_priv	Haifa-Bayport K/L (SIPG central)	porttr	porttr	did_post	1	23	0.0226160130720799	0.0907971860405461	0.2490827530930375	0.8032967701392238	74	37	37	HC1		0.810947798546434

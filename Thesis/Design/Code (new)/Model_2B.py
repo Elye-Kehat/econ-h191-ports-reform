@@ -1,154 +1,199 @@
+#!/usr/bin/env python3
+"""
+Model_2B.py
+
+Port/cluster-level regressions of ln(LP) on ln(K/L),
+with separate specifications for each depreciation scenario (low/central/high).
+
+If the input panel does NOT contain a 'dep_scenario' column, we assume
+everything is the central depreciation case and set dep_scenario = 'central'.
+
+Input:
+    - Design/Output (new)/Model_2B/model2b_port_panel.tsv
+
+Output:
+    - Design/Output (new)/Model_2B/model2b_reg_results.tsv
+"""
+
+import argparse
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
-import statsmodels.api as sm
-from pathlib import Path
+import statsmodels.formula.api as smf
 
 
-# -----------------------------------------------------------------------------
-# Configuration
-# -----------------------------------------------------------------------------
-
-# Root of the thesis repository (adjust parents[...] if your folder depth differs)
-THESIS_ROOT = Path(__file__).resolve().parents[2]
-
-# Input data paths
-LP_PANEL_MONTHLY_PATH = THESIS_ROOT / "Data" / "LP" / "LP_Panel_monthly.tsv"
-KL_PANEL_MONTHLY_PATH = THESIS_ROOT / "Data" / "KL" / "KL_Panel_monthly.tsv"
-
-# Output directory
-OUT_DIR = THESIS_ROOT / "Design" / "Output (new)" / "Model_2B"
-
-# Series identifiers (must match LP_Panel_monthly.tsv and KL_Panel_monthly.tsv)
-LP_SERIES_ID = "Haifa_port_M"              # port-level monthly LP
-KL_SERIES_ID = "Haifa_port_KL_cluster"     # port-level K/L based on HPC+IPC cluster K
-
-# HAC lags for monthly data
-HAC_LAGS_M = 6
+def find_thesis_root(start: Path | None = None) -> Path:
+    here = start or Path(__file__).resolve()
+    for p in [here] + list(here.parents):
+        if (p / "Data").exists() and (p / "Design").exists():
+            return p
+    raise RuntimeError("Could not find thesis root (no Data/ and Design/ siblings found).")
 
 
-# -----------------------------------------------------------------------------
-# Helper functions
-# -----------------------------------------------------------------------------
+def load_port_panel(panel_path: Path) -> pd.DataFrame:
+    print(f"[Model 2B] Loading port/cluster panel from: {panel_path}")
+    df = pd.read_csv(panel_path, sep="\t")
 
-def ensure_outdir(path: Path) -> None:
-    """Create output directory if it does not exist."""
-    path.mkdir(parents=True, exist_ok=True)
+    # If dep_scenario is missing, assume everything is central for now.
+    if "dep_scenario" not in df.columns:
+        print("[Model 2B] WARNING: 'dep_scenario' column not found. "
+              "Assuming all observations are central depreciation (dep_scenario = 'central').")
+        df["dep_scenario"] = "central"
 
+    required_cols = ["log_LP", "log_KL", "dep_scenario"]
+    for col in required_cols:
+        if col not in df.columns:
+            raise ValueError(f"[Model 2B] Expected column '{col}' in panel, but it is missing.")
 
-def build_monthly_panel() -> pd.DataFrame:
-    """
-    Build the monthly Haifa-port panel for Model 2B.
+    # Identify time index
+    if "t_index" in df.columns:
+        time_col = "t_index"
+    elif "month_index" in df.columns:
+        time_col = "month_index"
+    else:
+        raise ValueError(
+            "[Model 2B] Could not find a time index column "
+            "(looked for 't_index' or 'month_index')."
+        )
 
-    - Reads LP from LP_Panel_monthly.tsv (series_id == Haifa_port_M).
-    - Reads K/L from KL_Panel_monthly.tsv (series_id == Haifa_port_KL_cluster).
-    - Merges them on (year, month).
-    - Constructs a monthly time index t_index.
-    """
-    # Load monthly LP for Haifa port
-    lp = pd.read_csv(LP_PANEL_MONTHLY_PATH, sep="\t")
-    lp = lp.loc[lp["series_id"] == LP_SERIES_ID].copy()
+    df["t_index"] = df[time_col]
 
-    # Sort by calendar time
-    lp = lp.sort_values(["year", "month"])
-
-    # Construct log(LP) and drop rows with missing LP
-    lp["log_LP"] = np.log(lp["LP"])
-    lp = lp.loc[lp["log_LP"].notna()].copy()
-
-    # Load monthly K/L for Haifa port (cluster-based K)
-    kl_m = pd.read_csv(KL_PANEL_MONTHLY_PATH, sep="\t")
-    kl_m = kl_m.loc[kl_m["series_id"] == KL_SERIES_ID].copy()
-    kl_m = kl_m.sort_values(["year", "month"])
-
-    # Keep only necessary columns
-    kl_m_slim = kl_m[["year", "month", "KL", "log_KL"]].copy()
-
-    # Monthly merge: LP (Haifa_port_M) x KL (Haifa_port_KL_cluster)
-    df = lp.merge(kl_m_slim, on=["year", "month"], how="inner")
-
-    # Sort and build monthly time index
-    df = df.sort_values(["year", "month"]).reset_index(drop=True)
-    df["t_index"] = np.arange(len(df))
-
+    print(f"[Model 2B] Loaded {len(df):,} rows; time index column = '{time_col}'.")
+    print(f"[Model 2B] dep_scenario values: {sorted(df['dep_scenario'].unique())}")
     return df
 
 
-def run_regressions(df: pd.DataFrame) -> pd.DataFrame:
+def build_spec_configs() -> list[dict]:
     """
-    Run Model 2B regressions: log(LP_t) on log(K/L)_t (and trend).
+    Define time-series specs for Model 2B.
 
-    Specifications:
-    - baseline: log_LP ~ const + log_KL
-    - trend:    log_LP ~ const + log_KL + t_index
-
-    Uses HAC (Newey–West) standard errors with monthly lags.
-    Returns a tidy DataFrame of results.
+    Baseline here: ln(LP) on ln(K/L) + linear time trend over the full sample.
     """
-    specs = {
-        "baseline": ["log_KL"],
-        "trend": ["log_KL", "t_index"],
-    }
+    specs = []
 
-    results_rows = []
-
-    for spec_name, rhs_vars in specs.items():
-        X = df[rhs_vars].copy()
-        X = sm.add_constant(X)
-
-        y = df["log_LP"].copy()
-
-        model = sm.OLS(y, X)
-        res = model.fit(cov_type="HAC", cov_kwds={"maxlags": HAC_LAGS_M})
-
-        n_obs = int(res.nobs)
-        r2 = float(res.rsquared)
-        r2_adj = float(res.rsquared_adj)
-
-        # Extract statistics for log_KL
-        if "log_KL" in res.params.index:
-            coef_log_KL = float(res.params["log_KL"])
-            se_log_KL = float(res.bse["log_KL"])
-            t_log_KL = float(res.tvalues["log_KL"])
-            p_log_KL = float(res.pvalues["log_KL"])
-        else:
-            coef_log_KL = np.nan
-            se_log_KL = np.nan
-            t_log_KL = np.nan
-            p_log_KL = np.nan
-
-        results_rows.append(
-            {
-                "spec_name": spec_name,
-                "coef_log_KL": coef_log_KL,
-                "se_log_KL": se_log_KL,
-                "t_log_KL": t_log_KL,
-                "p_log_KL": p_log_KL,
-                "n_obs": n_obs,
-                "r2": r2,
-                "r2_adj": r2_adj,
-            }
+    specs.append(
+        dict(
+            spec_id="2B_ts_trend",
+            description="Cluster ln(LP) on ln(K/L) with linear time trend (full sample).",
+            sample_query=None,  # full sample
+            formula="log_LP ~ log_KL + t_index",
         )
+    )
 
-        print(f"[Model 2B] Finished spec '{spec_name}': n_obs={n_obs}, coef_log_KL={coef_log_KL:.3f}")
-
-    return pd.DataFrame(results_rows)
+    return specs
 
 
-def main() -> None:
-    ensure_outdir(OUT_DIR)
+def fit_one_spec(df: pd.DataFrame, formula: str) -> tuple:
+    """
+    Run OLS with HC1 SEs (TS with one or few series: clustering usually not helpful).
+    """
+    res = smf.ols(formula, data=df).fit(cov_type="HC1")
+    return res, len(df)
 
-    # Build monthly port panel and write it out
-    df_panel = build_monthly_panel()
-    panel_path = OUT_DIR / "model2b_port_panel.tsv"
-    df_panel.to_csv(panel_path, sep="\t", index=False)
-    print(f"[Model 2B] Wrote monthly port panel to: {panel_path} (n={len(df_panel)})")
 
-    # Run regressions and write results
-    df_results = run_regressions(df_panel)
-    results_path = OUT_DIR / "model2b_reg_results.tsv"
-    df_results.to_csv(results_path, sep="\t", index=False)
-    print(f"[Model 2B] Wrote regression results to: {results_path}")
+def run_model_2b(panel_path: Path, out_path: Path) -> None:
+    df = load_port_panel(panel_path)
+    specs = build_spec_configs()
+
+    # Auto-detect which depreciation scenarios exist in the data
+    scenarios = sorted(df["dep_scenario"].unique())
+    print(f"[Model 2B] Will run specs for dep_scenario values: {scenarios}")
+
+    rows = []
+
+    for scenario in scenarios:
+        df_s = df[df["dep_scenario"] == scenario].copy()
+        if df_s.empty:
+            print(f"[Model 2B] WARNING: no rows for dep_scenario == '{scenario}'. Skipping.")
+            continue
+
+        print(f"[Model 2B] Running specs for dep_scenario = '{scenario}' "
+              f"({df_s.shape[0]:,} obs).")
+
+        for spec in specs:
+            spec_id = spec["spec_id"]
+            formula = spec["formula"]
+            sample_query = spec.get("sample_query")
+
+            if sample_query:
+                df_spec = df_s.query(sample_query).copy()
+            else:
+                df_spec = df_s.copy()
+
+            if df_spec.empty:
+                print(f"[Model 2B]   Spec {spec_id}: empty sample after filtering. Skipping.")
+                continue
+
+            print(f"[Model 2B]   Spec {spec_id}: running OLS on {len(df_spec):,} rows.")
+            res, n_obs = fit_one_spec(df_spec, formula)
+
+            for param, beta in res.params.items():
+                se = res.bse.get(param, np.nan)
+                tval = res.tvalues.get(param, np.nan)
+                pval = res.pvalues.get(param, np.nan)
+
+                rows.append(
+                    dict(
+                        model="2B",
+                        spec_id=spec_id,
+                        dep_scenario=scenario,
+                        param=param,
+                        beta=beta,
+                        se=se,
+                        tvalue=tval,
+                        pvalue=pval,
+                        n_obs=n_obs,
+                        r2=res.rsquared,
+                        dep_var="log_LP",
+                        formula=formula,
+                        description=spec.get("description", ""),
+                    )
+                )
+
+    if not rows:
+        raise RuntimeError("[Model 2B] No regression results produced; check dep_scenario labels and spec filters.")
+
+    out_df = pd.DataFrame(rows)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_df.to_csv(out_path, sep="\t", index=False)
+    print(f"[Model 2B] Wrote tidy regression results to: {out_path}")
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Model 2B: port/cluster ln(LP) ~ ln(K/L) by depreciation scenario.")
+    parser.add_argument(
+        "--panel",
+        type=Path,
+        default=None,
+        help=("Path to model2b_port_panel.tsv (TSV, tab-separated). "
+              "If not provided, defaults to "
+              "ThesisRoot/Design/Output (new)/Model_2B/model2b_port_panel.tsv"),
+    )
+    parser.add_argument(
+        "--out",
+        type=Path,
+        default=None,
+        help=("Path for output TSV of regression results. "
+              "If not provided, defaults to "
+              "ThesisRoot/Design/Output (new)/Model_2B/model2b_reg_results.tsv"),
+    )
+    args = parser.parse_args()
+
+    thesis_root = find_thesis_root()
+    print(f"[Model 2B] Thesis root: {thesis_root}")
+
+    if args.panel is None:
+        panel_path = thesis_root / "Design" / "Output (new)" / "Model_2B" / "model2b_port_panel.tsv"
+    else:
+        panel_path = args.panel
+
+    if args.out is None:
+        out_path = thesis_root / "Design" / "Output (new)" / "Model_2B" / "model2b_reg_results.tsv"
+    else:
+        out_path = args.out
+
+    run_model_2b(panel_path, out_path)
 
 
 if __name__ == "__main__":

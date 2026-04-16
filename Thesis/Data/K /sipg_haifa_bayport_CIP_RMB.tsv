@@ -1,8 +1,0 @@
-year	project_group	project_name_en	budget_rmb	cip_opening_rmb	cip_additions_rmb	cip_transfers_to_ppe_rmb	cip_other_decreases_rmb	cip_closing_rmb	cip_progress_pct	cip_cumul_capitalized_interest_rmb	cip_current_capitalized_interest_rmb	cip_interest_capitalization_rate_pct	funding_source_en	comment
-2018	Bayport main terminal	Haifa Bayport port engineering project	4980000000	634432.83	24884690.11	0	0	25519122.94	0.50				Self-financed	CIP – Bayport main civil works before major ramp-up; figures from 2018 AR 在建工程 table (Haifa Bayport row).
-2019	Bayport main terminal	Haifa Bayport port engineering project									Placeholder row – Bayport CIP row from 2019 AR was not extracted in this chat.
-2020	Bayport main terminal	Haifa Bayport port engineering project							2143511161.59					CIP closing balance only (net book value) from 2020 AR 在建工程情况 table; detailed flows not extracted.
-2021	Bayport main terminal	Haifa Bayport port engineering project	4977300000	2143511161.59	1291560440.67	2677229547.18	11984163.14	745857891.94	69.01	41132928.50	33766456.92	2.79	Loans/self-financed	Year main project is largely transferred from CIP to PPE; figures from 2021 AR 在建工程 (重要在建工程项目本期变动情况 + 在建工程情况).
-2022	Bayport main terminal	Haifa Bayport port engineering project									No Bayport-specific CIP line was extracted from the 2022 AR in this chat.
-2023	Bayport main terminal	Haifa Bayport port engineering project									No Bayport-specific CIP line was extracted from the 2023 AR in this chat.
-2024	Bayport ancillary systems	Bayport rail area fire-cannon system project	28000000	0	20475543.11	0	0	20475543.11	73.13				Self-financed	Ancillary Bayport CIP project (fire-cannon system in rail area); figures from 2024 AR 在建工程 – 重要在建工程项目本期变动情况.

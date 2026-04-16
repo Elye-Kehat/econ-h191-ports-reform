@@ -1,0 +1,9 @@
+entity	year	component_type	value	source_rule	record_id	source_group	metric	asset_class_std	project_name	event_month	component_subtype
+HPC	2018	ignored_proxy_event		proxy-only or not-yet-in-service event excluded	HPC_EVT_004	HPC_BIG_PROJECTS	event_amount_nominal	cranes	5 STS cranes (Kishon) + Modify 4 yard cranes		addition
+HPC	2020	ignored_proxy_event		proxy-only or not-yet-in-service event excluded	HPC_EVT_001	HPC_BIG_PROJECTS	event_amount_nominal	mixed_terminal_infrastructure	Reactivation of Kishon East general-cargo terminal	2020-11	addition
+HPC	2020	ignored_proxy_event	180000.0	proxy-only or not-yet-in-service event excluded	HPC_EVT_006	HPC_BIG_PROJECTS	event_amount_nominal	marine_assets_disposal	Transfer of Marine Dept to IPC	2020-11	disposal
+HPC	2021	ignored_proxy_event	30000.0	proxy-only or not-yet-in-service event excluded	HPC_EVT_002	HPC_BIG_PROJECTS	event_amount_nominal	berth_infrastructure	Structural rehabilitation of Kishon West pier	2021-03	addition
+HPC	2022	excluded_event	8800.0	include_in_k != yes	HPC_EVT_005	HPC_BIG_PROJECTS	event_amount_nominal	leased_operating_equipment	Temporary cruise terminal (structural issues)	2022-04	excluded
+HPC	2023	ignored_proxy_event	36600.0	proxy-only or not-yet-in-service event excluded	HPC_EVT_003	HPC_BIG_PROJECTS	event_amount_nominal	mobile_cranes_heavy_equipment	Mobile crane & heavy equipment procurement		addition
+HPC	2023	ignored_proxy_event	100000.0	proxy-only or not-yet-in-service event excluded	HPC_EVT_011	HPC_BIG_PROJECTS	event_amount_nominal	cranes	Five new general cargo cranes	2023-09	addition
+HPC	2024	ignored_proxy_event	150000.0	proxy-only or not-yet-in-service event excluded	HPC_EVT_007	HPC_BIG_PROJECTS	event_amount_nominal	mixed_relocation_assets	Waterfront redevelopment: land swap & new port infrastructure	2024-07	addition

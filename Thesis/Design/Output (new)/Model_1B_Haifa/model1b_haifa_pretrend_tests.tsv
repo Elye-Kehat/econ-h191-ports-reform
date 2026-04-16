@@ -1,0 +1,7 @@
+model	reform	target	spec_name	test_name	stat	pvalue	df_num	df_denom	cov_type	cluster_by	r2	max_post
+Model_1B_Haifa	haifa_comp	Haifa port cluster	ts_baseline	pre_all_eq_0	1.161595309561536	0.28872254002389064	1	34	HC1		0.3437275004169732	24
+Model_1B_Haifa	haifa_comp	Haifa port cluster	ts_trend	pre_all_eq_0	1.6775408539519923	0.204239657785342	1	33	HC1		0.35135567469061457	24
+Model_1B_Haifa	haifa_priv	Haifa port cluster	ts_baseline	pre_all_eq_0	0.1826287075584858	0.6739278542681494	1	19	HC1		0.20919009745184336	8
+Model_1B_Haifa	haifa_priv	Haifa port cluster	ts_trend	pre_all_eq_0	0.9657928670532413	0.33875754394936936	1	18	HC1		0.4778779919867624	8
+Model_1B_Haifa	haifa_priv_long	Haifa port cluster	ts_baseline	pre_all_eq_0	0.18860375773469865	0.6669076991160547	1	33	HC1		0.6625332688108422	23
+Model_1B_Haifa	haifa_priv_long	Haifa port cluster	ts_trend	pre_all_eq_0	0.2966067597222048	0.5897930468432162	1	32	HC1		0.6691082658839309	23

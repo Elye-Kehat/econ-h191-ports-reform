@@ -1,22 +1,29 @@
 {
-  "description": "Path B monthly capital stock for Haifa Port Company (legacy), built from annual PIM (Track B) plus lumpy big projects and smooth background K, for all depreciation scenarios.",
+  "description": "Path B monthly K for Haifa Port Company (legacy): annual PIM anchors + lumpy projects + residual background interpolation.",
   "inputs": {
     "annual_pim_file": "01_K_B_annual_Haifa_PIM.tsv",
-    "monthly_pim_lin_file": "02_K_B_monthly_Haifa_PIM_lin.tsv",
+    "monthly_skeleton_file": "02_K_B_monthly_Haifa_PIM_lin.tsv",
     "big_projects_file": "Haifa_big_projects.csv",
-    "step1_real_file": "00_haifa_financials_step1_real.tsv"
+    "step1_real_file_used_if_needed": "00_haifa_financials_step1_real.tsv"
   },
   "outputs": {
     "pathB_monthly_file": "03_K_B_monthly_Haifa_PathB.tsv",
-    "pathB_monthly_sample_file": "03_K_B_monthly_Haifa_PathB_sample.csv",
-    "pathB_QA_file": "03_K_B_PathB_QA.tsv"
+    "pathB_sample_file": "03_K_B_monthly_Haifa_PathB_sample.csv",
+    "annual_QA_file": "03_K_B_PathB_QA.tsv",
+    "project_QA_file": "03_PathB_projects_QA.tsv"
   },
-  "port": "Haifa",
-  "company": "Haifa Port Company (legacy)",
-  "operator_or_owner": "Haifa Port Company (legacy)",
   "defaults": {
     "default_asset_life_years": 28.0,
-    "per_project_depreciation_rule": "delta_annual = 1 / asset_life_years; monthly delta from geometric equivalence",
-    "background_interpolation": "log-linear between annual K_bg_y^s at December year-ends for each scenario s"
+    "include_event_types": [
+      "addition",
+      "addition_and_upgrade"
+    ],
+    "exclude_event_types": [
+      "disposal",
+      "operating_project_not_ppe"
+    ],
+    "exclude_post_sample_projects": true,
+    "big_project_depreciation": "per-project delta_annual = 1/life_years (life parsed); monthly delta via geometric equivalence",
+    "background_interpolation": "log-linear between December anchors for each scenario"
   }
 }
