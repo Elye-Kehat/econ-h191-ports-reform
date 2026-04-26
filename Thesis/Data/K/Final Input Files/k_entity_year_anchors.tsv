@@ -1,0 +1,22 @@
+entity	year	K_anchor_dec_kNIS	I_annual_total_kNIS	explicit_service_entry_annual_kNIS	disposals_annual_kNIS	dep_expense_annual_kNIS	wip_eoy_kNIS	anchor_basis	include_in_preferred_spec	source_id	notes
+HPC	2018	1163539.0	30896.0		1759.0	67012.0		net_ppe	1	THESIS_2026_SUMMARY	Operating PPE anchor
+HPC	2019	1010641.0	25025.0		1688.0	67739.0	4486.0	net_ppe	1	THESIS_2026_SUMMARY	Operating PPE anchor
+HPC	2020	987773.0	49285.0		497.0	70474.0	16070.0	net_ppe	1	THESIS_2026_SUMMARY	Operating PPE anchor
+HPC	2021	998346.0	75222.0		0.0	72280.0	37381.0	net_ppe	1	THESIS_2026_SUMMARY	Operating PPE anchor
+HPC	2022	1006064.0						net_ppe	1	THESIS_2026_SUMMARY	Operating PPE anchor
+HPC	2023	1044165.0	95529.0			68663.0		net_ppe	1	THESIS_2026_SUMMARY	Operating PPE anchor
+HPC	2024	966652.0	61123.0			63266.0		net_ppe	1	THESIS_2026_SUMMARY	Operating PPE anchor
+IPC	2018	11516612.0	1652370.0	53099.0	0.0	209632.0	7286219.0	net_ppe	1	IPC_RAW_TABLE1	IPC total anchor from Note 8 / summary
+IPC	2019	12513932.0	1057256.0	193657.0	1923.0	224640.0	8198777.0	net_ppe	1	IPC_RAW_TABLE1	IPC total anchor from Note 8 / summary
+IPC	2020	12866069.0	561379.0	18232.0	4497.0	225217.0	8588793.0	net_ppe	1	IPC_RAW_TABLE1	IPC total anchor from Note 8 / summary
+IPC	2021	13209796.0	577601.0		0.0			net_ppe	1	IPC_RAW_TABLE1	IPC total anchor from Note 8 / summary
+IPC	2022	13143607.0	463410.0		13260.0	521974.0	375322.0	net_ppe	1	IPC_RAW_TABLE1	IPC total anchor from Note 8 / summary
+IPC	2023	13105194.0	496739.0	92495.0	22630.0	530952.0	676342.0	net_ppe	1	IPC_RAW_TABLE1	IPC total anchor from Note 8 / summary
+IPC	2024	12829411.0	264230.0	76066.0	5462.0	535800.0	837899.0	net_ppe	1	IPC_RAW_TABLE1	IPC total anchor from Note 8 / summary
+SIPG	2018	0.0	13528.0	0.0	0.0		13873.0	cumulative_transfers	1	THESIS_2026_SUMMARY	Bayport productive K rough anchor
+SIPG	2019	0.0			0.0			cumulative_transfers	1	SIPG	Bayport productive K rough anchor
+SIPG	2020	0.0	538626.0	4482.0	0.0		1067713.0	cumulative_transfers	1	THESIS_2026_SUMMARY	Bayport productive K rough anchor
+SIPG	2021	1344111.0	663166.0	1339629.0	0.0		373212.0	cumulative_transfers	1	THESIS_2026_SUMMARY	Bayport productive K rough anchor
+SIPG	2022	1813915.0	133488.0	469804.0	0.0		0.0	cumulative_transfers	1	THESIS_2026_SUMMARY	Bayport productive K rough anchor
+SIPG	2023				0.0			cumulative_transfers	1	SIPG	Bayport productive K rough anchor
+SIPG	2024	1813915.0	10518.0	0.0	0.0		10518.0	cumulative_transfers	1	THESIS_2026_SUMMARY	Bayport productive K rough anchor

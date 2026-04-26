@@ -1,0 +1,28 @@
+entity	year	pool_type	asset_class_std	annual_amount_kNIS	dep_rate_annual_used	dep_rate_monthly_used	source_rule	weight_basis_kNIS
+HPC	2018	background	mixed	0.0	0.09414433931694423	0.008205755847094931	entity_year_weighted_average	30896.000001
+HPC	2019	background	mixed	0.0	0.09494823065440372	0.008279132077057993	entity_year_weighted_average	25025.0
+HPC	2020	background	mixed	0.0	0.10494472594464471	0.009196600517260345	entity_year_weighted_average	49285.0
+HPC	2021	background	mixed	0.0	0.11282054452082761	0.00992607472839413	entity_year_weighted_average	16742.659734999997
+HPC	2023	background	mixed	0.0	0.04989088721123066	0.0042557888066017124	entity_year_weighted_average	88947.62934099999
+HPC	2024	background	mixed	3391.0	0.07243710436350158	0.006246631068297037	entity_year_weighted_average	54135.002339
+IPC	2018	background	mixed	1517370.0	0.0273972602739726	0.002312286213654202	entity_year_weighted_average	135000.0
+IPC	2019	background	mixed	1055811.0	0.061074275050403456	0.00523780984113309	entity_year_weighted_average	1445.0
+IPC	2020	background	mixed	389575.0	0.02763790651815093	0.0023328596213619823	entity_year_weighted_average	171804.0
+IPC	2021	background	mixed	577601.0	0.03391914522752629	0.00287151493148452	entity_wide_weighted_average	738156.0
+IPC	2022	background	mixed	163334.0	0.03099102095561609	0.0026200118317576404	entity_year_weighted_average	300076.0
+IPC	2023	background	mixed	393515.0	0.06014220916459764	0.005155556058063837	entity_year_weighted_average	103224.0
+IPC	2024	background	mixed	237623.0	0.0373831775700934	0.0031699522442415473	entity_year_weighted_average	26607.0
+SIPG	2018	background	unknown_bayport_class	0.0	0.0873166666666666	0.0075849463761465	direct_lookup_fallback	
+SIPG	2018	service_entry_undated	unknown_bayport_class	0.0	0.0873166666666666	0.0075849463761465	direct_lookup_fallback	
+SIPG	2019	background	unknown_bayport_class	0.0	0.0873166666666666	0.0075849463761465	direct_lookup_fallback	
+SIPG	2019	service_entry_undated	unknown_bayport_class	0.0	0.0873166666666666	0.0075849463761465	direct_lookup_fallback	
+SIPG	2020	background	unknown_bayport_class	0.0	0.0873166666666666	0.0075849463761465	direct_lookup_fallback	
+SIPG	2020	service_entry_undated	unknown_bayport_class	4482.0	0.0873166666666666	0.0075849463761465	direct_lookup_fallback	
+SIPG	2021	background	unknown_bayport_class	0.0	0.0873166666666666	0.0075849463761465	direct_lookup_fallback	
+SIPG	2021	service_entry_undated	unknown_bayport_class	1339629.0	0.0873166666666666	0.0075849463761465	direct_lookup_fallback	
+SIPG	2022	background	unknown_bayport_class	0.0	0.0873166666666666	0.0075849463761465	direct_lookup_fallback	
+SIPG	2022	service_entry_undated	unknown_bayport_class	469804.0	0.0873166666666666	0.0075849463761465	direct_lookup_fallback	
+SIPG	2023	background	unknown_bayport_class	0.0	0.0873166666666666	0.0075849463761465	direct_lookup_fallback	
+SIPG	2023	service_entry_undated	unknown_bayport_class	0.0	0.0873166666666666	0.0075849463761465	direct_lookup_fallback	
+SIPG	2024	background	unknown_bayport_class	0.0	0.0873166666666666	0.0075849463761465	direct_lookup_fallback	
+SIPG	2024	service_entry_undated	unknown_bayport_class	0.0	0.0873166666666666	0.0075849463761465	direct_lookup_fallback	

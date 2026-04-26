@@ -1,0 +1,10 @@
+{
+  "input_dir": "Data/K /k_input_package_patched",
+  "output_dir": "Data/K /k_input_package_final_v2",
+  "fixes_applied": [
+    "exclude_problematic_hpc_events",
+    "scale_hpc_pools_to_authoritative_annual_totals",
+    "add_ipc_mixed_fallback_dep_row",
+    "add_missing_ipc_and_sipg_background_rows"
+  ]
+}

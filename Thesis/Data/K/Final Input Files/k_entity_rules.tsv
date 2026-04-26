@@ -1,0 +1,4 @@
+entity	entity_label	port	is_operator	is_landlord	opening_month	pre_opening_zero_rule	allow_empty_dated_events	dep_fallback_method	default_share_rule	notes
+HPC	Haifa Port Company Legacy	Haifa	1	0		0	0	average_across_categories	uniform	Legacy terminal
+IPC	Israel Ports Company Haifa Infrastructure	Haifa	0	1		0	0	average_across_categories	backloaded	Landlord infrastructure
+SIPG	Bayport SIPG	Haifa	1	0	2021-09	1	1	average_across_categories	post_opening_only	Annual-only Bayport detail

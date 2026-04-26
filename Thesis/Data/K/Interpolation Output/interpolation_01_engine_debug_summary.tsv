@@ -1,0 +1,11 @@
+metric	value	notes
+monthly_flow_rows_final	888	Rows in the final monthly class investment ledger after smooth bridge adjustments
+monthly_capital_rows	900	Rows in the final monthly class capital ledger
+reconciliation_rows	21	Entity-year December anchor diagnostics rows
+initial_background_rows	2	Entities with a backsolved initial background stock
+project_milestone_rows	1	Non-additive milestone rows passed through from Step 00
+bridge_adjustment_rows	144	Monthly bridge-adjustment rows added to the background margin
+materially_negative_initial_background_count	0	Count of entities with materially negative initial background stock
+rows_using_share_schedule_fallback	72	Monthly flow rows allocated with nearest-year or uniform fallback share rules
+soft_anchor_diagnostic_rows	5	Entity-year December rows where a diagnostic-only anchor was available but not enforced
+bridged_hard_anchor_rows	12	Hard-anchor years reached via smooth within-block bridge adjustments instead of a December stock plug

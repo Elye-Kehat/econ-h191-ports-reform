@@ -1,0 +1,22 @@
+entity	year	anchor_observed_flag	observed_stock_anchor_kNIS	post_reconciliation_dec_stock_kNIS	status	final_dec_stock_kNIS	diff_kNIS	within_tolerance_flag
+HPC	2018	True	1163539.0	1163539.0	initial_backsolve_anchor	1163539.0	0.0	True
+HPC	2019	True	1010641.0	1010622.9979352084	bridged_to_anchor	1010622.9979352084	0.0	True
+HPC	2020	True	987773.0	987861.4905354694	bridged_to_anchor	987861.4905354694	0.0	True
+HPC	2021	True	998346.0	998894.4404558504	bridged_to_anchor	998894.4404558504	0.0	True
+HPC	2022	True	1006064.0	1006700.087987017	bridged_to_anchor	1006700.087987017	0.0	True
+HPC	2023	True	1044165.0	1043522.4698601488	bridged_to_anchor	1043522.4698601488	0.0	True
+HPC	2024	True	966652.0	966924.8623706296	bridged_to_anchor	966924.8623706296	0.0	True
+IPC	2018	True	11516612.0	11516612.0	initial_backsolve_anchor	11516612.0	0.0	True
+IPC	2019	True	12513932.0	12516770.245854257	bridged_to_anchor	12516770.245854257	0.0	True
+IPC	2020	True	12866069.0	12866079.200619075	bridged_to_anchor	12866079.200619075	0.0	True
+IPC	2021	True	13209796.0	13210048.752918135	bridged_to_anchor	13210048.752918135	0.0	True
+IPC	2022	True	13143607.0	13143422.898023238	bridged_to_anchor	13143422.898023238	0.0	True
+IPC	2023	True	13105194.0	13103437.072292086	bridged_to_anchor	13103437.072292086	0.0	True
+IPC	2024	True	12829411.0	12828869.484916251	bridged_to_anchor	12828869.484916251	0.0	True
+SIPG	2018	True	0.0	0.0	soft_anchor_diagnostic_only	0.0	0.0	True
+SIPG	2019	True	0.0	0.0	soft_anchor_diagnostic_only	0.0	0.0	True
+SIPG	2020	True	4482.0	4482.0	soft_anchor_diagnostic_only	4482.0	0.0	True
+SIPG	2021	True	1344111.0	1333597.1094869685	soft_anchor_diagnostic_only	1333597.1094869685	0.0	True
+SIPG	2022	True	1813915.0	1674134.327762938	soft_anchor_diagnostic_only	1674134.327762938	0.0	True
+SIPG	2023	False		1527954.4987104386	propagated_no_anchor	1527954.4987104386	0.0	True
+SIPG	2024	False		1394538.6050647062	propagated_no_anchor	1394538.6050647062	0.0	True

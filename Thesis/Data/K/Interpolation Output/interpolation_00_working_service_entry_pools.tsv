@@ -1,0 +1,8 @@
+entity	year	asset_class_std	pool_type	annual_amount_kNIS	include_in_productive_K	allocation_priority	source_id	notes
+SIPG	2018	unknown_bayport_class	service_entry_undated	0.0	True	2	SIPG_DERIVED_SERVICE_ENTRY_V5	Derived from SIPG transfer-to-PPE / service-entry anchor information; productive annual total is defined by transfers to PPE in v5
+SIPG	2019	unknown_bayport_class	service_entry_undated	0.0	True	2	SIPG_DERIVED_SERVICE_ENTRY_V5	Derived from SIPG transfer-to-PPE / service-entry anchor information; productive annual total is defined by transfers to PPE in v5
+SIPG	2020	unknown_bayport_class	service_entry_undated	4482.0	True	2	SIPG_DERIVED_SERVICE_ENTRY_V5	Derived from SIPG transfer-to-PPE / service-entry anchor information; productive annual total is defined by transfers to PPE in v5
+SIPG	2021	unknown_bayport_class	service_entry_undated	1339629.0	True	2	SIPG_DERIVED_SERVICE_ENTRY_V5	Derived from SIPG transfer-to-PPE / service-entry anchor information; productive annual total is defined by transfers to PPE in v5
+SIPG	2022	unknown_bayport_class	service_entry_undated	469804.0	True	2	SIPG_DERIVED_SERVICE_ENTRY_V5	Derived from SIPG transfer-to-PPE / service-entry anchor information; productive annual total is defined by transfers to PPE in v5
+SIPG	2023	unknown_bayport_class	service_entry_undated	0.0	True	2	SIPG_DERIVED_SERVICE_ENTRY_V5	Derived from SIPG transfer-to-PPE / service-entry anchor information; productive annual total is defined by transfers to PPE in v5
+SIPG	2024	unknown_bayport_class	service_entry_undated	0.0	True	2	SIPG_DERIVED_SERVICE_ENTRY_V5	Derived from SIPG transfer-to-PPE / service-entry anchor information; productive annual total is defined by transfers to PPE in v5

@@ -1,0 +1,57 @@
+entity	year	asset_class_std	pool_type	annual_amount_kNIS	include_in_productive_K	allocation_priority	source_id	notes
+HPC	2018	mixed	background	0.0	1	3	HPC_BG_RESIDUAL	Residual after mapped undated pools
+HPC	2018	equipment	mapped_undated	15342.556203	1	1	HPC_2019_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total | proportionally rescaled to annual authoritative total
+HPC	2018	infrastructure_buildings	mapped_undated	11977.061056	1	1	HPC_2019_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total | proportionally rescaled to annual authoritative total
+HPC	2018	spare_parts	mapped_undated	3576.382742	1	1	HPC_2019_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total | proportionally rescaled to annual authoritative total
+HPC	2019	mixed	background	0.0	1	3	HPC_BG_RESIDUAL	Residual after mapped undated pools
+HPC	2019	equipment	mapped_undated	10573.806655	1	1	HPC_2019_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2019	infrastructure_buildings	mapped_undated	9422.069113	1	1	HPC_2019_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2019	spare_parts	mapped_undated	5029.124232	1	1	HPC_2019_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2020	mixed	background	0.0	1	3	HPC_BG_RESIDUAL	Residual after mapped undated pools
+HPC	2020	equipment	mapped_undated	33648.0	1	1	HPC_2020_AR	From class-level ppe rollforward
+HPC	2020	infrastructure_buildings	mapped_undated	11722.0	1	1	HPC_2020_AR	From class-level ppe rollforward
+HPC	2020	spare_parts	mapped_undated	3915.0	1	1	HPC_2020_AR	From class-level ppe rollforward
+HPC	2021	mixed	background	0.0	1	3	HPC_BG_RESIDUAL	Residual after mapped undated pools
+HPC	2021	right_of_use_assets	lease_addition	58479.340265	1	2	HPC_2021_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2021	equipment	mapped_undated	14127.829412	1	1	HPC_2021_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2021	infrastructure_buildings	mapped_undated	2152.983803	1	1	HPC_2021_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2021	spare_parts	mapped_undated	461.84652	1	1	HPC_2021_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2023	mixed	background	0.0	1	3	HPC_BG_RESIDUAL	Residual after mapped undated pools
+HPC	2023	right_of_use_assets	lease_addition	6581.370659	1	2	HPC_2024_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2023	cranes	mapped_undated	54465.007337	1	1	HPC_2024_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2023	infrastructure_buildings	mapped_undated	19986.108354	1	1	HPC_2024_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2023	other_operational_equipment	mapped_undated	11868.991465	1	1	HPC_2024_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2023	spare_parts	mapped_undated	2627.522185	1	1	HPC_2024_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2024	mixed	background	3391.0	1	3	HPC_BG_RESIDUAL	Residual after mapped undated pools
+HPC	2024	right_of_use_assets	lease_addition	3596.997661	1	2	HPC_2024_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2024	cranes	mapped_undated	14532.39566	1	1	HPC_2024_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2024	infrastructure_buildings	mapped_undated	19393.406055	1	1	HPC_2024_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2024	other_operational_equipment	mapped_undated	16630.956861	1	1	HPC_2024_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2024	spare_parts	mapped_undated	3578.243763	1	1	HPC_2024_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+IPC	2018	mixed	background	1517370.0	1	3	IPC_BG_RESIDUAL	Residual after class-observed pools
+IPC	2018	land	mapped_undated	135000.0	1	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2019	mixed	background	1055811.0	1	3	IPC_BG_RESIDUAL	Residual after class-observed pools
+IPC	2019	buildings_landside	mapped_undated	892.0	1	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2019	vessels_equipment_it	mapped_undated	553.0	1	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2020	mixed	background	389575.0	1	3	IPC_BG_RESIDUAL	Residual after class-observed pools
+IPC	2020	buildings_landside	mapped_undated	19.0	1	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2020	land	mapped_undated	170766.0	1	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2020	vessels_equipment_it	mapped_undated	1019.0	1	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2022	mixed	background	163334.0	1	3	IPC_BG_RESIDUAL	Residual after class-observed pools
+IPC	2022	buildings_landside	mapped_undated	1113.0	1	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2022	land	mapped_undated	225146.0	1	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2022	maritime_infrastructure	mapped_undated	63556.0	1	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2022	vessels_equipment_it	mapped_undated	10261.0	1	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2023	mixed	background	393515.0	1	3	IPC_BG_RESIDUAL	Residual after class-observed pools
+IPC	2023	buildings_landside	mapped_undated	2383.0	1	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2023	land	mapped_undated	224.0	1	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2023	maritime_infrastructure	mapped_undated	23886.0	1	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2023	vessels_equipment_it	mapped_undated	76731.0	1	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2024	mixed	background	237623.0	1	3	IPC_BG_RESIDUAL	Residual after class-observed pools
+IPC	2024	maritime_infrastructure	mapped_undated	26607.0	1	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2021	mixed	background	577601.000000	1	3	IPC_BACKGROUND_GENERATED_V2	Generated background residual row to reconcile known annual total
+SIPG	2021	unknown_bayport_class	background	663166.0	1	3	SIPG_BG_ANNUAL	Annual Bayport investment with missing class timing
+SIPG	2022	unknown_bayport_class	background	133488.0	1	3	SIPG_BG_ANNUAL	Annual Bayport investment with missing class timing
+SIPG	2024	unknown_bayport_class	background	10518.0	1	3	SIPG_BG_ANNUAL	Annual Bayport investment with missing class timing
+SIPG	2018	unknown_bayport_class	background	13528.000000	1	3	SIPG_BACKGROUND_GENERATED_V2	Generated background residual row to reconcile known annual total
+SIPG	2020	unknown_bayport_class	background	538626.000000	1	3	SIPG_BACKGROUND_GENERATED_V2	Generated background residual row to reconcile known annual total

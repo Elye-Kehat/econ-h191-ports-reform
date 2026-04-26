@@ -1,0 +1,31 @@
+{
+  "sample_start": "2018-01",
+  "sample_end": "2024-12",
+  "prepared_dir": "Data/K/Interpolation Output",
+  "output_dir": "Data/K/Interpolation Output",
+  "rows": {
+    "class_capital_rows": 900,
+    "entity_month_rows": 336,
+    "qc_checks": 5,
+    "annual_flow_detail_rows": 21,
+    "anchor_fit_detail_rows": 21
+  },
+  "final_entities": [
+    "HPC",
+    "IPC",
+    "SIPG",
+    "HAIFA_TOTAL"
+  ],
+  "visualizations": [
+    "interpolation_02_plot_hpc.png",
+    "interpolation_02_plot_ipc.png",
+    "interpolation_02_plot_sipg.png",
+    "interpolation_02_plot_haifa_total.png",
+    "interpolation_02_plot_all_series.png"
+  ],
+  "qc_design_notes": {
+    "annual_flow_identity_prefers_baseline_step01_monthly_flows_when_available": true,
+    "anchor_fit_uses_step01_bridge_diagnostics_table": true,
+    "final_entity_month_grid_is_completed_and_zero_filled": true
+  }
+}

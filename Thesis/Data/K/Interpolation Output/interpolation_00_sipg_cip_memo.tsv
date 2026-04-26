@@ -1,0 +1,8 @@
+entity	year	cip_additions_raw_kNIS	productive_transfers_to_ppe_kNIS	rebuilt_cumulative_transfers_kNIS	productive_stock_anchor_used_kNIS	productive_stock_anchor_policy
+SIPG	2018	13528.0	0.0	0.0	0.0	sipg_zero_cumulative_transfers_anchor
+SIPG	2019		0.0	0.0	0.0	sipg_zero_cumulative_transfers_anchor
+SIPG	2020	538626.0	4482.0	4482.0	4482.0	sipg_cumulative_transfers_service_year_anchor
+SIPG	2021	663166.0	1339629.0	1344111.0	1344111.0	sipg_cumulative_transfers_service_year_anchor
+SIPG	2022	133488.0	469804.0	1813915.0	1813915.0	sipg_cumulative_transfers_service_year_anchor
+SIPG	2023		0.0	1813915.0		sipg_flat_cumulative_transfers_unanchored
+SIPG	2024	10518.0	0.0	1813915.0		sipg_flat_cumulative_transfers_unanchored

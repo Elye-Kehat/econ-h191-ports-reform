@@ -1,0 +1,17 @@
+{
+  "sample_start": "2018-01",
+  "sample_end": "2024-12",
+  "panel_source": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/LP_Panel_monthly.tsv",
+  "output_dir": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/LP/Visuals",
+  "outputs": [
+    "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/LP/Visuals/plot_lp_haifa_legacy.png",
+    "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/LP/Visuals/plot_lp_haifa_entrant.png",
+    "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/LP/Visuals/plot_lp_haifa_total.png",
+    "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/LP/Visuals/plot_lp_haifa_all.png",
+    "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/LP/Visuals/plot_lp_ashdod_legacy.png",
+    "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/LP/Visuals/plot_lp_ashdod_entrant.png",
+    "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/LP/Visuals/plot_lp_ashdod_total.png",
+    "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/LP/Visuals/plot_lp_ashdod_all.png",
+    "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/LP/Visuals/plot_lp_all_series.png"
+  ]
+}

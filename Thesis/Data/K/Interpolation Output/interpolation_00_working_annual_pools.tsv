@@ -1,0 +1,63 @@
+entity	year	asset_class_std	pool_type	annual_amount_kNIS	include_in_productive_K	allocation_priority	source_id	notes
+HPC	2018	mixed	background	0.0	True	3	HPC_BG_RESIDUAL	Residual after mapped undated pools
+HPC	2018	equipment	mapped_undated	15342.556203	True	1	HPC_2019_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total | proportionally rescaled to annual authoritative total
+HPC	2018	infrastructure_buildings	mapped_undated	11977.061056	True	1	HPC_2019_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total | proportionally rescaled to annual authoritative total
+HPC	2018	spare_parts	mapped_undated	3576.382742	True	1	HPC_2019_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total | proportionally rescaled to annual authoritative total
+HPC	2019	mixed	background	0.0	True	3	HPC_BG_RESIDUAL	Residual after mapped undated pools
+HPC	2019	equipment	mapped_undated	10573.806655	True	1	HPC_2019_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2019	infrastructure_buildings	mapped_undated	9422.069113	True	1	HPC_2019_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2019	spare_parts	mapped_undated	5029.124232	True	1	HPC_2019_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2020	mixed	background	0.0	True	3	HPC_BG_RESIDUAL	Residual after mapped undated pools
+HPC	2020	equipment	mapped_undated	33648.0	True	1	HPC_2020_AR	From class-level ppe rollforward
+HPC	2020	infrastructure_buildings	mapped_undated	11722.0	True	1	HPC_2020_AR	From class-level ppe rollforward
+HPC	2020	spare_parts	mapped_undated	3915.0	True	1	HPC_2020_AR	From class-level ppe rollforward
+HPC	2021	mixed	background	0.0	True	3	HPC_BG_RESIDUAL	Residual after mapped undated pools
+HPC	2021	equipment	mapped_undated	14127.829412	True	1	HPC_2021_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2021	infrastructure_buildings	mapped_undated	2152.983803	True	1	HPC_2021_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2021	spare_parts	mapped_undated	461.84652	True	1	HPC_2021_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2023	mixed	background	0.0	True	3	HPC_BG_RESIDUAL	Residual after mapped undated pools
+HPC	2023	cranes	mapped_undated	54465.007337	True	1	HPC_2024_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2023	infrastructure_buildings	mapped_undated	19986.108354	True	1	HPC_2024_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2023	other_operational_equipment	mapped_undated	11868.991465	True	1	HPC_2024_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2023	spare_parts	mapped_undated	2627.522185	True	1	HPC_2024_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2024	mixed	background	3391.0	True	3	HPC_BG_RESIDUAL	Residual after mapped undated pools
+HPC	2024	cranes	mapped_undated	14532.39566	True	1	HPC_2024_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2024	infrastructure_buildings	mapped_undated	19393.406055	True	1	HPC_2024_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2024	other_operational_equipment	mapped_undated	16630.956861	True	1	HPC_2024_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+HPC	2024	spare_parts	mapped_undated	3578.243763	True	1	HPC_2024_AR	From class-level ppe rollforward | proportionally rescaled to annual authoritative total
+IPC	2018	mixed	background	1517370.0	True	3	IPC_BG_RESIDUAL	Residual after class-observed pools
+IPC	2018	land	mapped_undated	135000.0	True	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2019	mixed	background	1055811.0	True	3	IPC_BG_RESIDUAL	Residual after class-observed pools
+IPC	2019	buildings_landside	mapped_undated	892.0	True	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2019	vessels_equipment_it	mapped_undated	553.0	True	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2020	mixed	background	389575.0	True	3	IPC_BG_RESIDUAL	Residual after class-observed pools
+IPC	2020	buildings_landside	mapped_undated	19.0	True	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2020	land	mapped_undated	170766.0	True	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2020	vessels_equipment_it	mapped_undated	1019.0	True	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2021	mixed	background	577601.0	True	3	IPC_BACKGROUND_GENERATED_V2	Generated background residual row to reconcile known annual total
+IPC	2022	mixed	background	163334.0	True	3	IPC_BG_RESIDUAL	Residual after class-observed pools
+IPC	2022	buildings_landside	mapped_undated	1113.0	True	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2022	land	mapped_undated	225146.0	True	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2022	maritime_infrastructure	mapped_undated	63556.0	True	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2022	vessels_equipment_it	mapped_undated	10261.0	True	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2023	mixed	background	393515.0	True	3	IPC_BG_RESIDUAL	Residual after class-observed pools
+IPC	2023	buildings_landside	mapped_undated	2383.0	True	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2023	land	mapped_undated	224.0	True	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2023	maritime_infrastructure	mapped_undated	23886.0	True	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2023	vessels_equipment_it	mapped_undated	76731.0	True	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+IPC	2024	mixed	background	237623.0	True	3	IPC_BG_RESIDUAL	Residual after class-observed pools
+IPC	2024	maritime_infrastructure	mapped_undated	26607.0	True	1	IPC_RAW_TABLE1	From class additions + capitalized interest
+SIPG	2018	unknown_bayport_class	background	0.0	True	3	SIPG_DERIVED_BACKGROUND_V5	Residual SIPG background after derived service-entry split (expected to be zero in preferred productive SIPG build unless annual total exceeds service-entry)
+SIPG	2018	unknown_bayport_class	service_entry_undated	0.0	True	2	SIPG_DERIVED_SERVICE_ENTRY_V5	Derived from SIPG transfer-to-PPE / service-entry anchor information; productive annual total is defined by transfers to PPE in v5
+SIPG	2019	unknown_bayport_class	background	0.0	True	3	SIPG_DERIVED_BACKGROUND_V5	Residual SIPG background after derived service-entry split (expected to be zero in preferred productive SIPG build unless annual total exceeds service-entry)
+SIPG	2019	unknown_bayport_class	service_entry_undated	0.0	True	2	SIPG_DERIVED_SERVICE_ENTRY_V5	Derived from SIPG transfer-to-PPE / service-entry anchor information; productive annual total is defined by transfers to PPE in v5
+SIPG	2020	unknown_bayport_class	background	0.0	True	3	SIPG_DERIVED_BACKGROUND_V5	Residual SIPG background after derived service-entry split (expected to be zero in preferred productive SIPG build unless annual total exceeds service-entry)
+SIPG	2020	unknown_bayport_class	service_entry_undated	4482.0	True	2	SIPG_DERIVED_SERVICE_ENTRY_V5	Derived from SIPG transfer-to-PPE / service-entry anchor information; productive annual total is defined by transfers to PPE in v5
+SIPG	2021	unknown_bayport_class	background	0.0	True	3	SIPG_DERIVED_BACKGROUND_V5	Residual SIPG background after derived service-entry split (expected to be zero in preferred productive SIPG build unless annual total exceeds service-entry)
+SIPG	2021	unknown_bayport_class	service_entry_undated	1339629.0	True	2	SIPG_DERIVED_SERVICE_ENTRY_V5	Derived from SIPG transfer-to-PPE / service-entry anchor information; productive annual total is defined by transfers to PPE in v5
+SIPG	2022	unknown_bayport_class	background	0.0	True	3	SIPG_DERIVED_BACKGROUND_V5	Residual SIPG background after derived service-entry split (expected to be zero in preferred productive SIPG build unless annual total exceeds service-entry)
+SIPG	2022	unknown_bayport_class	service_entry_undated	469804.0	True	2	SIPG_DERIVED_SERVICE_ENTRY_V5	Derived from SIPG transfer-to-PPE / service-entry anchor information; productive annual total is defined by transfers to PPE in v5
+SIPG	2023	unknown_bayport_class	background	0.0	True	3	SIPG_DERIVED_BACKGROUND_V5	Residual SIPG background after derived service-entry split (expected to be zero in preferred productive SIPG build unless annual total exceeds service-entry)
+SIPG	2023	unknown_bayport_class	service_entry_undated	0.0	True	2	SIPG_DERIVED_SERVICE_ENTRY_V5	Derived from SIPG transfer-to-PPE / service-entry anchor information; productive annual total is defined by transfers to PPE in v5
+SIPG	2024	unknown_bayport_class	background	0.0	True	3	SIPG_DERIVED_BACKGROUND_V5	Residual SIPG background after derived service-entry split (expected to be zero in preferred productive SIPG build unless annual total exceeds service-entry)
+SIPG	2024	unknown_bayport_class	service_entry_undated	0.0	True	2	SIPG_DERIVED_SERVICE_ENTRY_V5	Derived from SIPG transfer-to-PPE / service-entry anchor information; productive annual total is defined by transfers to PPE in v5

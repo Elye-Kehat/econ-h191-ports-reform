@@ -1,0 +1,39 @@
+{
+  "sample_start": "2018-01",
+  "sample_end": "2024-12",
+  "prepared_dir": "Data/K/Interpolation Output",
+  "final_input_dir": "Data/K/Final Input Files",
+  "output_dir": "Data/K/Interpolation Output",
+  "rows": {
+    "working_pools": 62,
+    "working_additive_events": 3,
+    "project_milestones": 1,
+    "monthly_flows_baseline": 744,
+    "monthly_flows_final": 888,
+    "bridge_adjustment_rows": 144,
+    "class_capital": 900,
+    "entity_month_capital": 252,
+    "background_dep_rates": 27,
+    "dated_event_pool_netting_rows": 0,
+    "initial_background_rows": 2,
+    "year_end_reconciliation_rows": 21
+  },
+  "design_choices": {
+    "annual_totals_authoritative": true,
+    "end_of_month_investment_timing": true,
+    "baseline_monthly_interpolation_preserved": true,
+    "hard_anchor_residuals_converted_into_smooth_background_flow_bridges": true,
+    "bridge_distribution_uses_existing_background_month_share_schedules": true,
+    "hpc_operator_timing_uses_linear_backloaded_rule": true,
+    "hpc_bridge_distribution_uses_same_linear_backloaded_rule": true,
+    "missing_anchor_years_are_propagated_and_open_blocks_bridge_to_next_hard_anchor": true,
+    "dated_events_read_from_step00_working_file": true,
+    "project_milestones_are_non_additive": true,
+    "sipg_cumulative_transfer_pseudo_anchors_are_diagnostic_only": true,
+    "share_schedule_fallback_hierarchy": [
+      "exact entity-year-pool_type",
+      "nearest available year within entity-pool_type",
+      "uniform within-year fallback"
+    ]
+  }
+}

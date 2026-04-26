@@ -1,0 +1,6 @@
+check_name	status	n_failures	notes
+annual_flow_identity	pass	0	Diagnostic only: compares raw annual totals in prepared anchors to the sum of monthly engine flows. Mismatches can arise when annual totals are broader than productive engine inputs; when a baseline monthly ledger is available, this check is run on that baseline before smooth bridge adjustments are added
+observed_december_anchor_fit	pass	0	Only December years marked as observed anchors in the Step 01 reconciliation table are treated as hard anchor targets
+haifa_total_equals_component_sum	pass	0	The Haifa total must equal HPC + IPC + SIPG every month
+missing_anchor_years_propagated	pass	0	Years without observed anchors should be explicitly marked as propagated_no_anchor
+final_month_coverage	pass	0	Final outputs should span every month from 2018-01 through 2024-12

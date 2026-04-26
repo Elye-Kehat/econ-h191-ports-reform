@@ -1,0 +1,28 @@
+{
+  "sample_start": "2018-01",
+  "sample_end": "2024-12",
+  "k_source": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/K/Interpolation Output/interpolation_02_monthly_entity_series_wide.tsv",
+  "l_source": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/L_Proxy.tsv",
+  "series_mapping": {
+    "LEGACY": {
+      "K": "K_HPC_kNIS",
+      "L": "Haifa-Legacy"
+    },
+    "ENTRANT": {
+      "K": "K_SIPG_kNIS",
+      "L": "Haifa-Bayport"
+    },
+    "HAIFA_TOTAL": {
+      "K": "K_HAIFA_TOTAL_kNIS",
+      "L": "Haifa-Legacy + Haifa-Bayport"
+    }
+  },
+  "outputs": [
+    "KL_monthly_series_long.tsv",
+    "KL_monthly_series_wide.tsv",
+    "Visualization/plot_kl_legacy.png",
+    "Visualization/plot_kl_entrant.png",
+    "Visualization/plot_kl_haifa_total.png",
+    "Visualization/plot_kl_all_series.png"
+  ]
+}

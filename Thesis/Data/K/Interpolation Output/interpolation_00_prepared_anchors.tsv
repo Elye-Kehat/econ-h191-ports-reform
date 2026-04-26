@@ -1,0 +1,22 @@
+entity	year	annual_total_all_kNIS	annual_total_kNIS	stock_anchor_dec_all_kNIS	stock_anchor_dec_kNIS	stock_anchor_scope_note	service_entry_annual_kNIS	notes	annual_total_excluded_nonproductive_kNIS	annual_total_productive_kNIS
+HPC	2018	30896.0	30896.0	1163539.0	1163539.0	raw_anchor_not_productive_adjusted		Operating PPE anchor	0.0	30896.0
+HPC	2019	25025.0	25025.0	1010641.0	1010641.0	raw_anchor_not_productive_adjusted		Operating PPE anchor	0.0	25025.0
+HPC	2020	49285.0	49285.0	987773.0	987773.0	raw_anchor_not_productive_adjusted		Operating PPE anchor	0.0	49285.0
+HPC	2021	75222.0	16742.659735	998346.0	998346.0	raw_anchor_not_productive_adjusted		Operating PPE anchor	58479.340265	16742.659735
+HPC	2022			1006064.0	1006064.0	raw_anchor_not_productive_adjusted		Operating PPE anchor	0.0	
+HPC	2023	95529.0	88947.62934099999	1044165.0	1044165.0	raw_anchor_not_productive_adjusted		Operating PPE anchor	6581.370659	88947.62934099999
+HPC	2024	61123.0	57526.002339	966652.0	966652.0	raw_anchor_not_productive_adjusted		Operating PPE anchor	3596.997661	57526.002339
+IPC	2018	1652370.0	1652370.0	11516612.0	11516612.0	raw_anchor_not_productive_adjusted	53099.0	IPC total anchor from Note 8 / summary	0.0	1652370.0
+IPC	2019	1057256.0	1057256.0	12513932.0	12513932.0	raw_anchor_not_productive_adjusted	193657.0	IPC total anchor from Note 8 / summary	0.0	1057256.0
+IPC	2020	561379.0	561379.0	12866069.0	12866069.0	raw_anchor_not_productive_adjusted	18232.0	IPC total anchor from Note 8 / summary	0.0	561379.0
+IPC	2021	577601.0	577601.0	13209796.0	13209796.0	raw_anchor_not_productive_adjusted		IPC total anchor from Note 8 / summary	0.0	577601.0
+IPC	2022	463410.0	463410.0	13143607.0	13143607.0	raw_anchor_not_productive_adjusted		IPC total anchor from Note 8 / summary	0.0	463410.0
+IPC	2023	496739.0	496739.0	13105194.0	13105194.0	raw_anchor_not_productive_adjusted	92495.0	IPC total anchor from Note 8 / summary	0.0	496739.0
+IPC	2024	264230.0	264230.0	12829411.0	12829411.0	raw_anchor_not_productive_adjusted	76066.0	IPC total anchor from Note 8 / summary	0.0	264230.0
+SIPG	2018	13528.0	0.0	0.0	0.0	sipg_zero_cumulative_transfers_anchor	0.0	Bayport productive K rough anchor	0.0	0.0
+SIPG	2019		0.0	0.0	0.0	sipg_zero_cumulative_transfers_anchor	0.0	Bayport productive K rough anchor	0.0	0.0
+SIPG	2020	538626.0	4482.0	0.0	4482.0	sipg_cumulative_transfers_service_year_anchor	4482.0	Bayport productive K rough anchor	0.0	4482.0
+SIPG	2021	663166.0	1339629.0	1344111.0	1344111.0	sipg_cumulative_transfers_service_year_anchor	1339629.0	Bayport productive K rough anchor	0.0	1339629.0
+SIPG	2022	133488.0	469804.0	1813915.0	1813915.0	sipg_cumulative_transfers_service_year_anchor	469804.0	Bayport productive K rough anchor	0.0	469804.0
+SIPG	2023		0.0			sipg_flat_cumulative_transfers_unanchored	0.0	Bayport productive K rough anchor	0.0	0.0
+SIPG	2024	10518.0	0.0	1813915.0		sipg_flat_cumulative_transfers_unanchored	0.0	Bayport productive K rough anchor	0.0	0.0

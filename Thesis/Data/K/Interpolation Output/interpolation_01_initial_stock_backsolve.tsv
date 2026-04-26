@@ -1,0 +1,3 @@
+entity	first_anchor_month	background_engine_bucket	background_asset_class_std	background_dep_rate_monthly	anchor_stock_kNIS	non_background_stock_at_anchor_kNIS	background_target_at_anchor_kNIS	implied_initial_background_stock_kNIS	is_materially_negative
+HPC	2018-12	background::mixed	mixed	0.008205755847094931	1163539.0	29981.819625857657	1133557.1803741422	1251366.2270646838	False
+IPC	2018-12	background::mixed	mixed	0.002312286213654202	11516612.0	133862.00737138174	11382749.99262862	10156429.108630335	False

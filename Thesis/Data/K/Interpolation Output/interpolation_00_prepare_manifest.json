@@ -1,0 +1,46 @@
+{
+  "sample_start": "2018-01",
+  "sample_end": "2024-12",
+  "input_dir": "Data/K/Final Input Files",
+  "output_dir": "Data/K/Interpolation Output",
+  "inputs_read": {
+    "anchors": "Data/K/Final Input Files/k_entity_year_anchors.tsv",
+    "dep": "Data/K/Final Input Files/k_dep_lookup.tsv",
+    "events": "Data/K/Final Input Files/k_dated_events.tsv",
+    "pools": "Data/K/Final Input Files/k_annual_class_pools.tsv",
+    "rules": "Data/K/Final Input Files/k_entity_rules.tsv",
+    "shares": "Data/K/Final Input Files/k_month_shares.tsv"
+  },
+  "rows": {
+    "anchors_raw": 21,
+    "dep_raw": 39,
+    "events_raw": 4,
+    "pools_raw": 56,
+    "rules_raw": 3,
+    "shares_raw": 360,
+    "events_productive_kept_after_basic_filter": 4,
+    "events_working_additive_kept": 3,
+    "events_reclassified_to_milestones": 1,
+    "pools_productive_kept": 53,
+    "excluded_rows": 4,
+    "working_pools": 62,
+    "working_dep": 39,
+    "derived_sipg_service_rows": 7,
+    "derived_sipg_service_positive_rows": 3,
+    "sipg_cip_memo_rows": 7
+  },
+  "decisions_applied": {
+    "productive_capital_only": true,
+    "right_of_use_excluded": true,
+    "annual_totals_authoritative": true,
+    "prepared_annual_totals_adjusted_to_productive_scope": true,
+    "stock_anchors_left_raw_scope_unadjusted": false,
+    "sipg_productive_annual_totals_defined_by_transfers_to_ppe": true,
+    "sipg_stock_anchors_rebuilt_from_cumulative_transfers_when_informative": true,
+    "sipg_service_entry_derived_from_anchors": true,
+    "background_fallback_rates_deferred_to_interpolation_01": true,
+    "non_additive_project_milestones_reclassified_in_00": true,
+    "step01_smooth_bridge_strategy_expected": true,
+    "step01_hpc_operator_linear_backloaded_timing_expected": true
+  }
+}
