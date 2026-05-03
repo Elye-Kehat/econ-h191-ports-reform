@@ -1,4 +1,4 @@
 design	table_group	reform	target	target_key	spec_name	pre_min	pre_max	n_leads_total	n_bins_defined	n_bins_used	f_stat	pvalue	df_num	df_denom	n_obs	r2
 TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-12.0	-2.0	11.0	2.0	2.0			2.0	0.0	128	1.0
-TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-12.0	-2.0	11.0	2.0	2.0	1.4517314218936415	0.3622610410628089	2.0	3.0	144	0.9469056483497001
-TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-12.0	-2.0	11.0	2.0	2.0	0.9608187046351759	0.4759019231202312	2.0	3.0	144	0.9438430393727696
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-12.0	-2.0	11.0	2.0	2.0	1.4357198148240218	0.36522877140787763	2.0	3.0	144	0.9449341529710381
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-12.0	-2.0	11.0	2.0	2.0	0.9424154967049787	0.48129080913776084	2.0	3.0	144	0.9415340023243582

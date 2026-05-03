@@ -1,0 +1,9 @@
+design	table_group	reform	target	target_key	spec_name	window	a	b	beta	se	pvalue	n_obs	r2
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	avg_pre	-12	-2	-1.3228388661536294			72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	post_y1	1	12	-0.7232639491761206			72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	post_y1_2	1	23	-0.9159237045801869			72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	full_post	1	23	-0.9159237045801869			72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	avg_pre	-12	-2	1.3228388661536217			72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	post_y1	1	12	0.7232639491761129			72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	post_y1_2	1	23	0.9159237045801808			72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	full_post	1	23	0.9159237045801808			72	1.0

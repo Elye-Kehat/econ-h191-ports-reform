@@ -1,7 +1,7 @@
 row_label	Haifa-Bayport — NYT	Haifa-Bayport — NYT+Tr	Haifa-Legacy — NYT	Haifa-Legacy — NYT+Tr
-Full post	0.085 (0.058)	0.140 (0.097)	0.085 (0.058)	0.140 (0.097)
-Post year 1	0.085 (0.058)	0.140 (0.097)	0.085 (0.058)	0.140 (0.097)
-Average pre	0.116 (0.079)	0.056 (0.038)	0.116 (0.079)	0.056 (0.038)
-Pre-trends F-test p-value	0.094	0.136	0.094	0.136
+Full post	0.085 (0.058)	0.139 (0.096)	0.085 (0.058)	0.139 (0.096)
+Post year 1	0.085 (0.058)	0.139 (0.096)	0.085 (0.058)	0.139 (0.096)
+Average pre	0.115 (0.078)	0.056 (0.039)	0.115 (0.078)	0.056 (0.039)
+Pre-trends F-test p-value	0.093	0.136	0.093	0.136
 Observations	84	84	84	84
-Within R^2	0.985	0.987	0.985	0.987
+Within R^2	0.984	0.987	0.984	0.987

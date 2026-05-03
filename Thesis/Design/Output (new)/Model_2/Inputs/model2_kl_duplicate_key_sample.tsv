@@ -1,0 +1,11 @@
+entity	year	month	series_id	port	terminal	month_index	freq	K	L	KL	log_KL	source_kind	source_file
+Haifa port cluster	2018	1	Haifa_port_KL_HPC_central	Haifa		24217	M	1241493.923894206	2081.537037037037	596.4313398244453	6.390964129840695	kl	/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/KL_Panel_monthly.tsv
+Haifa port cluster	2018	2	Haifa_port_KL_HPC_central	Haifa		24218	M	1232098.710677581	2085.8888888888887	590.6828102113795	6.3812791731810705	kl	/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/KL_Panel_monthly.tsv
+Haifa port cluster	2018	3	Haifa_port_KL_HPC_central	Haifa		24219	M	1223176.6544015498	2348.12962962963	520.9153016796953	6.255587459784651	kl	/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/KL_Panel_monthly.tsv
+Haifa port cluster	2018	4	Haifa_port_KL_HPC_central	Haifa		24220	M	1214723.858454283	2420.0555555555557	501.94048465776945	6.21848155620473	kl	/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/KL_Panel_monthly.tsv
+Haifa port cluster	2018	5	Haifa_port_KL_HPC_central	Haifa		24221	M	1206736.4622653532	2368.1296296296296	509.5736513604976	6.233574398369614	kl	/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/KL_Panel_monthly.tsv
+Haifa port cluster	2018	6	Haifa_port_KL_HPC_central	Haifa		24222	M	1199210.6409493966	2436.259259259259	492.234410763826	6.198955047670521	kl	/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/KL_Panel_monthly.tsv
+Haifa port cluster	2018	7	Haifa_port_KL_HPC_central	Haifa		24223	M	1192142.6049534257	2516.9259259259256	473.6502543335123	6.160469189286484	kl	/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/KL_Panel_monthly.tsv
+Haifa port cluster	2018	8	Haifa_port_KL_HPC_central	Haifa		24224	M	1185528.599707748	2364.8333333333335	501.3159206601232	6.2172364825126625	kl	/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/KL_Panel_monthly.tsv
+Haifa port cluster	2018	9	Haifa_port_KL_HPC_central	Haifa		24225	M	1179364.9052804653	2056.5185185185187	573.4764334288902	6.351716843186115	kl	/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/KL_Panel_monthly.tsv
+Haifa port cluster	2018	10	Haifa_port_KL_HPC_central	Haifa		24226	M	1173647.836035502	2250.962962962963	521.3981106515491	6.256513877886294	kl	/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/KL_Panel_monthly.tsv

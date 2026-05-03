@@ -1,0 +1,3 @@
+design	table_group	reform	target	target_key	spec_name	pre_min	pre_max	n_leads_total	n_bins_defined	n_bins_used	f_stat	pvalue	df_num	df_denom	n_obs	r2
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-12.0	-2.0	11.0	2.0	2.0			2.0	0.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-12.0	-2.0	11.0	2.0	2.0			2.0	0.0	72	1.0

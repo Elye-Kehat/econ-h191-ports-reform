@@ -1,0 +1,18 @@
+{
+  "script": "Model_2_accounting(v3)_final2.py",
+  "inputs": {
+    "eta": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Tables/model2_elasticity_combined.tsv",
+    "model1a_window": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/model1a_lp_window_betas_all.tsv",
+    "model1b_window_relaxed": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_relaxed/model1b_kl_window_betas_all_relaxed.tsv"
+  },
+  "outputs": {
+    "long": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Tables/model2_accounting_long.tsv",
+    "preferred": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Tables/model2_accounting_preferred.tsv",
+    "elasticity_robustness": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Tables/model2_accounting_elasticity_robustness.tsv",
+    "unavailable": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Tables/model2_accounting_unavailable_rows.tsv"
+  },
+  "rows_total": 4,
+  "rows_ok": 1,
+  "rows_unavailable": 3,
+  "important_fix": "Window columns named a/b are normalized to m_start/m_end, and exact-window lookup is required."
+}

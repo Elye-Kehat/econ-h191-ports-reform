@@ -1,0 +1,104 @@
+Pipeline run started at Sat May  2 21:16:16 PDT 2026
+Project root: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis
+Python bin: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/.venv/bin/python
+Found Data/L_proxy/L_Proxy.tsv
+
+============================================================
+RUNNING: python Data/LP/Build_LP_Panel_S1_Tons.py --tons Data/Output/monthly_output_by_1000_tons_ports_and_terminals.tsv --out Data/LP
+============================================================
+[S1] Wrote Stage 1 tons artifacts to Data/LP
+
+============================================================
+RUNNING: python Data/LP/Build_LP_Panel_S2_TEU.py --teu Data/Output/teu_monthly_plus_quarterly_by_port.tsv --out Data/LP
+============================================================
+[S2] Wrote Stage 2 TEU artifacts to Data/LP
+
+============================================================
+RUNNING: python Data/LP/Build_LP_Panel_S3_LProxy.py --lproxy Data/L_proxy/L_Proxy.tsv --s2_term_quarter Data/LP/S2_terminal_quarter_teu.tsv --out Data/LP
+============================================================
+/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/Build_LP_Panel_S3_LProxy.py:153: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  pi_tbl = grp.apply(_collapse_pi).reset_index()
+/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/Build_LP_Panel_S3_LProxy.py:218: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cov['has_pi'] = cov['has_pi'].fillna(False)
+[S3] Wrote Stage 3 L_Proxy artifacts to Data/LP
+
+============================================================
+RUNNING: python Data/LP/Build_LP_Panel_S4.py --winsor_low 0.01 --winsor_high 0.99 --monthly_start 201801 --monthly_end 202108 --quarterly_start 2021Q3 --quarterly_end 2024Q4 --out Data/LP
+============================================================
+/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/Build_LP_Panel_S4.py:142: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  shares = m.groupby(['port','year','quarter'], group_keys=False).apply(_resolve)
+[S4] Wrote LP series and QA to Data/LP
+
+============================================================
+RUNNING: python Data/LP/Build_LP_Panel_S5_Stack.py --out_dir Data/LP
+============================================================
+/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/Build_LP_Panel_S5_Stack.py:148: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  panel = pd.concat([hm, am, hlq, hsq, alq, ahq], ignore_index=True)[cols]
+[S5] Wrote LP_Panel.tsv, S5_qa.tsv, S5_spans.tsv and _meta_s5.json to Data/LP
+
+============================================================
+RUNNING: python Data/K/interpolation_00_prepare_working_inputs_v8_hpc_operator_bridge_ready.py
+============================================================
+Done.
+Wrote: Data/K/Interpolation Output/interpolation_00_prepared_anchors.tsv
+Wrote: Data/K/Interpolation Output/interpolation_00_working_annual_pools.tsv
+Wrote: Data/K/Interpolation Output/interpolation_00_working_dep_lookup.tsv
+Wrote: Data/K/Interpolation Output/interpolation_00_working_service_entry_pools.tsv
+Wrote: Data/K/Interpolation Output/interpolation_00_working_dated_events.tsv
+Wrote: Data/K/Interpolation Output/interpolation_00_project_milestones.tsv
+Wrote: Data/K/Interpolation Output/interpolation_00_sipg_cip_memo.tsv
+Wrote: Data/K/Interpolation Output/interpolation_00_excluded_rows.tsv
+Wrote: Data/K/Interpolation Output/interpolation_00_prepare_manifest.json
+
+============================================================
+RUNNING: python Data/K/interpolation_01_build_monthly_engine_v8_hpc_operator_linear_backloaded.py
+============================================================
+Done.
+Wrote: Data/K/Interpolation Output/interpolation_01_monthly_class_investment_baseline.tsv
+Wrote: Data/K/Interpolation Output/interpolation_01_monthly_class_investment.tsv
+Wrote: Data/K/Interpolation Output/interpolation_01_monthly_class_capital.tsv
+Wrote: Data/K/Interpolation Output/interpolation_01_monthly_entity_capital.tsv
+Wrote: Data/K/Interpolation Output/interpolation_01_background_dep_rates.tsv
+Wrote: Data/K/Interpolation Output/interpolation_01_dated_event_pool_netting.tsv
+Wrote: Data/K/Interpolation Output/interpolation_01_initial_stock_backsolve.tsv
+Wrote: Data/K/Interpolation Output/interpolation_01_bridge_adjustments.tsv
+Wrote: Data/K/Interpolation Output/interpolation_01_year_end_reconciliation.tsv
+Wrote: Data/K/Interpolation Output/interpolation_01_engine_debug_summary.tsv
+Wrote: Data/K/Interpolation Output/interpolation_01_engine_manifest.json
+
+============================================================
+RUNNING: python Data/K/interpolation_02_finalize_outputs_and_qc_v9_hpc_operator_linear_backloaded.py
+============================================================
+Done.
+Wrote: Data/K/Interpolation Output/interpolation_02_monthly_entity_series_long.tsv
+Wrote: Data/K/Interpolation Output/interpolation_02_monthly_entity_series_wide.tsv
+Wrote: Data/K/Interpolation Output/interpolation_02_monthly_hpc.tsv
+Wrote: Data/K/Interpolation Output/interpolation_02_monthly_ipc.tsv
+Wrote: Data/K/Interpolation Output/interpolation_02_monthly_sipg.tsv
+Wrote: Data/K/Interpolation Output/interpolation_02_monthly_haifa_total.tsv
+Wrote: Data/K/Interpolation Output/interpolation_02_qc_summary.tsv
+Wrote: Data/K/Interpolation Output/interpolation_02_qc_annual_flow_detail.tsv
+Wrote: Data/K/Interpolation Output/interpolation_02_qc_anchor_fit_detail.tsv
+Wrote: Data/K/Interpolation Output/interpolation_02_plot_hpc.png
+Wrote: Data/K/Interpolation Output/interpolation_02_plot_ipc.png
+Wrote: Data/K/Interpolation Output/interpolation_02_plot_sipg.png
+Wrote: Data/K/Interpolation Output/interpolation_02_plot_haifa_total.png
+Wrote: Data/K/Interpolation Output/interpolation_02_plot_all_series.png
+Wrote: Data/K/Interpolation Output/interpolation_02_build_manifest.json
+
+============================================================
+RUNNING: python Design/Code (new)/Build_KL_Panel.py
+============================================================
+=== Build_KL_Panel (Haifa) ===
+THESIS_ROOT          : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis
+Reading L_Proxy      : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_Proxy/L_Proxy.tsv
+Reading Haifa K file : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/K /21_K_cluster_Haifa_HPC_IPC_SIPG_monthly.tsv
+Traceback (most recent call last):
+  File "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Code (new)/Build_KL_Panel.py", line 594, in <module>
+    main()
+    ~~~~^^
+  File "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Code (new)/Build_KL_Panel.py", line 547, in main
+    k_cluster = load_k_cluster(K_CLUSTER_PATH)
+  File "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Code (new)/Build_KL_Panel.py", line 142, in load_k_cluster
+    raise FileNotFoundError(f"Haifa K cluster file not found at: {path}")
+FileNotFoundError: Haifa K cluster file not found at: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/K /21_K_cluster_Haifa_HPC_IPC_SIPG_monthly.tsv

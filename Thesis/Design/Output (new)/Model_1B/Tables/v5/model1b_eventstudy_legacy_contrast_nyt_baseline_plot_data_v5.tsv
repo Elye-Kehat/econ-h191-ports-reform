@@ -1,0 +1,21 @@
+design	table_group	reform	target	target_key	spec_name	event_time	m	j	beta	se	t	pvalue	n_event_obs	n_obs	r2
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-12	-12	-12	-2.4021074740326096				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-11	-11	-11	-2.409130787423376				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-10	-10	-10	-2.419253469638294				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-9	-9	-9	-1.4906254407088144				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-8	-8	-8	-1.5065407500326824				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-7	-7	-7	-1.52505965289083				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-6	-6	-6	-0.9374745034612192				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-5	-5	-5	-0.9604514878333532				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-4	-4	-4	-0.9852448228938736				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-3	-3	-3	0.0561162151614451				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-2	-2	-2	0.0285446460636507				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	0	0	0	-0.5569869252390482				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	1	1	1	-0.554170822873096				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	2	2	2	-0.5495860773451327				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	3	3	3	-0.6191867683822017				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	4	4	4	-0.6110564141607497				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	5	5	5	-0.6011678144284126				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	6	6	6	-0.5891643154838295				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	7	7	7	-0.5758337129082103				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	8	8	8	-0.5608362843117867				1.0	42	1.0

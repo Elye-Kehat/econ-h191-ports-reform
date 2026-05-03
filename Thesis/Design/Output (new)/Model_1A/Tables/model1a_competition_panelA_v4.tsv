@@ -1,6 +1,6 @@
 row_label	Ashdod-Legacy — TWFE	Ashdod-Legacy — TWFE+Tr	Haifa-Legacy — TWFE	Haifa-Legacy — TWFE+Tr
-Static DiD: full post	-0.231 (0.191)	-0.774* (0.456)	0.438 (0.268)	1.563*** (0.133)
-Static DiD: post year 1	-0.358* (0.200)	-0.574 (0.832)	0.737*** (0.270)	2.263** (1.118)
-Static DiD: post years 1-2	-0.239 (0.192)	-0.780* (0.473)	0.583** (0.269)	2.009*** (0.458)
-Observations	88	88	128	128
-Within R^2	0.919	0.920	0.885	0.904
+Static DiD: full post	-0.626*** (0.104)	-1.460 (0.999)	0.459* (0.255)	1.440*** (0.180)
+Static DiD: post year 1	-0.753*** (0.110)	-1.636 (2.215)	0.578** (0.258)	2.286*** (0.684)
+Static DiD: post years 1-2	-0.634*** (0.104)	-1.488 (1.065)	0.554** (0.256)	1.935*** (0.098)
+Observations	86	86	128	128
+Within R^2	0.874	0.879	0.854	0.872

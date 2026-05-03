@@ -1,0 +1,13 @@
+Pipeline run started at Sat May  2 20:54:25 PDT 2026
+Project root: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis
+Python bin: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/.venv/bin/python
+
+============================================================
+RUNNING: python Data/L_proxy/construct_L.py
+============================================================
+usage: construct_L.py [-h] --teu-panel TEU_PANEL --kpi-wide KPI_WIDE
+                      [--out-dir OUT_DIR] [--start-year START_YEAR]
+                      [--end-year END_YEAR] [--alloc {equal,seasonal}]
+                      [--seasonal-ref SEASONAL_REF] [--abs-tol ABS_TOL]
+                      [--rel-tol REL_TOL] [--reconcile-strict {yes,no}]
+construct_L.py: error: the following arguments are required: --teu-panel, --kpi-wide

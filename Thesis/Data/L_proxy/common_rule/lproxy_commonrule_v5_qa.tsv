@@ -1,0 +1,13 @@
+check	passed	detail
+tons_port_month_unique	True	port-month tons keys unique
+tons_terminal_month_unique	True	terminal-month tons keys unique
+teu_terminal_month_unique	True	terminal-month TEU keys unique
+anchor_terminal_year_unique	True	terminal-year anchor keys unique
+lproxy_terminal_month_unique	True	terminal-month labor keys unique
+legacy_tons_negative_before_clip	True	0 port-months had entrant tons greater than port tons before clipping
+missing_kpi_anchor_positive_teu_years	True	0 positive-TEU terminal-years missing Pi_teu_per_hour_i_y
+missing_annual_hours_anchor_positive_teu_years	True	0 positive-TEU terminal-years missing H_annual_i_y
+annual_hours_addup	True	max |sum_m L_hours_i_m - H_annual_i_y| = 7.275957614183426e-12
+annual_weight_addup_positive_teu_years	True	max |sum_m w_i_m_in_year - 1| over positive-TEU years = 2.220446049250313e-16
+positive_activity_zero_labor_active_months	True	0 active terminal-months have positive port tons and positive annual TEU but non-positive L_hours_i_m
+old_new_anchor_sanity_ratio	True	0 terminal-years have H_new / H_old < 0.5

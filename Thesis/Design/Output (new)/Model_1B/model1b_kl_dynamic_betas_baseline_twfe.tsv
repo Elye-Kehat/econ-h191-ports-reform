@@ -1,0 +1,71 @@
+design	table_group	reform	target	target_key	spec_name	event_time	m	j	beta	se	t	pvalue	n_event_obs	n_obs	r2
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-12	-12	-12	-2.4021074740325923				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-11	-11	-11	-2.4091307874233703				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-10	-10	-10	-2.419253469638287				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-9	-9	-9	-1.4906254407088113				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-8	-8	-8	-1.5065407500326906				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-7	-7	-7	-1.5250596528908367				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-6	-6	-6	-0.9374745034612149				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-5	-5	-5	-0.9604514878333417				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-4	-4	-4	-0.9852448228938754				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-3	-3	-3	0.056116215161451787				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-2	-2	-2	0.028544646063643653				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	0	0	0	-0.5569869252390344				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	1	1	1	-0.5541708228730835				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	2	2	2	-0.5495860773451313				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	3	3	3	-0.6191867683822038				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	4	4	4	-0.6110564141607479				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	5	5	5	-0.6011678144283974				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	6	6	6	-0.5891643154838309				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	7	7	7	-0.5758337129082054				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	8	8	8	-0.5608362843117733				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	9	9	9	-1.0211174760946284				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	10	10	10	-1.00293245461399				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	11	11	11	-0.9832394785322023				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	12	12	12	-1.0108757709792537				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	13	13	13	-1.010737635775239				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	14	14	14	-1.0103628657411277				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	15	15	15	-1.0869878417094814				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	16	16	16	-1.0861266104760856				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	17	17	17	-1.0850157926968342				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	18	18	18	-1.2647928692719639				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	19	19	19	-1.2631708399394912				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	20	20	20	-1.2612874840774149				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	21	21	21	-1.1087057910900262				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	22	22	22	-1.1062891575538374				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	23	23	23	-1.10360092689935				1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-12	-12	-12	2.402107474032571	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-11	-11	-11	2.4091307874233627	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-10	-10	-10	2.419253469638271	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-9	-9	-9	1.4906254407088215	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-8	-8	-8	1.5065407500327006	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-7	-7	-7	1.5250596528908253	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-6	-6	-6	0.9374745034612115	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-5	-5	-5	0.960451487833341	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-4	-4	-4	0.9852448228938623	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-3	-3	-3	-0.05611621516147382	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-2	-2	-2	-0.02854464606365642	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	0	0	0	0.5569869252390357	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	1	1	1	0.5541708228730732	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	2	2	2	0.5495860773451258	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	3	3	3	0.6191867683821919	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	4	4	4	0.611056414160745	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	5	5	5	0.6011678144283947	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	6	6	6	0.5891643154838301	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	7	7	7	0.5758337129081891	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	8	8	8	0.5608362843117624	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	9	9	9	1.0211174760946236	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	10	10	10	1.0029324546139824	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	11	11	11	0.9832394785321971	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	12	12	12	1.0108757709792413	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	13	13	13	1.0107376357752273	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	14	14	14	1.010362865741124	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	15	15	15	1.0869878417094836	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	16	16	16	1.0861266104760878	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	17	17	17	1.0850157926968365	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	18	18	18	1.2647928692719625	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	19	19	19	1.263170839939474	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	20	20	20	1.2612874840774035	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	21	21	21	1.1087057910900187	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	22	22	22	1.1062891575538305	inf		1.0	1.0	72	1.0
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	23	23	23	1.103600926899355	inf		1.0	1.0	72	1.0

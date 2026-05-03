@@ -1,0 +1,5 @@
+entity	eta_family	eta_source	eta_role	spec	delta	eta	eta_se	pvalue	N	R2	preferred_flag	status	reason	notes
+Haifa--Legacy	regression	legacy_ts_trend	robustness	TS+trend					0		0	unavailable	insufficient usable rows for regression	Requires at least 8 non-missing observations.
+Haifa--Bayport	regression	bayport_ts_trend	robustness	TS+trend					0		0	unavailable	insufficient usable rows for regression	Requires at least 8 non-missing observations.
+Pooled Haifa terminals	regression	pooled_trend_fe	robustness	Pooled+trend+FE					0		0	unavailable	insufficient pooled overlap	Requires both terminal entities and at least 12 usable rows.
+Haifa port cluster	regression	cluster_ts_trend	robustness	TS+trend					0		0	unavailable	insufficient cluster overlap	Aggregate-port elasticity is optional and only estimated when overlap exists.

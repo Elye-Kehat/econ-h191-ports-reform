@@ -1,0 +1,49 @@
+kind	design	target	spec_name	window	beta	se	pvalue	n_obs	r2	source_spec_family
+window	NYT	Haifa-Legacy	baseline	avg_pre	-1.3228388661536323			42	1.0	baseline
+window	NYT	Haifa-Legacy	baseline	post_y1	-0.5826252762366774			42	1.0	baseline
+window	NYT	Haifa-Legacy	baseline	post_y1_2	-0.5826252762366774			42	1.0	baseline
+window	NYT	Haifa-Legacy	baseline	full_post	-0.5826252762366774			42	1.0	baseline
+window	NYT	Haifa-Bayport	baseline	avg_pre	1.3228388661536314			42	1.0	baseline
+window	NYT	Haifa-Bayport	baseline	post_y1	0.5826252762366704			42	1.0	baseline
+window	NYT	Haifa-Bayport	baseline	post_y1_2	0.5826252762366704			42	1.0	baseline
+window	NYT	Haifa-Bayport	baseline	full_post	0.5826252762366704			42	1.0	baseline
+window	TWFE	Haifa-Legacy	baseline	avg_pre	-1.3228388661536294			72	1.0	baseline
+window	TWFE	Haifa-Legacy	baseline	post_y1	-0.7232639491761206			72	1.0	baseline
+window	TWFE	Haifa-Legacy	baseline	post_y1_2	-0.9159237045801868			72	1.0	baseline
+window	TWFE	Haifa-Legacy	baseline	full_post	-0.9159237045801868			72	1.0	baseline
+window	TWFE	Haifa-Bayport	baseline	avg_pre	1.3228388661536217			72	1.0	baseline
+window	TWFE	Haifa-Bayport	baseline	post_y1	0.7232639491761129			72	1.0	baseline
+window	TWFE	Haifa-Bayport	baseline	post_y1_2	0.9159237045801808			72	1.0	baseline
+window	TWFE	Haifa-Bayport	baseline	full_post	0.9159237045801808			72	1.0	baseline
+window	NYT	Haifa-Legacy	relaxed_tr	avg_pre	-0.8216287683496812	0.1178822137389569	3.171241047539297e-12	42	0.7120221932274196	relaxed_tr
+window	NYT	Haifa-Legacy	relaxed_tr	post_y1	0.1491694872274632	0.1080586959273771	0.1674485318123024	42	0.7120221932274196	relaxed_tr
+window	NYT	Haifa-Legacy	relaxed_tr	post_y1_2	0.1491694872274632	0.1080586959273771	0.1674485318123024	42	0.7120221932274196	relaxed_tr
+window	NYT	Haifa-Legacy	relaxed_tr	full_post	0.1491694872274632	0.1080586959273771	0.1674485318123024	42	0.7120221932274196	relaxed_tr
+window	NYT	Haifa-Bayport	relaxed_tr	avg_pre	1.0408389386011865	0.0412307408457393	0.0	42	0.9385039876188463	relaxed_tr
+window	NYT	Haifa-Bayport	relaxed_tr	post_y1	0.2371349927333441	0.037794845775261	3.512830026863867e-10	42	0.9385039876188463	relaxed_tr
+window	NYT	Haifa-Bayport	relaxed_tr	post_y1_2	0.2371349927333441	0.037794845775261	3.512830026863867e-10	42	0.9385039876188463	relaxed_tr
+window	NYT	Haifa-Bayport	relaxed_tr	full_post	0.2371349927333441	0.037794845775261	3.512830026863867e-10	42	0.9385039876188463	relaxed_tr
+window	TWFE	Haifa-Legacy	relaxed_tr	avg_pre	-0.5212368338006647	0.065169574319473	1.3322676295501878e-15	72	0.63330940254345	relaxed_tr
+window	TWFE	Haifa-Legacy	relaxed_tr	post_y1	-0.1475900460933047	0.0814619678993381	0.0700223182767336	72	0.63330940254345	relaxed_tr
+window	TWFE	Haifa-Legacy	relaxed_tr	post_y1_2	-0.1982309386843159	0.1412007443588538	0.1603502882090948	72	0.63330940254345	relaxed_tr
+window	TWFE	Haifa-Legacy	relaxed_tr	full_post	-0.1982309386843159	0.1412007443588538	0.1603502882090948	72	0.63330940254345	relaxed_tr
+window	TWFE	Haifa-Bayport	relaxed_tr	avg_pre	0.8651939258853938	0.0319780035101874	0.0	72	0.8939942341793811	relaxed_tr
+window	TWFE	Haifa-Bayport	relaxed_tr	post_y1	0.496184036167276	0.0399725043877339	0.0	72	0.8939942341793811	relaxed_tr
+window	TWFE	Haifa-Bayport	relaxed_tr	post_y1_2	0.5799103299089375	0.0692856742720722	0.0	72	0.8939942341793811	relaxed_tr
+window	TWFE	Haifa-Bayport	relaxed_tr	full_post	0.5799103299089375	0.0692856742720722	0.0	72	0.8939942341793811	relaxed_tr
+window	NYT	Haifa-Legacy	relaxed_tr	avg_pre	-0.8216287683496812	0.1178822137389569	3.171241047539297e-12	42	0.7120221932274196	relaxed_tr
+window	NYT	Haifa-Legacy	relaxed_tr	post_y1	0.1491694872274632	0.1080586959273771	0.1674485318123024	42	0.7120221932274196	relaxed_tr
+window	NYT	Haifa-Legacy	relaxed_tr	post_y1_2	0.1491694872274632	0.1080586959273771	0.1674485318123024	42	0.7120221932274196	relaxed_tr
+window	NYT	Haifa-Legacy	relaxed_tr	full_post	0.1491694872274632	0.1080586959273771	0.1674485318123024	42	0.7120221932274196	relaxed_tr
+window	NYT	Haifa-Bayport	relaxed_tr	avg_pre	1.0408389386011865	0.0412307408457393	0.0	42	0.9385039876188463	relaxed_tr
+window	NYT	Haifa-Bayport	relaxed_tr	post_y1	0.2371349927333441	0.037794845775261	3.512830026863867e-10	42	0.9385039876188463	relaxed_tr
+window	NYT	Haifa-Bayport	relaxed_tr	post_y1_2	0.2371349927333441	0.037794845775261	3.512830026863867e-10	42	0.9385039876188463	relaxed_tr
+window	NYT	Haifa-Bayport	relaxed_tr	full_post	0.2371349927333441	0.037794845775261	3.512830026863867e-10	42	0.9385039876188463	relaxed_tr
+window	TWFE	Haifa-Legacy	relaxed_tr	avg_pre	-0.5212368338006647	0.065169574319473	1.3322676295501878e-15	72	0.63330940254345	relaxed_tr
+window	TWFE	Haifa-Legacy	relaxed_tr	post_y1	-0.1475900460933047	0.0814619678993381	0.0700223182767336	72	0.63330940254345	relaxed_tr
+window	TWFE	Haifa-Legacy	relaxed_tr	post_y1_2	-0.1982309386843159	0.1412007443588538	0.1603502882090948	72	0.63330940254345	relaxed_tr
+window	TWFE	Haifa-Legacy	relaxed_tr	full_post	-0.1982309386843159	0.1412007443588538	0.1603502882090948	72	0.63330940254345	relaxed_tr
+window	TWFE	Haifa-Bayport	relaxed_tr	avg_pre	0.8651939258853938	0.0319780035101874	0.0	72	0.8939942341793811	relaxed_tr
+window	TWFE	Haifa-Bayport	relaxed_tr	post_y1	0.496184036167276	0.0399725043877339	0.0	72	0.8939942341793811	relaxed_tr
+window	TWFE	Haifa-Bayport	relaxed_tr	post_y1_2	0.5799103299089375	0.0692856742720722	0.0	72	0.8939942341793811	relaxed_tr
+window	TWFE	Haifa-Bayport	relaxed_tr	full_post	0.5799103299089375	0.0692856742720722	0.0	72	0.8939942341793811	relaxed_tr

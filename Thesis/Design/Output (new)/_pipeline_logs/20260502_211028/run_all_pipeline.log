@@ -1,0 +1,10 @@
+Pipeline run started at Sat May  2 21:10:28 PDT 2026
+Project root: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis
+Python bin: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/.venv/bin/python
+Found Data/L_proxy/L_Proxy.tsv
+
+============================================================
+RUNNING: python Data/LP/Build_LP_Panel_S1_Tons.py
+============================================================
+usage: Build_LP_Panel_S1_Tons.py [-h] --tons TONS --out OUT
+Build_LP_Panel_S1_Tons.py: error: the following arguments are required: --tons, --out

@@ -1,0 +1,7 @@
+design	table_group	reform	target	target_key	spec_name	horizon	a	b	beta	se	pvalue	n_obs	r2	n_treated	n_control	n_post_treated	se_type
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	full_post	1	23	0.2308017542304531	0.1439812396687773	0.10893491930523579	72	0.5322786711173872	36	36	23	HC1
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	post_y1	1	12	0.4297065240574	0.18665200315367864	0.021325018706530616	50	0.4383942405371747	25	25	12	HC1
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	post_y1_2	1	23	0.2308017542304531	0.1439812396687773	0.10893491930523579	72	0.5322786711173872	36	36	23	HC1
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	full_post	1	23	-0.1459134213736712	0.1802574188079447	0.41824342130440717	72	0.5201133516748712	36	36	23	HC1
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	post_y1	1	12	-0.27254370531357175	0.19070357556882936	0.1529615917875186	50	0.3976655778740904	25	25	12	HC1
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	post_y1_2	1	23	-0.1459134213736712	0.1802574188079447	0.41824342130440717	72	0.5201133516748712	36	36	23	HC1

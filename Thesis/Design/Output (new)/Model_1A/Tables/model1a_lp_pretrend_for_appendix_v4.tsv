@@ -1,13 +1,13 @@
 design	table_group	reform	target	target_key	spec_name	pre_min	pre_max	n_leads_total	n_bins_defined	n_bins_used	f_stat	pvalue	df_num	df_denom	n_obs	r2	spec_display
 NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-12.0	-2.0	11.0	2.0	2.0			2.0	0.0	76	1.0	NYT
 NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-12.0	-2.0	11.0	2.0	2.0			2.0	0.0	76	1.0	NYT+Tr
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-12.0	-2.0	11.0	2.0	2.0	5.779948652989128	0.093528595859951	2.0	3.0	84	0.9848009388111956	NYT
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-12.0	-2.0	11.0	2.0	2.0	4.161989093765419	0.1363588550126311	2.0	3.0	84	0.987295352691826	NYT+Tr
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-12.0	-2.0	11.0	2.0	2.0	5.7799486529893	0.0935285958599476	2.0	3.0	84	0.9848009388111956	NYT
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-12.0	-2.0	11.0	2.0	2.0	4.161989093763331	0.1363588550127065	2.0	3.0	84	0.987295352691826	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-12.0	-2.0	11.0	2.0	2.0	5.806704548086023	0.0930153380009207	2.0	3.0	84	0.984437240446424	NYT
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-12.0	-2.0	11.0	2.0	2.0	4.185761886050461	0.1355045526253901	2.0	3.0	84	0.986969005904721	NYT+Tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-12.0	-2.0	11.0	2.0	2.0	5.8067045480861585	0.0930153380009181	2.0	3.0	84	0.984437240446424	NYT
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-12.0	-2.0	11.0	2.0	2.0	4.185761886049379	0.1355045526254288	2.0	3.0	84	0.9869690059047206	NYT+Tr
 TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-12.0	-2.0	11.0	2.0	2.0			2.0	0.0	128	1.0	TWFE
 TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-12.0	-2.0	11.0	2.0	2.0			2.0	0.0	128	1.0	TWFE+Tr
-TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-12.0	-2.0	11.0	2.0	2.0	1.3884765965066357	0.3742256996080975	2.0	3.0	144	0.90360628047181	TWFE
-TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-12.0	-2.0	11.0	2.0	2.0	0.960818704635176	0.4759019231202312	2.0	3.0	144	0.9438430393727696	TWFE+Tr
-TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-12.0	-2.0	11.0	2.0	2.0	1.9307447279392869	0.2891041205526807	2.0	3.0	144	0.9306793789575862	TWFE
-TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-12.0	-2.0	11.0	2.0	2.0	1.4517314218936417	0.3622610410628089	2.0	3.0	144	0.9469056483497	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-12.0	-2.0	11.0	2.0	2.0	1.372308649534693	0.3773898621686771	2.0	3.0	144	0.8999892991645884	TWFE
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-12.0	-2.0	11.0	2.0	2.0	0.9424154967049788	0.4812908091377608	2.0	3.0	144	0.9415340023243582	TWFE+Tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-12.0	-2.0	11.0	2.0	2.0	1.914817383666385	0.2911291304243018	2.0	3.0	144	0.9283244705353196	TWFE
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-12.0	-2.0	11.0	2.0	2.0	1.4357198148240218	0.3652287714078776	2.0	3.0	144	0.944934152971038	TWFE+Tr

@@ -1,4 +1,4 @@
 design	table_group	reform	target	target_key	spec_name	pre_min	pre_max	n_leads_total	n_bins_defined	n_bins_used	f_stat	pvalue	df_num	df_denom	n_obs	r2
 NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-12.0	-2.0	11.0	2.0	2.0			2.0	0.0	76	1.0
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-12.0	-2.0	11.0	2.0	2.0	4.161989093763331	0.1363588550127065	2.0	3.0	84	0.987295352691826
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-12.0	-2.0	11.0	2.0	2.0	4.161989093765419	0.1363588550126311	2.0	3.0	84	0.9872953526918261
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-12.0	-2.0	11.0	2.0	2.0	4.185761886049379	0.1355045526254288	2.0	3.0	84	0.9869690059047206
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-12.0	-2.0	11.0	2.0	2.0	4.185761886050461	0.13550455262539013	2.0	3.0	84	0.986969005904721

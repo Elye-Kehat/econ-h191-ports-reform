@@ -1,0 +1,4 @@
+row	eta_family	eta_source	eta_role	eta_spec	eta	TE	dC	CD	share_explained	share_valid	status
+Privatization - Legacy	manual	HPC_labor_share	preferred	manual	0.251	0.139	0.149	0.037	26.8%	True	ok
+Privatization - Legacy	manual	one_third_benchmark	robustness	manual	0.333	0.139	0.149	0.050	35.7%	True	ok
+Privatization - Legacy	manual	hazan_tsur_benchmark	robustness	manual	0.420	0.139	0.149	0.063	44.9%	True	ok

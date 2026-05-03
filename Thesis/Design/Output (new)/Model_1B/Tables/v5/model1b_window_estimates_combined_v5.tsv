@@ -1,0 +1,49 @@
+design	table_group	reform	target	target_key	spec_name	window	a	b	beta	se	pvalue	n_obs	r2	source_file	source_spec_family
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	avg_pre	-12	-2	-1.3228388661536323			42	1.0	model1b_kl_window_betas_all.tsv	baseline
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	post_y1	1	8	-0.5826252762366774			42	1.0	model1b_kl_window_betas_all.tsv	baseline
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	post_y1_2	1	8	-0.5826252762366774			42	1.0	model1b_kl_window_betas_all.tsv	baseline
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	full_post	1	8	-0.5826252762366774			42	1.0	model1b_kl_window_betas_all.tsv	baseline
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	avg_pre	-12	-2	1.3228388661536314			42	1.0	model1b_kl_window_betas_all.tsv	baseline
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	post_y1	1	8	0.5826252762366704			42	1.0	model1b_kl_window_betas_all.tsv	baseline
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	post_y1_2	1	8	0.5826252762366704			42	1.0	model1b_kl_window_betas_all.tsv	baseline
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	full_post	1	8	0.5826252762366704			42	1.0	model1b_kl_window_betas_all.tsv	baseline
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	avg_pre	-12	-2	-1.3228388661536294			72	1.0	model1b_kl_window_betas_all_twfe.tsv	baseline
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	post_y1	1	12	-0.7232639491761206			72	1.0	model1b_kl_window_betas_all_twfe.tsv	baseline
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	post_y1_2	1	23	-0.9159237045801868			72	1.0	model1b_kl_window_betas_all_twfe.tsv	baseline
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	full_post	1	23	-0.9159237045801868			72	1.0	model1b_kl_window_betas_all_twfe.tsv	baseline
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	avg_pre	-12	-2	1.3228388661536217			72	1.0	model1b_kl_window_betas_all_twfe.tsv	baseline
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	post_y1	1	12	0.7232639491761129			72	1.0	model1b_kl_window_betas_all_twfe.tsv	baseline
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	post_y1_2	1	23	0.9159237045801808			72	1.0	model1b_kl_window_betas_all_twfe.tsv	baseline
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	full_post	1	23	0.9159237045801808			72	1.0	model1b_kl_window_betas_all_twfe.tsv	baseline
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	avg_pre	-12	-2	-0.8216287683496812	0.1178822137389569	3.171241047539297e-12	42	0.7120221932274196	model1b_kl_window_betas_all_relaxed.tsv	relaxed_tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	post_y1	1	8	0.1491694872274632	0.1080586959273771	0.1674485318123024	42	0.7120221932274196	model1b_kl_window_betas_all_relaxed.tsv	relaxed_tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	post_y1_2	1	8	0.1491694872274632	0.1080586959273771	0.1674485318123024	42	0.7120221932274196	model1b_kl_window_betas_all_relaxed.tsv	relaxed_tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	full_post	1	8	0.1491694872274632	0.1080586959273771	0.1674485318123024	42	0.7120221932274196	model1b_kl_window_betas_all_relaxed.tsv	relaxed_tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	avg_pre	-12	-2	1.0408389386011865	0.0412307408457393	0.0	42	0.9385039876188463	model1b_kl_window_betas_all_relaxed.tsv	relaxed_tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	post_y1	1	8	0.2371349927333441	0.037794845775261	3.512830026863867e-10	42	0.9385039876188463	model1b_kl_window_betas_all_relaxed.tsv	relaxed_tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	post_y1_2	1	8	0.2371349927333441	0.037794845775261	3.512830026863867e-10	42	0.9385039876188463	model1b_kl_window_betas_all_relaxed.tsv	relaxed_tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	full_post	1	8	0.2371349927333441	0.037794845775261	3.512830026863867e-10	42	0.9385039876188463	model1b_kl_window_betas_all_relaxed.tsv	relaxed_tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	avg_pre	-12	-2	-0.5212368338006647	0.065169574319473	1.3322676295501878e-15	72	0.63330940254345	model1b_kl_window_betas_all_relaxed_twfe.tsv	relaxed_tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	post_y1	1	12	-0.1475900460933047	0.0814619678993381	0.0700223182767336	72	0.63330940254345	model1b_kl_window_betas_all_relaxed_twfe.tsv	relaxed_tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	post_y1_2	1	23	-0.1982309386843159	0.1412007443588538	0.1603502882090948	72	0.63330940254345	model1b_kl_window_betas_all_relaxed_twfe.tsv	relaxed_tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	full_post	1	23	-0.1982309386843159	0.1412007443588538	0.1603502882090948	72	0.63330940254345	model1b_kl_window_betas_all_relaxed_twfe.tsv	relaxed_tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	avg_pre	-12	-2	0.8651939258853938	0.0319780035101874	0.0	72	0.8939942341793811	model1b_kl_window_betas_all_relaxed_twfe.tsv	relaxed_tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	post_y1	1	12	0.496184036167276	0.0399725043877339	0.0	72	0.8939942341793811	model1b_kl_window_betas_all_relaxed_twfe.tsv	relaxed_tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	post_y1_2	1	23	0.5799103299089375	0.0692856742720722	0.0	72	0.8939942341793811	model1b_kl_window_betas_all_relaxed_twfe.tsv	relaxed_tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	full_post	1	23	0.5799103299089375	0.0692856742720722	0.0	72	0.8939942341793811	model1b_kl_window_betas_all_relaxed_twfe.tsv	relaxed_tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	avg_pre	-12	-2	-0.8216287683496812	0.1178822137389569	3.171241047539297e-12	42	0.7120221932274196	model1b_kl_window_betas_relaxed_tr_relaxed.tsv	relaxed_tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	post_y1	1	8	0.1491694872274632	0.1080586959273771	0.1674485318123024	42	0.7120221932274196	model1b_kl_window_betas_relaxed_tr_relaxed.tsv	relaxed_tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	post_y1_2	1	8	0.1491694872274632	0.1080586959273771	0.1674485318123024	42	0.7120221932274196	model1b_kl_window_betas_relaxed_tr_relaxed.tsv	relaxed_tr
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	full_post	1	8	0.1491694872274632	0.1080586959273771	0.1674485318123024	42	0.7120221932274196	model1b_kl_window_betas_relaxed_tr_relaxed.tsv	relaxed_tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	avg_pre	-12	-2	1.0408389386011865	0.0412307408457393	0.0	42	0.9385039876188463	model1b_kl_window_betas_relaxed_tr_relaxed.tsv	relaxed_tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	post_y1	1	8	0.2371349927333441	0.037794845775261	3.512830026863867e-10	42	0.9385039876188463	model1b_kl_window_betas_relaxed_tr_relaxed.tsv	relaxed_tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	post_y1_2	1	8	0.2371349927333441	0.037794845775261	3.512830026863867e-10	42	0.9385039876188463	model1b_kl_window_betas_relaxed_tr_relaxed.tsv	relaxed_tr
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	full_post	1	8	0.2371349927333441	0.037794845775261	3.512830026863867e-10	42	0.9385039876188463	model1b_kl_window_betas_relaxed_tr_relaxed.tsv	relaxed_tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	avg_pre	-12	-2	-0.5212368338006647	0.065169574319473	1.3322676295501878e-15	72	0.63330940254345	model1b_kl_window_betas_relaxed_tr_relaxed_twfe.tsv	relaxed_tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	post_y1	1	12	-0.1475900460933047	0.0814619678993381	0.0700223182767336	72	0.63330940254345	model1b_kl_window_betas_relaxed_tr_relaxed_twfe.tsv	relaxed_tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	post_y1_2	1	23	-0.1982309386843159	0.1412007443588538	0.1603502882090948	72	0.63330940254345	model1b_kl_window_betas_relaxed_tr_relaxed_twfe.tsv	relaxed_tr
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	full_post	1	23	-0.1982309386843159	0.1412007443588538	0.1603502882090948	72	0.63330940254345	model1b_kl_window_betas_relaxed_tr_relaxed_twfe.tsv	relaxed_tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	avg_pre	-12	-2	0.8651939258853938	0.0319780035101874	0.0	72	0.8939942341793811	model1b_kl_window_betas_relaxed_tr_relaxed_twfe.tsv	relaxed_tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	post_y1	1	12	0.496184036167276	0.0399725043877339	0.0	72	0.8939942341793811	model1b_kl_window_betas_relaxed_tr_relaxed_twfe.tsv	relaxed_tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	post_y1_2	1	23	0.5799103299089375	0.0692856742720722	0.0	72	0.8939942341793811	model1b_kl_window_betas_relaxed_tr_relaxed_twfe.tsv	relaxed_tr
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	full_post	1	23	0.5799103299089375	0.0692856742720722	0.0	72	0.8939942341793811	model1b_kl_window_betas_relaxed_tr_relaxed_twfe.tsv	relaxed_tr
