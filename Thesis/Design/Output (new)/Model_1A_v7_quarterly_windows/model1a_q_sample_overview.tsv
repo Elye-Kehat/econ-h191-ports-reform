@@ -1,0 +1,5 @@
+analysis_unit	analysis_port	first_time_id	last_time_id	n_obs	n_unique_periods
+ashdod_incumbent	Ashdod	8072	8099	25	25
+haifa_bayport	Haifa	8086	8099	14	14
+haifa_incumbent	Haifa	8072	8099	28	28
+haifa_legacy	Haifa	8086	8099	14	14

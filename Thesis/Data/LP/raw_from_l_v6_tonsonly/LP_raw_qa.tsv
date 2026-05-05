@@ -1,0 +1,31 @@
+check	ok	note
+unique_Ashdod_port_month	True	n=46
+na_monthly_labor_Ashdod	True	0 NA labor rows of 46
+na_lp_months_Ashdod	True	0 NA LP rows of 46
+cutoff_Ashdod_monthly_branch	True	max ym=202110, cutoff=202209
+unique_Haifa_port_month	True	n=44
+na_monthly_labor_Haifa	True	0 NA labor rows of 44
+na_lp_months_Haifa	True	0 NA LP rows of 44
+cutoff_Haifa_monthly_branch	True	max ym=202108, cutoff=202108
+unique_terminal_quarter	True	n=56
+na_lp_quarters_Haifa-Legacy	True	0 NA of 14
+na_lp_quarters_Haifa-Bayport	True	0 NA of 14
+na_lp_quarters_Ashdod-Legacy	True	0 NA of 14
+na_lp_quarters_Ashdod-HCT	True	0 NA of 14
+unique_port_quarter	True	n=28
+na_lp_port_quarter	True	0 NA of 28
+na_quarterly_port_lp_Haifa	True	0 NA of 14
+na_quarterly_port_lp_Ashdod	True	0 NA of 14
+unique_monthly_series	True	n=90
+unique_quarterly_series	True	n=84
+unique_port_quarterly_series	True	n=28
+na_rates_Ashdod_HCT_Q	True	NA TEU=0, NA L_hours=0, NA LP=0
+na_rates_Ashdod_Legacy_Q	True	NA TEU=0, NA L_hours=0, NA LP=0
+na_rates_Ashdod_port_M	True	NA TEU=0, NA L_hours=0, NA LP=0
+na_rates_Ashdod_port_Q	True	NA TEU=0, NA L_hours=0, NA LP=0
+na_rates_Haifa_Legacy_Q	True	NA TEU=0, NA L_hours=0, NA LP=0
+na_rates_Haifa_SIPG_Q	True	NA TEU=0, NA L_hours=0, NA LP=0
+na_rates_Haifa_port_M	True	NA TEU=0, NA L_hours=0, NA LP=0
+na_rates_Haifa_port_Q	True	NA TEU=0, NA L_hours=0, NA LP=0
+nonmissing_Haifa_port_Q	True	0 NA LP of 14 rows
+nonmissing_Ashdod_port_Q	True	0 NA LP of 14 rows

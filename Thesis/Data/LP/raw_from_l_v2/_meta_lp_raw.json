@@ -1,0 +1,13 @@
+{
+  "builder": "Build_LP_Panel_raw_from_L_v2.py",
+  "definition": {
+    "monthly_port": "LP_{p,m} = TEU_{p,m} / L_{p,m}",
+    "quarterly_terminal": "LP_{i,q} = TEU_{i,q} / L_{i,q}",
+    "quarterly_labor": "L_{i,q} = sum_{m in q} L_{i,m}"
+  },
+  "outputs": {
+    "LP_Panel": "Data/LP/raw_from_l_v2/LP_Panel.tsv",
+    "LP_raw_qa": "Data/LP/raw_from_l_v2/LP_raw_qa.tsv"
+  },
+  "patch_note": "Reset indices before stack transforms so the stacked panel has no duplicated blank rows."
+}

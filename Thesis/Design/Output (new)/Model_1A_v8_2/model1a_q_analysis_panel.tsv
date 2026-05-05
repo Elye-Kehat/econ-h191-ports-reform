@@ -1,0 +1,141 @@
+series_key	port	terminal	year	quarter_num	time_id	time_str	log_LP	n_obs	analysis_freq	analysis_unit	analysis_port	source_series
+ashdod_port	Ashdod		2018	1	8072	2018Q1	3.6878789024381606	3	quarterly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2018	2	8073	2018Q2	3.6798791581389962	3	quarterly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2018	3	8074	2018Q3	3.7193401269878	3	quarterly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2018	4	8075	2018Q4	3.759807316458541	3	quarterly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2019	1	8076	2019Q1	3.745278354862878	3	quarterly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2019	2	8077	2019Q2	3.7651318052792746	3	quarterly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2019	3	8078	2019Q3	3.7394001627897446	3	quarterly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2019	4	8079	2019Q4	3.696269573853223	3	quarterly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2020	1	8080	2020Q1	3.6406473016083605	3	quarterly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2020	2	8081	2020Q2	3.6159160778736616	3	quarterly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2020	3	8082	2020Q3	3.711396324521894	3	quarterly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2020	4	8083	2020Q4	3.677733779450173	3	quarterly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2021	1	8084	2021Q1	3.6159261309170154	3	quarterly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2021	2	8085	2021Q2	3.6907430827377916	3	quarterly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2021	3	8086	2021Q3	3.687806618491881	1	quarterly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2021	4	8087	2021Q4	3.610766749315044	1	quarterly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2022	1	8088	2022Q1	3.557485717856923	1	quarterly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2022	2	8089	2022Q2	3.5620692748177527	1	quarterly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2022	3	8090	2022Q3	3.6427117204114525	1	quarterly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_legacy	Ashdod	Ashdod-Legacy	2022	4	8091	2022Q4	3.6856529522219312	1	quarterly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2023	1	8092	2023Q1	3.496496061054388	1	quarterly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2023	2	8093	2023Q2	3.6646090299095233	1	quarterly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2023	3	8094	2023Q3	3.5792645470462356	1	quarterly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2023	4	8095	2023Q4	3.480935810881427	1	quarterly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2024	1	8096	2024Q1	3.514161544501704	1	quarterly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2024	2	8097	2024Q2	3.6393353764633343	1	quarterly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2024	3	8098	2024Q3	3.7148940411811893	1	quarterly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2024	4	8099	2024Q4	3.6828987431918194	1	quarterly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_port	Ashdod		2018	1	8072	2018Q1	3.6878789024381606	3	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2018	2	8073	2018Q2	3.6798791581389962	3	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2018	3	8074	2018Q3	3.7193401269878	3	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2018	4	8075	2018Q4	3.759807316458541	3	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2019	1	8076	2019Q1	3.745278354862878	3	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2019	2	8077	2019Q2	3.7651318052792746	3	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2019	3	8078	2019Q3	3.7394001627897446	3	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2019	4	8079	2019Q4	3.696269573853223	3	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2020	1	8080	2020Q1	3.6406473016083605	3	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2020	2	8081	2020Q2	3.6159160778736616	3	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2020	3	8082	2020Q3	3.711396324521894	3	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2020	4	8083	2020Q4	3.677733779450173	3	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2021	1	8084	2021Q1	3.6159261309170154	3	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2021	2	8085	2021Q2	3.6907430827377916	3	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2021	3	8086	2021Q3	3.687806618491881	1	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2021	4	8087	2021Q4	3.610766749315044	1	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2022	1	8088	2022Q1	3.557485717856923	1	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2022	2	8089	2022Q2	3.5620692748177527	1	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2022	3	8090	2022Q3	3.6427117204114525	1	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2022	4	8091	2022Q4	3.5743334887792138	1	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2023	1	8092	2023Q1	3.449557522401345	1	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2023	2	8093	2023Q2	3.5130031840128293	1	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2023	3	8094	2023Q3	3.504132061154773	1	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2023	4	8095	2023Q4	3.459231946876441	1	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2024	1	8096	2024Q1	3.6386987772892008	1	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2024	2	8097	2024Q2	3.7975698979561345	1	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2024	3	8098	2024Q3	3.870624879718514	1	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+ashdod_port	Ashdod		2024	4	8099	2024Q4	3.827817868720361	1	quarterly	ashdod_port_agg	Ashdod	ashdod_port
+haifa_bayport	Haifa	Haifa-Bayport	2021	3	8086	2021Q3	3.83205639060066	1	quarterly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2021	4	8087	2021Q4	3.7472648372964104	1	quarterly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2022	1	8088	2022Q1	4.289382351043713	1	quarterly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2022	2	8089	2022Q2	3.9523753024903425	1	quarterly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2022	3	8090	2022Q3	3.6660464251922575	1	quarterly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2022	4	8091	2022Q4	3.6261587849317434	1	quarterly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2023	1	8092	2023Q1	3.7823812775015155	1	quarterly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2023	2	8093	2023Q2	3.7765513967876045	1	quarterly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2023	3	8094	2023Q3	3.8166959071738433	1	quarterly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2023	4	8095	2023Q4	3.88104650852487	1	quarterly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2024	1	8096	2024Q1	3.88544475521199	1	quarterly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2024	2	8097	2024Q2	3.8846326427427247	1	quarterly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2024	3	8098	2024Q3	3.9519082333651174	1	quarterly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2024	4	8099	2024Q4	3.9330301721218164	1	quarterly	haifa_bayport	Haifa	haifa_bayport
+haifa_port	Haifa		2018	1	8072	2018Q1	3.9183766269451716	3	quarterly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2018	2	8073	2018Q2	3.9759281741864534	3	quarterly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2018	3	8074	2018Q3	4.08993903123227	3	quarterly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2018	4	8075	2018Q4	3.971111441200962	3	quarterly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2019	1	8076	2019Q1	4.009757957865445	3	quarterly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2019	2	8077	2019Q2	4.037874892818532	3	quarterly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2019	3	8078	2019Q3	4.016132946255715	3	quarterly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2019	4	8079	2019Q4	4.045681940923462	3	quarterly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2020	1	8080	2020Q1	3.8608965166161937	3	quarterly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2020	2	8081	2020Q2	3.9685123489379968	3	quarterly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2020	3	8082	2020Q3	3.9648260382148286	3	quarterly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2020	4	8083	2020Q4	4.020080796146471	3	quarterly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2021	1	8084	2021Q1	3.852280896834396	3	quarterly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2021	2	8085	2021Q2	3.8618865852590027	3	quarterly	haifa_incumbent	Haifa	haifa_port
+haifa_legacy	Haifa	Haifa-Legacy	2021	3	8086	2021Q3	3.8595053693490575	1	quarterly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2021	4	8087	2021Q4	3.8257250894872907	1	quarterly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	1	8088	2022Q1	3.6341450108459012	1	quarterly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	2	8089	2022Q2	3.7796446277061757	1	quarterly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	3	8090	2022Q3	3.988621606905206	1	quarterly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	4	8091	2022Q4	4.527331932737157	1	quarterly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	1	8092	2023Q1	5.035547679398365	1	quarterly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	2	8093	2023Q2	4.01813505304661	1	quarterly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	3	8094	2023Q3	3.753593294733475	1	quarterly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	4	8095	2023Q4	3.4330538117643408	1	quarterly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	1	8096	2024Q1	4.07042639581405	1	quarterly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	2	8097	2024Q2	3.8108322879088443	1	quarterly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	3	8098	2024Q3	3.574549139064834	1	quarterly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	4	8099	2024Q4	3.5059906449986893	1	quarterly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2021	3	8086	2021Q3	3.8595053693490575	1	quarterly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2021	4	8087	2021Q4	3.8257250894872907	1	quarterly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	1	8088	2022Q1	3.6341450108459012	1	quarterly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	2	8089	2022Q2	3.7796446277061757	1	quarterly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	3	8090	2022Q3	3.988621606905206	1	quarterly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	4	8091	2022Q4	4.527331932737157	1	quarterly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	1	8092	2023Q1	5.035547679398365	1	quarterly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	2	8093	2023Q2	4.01813505304661	1	quarterly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	3	8094	2023Q3	3.753593294733475	1	quarterly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	4	8095	2023Q4	3.4330538117643408	1	quarterly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	1	8096	2024Q1	4.07042639581405	1	quarterly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	2	8097	2024Q2	3.8108322879088443	1	quarterly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	3	8098	2024Q3	3.574549139064834	1	quarterly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	4	8099	2024Q4	3.5059906449986893	1	quarterly	haifa_legacy	Haifa	haifa_legacy
+haifa_port	Haifa		2018	1	8072	2018Q1	3.9183766269451716	3	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2018	2	8073	2018Q2	3.9759281741864534	3	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2018	3	8074	2018Q3	4.08993903123227	3	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2018	4	8075	2018Q4	3.971111441200962	3	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2019	1	8076	2019Q1	4.009757957865445	3	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2019	2	8077	2019Q2	4.037874892818532	3	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2019	3	8078	2019Q3	4.016132946255715	3	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2019	4	8079	2019Q4	4.045681940923462	3	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2020	1	8080	2020Q1	3.8608965166161937	3	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2020	2	8081	2020Q2	3.9685123489379968	3	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2020	3	8082	2020Q3	3.9648260382148286	3	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2020	4	8083	2020Q4	4.020080796146471	3	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2021	1	8084	2021Q1	3.852280896834396	3	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2021	2	8085	2021Q2	3.8618865852590027	3	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2021	3	8086	2021Q3	3.8589490842891765	1	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2021	4	8087	2021Q4	3.820147505563204	1	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2022	1	8088	2022Q1	3.697022407510863	1	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2022	2	8089	2022Q2	3.819089900973009	1	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2022	3	8090	2022Q3	3.8666920792771253	1	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2022	4	8091	2022Q4	3.9604131566393797	1	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2023	1	8092	2023Q1	4.153484450100968	1	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2023	2	8093	2023Q2	3.8787609168086132	1	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2023	3	8094	2023Q3	3.7876403446362636	1	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2023	4	8095	2023Q4	3.601272530656455	1	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2024	1	8096	2024Q1	3.975082579485358	1	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2024	2	8097	2024Q2	3.845064461663283	1	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2024	3	8098	2024Q3	3.7191154594656406	1	quarterly	haifa_port_agg	Haifa	haifa_port
+haifa_port	Haifa		2024	4	8099	2024Q4	3.6824296480137946	1	quarterly	haifa_port_agg	Haifa	haifa_port

@@ -1,8 +1,8 @@
 design	table_group	reform	target	target_key	spec_name	window	a	b	beta	se	n_obs	r2
-NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	avg_pre	-12	-2	2.091721253789385	4.160709396090737e-13	76	1.0
-NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	post_y1	1	12	2.6501943823690013	1.601328199365917e-11	76	1.0
-NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	post_y1_2	1	13	2.637051842175831	1.6035705629370133e-11	76	1.0
-NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	full_post	1	13	2.637051842175831	1.6035705629370133e-11	76	1.0
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	avg_pre	-12	-2	-0.6065833538391958	5.699973198672605e-13	76	1.0
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	post_y1	1	12	-0.04278985914861923	3.972538335830612e-12	76	1.0
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	post_y1_2	1	13	-0.055977128670794296	4.010233701585004e-12	76	1.0
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	full_post	1	13	-0.055977128670794296	4.010233701585004e-12	76	1.0
 NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	avg_pre	-12	-2	0.05599159066408801	0.03850554646314721	84	0.9869690059047206
 NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	post_y1	1	8	0.13946047674513645	0.09590729258738542	84	0.9869690059047206
 NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	post_y1_2	1	8	0.13946047674513645	0.09590729258738542	84	0.9869690059047206

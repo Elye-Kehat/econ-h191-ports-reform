@@ -1,0 +1,37 @@
+{
+  "builder": "Build_LP_Panel_raw_from_L_v1.py",
+  "definition": {
+    "monthly_port": "LP_{p,m} = TEU_{p,m} / L_{p,m}",
+    "quarterly_terminal": "LP_{i,q} = TEU_{i,q} / L_{i,q}",
+    "quarterly_labor": "L_{i,q} = sum_{m in q} L_{i,m}"
+  },
+  "inputs": {
+    "s1_port_month_tons": "Data/LP/raw_from_l_v1/S1_port_month_tons.tsv",
+    "s1_terminal_quarter_tons": "Data/LP/raw_from_l_v1/S1_terminal_quarter_tons.tsv",
+    "s2_port_month_teu": "Data/LP/raw_from_l_v1/S2_port_month_teu.tsv",
+    "s2_term_quarter_teu": "Data/LP/raw_from_l_v1/S2_terminal_quarter_teu.tsv",
+    "s3_lproxy_clean": "Data/LP/raw_from_l_v1/S3_lproxy_clean.tsv",
+    "s3_port_month_labor": "Data/LP/raw_from_l_v1/S3_port_month_labor.tsv"
+  },
+  "windows": {
+    "monthly_start": 201801,
+    "monthly_end": 202110,
+    "quarterly_start": "2021Q3",
+    "quarterly_end": "2024Q4"
+  },
+  "outputs": {
+    "LP_Haifa_port_month": "Data/LP/raw_from_l_v1/LP_Haifa_port_month.tsv",
+    "LP_Ashdod_port_month": "Data/LP/raw_from_l_v1/LP_Ashdod_port_month.tsv",
+    "LP_Haifa_Legacy_quarter": "Data/LP/raw_from_l_v1/LP_Haifa_Legacy_quarter.tsv",
+    "LP_Haifa_SIPG_quarter": "Data/LP/raw_from_l_v1/LP_Haifa_SIPG_quarter.tsv",
+    "LP_Ashdod_Legacy_quarter": "Data/LP/raw_from_l_v1/LP_Ashdod_Legacy_quarter.tsv",
+    "LP_Ashdod_HCT_quarter": "Data/LP/raw_from_l_v1/LP_Ashdod_HCT_quarter.tsv",
+    "LP_Panel": "Data/LP/raw_from_l_v1/LP_Panel.tsv",
+    "LP_raw_qa": "Data/LP/raw_from_l_v1/LP_raw_qa.tsv"
+  },
+  "notes": [
+    "This builder keeps S1/S2/S3 and replaces the mix-adjusted S4/S5 logic with raw TEU over labor.",
+    "w is set to 1.0 as a compatibility placeholder; no separate mix factor is estimated here.",
+    "Pi is left missing because this alternative LP definition does not construct a separate intrinsic productivity baseline."
+  ]
+}

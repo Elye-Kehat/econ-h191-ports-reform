@@ -1,0 +1,439 @@
+family	series_id	series_display	is_main_series	reform	reform_display	spec_name	event_time	event_token	is_reference	observed_in_sample	beta	se	pvalue	n_obs	r2
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	-12	-12	0	1	0.16106518311237306	5.178925639311114e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	-11	-11	0	1	0.0700979416264819	3.2023728339893468e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	-10	-10	0	1	0.1837386809567665	5.958081967793372e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	-9	-9	0	1	0.16265433728389933	3.2023728339893294e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	-8	-8	0	1	-0.06263310101654174	5.1789256393111e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	-7	-7	0	1	-0.005876155691645826	5.607293624718421e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	-6	-6	0	1	-0.07345190742102226	7.669842543786681e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	-5	-5	0	1	-0.08530415823856809	2.4896170040261415e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	-4	-4	0	1	-0.04966972047085161	5.178925639311045e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	-3	-3	0	1	-0.07550969744388232	2.1231525148379768e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	-2	-2	0	1	0.012870933022233189	4.165926057296473e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	-1	-1	1	1	0.0	0.0		37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	0	0	0	1	0.08362449415859174	1.869097874905994e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	1	1	0	1	-0.04441190377810787	1.869097874906164e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	2	2	0	1	0.05299963072147307	4.3898456658974225e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	3	3	0	1	0.021486640393659377	2.4896170040260236e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	4	4	0	1	-0.17204295742337017	2.74782201154204e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	5	5	0	1	-0.16856114164873406	2.9837658734381086e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	6	6	0	1	-0.24249211374158897	3.768221900840988e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	7	7	0	1	-0.07123238812913246	2.8086667748611803e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	8	8	0	1	0.1165418623225083	5.1789256393110656e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	9	9	0	1	0.1182399139645118	3.2023728339892364e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	10	10	0	1	0.4297134790693464	5.958081967793382e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	11	11	0	1	0.4125759570773742	2.8086667748613318e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	12	12	0	1	0.8516863210922754	5.9580819677934184e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	13	13	0	1	0.932599092249702	3.2023728339893705e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	14	14	0	1	1.997596679431295	2.6645352591002795e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	15	15	0	1	2.046025741682768	3.768221900841017e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	16	16	0	1	0.2848228670693276	2.0835039877610527e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	17	17	0	1	0.19801497347216213	2.725585412142004e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	18	18	0	1	3.698273926958265	2.3141388468068078e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	19	19	0	1	0.5353445541997601	1.6892076807188188e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	20	20	0	1	-0.8919688494054832	3.30148509338657e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	21	21	0	1	-0.6782901036853124	4.1404195940270186e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	22	22	0	1	-0.6115417162050316	2.7255854121420033e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	23	23	0	1	-1.0897815638850679	1.6280579355608334e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	24	24	0	1	-0.12465853658238002	2.2994829752101674e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	-12	-12	0	1	1.221203497424031	1.1171559073978617e-14	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	-11	-11	0	1	1.0338600455461333	2.6113964655077667e-14	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	-10	-10	0	1	1.0511245744844775	4.875023161686071e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	-9	-9	0	1	0.9336640204196327	9.91431454760592e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	-8	-8	0	1	0.6120003717272331	5.047656412908672e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	-7	-7	0	1	0.572381106660157	8.792362277303484e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	-6	-6	0	1	0.4084291445388235	3.925252242120239e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	-5	-5	0	1	0.3002006833292955	8.581768699538529e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	-4	-4	0	1	0.2394589107050491	7.994891851740392e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	-3	-3	0	1	0.11724272334004801	4.965310788564065e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	-2	-2	0	1	0.1092471434141995	6.405960469241079e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	-1	-1	1	1	0.0	0.0		37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	0	0	0	1	-0.012751716233380783	7.175707347184125e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	1	1	0	1	-0.23716432456204187	3.1764334301810156e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	2	2	0	1	-0.23612900045442853	5.792745899494035e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	3	3	0	1	-0.36401820117421746	9.538677447806693e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	4	4	0	1	-0.10349362997971845	3.0553293544684253e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	5	5	0	1	-0.1963880245970513	2.7649446691939457e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	6	6	0	1	-0.36669520708187653	4.378997702295612e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	7	7	0	1	-0.2918116918613962	1.0561808207637395e-14	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	8	8	0	1	-0.20041365180171322	4.474185533184697e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	9	9	0	1	-0.29509181055167355	2.800798444312552e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	10	10	0	1	-0.07999445583880638	2.263475455517884e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	11	11	0	1	-0.1935081882227565	8.013780336214302e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	12	12	0	1	0.14922596540019173	3.670091704834421e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	13	13	0	1	0.13376252616564077	4.214697833900717e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	14	14	0	1	1.1023839029552587	1.0128276335232755e-14	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	15	15	0	1	1.0544367548147728	4.9692216941001554e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	16	16	0	1	0.5229807047544135	2.7389362429529266e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	17	17	0	1	0.33979660076528306	2.168195767497211e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	18	18	0	1	3.7436793438594114	8.32381823292859e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	19	19	0	1	0.48437376070894445	1.656547117335903e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	20	20	0	1	-1.0393158532882585	3.865548840788012e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	21	21	0	1	-0.922013317960058	1.835164333614729e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	22	22	0	1	-0.9516411408717507	4.209065853219109e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	23	23	0	1	-1.526257198943766	1.3896807748267759e-14	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	24	24	0	1	-0.6575103820330224	8.349599387702411e-15	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	-12	-12	0	1	-2.2180686991061407	7.640399661428575e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	-11	-11	0	1	-2.2145868833315085	1.0731900677991384e-14	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	-10	-10	0	1	-2.28851785542437	1.831026719408908e-14	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	-9	-9	0	1	-2.117258129811903	6.936895214610282e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	-8	-8	0	1	-1.9294838793602622	9.930136612989181e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	-7	-7	0	1	-1.9277858277182622	1.0137914307627427e-14	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	-6	-6	0	1	-1.616312262613425	1.0308774581625764e-14	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	-5	-5	0	1	-1.6334497846054001	8.049800534370721e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	-4	-4	0	1	-1.194339420590497	9.717917461907989e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	-3	-3	0	1	-1.113426649433067	3.1312001066281072e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	-2	-2	0	1	-0.04842906225148269	8.070772694621633e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	-1	-1	1	1	0.0	0.0		36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	0	0	0	1	-0.44098732267719765	2.3014424838533983e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	1	1	0	1	-0.5277952162743622	3.7831456103367915e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	2	2	0	1	2.97246373721174	5.843492770130484e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	3	3	0	1	-0.19046563554676643	5.275937879922239e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	4	4	0	1	-1.617779039152004	4.829880320622423e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	5	5	0	1	-1.4041002934318363	8.571858526631558e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	6	6	0	1	-1.3373519059515608	1.23708938889991e-14	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	7	7	0	1	-1.8155917536315973	9.930136612989086e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	8	8	0	1	-0.8504687263289084	9.144356508438763e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	9	9	0	1	-2.1421210457498203	9.930136612989062e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	10	10	0	1	-1.6433317564631338	1.0731900677991237e-14	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	11	11	0	1	-1.4693724738165153	6.9368952146102945e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	12	12	0	1	-1.1067632036971107	9.144356508438926e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	13	13	0	1	-1.2429077140711073	9.144356508438903e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	14	14	0	1	-0.4957919919052971	7.640399661428447e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	15	15	0	1	-1.3666309478106373	8.379058453350887e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	16	16	0	1	-0.6592746422173557	8.3790584533508e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	17	17	0	1	-1.3389577340872076	9.144356508438881e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	18	18	0	1	-1.5280811912417684	9.144356508438825e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	19	19	0	1	-1.5604282677571828	9.93013661298912e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	20	20	0	1	-1.649657079838355	9.144356508438793e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	21	21	0	1	-1.5721888440476002	1.0731900677991218e-14	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	22	22	0	1	-1.7375625397927923	9.93013661298911e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	23	23	0	1	-1.4818992238370208	9.930136612989088e-15	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	-12	-12	0	1	-1.1470022518490444	2.873482967065264e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	-11	-11	0	1	-1.240890113097764	2.791876381237025e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	-10	-10	0	1	-1.4121907622140002	2.891407263078842e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	-9	-9	0	1	-1.3383007136249123	2.910727062019655e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	-8	-8	0	1	-1.2478961401966497	3.030444709379879e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	-7	-7	0	1	-1.3435677655780167	2.826452291086894e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	-6	-6	0	1	-1.1294638774965495	2.6197656075409395e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	-5	-5	0	1	-1.243971076511906	2.4318876240048936e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	-4	-4	0	1	-0.9022303895203638	2.11094212260708e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	-3	-3	0	1	-0.9186872953863142	1.7595636884953608e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	-2	-2	0	1	0.04894061477189471	1.2963657125366092e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	-1	-1	1	1	0.0	0.0		36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	0	0	0	1	-0.5383569997005679	1.3178908616967253e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	1	1	0	1	-0.7225345703210951	1.8455134379641105e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	2	2	0	1	2.680354706141628	2.301932243461417e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	3	3	0	1	-0.579944343640255	2.691979457875789e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	4	4	0	1	-2.1046274242688643	3.0300454826968343e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	5	5	0	1	-1.9883183555720654	3.362132453483742e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	6	6	0	1	-2.0189396451151564	3.6697433201947005e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	7	7	0	1	-2.5945491698185883	3.868869509706321e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	8	8	0	1	-1.726795819539248	3.778528144658349e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	9	9	0	1	-0.2518030474027255	2.580841074335926e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	10	10	0	1	0.14961656486056985	2.5462351259554576e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	11	11	0	1	0.22620617048381142	2.415057852212008e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	12	12	0	1	0.4914457635798488	2.28782309029686e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	13	13	0	1	0.2579315761824956	2.0930511323495977e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	14	14	0	1	0.9076776213249342	2.0413669437831046e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	15	15	0	1	-0.06053101160379848	2.1840503057904549e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	16	16	0	1	0.549455616966112	2.1849366702660916e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	17	17	0	1	-0.22759715192711072	2.1688986949857932e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	18	18	0	1	-0.5140902861050418	2.1761046679400165e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	19	19	0	1	-0.6438070396438289	2.2346767635412677e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	20	20	0	1	-0.8304055287483743	2.3508736971555556e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	21	21	0	1	-0.8503069699809904	2.4955235483623234e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	22	22	0	1	-1.1130503427495535	2.670912767479222e-13	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	23	23	0	1	-0.9547567038171554	2.9372130612269535e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	-12	-12	0	1	0.1606907999865328	8.881784197001349e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	-11	-11	0	1	0.07270052950472494	8.881784197001232e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	-10	-10	0	1	0.1890533079542145	5.329070518200771e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	-9	-9	0	1	0.17074215502508586	8.881784197001213e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	-8	-8	0	1	-0.04966183612679487	5.617333549722829e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	-7	-7	0	1	0.011307841288774035	5.967531746876393e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	-6	-6	0	1	-0.05273660157614124	5.329070518200731e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	-5	-5	0	1	-0.061745259200815264	6.813963530355085e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	-4	-4	0	1	-0.0239567394028537	4.9337605988555914e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	-3	-3	0	1	-0.048329438748236815	4.97923400805248e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	-2	-2	0	1	0.015202199585733212	5.329070518200678e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	-1	-1	1	1	0.0	0.0		37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	0	0	0	1	0.11322565718475808	2.9265637772651767e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	1	1	0	1	-0.05632062068129967	4.979234008052478e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	2	2	0	1	0.054794118703568984	4.553654836042125e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	3	3	0	1	0.04728966321369707	6.813963530355045e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	4	4	0	1	-0.11526727871395614	5.4956440230841704e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	5	5	0	1	-0.11677766284310702	6.97739115240359e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	6	6	0	1	-0.20843236560744138	5.617333549722643e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	7	7	0	1	-0.10991293733489627	1.0357851278622297e-14	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	8	8	0	1	-0.05435114040630218	8.881784197001203e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	9	9	0	1	-0.020658416431874486	6.404745667978817e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	10	10	0	1	0.10511479461353446	5.61733354972278e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	11	11	0	1	0.062198991660137974	1.0357851278622276e-14	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	12	12	0	1	0.24943603879347265	5.617333549722802e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	13	13	0	1	0.2600824769956222	8.881784197001208e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	14	14	0	1	0.4028029297939568	1.0357851278622297e-14	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	15	15	0	1	0.36048376577533264	7.536443801682068e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	16	16	0	1	0.15947305101464426	4.491860201214288e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	17	17	0	1	0.2531820258800934	2.7974095480984617e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	18	18	0	1	0.33176585393749214	2.097519955288301e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	19	19	0	1	0.12179665696165642	6.452427813564777e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	20	20	0	1	-0.26956980504344763	1.8214619344168285e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	21	21	0	1	-0.14336311106284993	3.103000293312529e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	22	22	0	1	-0.12989765163429823	2.097519955288302e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	23	23	0	1	-0.28586958327879675	6.858801397531491e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	24	24	0	1	0.0763638644299518	4.114755024827547e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	-12	-12	0	1	1.4786429261930953	1.8228371496071364e-14	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	-11	-11	0	1	1.2708388260560917	4.0009702620103673e-14	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	-10	-10	0	1	1.2673777748504786	1.1352018084413752e-14	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	-9	-9	0	1	1.1292527922662017	1.2997637057458922e-14	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	-8	-8	0	1	0.7890349714591913	1.0261662972574025e-14	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	-7	-7	0	1	0.7301908192196102	1.4065229872083919e-14	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	-6	-6	0	1	0.5463325466995714	6.720698014417914e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	-5	-5	0	1	0.41751005941973696	1.2472225475847537e-14	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	-4	-4	0	1	0.3354847495625606	1.1533788967938681e-14	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	-3	-3	0	1	0.19129822056203818	7.397265376399969e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	-2	-2	0	1	0.1350160292408713	8.936813739259302e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	-1	-1	1	1	0.0	0.0		37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	0	0	0	1	-0.006588172470388898	1.047327334613269e-14	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	1	1	0	1	-0.2959482799915799	5.073531848078309e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	2	2	0	1	-0.30464737026185773	1.4722631984021618e-14	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	3	3	0	1	-0.431965655406876	1.589488549363528e-14	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	4	4	0	1	0.6188843586371204	6.163699927464045e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	5	5	0	1	0.49756014485282174	6.090893412994453e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	6	6	0	1	0.2860916124333439	1.033738876285122e-14	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	7	7	0	1	0.26479721105073484	1.6115288875780548e-14	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	8	8	0	1	0.20054517832419716	9.061099854466622e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	9	9	0	1	0.1144240726434993	5.6624906507974604e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	10	10	0	1	0.12038345403376205	5.3550207386636616e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	11	11	0	1	-0.04234617857479117	1.2525759467887447e-14	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	12	12	0	1	0.025077038903424054	4.442605619895765e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	13	13	0	1	-0.08409035254958042	9.643313499936298e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	14	14	0	1	-0.06118372940639549	1.6641264203673708e-14	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	15	15	0	1	-0.22331672308014694	1.1111915720044063e-14	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	16	16	0	1	0.5204414059220905	5.154836342815921e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	17	17	0	1	0.4943365511323985	6.021897517079385e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	18	18	0	1	0.453106549534648	1.457835324187616e-14	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	19	19	0	1	0.12332352290367643	4.627196240839435e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	20	20	0	1	-0.3878567687565546	6.464886956987896e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	21	21	0	1	-0.38146390443110034	3.781300025036305e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	22	22	0	1	-0.48781227465769916	8.426709077039144e-15	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	23	23	0	1	-0.7635980359573558	2.2603684156138727e-14	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	24	24	0	1	-0.5211784179037089	1.3569250405111328e-14	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	-12	-12	0	1	-0.4757510444892965	2.225768740185751e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	-11	-11	0	1	-0.4772614286184379	1.2809491335958058e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	-10	-10	0	1	-0.56891613138278	2.2257687401857494e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	-9	-9	0	1	-0.4703967031102276	1.2809491335957608e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	-8	-8	0	1	-0.4148349061816319	1.1916163935587206e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	-7	-7	0	1	-0.38114218220720864	1.6500597162414472e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	-6	-6	0	1	-0.2553689711617988	1.5132582441346863e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	-5	-5	0	1	-0.2982847741152025	1.36279270607101e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	-4	-4	0	1	-0.1110477269818606	1.1935063493752873e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	-3	-3	0	1	-0.10040128877970972	7.566291220673692e-15	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	-2	-2	0	1	0.04231916401861291	1.022645672504906e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	-1	-1	1	1	0.0	0.0		36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	0	0	0	1	-0.08712941355623371	5.853127554530477e-15	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	1	1	0	1	0.006579561309216955	7.566291220673247e-15	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	2	2	0	1	0.08516338936660972	1.3207988282432674e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	3	3	0	1	-0.12480580760922545	9.958468016104837e-15	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	4	4	0	1	-0.5161722696143265	1.273891508902821e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	5	5	0	1	-0.3899655756337255	1.3954782304807161e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	6	6	0	1	-0.37650011620518065	1.7763568394002426e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	7	7	0	1	-0.5324720478496818	1.637720085286699e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	8	8	0	1	-0.17023860014093017	1.63772008528669e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	9	9	0	1	-0.7000019464057442	1.776356839400244e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	10	10	0	1	-0.3067209304290994	1.637720085286718e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	11	11	0	1	-0.1410321680274606	1.38737904292204e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	12	12	0	1	0.034177662464982106	1.921423700393637e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	13	13	0	1	-0.10920480716386621	1.6377200852866988e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	14	14	0	1	0.08300042026557897	1.507288760336432e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	15	15	0	1	-0.04468610765275353	1.507288760336432e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	16	16	0	1	0.07800345466578307	1.6377200852867083e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	17	17	0	1	-0.010099920284622428	1.6377200852866852e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	18	18	0	1	-0.13639261570045136	1.776356839400249e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	19	19	0	1	-0.20702560938271178	1.5072887603364182e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	20	20	0	1	-0.2549847056316441	1.38737904292203e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	21	21	0	1	-0.24042886282111445	1.7763568394002454e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	22	22	0	1	-0.3277759109823073	1.7763568394002473e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	23	23	0	1	-0.17216849068765513	1.637720085286691e-14	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	-12	-12	0	1	0.5083757747401707	3.272528436177494e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	-11	-11	0	1	0.4173993161356425	3.0970663773270996e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	-10	-10	0	1	0.23627853889589545	3.20308425696009e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	-9	-9	0	1	0.24533189269302827	3.259357087914238e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	-8	-8	0	1	0.21142761514621	3.372006211713358e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	-7	-7	0	1	0.15565426464523807	3.1619529030183725e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	-6	-6	0	1	0.1919614012152433	2.929594810665356e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	-5	-5	0	1	0.05957952378642366	2.7259598326464334e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	-4	-4	0	1	0.15735049644437282	2.3538460690935103e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	-3	-3	0	1	0.07853086017111222	1.9555526275371662e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	-2	-2	0	1	0.1317852384940199	1.4588734038349446e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	-1	-1	1	1	0.0	0.0		36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	0	0	0	1	-0.17659548803163894	1.4657647452141965e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	1	1	0	1	-0.17235258764158026	2.0414279639679873e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	2	2	0	1	-0.18323483405959884	2.568464816736433e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	3	3	0	1	-0.4826701055108514	3.004620395368648e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	4	4	0	1	-0.9635026419913508	3.360824268117677e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	5	5	0	1	-0.9267620224861586	3.738245542796062e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	6	6	0	1	-1.0027626375330119	4.0740680234163027e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	7	7	0	1	-1.2482006436529518	4.3576377516585634e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	8	8	0	1	-0.9754332704195718	4.1935980188403635e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	9	9	0	1	-0.015338345597183167	2.896415578435022e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	10	10	0	1	0.28847659590402497	2.9257166909522773e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	11	11	0	1	0.36469928383025385	2.7579555287840017e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	12	12	0	1	0.4504430398473005	2.6216304976441156e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	13	13	0	1	0.21759449574306933	2.3323703289966267e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	14	14	0	1	0.32033364869711	2.260496369733914e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	15	15	0	1	0.10318104630333957	2.482910152086801e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	16	16	0	1	0.13640453414647613	2.475348275918837e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	17	17	0	1	-0.041164915279335634	2.463618833866001e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	18	18	0	1	-0.2569236851705661	2.4712488399410454e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	19	19	0	1	-0.4170227533282338	2.506090948319891e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	20	20	0	1	-0.5544479240525764	2.6457358821813924e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	21	21	0	1	-0.6293581557174468	2.7989303788811645e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	22	22	0	1	-0.806171278354042	3.010541003922536e-13	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	23	23	0	1	-0.7400299325348012	3.318689545515099e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	-12	-12	0	0				27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	-11	-11	0	0				27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	-10	-10	0	0				27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	-9	-9	0	0				27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	-8	-8	0	0				27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	-7	-7	0	0				27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	-6	-6	0	0				27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	-5	-5	0	0				27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	-4	-4	0	0				27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	-3	-3	0	0				27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	-2	-2	0	1	0.11614057050234283	2.8286575379925475e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	-1	-1	1	1	0.0	0.0		27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	0	0	0	1	4.900909679918554	8.881784197009898e-16	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	1	1	0	1	3.6299263605555505	2.4896170040265178e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	2	2	0	1	4.240746154241851	2.3973767260509423e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	3	3	0	1	4.6053699162672705	5.765834929506342e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	4	4	0	1	4.797677643099521	8.881784197001416e-16	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	5	5	0	1	4.664989803008749	2.0964451307467926e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	6	6	0	1	4.323361118420067	3.662053438817876e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	7	7	0	1	3.85728846372057	3.662053438817904e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	8	8	0	1	3.3950653900281367	3.662053438817995e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	9	9	0	1	3.5405495289033664	2.8086667748614675e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	10	10	0	1	3.2460830043700524	2.808666774861439e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	11	11	0	1	3.1832816690670356	2.808666774861488e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	12	12	0	1	3.0879482162743805	8.881784197010048e-16	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	13	13	0	1	3.0664416553167397	3.662053438817838e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	14	14	0	1	2.838970350196673	2.8086667748615057e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	15	15	0	1	2.809646253300919	1.9860273225981056e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	16	16	0	1	0.27856803841486233	7.760841259668604e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	17	17	0	1	0.4282239696721635	5.59582613745932e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	18	18	0	1	0.18426362456568235	2.7367262966906947e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	19	19	0	1	0.15058641697939734	3.892671453532309e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	20	20	0	1	0.2379820536819257	3.135875420939913e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	21	21	0	1	0.28237798192308006	2.5000064515218807e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	22	22	0	1	0.25041529963715625	3.310688569764721e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	23	23	0	1	0.434420319514381	5.1314887719137934e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	24	24	0	1	0.27828050493370693	7.219186877723927e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	-12	-12	0	0				27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	-11	-11	0	0				27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	-10	-10	0	0				27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	-9	-9	0	0				27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	-8	-8	0	0				27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	-7	-7	0	0				27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	-6	-6	0	0				27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	-5	-5	0	0				27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	-4	-4	0	0				27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	-3	-3	0	0				27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	-2	-2	0	1	0.2489975160067841	3.4377512975674934e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	-1	-1	1	1	0.0	0.0		27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	0	0	0	1	4.768052734414103	3.407468445521959e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	1	1	0	1	3.364212469546653	4.945497329708785e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	2	2	0	1	3.8421753177285067	4.74266974112328e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	3	3	0	1	4.073942134249481	6.2319326150573216e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	4	4	0	1	2.2723242326793756	1.3643734128841574e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	5	5	0	1	2.0067794470841562	1.2207020703830787e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	6	6	0	1	1.5322938169910247	6.397569442121924e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	7	7	0	1	0.9333642167870844	5.103720420406047e-16	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	8	8	0	1	0.338284197590204	6.47081025216025e-16	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	9	9	0	1	0.3509113909609871	1.5106022477411713e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	10	10	0	1	-0.07641207907677439	2.2847624530988563e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	11	11	0	1	-0.27207035988424133	1.6040844864233575e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	12	12	0	1	-0.500260758181347	9.757822487708682e-16	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	13	13	0	1	-0.6546242646434326	1.7281954629041744e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	14	14	0	1	-1.0149525152679457	8.611354015223695e-16	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	15	15	0	1	-1.177133557668148	8.727591972768876e-16	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	16	16	0	1	0.34488936658352154	4.781246610575339e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	17	17	0	1	0.3616883523363761	2.8015625151524336e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	18	18	0	1	-0.015128938274557857	2.4973893047858466e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	19	19	0	1	-0.18166309136528547	1.6898702043905962e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	20	20	0	1	-0.22712440016720592	1.3384983729444157e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	21	21	0	1	-0.3155854174305017	2.6373307889538293e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	22	22	0	1	-0.4804050452208726	2.3480319158216228e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	23	23	0	1	-0.429256970848094	3.456987868696978e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	24	24	0	1	-0.7182537309332098	2.4240303432741735e-15	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	-12	-12	0	1	1.9880313897986017	1.5280799322856904e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	-11	-11	0	1	1.855343549707834	1.4321446692197898e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	-10	-10	0	1	1.5137148651191499	1.637720085286691e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	-9	-9	0	1	1.0476422104196574	1.432144669219782e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	-8	-8	0	1	0.5854191367272232	1.478223497128303e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	-7	-7	0	1	0.7309032756024482	1.5713480306226746e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	-6	-6	0	1	0.43643675106913626	1.3440578383968848e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	-5	-5	0	1	0.37363541576611814	1.2434497875801742e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	-4	-4	0	1	0.27830196297346177	1.0546534389843936e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	-3	-3	0	1	0.25679540201582646	8.881784197001252e-15	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	-2	-2	0	1	0.029324096895756213	6.404745667978774e-15	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	-1	-1	1	1	0.0	0.0		36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	0	0	0	1	-0.0059600055636996885	8.926082647349952e-15	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	1	1	0	1	0.14369592569359713	8.747542958250481e-15	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	2	2	0	1	-0.10026441941288766	1.0242973220427438e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	3	3	0	1	-0.1339416269991697	1.1374233532693327e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	4	4	0	1	-0.046545990296645634	1.3440578383968875e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	5	5	0	1	-0.0021500620554916	1.4675115915226533e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	6	6	0	1	-0.03411274434141642	1.6377200852866827e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	7	7	0	1	0.14989227553580958	1.6968624882578632e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	8	8	0	1	-0.00624753904486397	1.8223897527643354e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	9	9	0	1	0.2995861648188554	1.5813567179958502e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	10	10	0	1	0.48099397101344543	1.581356717995852e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	11	11	0	1	0.6423913143652219	1.432144669219781e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	12	12	0	1	0.534171804215255	1.5280799322856778e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	13	13	0	1	0.3729673387379265	1.5280799322856737e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	14	14	0	1	0.1680933651259382	1.4782234971282976e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	15	15	0	1	0.6778306768800042	1.4321446692197718e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	16	16	0	1	0.22636618872968128	1.696862488257875e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	17	17	0	1	0.7010486436834327	1.528079932285677e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	18	18	0	1	0.6804139505282691	1.6377200852866827e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	19	19	0	1	0.5245018343945315	1.581356717995852e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	20	20	0	1	0.5435768706576498	1.637720085286687e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	21	21	0	1	0.4316192507728242	1.6968624882578752e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	22	22	0	1	0.47822822559821354	1.528079932285683e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	23	23	0	1	0.444018650101832	1.5813567179958477e-14	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	-12	-12	0	1	2.4738376594312577	2.9252703520040394e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	-11	-11	0	1	2.2969856130102797	2.728827112183282e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	-10	-10	0	1	1.9111927220913412	2.864355503204281e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	-9	-9	0	1	1.4009558610616013	2.911534663431852e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	-8	-8	0	1	0.8945685810389223	2.9967361692339315e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	-7	-7	0	1	0.995888513583913	2.8007920594745607e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	-6	-6	0	1	0.6572577827203547	2.605935812910928e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	-5	-5	0	1	0.5502922410870836	2.437344071901782e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	-4	-4	0	1	0.4107945819642014	2.0786930330882532e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	-3	-3	0	1	0.3451238146763219	1.7341613779624057e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	-2	-2	0	1	0.07348830322599387	1.294309815524051e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	-1	-1	1	1	0.0	0.0		36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	0	0	0	1	-0.05012421189394711	1.3110226111494893e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	1	1	0	1	0.05536751303312727	1.8089912380368561e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	2	2	0	1	-0.2327570384036166	2.294227818566102e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	3	3	0	1	-0.31059845232014227	2.669369588607906e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	4	4	0	1	-0.26736702194785433	2.9949414698363495e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	5	5	0	1	-0.26713530003694197	3.3126564857764453e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	6	6	0	1	-0.34326218865310754	3.628372437008255e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	7	7	0	1	-0.20342137510615568	3.9152400548354433e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	8	8	0	1	-0.40372539601703217	3.71945150459294e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	9	9	0	1	0.11144812430324613	2.561499580985242e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	10	10	0	1	0.2486917241675619	2.623729021530873e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	11	11	0	1	0.3659248611890935	2.47740798447829e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	12	12	0	1	0.21354114470888685	2.3581930043738533e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	13	13	0	1	0.008172472901348815	2.033042551221278e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	14	14	0	1	-0.2408657070408804	1.9762322984605263e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	15	15	0	1	0.22470739838290932	2.2233204190300721e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	16	16	0	1	-0.2709212960976495	2.2106585561337036e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	17	17	0	1	0.15959695252585648	2.2042359951425456e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	18	18	0	1	0.09479805304045463	2.2062454889534018e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	19	19	0	1	-0.10527826942352236	2.2379972298922562e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	20	20	0	1	-0.13036743949064622	2.340725791741982e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	21	21	0	1	-0.286489265705713	2.4865752482027846e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	22	22	0	1	-0.2840444972105667	2.670412843163432e-13	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	23	23	0	1	-0.36241827903719015	2.9298604944632783e-13	0.0	36	1.0

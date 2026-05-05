@@ -1,0 +1,564 @@
+Pipeline run started at Sat May  2 23:45:18 PDT 2026
+Project root: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis
+Python bin: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/.venv/bin/python
+
+============================================================
+RUNNING: python Data/L_proxy/common_rule/Build_L_Proxy_CommonRule_v5.py --tons Data/Output/monthly_output_by_1000_tons_ports_and_terminals.tsv --teu Data/Output/teu_monthly_plus_quarterly_by_port.tsv --kpis Data/L_proxy/containers_kpis_annual_wide_filled.tsv --base-lproxy Data/L_proxy/L_Proxy.tsv --out Data/L_proxy/common_rule
+============================================================
+✔ Thesis root: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis
+✔ Wrote (terminal_month_labor): Data/L_proxy/common_rule/labor_hours_monthly_terminal_commonrule_v5.tsv
+✔ Wrote (port_month_labor): Data/L_proxy/common_rule/labor_hours_monthly_port_commonrule_v5.tsv
+✔ Wrote (annual_anchor): Data/L_proxy/common_rule/labor_anchor_terminal_year_commonrule_v5.tsv
+✔ Wrote (lproxy): Data/L_proxy/common_rule/L_Proxy_commonrule_v5.tsv
+✔ Wrote (qa): Data/L_proxy/common_rule/lproxy_commonrule_v5_qa.tsv
+✔ Wrote (anchor_compare): Data/L_proxy/common_rule/lproxy_commonrule_v5_old_new_anchor_compare.tsv
+✔ Wrote (meta): Data/L_proxy/common_rule/_meta_l_proxy_commonrule_v5.json
+
+============================================================
+RUNNING: python Data/L_proxy/Plot_L_Proxy_By_Strategy.py --strategy common_rule --lproxy Data/L_proxy/common_rule/L_Proxy_commonrule_v5.tsv --outdir Data/L_proxy/common_rule/Visualizations
+============================================================
+[viz] strategy: common_rule
+[viz] read:     /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/common_rule/L_Proxy_commonrule_v5.tsv
+[viz] wrote:    /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/common_rule/Visualizations
+
+============================================================
+RUNNING: python Data/LP/Build_LP_Panel_S1_Tons.py --tons Data/Output/monthly_output_by_1000_tons_ports_and_terminals.tsv --out Data/LP
+============================================================
+[S1] Wrote Stage 1 tons artifacts to Data/LP
+
+============================================================
+RUNNING: python Data/LP/Build_LP_Panel_S2_TEU.py --teu Data/Output/teu_monthly_plus_quarterly_by_port.tsv --out Data/LP
+============================================================
+[S2] Wrote Stage 2 TEU artifacts to Data/LP
+
+============================================================
+RUNNING: python Data/LP/Build_LP_Panel_S3_LProxy.py --lproxy Data/L_proxy/common_rule/L_Proxy_commonrule_v5.tsv --s2_term_quarter Data/LP/S2_terminal_quarter_teu.tsv --out Data/LP/common_rule_v5
+============================================================
+/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/Build_LP_Panel_S3_LProxy.py:153: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  pi_tbl = grp.apply(_collapse_pi).reset_index()
+[S3] Wrote Stage 3 L_Proxy artifacts to Data/LP/common_rule_v5
+
+============================================================
+RUNNING: python Data/LP/Build_LP_Panel_S4.py --s1_port_month_tons Data/LP/S1_port_month_tons.tsv --s1_port_quarter_tons Data/LP/S1_port_quarter_tons.tsv --s2_port_month_teu Data/LP/S2_port_month_teu.tsv --s2_term_quarter_teu Data/LP/S2_terminal_quarter_teu.tsv --s2_port_quarter_teu Data/LP/S2_port_quarter_teu.tsv --s3_lproxy_clean Data/LP/common_rule_v5/S3_lproxy_clean.tsv --s3_port_month_labor Data/LP/common_rule_v5/S3_port_month_labor.tsv --s3_term_year_pi Data/LP/common_rule_v5/S3_terminal_year_pi.tsv --out Data/LP/common_rule_v5
+============================================================
+/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/Build_LP_Panel_S4.py:142: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  shares = m.groupby(['port','year','quarter'], group_keys=False).apply(_resolve)
+[S4] Wrote LP series and QA to Data/LP/common_rule_v5
+
+============================================================
+RUNNING: python Data/LP/Build_LP_Panel_S5_Stack.py --haifa_m Data/LP/common_rule_v5/LP_Haifa_port_month.tsv --ashdod_m Data/LP/common_rule_v5/LP_Ashdod_port_month.tsv --haifa_legacy_q Data/LP/common_rule_v5/LP_Haifa_Legacy_quarter.tsv --haifa_sipg_q Data/LP/common_rule_v5/LP_Haifa_SIPG_quarter.tsv --ashdod_legacy_q Data/LP/common_rule_v5/LP_Ashdod_Legacy_quarter.tsv --ashdod_hct_q Data/LP/common_rule_v5/LP_Ashdod_HCT_quarter.tsv --out_dir Data/LP/common_rule_v5
+============================================================
+/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/Build_LP_Panel_S5_Stack.py:148: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  panel = pd.concat([hm, am, hlq, hsq, alq, ahq], ignore_index=True)[cols]
+[S5] Wrote LP_Panel.tsv, S5_qa.tsv, S5_spans.tsv and _meta_s5.json to Data/LP/common_rule_v5
+
+============================================================
+RUNNING: python Data/K/interpolation_00_prepare_working_inputs_v8_hpc_operator_bridge_ready.py
+============================================================
+Done.
+Wrote: Data/K/Interpolation Output/interpolation_00_prepared_anchors.tsv
+Wrote: Data/K/Interpolation Output/interpolation_00_working_annual_pools.tsv
+Wrote: Data/K/Interpolation Output/interpolation_00_working_dep_lookup.tsv
+Wrote: Data/K/Interpolation Output/interpolation_00_working_service_entry_pools.tsv
+Wrote: Data/K/Interpolation Output/interpolation_00_working_dated_events.tsv
+Wrote: Data/K/Interpolation Output/interpolation_00_project_milestones.tsv
+Wrote: Data/K/Interpolation Output/interpolation_00_sipg_cip_memo.tsv
+Wrote: Data/K/Interpolation Output/interpolation_00_excluded_rows.tsv
+Wrote: Data/K/Interpolation Output/interpolation_00_prepare_manifest.json
+
+============================================================
+RUNNING: python Data/K/interpolation_01_build_monthly_engine_v8_hpc_operator_linear_backloaded.py
+============================================================
+Done.
+Wrote: Data/K/Interpolation Output/interpolation_01_monthly_class_investment_baseline.tsv
+Wrote: Data/K/Interpolation Output/interpolation_01_monthly_class_investment.tsv
+Wrote: Data/K/Interpolation Output/interpolation_01_monthly_class_capital.tsv
+Wrote: Data/K/Interpolation Output/interpolation_01_monthly_entity_capital.tsv
+Wrote: Data/K/Interpolation Output/interpolation_01_background_dep_rates.tsv
+Wrote: Data/K/Interpolation Output/interpolation_01_dated_event_pool_netting.tsv
+Wrote: Data/K/Interpolation Output/interpolation_01_initial_stock_backsolve.tsv
+Wrote: Data/K/Interpolation Output/interpolation_01_bridge_adjustments.tsv
+Wrote: Data/K/Interpolation Output/interpolation_01_year_end_reconciliation.tsv
+Wrote: Data/K/Interpolation Output/interpolation_01_engine_debug_summary.tsv
+Wrote: Data/K/Interpolation Output/interpolation_01_engine_manifest.json
+
+============================================================
+RUNNING: python Data/K/interpolation_02_finalize_outputs_and_qc_v9_hpc_operator_linear_backloaded.py
+============================================================
+Done.
+Wrote: Data/K/Interpolation Output/interpolation_02_monthly_entity_series_long.tsv
+Wrote: Data/K/Interpolation Output/interpolation_02_monthly_entity_series_wide.tsv
+Wrote: Data/K/Interpolation Output/interpolation_02_monthly_hpc.tsv
+Wrote: Data/K/Interpolation Output/interpolation_02_monthly_ipc.tsv
+Wrote: Data/K/Interpolation Output/interpolation_02_monthly_sipg.tsv
+Wrote: Data/K/Interpolation Output/interpolation_02_monthly_haifa_total.tsv
+Wrote: Data/K/Interpolation Output/interpolation_02_qc_summary.tsv
+Wrote: Data/K/Interpolation Output/interpolation_02_qc_annual_flow_detail.tsv
+Wrote: Data/K/Interpolation Output/interpolation_02_qc_anchor_fit_detail.tsv
+Wrote: Data/K/Interpolation Output/interpolation_02_plot_hpc.png
+Wrote: Data/K/Interpolation Output/interpolation_02_plot_ipc.png
+Wrote: Data/K/Interpolation Output/interpolation_02_plot_sipg.png
+Wrote: Data/K/Interpolation Output/interpolation_02_plot_haifa_total.png
+Wrote: Data/K/Interpolation Output/interpolation_02_plot_all_series.png
+Wrote: Data/K/Interpolation Output/interpolation_02_build_manifest.json
+
+============================================================
+RUNNING: python Data/KL/Build_KL_Panel_new_v2.py --lproxy Data/L_proxy/common_rule/L_Proxy_commonrule_v5.tsv --k-long Data/K/Interpolation Output/interpolation_02_monthly_entity_series_long.tsv --out-dir Data/KL/common_rule_v5
+============================================================
+=== Build_KL_Panel from interpolation_02 ===
+THESIS_ROOT : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis
+L input     : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/common_rule/L_Proxy_commonrule_v5.tsv
+K input     : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/K/Interpolation Output/interpolation_02_monthly_entity_series_long.tsv
+OUT DIR     : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/common_rule_v5
+Wrote panel    : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/common_rule_v5/KL_Panel_monthly.tsv
+Wrote long     : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/common_rule_v5/KL_monthly_series_long.tsv
+Wrote wide     : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/common_rule_v5/KL_monthly_series_wide.tsv
+Wrote manifest : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/common_rule_v5/kl_build_manifest.json
+Series built   : Haifa_Bayport_KL, Haifa_Legacy_KL, Haifa_port_KL
+
+============================================================
+RUNNING: python Data/KL/Plot_KL_Series_v2.py --lproxy Data/L_proxy/common_rule/L_Proxy_commonrule_v5.tsv --k-wide Data/K/Interpolation Output/interpolation_02_monthly_entity_series_wide.tsv --out-dir Data/KL/common_rule_v5
+============================================================
+Done.
+K source: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/K/Interpolation Output/interpolation_02_monthly_entity_series_wide.tsv
+L source: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/common_rule/L_Proxy_commonrule_v5.tsv
+Wrote: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/common_rule_v5/KL_monthly_series_long.tsv
+Wrote: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/common_rule_v5/KL_monthly_series_wide.tsv
+Wrote: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/common_rule_v5/Visualization/plot_kl_legacy.png
+Wrote: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/common_rule_v5/Visualization/plot_kl_entrant.png
+Wrote: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/common_rule_v5/Visualization/plot_kl_haifa_total.png
+Wrote: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/common_rule_v5/Visualization/plot_kl_all_series.png
+Wrote: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/common_rule_v5/kl_build_manifest.json
+
+============================================================
+RUNNING: python Design/Code (new)/preprocess_LP_Panel.py
+============================================================
+Reading LP panel from: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/LP_Panel.tsv
+Monthly rows:   92
+Quarterly rows: 56
+Built base (year, month) -> month_index mapping for 46 months.
+Last known month in base mapping: (2021, 10)
+Created 168 monthly rows from 56 quarterly rows.
+Final (year, month) -> month_index mapping now has 84 months.
+Last month in mapping: (2024, 12)
+Done. Wrote 260 rows to /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/LP_Panel_monthly.tsv
+SKIP (optional missing): LP visuals script
+
+============================================================
+RUNNING: python Design/Code (new)/Model_1A(v4).py
+============================================================
+/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/.venv/lib/python3.13/site-packages/statsmodels/regression/linear_model.py:1884: RuntimeWarning: invalid value encountered in sqrt
+  return np.sqrt(np.diag(self.cov_params()))
+/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/.venv/lib/python3.13/site-packages/statsmodels/regression/linear_model.py:1884: RuntimeWarning: invalid value encountered in sqrt
+  return np.sqrt(np.diag(self.cov_params()))
+/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/.venv/lib/python3.13/site-packages/statsmodels/regression/linear_model.py:1884: RuntimeWarning: invalid value encountered in sqrt
+  return np.sqrt(np.diag(self.cov_params()))
+/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/.venv/lib/python3.13/site-packages/statsmodels/regression/linear_model.py:1884: RuntimeWarning: invalid value encountered in sqrt
+  return np.sqrt(np.diag(self.cov_params()))
+/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/.venv/lib/python3.13/site-packages/statsmodels/regression/linear_model.py:1884: RuntimeWarning: invalid value encountered in sqrt
+  return np.sqrt(np.diag(self.cov_params()))
+Cleared 21 old Model 1A output files from: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A
+Reading monthly LP panel from: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/LP_Panel_monthly.tsv
+Loaded 260 rows from LP_Panel_monthly.tsv.
+Built (year, month) -> month_index mapping for 84 months.
+
+==================== DEBUG: NYT privatization ====================
+
+--- target = Haifa-Legacy | target_key = haifa_legacy ---
+Rows by series_id x treated:
+      series_id  treated  n
+   Ashdod_HCT_Q    False 21
+Ashdod_Legacy_Q    False 21
+ Haifa_Legacy_Q     True 21
+   Haifa_SIPG_Q    False 21
+
+Rows by unit_id x treated:
+      unit_id  treated  n
+   ashdod_hct    False 21
+ashdod_legacy    False 21
+haifa_bayport    False 21
+ haifa_legacy     True 21
+
+Mean log_LP by unit_id x post:
+      unit_id  post  mean_log_LP
+   ashdod_hct     0     3.008144
+   ashdod_hct     1     3.363605
+ashdod_legacy     0     3.231288
+ashdod_legacy     1     3.586748
+haifa_bayport     0     3.518387
+haifa_bayport     1     3.879875
+ haifa_legacy     0     3.603545
+ haifa_legacy     1     3.965033
+
+Mean log_LP by series_id x post:
+      series_id  post  mean_log_LP
+   Ashdod_HCT_Q     0     3.008144
+   Ashdod_HCT_Q     1     3.363605
+Ashdod_Legacy_Q     0     3.231288
+Ashdod_Legacy_Q     1     3.586748
+ Haifa_Legacy_Q     0     3.603545
+ Haifa_Legacy_Q     1     3.965033
+   Haifa_SIPG_Q     0     3.518387
+   Haifa_SIPG_Q     1     3.879875
+
+
+--- target = Haifa-Bayport | target_key = haifa_bayport_placebo ---
+Rows by series_id x treated:
+      series_id  treated  n
+   Ashdod_HCT_Q    False 21
+Ashdod_Legacy_Q    False 21
+ Haifa_Legacy_Q    False 21
+   Haifa_SIPG_Q     True 21
+
+Rows by unit_id x treated:
+      unit_id  treated  n
+   ashdod_hct    False 21
+ashdod_legacy    False 21
+haifa_bayport     True 21
+ haifa_legacy    False 21
+
+Mean log_LP by unit_id x post:
+      unit_id  post  mean_log_LP
+   ashdod_hct     0     3.008144
+   ashdod_hct     1     3.363605
+ashdod_legacy     0     3.231288
+ashdod_legacy     1     3.586748
+haifa_bayport     0     3.518387
+haifa_bayport     1     3.879875
+ haifa_legacy     0     3.603545
+ haifa_legacy     1     3.965033
+
+Mean log_LP by series_id x post:
+      series_id  post  mean_log_LP
+   Ashdod_HCT_Q     0     3.008144
+   Ashdod_HCT_Q     1     3.363605
+Ashdod_Legacy_Q     0     3.231288
+Ashdod_Legacy_Q     1     3.586748
+ Haifa_Legacy_Q     0     3.603545
+ Haifa_Legacy_Q     1     3.965033
+   Haifa_SIPG_Q     0     3.518387
+   Haifa_SIPG_Q     1     3.879875
+
+
+Detected shock-control columns: ['covid_shock', 'war_shock']
+Aggregate specs disabled by configuration. Aggregate hooks remain scaffolded in the code.
+
+==================== NYT run ====================
+
+=== [NYT] table=competition, reform=haifa_comp, target=Haifa-Legacy, spec=baseline ===
+Sample size: 76 rows (38 treated, 38 controls).
+[WARN] Saturated or near-saturated design detected (nobs=76, k_params=76). Retrying clustered SE without finite-sample correction.
+
+=== [NYT] table=competition, reform=haifa_comp, target=Haifa-Legacy, spec=porttr ===
+Sample size: 76 rows (38 treated, 38 controls).
+[WARN] Saturated or near-saturated design detected (nobs=76, k_params=77). Retrying clustered SE without finite-sample correction.
+
+=== [NYT] table=privatization, reform=haifa_priv, target=Haifa-Legacy, spec=baseline ===
+Sample size: 84 rows (21 treated, 63 controls).
+
+=== [NYT] table=privatization, reform=haifa_priv, target=Haifa-Legacy, spec=porttr ===
+Sample size: 84 rows (21 treated, 63 controls).
+
+=== [NYT] table=privatization, reform=haifa_priv, target=Haifa-Bayport, spec=baseline ===
+Sample size: 84 rows (21 treated, 63 controls).
+
+=== [NYT] table=privatization, reform=haifa_priv, target=Haifa-Bayport, spec=porttr ===
+Sample size: 84 rows (21 treated, 63 controls).
+Saved dynamic betas (NYT, spec=baseline) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/model1a_lp_dynamic_betas_baseline.tsv
+Saved dynamic betas (NYT, spec=porttr) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/model1a_lp_dynamic_betas_porttr.tsv
+Saved window betas (NYT, spec=baseline) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/model1a_lp_window_betas_baseline.tsv
+Saved window betas (NYT, spec=porttr) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/model1a_lp_window_betas_porttr.tsv
+Saved pretrend tests (NYT, spec=baseline) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/model1a_lp_pretrend_tests_baseline.tsv
+Saved pretrend tests (NYT, spec=porttr) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/model1a_lp_pretrend_tests_porttr.tsv
+Saved pooled dynamic betas (NYT) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/model1a_lp_dynamic_betas_all.tsv
+Saved pooled window betas (NYT) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/model1a_lp_window_betas_all.tsv
+Saved pooled pretrend tests (NYT) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/model1a_lp_pretrend_tests_all.tsv
+
+==================== TWFE run ====================
+
+=== [TWFE] table=competition, reform=haifa_comp, target=Haifa-Legacy, spec=baseline ===
+Sample size: 128 rows (64 treated, 64 controls).
+[WARN] Saturated or near-saturated design detected (nobs=128, k_params=128). Retrying clustered SE without finite-sample correction.
+
+=== [TWFE] table=competition, reform=haifa_comp, target=Haifa-Legacy, spec=porttr ===
+Sample size: 128 rows (64 treated, 64 controls).
+[WARN] Saturated or near-saturated design detected (nobs=128, k_params=129). Retrying clustered SE without finite-sample correction.
+
+=== [TWFE] table=competition, reform=ashdod_comp, target=Ashdod-Legacy, spec=baseline ===
+Sample size: 88 rows (38 treated, 50 controls).
+[WARN] Saturated or near-saturated design detected (nobs=88, k_params=89). Retrying clustered SE without finite-sample correction.
+
+=== [TWFE] table=competition, reform=ashdod_comp, target=Ashdod-Legacy, spec=porttr ===
+Sample size: 88 rows (38 treated, 50 controls).
+[WARN] Saturated or near-saturated design detected (nobs=88, k_params=90). Retrying clustered SE without finite-sample correction.
+
+=== [TWFE] table=privatization, reform=haifa_priv, target=Haifa-Legacy, spec=baseline ===
+Sample size: 144 rows (36 treated, 108 controls).
+
+=== [TWFE] table=privatization, reform=haifa_priv, target=Haifa-Legacy, spec=porttr ===
+Sample size: 144 rows (36 treated, 108 controls).
+
+=== [TWFE] table=privatization, reform=haifa_priv, target=Haifa-Bayport, spec=baseline ===
+Sample size: 144 rows (36 treated, 108 controls).
+
+=== [TWFE] table=privatization, reform=haifa_priv, target=Haifa-Bayport, spec=porttr ===
+Sample size: 144 rows (36 treated, 108 controls).
+Saved dynamic betas (TWFE, spec=baseline) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/model1a_lp_dynamic_betas_baseline_twfe.tsv
+Saved dynamic betas (TWFE, spec=porttr) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/model1a_lp_dynamic_betas_porttr_twfe.tsv
+Saved window betas (TWFE, spec=baseline) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/model1a_lp_window_betas_baseline_twfe.tsv
+Saved window betas (TWFE, spec=porttr) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/model1a_lp_window_betas_porttr_twfe.tsv
+Saved pretrend tests (TWFE, spec=baseline) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/model1a_lp_pretrend_tests_baseline_twfe.tsv
+Saved pretrend tests (TWFE, spec=porttr) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/model1a_lp_pretrend_tests_porttr_twfe.tsv
+Saved static betas (TWFE, spec=baseline) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/model1a_lp_static_betas_baseline_twfe.tsv
+Saved static betas (TWFE, spec=porttr) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/model1a_lp_static_betas_porttr_twfe.tsv
+Saved pooled dynamic betas (TWFE) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/model1a_lp_dynamic_betas_all_twfe.tsv
+Saved pooled window betas (TWFE) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/model1a_lp_window_betas_all_twfe.tsv
+Saved pooled pretrend tests (TWFE) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/model1a_lp_pretrend_tests_all_twfe.tsv
+Saved pooled static betas (TWFE) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/model1a_lp_static_betas_all_twfe.tsv
+
+============================================================
+RUNNING: python Design/Code (new)/Model_1A_to_tables(v4).py
+============================================================
+=== Model_1A_to_tables(v4): starting ===
+THESIS_ROOT: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis
+Model 1A output dir: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A
+Tables output dir: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/Tables
+Saved main long-form table helper to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/Tables/model1a_lp_table_cells_v4.tsv
+Saved wide panel helper to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/Tables/model1a_competition_panelA_v4.tsv
+Saved wide panel helper to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/Tables/model1a_competition_panelB_v4.tsv
+Saved wide panel helper to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/Tables/model1a_privatization_panelA_v4.tsv
+Saved wide panel helper to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/Tables/model1a_privatization_panelB_v4.tsv
+Saved dynamic appendix helper to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/Tables/model1a_lp_dynamic_for_appendix_v4.tsv
+Saved pretrend appendix helper to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/Tables/model1a_lp_pretrend_for_appendix_v4.tsv
+
+Summary:
+  Main table cells: 76
+  Competition Panel A cells: 20
+  Competition Panel B cells: 12
+  Privatization Panel A cells: 20
+  Privatization Panel B cells: 24
+  Dynamic appendix rows: 496
+  Pretrend appendix rows: 12
+Table helper files written to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/Tables
+=== Model_1A_to_tables(v4): done ===
+
+============================================================
+RUNNING: python Design/Code (new)/Plot_Model_1A_event_study(v4).py
+============================================================
+[OK] Saved: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/Figures/v4/model1a_lp_eventstudy_competition_nyt_porttr_v4.png
+[OK] Saved: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/Figures/v4/model1a_lp_eventstudy_competition_twfe_porttr_v4.png
+[OK] Saved: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/Figures/v4/model1a_lp_eventstudy_privatization_nyt_porttr_v4.png
+[OK] Saved: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/Figures/v4/model1a_lp_eventstudy_privatization_twfe_porttr_v4.png
+
+Done. Figures written to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/Figures/v4
+
+============================================================
+RUNNING: python Design/Code (new)/Model_1B(v4)_fixed2.py
+============================================================
+/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/.venv/lib/python3.13/site-packages/statsmodels/regression/linear_model.py:1992: RuntimeWarning: divide by zero encountered in scalar divide
+  self.het_scale = self.nobs/(self.df_resid)*(self.wresid**2)
+/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/.venv/lib/python3.13/site-packages/statsmodels/regression/linear_model.py:1992: RuntimeWarning: invalid value encountered in multiply
+  self.het_scale = self.nobs/(self.df_resid)*(self.wresid**2)
+/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/.venv/lib/python3.13/site-packages/statsmodels/regression/linear_model.py:1992: RuntimeWarning: divide by zero encountered in scalar divide
+  self.het_scale = self.nobs/(self.df_resid)*(self.wresid**2)
+/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/.venv/lib/python3.13/site-packages/statsmodels/regression/linear_model.py:1992: RuntimeWarning: invalid value encountered in multiply
+  self.het_scale = self.nobs/(self.df_resid)*(self.wresid**2)
+/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/.venv/lib/python3.13/site-packages/statsmodels/regression/linear_model.py:1992: RuntimeWarning: divide by zero encountered in scalar divide
+  self.het_scale = self.nobs/(self.df_resid)*(self.wresid**2)
+/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/.venv/lib/python3.13/site-packages/statsmodels/regression/linear_model.py:1992: RuntimeWarning: invalid value encountered in multiply
+  self.het_scale = self.nobs/(self.df_resid)*(self.wresid**2)
+/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/.venv/lib/python3.13/site-packages/statsmodels/regression/linear_model.py:1992: RuntimeWarning: divide by zero encountered in scalar divide
+  self.het_scale = self.nobs/(self.df_resid)*(self.wresid**2)
+/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/.venv/lib/python3.13/site-packages/statsmodels/regression/linear_model.py:1992: RuntimeWarning: invalid value encountered in multiply
+  self.het_scale = self.nobs/(self.df_resid)*(self.wresid**2)
+Cleared 14 old Model 1B output files from: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B
+Reading monthly KL panel from: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/KL_Panel_monthly.tsv
+Loaded 252 rows from KL_Panel_monthly.tsv.
+Built (year, month) -> month_index mapping for 84 months.
+Detected shock-control columns: ['covid_shock', 'war_shock']
+Aggregate specs disabled by configuration. Aggregate hooks remain scaffolded in the code.
+
+==================== NYT run ====================
+[INFO] Skipping NYT Haifa-competition K/L spec because the current KL panel does not contain the full Ashdod control path.
+
+=== [NYT] table=privatization, reform=haifa_priv, target=Haifa-Legacy, spec=baseline ===
+Sample size: 42 rows (21 treated, 21 controls).
+
+=== [NYT] table=privatization, reform=haifa_priv, target=Haifa-Bayport, spec=baseline ===
+Sample size: 42 rows (21 treated, 21 controls).
+Saved dynamic betas (NYT, spec=baseline) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/model1b_kl_dynamic_betas_baseline.tsv
+Saved window betas (NYT, spec=baseline) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/model1b_kl_window_betas_baseline.tsv
+Saved pretrend tests (NYT, spec=baseline) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/model1b_kl_pretrend_tests_baseline.tsv
+Saved pooled dynamic betas (NYT) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/model1b_kl_dynamic_betas_all.tsv
+Saved pooled window betas (NYT) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/model1b_kl_window_betas_all.tsv
+Saved pooled pretrend tests (NYT) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/model1b_kl_pretrend_tests_all.tsv
+
+==================== TWFE run ====================
+[INFO] Skipping TWFE Haifa-competition K/L spec because the current KL panel does not contain the full Ashdod control path.
+[INFO] Skipping TWFE Ashdod-competition K/L spec because the current KL panel does not contain the Ashdod K/L series.
+
+=== [TWFE] table=privatization, reform=haifa_priv, target=Haifa-Legacy, spec=baseline ===
+Sample size: 72 rows (36 treated, 36 controls).
+
+=== [TWFE] table=privatization, reform=haifa_priv, target=Haifa-Bayport, spec=baseline ===
+Sample size: 72 rows (36 treated, 36 controls).
+Saved dynamic betas (TWFE, spec=baseline) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/model1b_kl_dynamic_betas_baseline_twfe.tsv
+Saved window betas (TWFE, spec=baseline) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/model1b_kl_window_betas_baseline_twfe.tsv
+Saved pretrend tests (TWFE, spec=baseline) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/model1b_kl_pretrend_tests_baseline_twfe.tsv
+Saved static betas (TWFE, spec=baseline) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/model1b_kl_static_betas_baseline_twfe.tsv
+Saved pooled dynamic betas (TWFE) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/model1b_kl_dynamic_betas_all_twfe.tsv
+Saved pooled window betas (TWFE) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/model1b_kl_window_betas_all_twfe.tsv
+Saved pooled pretrend tests (TWFE) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/model1b_kl_pretrend_tests_all_twfe.tsv
+Saved pooled static betas (TWFE) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/model1b_kl_static_betas_all_twfe.tsv
+
+============================================================
+RUNNING: python Design/Code (new)/Model_1B_relaxed(v4)_fixed.py
+============================================================
+Cleared 14 old relaxed Model 1B output files from: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_relaxed
+Reading monthly KL panel from: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/KL_Panel_monthly.tsv
+Loaded 252 rows from KL_Panel_monthly.tsv.
+Built (year, month) -> month_index mapping for 84 months.
+
+==================== RELAXED NYT run ====================
+[INFO] Skipping NYT Haifa-competition K/L spec because the current KL panel does not contain the full Ashdod control path.
+
+=== [RELAXED NYT] table=privatization, reform=haifa_priv, target=Haifa-Legacy, spec=relaxed_tr ===
+Sample size: 42 rows (21 treated, 21 controls).
+
+=== [RELAXED NYT] table=privatization, reform=haifa_priv, target=Haifa-Bayport, spec=relaxed_tr ===
+Sample size: 42 rows (21 treated, 21 controls).
+Saved dynamic betas (NYT, spec=relaxed_tr) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_relaxed/model1b_kl_dynamic_betas_relaxed_tr_relaxed.tsv
+Saved window betas (NYT, spec=relaxed_tr) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_relaxed/model1b_kl_window_betas_relaxed_tr_relaxed.tsv
+Saved pretrend tests (NYT, spec=relaxed_tr) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_relaxed/model1b_kl_pretrend_tests_relaxed_tr_relaxed.tsv
+
+==================== RELAXED TWFE run ====================
+[INFO] Skipping TWFE Haifa-competition K/L spec because the current KL panel does not contain the full Ashdod control path.
+[INFO] Skipping TWFE Ashdod-competition K/L spec because the current KL panel does not contain the Ashdod K/L series.
+
+=== [RELAXED TWFE] table=privatization, reform=haifa_priv, target=Haifa-Legacy, spec=relaxed_tr ===
+Sample size: 72 rows (36 treated, 36 controls).
+
+=== [RELAXED TWFE] table=privatization, reform=haifa_priv, target=Haifa-Bayport, spec=relaxed_tr ===
+Sample size: 72 rows (36 treated, 36 controls).
+Saved dynamic betas (TWFE, spec=relaxed_tr) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_relaxed/model1b_kl_dynamic_betas_relaxed_tr_relaxed_twfe.tsv
+Saved window betas (TWFE, spec=relaxed_tr) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_relaxed/model1b_kl_window_betas_relaxed_tr_relaxed_twfe.tsv
+Saved pretrend tests (TWFE, spec=relaxed_tr) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_relaxed/model1b_kl_pretrend_tests_relaxed_tr_relaxed_twfe.tsv
+Saved static betas (TWFE, spec=relaxed_tr) to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_relaxed/model1b_kl_static_betas_relaxed_tr_relaxed_twfe.tsv
+
+============================================================
+RUNNING: python Design/Code (new)/Model_1B_to_tables(v4)_fixed2.py
+============================================================
+=== Model_1B_to_tables(v4): starting ===
+THESIS_ROOT: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis
+Baseline output dir: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B
+Relaxed output dir: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_relaxed
+Tables output dir: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/Tables
+Saved main long-form table helper to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/Tables/model1b_kl_table_cells_v4.tsv
+Saved dynamic appendix helper to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/Tables/model1b_kl_dynamic_for_appendix_v4.tsv
+Saved pretrend appendix helper to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/Tables/model1b_kl_pretrend_for_appendix_v4.tsv
+
+Summary:
+  Main table cells: 44
+  Competition Panel A cells: 0
+  Competition Panel B cells: 0
+  Privatization Panel A cells: 20
+  Privatization Panel B cells: 24
+  Dynamic appendix rows: 220
+  Pretrend appendix rows: 8
+=== Model_1B_to_tables(v4): done ===
+
+============================================================
+RUNNING: python Design/Code (new)/Plot_Model_1B_event_study(v5).py
+============================================================
+=== Plot_Model_1B_event_study(v5) ===
+THESIS_ROOT: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis
+K/L panel  : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/KL_Panel_monthly.tsv
+Figures    : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/Figures/v5
+Tables     : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/Tables/v5
+[OK] Saved: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/Figures/v5/model1b_raw_log_kl_paths_v5.png
+[OK] Saved: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/Figures/v5/model1b_normalized_legacy_minus_bayport_gap_v5.png
+[OK] Saved: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/Figures/v5/model1b_eventstudy_legacy_contrast_nyt_baseline_v5.png
+[OK] Saved: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/Figures/v5/model1b_mirror_diagnostic_nyt_baseline_v5.png
+[OK] Saved: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/Figures/v5/model1b_eventstudy_legacy_contrast_twfe_baseline_v5.png
+[OK] Saved: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/Figures/v5/model1b_mirror_diagnostic_twfe_baseline_v5.png
+[OK] Saved: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/Figures/v5/model1b_eventstudy_legacy_contrast_nyt_relaxed_tr_v5.png
+[OK] Saved: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/Figures/v5/model1b_mirror_diagnostic_nyt_relaxed_tr_v5.png
+[OK] Saved: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/Figures/v5/model1b_eventstudy_legacy_contrast_twfe_relaxed_tr_v5.png
+[OK] Saved: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/Figures/v5/model1b_mirror_diagnostic_twfe_relaxed_tr_v5.png
+[OK] Saved: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/Tables/v5/model1b_static_did_combined_v5.tsv
+[OK] Saved: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/Tables/v5/model1b_window_estimates_combined_v5.tsv
+[OK] Saved: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/Tables/v5/model1b_pretrend_tests_combined_v5.tsv
+[OK] Saved: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/Tables/v5/model1b_compact_window_diagnostics_v5.tsv
+
+Done.
+Figures written to: /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/Figures/v5
+Tables written to : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B/Tables/v5
+
+============================================================
+RUNNING: python Design/Code (new)/Model_2_step1_build_panels.py
+============================================================
+=== Model_2_build_panels(v3)_fixed2: done ===
+LP input            : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/LP_Panel_monthly.tsv
+K/L input           : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/KL_Panel_monthly.tsv
+Terminal out        : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Inputs/model2_terminal_panel.tsv
+Terminal quarterly  : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Inputs/model2_terminal_panel_quarterly.tsv
+Cluster out         : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Inputs/model2_cluster_panel.tsv
+QA out              : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Inputs/model2_panel_qa.tsv
+Manifest            : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Inputs/model2_panel_manifest.json
+Terminal rows (M)   : 84
+Terminal rows (Q)   : 28
+Cluster rows        : 44
+
+============================================================
+RUNNING: python Design/Code (new)/Model_2_step2_elasticity.py
+============================================================
+=== Model_2_elasticity(v3): done ===
+Terminal panel : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Inputs/model2_terminal_panel_quarterly.tsv
+Cluster panel  : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Inputs/model2_cluster_panel.tsv
+Manual out     : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Tables/model2_elasticity_manual.tsv (rows=5)
+Regression out : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Tables/model2_elasticity_regression.tsv (rows=4)
+Combined out   : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Tables/model2_elasticity_combined.tsv (rows=9)
+
+============================================================
+RUNNING: python Design/Code (new)/Model_2_step3_accounting.py
+============================================================
+Normalized Model 1A window columns: ['design', 'table_group', 'reform', 'target', 'target_key', 'spec_name', 'window_name', 'm_start', 'm_end', 'beta_hat', 'se', 'N', 'R2']
+Normalized Model 1B window columns: ['design', 'table_group', 'reform', 'target', 'target_key', 'spec_name', 'window_name', 'm_start', 'm_end', 'beta_hat', 'se', 'pvalue', 'N', 'R2']
+=== Model_2_accounting(v3)_final2: done ===
+Elasticity input  : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Tables/model2_elasticity_combined.tsv
+Model 1A windows  : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A/model1a_lp_window_betas_all.tsv
+Model 1B windows  : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_relaxed/model1b_kl_window_betas_all_relaxed.tsv
+Long out          : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Tables/model2_accounting_long.tsv (rows=4, ok=1)
+Preferred out     : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Tables/model2_accounting_preferred.tsv (rows=4)
+Robustness out    : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Tables/model2_accounting_elasticity_robustness.tsv (rows=4)
+Unavailable out   : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Tables/model2_accounting_unavailable_rows.tsv (rows=3)
+Manifest          : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Tables/model2_accounting_manifest.json
+
+Key preferred row: privatization_legacy
+  status          : ok
+  TE              : 0.1394604767451364
+  dC              : -0.0457749812294043
+  eta             : 0.251
+  CD              : -0.01148952028858048
+  share_explained : -0.08238549413234507
+  spec_te/spec_dC : porttr / relaxed_tr
+  reason          : exact supported TE and dC windows found
+
+============================================================
+RUNNING: python Design/Code (new)/Model_2_step4_to_tables.py
+============================================================
+=== Model_2_to_tables(v3)_final2: done ===
+Manifest      : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Tables/model2_accounting_manifest.json
+Preferred in  : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Tables/model2_accounting_preferred.tsv
+Detailed in   : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Tables/model2_accounting_long.tsv
+Robustness in : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Tables/model2_accounting_elasticity_robustness.tsv
+Table 5 TSV   : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Tables/model2_table5_preferred.tsv
+Table 6 TSV   : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Tables/model2_table6_detailed.tsv
+Table 7 TSV   : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Tables/model2_table7_elasticity_robustness.tsv
+Table 5 TeX   : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Tables/model2_table5_preferred.tex
+Table 6 TeX   : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Tables/model2_table6_detailed.tex
+Table 7 TeX   : /Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2/Tables/model2_table7_elasticity_robustness.tex
+
+DONE: full pipeline completed successfully at Sat May  2 23:45:42 PDT 2026
+Log written to: Design/Output (new)/_pipeline_logs/20260502_234518/run_all_pipeline_common_rule_v5.log
+Backups written to: Design/Output (new)/_active_input_backups/20260502_234518

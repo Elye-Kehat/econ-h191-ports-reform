@@ -1,7 +1,7 @@
 design	table_group	reform	target	target_key	spec_name	horizon	a	b	beta	se	pvalue	n_obs	r2	n_treated	n_control	n_post_treated	se_type
-TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	full_post	1	23	0.2462466379528124	0.2534338655002696	0.3312293676033571	72	0.6050487901759887	36	36	23	HC1
-TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	post_y1	1	12	0.43890639335687487	0.2578333049799835	0.08870150055165436	50	0.5149376001324033	25	25	12	HC1
-TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	post_y1_2	1	23	0.2462466379528124	0.2534338655002696	0.3312293676033571	72	0.6050487901759887	36	36	23	HC1
-TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	full_post	1	23	-0.24624663795280322	0.25343386550026953	0.33122936760337507	72	0.6050487901759887	36	36	23	HC1
-TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	post_y1	1	12	-0.43890639335688053	0.25783330497998336	0.08870150055164999	50	0.5149376001324034	25	25	12	HC1
-TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	post_y1_2	1	23	-0.24624663795280322	0.25343386550026953	0.33122936760337507	72	0.6050487901759887	36	36	23	HC1
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	full_post	1	23	0.7086718654703785	0.4653894607496153	0.12782122902879967	72	0.4017726182250059	36	36	23	HC1
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	post_y1	1	12	1.0525955314567528	0.5849821132800902	0.07196118080977565	50	0.40705476690549314	25	25	12	HC1
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	post_y1_2	1	23	0.7086718654703785	0.4653894607496153	0.12782122902879967	72	0.4017726182250059	36	36	23	HC1
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	full_post	1	23	-0.7086718654703696	0.46538946074961535	0.1278212290288045	72	0.40177261822500576	36	36	23	HC1
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	post_y1	1	12	-1.0525955314567566	0.58498211328009	0.07196118080977452	50	0.407054766905493	25	25	12	HC1
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	post_y1_2	1	23	-0.7086718654703696	0.46538946074961535	0.1278212290288045	72	0.40177261822500576	36	36	23	HC1

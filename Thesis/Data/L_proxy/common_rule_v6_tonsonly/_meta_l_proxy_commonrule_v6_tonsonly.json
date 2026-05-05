@@ -1,0 +1,59 @@
+{
+  "implementation": "common_rule_v6_tonsonly",
+  "formula_main": {
+    "annual_anchor": "H_{i,y} = TEU_{i,y} / Pi^{work}_{i,y}",
+    "quarter_weight": "tons_weight_q_in_y = tons_{i,q} / sum_{r in y} tons_{i,r}",
+    "quarter_labor": "L_{i,q} = H_{i,y} * tons_weight_q_in_y",
+    "month_weight": "tons_weight_m_in_q = tons_{i,m} / tons_{i,q}",
+    "month_labor": "L_{i,m} = L_{i,q} * tons_weight_m_in_q"
+  },
+  "why_v6": [
+    "keeps TEU only at the annual anchor",
+    "removes TEU from within-year labor movement",
+    "allocates both quarter and month labor using tons-only shares",
+    "keeps entrant KPI backfill deterministic rather than introducing startup hyperparameters"
+  ],
+  "options": {
+    "sample_start": "201801",
+    "sample_end": "202412",
+    "also_write_canonical": true
+  },
+  "inputs": {
+    "tons": {
+      "path": "Data/Output/monthly_output_by_1000_tons_ports_and_terminals.tsv",
+      "sha256": "8948abd6d412371064fb7166b8301256d9a35764965bf11f47e54389603510e5"
+    },
+    "teu": {
+      "path": "Data/Output/teu_monthly_plus_quarterly_by_port.tsv",
+      "sha256": "db61df01edf177d3d5404fd733c9e1b68b1ecec609b7a322005e4d3381b1b414"
+    },
+    "kpis": {
+      "path": "Data/L_proxy/containers_kpis_annual_wide_filled.tsv",
+      "sha256": "6817188640595f62037915ba6007c998d69b21d6ee802a9d3e5e83a6da7526a5"
+    },
+    "base_lproxy": {
+      "path": "Data/L_proxy/L_Proxy.tsv",
+      "sha256": "b002604fd4b4f5d86428dfc30d274f406dbbd29b52eebebb4c14909caa560151"
+    }
+  },
+  "outputs": {
+    "terminal_month_labor": "Data/L_proxy/common_rule_v6_tonsonly/labor_hours_monthly_terminal_commonrule_v6_tonsonly.tsv",
+    "port_month_labor": "Data/L_proxy/common_rule_v6_tonsonly/labor_hours_monthly_port_commonrule_v6_tonsonly.tsv",
+    "annual_anchor": "Data/L_proxy/common_rule_v6_tonsonly/labor_anchor_terminal_year_commonrule_v6_tonsonly.tsv",
+    "lproxy": "Data/L_proxy/common_rule_v6_tonsonly/L_Proxy_commonrule_v6_tonsonly.tsv",
+    "qa": "Data/L_proxy/common_rule_v6_tonsonly/lproxy_commonrule_v6_tonsonly_qa.tsv",
+    "anchor_compare": "Data/L_proxy/common_rule_v6_tonsonly/lproxy_commonrule_v6_tonsonly_old_new_anchor_compare.tsv",
+    "meta": "Data/L_proxy/common_rule_v6_tonsonly/_meta_l_proxy_commonrule_v6_tonsonly.json",
+    "canonical_lproxy": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/L_Proxy.tsv"
+  },
+  "row_counts": {
+    "port_month_tons": 168,
+    "terminal_tons": 251,
+    "monthly_terminal_teu": 251,
+    "annual_anchor": 22,
+    "monthly_labor": 251,
+    "port_month_labor": 168,
+    "qa": 11,
+    "anchor_compare": 22
+  }
+}

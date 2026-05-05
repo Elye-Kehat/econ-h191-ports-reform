@@ -1,10 +1,10 @@
 design	table_group	reform	target	target_key	spec_name	horizon	a	b	beta	se	pvalue	n_obs	r2	n_treated	n_control	n_post_treated	se_type
-TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	full_post	1	39	0.45946998576032544	0.25533715266143925	0.07194533116011223	128	0.854413643845244	64	64	39	cluster
-TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	post_y1	1	12	0.5778581130199325	0.257653118489036	0.02491129228233789	74	0.8429233044576566	37	37	12	cluster
-TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	post_y1_2	1	24	0.5535801748100266	0.25629783260425626	0.030779660683941692	98	0.8553695481734344	49	49	24	cluster
-TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	full_post	1	25	-0.6263095498514044	0.10382166679973144	1.6139090298113173e-09	86	0.8735965852847198	36	50	25	cluster
-TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	post_y1	1	12	-0.7525301092240229	0.1100612272308889	8.06562575090499e-12	60	0.8748659627521576	23	37	12	cluster
-TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	post_y1_2	1	24	-0.6339945399097305	0.10413580266678929	1.1422178515152761e-09	84	0.8735929481562094	35	49	24	cluster
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	full_post	1	39	0.3546497992144206	0.26226630809776863	0.17629512905208566	128	0.8792066657513282	64	64	39	cluster
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	post_y1	1	12	0.4730379264740275	0.2646451229351447	0.07386600608391253	74	0.871874401103601	37	37	12	cluster
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	post_y1_2	1	24	0.44875998826412133	0.2632530582797931	0.08825570627711768	98	0.8805661929973092	49	49	24	cluster
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	full_post	1	25	-0.22623757172816045	0.1970694446230801	0.2509646899470508	88	0.918273535371018	38	50	25	cluster
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	post_y1	1	12	-0.35245813110078145	0.20644858769864877	0.08777669332747134	62	0.9188550825245398	25	37	12	cluster
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	post_y1_2	1	24	-0.2339225617864924	0.19755424103737645	0.23637631517986113	86	0.9182508261208504	37	49	24	cluster
 TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	full_post	1	23	-0.3037072914633894	0.14442371421348818	0.03547532135408103	144	0.898391844992532	36	108	23	cluster
 TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	post_y1	1	12	-0.07363466628764387	0.033504517863410355	0.027966687637609813	100	0.9703065379100189	25	75	12	cluster
 TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	post_y1_2	1	23	-0.3037072914633894	0.14442371421348818	0.03547532135408103	144	0.898391844992532	36	108	23	cluster

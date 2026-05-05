@@ -1,0 +1,241 @@
+series_key	port	terminal	year	month_num	quarter_num	time_id	time_str	log_LP	n_obs	analysis_freq	analysis_unit	analysis_port	source_series
+ashdod_port	Ashdod		2018	1	1	24217	2018-01	3.722262032015659	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2018	2	1	24218	2018-02	3.6103053276636197	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2018	3	1	24219	2018-03	3.72947826296215	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2018	4	2	24220	2018-04	3.6621415711325387	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2018	5	2	24221	2018-05	3.5940872662673873	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2018	6	2	24222	2018-06	3.783173599604992	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2018	7	3	24223	2018-07	3.85012256583866	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2018	8	3	24224	2018-08	3.8094156239331465	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2018	9	3	24225	2018-09	3.4559483284861714	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2018	10	4	24226	2018-10	3.812503538412904	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2018	11	4	24227	2018-11	3.763659400735699	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2018	12	4	24228	2018-12	3.6996905178932233	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2019	1	1	24229	2019-01	3.7283614261190587	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2019	2	1	24230	2019-02	3.820107490159035	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2019	3	1	24231	2019-03	3.686686307654456	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2019	4	2	24232	2019-04	3.766822808066069	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2019	5	2	24233	2019-05	3.7292085586663686	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2019	6	2	24234	2019-06	3.7987914724482286	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2019	7	3	24235	2019-07	3.8307070111242894	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2019	8	3	24236	2019-08	3.7075743257206653	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2019	9	3	24237	2019-09	3.67293716341589	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2019	10	4	24238	2019-10	3.666730771121353	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2019	11	4	24239	2019-11	3.7181089102872003	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2019	12	4	24240	2019-12	3.70093572756046	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2020	1	1	24241	2020-01	3.6183506638804954	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2020	2	1	24242	2020-02	3.678446286731913	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2020	3	1	24243	2020-03	3.62439363944747	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2020	4	2	24244	2020-04	3.534556032359156	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2020	5	2	24245	2020-05	3.5967945635056613	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2020	6	2	24246	2020-06	3.7136896045158836	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2020	7	3	24247	2020-07	3.7234026868443335	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2020	8	3	24248	2020-08	3.737481083665444	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2020	9	3	24249	2020-09	3.6715955075435702	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2020	10	4	24250	2020-10	3.7000633246615995	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2020	11	4	24251	2020-11	3.653819222233669	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2020	12	4	24252	2020-12	3.6792194107809006	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2021	1	1	24253	2021-01	3.631077330472671	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2021	2	1	24254	2021-02	3.5195817878041464	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2021	3	1	24255	2021-03	3.6564942737034736	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2021	4	2	24256	2021-04	3.6190080784249474	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2021	5	2	24257	2021-05	3.6854873246293076	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2021	6	2	24258	2021-06	3.727241244396731	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2021	7	3	24259	2021-07	3.7731360513572993	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2021	8	3	24260	2021-08	3.787476761110506	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2021	9	3	24261	2021-09	3.4164668022496536	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_port	Ashdod		2021	10	4	24262	2021-10	3.621363284765252	1	monthly	ashdod_incumbent	Ashdod	ashdod_port
+ashdod_legacy	Ashdod	Ashdod-Legacy	2022	11	4	24275	2022-11	3.682375611520333	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2022	12	4	24276	2022-12	3.682375611520333	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2023	1	1	24277	2023-01	3.4816340390535783	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2023	2	1	24278	2023-02	3.4816340390535783	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2023	3	1	24279	2023-03	3.4816340390535783	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2023	4	2	24280	2023-04	3.637243153164268	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2023	5	2	24281	2023-05	3.637243153164268	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2023	6	2	24282	2023-06	3.637243153164268	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2023	7	3	24283	2023-07	3.60289849789767	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2023	8	3	24284	2023-08	3.60289849789767	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2023	9	3	24285	2023-09	3.60289849789767	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2023	10	4	24286	2023-10	3.5022566564255126	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2023	11	4	24287	2023-11	3.5022566564255126	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2023	12	4	24288	2023-12	3.5022566564255126	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2024	1	1	24289	2024-01	3.5061929248014048	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2024	2	1	24290	2024-02	3.5061929248014048	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2024	3	1	24291	2024-03	3.5061929248014048	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2024	4	2	24292	2024-04	3.646738711453607	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2024	5	2	24293	2024-05	3.646738711453607	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2024	6	2	24294	2024-06	3.646738711453607	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2024	7	3	24295	2024-07	3.719604914309597	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2024	8	3	24296	2024-08	3.719604914309597	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2024	9	3	24297	2024-09	3.719604914309597	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2024	10	4	24298	2024-10	3.680353453959287	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2024	11	4	24299	2024-11	3.680353453959287	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+ashdod_legacy	Ashdod	Ashdod-Legacy	2024	12	4	24300	2024-12	3.680353453959287	1	monthly	ashdod_incumbent	Ashdod	ashdod_legacy
+haifa_bayport	Haifa	Haifa-Bayport	2021	7	3	24259	2021-07	3.7597875672881362	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2021	8	3	24260	2021-08	3.7597875672881362	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2021	9	3	24261	2021-09	3.7597875672881362	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2021	10	4	24262	2021-10	3.7664287484320904	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2021	11	4	24263	2021-11	3.7664287484320904	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2021	12	4	24264	2021-12	3.7664287484320904	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2022	1	1	24265	2022-01	3.527492668365043	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2022	2	1	24266	2022-02	3.527492668365043	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2022	3	1	24267	2022-03	3.527492668365043	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2022	4	2	24268	2022-04	3.675288142545711	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2022	5	2	24269	2022-05	3.675288142545711	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2022	6	2	24270	2022-06	3.675288142545711	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2022	7	3	24271	2022-07	3.760503375730756	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2022	8	3	24272	2022-08	3.760503375730756	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2022	9	3	24273	2022-09	3.760503375730756	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2022	10	4	24274	2022-10	3.9150175537611207	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2022	11	4	24275	2022-11	3.9150175537611207	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2022	12	4	24276	2022-12	3.9150175537611207	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2023	1	1	24277	2023-01	3.9206565586245743	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2023	2	1	24278	2023-02	3.9206565586245743	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2023	3	1	24279	2023-03	3.9206565586245743	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2023	4	2	24280	2023-04	3.7913547919448063	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2023	5	2	24281	2023-05	3.7913547919448063	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2023	6	2	24282	2023-06	3.7913547919448063	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2023	7	3	24283	2023-07	3.7562011059481386	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2023	8	3	24284	2023-08	3.7562011059481386	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2023	9	3	24285	2023-09	3.7562011059481386	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2023	10	4	24286	2023-10	3.7446869133423846	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2023	11	4	24287	2023-11	3.7446869133423846	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2023	12	4	24288	2023-12	3.7446869133423846	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2024	1	1	24289	2024-01	4.027779964818981	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2024	2	1	24290	2024-02	4.027779964818981	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2024	3	1	24291	2024-03	4.027779964818981	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2024	4	2	24292	2024-04	3.9355146590260137	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2024	5	2	24293	2024-05	3.9355146590260137	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2024	6	2	24294	2024-06	3.9355146590260137	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2024	7	3	24295	2024-07	3.8639978149758605	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2024	8	3	24296	2024-08	3.8639978149758605	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2024	9	3	24297	2024-09	3.8639978149758605	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2024	10	4	24298	2024-10	3.8162535394915955	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2024	11	4	24299	2024-11	3.8162535394915955	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_bayport	Haifa	Haifa-Bayport	2024	12	4	24300	2024-12	3.8162535394915955	1	monthly	haifa_bayport	Haifa	haifa_bayport
+haifa_port	Haifa		2018	1	1	24217	2018-01	3.877059213648537	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2018	2	1	24218	2018-02	3.8791477227239497	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2018	3	1	24219	2018-03	3.9975717416903658	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2018	4	2	24220	2018-04	3.9794398401950524	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2018	5	2	24221	2018-05	3.9577498012145225	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2018	6	2	24222	2018-06	3.986113115900735	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2018	7	3	24223	2018-07	4.178033455717362	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2018	8	3	24224	2018-08	4.115702716803329	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2018	9	3	24225	2018-09	3.9760096830256417	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2018	10	4	24226	2018-10	4.0054789041268	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2018	11	4	24227	2018-11	3.9844619028149197	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2018	12	4	24228	2018-12	3.923162294374099	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2019	1	1	24229	2019-01	4.047423756068356	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2019	2	1	24230	2019-02	3.9027433458291334	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2019	3	1	24231	2019-03	4.069397714552732	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2019	4	2	24232	2019-04	4.105343628822467	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2019	5	2	24233	2019-05	4.030465621979137	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2019	6	2	24234	2019-06	3.9774113574750087	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2019	7	3	24235	2019-07	4.0940801484172	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2019	8	3	24236	2019-08	3.9826566698005434	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2019	9	3	24237	2019-09	3.967563432792062	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2019	10	4	24238	2019-10	4.045482965593447	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2019	11	4	24239	2019-11	4.019984183328302	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2019	12	4	24240	2019-12	4.04374305942105	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2020	1	1	24241	2020-01	3.855777298679622	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2020	2	1	24242	2020-02	3.8274790014330904	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2020	3	1	24243	2020-03	3.89675443369668	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2020	4	2	24244	2020-04	4.052667405980401	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2020	5	2	24245	2020-05	3.960784025144402	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2020	6	2	24246	2020-06	3.88380017251108	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2020	7	3	24247	2020-07	4.024379273382539	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2020	8	3	24248	2020-08	3.9338562232276284	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2020	9	3	24249	2020-09	3.9300256275318657	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2020	10	4	24250	2020-10	4.086955112654086	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2020	11	4	24251	2020-11	4.028365940277023	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2020	12	4	24252	2020-12	3.941481414913566	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2021	1	1	24253	2021-01	3.847684231124462	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2021	2	1	24254	2021-02	3.8140571324835078	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2021	3	1	24255	2021-03	3.8409124634570713	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2021	4	2	24256	2021-04	3.7907154325502157	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2021	5	2	24257	2021-05	3.8855593414501626	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2021	6	2	24258	2021-06	3.8561483519698894	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2021	7	3	24259	2021-07	3.8544145743355487	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_port	Haifa		2021	8	3	24260	2021-08	3.9108542402090816	1	monthly	haifa_incumbent	Haifa	haifa_port
+haifa_legacy	Haifa	Haifa-Legacy	2021	9	3	24261	2021-09	3.858339579792506	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2021	10	4	24262	2021-10	3.8649807609364597	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2021	11	4	24263	2021-11	3.8649807609364597	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2021	12	4	24264	2021-12	3.8649807609364597	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	1	1	24265	2022-01	3.7053368093575187	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	2	1	24266	2022-02	3.7053368093575187	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	3	1	24267	2022-03	3.7053368093575187	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	4	2	24268	2022-04	3.853132283538187	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	5	2	24269	2022-05	3.853132283538187	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	6	2	24270	2022-06	3.853132283538187	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	7	3	24271	2022-07	3.938347516723232	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	8	3	24272	2022-08	3.938347516723232	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	9	3	24273	2022-09	3.938347516723232	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	10	4	24274	2022-10	4.092861694753597	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	11	4	24275	2022-11	4.092861694753597	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	12	4	24276	2022-12	4.092861694753597	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	1	1	24277	2023-01	4.014150617300141	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	2	1	24278	2023-02	4.014150617300141	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	3	1	24279	2023-03	4.014150617300141	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	4	2	24280	2023-04	3.8848488506203727	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	5	2	24281	2023-05	3.8848488506203727	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	6	2	24282	2023-06	3.8848488506203727	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	7	3	24283	2023-07	3.8496951646237054	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	8	3	24284	2023-08	3.8496951646237054	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	9	3	24285	2023-09	3.8496951646237054	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	10	4	24286	2023-10	3.8381809720179514	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	11	4	24287	2023-11	3.8381809720179514	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	12	4	24288	2023-12	3.8381809720179514	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	1	1	24289	2024-01	3.8344844581498325	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	2	1	24290	2024-02	3.8344844581498325	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	3	1	24291	2024-03	3.8344844581498325	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	4	2	24292	2024-04	3.742219152356866	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	5	2	24293	2024-05	3.742219152356866	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	6	2	24294	2024-06	3.742219152356866	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	7	3	24295	2024-07	3.670702308306713	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	8	3	24296	2024-08	3.670702308306713	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	9	3	24297	2024-09	3.670702308306713	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	10	4	24298	2024-10	3.622958032822448	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	11	4	24299	2024-11	3.622958032822448	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	12	4	24300	2024-12	3.622958032822448	1	monthly	haifa_incumbent	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2021	7	3	24259	2021-07	3.858339579792506	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2021	8	3	24260	2021-08	3.858339579792506	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2021	9	3	24261	2021-09	3.858339579792506	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2021	10	4	24262	2021-10	3.8649807609364597	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2021	11	4	24263	2021-11	3.8649807609364597	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2021	12	4	24264	2021-12	3.8649807609364597	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	1	1	24265	2022-01	3.7053368093575187	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	2	1	24266	2022-02	3.7053368093575187	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	3	1	24267	2022-03	3.7053368093575187	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	4	2	24268	2022-04	3.853132283538187	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	5	2	24269	2022-05	3.853132283538187	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	6	2	24270	2022-06	3.853132283538187	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	7	3	24271	2022-07	3.938347516723232	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	8	3	24272	2022-08	3.938347516723232	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	9	3	24273	2022-09	3.938347516723232	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	10	4	24274	2022-10	4.092861694753597	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	11	4	24275	2022-11	4.092861694753597	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2022	12	4	24276	2022-12	4.092861694753597	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	1	1	24277	2023-01	4.014150617300141	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	2	1	24278	2023-02	4.014150617300141	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	3	1	24279	2023-03	4.014150617300141	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	4	2	24280	2023-04	3.8848488506203727	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	5	2	24281	2023-05	3.8848488506203727	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	6	2	24282	2023-06	3.8848488506203727	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	7	3	24283	2023-07	3.8496951646237054	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	8	3	24284	2023-08	3.8496951646237054	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	9	3	24285	2023-09	3.8496951646237054	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	10	4	24286	2023-10	3.8381809720179514	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	11	4	24287	2023-11	3.8381809720179514	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2023	12	4	24288	2023-12	3.8381809720179514	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	1	1	24289	2024-01	3.8344844581498325	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	2	1	24290	2024-02	3.8344844581498325	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	3	1	24291	2024-03	3.8344844581498325	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	4	2	24292	2024-04	3.742219152356866	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	5	2	24293	2024-05	3.742219152356866	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	6	2	24294	2024-06	3.742219152356866	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	7	3	24295	2024-07	3.670702308306713	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	8	3	24296	2024-08	3.670702308306713	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	9	3	24297	2024-09	3.670702308306713	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	10	4	24298	2024-10	3.622958032822448	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	11	4	24299	2024-11	3.622958032822448	1	monthly	haifa_legacy	Haifa	haifa_legacy
+haifa_legacy	Haifa	Haifa-Legacy	2024	12	4	24300	2024-12	3.622958032822448	1	monthly	haifa_legacy	Haifa	haifa_legacy

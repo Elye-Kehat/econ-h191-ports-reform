@@ -1,0 +1,15 @@
+check	ok	note
+Ashdod_negative_legacy_residual_rows	True	n=0; rows with entrant > port total
+Ashdod_tiny_negative_legacy_residual_rows	True	n=0
+Ashdod_entrant_start	True	month_index=24260
+Haifa_negative_legacy_residual_rows	True	n=0; rows with entrant > port total
+Haifa_tiny_negative_legacy_residual_rows	True	n=0
+Haifa_entrant_start	True	month_index=24259
+unique_port_month	True	port-month totals unique
+unique_port_quarter	True	port-quarter totals unique
+unique_terminal_month	True	all-terminal month totals unique
+unique_terminal_quarter	True	all-terminal quarter totals unique
+port_month_missing_tons	True	0 NA months
+terminal_quarter_adds_to_port_quarter	True	max abs diff = 0.000
+port_years	True	Ashdod: [2008, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+port_years	True	Haifa: [2008, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]

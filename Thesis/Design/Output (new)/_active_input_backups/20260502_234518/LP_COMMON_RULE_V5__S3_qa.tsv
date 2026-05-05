@@ -1,0 +1,10 @@
+check	ok	note
+unique_terminal_month	True	terminal×month unique
+unique_terminal_year_pi	True	terminal×year Π unique
+pi_variance_groups	True	0 terminal-year groups had >1 distinct Π; median used
+coverage_terminal_years	True	Ashdod-HCT: [2021, 2022, 2023, 2024]
+coverage_terminal_years	True	Ashdod-Legacy: [2018, 2019, 2020, 2021, 2022, 2023, 2024]
+coverage_terminal_years	True	Haifa-Bayport: [2021, 2022, 2023, 2024]
+coverage_terminal_years	True	Haifa-Legacy: [2018, 2019, 2020, 2021, 2022, 2023, 2024]
+coverage_rows	True	20 terminal-years in S2
+coverage_gaps	False	2 gaps (missing Π and/or labor months)

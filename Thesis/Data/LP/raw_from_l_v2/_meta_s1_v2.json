@@ -1,0 +1,22 @@
+{
+  "rows": {
+    "entrant_terminal_month_observed": 99,
+    "terminal_month_all": 499,
+    "terminal_quarter_all": 168,
+    "port_month": 400,
+    "port_quarter": 134,
+    "examples_port_vs_entrant": 99
+  },
+  "entrant_starts": {
+    "Ashdod": 24260,
+    "Haifa": 24259
+  },
+  "port_source_dist": {
+    "port_row": 400
+  },
+  "terminal_source_dist": {
+    "full_port_pre_entry": 301,
+    "observed_entrant_terminal": 99,
+    "residual_port_minus_entrant": 99
+  }
+}

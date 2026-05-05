@@ -1,0 +1,85 @@
+{
+  "thesis_root": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis",
+  "kl_input": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/KL_Panel_monthly.tsv",
+  "output_dir": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_v5_dynamic",
+  "hac_lags": 6,
+  "series_main": [
+    "Haifa_Legacy_KL",
+    "Haifa_port_KL"
+  ],
+  "series_supplementary": [
+    "Haifa_Bayport_KL"
+  ],
+  "reforms": {
+    "competition": {
+      "year": 2021,
+      "month": 9,
+      "display": "Competition clock"
+    },
+    "privatization": {
+      "year": 2023,
+      "month": 1,
+      "display": "Privatization clock"
+    }
+  },
+  "exact_event_range": [
+    -12,
+    24
+  ],
+  "tail_bins": [
+    "<= -13",
+    ">= 25"
+  ],
+  "reference_bin": "-1",
+  "windows": [
+    {
+      "window_key": "avg_pre",
+      "a_req": -12,
+      "b_req": -2,
+      "label": "Average pre"
+    },
+    {
+      "window_key": "post_1_6",
+      "a_req": 1,
+      "b_req": 6,
+      "label": "Average post, months 1-6"
+    },
+    {
+      "window_key": "post_7_12",
+      "a_req": 7,
+      "b_req": 12,
+      "label": "Average post, months 7-12"
+    },
+    {
+      "window_key": "post_13_24",
+      "a_req": 13,
+      "b_req": 24,
+      "label": "Average post, months 13-24"
+    },
+    {
+      "window_key": "post_full",
+      "a_req": 1,
+      "b_req": 24,
+      "label": "Average full post"
+    }
+  ],
+  "specs": [
+    {
+      "spec_name": "baseline",
+      "formula": "log_KL ~ C(event_bin, Treatment(reference='-1'))"
+    },
+    {
+      "spec_name": "ctrl_trend",
+      "formula": "log_KL ~ C(event_bin, Treatment(reference='-1')) + t_linear + covid_shock + war_shock"
+    }
+  ],
+  "outputs": {
+    "dynamic_betas_all": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_v5_dynamic/model1b_dynamic_betas_all.tsv",
+    "window_betas_summary": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_v5_dynamic/model1b_window_betas_summary.tsv",
+    "pretrend_tests": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_v5_dynamic/model1b_pretrend_tests.tsv",
+    "sample_overview": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_v5_dynamic/model1b_sample_overview.tsv",
+    "plot_helper": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_v5_dynamic/model1b_plot_helper.tsv",
+    "table_cells_main": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_v5_dynamic/model1b_table_cells_main.tsv",
+    "table_cells_bayport_appendix": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_v5_dynamic/model1b_table_cells_bayport_appendix.tsv"
+  }
+}

@@ -1,0 +1,237 @@
+series_id	level	freq	port	terminal	year	month	quarter	month_index	quarter_index	TEU	tons	L_hours	w	Pi	LP	LP_id	tons_source	lp_definition
+Ashdod_HCT_Q	terminal	Q	Ashdod	Ashdod-HCT	2021		Q3		8087	8695.19848739153	17669.0	267.87677998821385	1.0		32.459694669221065	32.459694669221065		raw_teu_over_labor
+Ashdod_HCT_Q	terminal	Q	Ashdod	Ashdod-HCT	2021		Q4		8088	15628.2163177368	31146.6	511.7198483812838	1.0		30.54057091428702	30.54057091428702		raw_teu_over_labor
+Ashdod_HCT_Q	terminal	Q	Ashdod	Ashdod-HCT	2022		Q1		8089	20319.0	44201.76	781.1441632398528	1.0		26.011843851876783	26.011843851876783		raw_teu_over_labor
+Ashdod_HCT_Q	terminal	Q	Ashdod	Ashdod-HCT	2022		Q2		8090	26586.0	145560.874	992.4688058060202	1.0		26.787743699821917	26.787743699821917		raw_teu_over_labor
+Ashdod_HCT_Q	terminal	Q	Ashdod	Ashdod-HCT	2022		Q3		8091	60333.0	456385.27799999993	1914.4649912418931	1.0		31.514287425471604	31.514287425471604		raw_teu_over_labor
+Ashdod_HCT_Q	terminal	Q	Ashdod	Ashdod-HCT	2022		Q4		8092	58997.25	558991.1506	1927.9777829554778	1.0		30.600586024160844	30.600586024160844		raw_teu_over_labor
+Ashdod_HCT_Q	terminal	Q	Ashdod	Ashdod-HCT	2023		Q1		8093	88325.0	819496.103884	3448.187783750855	1.0		25.614904274129238	25.614904274129238		raw_teu_over_labor
+Ashdod_HCT_Q	terminal	Q	Ashdod	Ashdod-HCT	2023		Q2		8094	150543.75	1440455.2289299988	5030.252819759707	1.0		29.92767071440982	29.92767071440982		raw_teu_over_labor
+Ashdod_HCT_Q	terminal	Q	Ashdod	Ashdod-HCT	2023		Q3		8095	148688.25	1287423.20406262	5141.8502888222365	1.0		28.91726550717168	28.91726550717168		raw_teu_over_labor
+Ashdod_HCT_Q	terminal	Q	Ashdod	Ashdod-HCT	2023		Q4		8096	87411.25	735027.0428609999	3342.860893381487	1.0		26.14863519240812	26.14863519240812		raw_teu_over_labor
+Ashdod_HCT_Q	terminal	Q	Ashdod	Ashdod-HCT	2024		Q1		8097	102072.75	878020.306786999	1943.0269665194223	1.0		52.53285299629406	52.53285299629406		raw_teu_over_labor
+Ashdod_HCT_Q	terminal	Q	Ashdod	Ashdod-HCT	2024		Q2		8098	184935.0	1617510.2709970009	3058.791428967441	1.0		60.46015372235716	60.46015372235716		raw_teu_over_labor
+Ashdod_HCT_Q	terminal	Q	Ashdod	Ashdod-HCT	2024		Q3		8099	218264.5	1783830.3601570008	3356.3594694328654	1.0		65.03013219763402	65.03013219763402		raw_teu_over_labor
+Ashdod_HCT_Q	terminal	Q	Ashdod	Ashdod-HCT	2024		Q4		8100	187394.75	1572425.825951001	2997.0188563917472	1.0		62.52705070585155	62.52705070585155		raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q	Ashdod	Ashdod-Legacy	2021		Q3		8087	408566.326442004	5736715.4	10108.368153843176	1.0		40.41862348342231	40.41862348342231		raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q	Ashdod	Ashdod-Legacy	2021		Q4		8088	397432.6401498001	6023263.699999999	10450.794110944109	1.0		38.028941717798	38.028941717798		raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q	Ashdod	Ashdod-Legacy	2022		Q1		8089	360499.0	5653663.34	10671.544047807745	1.0		33.78133458335463	33.78133458335463		raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q	Ashdod	Ashdod-Legacy	2022		Q2		8090	374179.0	5677073.026	10755.673498282964	1.0		34.788988347380936	34.788988347380936		raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q	Ashdod	Ashdod-Legacy	2022		Q3		8091	374345.0	4911781.522	9146.583013661977	1.0		40.927305797241665	40.927305797241665		raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q	Ashdod	Ashdod-Legacy	2022		Q4		8092	322016.0	4286928.0494	8102.929169977039	1.0		39.74069046452154	39.74069046452154		raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q	Ashdod	Ashdod-Legacy	2023		Q1		8093	302791.0	4212543.896116	9312.97658658215	1.0		32.5128058881037	32.5128058881037		raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q	Ashdod	Ashdod-Legacy	2023		Q2		8094	290606.0	3417397.671070001	7650.149917430323	1.0		37.9869679858005	37.9869679858005		raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q	Ashdod	Ashdod-Legacy	2023		Q3		8095	288594.0	3696092.895937381	7862.639451941195	1.0		36.70446823410546	36.70446823410546		raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q	Ashdod	Ashdod-Legacy	2023		Q4		8096	240054.0	3392096.1571390005	7232.662615474908	1.0		33.190266539791814	33.190266539791814		raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q	Ashdod	Ashdod-Legacy	2024		Q1		8097	280925.0	3809156.093213	8430.826458520693	1.0		33.32116980252636	33.32116980252636		raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q	Ashdod	Ashdod-Legacy	2024		Q2		8098	262311.0	3138286.4290029984	6840.029956660441	1.0		38.349393447403855	38.349393447403855		raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q	Ashdod	Ashdod-Legacy	2024		Q3		8099	309830.0	3437041.939842999	7511.377309162153	1.0		41.248094357086636	41.248094357086636		raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q	Ashdod	Ashdod-Legacy	2024		Q4		8100	302369.0	3463331.074048999	7623.950486183027	1.0		39.66040972432688	39.66040972432688		raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Ashdod_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2018	1	Q1	24217		121784.0	2003195.046	2944.6411283756097	1.0		41.35784113943327	41.35784113943327	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2018	2	Q1	24218		108885.0	1853087.047	2944.6411283756097	1.0		36.97734129661689	36.97734129661689	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2018	3	Q1	24219		122666.0	1899461.314	2944.6411283756097	1.0		41.65736830133451	41.65736830133451	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2018	4	Q2	24220		117145.0	1925889.287	3007.98648357777	1.0		38.944656380458525	38.944656380458525	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2018	5	Q2	24221		109438.0	1982586.069	3007.98648357777	1.0		36.382477314137354	36.382477314137354	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2018	6	Q2	24222		132217.0	1971086.063	3007.98648357777	1.0		43.9553171936923	43.9553171936923	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2018	7	Q3	24223		142318.0	2204184.377	3028.1183638244293	1.0		46.998823328773824	46.998823328773824	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2018	8	Q3	24224		136641.0	2189938.196	3028.1183638244293	1.0		45.12406173826911	45.12406173826911	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2018	9	Q3	24225		95956.0	1524789.63	3028.1183638244293	1.0		31.688325379332348	31.688325379332348	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2018	10	Q4	24226		137108.0	2025302.49	3029.0995526774736	1.0		45.26361633733954	45.26361633733954	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2018	11	Q4	24227		130572.0	2055397.323	3029.0995526774736	1.0		43.1058793972569	43.1058793972569	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2018	12	Q4	24228		122481.0	1840130.271	3029.0995526774736	1.0		40.43478857990551	40.43478857990551	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2019	1	Q1	24229		122983.0	1957516.591	2955.5498509479307	1.0		41.610869788088934	41.610869788088934	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2019	2	Q1	24230		134800.0	1858875.069	2955.5498509479307	1.0		45.60911058792181	45.60911058792181	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2019	3	Q1	24231		117963.0	1896987.78	2955.5498509479307	1.0		39.912370269161876	39.912370269161876	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2019	4	Q2	24232		134523.0	2000467.108	3110.9009540512707	1.0		43.24245676314867	43.24245676314867	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2019	5	Q2	24233		129557.0	2054487.8950000005	3110.9009540512707	1.0		41.64613464510345	41.64613464510345	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2019	6	Q2	24234		138893.0	1958733.971	3110.9009540512707	1.0		44.64719451100561	44.64719451100561	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2019	7	Q3	24235		149568.0	2197893.836	3244.768891659122	1.0		46.095116476391816	46.095116476391816	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2019	8	Q3	24236		132240.0	2181836.7509999997	3244.768891659122	1.0		40.75482859193179	40.75482859193179	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2019	9	Q3	24237		127738.0	1892738.77	3244.768891659122	1.0		39.367364599789646	39.367364599789646	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2019	10	Q4	24238		113143.0	1792693.28	2891.923160484535	1.0		39.1237919271144	39.1237919271144	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2019	11	Q4	24239		119108.0	1982382.752	2891.923160484535	1.0		41.186433176199515	41.186433176199515	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2019	12	Q4	24240		117080.0	1815306.523	2891.923160484535	1.0		40.48516973057594	40.48516973057594	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2020	1	Q1	24241		118457.0	1835242.1	3177.832503248949	1.0		37.27603637979411	37.27603637979411	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2020	2	Q1	24242		125794.0	1933438.078	3177.832503248949	1.0		39.58484277298784	39.58484277298784	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2020	3	Q1	24243		119175.0	1856792.117	3177.832503248949	1.0		37.50197654475433	37.50197654475433	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2020	4	Q2	24244		114099.0	1850266.505	3328.4624153558893	1.0		34.27979221685163	34.27979221685163	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2020	5	Q2	24245		121426.0	1997070.614	3328.4624153558893	1.0		36.48110894682185	36.48110894682185	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2020	6	Q2	24246		136483.0	2044783.716	3328.4624153558893	1.0		41.00481933349601	41.00481933349601	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2020	7	Q3	24247		143321.0	2081313.428	3461.4382537092774	1.0		41.405043076073135	41.405043076073135	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2020	8	Q3	24248		145353.0	2099862.499	3461.4382537092774	1.0		41.99208229245162	41.99208229245162	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2020	9	Q3	24249		136085.0	1946341.8	3461.4382537092774	1.0		39.31458255948125	39.31458255948125	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2020	10	Q4	24250		144608.0	2106747.689	3574.9933234123782	1.0		40.44986575302741	40.44986575302741	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2020	11	Q4	24251		138073.0	2089987.8	3574.9933234123782	1.0		38.62189031117057	38.62189031117057	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2020	12	Q4	24252		141625.0	2131800.0379999997	3574.9933234123782	1.0		39.61545860030225	39.61545860030225	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2021	1	Q1	24253		133397.0	1978636.9	3533.370792343458	1.0		37.75346767711473	37.75346767711473	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2021	2	Q1	24254		119323.0	1874818.0	3533.370792343458	1.0		33.77030235789681	33.77030235789681	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2021	3	Q1	24255		136831.0	2055116.9	3533.370792343458	1.0		38.72534416611532	38.72534416611532	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2021	4	Q2	24256		130945.0	1879225.8	3510.538025282764	1.0		37.30055024527266	37.30055024527266	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2021	5	Q2	24257		139946.0	1939299.0	3510.538025282764	1.0		39.864544691472965	39.864544691472965	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2021	6	Q2	24258		145913.0	2051865.6	3510.538025282764	1.0		41.564284149364006	41.564284149364006	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2021	7	Q3	24259		150512.0	1922524.0	3458.7483112771297	1.0		43.51632048775009	43.51632048775009	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2021	8	Q3	24260		152686.0	2207186.2	3458.7483112771297	1.0		44.14487157165283	44.14487157165283	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2021	9	Q3	24261		105359.0	1624674.2	3458.7483112771297	1.0		30.461597814585296	30.461597814585296	port_row	raw_teu_over_labor
+Ashdod_port_M	port	M	Ashdod		2021	10	Q4	24262		136624.0	1923009.5	3654.171319775131	1.0		37.388504271991145	37.388504271991145	port_row	raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q	Haifa	Haifa-Legacy	2021		Q3		8087	349371.975198281	4060207.5	7372.8003958394365	1.0		47.386604334960154	47.386604334960154		raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q	Haifa	Haifa-Legacy	2021		Q4		8088	351457.887348166	4224779.5	7367.726179158226	1.0		47.70235467522772	47.70235467522772		raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q	Haifa	Haifa-Legacy	2022		Q1		8089	354496.0	4248435.798	8717.7419443668	1.0		40.66374093913929	40.66374093913929		raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q	Haifa	Haifa-Legacy	2022		Q2		8090	318193.0	3296997.828	6749.887468287094	1.0		47.14048960000621	47.14048960000621		raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q	Haifa	Haifa-Legacy	2022		Q3		8091	240017.0	2017959.724	4675.6221656323	1.0		51.33370308752092	51.33370308752092		raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q	Haifa	Haifa-Legacy	2022		Q4		8092	157894.0	774599.4709999999	2635.471825969124	1.0		59.911093886173006	59.911093886173006		raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q	Haifa	Haifa-Legacy	2023		Q1		8093	170270.0	227730.07599999988	3074.7844312187717	1.0		55.37623980114567	55.37623980114567		raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q	Haifa	Haifa-Legacy	2023		Q2		8094	191550.0	708632.5560000002	3936.5315585899752	1.0		48.65958703722706	48.65958703722706		raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q	Haifa	Haifa-Legacy	2023		Q3		8095	176997.0	853088.084	3767.5978324529387	1.0		46.978740266649964	46.978740266649964		raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q	Haifa	Haifa-Legacy	2023		Q4		8096	193275.0	1283548.1970000002	4161.739238962804	1.0		46.440920226460015	46.440920226460015		raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q	Haifa	Haifa-Legacy	2024		Q1		8097	164873.0	829953.1479999998	3563.314041653567	1.0		46.269567619555126	46.269567619555126		raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q	Haifa	Haifa-Legacy	2024		Q2		8098	147928.0	965372.027	3506.1077412064474	1.0		42.191515754475404	42.191515754475404		raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q	Haifa	Haifa-Legacy	2024		Q3		8099	172710.0	1427507.0990000002	4396.95202393713	1.0		39.27948248235639	39.27948248235639		raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q	Haifa	Haifa-Legacy	2024		Q4		8100	162259.0	1436296.702	4332.89448588578	1.0		37.44817708544526	37.44817708544526		raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_Legacy_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q	Haifa	Haifa-Bayport	2021		Q3		8087	7128.162716288311	15200.2	166.00555130006916	1.0		42.93930329717438	42.93930329717438		raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q	Haifa	Haifa-Bayport	2021		Q4		8088	25856.0489929849	60014.8	598.1676750613433	1.0		43.22542001343237	43.22542001343237		raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q	Haifa	Haifa-Bayport	2022		Q1		8089	51468.75	264238.002	1512.0739102647592	1.0		34.038514685428304	34.038514685428304		raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q	Haifa	Haifa-Bayport	2022		Q2		8090	102593.0	737784.772	2599.9223046203097	1.0		39.46002533140412	39.46002533140412		raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q	Haifa	Haifa-Bayport	2022		Q3		8091	123998.25	1187349.476	2885.6901079150507	1.0		42.97005061627715	42.97005061627715		raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q	Haifa	Haifa-Bayport	2022		Q4		8092	172148.25	1715491.6290000002	3432.6702965852246	1.0		50.14995182358493	50.14995182358493		raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q	Haifa	Haifa-Bayport	2023		Q1		8093	222086.0	2404611.824	4403.537237723709	1.0		50.43354649018511	50.43354649018511		raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q	Haifa	Haifa-Bayport	2023		Q2		8094	231566.75	2521923.344	5225.306084775813	1.0		44.316399124384525	44.316399124384525		raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q	Haifa	Haifa-Bayport	2023		Q3		8095	214054.5	2239471.316	5002.9590608246435	1.0		42.78557897387974	42.78557897387974		raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q	Haifa	Haifa-Bayport	2023		Q4		8096	145084.0	1423290.503	3430.2253944536114	1.0		42.295762906597545	42.295762906597545		raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q	Haifa	Haifa-Bayport	2024		Q1		8097	159882.75	1530232.952	2848.1246759987635	1.0		56.13614858483443	56.13614858483443		raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q	Haifa	Haifa-Bayport	2024		Q2		8098	132787.5	1271937.673	2594.08913444751	1.0		51.188487795844814	51.188487795844814		raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q	Haifa	Haifa-Bayport	2024		Q3		8099	129346.75	1158368.501	2714.2046604136463	1.0		47.65548887543635	47.65548887543635		raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q	Haifa	Haifa-Bayport	2024		Q4		8100	141247.0	1289047.998	3108.861529140081	1.0		45.43367360561385	45.43367360561385		raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_SIPG_Q	terminal	Q											1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2018	1	Q1	24217		112403.0	2432458.313	2328.0509464562333	1.0		48.282018987213405	48.282018987213405	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2018	2	Q1	24218		112638.0	2617941.7199999997	2328.0509464562333	1.0		48.38296179534126	48.38296179534126	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2018	3	Q1	24219		126799.0	2530486.29	2328.0509464562333	1.0		54.465732458739296	54.465732458739296	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2018	4	Q2	24220		130683.0	2830216.76	2443.263640406322	1.0		53.487064530730315	53.487064530730315	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2018	5	Q2	24221		127879.0	2650406.0009999997	2443.263640406322	1.0		52.33941924447144	52.33941924447144	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2018	6	Q2	24222		131558.0	2475433.331	2443.263640406322	1.0		53.84519207191309	53.84519207191309	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2018	7	Q3	24223		135914.0	2246470.07	2083.374379524898	1.0		65.23743468084427	65.23743468084427	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2018	8	Q3	24224		127701.0	2254746.21	2083.374379524898	1.0		61.295272350004375	61.295272350004375	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2018	9	Q3	24225		111052.0	2282924.06	2083.374379524898	1.0		53.30390979720352	53.30390979720352	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2018	10	Q4	24226		121552.0	2442325.644	2214.1381941063732	1.0		54.89810903562793	54.89810903562793	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2018	11	Q4	24227		119024.0	2369774.08	2214.1381941063732	1.0		53.75635555035358	53.75635555035358	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2018	12	Q4	24228		111947.0	2397849.86	2214.1381941063732	1.0		50.56007809177504	50.56007809177504	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2019	1	Q1	24229		123013.0	2470007.68	2148.707040602077	1.0		57.24977750597923	57.24977750597923	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2019	2	Q1	24230		106443.0	2325576.96	2148.707040602077	1.0		49.538163178436	49.538163178436	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2019	3	Q1	24231		125746.0	2816989.27	2148.707040602077	1.0		58.521705204058634	58.521705204058634	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2019	4	Q2	24232		127316.0	2526060.42	2098.7219331547817	1.0		60.66358672328717	60.66358672328717	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2019	5	Q2	24233		118131.0	2426771.23	2098.7219331547817	1.0		56.28711366370791	56.28711366370791	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2019	6	Q2	24234		112027.0	2482651.89	2098.7219331547817	1.0		53.37867691295432	53.37867691295432	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2019	7	Q3	24235		116265.0	2459658.8200000003	1938.2624355949836	1.0		59.98413726896091	59.98413726896091	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2019	8	Q3	24236		104006.0	2214668.53	1938.2624355949836	1.0		53.659400342283135	53.659400342283135	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2019	9	Q3	24237		102448.0	2192670.23	1938.2624355949836	1.0		52.855587622504686	52.855587622504686	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2019	10	Q4	24238		115624.0	2862368.2199999997	2023.56454302911	1.0		57.13877543382944	57.13877543382944	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2019	11	Q4	24239		112713.0	2138066.59	2023.56454302911	1.0		55.70022482765877	55.70022482765877	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2019	12	Q4	24240		115423.0	2168776.42	2023.56454302911	1.0		57.039445762980826	57.039445762980826	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2020	1	Q1	24241		124007.0	2540187.838	2623.634884949111	1.0		47.265341954166495	47.265341954166495	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2020	2	Q1	24242		120547.0	2352277.288	2623.634884949111	1.0		45.946560892118256	45.946560892118256	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2020	3	Q1	24243		129194.0	2597155.57	2623.634884949111	1.0		49.24237009545095	49.24237009545095	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2020	4	Q2	24244		132637.0	2293926.19	2304.6957395468435	1.0		57.55076374032761	57.55076374032761	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2020	5	Q2	24245		120993.0	2317983.4639999997	2304.6957395468435	1.0		52.498469938504776	52.498469938504776	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2020	6	Q2	24246		112028.0	1967243.95	2304.6957395468435	1.0		48.60858554024459	48.60858554024459	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2020	7	Q3	24247		124557.0	1982088.98	2226.396076742002	1.0		55.945571096348026	55.945571096348026	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2020	8	Q3	24248		113777.0	2307125.04	2226.396076742002	1.0		51.103665330966464	51.103665330966464	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2020	9	Q3	24249		113342.0	2066419.62	2226.396076742002	1.0		50.90828230611108	50.90828230611108	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2020	10	Q4	24250		132974.0	2266698.5	2232.6707346594794	1.0		59.55826711737717	59.55826711737717	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2020	11	Q4	24251		125407.0	2028255.749	2232.6707346594794	1.0		56.16905262975408	56.16905262975408	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2020	12	Q4	24252		114971.0	2078591.49	2232.6707346594794	1.0		51.494830032577575	51.494830032577575	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2021	1	Q1	24253		127132.0	1498345.5	2711.6076441931177	1.0		46.88436406802879	46.88436406802879	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2021	2	Q1	24254		122928.0	1407982.1	2711.6076441931177	1.0		45.33399227696129	45.33399227696129	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2021	3	Q1	24255		126274.0	1500388.3	2711.6076441931177	1.0		46.56794660924289	46.56794660924289	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2021	4	Q2	24256		121885.0	1514385.1	2752.095288583881	1.0		44.28807407417829	44.28807407417829	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2021	5	Q2	24257		134011.0	1459727.5	2752.095288583881	1.0		48.694171512119674	48.694171512119674	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2021	6	Q2	24258		130127.0	1498401.0	2752.095288583881	1.0		47.28288316897566	47.28288316897566	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2021	7	Q3	24259		118613.0	1380398.8	2512.9353157131686	1.0		47.20097618841325	47.20097618841325	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2021	8	Q3	24260		125500.0	1403292.5	2512.9353157131686	1.0		49.941595876049526	49.941595876049526	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2021	9	Q3	24261		105251.0	1291716.4	2512.9353157131686	1.0		41.88368850637521	41.88368850637521	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa		2021	10	Q4	24262		121087.0	1492880.5	2655.2979514065228	1.0		45.60203872256961	45.60203872256961	port_row	raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor
+Haifa_port_M	port	M	Haifa										1.0					raw_teu_over_labor

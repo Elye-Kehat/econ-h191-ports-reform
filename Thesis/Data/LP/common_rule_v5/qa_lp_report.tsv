@@ -1,0 +1,22 @@
+check	ok	note	stage
+unique_Haifa_port_month	True	n=46	S4A
+mean_w_Haifa_port_year≈1	True	max |mean(w)-1|=0	S4A
+annual_preservation_Haifa	False	max |E[LP]-E[Pi]|=0.00124	S4A
+NA_LP_months_Haifa	True	0 NA of 46	S4A
+unique_Ashdod_port_month	True	n=46	S4A
+mean_w_Ashdod_port_year≈1	True	max |mean(w)-1|=0	S4A
+annual_preservation_Ashdod	False	max |E[LP]-E[Pi]|=0.00151	S4A
+NA_LP_months_Ashdod	True	0 NA of 46	S4A
+unique_terminal_quarter	True	n=56	S4B
+mean_w_terminal_year≈1	False	max |mean(w)-1|=0.00711	S4B
+annual_preservation_terminal_year	False	max |E[LP]-Pi|=0.334	S4B
+fallback_port_quarter_rows	True	n=0	S4B
+terminal_tons_add_to_port_tons	True	max abs diff = 0.000	S4B
+NA_LP_quarters_Haifa-Legacy	True	0 NA of 14	S4B
+w_source_dist_Haifa-Legacy	True	{'terminal_quarter_specific': 14}	S4B
+NA_LP_quarters_Haifa-Bayport	True	0 NA of 14	S4B
+w_source_dist_Haifa-Bayport	True	{'terminal_quarter_specific': 14}	S4B
+NA_LP_quarters_Ashdod-Legacy	True	0 NA of 14	S4B
+w_source_dist_Ashdod-Legacy	True	{'terminal_quarter_specific': 14}	S4B
+NA_LP_quarters_Ashdod-HCT	True	0 NA of 14	S4B
+w_source_dist_Ashdod-HCT	True	{'terminal_quarter_specific': 14}	S4B

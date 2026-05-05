@@ -1,41 +1,41 @@
 design	table_group	reform	target	target_key	spec_name	event_time	m	j	beta	se	t	pvalue	n_event_obs	n_obs	r2
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-12	-12	-12	-2.4021074740326096				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-11	-11	-11	-2.409130787423376				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-10	-10	-10	-2.419253469638294				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-9	-9	-9	-1.4906254407088144				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-8	-8	-8	-1.5065407500326824				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-7	-7	-7	-1.52505965289083				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-6	-6	-6	-0.9374745034612193				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-5	-5	-5	-0.9604514878333532				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-4	-4	-4	-0.9852448228938737				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-3	-3	-3	0.05611621516144518				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-2	-2	-2	0.028544646063650703				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	0	0	0	-0.5569869252390482				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	1	1	1	-0.554170822873096				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	2	2	2	-0.5495860773451327				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	3	3	3	-0.6191867683822017				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	4	4	4	-0.6110564141607497				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	5	5	5	-0.6011678144284126				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	6	6	6	-0.5891643154838295				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	7	7	7	-0.5758337129082103				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	8	8	8	-0.5608362843117867				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-12	-12	-12	2.4021074740326043				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-11	-11	-11	2.4091307874233707				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-10	-10	-10	2.4192534696382797				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-9	-9	-9	1.4906254407088246				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-8	-8	-8	1.506540750032693				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-7	-7	-7	1.525059652890831				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-6	-6	-6	0.9374745034612122				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-5	-5	-5	0.9604514878333485				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-4	-4	-4	0.9852448228938773				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-3	-3	-3	-0.05611621516145764				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-2	-2	-2	-0.028544646063640045				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	0	0	0	0.5569869252390482				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	1	1	1	0.5541708228730877				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	2	2	2	0.5495860773451327				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	3	3	3	0.6191867683821952				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	4	4	4	0.6110564141607409				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	5	5	5	0.6011678144283991				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	6	6	6	0.5891643154838331				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	7	7	7	0.5758337129081981				1.0	42	1.0
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	8	8	8	0.560836284311776				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-12	-12	-12	-4.206100088904723	inf		1.0	1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-11	-11	-11	-4.069930433039341	inf		1.0	1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-10	-10	-10	-3.802232720543513	inf		1.0	1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-9	-9	-9	-3.16490034023155	inf		1.0	1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-8	-8	-8	-2.514903016087466	inf		1.0	1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-7	-7	-7	-2.6586891033206976	inf		1.0	1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-6	-6	-6	-2.0527490136825577	inf		1.0	1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-5	-5	-5	-2.0070852003715163	inf		1.0	1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-4	-4	-4	-1.472641383563948	inf		1.0	1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-3	-3	-3	-1.370222051448902	inf		1.0	1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-2	-2	-2	-0.07775315914722647	inf		1.0	1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	0	0	0	-0.43502731711349973	inf		1.0	1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	1	1	1	-0.6714911419679652	inf		1.0	1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	2	2	2	3.0727281566246383	inf		1.0	1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	3	3	3	-0.05652400854759457	inf		1.0	1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	4	4	4	-1.5712330488553565	inf		1.0	1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	5	5	5	-1.4019502313763452	inf		1.0	1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	6	6	6	-1.3032391616101346	inf		1.0	1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	7	7	7	-1.9654840291674076	inf		1.0	1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	8	8	8	-0.8442211872840506	inf		1.0	1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-12	-12	-12	4.20610008890473				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-11	-11	-11	4.069930433039339				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-10	-10	-10	3.8022327205435023				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-9	-9	-9	3.1649003402315583				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-8	-8	-8	2.5149030160874766				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-7	-7	-7	2.658689103320697				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-6	-6	-6	2.052749013682549				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-5	-5	-5	2.007085200371507				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-4	-4	-4	1.4726413835639516				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-3	-3	-3	1.3702220514488852				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-2	-2	-2	0.07775315914723535				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	0	0	0	0.4350273171134944				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	1	1	1	0.6714911419679528				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	2	2	2	-3.0727281566246294				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	3	3	3	0.05652400854758785				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	4	4	4	1.571233048855344				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	5	5	5	1.4019502313763281				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	6	6	6	1.3032391616101364				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	7	7	7	1.9654840291673927				1.0	42	1.0
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	8	8	8	0.8442211872840399				1.0	42	1.0

@@ -1,11 +1,11 @@
 check	ok	note
 rows_Ashdod_HCT_Q	True	n=14
 rows_Ashdod_Legacy_Q	True	n=14
-rows_Ashdod_port_M	True	n=44
+rows_Ashdod_port_M	True	n=46
 rows_Haifa_Legacy_Q	True	n=14
 rows_Haifa_SIPG_Q	True	n=14
-rows_Haifa_port_M	True	n=44
-unique_monthly_series	True	n=88
+rows_Haifa_port_M	True	n=46
+unique_monthly_series	True	n=92
 unique_quarterly_series	True	n=56
 mean_w_port_year≈1	True	max |mean(w)-1|=0.983
 no_forbidden_ports	True	Eilat_rows=0

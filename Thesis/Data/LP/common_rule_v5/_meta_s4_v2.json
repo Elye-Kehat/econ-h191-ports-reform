@@ -1,0 +1,16 @@
+{
+  "params": {
+    "winsor_low": 0.01,
+    "winsor_high": 0.99,
+    "monthly_start": 201801,
+    "monthly_end": 202110,
+    "quarterly_start": "2021Q3",
+    "quarterly_end": "2024Q4"
+  },
+  "v2_changes": [
+    "Pre-reform monthly port LP kept at port-month frequency.",
+    "Post-reform terminal LP rebuilt using terminal-quarter tons / terminal-quarter TEU.",
+    "Quarterly winsor/rebase now done within (terminal, year), not (port, year).",
+    "Port-quarter dynamic factor retained only as a fallback when terminal-specific r cannot be formed."
+  ]
+}

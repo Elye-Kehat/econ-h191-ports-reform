@@ -1,0 +1,17 @@
+check	ok	note
+rows_Ashdod_HCT_Q	True	n=14
+rows_Ashdod_Legacy_Q	True	n=14
+rows_Ashdod_port_M	True	n=44
+rows_Haifa_Legacy_Q	True	n=14
+rows_Haifa_SIPG_Q	True	n=14
+rows_Haifa_port_M	True	n=44
+unique_monthly_series	True	n=88
+unique_quarterly_series	True	n=56
+mean_w_port_year≈1	True	max |mean(w)-1|=0.983
+no_forbidden_ports	True	Eilat_rows=0
+na_rates_Ashdod_HCT_Q	True	NA TEU=0, NA Pi=0, NA LP=0
+na_rates_Ashdod_Legacy_Q	True	NA TEU=0, NA Pi=0, NA LP=0
+na_rates_Ashdod_port_M	True	NA TEU=0, NA Pi=0, NA LP=0
+na_rates_Haifa_Legacy_Q	True	NA TEU=0, NA Pi=0, NA LP=0
+na_rates_Haifa_SIPG_Q	True	NA TEU=0, NA Pi=0, NA LP=0
+na_rates_Haifa_port_M	True	NA TEU=0, NA Pi=0, NA LP=0

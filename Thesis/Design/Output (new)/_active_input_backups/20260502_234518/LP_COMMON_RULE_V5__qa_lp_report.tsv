@@ -1,0 +1,15 @@
+check	ok	note	stage
+unique_Haifa_port_month	True	n=44	S4A
+mean_w_Haifa_per_year≈1	True	max |mean(w)-1|=0	S4A
+annual_preservation_Haifa	False	max |E[LP]-E[Pi]|=0.0194	S4A
+NA_LP_months_Haifa	True	0 NA of 44	S4A
+unique_Ashdod_port_month	True	n=44	S4A
+mean_w_Ashdod_per_year≈1	True	max |mean(w)-1|=0	S4A
+annual_preservation_Ashdod	False	max |E[LP]-E[Pi]|=0.019	S4A
+NA_LP_months_Ashdod	True	0 NA of 44	S4A
+unique_terminal_quarter	True	n=56	S4B
+mean_w_port_year≈1	True	max |mean(w)-1|=0	S4B
+NA_LP_quarters_Haifa-Legacy	True	0 NA of 14	S4B
+NA_LP_quarters_Haifa-Bayport	True	0 NA of 14	S4B
+NA_LP_quarters_Ashdod-Legacy	True	0 NA of 14	S4B
+NA_LP_quarters_Ashdod-HCT	True	0 NA of 14	S4B

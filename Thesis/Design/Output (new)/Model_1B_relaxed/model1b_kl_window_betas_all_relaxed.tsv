@@ -1,9 +1,9 @@
 design	table_group	reform	target	target_key	spec_name	window	a	b	beta	se	pvalue	n_obs	r2
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	avg_pre	-12	-2	-0.8216287683496812	0.11788221373895696	3.171241047539297e-12	42	0.7120221932274196
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	post_y1	1	8	0.14916948722746326	0.1080586959273771	0.16744853181230246	42	0.7120221932274196
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	post_y1_2	1	8	0.14916948722746326	0.1080586959273771	0.16744853181230246	42	0.7120221932274196
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	full_post	1	8	0.14916948722746326	0.1080586959273771	0.16744853181230246	42	0.7120221932274196
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	avg_pre	-12	-2	1.0408389386011863	0.04123074084573939	0.0	42	0.9385039876188463
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	post_y1	1	8	0.23713499273334412	0.03779484577526107	3.512830026863867e-10	42	0.9385039876188463
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	post_y1_2	1	8	0.23713499273334412	0.03779484577526107	3.512830026863867e-10	42	0.9385039876188463
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	full_post	1	8	0.23713499273334412	0.03779484577526107	3.512830026863867e-10	42	0.9385039876188463
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	avg_pre	-12	-2	-2.1843142125058694	0.13908961365979527	0.0	42	0.9351001347382534
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	post_y1	1	8	-0.11923628052830404	0.12749881252147932	0.3496876994329554	42	0.9351001347382534
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	post_y1_2	1	8	-0.11923628052830404	0.12749881252147932	0.3496876994329554	42	0.9351001347382534
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	relaxed_tr	full_post	1	8	-0.11923628052830404	0.12749881252147932	0.3496876994329554	42	0.9351001347382534
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	avg_pre	-12	-2	1.3311595653372899	0.28639902410891804	3.3529995571157656e-06	42	0.40659949964518927
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	post_y1	1	8	-0.4659765361663853	0.26253243876650795	0.07590955008464362	42	0.40659949964518927
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	post_y1_2	1	8	-0.4659765361663853	0.26253243876650795	0.07590955008464362	42	0.40659949964518927
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	relaxed_tr	full_post	1	8	-0.4659765361663853	0.26253243876650795	0.07590955008464362	42	0.40659949964518927

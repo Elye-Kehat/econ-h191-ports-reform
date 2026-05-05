@@ -1,0 +1,16 @@
+{
+  "rows": {
+    "lproxy_clean": 264,
+    "port_month_labor": 168,
+    "terminal_year_pi": 22,
+    "coverage_vs_s2": 20,
+    "coverage_gaps": 2
+  },
+  "pi_variance_groups": 0,
+  "terminals_in_s3": [
+    "Ashdod-HCT",
+    "Ashdod-Legacy",
+    "Haifa-Bayport",
+    "Haifa-Legacy"
+  ]
+}

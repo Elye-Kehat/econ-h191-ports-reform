@@ -1,0 +1,13 @@
+family	series_id	series_display	is_main_series	reform	reform_display	spec_name	test_name	n_terms_tested	lead_min	lead_max	f_stat	pvalue	df_num	df_denom	n_obs	r2
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	joint_exact_leads	11	-12	-2	1.157884757973542e+28		11.0	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	joint_exact_leads	11	-12	-2	2.260970248110452e+28		11.0	0.0	37	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	joint_exact_leads	11	-12	-2	3.204281440657966e+28		11.0	0.0	36	1.0
+exact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	joint_exact_leads	11	-12	-2	9.2579411417769e+24		11.0	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	joint_exact_leads	11	-12	-2	2.7025036384537436e+27		9.0	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	joint_exact_leads	11	-12	-2	6.367852859849874e+27		11.0	0.0	37	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	joint_exact_leads	11	-12	-2	3.6078841683807424e+26		11.0	0.0	36	1.0
+exact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	joint_exact_leads	11	-12	-2	8.020839406149232e+23		11.0	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	joint_exact_leads	1	-2	-2	1.685804340734374e+27		1.0	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	joint_exact_leads	1	-2	-2	5.246155024293194e+27		1.0	0.0	27	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	joint_exact_leads	11	-12	-2	6.080343861420702e+27		11.0	0.0	36	1.0
+exact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	joint_exact_leads	11	-12	-2	1.1655404689642297e+25		11.0	0.0	36	1.0

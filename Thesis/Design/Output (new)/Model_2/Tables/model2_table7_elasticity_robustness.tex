@@ -7,9 +7,10 @@
     \toprule
     row & eta\_family & eta\_source & eta\_role & eta\_spec & eta & TE & dC & CD & share\_explained & share\_valid & status \\
     \midrule
-    Privatization - Legacy & manual & HPC\_labor\_share & preferred & manual & 0.251 & 0.139 & 0.149 & 0.037 & 26.8\% & True & ok \\
-    Privatization - Legacy & manual & one\_third\_benchmark & robustness & manual & 0.333 & 0.139 & 0.149 & 0.050 & 35.7\% & True & ok \\
-    Privatization - Legacy & manual & hazan\_tsur\_benchmark & robustness & manual & 0.420 & 0.139 & 0.149 & 0.063 & 44.9\% & True & ok \\
+    Privatization - Legacy & manual & HPC\_labor\_share & preferred & manual & 0.251 & 0.139 & -0.119 & -0.030 & -21.5\% & False & ok \\
+    Privatization - Legacy & manual & one\_third\_benchmark & robustness & manual & 0.333 & 0.139 & -0.119 & -0.040 & -28.5\% & False & ok \\
+    Privatization - Legacy & manual & hazan\_tsur\_benchmark & robustness & manual & 0.420 & 0.139 & -0.119 & -0.050 & -35.9\% & False & ok \\
+    Privatization - Legacy & regression & legacy\_ts\_trend & robustness & TS+trend & 0.790 & 0.139 & -0.119 & -0.094 & -67.6\% & False & ok \\
     \bottomrule
   \end{tabular}
 \end{table}

@@ -1,0 +1,98 @@
+{
+  "script": "Model_1A_v7_quarterly_windows_fixed_v3.py",
+  "lp_input": "Data/LP/raw_from_l_v5_tonsonly/LP_Panel.tsv",
+  "lp_resolution": "explicit_cli",
+  "run_mode": "quarterly_only",
+  "design_notes": [
+    "Quarterly only: avoids pseudo-replication from repeating quarterly terminal LP across months.",
+    "Dynamic bins keep quarter-by-quarter detail only through the first post-treatment year.",
+    "Later post periods are collapsed into yearly blocks to stabilize inference in a small panel.",
+    "Both baseline FE and port-trend shells are retained for transparency and comparability.",
+    "Treatment objects are preserved from v6; this file changes frequency discipline and aggregation, not the underlying objects."
+  ],
+  "quarterly_bins": [
+    {
+      "label": "pre_8_5",
+      "a": -8,
+      "b": -5
+    },
+    {
+      "label": "pre_4_2",
+      "a": -4,
+      "b": -2
+    },
+    {
+      "label": "q0",
+      "a": 0,
+      "b": 0
+    },
+    {
+      "label": "q1",
+      "a": 1,
+      "b": 1
+    },
+    {
+      "label": "q2",
+      "a": 2,
+      "b": 2
+    },
+    {
+      "label": "q3",
+      "a": 3,
+      "b": 3
+    },
+    {
+      "label": "q4",
+      "a": 4,
+      "b": 4
+    },
+    {
+      "label": "y2_q5_8",
+      "a": 5,
+      "b": 8
+    },
+    {
+      "label": "y3_q9_12",
+      "a": 9,
+      "b": 12
+    },
+    {
+      "label": "y4p_q13_40",
+      "a": 13,
+      "b": 40
+    }
+  ],
+  "quarterly_windows": {
+    "avg_pre": [
+      -4,
+      -2
+    ],
+    "post_y1": [
+      1,
+      4
+    ],
+    "post_y2": [
+      5,
+      8
+    ],
+    "post_y3": [
+      9,
+      12
+    ],
+    "post_y1_2": [
+      1,
+      8
+    ]
+  },
+  "outputs_written": {
+    "analysis_panel": "model1a_q_analysis_panel.tsv",
+    "sample_overview": "model1a_q_sample_overview.tsv",
+    "dynamic_nyt": "model1a_q_dynamic_betas_nyt.tsv",
+    "dynamic_twfe": "model1a_q_dynamic_betas_twfe.tsv",
+    "windows_nyt": "model1a_q_window_betas_nyt.tsv",
+    "windows_twfe": "model1a_q_window_betas_twfe.tsv",
+    "pretrend_nyt": "model1a_q_pretrend_tests_nyt.tsv",
+    "pretrend_twfe": "model1a_q_pretrend_tests_twfe.tsv",
+    "static_twfe": "model1a_q_static_betas_twfe.tsv"
+  }
+}

@@ -1,0 +1,61 @@
+series_id	series_display	is_main_series	reform	reform_display	spec_name	window_key	window_label	a_req	b_req	a_used	b_used	n_months_used	beta	se	pvalue	n_obs	r2
+Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	avg_pre	Average pre	-12	-2	-12	-2	11	0.02163475779265644			84	0.9283707724927189
+Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	post_1_6	Average post, months 1-6	1	6	1	6	6	-0.09217030757945026			84	0.9283707724927189
+Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	post_7_12	Average post, months 7-12	7	12	7	12	6	0.30958752423281005			84	0.9283707724927189
+Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	post_13_24	Average post, months 13-24	13	24	13	24	12	1.5148647527271808			84	0.9283707724927189
+Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	post_full	Average full post	1	24	1	24	24	0.8117866805269304			84	0.9283707724927189
+Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	avg_pre	Average pre	-12	-2	-12	-2	11	0.021925699927468904	0.03169030537892113	0.4890164284009586	84	0.9378229200614283
+Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	post_1_6	Average post, months 1-6	1	6	1	6	6	-0.2195969245403912	0.0675855910592651	0.0011574319038445413	84	0.9378229200614283
+Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	post_7_12	Average post, months 7-12	7	12	7	12	6	0.054661554777221365	0.14287768257223765	0.7020342589579374	84	0.9378229200614283
+Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	post_13_24	Average post, months 13-24	13	24	13	24	12	1.2595023700693755	0.18949131235478645	2.99624769439788e-11	84	0.9378229200614283
+Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	post_full	Average full post	1	24	1	24	24	0.5885173425938952	0.14729780270789283	6.457826361305763e-05	84	0.9378229200614283
+Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	avg_pre	Average pre	-12	-2	-12	-2	11	-1.6637871322042024	4.214684851089516e-08	0.0	84	0.9683680856562481
+Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	post_1_6	Average post, months 1-6	1	6	1	6	6	-0.3508380588574599	4.214684851089457e-08	0.0	84	0.9683680856562481
+Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	post_7_12	Average post, months 7-12	7	12	7	12	6	-1.5046081599478436	4.214684851089388e-08	0.0	84	0.9683680856562481
+Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	post_13_24	Average post, months 13-24	13	24	13	23	11	-1.3303072887823868	4.214684851089464e-08	0.0	84	0.9683680856562481
+Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	post_full	Average full post	1	24	1	23	23	-1.1202633691060033	4.2146848510894385e-08	0.0	84	0.9683680856562481
+Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	avg_pre	Average pre	-12	-2	-12	-2	11	-1.673616885709373	0.01030722031079759	0.0	84	0.9923175883783979
+Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	post_1_6	Average post, months 1-6	1	6	1	6	6	-0.34346574372857624	0.007730415233098484	0.0	84	0.9923175883783979
+Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	post_7_12	Average post, months 7-12	7	12	7	12	6	-0.630022585798665	0.00021473375653020019	0.0	84	0.9923175883783979
+Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	post_13_24	Average post, months 13-24	13	24	13	23	11	-0.01310447774332045	0.00526097703363083	0.012742610875276394	84	0.9923175883783979
+Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	post_full	Average full post	1	24	1	23	23	-0.26022083618869446	0.0044767320099859485	0.0	84	0.9923175883783979
+Haifa_port_KL	Haifa aggregate	1	competition	Competition clock	baseline	avg_pre	Average pre	-12	-2	-12	-2	11	0.03484245075365121	1.9523597663587462e-08	0.0	84	0.5373374865517067
+Haifa_port_KL	Haifa aggregate	1	competition	Competition clock	baseline	post_1_6	Average post, months 1-6	1	6	1	6	6	-0.06578569098809772	2.0988763971484485e-08	0.0	84	0.5373374865517067
+Haifa_port_KL	Haifa aggregate	1	competition	Competition clock	baseline	post_7_12	Average post, months 7-12	7	12	7	12	6	0.038637888482336485	1.731390232697027e-08	0.0	84	0.5373374865517067
+Haifa_port_KL	Haifa aggregate	1	competition	Competition clock	baseline	post_13_24	Average post, months 13-24	13	24	13	24	12	0.18018184871744564	2.2316327777360985e-08	0.0	84	0.5373374865517067
+Haifa_port_KL	Haifa aggregate	1	competition	Competition clock	baseline	post_full	Average full post	1	24	1	24	24	0.08330397373228252	2.0834685009448632e-08	0.0	84	0.5373374865517067
+Haifa_port_KL	Haifa aggregate	1	competition	Competition clock	ctrl_trend	avg_pre	Average pre	-12	-2	-12	-2	11	0.12231664467194775	0.02051158657427996	2.4720132607569667e-09	84	0.6737655178149958
+Haifa_port_KL	Haifa aggregate	1	competition	Competition clock	ctrl_trend	post_1_6	Average post, months 1-6	1	6	1	6	6	-0.25938839758876275	0.04474761129715208	6.763324567060636e-09	84	0.6737655178149958
+Haifa_port_KL	Haifa aggregate	1	competition	Competition clock	ctrl_trend	post_7_12	Average post, months 7-12	7	12	7	12	6	-0.37043607319857486	0.09442854094234898	8.748043136597161e-05	84	0.6737655178149958
+Haifa_port_KL	Haifa aggregate	1	competition	Competition clock	ctrl_trend	post_13_24	Average post, months 13-24	13	24	13	24	12	-0.3601034038409062	0.12435947819021997	0.003783559159668215	84	0.6737655178149958
+Haifa_port_KL	Haifa aggregate	1	competition	Competition clock	ctrl_trend	post_full	Average full post	1	24	1	24	24	-0.3375078196172875	0.09691721356689245	0.0004968773052338449	84	0.6737655178149958
+Haifa_port_KL	Haifa aggregate	1	privatization	Privatization clock	baseline	avg_pre	Average pre	-12	-2	-12	-2	11	-0.31918963572813097			84	0.7222217556872796
+Haifa_port_KL	Haifa aggregate	1	privatization	Privatization clock	baseline	post_1_6	Average post, months 1-6	1	6	1	6	6	-0.21928346973109855			84	0.7222217556872796
+Haifa_port_KL	Haifa aggregate	1	privatization	Privatization clock	baseline	post_7_12	Average post, months 7-12	7	12	7	12	6	-0.30271467173131617			84	0.7222217556872796
+Haifa_port_KL	Haifa aggregate	1	privatization	Privatization clock	baseline	post_13_24	Average post, months 13-24	13	24	13	23	11	-0.12197846867051602			84	0.7222217556872796
+Haifa_port_KL	Haifa aggregate	1	privatization	Privatization clock	baseline	post_full	Average full post	1	24	1	23	23	-0.19451095670218108			84	0.7222217556872796
+Haifa_port_KL	Haifa aggregate	1	privatization	Privatization clock	ctrl_trend	avg_pre	Average pre	-12	-2	-12	-2	11	-0.2753565880619842	0.022580401643516455	0.0	84	0.78118418203827
+Haifa_port_KL	Haifa aggregate	1	privatization	Privatization clock	ctrl_trend	post_1_6	Average post, months 1-6	1	6	1	6	6	-0.25215825548070403	0.016935301232639033	0.0	84	0.78118418203827
+Haifa_port_KL	Haifa aggregate	1	privatization	Privatization clock	ctrl_trend	post_7_12	Average post, months 7-12	7	12	7	12	6	-0.19949562749773045	0.00047042503414763856	0.0	84	0.78118418203827
+Haifa_port_KL	Haifa aggregate	1	privatization	Privatization clock	ctrl_trend	post_13_24	Average post, months 13-24	13	24	13	23	11	0.009107196860701433	0.011525413338889528	0.4294203366348368	84	0.78118418203827
+Haifa_port_KL	Haifa aggregate	1	privatization	Privatization clock	ctrl_trend	post_full	Average full post	1	24	1	23	23	-0.11346713619143006	0.00980733930079064	0.0	84	0.78118418203827
+Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	avg_pre	Average pre	-12	-2	-2	-2	1	0.1161405705023455	3.7252902984307616e-09	0.0	42	0.9892611585192378
+Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	post_1_6	Average post, months 1-6	1	6	1	6	6	4.37701183259885	3.7252902984450723e-09	0.0	42	0.9892611585192378
+Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	post_7_12	Average post, months 7-12	7	12	7	12	6	3.385036045393936	3.725290298481388e-09	0.0	42	0.9892611585192378
+Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	post_13_24	Average post, months 13-24	13	24	13	24	12	2.8305200293364976	3.725290298457551e-09	0.0	42	0.9892611585192378
+Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	post_full	Average full post	1	24	1	24	24	3.355771984166445	3.7252902984571143e-09	0.0	42	0.9892611585192378
+Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	avg_pre	Average pre	-12	-2	-2	-2	1	0.12142862584831615	0.004506513711372741	0.0	42	0.9894867320512889
+Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	post_1_6	Average post, months 1-6	1	6	1	6	6	2.9890980777198215	0.007354044560244748	0.0	42	0.9894867320512889
+Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	post_7_12	Average post, months 7-12	7	12	7	12	6	0.6012764526169205	0.007952138384398953	0.0	42	0.9894867320512889
+Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	post_13_24	Average post, months 13-24	13	24	13	24	12	-0.0008320615543569634	0.03261682298663433	0.9796480157300294	42	0.9894867320512889
+Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	post_full	Average full post	1	24	1	24	24	0.897177601807007	0.012487543887717978	0.0	42	0.9894867320512889
+Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	avg_pre	Average pre	-12	-2	-12	-2	11	0.8268680050995667	5.960464477539068e-08	0.0	42	0.26821310645959484
+Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	post_1_6	Average post, months 1-6	1	6	1	6	6	-0.028886486235334952	5.960464477539076e-08	0.0	42	0.26821310645959484
+Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	post_7_12	Average post, months 7-12	7	12	7	12	6	0.3501313318172916	5.960464477539003e-08	0.0	42	0.26821310645959484
+Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	post_13_24	Average post, months 13-24	13	24	13	23	11	0.47715136320093865	5.96046447753907e-08	0.0	42	0.26821310645959484
+Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	post_full	Average full post	1	24	1	23	23	0.31200582907400287	5.960464477539046e-08	0.0	42	0.26821310645959484
+Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	avg_pre	Average pre	-12	-2	-12	-2	11	6.637851183188717	0.8556804980368651	8.659739592076221e-15	42	0.7411170210227408
+Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	post_1_6	Average post, months 1-6	1	6	1	6	6	-4.3871238698022275	0.641760373527583	8.139044993527023e-12	42	0.7411170210227408
+Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	post_7_12	Average post, months 7-12	7	12	7	12	6	0.1709514709598201	0.017826677042454733	0.0	42	0.7411170210227408
+Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	post_13_24	Average post, months 13-24	13	24	13	23	11	-2.9392343162168735	0.43675358753963267	1.6997736551616072e-11	42	0.7411170210227408
+Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	post_full	Average full post	1	24	1	23	23	-2.5055918204973935	0.37164746268899135	1.5638157435660105e-11	42	0.7411170210227408

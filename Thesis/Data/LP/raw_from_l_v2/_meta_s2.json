@@ -1,0 +1,17 @@
+{
+  "rows": {
+    "port_month": 332,
+    "term_quarter": 80,
+    "port_quarter": 40
+  },
+  "ports_month": [
+    "Ashdod",
+    "Haifa"
+  ],
+  "terminals_quarter": [
+    "Ashdod-HCT",
+    "Ashdod-Legacy",
+    "Haifa-Bayport",
+    "Haifa-Legacy"
+  ]
+}

@@ -1,0 +1,14 @@
+check	ok	note
+unique_terminal_quarter	True	n=56
+mean_w_terminal_year≈1	False	max |mean(w)-1|=0.00711
+annual_preservation_terminal_year	False	max |E[LP]-Pi|=0.334
+fallback_port_quarter_rows	True	n=0
+terminal_tons_add_to_port_tons	True	max abs diff = 0.000
+NA_LP_quarters_Haifa-Legacy	True	0 NA of 14
+w_source_dist_Haifa-Legacy	True	{'terminal_quarter_specific': 14}
+NA_LP_quarters_Haifa-Bayport	True	0 NA of 14
+w_source_dist_Haifa-Bayport	True	{'terminal_quarter_specific': 14}
+NA_LP_quarters_Ashdod-Legacy	True	0 NA of 14
+w_source_dist_Ashdod-Legacy	True	{'terminal_quarter_specific': 14}
+NA_LP_quarters_Ashdod-HCT	True	0 NA of 14
+w_source_dist_Ashdod-HCT	True	{'terminal_quarter_specific': 14}

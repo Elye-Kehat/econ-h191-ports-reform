@@ -1,9 +1,9 @@
 design	table_group	reform	target	target_key	spec_name	window	a	b	beta	se	pvalue	n_obs	r2
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	avg_pre	-12	-2	-1.3228388661536323			42	1.0
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	post_y1	1	8	-0.5826252762366774			42	1.0
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	post_y1_2	1	8	-0.5826252762366774			42	1.0
-NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	full_post	1	8	-0.5826252762366774			42	1.0
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	avg_pre	-12	-2	1.3228388661536314			42	1.0
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	post_y1	1	8	0.5826252762366704			42	1.0
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	post_y1_2	1	8	0.5826252762366704			42	1.0
-NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	full_post	1	8	0.5826252762366704			42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	avg_pre	-12	-2	-2.4906551373037673			42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	post_y1	1	8	-0.5926768315230271			42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	post_y1_2	1	8	-0.5926768315230271			42	1.0
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	full_post	1	8	-0.5926768315230271			42	1.0
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	avg_pre	-12	-2	2.490655137303767			42	1.0
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	post_y1	1	8	0.5926768315230191			42	1.0
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	post_y1_2	1	8	0.5926768315230191			42	1.0
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	full_post	1	8	0.5926768315230191			42	1.0

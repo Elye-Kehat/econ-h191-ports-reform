@@ -1,0 +1,7 @@
+series_id	series_display	is_main_series	start_year	start_month	end_year	end_month	n_obs	reform	reform_display	event_time_min_observed	event_time_max_observed	supports_pre_full	supports_1_6	supports_7_12	supports_13_24	supports_1_24
+Haifa_Bayport_KL	Haifa-Bayport	0	2021	7	2024	12	42	competition	Competition clock	-2	39	0	1	1	1	1
+Haifa_Bayport_KL	Haifa-Bayport	0	2021	7	2024	12	42	privatization	Privatization clock	-18	23	1	1	1	0	0
+Haifa_Legacy_KL	Haifa-Legacy	1	2018	1	2024	12	84	competition	Competition clock	-44	39	1	1	1	1	1
+Haifa_Legacy_KL	Haifa-Legacy	1	2018	1	2024	12	84	privatization	Privatization clock	-60	23	1	1	1	0	0
+Haifa_port_KL	Haifa aggregate	1	2018	1	2024	12	84	competition	Competition clock	-44	39	1	1	1	1	1
+Haifa_port_KL	Haifa aggregate	1	2018	1	2024	12	84	privatization	Privatization clock	-60	23	1	1	1	0	0

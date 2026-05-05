@@ -19,30 +19,30 @@
   },
   "inputs": {
     "tons": {
-      "path": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/Output/monthly_output_by_1000_tons_ports_and_terminals.tsv",
+      "path": "Data/Output/monthly_output_by_1000_tons_ports_and_terminals.tsv",
       "sha256": "8948abd6d412371064fb7166b8301256d9a35764965bf11f47e54389603510e5"
     },
     "teu": {
-      "path": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/Output/teu_monthly_plus_quarterly_by_port.tsv",
+      "path": "Data/Output/teu_monthly_plus_quarterly_by_port.tsv",
       "sha256": "db61df01edf177d3d5404fd733c9e1b68b1ecec609b7a322005e4d3381b1b414"
     },
     "kpis": {
-      "path": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/containers_kpis_annual_wide_filled.tsv",
+      "path": "Data/L_proxy/containers_kpis_annual_wide_filled.tsv",
       "sha256": "6817188640595f62037915ba6007c998d69b21d6ee802a9d3e5e83a6da7526a5"
     },
     "base_lproxy": {
-      "path": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/L_Proxy.tsv",
-      "sha256": "13d247aa260509c768fabbfd97e160e470ccdcc5f7517085c8e72b90ac6a8584"
+      "path": "Data/L_proxy/L_Proxy.tsv",
+      "sha256": "905456591b9cb5478a8ff17da57be8c84694e628e4c0b429cd33586e237654a5"
     }
   },
   "outputs": {
-    "terminal_month_labor": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/common_rule/labor_hours_monthly_terminal_commonrule_v5.tsv",
-    "port_month_labor": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/common_rule/labor_hours_monthly_port_commonrule_v5.tsv",
-    "annual_anchor": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/common_rule/labor_anchor_terminal_year_commonrule_v5.tsv",
-    "lproxy": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/common_rule/L_Proxy_commonrule_v5.tsv",
-    "qa": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/common_rule/lproxy_commonrule_v5_qa.tsv",
-    "anchor_compare": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/common_rule/lproxy_commonrule_v5_old_new_anchor_compare.tsv",
-    "meta": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/common_rule/_meta_l_proxy_commonrule_v5.json"
+    "terminal_month_labor": "Data/L_proxy/common_rule/labor_hours_monthly_terminal_commonrule_v5.tsv",
+    "port_month_labor": "Data/L_proxy/common_rule/labor_hours_monthly_port_commonrule_v5.tsv",
+    "annual_anchor": "Data/L_proxy/common_rule/labor_anchor_terminal_year_commonrule_v5.tsv",
+    "lproxy": "Data/L_proxy/common_rule/L_Proxy_commonrule_v5.tsv",
+    "qa": "Data/L_proxy/common_rule/lproxy_commonrule_v5_qa.tsv",
+    "anchor_compare": "Data/L_proxy/common_rule/lproxy_commonrule_v5_old_new_anchor_compare.tsv",
+    "meta": "Data/L_proxy/common_rule/_meta_l_proxy_commonrule_v5.json"
   },
   "row_counts": {
     "port_month_tons": 168,

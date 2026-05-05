@@ -1,0 +1,18 @@
+check	ok	note
+unique_Ashdod_port_month	True	n=46
+na_lp_months_Ashdod	True	0 NA of 46
+unique_Haifa_port_month	True	n=46
+na_lp_months_Haifa	True	0 NA of 46
+unique_terminal_quarter	True	n=56
+na_lp_quarters_Haifa-Legacy	True	0 NA of 14
+na_lp_quarters_Haifa-Bayport	True	0 NA of 14
+na_lp_quarters_Ashdod-Legacy	True	0 NA of 14
+na_lp_quarters_Ashdod-HCT	True	0 NA of 14
+unique_monthly_series	False	n=138
+unique_quarterly_series	False	n=98
+na_rates_Ashdod_HCT_Q	True	NA TEU=0, NA L_hours=0, NA LP=0
+na_rates_Ashdod_Legacy_Q	True	NA TEU=14, NA L_hours=14, NA LP=14
+na_rates_Ashdod_port_M	True	NA TEU=0, NA L_hours=0, NA LP=0
+na_rates_Haifa_Legacy_Q	True	NA TEU=14, NA L_hours=14, NA LP=14
+na_rates_Haifa_SIPG_Q	True	NA TEU=14, NA L_hours=14, NA LP=14
+na_rates_Haifa_port_M	True	NA TEU=46, NA L_hours=46, NA LP=46

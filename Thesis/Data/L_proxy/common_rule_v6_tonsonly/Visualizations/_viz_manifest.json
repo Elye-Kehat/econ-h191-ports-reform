@@ -1,0 +1,15 @@
+{
+  "strategy": "common_rule_v6_tonsonly",
+  "lproxy_path": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/common_rule_v6_tonsonly/L_Proxy_commonrule_v6_tonsonly.tsv",
+  "outdir": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/common_rule_v6_tonsonly/Visualizations",
+  "start": "2018-01",
+  "end": "2024-12",
+  "outputs": [
+    "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/common_rule_v6_tonsonly/Visualizations/haifa_l_proxy_terminals.png",
+    "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/common_rule_v6_tonsonly/Visualizations/ashdod_l_proxy_terminals.png",
+    "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/common_rule_v6_tonsonly/Visualizations/port_monthly_l_proxy.png",
+    "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/common_rule_v6_tonsonly/Visualizations/all_terminal_monthly_l_proxy.png",
+    "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/common_rule_v6_tonsonly/Visualizations/L_proxy_monthly_terminals_tidy.tsv",
+    "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/common_rule_v6_tonsonly/Visualizations/L_proxy_monthly_ports_tidy.tsv"
+  ]
+}

@@ -1,0 +1,7 @@
+design	table_group	reform	target	target_key	spec_name	pre_min	pre_max	n_bins_used	f_stat	pvalue	df_num	df_denom	n_obs	r2	test_type
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-8.0	-2.0	2	17.305040978494862	0.00017468599863157378	2.0		23	0.980136249198342	chi2_wald_HC1
+NYT	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-8.0	-2.0	2	1.643860000806887	0.43958244098993093	2.0		23	0.8836420778441854	chi2_wald_HC1
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-8.0	-2.0	2	9.55029917138396e+25	0.0	2.0		28	0.9511857377821554	chi2_wald_HC1
+NYT	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-8.0	-2.0	2	29.666190975353985	3.614668547425277e-07	2.0		28	0.5791355290018556	chi2_wald_HC1
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-8.0	-2.0	2	1.0258727068255822e+25	0.0	2.0		28	0.9511857377821553	chi2_wald_HC1
+NYT	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-8.0	-2.0	2	39.60078341929799	2.5165127840113603e-09	2.0		28	0.40798752470353394	chi2_wald_HC1

@@ -1,0 +1,118 @@
+{
+  "script": "Model_1A_v6_dual_frequency.py",
+  "lp_input": "Data/LP/LP_Panel.tsv",
+  "run_mode": "both",
+  "monthly_bins": [
+    {
+      "label": "pre_24_13",
+      "a": -24,
+      "b": -13
+    },
+    {
+      "label": "pre_12_2",
+      "a": -12,
+      "b": -2
+    },
+    {
+      "label": "m0",
+      "a": 0,
+      "b": 0
+    },
+    {
+      "label": "m1_3",
+      "a": 1,
+      "b": 3
+    },
+    {
+      "label": "m4_6",
+      "a": 4,
+      "b": 6
+    },
+    {
+      "label": "m7_12",
+      "a": 7,
+      "b": 12
+    },
+    {
+      "label": "m13_24",
+      "a": 13,
+      "b": 24
+    },
+    {
+      "label": "m25_120",
+      "a": 25,
+      "b": 120
+    }
+  ],
+  "quarterly_bins": [
+    {
+      "label": "pre_8_5",
+      "a": -8,
+      "b": -5
+    },
+    {
+      "label": "pre_4_2",
+      "a": -4,
+      "b": -2
+    },
+    {
+      "label": "q0",
+      "a": 0,
+      "b": 0
+    },
+    {
+      "label": "q1_2",
+      "a": 1,
+      "b": 2
+    },
+    {
+      "label": "q3_4",
+      "a": 3,
+      "b": 4
+    },
+    {
+      "label": "q5_8",
+      "a": 5,
+      "b": 8
+    },
+    {
+      "label": "q9_40",
+      "a": 9,
+      "b": 40
+    }
+  ],
+  "monthly_windows": {
+    "avg_pre": [
+      -12,
+      -2
+    ],
+    "post_y1": [
+      1,
+      12
+    ],
+    "post_y1_2": [
+      1,
+      24
+    ]
+  },
+  "quarterly_windows": {
+    "avg_pre": [
+      -4,
+      -2
+    ],
+    "post_y1": [
+      1,
+      4
+    ],
+    "post_y1_2": [
+      1,
+      8
+    ]
+  },
+  "notes": [
+    "Monthly branch expands native quarterly terminal LP into within-quarter monthly step functions for comparison against the older monthly shell.",
+    "Quarterly branch keeps post-reform terminal LP at native quarterly frequency.",
+    "Both branches read the same mixed-frequency LP panel and therefore the same updated L/LP proxy branch.",
+    "This file also fixes the quarter parsing bug by accepting quarter labels such as Q3."
+  ]
+}

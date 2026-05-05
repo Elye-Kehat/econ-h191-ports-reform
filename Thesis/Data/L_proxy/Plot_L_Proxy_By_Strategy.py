@@ -117,9 +117,9 @@ def parse_args() -> argparse.Namespace:
 def strategy_filename_candidates(strategy: str) -> list[str]:
     compact = strategy.replace("_", "").replace("-", "")
     return [
-        f"L_Proxy_{strategy}_5.tsv",
+        f"L_Proxy_{strategy}_v6_tonsonly.tsv",
         f"L_Proxy_{strategy}.tsv",
-        f"L_Proxy_{compact}_v5.tsv",
+        f"L_Proxy_{compact}_v6_tonsonly.tsv",
         f"L_Proxy_{compact}.tsv",
         "L_Proxy.tsv",
     ]

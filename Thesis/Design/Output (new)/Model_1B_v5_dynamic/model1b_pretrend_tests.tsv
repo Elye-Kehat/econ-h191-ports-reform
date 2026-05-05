@@ -1,0 +1,13 @@
+series_id	series_display	is_main_series	reform	reform_display	spec_name	n_leads_used	lead_min	lead_max	f_stat	pvalue	df_num	df_denom	n_obs	r2
+Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	11	-12	-2	2.6991984785044495e+26	0.0	3.0	45.0	84	0.9283707724927189
+Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	11	-12	-2	-5909270559110.8125	1.0	2.0	43.0	84	0.9378229200614283
+Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	11	-12	-2	3.710708972045963e+27	0.0	3.0	47.0	84	0.9683680856562481
+Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	11	-12	-2	1.793247552536232e+16	0.0	2.0	45.0	84	0.9923175883783979
+Haifa_port_KL	Haifa aggregate	1	competition	Competition clock	baseline	11	-12	-2	5.1056820217889914e+26	0.0	5.0	45.0	84	0.5373374865517067
+Haifa_port_KL	Haifa aggregate	1	competition	Competition clock	ctrl_trend	11	-12	-2	-3811752420051.245	1.0	2.0	43.0	84	0.6737655178149958
+Haifa_port_KL	Haifa aggregate	1	privatization	Privatization clock	baseline	11	-12	-2	3.579586738994725e+26	0.0	5.0	47.0	84	0.7222217556872796
+Haifa_port_KL	Haifa aggregate	1	privatization	Privatization clock	ctrl_trend	11	-12	-2	15924334687.051666	7.546185338352706e-200	2.0	45.0	84	0.78118418203827
+Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	1	-2	-2	971958377201916.4	2.694572783353176e-98	1.0	14.0	42	0.9892611585192378
+Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	1	-2	-2	726.0403661305606	8.595083565653056e-13	1.0	13.0	42	0.9894867320512889
+Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	11	-12	-2	1.9337621395716906e+28	1.9003884794330058e-70	2.0	5.0	42	0.26821310645959484
+Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	11	-12	-2	354128856105.1719	4.784412509254136e-23	1.0	4.0	42	0.7411170210227408

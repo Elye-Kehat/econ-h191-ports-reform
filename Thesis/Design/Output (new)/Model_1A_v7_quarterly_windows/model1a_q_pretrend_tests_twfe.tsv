@@ -1,0 +1,9 @@
+design	table_group	reform	target	target_key	spec_name	pre_min	pre_max	n_bins_used	f_stat	pvalue	df_num	df_denom	n_obs	r2	test_type
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	baseline	-8.0	-2.0	2	20.14009703922762	4.232856011949015e-05	2.0		41	0.7858141832860036	chi2_wald_HC1
+TWFE	competition	haifa_comp	Haifa-Legacy	haifa_legacy	porttr	-8.0	-2.0	2	1.7197219238325498	0.42322092205316686	2.0		41	0.664555564505163	chi2_wald_HC1
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	baseline	-8.0	-2.0	2	480.7187717706406	4.1043561243978985e-105	2.0		31	0.9406259958408599	chi2_wald_HC1
+TWFE	competition	ashdod_comp	Ashdod-Legacy	ashdod_legacy	porttr	-8.0	-2.0	2	57.992272310956636	2.5535129879989327e-13	2.0		31	0.24910611499668867	chi2_wald_HC1
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	baseline	-8.0	-2.0	2	797.6704775343751	6.138420207002084e-174	2.0		28	0.8970271780336675	chi2_wald_HC1
+TWFE	privatization	haifa_priv	Haifa-Legacy	haifa_legacy	porttr	-8.0	-2.0	2	146.86622198352904	1.2835272909859688e-32	2.0		28	0.8349536799473694	chi2_wald_HC1
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	baseline	-8.0	-2.0	2	797.6704775343775	6.138420206994739e-174	2.0		28	0.8970271780336675	chi2_wald_HC1
+TWFE	privatization	haifa_priv	Haifa-Bayport	haifa_bayport_placebo	porttr	-8.0	-2.0	2	2.7716084431279966	0.25012256492347795	2.0		28	0.10552686890983587	chi2_wald_HC1

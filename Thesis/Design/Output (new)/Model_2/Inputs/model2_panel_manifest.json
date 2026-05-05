@@ -1,14 +1,19 @@
 {
   "lp_input": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/LP_Panel_monthly.tsv",
   "kl_input": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/KL_Panel_monthly.tsv",
-  "lp_sha256": "d5c41719a8494c2541bb11078bf9e05bffd40872541c64815bd3a808b9b02d6b",
-  "kl_sha256": "f419da0e099cdbaf83a1257263a1ce75ff70bc0d864b380d62e2cb9fbaa3d409",
+  "lp_sha256": "dbae76f290a1b83fde382574bd33fb0c597dd9e7615f00eca2da5519ab18c429",
+  "kl_sha256": "75306cc466bb7a24f53f42e1db75d5948ac274e93b164bda9e3da98ea61239c8",
   "cluster_max_ym_cutoff": 202108,
-  "terminal_rows_monthly": 0,
-  "terminal_rows_quarterly": 0,
-  "cluster_rows": 0,
-  "terminal_entities": [],
-  "cluster_entities": [],
+  "terminal_rows_monthly": 84,
+  "terminal_rows_quarterly": 28,
+  "cluster_rows": 44,
+  "terminal_entities": [
+    "Haifa--Bayport",
+    "Haifa--Legacy"
+  ],
+  "cluster_entities": [
+    "Haifa port cluster"
+  ],
   "merge_keys": [
     "entity",
     "year",

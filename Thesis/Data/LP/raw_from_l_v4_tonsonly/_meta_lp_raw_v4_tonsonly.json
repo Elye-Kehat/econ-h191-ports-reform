@@ -1,0 +1,24 @@
+{
+  "builder": "Build_LP_Panel_raw_from_L_v4_tonsonly.py",
+  "definition": {
+    "monthly_port": "LP_{p,m} = TEU_{p,m} / L_{p,m}",
+    "quarterly_terminal": "LP_{i,q} = TEU_{i,q} / L_{i,q}",
+    "quarterly_labor": "L_{i,q} = sum_{m in q} L_{i,m}"
+  },
+  "why_v4": [
+    "fixes the monthly port labor merge by joining on (port, year, month) rather than month_index",
+    "keeps the quarterly terminal LP branch unchanged",
+    "adds hard QA failure if a port's monthly LP branch is entirely missing"
+  ],
+  "inputs": {
+    "s1_port_month_tons": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/S1_port_month_tons.tsv",
+    "s1_terminal_quarter_tons": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/S1_terminal_quarter_tons.tsv",
+    "s2_port_month_teu": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/S2_port_month_teu.tsv",
+    "s2_term_quarter_teu": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/S2_terminal_quarter_teu.tsv",
+    "lproxy": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/common_rule_v6_tonsonly/L_Proxy_commonrule_v6_tonsonly.tsv"
+  },
+  "outputs": {
+    "LP_Panel": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/raw_from_l_v4_tonsonly/LP_Panel.tsv",
+    "LP_raw_qa": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/raw_from_l_v4_tonsonly/LP_raw_qa.tsv"
+  }
+}

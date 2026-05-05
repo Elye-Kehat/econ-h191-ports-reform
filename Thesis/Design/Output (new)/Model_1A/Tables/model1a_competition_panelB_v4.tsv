@@ -1,7 +1,7 @@
 row_label	Haifa-Legacy — NYT	Haifa-Legacy — NYT+Tr
-Full post	2.636*** (0.000)	2.637*** (0.000)
-Post year 1	2.649*** (0.000)	2.650*** (0.000)
-Average pre	2.093*** (0.000)	2.092*** (0.000)
+Full post	-0.056*** (0.000)	-0.056*** (0.000)
+Post year 1	-0.043*** (0.000)	-0.043*** (0.000)
+Average pre	-0.606*** (0.000)	-0.607*** (0.000)
 Pre-trends F-test p-value		
 Observations	76	76
 Within R^2	1.000	1.000

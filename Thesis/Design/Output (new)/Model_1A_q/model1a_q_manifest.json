@@ -1,0 +1,74 @@
+{
+  "script": "Model_1A_v5_quarterly.py",
+  "main_changes_vs_v4": [
+    "Uses LP_Panel.tsv rather than LP_Panel_monthly.tsv",
+    "Aggregates pre-reform monthly port LP to quarters using mean(log(LP))",
+    "Keeps post-reform terminal LP at native quarterly frequency",
+    "Estimates quarterly event-study objects instead of pseudo-monthly event studies",
+    "Uses coarse quarterly event-time bins to reduce saturation",
+    "Retains NYT and conventional benchmark panels",
+    "Retains a trend-based comparison spec ('porttr') but treats it as a benchmark, not a replacement for the main design",
+    "Uses HC1 standard errors by default because unit-level clustering is unreliable in the tiny two-path samples"
+  ],
+  "event_bins": [
+    {
+      "label": "pre_8_5",
+      "a": -8,
+      "b": -5
+    },
+    {
+      "label": "pre_4_2",
+      "a": -4,
+      "b": -2
+    },
+    {
+      "label": "q0",
+      "a": 0,
+      "b": 0
+    },
+    {
+      "label": "q1_2",
+      "a": 1,
+      "b": 2
+    },
+    {
+      "label": "q3_4",
+      "a": 3,
+      "b": 4
+    },
+    {
+      "label": "q5_8",
+      "a": 5,
+      "b": 8
+    },
+    {
+      "label": "q9_40",
+      "a": 9,
+      "b": 40
+    }
+  ],
+  "windows": {
+    "avg_pre": [
+      -4,
+      -2
+    ],
+    "post_y1": [
+      1,
+      4
+    ],
+    "post_y1_2": [
+      1,
+      8
+    ]
+  },
+  "outputs": [
+    "model1a_q_lp_dynamic_betas_all.tsv",
+    "model1a_q_lp_dynamic_betas_all_twfe.tsv",
+    "model1a_q_lp_window_betas_all.tsv",
+    "model1a_q_lp_window_betas_all_twfe.tsv",
+    "model1a_q_lp_pretrend_tests_all.tsv",
+    "model1a_q_lp_pretrend_tests_all_twfe.tsv",
+    "model1a_q_lp_static_betas_all_twfe.tsv",
+    "model1a_q_analysis_panel.tsv"
+  ]
+}
