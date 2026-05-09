@@ -1,0 +1,67 @@
+kind	reform	target	design	spec_name	window_name	m_start	m_end	n_rows
+m1b	competition	Haifa_Bayport_KL	binned	baseline	Average full post, months 1-24	1.0	24.0	1
+m1b	competition	Haifa_Bayport_KL	binned	baseline	Average post, months 1-6	1.0	6.0	1
+m1b	competition	Haifa_Bayport_KL	binned	baseline	Average post, months 13-24	13.0	24.0	1
+m1b	competition	Haifa_Bayport_KL	binned	baseline	Average post, months 7-12	7.0	12.0	1
+m1b	competition	Haifa_Bayport_KL	binned	baseline	Average pre, months -12 to -2			1
+m1b	competition	Haifa_Bayport_KL	binned	ctrl_trend	Average full post, months 1-24	1.0	24.0	1
+m1b	competition	Haifa_Bayport_KL	binned	ctrl_trend	Average post, months 1-6	1.0	6.0	1
+m1b	competition	Haifa_Bayport_KL	binned	ctrl_trend	Average post, months 13-24	13.0	24.0	1
+m1b	competition	Haifa_Bayport_KL	binned	ctrl_trend	Average post, months 7-12	7.0	12.0	1
+m1b	competition	Haifa_Bayport_KL	binned	ctrl_trend	Average pre, months -12 to -2			1
+m1b	competition	Haifa_Legacy_KL	binned	baseline	Average full post, months 1-24	1.0	24.0	1
+m1b	competition	Haifa_Legacy_KL	binned	baseline	Average post, months 1-6	1.0	6.0	1
+m1b	competition	Haifa_Legacy_KL	binned	baseline	Average post, months 13-24	13.0	24.0	1
+m1b	competition	Haifa_Legacy_KL	binned	baseline	Average post, months 7-12	7.0	12.0	1
+m1b	competition	Haifa_Legacy_KL	binned	baseline	Average pre, months -12 to -2			1
+m1b	competition	Haifa_Legacy_KL	binned	ctrl_trend	Average full post, months 1-24	1.0	24.0	1
+m1b	competition	Haifa_Legacy_KL	binned	ctrl_trend	Average post, months 1-6	1.0	6.0	1
+m1b	competition	Haifa_Legacy_KL	binned	ctrl_trend	Average post, months 13-24	13.0	24.0	1
+m1b	competition	Haifa_Legacy_KL	binned	ctrl_trend	Average post, months 7-12	7.0	12.0	1
+m1b	competition	Haifa_Legacy_KL	binned	ctrl_trend	Average pre, months -12 to -2			1
+m1b	competition	Haifa_port_KL	binned	baseline	Average full post, months 1-24	1.0	24.0	1
+m1b	competition	Haifa_port_KL	binned	baseline	Average post, months 1-6	1.0	6.0	1
+m1b	competition	Haifa_port_KL	binned	baseline	Average post, months 13-24	13.0	24.0	1
+m1b	competition	Haifa_port_KL	binned	baseline	Average post, months 7-12	7.0	12.0	1
+m1b	competition	Haifa_port_KL	binned	baseline	Average pre, months -12 to -2			1
+m1b	competition	Haifa_port_KL	binned	ctrl_trend	Average full post, months 1-24	1.0	24.0	1
+m1b	competition	Haifa_port_KL	binned	ctrl_trend	Average post, months 1-6	1.0	6.0	1
+m1b	competition	Haifa_port_KL	binned	ctrl_trend	Average post, months 13-24	13.0	24.0	1
+m1b	competition	Haifa_port_KL	binned	ctrl_trend	Average post, months 7-12	7.0	12.0	1
+m1b	competition	Haifa_port_KL	binned	ctrl_trend	Average pre, months -12 to -2			1
+m1b	privatization	Haifa_Bayport_KL	binned	baseline	Average full post, months 1-23	1.0	23.0	2
+m1b	privatization	Haifa_Bayport_KL	binned	baseline	Average post, months 1-6	1.0	6.0	2
+m1b	privatization	Haifa_Bayport_KL	binned	baseline	Average post, months 13-23	13.0	23.0	1
+m1b	privatization	Haifa_Bayport_KL	binned	baseline	Average post, months 7-12	7.0	12.0	1
+m1b	privatization	Haifa_Bayport_KL	binned	baseline	Average post, months 7-23	7.0	23.0	1
+m1b	privatization	Haifa_Bayport_KL	binned	baseline	Average pre, months -12 to -2			2
+m1b	privatization	Haifa_Bayport_KL	binned	ctrl_trend	Average full post, months 1-23	1.0	23.0	2
+m1b	privatization	Haifa_Bayport_KL	binned	ctrl_trend	Average post, months 1-6	1.0	6.0	2
+m1b	privatization	Haifa_Bayport_KL	binned	ctrl_trend	Average post, months 13-23	13.0	23.0	1
+m1b	privatization	Haifa_Bayport_KL	binned	ctrl_trend	Average post, months 7-12	7.0	12.0	1
+m1b	privatization	Haifa_Bayport_KL	binned	ctrl_trend	Average post, months 7-23	7.0	23.0	1
+m1b	privatization	Haifa_Bayport_KL	binned	ctrl_trend	Average pre, months -12 to -2			2
+m1b	privatization	Haifa_Legacy_KL	binned	baseline	Average full post, months 1-23	1.0	23.0	2
+m1b	privatization	Haifa_Legacy_KL	binned	baseline	Average post, months 1-6	1.0	6.0	2
+m1b	privatization	Haifa_Legacy_KL	binned	baseline	Average post, months 13-23	13.0	23.0	1
+m1b	privatization	Haifa_Legacy_KL	binned	baseline	Average post, months 7-12	7.0	12.0	1
+m1b	privatization	Haifa_Legacy_KL	binned	baseline	Average post, months 7-23	7.0	23.0	1
+m1b	privatization	Haifa_Legacy_KL	binned	baseline	Average pre, months -12 to -2			2
+m1b	privatization	Haifa_Legacy_KL	binned	ctrl_trend	Average full post, months 1-23	1.0	23.0	2
+m1b	privatization	Haifa_Legacy_KL	binned	ctrl_trend	Average post, months 1-6	1.0	6.0	2
+m1b	privatization	Haifa_Legacy_KL	binned	ctrl_trend	Average post, months 13-23	13.0	23.0	1
+m1b	privatization	Haifa_Legacy_KL	binned	ctrl_trend	Average post, months 7-12	7.0	12.0	1
+m1b	privatization	Haifa_Legacy_KL	binned	ctrl_trend	Average post, months 7-23	7.0	23.0	1
+m1b	privatization	Haifa_Legacy_KL	binned	ctrl_trend	Average pre, months -12 to -2			2
+m1b	privatization	Haifa_port_KL	binned	baseline	Average full post, months 1-23	1.0	23.0	2
+m1b	privatization	Haifa_port_KL	binned	baseline	Average post, months 1-6	1.0	6.0	2
+m1b	privatization	Haifa_port_KL	binned	baseline	Average post, months 13-23	13.0	23.0	1
+m1b	privatization	Haifa_port_KL	binned	baseline	Average post, months 7-12	7.0	12.0	1
+m1b	privatization	Haifa_port_KL	binned	baseline	Average post, months 7-23	7.0	23.0	1
+m1b	privatization	Haifa_port_KL	binned	baseline	Average pre, months -12 to -2			2
+m1b	privatization	Haifa_port_KL	binned	ctrl_trend	Average full post, months 1-23	1.0	23.0	2
+m1b	privatization	Haifa_port_KL	binned	ctrl_trend	Average post, months 1-6	1.0	6.0	2
+m1b	privatization	Haifa_port_KL	binned	ctrl_trend	Average post, months 13-23	13.0	23.0	1
+m1b	privatization	Haifa_port_KL	binned	ctrl_trend	Average post, months 7-12	7.0	12.0	1
+m1b	privatization	Haifa_port_KL	binned	ctrl_trend	Average post, months 7-23	7.0	23.0	1
+m1b	privatization	Haifa_port_KL	binned	ctrl_trend	Average pre, months -12 to -2			2

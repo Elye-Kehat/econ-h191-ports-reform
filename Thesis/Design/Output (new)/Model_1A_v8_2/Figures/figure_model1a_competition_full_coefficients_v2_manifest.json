@@ -1,0 +1,9 @@
+{
+  "description": "Competition LP figure with quarter-based window labels and no overall title",
+  "inputs": {
+    "static_twfe": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A_v8_2/model1a_q_static_betas_twfe.tsv",
+    "window_nyt": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A_v8_2/model1a_q_window_betas_nyt.tsv",
+    "pretrend_nyt": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A_v8_2/model1a_q_pretrend_tests_nyt.tsv"
+  },
+  "output_file": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A_v8_2/Figures/figure_model1a_competition_full_coefficients_v2.png"
+}

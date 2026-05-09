@@ -1,0 +1,41 @@
+{
+  "description": "Competition entry and labor productivity: conventional DiD window estimates and Haifa NYT summaries",
+  "inputs": {
+    "static_twfe": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A_v8_2/model1a_q_static_betas_twfe.tsv",
+    "window_nyt": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A_v8_2/model1a_q_window_betas_nyt.tsv",
+    "pretrend_nyt": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A_v8_2/model1a_q_pretrend_tests_nyt.tsv"
+  },
+  "output_file": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A_v8_2/Figures/figure_model1a_competition_entry_lnLP_coefficients_v3.png",
+  "title": "Competition entry and labor productivity: conventional DiD window estimates and Haifa NYT summaries",
+  "panel_a_heading": "Conventional DiD estimates by post-reform window",
+  "panel_b_heading": "Haifa NYT average pre- and post-reform estimates",
+  "conventional_y_limits": {
+    "Haifa-Legacy": [
+      -1.5,
+      1.5
+    ],
+    "Other conventional panels": [
+      -1.0,
+      1.0
+    ]
+  },
+  "nyt_y_limits": [
+    -0.5,
+    0.5
+  ],
+  "spacing_controls": {
+    "outer_gridspec_height_ratios": [
+      0.1,
+      1.12,
+      1.12,
+      0.1,
+      0.9
+    ],
+    "outer_gridspec_hspace": 0.28,
+    "outer_gridspec_wspace": 0.3,
+    "subplots_adjust_top": 0.935,
+    "subplots_adjust_bottom": 0.07,
+    "subplots_adjust_left": 0.07,
+    "subplots_adjust_right": 0.98
+  }
+}

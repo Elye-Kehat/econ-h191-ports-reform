@@ -1,0 +1,19 @@
+family	binned_variant	series_id	series_display	is_main_series	reform	reform_display	spec_name	test_name	n_terms_tested	supported_full_test	lead_min	lead_max	f_stat	pvalue	df_num	df_denom	n_obs	r2
+binned	detailed	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	lead_bin_test	2	1	-12	-2	24.412516322488077	7.297496413017154e-07	2.0	28.0	37	0.5341517611203004
+binned	detailed	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	lead_bin_test	2	1	-12	-2	1.7206726897106317	0.19870282746324205	2.0	26.0	37	0.5445816259437768
+binned	detailed	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	lead_bin_test	2	1	-12	-2	47.5824062317164	9.849163343547036e-10	2.0	28.0	36	0.41666428856793014
+binned	detailed	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	lead_bin_test	2	1	-12	-2	16.251725018502153	2.638118574379305e-05	2.0	26.0	36	0.46010742497130364
+binned	compact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	lead_bin_test	1	1	-12	-2	16.66230894169738	0.00030469843696598423	1.0	30.0	36	0.387242830487292
+binned	compact	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	lead_bin_test	1	1	-12	-2	17.96279065122481	0.000221156999870548	1.0	28.0	36	0.38806326286855153
+binned	detailed	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	lead_bin_test	2	1	-12	-2	19.99189759740497	4.041445839302506e-06	2.0	28.0	37	0.4478680173049986
+binned	detailed	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	lead_bin_test	2	1	-12	-2	7.77064555415511	0.0022615888236581284	2.0	26.0	37	0.5047644405201261
+binned	detailed	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	lead_bin_test	2	1	-12	-2	43.84669523156088	2.3653355525147534e-09	2.0	28.0	36	0.41800816770669413
+binned	detailed	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	lead_bin_test	2	1	-12	-2	9.49144858401761	0.0008035946235809151	2.0	26.0	36	0.4691687136142112
+binned	compact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	lead_bin_test	1	1	-12	-2	2.3186788287318403	0.1383010493117873	1.0	30.0	36	0.25904447882940207
+binned	compact	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	lead_bin_test	1	1	-12	-2	0.6606758447793912	0.4231791180353951	1.0	28.0	36	0.3090619618617998
+binned	detailed	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	lead_bin_test	0	0	-12	-2					27	0.9594592272261699
+binned	detailed	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	lead_bin_test	0	0	-12	-2					27	0.9714639593552423
+binned	detailed	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	lead_bin_test	2	1	-12	-2	27.596317167459382	2.3934489319755094e-07	2.0	28.0	36	0.720850770559998
+binned	detailed	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	lead_bin_test	2	1	-12	-2	5.014330703142542	0.014395537157588381	2.0	26.0	36	0.7604414970245663
+binned	compact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	lead_bin_test	1	1	-12	-2	22.14979486468386	5.332014867672463e-05	1.0	30.0	36	0.5172256675611413
+binned	compact	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	lead_bin_test	1	1	-12	-2	3.296687693288124	0.08014372562429858	1.0	28.0	36	0.6030179561847937

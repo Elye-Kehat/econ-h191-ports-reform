@@ -13,10 +13,10 @@
     "stacks Haifa_port_Q and Ashdod_port_Q into LP_Panel.tsv for downstream aggregate-port analysis"
   ],
   "inputs": {
-    "s1_port_month_tons": "Data/LP/raw_from_l_v6_tonsonly/S1_port_month_tons.tsv",
-    "s1_terminal_quarter_tons": "Data/LP/raw_from_l_v6_tonsonly/S1_terminal_quarter_tons.tsv",
-    "s2_port_month_teu": "Data/LP/raw_from_l_v6_tonsonly/S2_port_month_teu.tsv",
-    "s2_term_quarter_teu": "Data/LP/raw_from_l_v6_tonsonly/S2_terminal_quarter_teu.tsv",
+    "s1_port_month_tons": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/S1_port_month_tons.tsv",
+    "s1_terminal_quarter_tons": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/S1_terminal_quarter_tons.tsv",
+    "s2_port_month_teu": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/S2_port_month_teu.tsv",
+    "s2_term_quarter_teu": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/S2_terminal_quarter_teu.tsv",
     "lproxy": "Data/L_proxy/common_rule_v6_tonsonly/L_Proxy_commonrule_v6_tonsonly.tsv"
   },
   "monthly_cutoffs": {

@@ -1,0 +1,9 @@
+{
+  "description": "Binned event-study figure for Model 1B Table 3 values",
+  "output_file": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_v8/Figures/figure_model1b_kl_binned_eventstudy.png",
+  "based_on": "User-supplied Table 3 LaTeX values for Model 1B preferred specification",
+  "panels": {
+    "competition": "Panel A: Competition clock (Bayport entry, Sep. 2021)",
+    "privatization": "Panel B: Privatization clock (Jan. 2023)"
+  }
+}

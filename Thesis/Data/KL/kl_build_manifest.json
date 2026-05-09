@@ -1,42 +1,29 @@
 {
-  "builder": "Build_KL_Panel_new_v2.py",
-  "design_note": "Uses interpolation_02 productive capital outputs directly and builds only the three core Haifa analysis series. Adds configurable labor-proxy input so the same builder can be run against old L_Proxy or common_rule implementations.",
-  "inputs": {
-    "L_proxy": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/L_Proxy.tsv",
-    "K_interpolation_long": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/K/Interpolation Output/interpolation_02_monthly_entity_series_long.tsv"
-  },
-  "outputs": {
-    "KL_panel_monthly": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/common_rule_v6_tonsonly/KL_Panel_monthly.tsv",
-    "KL_monthly_series_long": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/common_rule_v6_tonsonly/KL_monthly_series_long.tsv",
-    "KL_monthly_series_wide": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/common_rule_v6_tonsonly/KL_monthly_series_wide.tsv"
-  },
-  "series_ids": [
-    "Haifa_Bayport_KL",
-    "Haifa_Legacy_KL",
-    "Haifa_port_KL"
-  ],
-  "rows": {
-    "panel_rows": 210,
-    "wide_rows": 84
-  },
-  "coverage": {
-    "Haifa_Bayport_KL": {
-      "start": "2021-07",
-      "end": "2024-12",
-      "n_rows": 42,
-      "n_valid_KL": 42
+  "sample_start": "2018-01",
+  "sample_end": "2024-12",
+  "k_source": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/K/Interpolation Output/interpolation_02_monthly_entity_series_wide.tsv",
+  "l_source": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/L_proxy/L_Proxy.tsv",
+  "out_dir": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL",
+  "series_mapping": {
+    "LEGACY": {
+      "K": "K_HPC_kNIS",
+      "L": "Haifa-Legacy"
     },
-    "Haifa_Legacy_KL": {
-      "start": "2018-01",
-      "end": "2024-12",
-      "n_rows": 84,
-      "n_valid_KL": 84
+    "ENTRANT": {
+      "K": "K_SIPG_kNIS",
+      "L": "Haifa-Bayport"
     },
-    "Haifa_port_KL": {
-      "start": "2018-01",
-      "end": "2024-12",
-      "n_rows": 84,
-      "n_valid_KL": 84
+    "HAIFA_TOTAL": {
+      "K": "K_HAIFA_TOTAL_kNIS",
+      "L": "Haifa-Legacy + Haifa-Bayport"
     }
-  }
+  },
+  "outputs": [
+    "KL_monthly_series_long.tsv",
+    "KL_monthly_series_wide.tsv",
+    "Visualization/plot_kl_legacy.png",
+    "Visualization/plot_kl_entrant.png",
+    "Visualization/plot_kl_haifa_total.png",
+    "Visualization/plot_kl_all_series.png"
+  ]
 }

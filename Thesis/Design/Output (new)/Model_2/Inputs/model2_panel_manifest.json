@@ -1,16 +1,13 @@
 {
-  "lp_input": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/LP_Panel_monthly.tsv",
-  "kl_input": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/KL_Panel_monthly.tsv",
-  "lp_sha256": "dbae76f290a1b83fde382574bd33fb0c597dd9e7615f00eca2da5519ab18c429",
+  "lp_input": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/raw_from_l_v6_tonsonly/LP_Panel.tsv",
+  "kl_input": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/common_rule_v6_tonsonly/KL_Panel_monthly.tsv",
+  "lp_sha256": "2648d2d5b51067cdecbc480f50e419a1f61ba9dbc42650c6da49a334a6f4198b",
   "kl_sha256": "75306cc466bb7a24f53f42e1db75d5948ac274e93b164bda9e3da98ea61239c8",
   "cluster_max_ym_cutoff": 202108,
-  "terminal_rows_monthly": 84,
-  "terminal_rows_quarterly": 28,
+  "terminal_rows_monthly": 0,
+  "terminal_rows_quarterly": 0,
   "cluster_rows": 44,
-  "terminal_entities": [
-    "Haifa--Bayport",
-    "Haifa--Legacy"
-  ],
+  "terminal_entities": [],
   "cluster_entities": [
     "Haifa port cluster"
   ],
@@ -19,5 +16,5 @@
     "year",
     "month"
   ],
-  "note": "Quarter-collapsed terminal panel is the preferred elasticity-regression input; monthly terminal panel is retained as a raw overlap object."
+  "note": "Quarter-collapsed terminal panel is the preferred elasticity input; monthly overlap is kept as a raw object."
 }

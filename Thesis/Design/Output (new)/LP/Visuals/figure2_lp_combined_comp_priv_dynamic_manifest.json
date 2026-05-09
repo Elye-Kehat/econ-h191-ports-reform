@@ -1,0 +1,8 @@
+{
+  "figure": 2,
+  "description": "Combined dynamic LP figure: Haifa competition vs. privatization",
+  "input_dynamic_betas": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A_v8_2/model1a_q_dynamic_betas_twfe.tsv",
+  "spec_name": "porttr",
+  "target": "Haifa-Aggregate",
+  "output_file": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/LP/Visuals/figure2_lp_combined_comp_priv_dynamic.png"
+}

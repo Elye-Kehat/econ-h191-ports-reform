@@ -2,84 +2,73 @@
 # -*- coding: utf-8 -*-
 
 from pathlib import Path
-import argparse
 import calendar
 import json
 import math
 
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
-import numpy as np
 import pandas as pd
 
 
 SAMPLE_START = "2018-01"
 SAMPLE_END = "2024-12"
 
-SERIES_META = {
-    "Haifa_Legacy_Q": {
-        "label": "Haifa-Legacy",
-        "group": "Haifa",
-        "kind": "legacy",
-        "title": "Monthly LP: Haifa-Legacy",
-    },
-    "Haifa_SIPG_Q": {
-        "label": "Haifa-Bayport",
-        "group": "Haifa",
-        "kind": "entrant",
-        "title": "Monthly LP: Haifa Entrant (Bayport)",
-    },
-    "Haifa_port_M": {
-        "label": "Haifa total",
-        "group": "Haifa",
-        "kind": "total",
-        "title": "Monthly LP: Haifa as a Whole",
-    },
-    "Ashdod_Legacy_Q": {
-        "label": "Ashdod-Legacy",
-        "group": "Ashdod",
-        "kind": "legacy",
-        "title": "Monthly LP: Ashdod-Legacy",
-    },
-    "Ashdod_HCT_Q": {
-        "label": "Ashdod-HCT",
-        "group": "Ashdod",
-        "kind": "entrant",
-        "title": "Monthly LP: Ashdod Entrant (HCT)",
-    },
-    "Ashdod_port_M": {
-        "label": "Ashdod total",
-        "group": "Ashdod",
-        "kind": "total",
-        "title": "Monthly LP: Ashdod as a Whole",
-    },
+# For the descriptive raw-series plot, prefer MONTHLY port totals so the figure
+# starts at the full sample start, while keeping quarterly terminal series.
+SERIES_CANDIDATES = {
+    "haifa_port": ["Haifa_port_M", "Haifa_port_Q"],
+    "haifa_legacy": ["Haifa_Legacy_Q"],
+    "haifa_bayport": ["Haifa_SIPG_Q", "Haifa_Bayport_Q"],
+    "ashdod_port": ["Ashdod_port_M", "Ashdod_port_Q"],
+    "ashdod_legacy": ["Ashdod_Legacy_Q"],
+    "ashdod_hct": ["Ashdod_HCT_Q"],
 }
 
-PLOT_ORDER = [
-    "Haifa_Legacy_Q",
-    "Haifa_SIPG_Q",
-    "Haifa_port_M",
-    "Ashdod_Legacy_Q",
-    "Ashdod_HCT_Q",
-    "Ashdod_port_M",
-]
+SERIES_LABELS = {
+    "haifa_port": "Haifa total",
+    "haifa_legacy": "Haifa-Legacy",
+    "haifa_bayport": "Haifa-Bayport",
+    "ashdod_port": "Ashdod total",
+    "ashdod_legacy": "Ashdod-Legacy",
+    "ashdod_hct": "Ashdod-HCT",
+}
 
 LINESTYLE = {
-    "Haifa_Legacy_Q": "--",
-    "Haifa_SIPG_Q": "--",
-    "Haifa_port_M": "-",
-    "Ashdod_Legacy_Q": "--",
-    "Ashdod_HCT_Q": "--",
-    "Ashdod_port_M": "-",
+    "haifa_port": "-",
+    "haifa_legacy": "--",
+    "haifa_bayport": "--",
+    "ashdod_port": "-",
+    "ashdod_legacy": "--",
+    "ashdod_hct": "--",
 }
 
+LINEWIDTH = {
+    "haifa_port": 2.4,
+    "haifa_legacy": 2.2,
+    "haifa_bayport": 2.2,
+    "ashdod_port": 2.4,
+    "ashdod_legacy": 2.2,
+    "ashdod_hct": 2.2,
+}
+
+# Add back markers. Keep port markers smaller so they do not overwhelm the plot.
 MARKER = {
-    "Haifa_Legacy_Q": "o",
-    "Haifa_SIPG_Q": "s",
-    "Haifa_port_M": "",
-    "Ashdod_Legacy_Q": "o",
-    "Ashdod_HCT_Q": "s",
-    "Ashdod_port_M": "",
+    "haifa_port": "o",
+    "haifa_legacy": "o",
+    "haifa_bayport": "s",
+    "ashdod_port": "o",
+    "ashdod_legacy": "o",
+    "ashdod_hct": "s",
+}
+
+MARKERSIZE = {
+    "haifa_port": 3.0,
+    "haifa_legacy": 5.0,
+    "haifa_bayport": 5.0,
+    "ashdod_port": 3.0,
+    "ashdod_legacy": 5.0,
+    "ashdod_hct": 5.0,
 }
 
 REFORM_EVENTS = {
@@ -98,7 +87,7 @@ REFORM_EVENTS = {
 }
 
 
-def read_tsv(path):
+def read_tsv(path: Path) -> pd.DataFrame:
     return pd.read_csv(path, sep="\t")
 
 
@@ -111,114 +100,73 @@ def find_first_existing(paths):
     )
 
 
-def q_to_months(qstr):
-    q = str(qstr).strip().upper()
-    mapping = {
-        "Q1": [1, 2, 3],
-        "Q2": [4, 5, 6],
-        "Q3": [7, 8, 9],
-        "Q4": [10, 11, 12],
-    }
-    return mapping[q]
+def ensure_dir(path: Path) -> None:
+    path.mkdir(parents=True, exist_ok=True)
 
 
-def expand_quarterly_to_monthly(df):
-    df = df.copy()
-    monthly_rows = []
-    for _, row in df.iterrows():
-        if str(row.get("freq", "")).upper() == "Q":
-            months = q_to_months(row["quarter"])
-            for month in months:
-                new_row = row.copy()
-                new_row["freq"] = "M"
-                new_row["month"] = month
-                new_row["month_index"] = int(row["year"]) * 12 + int(month)
-                monthly_rows.append(new_row)
-        else:
-            monthly_rows.append(row.copy())
-
-    out = pd.DataFrame(monthly_rows)
-    return out
-
-
-def month_end_timestamp(year, month):
+def month_end_timestamp(year: int, month: int) -> pd.Timestamp:
     last_day = calendar.monthrange(int(year), int(month))[1]
     return pd.Timestamp(int(year), int(month), last_day)
 
 
-def load_monthly_panel(panel_path):
+def quarter_end_timestamp(year: int, quarter: str) -> pd.Timestamp:
+    q = str(quarter).strip().upper()
+    q_to_month = {"Q1": 3, "Q2": 6, "Q3": 9, "Q4": 12}
+    if q not in q_to_month:
+        raise ValueError(f"Bad quarter value: {quarter}")
+    return month_end_timestamp(year, q_to_month[q])
+
+
+def resolve_series_id(df: pd.DataFrame, logical_name: str) -> str | None:
+    present = set(df["series_id"].astype(str).unique())
+    for cand in SERIES_CANDIDATES[logical_name]:
+        if cand in present:
+            return cand
+    return None
+
+
+def load_lp_panel(panel_path: Path) -> pd.DataFrame:
     df = read_tsv(panel_path).copy()
 
-    required = {"series_id", "port", "year", "LP"}
+    required = {"series_id", "year", "LP"}
     missing = required - set(df.columns)
     if missing:
         raise ValueError(f"LP panel missing columns: {sorted(missing)}")
 
-    if "freq" in df.columns and (df["freq"].astype(str).str.upper() == "Q").any():
-        df = expand_quarterly_to_monthly(df)
-
-    if "month" not in df.columns:
-        raise ValueError("Monthly plotting needs a month column after expansion.")
-
-    df["year"] = pd.to_numeric(df["year"], errors="coerce").astype("Int64")
-    df["month"] = pd.to_numeric(df["month"], errors="coerce").astype("Int64")
+    df["year"] = pd.to_numeric(df["year"], errors="coerce")
     df["LP"] = pd.to_numeric(df["LP"], errors="coerce")
+    df = df.dropna(subset=["year", "LP"]).copy()
+    df["year"] = df["year"].astype(int)
 
-    df = df.dropna(subset=["year", "month", "LP"]).copy()
+    date_vals = []
+    for _, row in df.iterrows():
+        row_freq = str(row.get("freq", "M")).upper()
 
-    df["month_str"] = (
-        df["year"].astype(int).astype(str)
-        + "-"
-        + df["month"].astype(int).astype(str).str.zfill(2)
-    )
+        if row_freq == "Q":
+            quarter = row.get("quarter", None)
+            if pd.isna(quarter) or quarter is None:
+                month = row.get("month", None)
+                if pd.isna(month):
+                    raise ValueError("Quarterly row missing both quarter and month.")
+                qnum = ((int(month) - 1) // 3) + 1
+                quarter = f"Q{qnum}"
+            date_vals.append(quarter_end_timestamp(int(row["year"]), quarter))
+        else:
+            month = row.get("month", None)
+            if pd.isna(month):
+                raise ValueError("Monthly row missing month.")
+            date_vals.append(month_end_timestamp(int(row["year"]), int(month)))
 
-    df = df[(df["month_str"] >= SAMPLE_START) & (df["month_str"] <= SAMPLE_END)].copy()
-    df["date"] = [month_end_timestamp(y, m) for y, m in zip(df["year"], df["month"])]
+    df["date"] = date_vals
+    df["date_str"] = df["date"].dt.strftime("%Y-%m")
+    df = df[(df["date_str"] >= SAMPLE_START) & (df["date_str"] <= SAMPLE_END)].copy()
     df = df.sort_values(["series_id", "date"]).reset_index(drop=True)
-
     return df
 
 
-def ensure_dir(path):
-    Path(path).mkdir(parents=True, exist_ok=True)
-
-
-def add_event_lines(ax, events):
-    if not events:
-        return
-
-    ymin, ymax = ax.get_ylim()
-    text_y = ymax * 0.97
-
-    for event in events:
-        dt = event["date"]
-        label = event["label"]
-
-        ax.axvline(
-            dt,
-            linestyle="--",
-            linewidth=1.0,
-            color="k",
-            alpha=0.7,
-        )
-
-        ax.text(
-            dt,
-            text_y,
-            label,
-            rotation=90,
-            va="top",
-            ha="right",
-            fontsize=11,
-        )
-
-
-def configure_date_axis(ax, df):
-    dmin = pd.to_datetime(df["date"].min()).normalize()
-    dmax = pd.to_datetime(df["date"].max()).normalize()
-
-    start_year = dmin.year
-    end_year = dmax.year
+def configure_month_ticks(ax: plt.Axes) -> None:
+    start_ts = pd.Timestamp(f"{SAMPLE_START}-01")
+    end_ts = pd.Timestamp(f"{SAMPLE_END}-01") + pd.offsets.MonthEnd(0)
 
     ax.xaxis.set_major_locator(mdates.YearLocator())
     ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y"))
@@ -226,87 +174,100 @@ def configure_date_axis(ax, df):
     ax.xaxis.set_minor_formatter(mdates.DateFormatter("%b"))
 
     ax.tick_params(axis="x", which="major", length=6)
-    ax.tick_params(axis="x", which="minor", length=3, labelsize=9, pad=2)
+    ax.tick_params(axis="x", which="minor", length=3, labelsize=8, pad=2)
 
     ax.grid(True, which="major", axis="x", alpha=0.15)
     ax.grid(True, which="minor", axis="x", alpha=0.08)
 
-    ax.set_xlim(pd.Timestamp(start_year, 1, 1), pd.Timestamp(end_year + 1, 1, 1))
+    ax.set_xlim(start_ts, pd.Timestamp(end_ts.year + 1, 1, 1))
 
 
-def prep_plot(df):
-    return df.copy().sort_values("date").reset_index(drop=True)
+def add_reform_lines(ax: plt.Axes, events: list[dict]) -> None:
+    if not events:
+        return
+
+    ymin, ymax = ax.get_ylim()
+    text_y = ymax * 0.97 if ymax > 0 else 1.0
+
+    for ev in events:
+        dt = ev["date"]
+        label = ev["label"]
+        ax.axvline(dt, linestyle="--", linewidth=1.0, color="k", alpha=0.7)
+        ax.text(dt, text_y, label, rotation=90, va="top", ha="right", fontsize=11)
 
 
-def plot_single(df, series_id, outpath, events):
-    sub = prep_plot(df.loc[df["series_id"] == series_id].copy())
-    if sub.empty:
-        return None
-
-    meta = SERIES_META[series_id]
-
-    fig, ax = plt.subplots(figsize=(10, 5))
-    ax.plot(
-        sub["date"],
-        sub["LP"],
-        linestyle=LINESTYLE.get(series_id, "-"),
-        marker=MARKER.get(series_id, ""),
-        linewidth=2,
-        label=meta["label"],
-    )
-
-    ax.set_title(meta["title"], loc="left", fontsize=13, weight="bold")
+def style_axis(ax: plt.Axes) -> None:
     ax.set_xlabel("Date")
     ax.set_ylabel("Labor productivity (LP)")
     ax.grid(True, alpha=0.25)
-    ax.legend(frameon=False)
-
-    configure_date_axis(ax, sub)
-    add_event_lines(ax, events)
-
-    fig.tight_layout()
-    fig.savefig(outpath, dpi=220, bbox_inches="tight")
-    plt.close(fig)
-    return outpath
 
 
-def plot_multi(df, series_ids, title, outpath, events):
+def set_auto_ylim(ax: plt.Axes, combined_df: pd.DataFrame) -> None:
+    ymax = pd.to_numeric(combined_df["LP"], errors="coerce").max()
+    if pd.isna(ymax):
+        return
+    upper = max(10, math.ceil((float(ymax) * 1.10) / 10.0) * 10)
+    ax.set_ylim(0, upper)
+
+
+def plot_series(ax: plt.Axes, df: pd.DataFrame, logical_name: str) -> bool:
+    sid = resolve_series_id(df, logical_name)
+    if sid is None:
+        return False
+
+    sub = df[df["series_id"] == sid].copy().sort_values("date")
+    if sub.empty:
+        return False
+
+    ax.plot(
+        sub["date"],
+        sub["LP"],
+        linestyle=LINESTYLE[logical_name],
+        linewidth=LINEWIDTH[logical_name],
+        marker=MARKER[logical_name],
+        markersize=MARKERSIZE[logical_name],
+        label=SERIES_LABELS[logical_name],
+    )
+    return True
+
+
+def plot_group(
+    df: pd.DataFrame,
+    logical_names: list[str],
+    title: str,
+    outpath: Path,
+    events_key: str,
+    legend_loc: str = "upper left",
+) -> Path | None:
     fig, ax = plt.subplots(figsize=(12, 6))
 
+    pieces = []
     plotted_any = False
-    combined = []
 
-    for series_id in series_ids:
-        sub = prep_plot(df.loc[df["series_id"] == series_id].copy())
+    for name in logical_names:
+        sid = resolve_series_id(df, name)
+        if sid is None:
+            continue
+        sub = df[df["series_id"] == sid].copy().sort_values("date")
         if sub.empty:
             continue
 
         plotted_any = True
-        combined.append(sub)
-
-        ax.plot(
-            sub["date"],
-            sub["LP"],
-            linestyle=LINESTYLE.get(series_id, "-"),
-            marker=MARKER.get(series_id, ""),
-            linewidth=2,
-            label=SERIES_META[series_id]["label"],
-        )
+        pieces.append(sub)
+        plot_series(ax, df, name)
 
     if not plotted_any:
         plt.close(fig)
         return None
 
-    big = pd.concat(combined, ignore_index=True)
+    combined = pd.concat(pieces, ignore_index=True)
 
     ax.set_title(title, loc="left", fontsize=13, weight="bold")
-    ax.set_xlabel("Date")
-    ax.set_ylabel("Labor productivity (LP)")
-    ax.grid(True, alpha=0.25)
-    ax.legend(frameon=False)
-
-    configure_date_axis(ax, big)
-    add_event_lines(ax, events)
+    style_axis(ax)
+    configure_month_ticks(ax)
+    set_auto_ylim(ax, combined)
+    add_reform_lines(ax, REFORM_EVENTS[events_key])
+    ax.legend(frameon=False, loc=legend_loc)
 
     fig.tight_layout()
     fig.savefig(outpath, dpi=220, bbox_inches="tight")
@@ -314,7 +275,7 @@ def plot_multi(df, series_ids, title, outpath, events):
     return outpath
 
 
-def main():
+def main() -> None:
     script_dir = Path(__file__).resolve().parent
     root = script_dir.parents[2]
 
@@ -322,80 +283,47 @@ def main():
         root / "Data" / "LP" / "LP_Panel_monthly.tsv",
         root / "Data" / "LP" / "LP_Panel.tsv",
     ]
-
     panel_path = find_first_existing(panel_candidates)
+
     out_dir = root / "Design" / "Output (new)" / "LP" / "Visuals"
     ensure_dir(out_dir)
 
-    df = load_monthly_panel(panel_path)
+    df = load_lp_panel(panel_path)
 
     outputs = []
 
-    outputs.append(plot_single(
-        df,
-        "Haifa_Legacy_Q",
-        out_dir / "plot_lp_haifa_legacy.png",
-        REFORM_EVENTS["Haifa"],
-    ))
+    outputs.append(
+        plot_group(
+            df,
+            ["haifa_port", "haifa_legacy", "haifa_bayport"],
+            "Haifa LP series",
+            out_dir / "plot_lp_haifa_all.png",
+            "Haifa",
+            legend_loc="upper left",
+        )
+    )
 
-    outputs.append(plot_single(
-        df,
-        "Haifa_SIPG_Q",
-        out_dir / "plot_lp_haifa_entrant.png",
-        REFORM_EVENTS["Haifa"],
-    ))
+    outputs.append(
+        plot_group(
+            df,
+            ["ashdod_port", "ashdod_legacy", "ashdod_hct"],
+            "Ashdod LP series",
+            out_dir / "plot_lp_ashdod_all.png",
+            "Ashdod",
+            legend_loc="upper left",
+        )
+    )
 
-    outputs.append(plot_single(
-        df,
-        "Haifa_port_M",
-        out_dir / "plot_lp_haifa_total.png",
-        REFORM_EVENTS["Haifa"],
-    ))
-
-    outputs.append(plot_multi(
-        df,
-        ["Haifa_Legacy_Q", "Haifa_SIPG_Q", "Haifa_port_M"],
-        "Monthly LP: All Haifa Series",
-        out_dir / "plot_lp_haifa_all.png",
-        REFORM_EVENTS["Haifa"],
-    ))
-
-    outputs.append(plot_single(
-        df,
-        "Ashdod_Legacy_Q",
-        out_dir / "plot_lp_ashdod_legacy.png",
-        REFORM_EVENTS["Ashdod"],
-    ))
-
-    outputs.append(plot_single(
-        df,
-        "Ashdod_HCT_Q",
-        out_dir / "plot_lp_ashdod_entrant.png",
-        REFORM_EVENTS["Ashdod"],
-    ))
-
-    outputs.append(plot_single(
-        df,
-        "Ashdod_port_M",
-        out_dir / "plot_lp_ashdod_total.png",
-        REFORM_EVENTS["Ashdod"],
-    ))
-
-    outputs.append(plot_multi(
-        df,
-        ["Ashdod_Legacy_Q", "Ashdod_HCT_Q", "Ashdod_port_M"],
-        "Monthly LP: All Ashdod Series",
-        out_dir / "plot_lp_ashdod_all.png",
-        REFORM_EVENTS["Ashdod"],
-    ))
-
-    outputs.append(plot_multi(
-        df,
-        PLOT_ORDER,
-        "Monthly LP: All Main Series",
-        out_dir / "plot_lp_all_series.png",
-        REFORM_EVENTS["All"],
-    ))
+    outputs.append(
+        plot_group(
+            df,
+            ["haifa_port", "haifa_legacy", "haifa_bayport", "ashdod_port", "ashdod_legacy", "ashdod_hct"],
+            "All main LP series",
+            out_dir / "plot_lp_all_series.png",
+            "All",
+            legend_loc="upper left",
+        )
+    )
 
     outputs = [str(p) for p in outputs if p is not None]
 

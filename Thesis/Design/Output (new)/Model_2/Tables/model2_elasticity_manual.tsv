@@ -3,4 +3,4 @@ Haifa--Legacy	manual	HPC_labor_share	preferred	manual		0.251					1	ok	preferred 
 Haifa--Legacy	manual	one_third_benchmark	robustness	manual		0.3333333333333333					0	ok	standard Cobb-Douglas benchmark	Common alpha=1/3 benchmark used for robustness.
 Haifa--Legacy	manual	hazan_tsur_benchmark	robustness	manual		0.42					0	ok	literature benchmark	Israeli benchmark from related productivity-accounting discussion.
 Haifa--Bayport	manual	SIPG_group_proxy	diagnostic	manual		0.658					0	ok	diagnostic only	Group-level SIPG labor-share proxy, not preferred for main accounting.
-Haifa port cluster	manual	none	diagnostic	manual							0	unavailable	no preferred manual aggregate elasticity currently specified	Aggregate/cluster manual elasticity intentionally left unspecified.
+Haifa port cluster	manual	none	diagnostic	manual							0	unavailable	no preferred manual aggregate elasticity currently specified	Aggregate manual elasticity intentionally left unspecified.

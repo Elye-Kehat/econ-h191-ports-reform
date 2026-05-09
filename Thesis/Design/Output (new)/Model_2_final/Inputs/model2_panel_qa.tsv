@@ -1,0 +1,6 @@
+panel	entity	rows	year_min	year_max	month_index_min	month_index_max	missing_log_LP	missing_log_KL
+terminal_monthly	Haifa--Bayport	14	2021.0	2024.0	202109.0	202412.0	0	0
+terminal_monthly	Haifa--Legacy	14	2021.0	2024.0	202109.0	202412.0	0	0
+terminal_quarterly	Haifa--Bayport	14	2021.0	2024.0	20213.0	20244.0	0	0
+terminal_quarterly	Haifa--Legacy	14	2021.0	2024.0	20213.0	20244.0	0	0
+cluster_monthly	Haifa port cluster	44	2018.0	2021.0	201801.0	202108.0	0	0

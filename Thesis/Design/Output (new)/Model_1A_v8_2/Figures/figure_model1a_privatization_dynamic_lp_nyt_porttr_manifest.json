@@ -1,0 +1,23 @@
+{
+  "description": "Combined Haifa privatization dynamic ln(LP) plot",
+  "input_file_used": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A_v8_2/model1a_q_dynamic_betas_nyt.tsv",
+  "dataset": "nyt",
+  "spec_name": "porttr",
+  "reform": "haifa_priv",
+  "targets": [
+    "Haifa-Aggregate",
+    "Haifa-Legacy",
+    "Haifa-Bayport"
+  ],
+  "output_file": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A_v8_2/Figures/figure_model1a_privatization_dynamic_lp_nyt_porttr.png",
+  "kept_bin_labels": [
+    "pre_4_2",
+    "pre_8_5",
+    "q0",
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "y2_q5_8"
+  ]
+}

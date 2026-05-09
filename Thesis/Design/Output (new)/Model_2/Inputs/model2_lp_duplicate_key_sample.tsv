@@ -1,0 +1,11 @@
+entity	year	month	series_id	port	terminal	quarter	month_index	freq	LP	log_LP	source_kind	source_file
+Haifa--Legacy	2021		Haifa_Legacy_Q	Haifa	Haifa-Legacy	Q3		Q	47.441879356675614	3.8595053693490575	lp	/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/raw_from_l_v6_tonsonly/LP_Panel.tsv
+Haifa--Legacy	2021		Haifa_Legacy_Q	Haifa	Haifa-Legacy	Q4		Q	45.86604529937136	3.8257250894872907	lp	/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/raw_from_l_v6_tonsonly/LP_Panel.tsv
+Haifa--Legacy	2022		Haifa_Legacy_Q	Haifa	Haifa-Legacy	Q1		Q	37.86946107329709	3.6341450108459012	lp	/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/raw_from_l_v6_tonsonly/LP_Panel.tsv
+Haifa--Legacy	2022		Haifa_Legacy_Q	Haifa	Haifa-Legacy	Q2		Q	43.80047349474067	3.7796446277061757	lp	/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/raw_from_l_v6_tonsonly/LP_Panel.tsv
+Haifa--Legacy	2022		Haifa_Legacy_Q	Haifa	Haifa-Legacy	Q3		Q	53.98043180476952	3.988621606905206	lp	/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/raw_from_l_v6_tonsonly/LP_Panel.tsv
+Haifa--Legacy	2022		Haifa_Legacy_Q	Haifa	Haifa-Legacy	Q4		Q	92.51140486326511	4.527331932737157	lp	/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/raw_from_l_v6_tonsonly/LP_Panel.tsv
+Haifa--Legacy	2023		Haifa_Legacy_Q	Haifa	Haifa-Legacy	Q1		Q	153.78379376776772	5.035547679398365	lp	/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/raw_from_l_v6_tonsonly/LP_Panel.tsv
+Haifa--Legacy	2023		Haifa_Legacy_Q	Haifa	Haifa-Legacy	Q2		Q	55.59732302397436	4.01813505304661	lp	/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/raw_from_l_v6_tonsonly/LP_Panel.tsv
+Haifa--Legacy	2023		Haifa_Legacy_Q	Haifa	Haifa-Legacy	Q3		Q	42.67414762032325	3.753593294733475	lp	/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/raw_from_l_v6_tonsonly/LP_Panel.tsv
+Haifa--Legacy	2023		Haifa_Legacy_Q	Haifa	Haifa-Legacy	Q4		Q	30.971078325395077	3.4330538117643408	lp	/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/raw_from_l_v6_tonsonly/LP_Panel.tsv

@@ -102,7 +102,7 @@ def month_end_timestamp(year: int, month: int) -> pd.Timestamp:
 
 def parse_args() -> argparse.Namespace:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--strategy", default="common_rule")
+    ap.add_argument("--strategy", default="common_rule_v6_tonsonly")
     ap.add_argument("--lproxy", default=None)
     ap.add_argument("--outdir", default=None)
     ap.add_argument("--start", default="2018-01")

@@ -1,0 +1,13 @@
+{
+  "version": "v10_baseline_first_manual_first",
+  "logic": [
+    "preferred horizon exact match",
+    "LP family order by row config",
+    "Baseline before +Tr on LP side",
+    "Baseline before Controls+Trend on KL side",
+    "preferred-manual before aggregate-regression fallback before other robustness rows",
+    "sign-consistent rows before inconsistent rows",
+    "share-valid rows before mechanically problematic rows",
+    "smaller TE_se then smaller dC_se then higher TE_R2 as tie-breakers"
+  ]
+}

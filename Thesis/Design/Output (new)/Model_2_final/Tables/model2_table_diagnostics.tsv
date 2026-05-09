@@ -1,0 +1,5 @@
+row	post_window	TE_ci	dC_ci	CD_ci	share_ci	TE_R2	eta_class	sign_consistent	share_valid	warning_flags	kl_components	kl_weights
+Haifa competition - Legacy	[1,13]	--	--	--	--	0.794	preferred_manual	True	True		[1,6]; [7,12]; [13,24]	6; 6; 1
+Haifa competition - Aggregate	[1,13]	--	--	--	--	0.901	preferred_manual_aggregate	True	True		[1,6]; [7,12]; [13,24]	6; 6; 1
+Haifa privatization - Legacy	[1,7]	--	--	--	--	0.897	preferred_manual	True	True		[1,6]; [7,12]	6; 1
+Haifa privatization - Aggregate	[1,7]	--	--	--	--	0.979	preferred_manual_aggregate	True	True		[1,6]; [7,12]	6; 1

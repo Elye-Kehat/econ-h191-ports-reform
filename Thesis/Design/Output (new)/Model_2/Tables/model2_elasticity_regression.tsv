@@ -1,5 +1,5 @@
 entity	eta_family	eta_source	eta_role	spec	delta	eta	eta_se	pvalue	N	R2	preferred_flag	status	reason	notes
-Haifa--Legacy	regression	legacy_ts_trend	robustness	TS+trend		0.7901415282932294	0.33715635088150436	0.019101389804901007	14	0.5386019772363135	0	ok	HC1 time-series regression	Reduced-form co-movement estimate, not structural.
-Haifa--Bayport	regression	bayport_ts_trend	robustness	TS+trend		0.3122335560929574	0.6974577256670971	0.6543886270037635	14	0.48336057599677595	0	ok	HC1 time-series regression	Reduced-form co-movement estimate, not structural.
-Pooled Haifa terminals	regression	pooled_trend_fe	robustness	Pooled+trend+FE		0.5488482124110559	0.3393609181926279	0.10581366682532956	28	0.49404703199858946	0	ok	HC1 pooled regression	Pooled terminal regression with entity fixed effects and linear time trend.
-Haifa port cluster	regression	cluster_ts_trend	robustness	TS+trend		0.588609035307564	0.951150633233469	0.5360224765573065	44	0.09721665226151066	0	ok	HC1 aggregate time-series regression	Aggregate-port robustness regression only.
+Haifa--Legacy	regression	legacy_ts_trend	robustness	TS+trend					0		0	unavailable	insufficient usable rows for regression	Requires at least 8 non-missing observations.
+Haifa--Bayport	regression	bayport_ts_trend	robustness	TS+trend					0		0	unavailable	insufficient usable rows for regression	Requires at least 8 non-missing observations.
+Pooled Haifa terminals	regression	pooled_trend_fe	robustness	Pooled+trend+FE					0		0	unavailable	insufficient pooled overlap	Requires both terminal entities and at least 12 usable rows.
+Haifa port cluster	regression	cluster_ts_trend	robustness	TS+trend		0.5570097682663729	0.06696244849745914	8.927852156904576e-17	44	0.6213994121404087	0	ok	HC1 aggregate time-series regression	Aggregate-port robustness regression only.

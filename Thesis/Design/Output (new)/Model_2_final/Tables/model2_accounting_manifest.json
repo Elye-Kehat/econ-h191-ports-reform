@@ -1,0 +1,27 @@
+{
+  "script": "Model_2_step3_accounting_v12.py",
+  "inputs": {
+    "eta": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2_final/Tables/model2_elasticity_combined.tsv",
+    "model1a_nyt_window": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A_v8_2/model1a_q_window_betas_nyt.tsv",
+    "model1a_twfe_window": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A_v8_2/model1a_q_window_betas_twfe.tsv",
+    "model1b_window": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_v8/model1b_binned_window_betas_summary.tsv"
+  },
+  "outputs": {
+    "audit_m1a": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2_final/Tables/model2_accounting_audit_m1a.tsv",
+    "audit_m1b": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2_final/Tables/model2_accounting_audit_m1b.tsv",
+    "family_coverage": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2_final/Tables/model2_accounting_family_coverage.tsv",
+    "long": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2_final/Tables/model2_accounting_long.tsv",
+    "main": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2_final/Tables/model2_accounting_main.tsv",
+    "appendix": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2_final/Tables/model2_accounting_appendix.tsv",
+    "unavailable": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2_final/Tables/model2_accounting_unavailable.tsv",
+    "diagnostics_all": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2_final/Tables/model2_diagnostics_all.tsv",
+    "diagnostics_main": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2_final/Tables/model2_diagnostics_main.tsv",
+    "preferred_rule": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_2_final/Tables/model2_preferred_rule.json"
+  },
+  "rows_long": 36,
+  "rows_main": 4,
+  "rows_appendix": 36,
+  "rows_unavailable": 0,
+  "rows_family_coverage": 8,
+  "note": "v11 keeps the v10 accounting logic but recognizes the new preferred manual aggregate proxy when available."
+}

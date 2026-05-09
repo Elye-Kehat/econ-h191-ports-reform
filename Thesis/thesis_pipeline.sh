@@ -1,4 +1,4 @@
-cat > run_thesis_pipeline_v6.sh <<'BASH'
+cat > thesis_pipeline.sh <<'BASH'
 set -euo pipefail
 
 ###############################################################################
@@ -74,6 +74,32 @@ promote_files() {
   done
 }
 
+resolve_model_1b_main() {
+  local candidates=(
+    "$DESIGN_DIR/Model_1B_v8.py"
+    "$DESIGN_DIR/Model_1B_v7.py"
+    "$DESIGN_DIR/Model_1B_v6.py"
+    "$DESIGN_DIR/Model_1B_v5.py"
+    "$DESIGN_DIR/Model_1B(v5).py"
+    "$DESIGN_DIR/Model_1B_fixed_v5.py"
+    "$DESIGN_DIR/Model_1B_fixed_v6.py"
+    "$DESIGN_DIR/Model_1B(v4)_fixed2.py"
+  )
+
+  local f
+  for f in "${candidates[@]}"; do
+    if [ -f "$f" ]; then
+      echo "$f"
+      return 0
+    fi
+  done
+
+  echo "Could not find a usable Model 1B main file." >&2
+  exit 1
+}
+
+M1B_MAIN="$(resolve_model_1b_main)"
+
 ###############################################################################
 # 0) Check required files
 ###############################################################################
@@ -81,6 +107,7 @@ promote_files() {
 stage "0) Check required files"
 
 require_file "$M1A"
+require_file "$M1B_MAIN"
 require_file "$LPROXY_BUILDER"
 require_file "$LP_S1"
 require_file "$LP_S2"
@@ -91,13 +118,13 @@ require_file "$K_DIR/interpolation_00_prepare_working_inputs_v8_hpc_operator_bri
 require_file "$K_DIR/interpolation_01_build_monthly_engine_v8_hpc_operator_linear_backloaded.py"
 require_file "$K_DIR/interpolation_02_finalize_outputs_and_qc_v9_hpc_operator_linear_backloaded.py"
 
-require_file "$DESIGN_DIR/Model_1B(v4)_fixed2.py"
 require_file "$DESIGN_DIR/Model_1B_relaxed(v4)_fixed.py"
 require_file "$DESIGN_DIR/Model_1B_to_tables(v4)_fixed2.py"
-require_file "$DESIGN_DIR/Model_2_step1_build_panels.py"
-require_file "$DESIGN_DIR/Model_2_step2_elasticity.py"
-require_file "$DESIGN_DIR/Model_2_step3_accounting.py"
-require_file "$DESIGN_DIR/Model_2_step4_to_tables.py"
+
+require_file "$DESIGN_DIR/Model_2_step1_build_panels_v4.py"
+require_file "$DESIGN_DIR/Model_2_step2_elasticity_v4.py"
+require_file "$DESIGN_DIR/Model_2_step3_accounting_v4.py"
+require_file "$DESIGN_DIR/Model_2_step4_to_tables_v4.py"
 
 mkdir -p "$LPROXY_STRATEGY_DIR" "$LP_BUILD_DIR" "$KL_BUILD_DIR"
 
@@ -216,20 +243,20 @@ run_py "$M1A" \
 
 stage "6) Model 1B"
 
-run_py "$DESIGN_DIR/Model_1B(v4)_fixed2.py"
+run_py "$M1B_MAIN"
 run_py "$DESIGN_DIR/Model_1B_relaxed(v4)_fixed.py"
 run_py "$DESIGN_DIR/Model_1B_to_tables(v4)_fixed2.py"
 
 ###############################################################################
-# 7) Model 2
+# 7) Model 2 v4
 ###############################################################################
 
-stage "7) Model 2"
+stage "7) Model 2 v4"
 
-run_py "$DESIGN_DIR/Model_2_step1_build_panels.py"
-run_py "$DESIGN_DIR/Model_2_step2_elasticity.py"
-run_py "$DESIGN_DIR/Model_2_step3_accounting.py"
-run_py "$DESIGN_DIR/Model_2_step4_to_tables.py"
+run_py "$DESIGN_DIR/Model_2_step1_build_panels_v4.py"
+run_py "$DESIGN_DIR/Model_2_step2_elasticity_v4.py"
+run_py "$DESIGN_DIR/Model_2_step3_accounting_v4.py"
+run_py "$DESIGN_DIR/Model_2_step4_to_tables_v4.py"
 
 ###############################################################################
 # Done
@@ -239,4 +266,4 @@ echo
 echo "Updated full relevant pipeline completed successfully."
 BASH
 
-bash run_thesis_pipeline_v6.sh
+bash thesis_pipeline.sh

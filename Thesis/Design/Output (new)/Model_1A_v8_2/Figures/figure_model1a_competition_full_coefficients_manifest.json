@@ -1,0 +1,31 @@
+{
+  "description": "Full competition LP coefficient figure covering all coefficient rows from the main Model 1A competition table",
+  "inputs": {
+    "static_twfe": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A_v8_2/model1a_q_static_betas_twfe.tsv",
+    "window_nyt": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A_v8_2/model1a_q_window_betas_nyt.tsv",
+    "pretrend_nyt": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A_v8_2/model1a_q_pretrend_tests_nyt.tsv"
+  },
+  "output_file": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1A_v8_2/Figures/figure_model1a_competition_full_coefficients.png",
+  "covers": {
+    "panel_a_conventional_columns": [
+      "Haifa-Legacy baseline",
+      "Haifa-Legacy porttr",
+      "Haifa-Aggregate baseline",
+      "Haifa-Aggregate porttr",
+      "Ashdod-Legacy baseline",
+      "Ashdod-Legacy porttr",
+      "Ashdod-Aggregate baseline",
+      "Ashdod-Aggregate porttr"
+    ],
+    "panel_b_nyt_columns": [
+      "Haifa-Legacy baseline",
+      "Haifa-Legacy porttr",
+      "Haifa-Aggregate baseline",
+      "Haifa-Aggregate porttr"
+    ]
+  },
+  "x_limits": [
+    -2.0500000000000003,
+    2.0500000000000003
+  ]
+}

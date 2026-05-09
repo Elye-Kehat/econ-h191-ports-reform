@@ -1,0 +1,13 @@
+family	series_id	series_display	is_main_series	reform	reform_display	spec_name	test_name	n_terms_tested	supported_full_test	lead_min	lead_max	f_stat	pvalue	df_num	df_denom	n_obs	r2
+binned	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	baseline	joint_lead_bins	2	1	-12.0	-2.0	24.412516322488077	7.297496413017154e-07	2.0	28.0	37	0.5341517611203004
+binned	Haifa_Legacy_KL	Haifa-Legacy	1	competition	Competition clock	ctrl_trend	joint_lead_bins	2	1	-12.0	-2.0	1.7206726897106317	0.19870282746324205	2.0	26.0	37	0.5445816259437768
+binned	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	baseline	joint_lead_bins	2	1	-12.0	-2.0	47.58240623161181	1.4113607176407838e-09	2.0	27.0	36	0.4194784335258688
+binned	Haifa_Legacy_KL	Haifa-Legacy	1	privatization	Privatization clock	ctrl_trend	joint_lead_bins	2	1	-12.0	-2.0	16.2517250184596	2.638118574429198e-05	2.0	26.0	36	0.4601074249713034
+binned	Haifa_port_KL	Aggregate port	1	competition	Competition clock	baseline	joint_lead_bins	2	1	-12.0	-2.0	19.99189759740497	4.041445839302506e-06	2.0	28.0	37	0.4478680173049986
+binned	Haifa_port_KL	Aggregate port	1	competition	Competition clock	ctrl_trend	joint_lead_bins	2	1	-12.0	-2.0	7.77064555415511	0.0022615888236581284	2.0	26.0	37	0.5047644405201261
+binned	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	baseline	joint_lead_bins	2	1	-12.0	-2.0	43.8466952315617	3.308586821686302e-09	2.0	27.0	36	0.422612218827938
+binned	Haifa_port_KL	Aggregate port	1	privatization	Privatization clock	ctrl_trend	joint_lead_bins	2	1	-12.0	-2.0	9.491448584012495	0.0008035946235832909	2.0	26.0	36	0.4691687136142122
+binned	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	baseline	joint_lead_bins	0	0							27	0.9594592272261699
+binned	Haifa_Bayport_KL	Haifa-Bayport	0	competition	Competition clock	ctrl_trend	joint_lead_bins	0	0							27	0.9714639593552423
+binned	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	baseline	joint_lead_bins	2	1	-12.0	-2.0	27.596317167536654	2.9728066538388873e-07	2.0	27.0	36	0.7475771882853943
+binned	Haifa_Bayport_KL	Haifa-Bayport	0	privatization	Privatization clock	ctrl_trend	joint_lead_bins	2	1	-12.0	-2.0	5.014330703143792	0.014395537157575397	2.0	26.0	36	0.7604414970245664

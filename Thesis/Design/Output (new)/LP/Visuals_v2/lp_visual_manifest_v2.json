@@ -1,0 +1,178 @@
+{
+  "version": "v2",
+  "sample_start": "2018-01",
+  "sample_end": "2024-12",
+  "panel_source": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/LP/LP_Panel_monthly.tsv",
+  "output_dir": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/LP/Visuals_v2",
+  "outputs": [
+    "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/LP/Visuals_v2/plot_lp_haifa_all_v2.png",
+    "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/LP/Visuals_v2/plot_lp_ashdod_all_v2.png",
+    "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/LP/Visuals_v2/plot_lp_all_series_v2.png"
+  ],
+  "changes": [
+    "Clipped Haifa-Bayport to start at 2021-09-01",
+    "Clipped Ashdod-HCT to start at 2022-11-01",
+    "Stitched port totals to continue beyond monthly direct-port coverage",
+    "Fallback to computed quarterly aggregate port total from terminal rows when needed"
+  ],
+  "series_notes": {
+    "haifa_all": {
+      "haifa_port": {
+        "status": "plotted",
+        "first_date": "2018-01-31",
+        "last_date": "2024-12-31",
+        "n_obs": 58,
+        "source_types": [
+          "port_monthly",
+          "port_quarterly"
+        ],
+        "series_ids": [
+          "Haifa_port_M",
+          "Haifa_port_Q"
+        ]
+      },
+      "haifa_legacy": {
+        "status": "plotted",
+        "first_date": "2021-09-30",
+        "last_date": "2024-12-31",
+        "n_obs": 14,
+        "source_types": [
+          "terminal"
+        ],
+        "series_ids": [
+          "Haifa_Legacy_Q"
+        ]
+      },
+      "haifa_bayport": {
+        "status": "plotted",
+        "first_date": "2021-09-30",
+        "last_date": "2024-12-31",
+        "n_obs": 14,
+        "source_types": [
+          "terminal"
+        ],
+        "series_ids": [
+          "Haifa_SIPG_Q"
+        ]
+      }
+    },
+    "ashdod_all": {
+      "ashdod_port": {
+        "status": "plotted",
+        "first_date": "2018-01-31",
+        "last_date": "2024-12-31",
+        "n_obs": 59,
+        "source_types": [
+          "port_monthly",
+          "port_quarterly"
+        ],
+        "series_ids": [
+          "Ashdod_port_M",
+          "Ashdod_port_Q"
+        ]
+      },
+      "ashdod_legacy": {
+        "status": "plotted",
+        "first_date": "2021-09-30",
+        "last_date": "2024-12-31",
+        "n_obs": 14,
+        "source_types": [
+          "terminal"
+        ],
+        "series_ids": [
+          "Ashdod_Legacy_Q"
+        ]
+      },
+      "ashdod_hct": {
+        "status": "plotted",
+        "first_date": "2022-12-31",
+        "last_date": "2024-12-31",
+        "n_obs": 9,
+        "source_types": [
+          "terminal"
+        ],
+        "series_ids": [
+          "Ashdod_HCT_Q"
+        ]
+      }
+    },
+    "all_series": {
+      "haifa_port": {
+        "status": "plotted",
+        "first_date": "2018-01-31",
+        "last_date": "2024-12-31",
+        "n_obs": 58,
+        "source_types": [
+          "port_monthly",
+          "port_quarterly"
+        ],
+        "series_ids": [
+          "Haifa_port_M",
+          "Haifa_port_Q"
+        ]
+      },
+      "haifa_legacy": {
+        "status": "plotted",
+        "first_date": "2021-09-30",
+        "last_date": "2024-12-31",
+        "n_obs": 14,
+        "source_types": [
+          "terminal"
+        ],
+        "series_ids": [
+          "Haifa_Legacy_Q"
+        ]
+      },
+      "haifa_bayport": {
+        "status": "plotted",
+        "first_date": "2021-09-30",
+        "last_date": "2024-12-31",
+        "n_obs": 14,
+        "source_types": [
+          "terminal"
+        ],
+        "series_ids": [
+          "Haifa_SIPG_Q"
+        ]
+      },
+      "ashdod_port": {
+        "status": "plotted",
+        "first_date": "2018-01-31",
+        "last_date": "2024-12-31",
+        "n_obs": 59,
+        "source_types": [
+          "port_monthly",
+          "port_quarterly"
+        ],
+        "series_ids": [
+          "Ashdod_port_M",
+          "Ashdod_port_Q"
+        ]
+      },
+      "ashdod_legacy": {
+        "status": "plotted",
+        "first_date": "2021-09-30",
+        "last_date": "2024-12-31",
+        "n_obs": 14,
+        "source_types": [
+          "terminal"
+        ],
+        "series_ids": [
+          "Ashdod_Legacy_Q"
+        ]
+      },
+      "ashdod_hct": {
+        "status": "plotted",
+        "first_date": "2022-12-31",
+        "last_date": "2024-12-31",
+        "n_obs": 9,
+        "source_types": [
+          "terminal"
+        ],
+        "series_ids": [
+          "Ashdod_HCT_Q"
+        ]
+      }
+    }
+  }
+}

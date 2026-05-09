@@ -1,0 +1,327 @@
+{
+  "script": "Model_1B_v8.py",
+  "kl_input": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Data/KL/KL_Panel_monthly.tsv",
+  "output_dir": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_v8",
+  "hac_lags": 6,
+  "main_series": [
+    "Haifa_Legacy_KL",
+    "Haifa_port_KL"
+  ],
+  "supplementary_series": [
+    "Haifa_Bayport_KL"
+  ],
+  "reforms": {
+    "competition": {
+      "year": 2021,
+      "month": 9,
+      "display": "Competition clock",
+      "support_min": -12,
+      "support_max": 24,
+      "overlap_bins": [
+        [
+          "pre_priv",
+          null,
+          -1,
+          "Privatization pre-period"
+        ],
+        [
+          "priv_0_6",
+          0,
+          6,
+          "Privatization overlap [0,6]"
+        ],
+        [
+          "priv_7_plus",
+          7,
+          null,
+          "Privatization overlap [7,+]"
+        ]
+      ],
+      "overlap_reference": "pre_priv",
+      "variants": {
+        "detailed": {
+          "bin_defs": [
+            [
+              "pre_12_7",
+              -12,
+              -7,
+              "Lead bin [-12,-7]"
+            ],
+            [
+              "pre_6_2",
+              -6,
+              -2,
+              "Lead bin [-6,-2]"
+            ],
+            [
+              "ref_m1",
+              -1,
+              -1,
+              "Reference month -1"
+            ],
+            [
+              "m0",
+              0,
+              0,
+              "Month 0"
+            ],
+            [
+              "post_1_6",
+              1,
+              6,
+              "Post bin [1,6]"
+            ],
+            [
+              "post_7_12",
+              7,
+              12,
+              "Post bin [7,12]"
+            ],
+            [
+              "post_13_tail",
+              13,
+              24,
+              "Post bin [13,24]"
+            ]
+          ],
+          "windows": [
+            [
+              "avg_pre",
+              -12,
+              -2,
+              "Average pre, months -12 to -2"
+            ],
+            [
+              "post_1_6",
+              1,
+              6,
+              "Average post, months 1-6"
+            ],
+            [
+              "post_7_12",
+              7,
+              12,
+              "Average post, months 7-12"
+            ],
+            [
+              "post_13_tail",
+              13,
+              24,
+              "Average post, months 13-24"
+            ],
+            [
+              "post_full",
+              1,
+              24,
+              "Average full post, months 1-24"
+            ]
+          ],
+          "pre_keys": [
+            "pre_12_7",
+            "pre_6_2"
+          ]
+        }
+      }
+    },
+    "privatization": {
+      "year": 2023,
+      "month": 1,
+      "display": "Privatization clock",
+      "support_min": -12,
+      "support_max": 23,
+      "overlap_bins": [
+        [
+          "comp_4_12",
+          4,
+          12,
+          "Competition overlap [4,12]"
+        ],
+        [
+          "comp_13_plus",
+          13,
+          null,
+          "Competition overlap [13,+]"
+        ]
+      ],
+      "overlap_reference": "comp_4_12",
+      "variants": {
+        "detailed": {
+          "bin_defs": [
+            [
+              "pre_12_7",
+              -12,
+              -7,
+              "Lead bin [-12,-7]"
+            ],
+            [
+              "pre_6_2",
+              -6,
+              -2,
+              "Lead bin [-6,-2]"
+            ],
+            [
+              "ref_m1",
+              -1,
+              -1,
+              "Reference month -1"
+            ],
+            [
+              "m0",
+              0,
+              0,
+              "Month 0"
+            ],
+            [
+              "post_1_6",
+              1,
+              6,
+              "Post bin [1,6]"
+            ],
+            [
+              "post_7_12",
+              7,
+              12,
+              "Post bin [7,12]"
+            ],
+            [
+              "post_13_tail",
+              13,
+              23,
+              "Post bin [13,23]"
+            ]
+          ],
+          "windows": [
+            [
+              "avg_pre",
+              -12,
+              -2,
+              "Average pre, months -12 to -2"
+            ],
+            [
+              "post_1_6",
+              1,
+              6,
+              "Average post, months 1-6"
+            ],
+            [
+              "post_7_12",
+              7,
+              12,
+              "Average post, months 7-12"
+            ],
+            [
+              "post_13_tail",
+              13,
+              23,
+              "Average post, months 13-23"
+            ],
+            [
+              "post_full",
+              1,
+              23,
+              "Average full post, months 1-23"
+            ]
+          ],
+          "pre_keys": [
+            "pre_12_7",
+            "pre_6_2"
+          ]
+        },
+        "compact": {
+          "bin_defs": [
+            [
+              "pre_12_2",
+              -12,
+              -2,
+              "Lead bin [-12,-2]"
+            ],
+            [
+              "ref_m1",
+              -1,
+              -1,
+              "Reference month -1"
+            ],
+            [
+              "m0",
+              0,
+              0,
+              "Month 0"
+            ],
+            [
+              "post_1_6",
+              1,
+              6,
+              "Post bin [1,6]"
+            ],
+            [
+              "post_7_tail",
+              7,
+              23,
+              "Post bin [7,23]"
+            ]
+          ],
+          "windows": [
+            [
+              "avg_pre",
+              -12,
+              -2,
+              "Average pre, months -12 to -2"
+            ],
+            [
+              "post_1_6",
+              1,
+              6,
+              "Average post, months 1-6"
+            ],
+            [
+              "post_7_tail",
+              7,
+              23,
+              "Average post, months 7-23"
+            ],
+            [
+              "post_full",
+              1,
+              23,
+              "Average full post, months 1-23"
+            ]
+          ],
+          "pre_keys": [
+            "pre_12_2"
+          ]
+        }
+      }
+    }
+  },
+  "table_variants": {
+    "detailed": {
+      "competition": "detailed",
+      "privatization": "detailed"
+    },
+    "preferred": {
+      "competition": "detailed",
+      "privatization": "compact"
+    }
+  },
+  "specifications": {
+    "baseline": "event terms + dynamic overlap control",
+    "ctrl_trend": "event terms + dynamic overlap control + t_linear + covid_shock + war_shock"
+  },
+  "families": {
+    "exact": "exact-month event-study on reform-specific support; plot/descriptive use only",
+    "binned": "binned event-study used for the main tables; includes privatization detailed vs compact variants"
+  },
+  "outputs": {
+    "exact_dynamic": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_v8/model1b_exact_dynamic_betas_all.tsv",
+    "binned_dynamic": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_v8/model1b_binned_betas_all.tsv",
+    "binned_windows": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_v8/model1b_binned_window_betas_summary.tsv",
+    "binned_pretrend": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_v8/model1b_binned_pretrend_tests.tsv",
+    "sample_overview": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_v8/model1b_sample_overview.tsv",
+    "plot_helper": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_v8/model1b_plot_helper.tsv",
+    "main_table_detailed": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_v8/model1b_table_cells_main_detailed.tsv",
+    "main_table_preferred": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_v8/model1b_table_cells_main_preferred.tsv",
+    "bayport_table_detailed": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_v8/model1b_table_cells_bayport_detailed.tsv",
+    "bayport_table_preferred": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_v8/model1b_table_cells_bayport_preferred.tsv",
+    "manifest": "/Users/elyekehat/Downloads/Fall 2025/Econ H191/Thesis/Design/Output (new)/Model_1B_v8/model1b_manifest.json"
+  }
+}

@@ -1,6 +1,4 @@
-panel	entity	rows	year_min	year_max	month_index_min	month_index_max	missing_log_LP	missing_log_KL	LP_min	LP_max	KL_min	KL_max
-terminal_monthly	Haifa--Bayport	42	2021	2024	24259.0	24300.0	0	0	0.3389180745625607	81.87107987684641	58.46189549471112	7857.980062288982
-terminal_monthly	Haifa--Legacy	42	2021	2024	24259.0	24300.0	0	0	0.3690441256347883	89.14850919923276	301.584637544234	58106.46968527141
-terminal_quarterly	Haifa--Bayport	14	2021	2024	20213.0	20244.0	0	0	0.3389180745625607	81.87107987684641	914.731141896842	5901.432696679869
-terminal_quarterly	Haifa--Legacy	14	2021	2024	20213.0	20244.0	0	0	0.3690441256347883	89.14850919923276	316.6359720002882	20591.32397475219
-cluster_monthly	Haifa port cluster	44	2018	2021	24217.0	24260.0	0	0	0.3590395644907858	82.87693677141787	4406.205386821195	7383.270074000539
+panel	entity	rows	year_min	year_max	month_index_min	month_index_max	missing_log_LP	missing_log_KL
+terminal_monthly	<EMPTY>	0						
+terminal_quarterly	<EMPTY>	0						
+cluster_monthly	Haifa port cluster	44	2018.0	2021.0	24217.0	24260.0	0.0	0.0
